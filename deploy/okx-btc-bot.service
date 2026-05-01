@@ -1,0 +1,24 @@
+[Unit]
+Description=OKX BTC dry-run trading bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/okx-btc-bot
+Environment=DRY_RUN=1
+Environment=OKX_DEMO=1
+Environment=KILL_SWITCH=0
+Environment=BOT_MODE=live_loop
+Environment=PYTHONUNBUFFERED=1
+EnvironmentFile=/home/ubuntu/okx-btc-bot/.env
+ExecStart=/home/ubuntu/okx-btc-bot/.venv/bin/python -m src.bot --live-loop --dry-run --okx-demo
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

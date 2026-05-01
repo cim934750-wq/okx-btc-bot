@@ -1,0 +1,11 @@
+.env
+.venv/
+.venv-win/
+__pycache__/
+*.pyc
+.DS_Store
+.pytest_cache/
+logs/
+runtime/
+data/paper_state.json
+data/*.json
