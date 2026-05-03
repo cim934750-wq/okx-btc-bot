@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import csv
-import fcntl
 import io
 import json
 import logging
@@ -20,7 +19,18 @@ from src.data import fetch_ohlcv_dataframe
 from src.exchange import OKXExchangeClient
 from src.execution import OrderExecutor
 from src.risk import RiskManager
-from src.strategy import calculate_indicators, generate_signal
+from src.strategy import calculate_indicators
+from src.strategy_variants import (
+    generate_strategy_signal,
+    validate_runtime_strategy_settings,
+)
+
+
+if os.name == "nt":
+    import ctypes
+    import msvcrt
+else:
+    import fcntl
 
 
 logger = logging.getLogger(__name__)
@@ -43,6 +53,12 @@ HEARTBEAT_COLUMNS = [
     "candle_timestamp",
     "close",
     "signal",
+    "strategy_variant",
+    "raw_signal",
+    "effective_action",
+    "reason",
+    "atr_percentile",
+    "ema200_slope_ok",
     "dry_run",
     "position_side",
     "equity_estimate",
@@ -199,6 +215,25 @@ def csv_header_matches(path: Path, columns: list[str]) -> bool:
     return current_header == columns
 
 
+def windows_pid_is_running(pid: int) -> bool:
+    error_access_denied = 5
+    still_active = 259
+    process_query_limited_information = 0x1000
+
+    kernel32 = ctypes.WinDLL("kernel32", use_last_error=True)
+    handle = kernel32.OpenProcess(process_query_limited_information, False, pid)
+    if not handle:
+        return ctypes.get_last_error() == error_access_denied
+
+    try:
+        exit_code = ctypes.c_ulong()
+        if not kernel32.GetExitCodeProcess(handle, ctypes.byref(exit_code)):
+            return True
+        return exit_code.value == still_active
+    finally:
+        kernel32.CloseHandle(handle)
+
+
 def append_csv(path: Path, columns: list[str], row: dict[str, Any]) -> None:
     text = ""
     if csv_needs_header(path):
@@ -229,6 +264,8 @@ def ensure_csv_logs(config: BotConfig) -> None:
 def pid_is_running(pid: int) -> bool:
     if pid <= 0:
         return False
+    if os.name == "nt":
+        return windows_pid_is_running(pid)
     try:
         os.kill(pid, 0)
     except ProcessLookupError:
@@ -249,13 +286,38 @@ def parse_lock_pid(lock_text: str) -> Optional[int]:
     return None
 
 
+def read_existing_lock_text(lock_handle, lock_path: Path) -> str:
+    try:
+        lock_handle.seek(0)
+        return lock_handle.read().strip()
+    except (PermissionError, OSError) as exc:
+        logger.warning(
+            "Could not read runtime lock metadata before locking; lock_file=%s error=%s",
+            lock_path,
+            exc,
+        )
+        return ""
+
+
+def lock_runtime_file(lock_handle) -> None:
+    if os.name == "nt":
+        lock_handle.seek(0)
+        try:
+            # Windows has no fcntl; lock a byte while the handle stays open.
+            msvcrt.locking(lock_handle.fileno(), msvcrt.LK_NBLCK, 1)
+        except OSError as exc:
+            raise BlockingIOError from exc
+        return
+
+    fcntl.flock(lock_handle.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+
+
 def acquire_runtime_lock(config: BotConfig):
     lock_path = config.runtime_dir / "bot.lock"
     lock_handle = lock_path.open("a+", encoding="utf-8")
-    lock_handle.seek(0)
-    existing_lock_text = lock_handle.read().strip()
+    existing_lock_text = read_existing_lock_text(lock_handle, lock_path)
     try:
-        fcntl.flock(lock_handle.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+        lock_runtime_file(lock_handle)
     except BlockingIOError as exc:
         existing_pid = parse_lock_pid(existing_lock_text)
         if existing_pid is not None:
@@ -265,10 +327,17 @@ def acquire_runtime_lock(config: BotConfig):
                 existing_pid,
                 pid_is_running(existing_pid),
             )
+        else:
+            logger.error(
+                "Runtime lock is held; lock_file=%s recorded_pid=unknown metadata_available=%s",
+                lock_path,
+                bool(existing_lock_text),
+            )
         lock_handle.close()
-        raise RuntimeError(
-            f"Another bot process already holds the runtime lock: {lock_path}"
-        ) from exc
+        raise SystemExit(
+            "Another bot process may already hold the runtime lock: "
+            f"{lock_path}. Stop the existing bot before starting a new one."
+        ) from None
 
     existing_pid = parse_lock_pid(existing_lock_text)
     if existing_lock_text and existing_pid is not None and not pid_is_running(existing_pid):
@@ -333,7 +402,10 @@ def write_heartbeat(
     error_count: int,
     loop_count: int,
     candle_timestamp: Optional[str],
+    effective_action: str = "none",
+    effective_reason: Optional[str] = None,
 ) -> None:
+    reason = effective_reason or signal.get("reason")
     append_csv(
         config.heartbeat_log_path,
         HEARTBEAT_COLUMNS,
@@ -347,6 +419,12 @@ def write_heartbeat(
             "candle_timestamp": candle_timestamp,
             "close": close,
             "signal": signal.get("signal"),
+            "strategy_variant": signal.get("strategy_variant", config.strategy_variant),
+            "raw_signal": signal.get("raw_signal", signal.get("signal")),
+            "effective_action": effective_action,
+            "reason": reason,
+            "atr_percentile": signal.get("atr_percentile"),
+            "ema200_slope_ok": signal.get("ema200_slope_ok"),
             "dry_run": int(config.dry_run),
             "position_side": state.get("current_simulated_position"),
             "equity_estimate": estimate_equity(state),
@@ -356,15 +434,19 @@ def write_heartbeat(
         },
     )
     logger.info(
-        "Heartbeat: pid=%s boot_id=%s loop=%s symbol=%s timeframe=%s candle=%s close=%s signal=%s dry_run=%s position=%s equity=%.2f realized=%.2f unrealized=%.2f errors=%s",
+        "Heartbeat: pid=%s boot_id=%s loop=%s symbol=%s timeframe=%s variant=%s candle=%s close=%s signal=%s raw_signal=%s action=%s reason=%s dry_run=%s position=%s equity=%.2f realized=%.2f unrealized=%.2f errors=%s",
         os.getpid(),
         BOOT_ID,
         loop_count,
         config.symbol,
         config.timeframe,
+        signal.get("strategy_variant", config.strategy_variant),
         candle_timestamp,
         close,
         signal.get("signal"),
+        signal.get("raw_signal", signal.get("signal")),
+        effective_action,
+        reason,
         config.dry_run,
         state.get("current_simulated_position"),
         estimate_equity(state),
@@ -408,7 +490,7 @@ def simulate_paper_decision(
     state: dict[str, Any],
     signal: dict[str, Any],
     is_new_candle: bool,
-) -> None:
+) -> tuple[str, str]:
     close = float(signal.get("close") or 0.0)
     atr = float(signal.get("atr14") or 0.0)
     update_unrealized_pnl(state, close)
@@ -417,7 +499,7 @@ def simulate_paper_decision(
 
     if not is_new_candle:
         logger.info("No new candle; heartbeat only, no duplicate trade decision")
-        return
+        return "heartbeat_only", "duplicate_candle"
 
     current_position = state.get("current_simulated_position")
     stop_price = state.get("stop_price")
@@ -425,21 +507,22 @@ def simulate_paper_decision(
 
     if current_position == "long" and stop_price is not None and close <= float(stop_price):
         close_paper_position(config, state, close, "stop_loss")
-        return
+        return "paper_exit", "stop_loss"
 
     if signal_name == "exit" and current_position == "long":
-        close_paper_position(config, state, close, signal.get("reason", "exit_signal"))
-        return
+        reason = signal.get("reason", "exit_signal")
+        close_paper_position(config, state, close, reason)
+        return "paper_exit", reason
 
     if signal_name == "long_entry" and current_position is None:
         allowed, reason = risk_manager.can_enter_new_position(state, equity)
         if not allowed:
             logger.warning("Paper entry blocked: %s", reason)
-            return
+            return "entry_blocked", reason
         size = risk_manager.position_size(equity=equity, entry_price=close, atr=atr)
         if size <= 0:
             logger.warning("Paper entry skipped: position size is zero")
-            return
+            return "entry_blocked", "position_size_zero"
         fee_cost = close * size * config.fee_rate
         state["current_simulated_position"] = "long"
         state["entry_price"] = close
@@ -464,6 +547,13 @@ def simulate_paper_decision(
             reason=signal.get("reason", "long_entry"),
             realized_pnl=-fee_cost,
         )
+        return "paper_entry", signal.get("reason", "long_entry")
+
+    if signal_name == "long_entry" and current_position == "long":
+        return "hold", "position_already_long"
+    if signal_name == "exit" and current_position is None:
+        return "hold", "exit_signal_without_position"
+    return "hold", signal.get("reason", "no_action")
 
 
 def close_paper_position(
@@ -515,13 +605,35 @@ def run_cycle(
         limit=config.candle_limit,
     )
     if df.empty:
-        signal = {"signal": "hold", "reason": "no_candles"}
-        write_heartbeat(config, state, signal, None, error_count, loop_count, None)
+        signal = {
+            "signal": "hold",
+            "reason": "no_candles",
+            "strategy_variant": config.strategy_variant,
+            "raw_signal": "hold",
+            "raw_reason": "no_candles",
+        }
+        write_heartbeat(
+            config,
+            state,
+            signal,
+            None,
+            error_count,
+            loop_count,
+            None,
+            "hold",
+            "no_candles",
+        )
         save_paper_state(config, state)
         return
 
     df = calculate_indicators(df)
-    signal = generate_signal(df)
+    signal = generate_strategy_signal(
+        df,
+        strategy_variant=config.strategy_variant,
+        timeframe=config.timeframe,
+        atr_percentile_window=config.atr_percentile_window,
+        ema200_slope_lookback=config.ema200_slope_lookback,
+    )
     latest_close = float(df.iloc[-1]["close"])
     latest_candle_timestamp = timestamp_to_iso(df.iloc[-1]["timestamp"])
 
@@ -545,11 +657,16 @@ def run_cycle(
         reserve_candle_decision(config, state, latest_candle_timestamp)
 
     if config.dry_run:
-        simulate_paper_decision(config, risk_manager, state, signal, is_new_candle)
+        effective_action, effective_reason = simulate_paper_decision(
+            config, risk_manager, state, signal, is_new_candle
+        )
     elif is_new_candle:
-        handle_live_decision(config, risk_manager, executor, state, signal, equity)
+        effective_action, effective_reason = handle_live_decision(
+            config, risk_manager, executor, state, signal, equity
+        )
     else:
         logger.info("No new candle; heartbeat only, no duplicate live trade decision")
+        effective_action, effective_reason = "heartbeat_only", "duplicate_candle"
 
     write_heartbeat(
         config,
@@ -559,6 +676,8 @@ def run_cycle(
         error_count,
         loop_count,
         latest_candle_timestamp,
+        effective_action,
+        effective_reason,
     )
     save_paper_state(config, state)
 
@@ -570,7 +689,7 @@ def handle_live_decision(
     state: dict[str, Any],
     signal: dict[str, Any],
     equity: float,
-) -> None:
+) -> tuple[str, str]:
     signal_name = signal.get("signal")
     close = float(signal.get("close") or 0.0)
     atr = float(signal.get("atr14") or 0.0)
@@ -585,7 +704,7 @@ def handle_live_decision(
             exit_reason = "stop_loss"
         if not should_exit:
             logger.info("Live mode: position already tracked; no new entry")
-            return
+            return "live_hold", "position_already_long"
 
         size = float(state.get("size") or 0.0)
         result = executor.place_order(
@@ -599,7 +718,9 @@ def handle_live_decision(
             reason=exit_reason,
         )
         logger.info("Live exit order result: %s", result)
-        if result.get("status") not in {"blocked", "rejected"}:
+        if result.get("status") in {"blocked", "rejected"}:
+            return "live_exit_blocked", str(result.get("reason", exit_reason))
+        else:
             entry = float(state.get("entry_price") or close)
             realized_pnl = (close - entry) * size
             state["realized_pnl"] = float(state.get("realized_pnl") or 0.0) + realized_pnl
@@ -617,11 +738,11 @@ def handle_live_decision(
                 reason=exit_reason,
                 realized_pnl=realized_pnl,
             )
-        return
+        return "live_exit_order", exit_reason
 
     if signal_name != "long_entry":
         logger.info("Live mode: no entry action for signal=%s", signal_name)
-        return
+        return "live_hold", signal.get("reason", "no_entry_signal")
 
     size = risk_manager.position_size(equity=equity, entry_price=close, atr=atr)
     result = executor.place_order(
@@ -635,7 +756,9 @@ def handle_live_decision(
         reason=signal.get("reason", "long_entry"),
     )
     logger.info("Live order result: %s", result)
-    if result.get("status") not in {"blocked", "rejected"}:
+    if result.get("status") in {"blocked", "rejected"}:
+        return "live_entry_blocked", str(result.get("reason", signal.get("reason", "long_entry")))
+    else:
         state["current_simulated_position"] = "long"
         state["entry_price"] = close
         state["size"] = size
@@ -650,6 +773,7 @@ def handle_live_decision(
             size=size,
             reason=signal.get("reason", "long_entry"),
         )
+    return "live_entry_order", signal.get("reason", "long_entry")
 
 
 def apply_pre_config_cli_env_overrides() -> None:
@@ -690,13 +814,20 @@ def main() -> None:
     apply_pre_config_cli_env_overrides()
     config = apply_cli_overrides(load_config())
     configure_logging(config.log_level)
+    validate_runtime_strategy_settings(
+        strategy_variant=config.strategy_variant,
+        timeframe=config.timeframe,
+        dry_run=config.dry_run,
+        atr_percentile_window=config.atr_percentile_window,
+        ema200_slope_lookback=config.ema200_slope_lookback,
+    )
     install_shutdown_handlers()
     config.ensure_directories()
     runtime_lock = acquire_runtime_lock(config)
     ensure_csv_logs(config)
 
     logger.info(
-        "Service starting: pid=%s boot_id=%s bot_mode=%s dry_run=%s okx_demo=%s symbol=%s timeframe=%s loop_interval_seconds=%s",
+        "Service starting: pid=%s boot_id=%s bot_mode=%s dry_run=%s okx_demo=%s symbol=%s timeframe=%s strategy_variant=%s atr_percentile_window=%s ema200_slope_lookback=%s loop_interval_seconds=%s",
         os.getpid(),
         BOOT_ID,
         config.bot_mode,
@@ -704,9 +835,19 @@ def main() -> None:
         config.okx_demo,
         config.symbol,
         config.timeframe,
+        config.strategy_variant,
+        config.atr_percentile_window,
+        config.ema200_slope_lookback,
         config.loop_interval_seconds,
     )
     logger.info("Runtime lock acquired: %s", runtime_lock.name)
+    if config.strategy_variant != "baseline":
+        logger.warning(
+            "Research-only strategy variant enabled: %s. DRY_RUN=%s TIMEFRAME=%s",
+            config.strategy_variant,
+            config.dry_run,
+            config.timeframe,
+        )
     if config.dry_run:
         logger.info("DRY_RUN=1: real orders are disabled and will not be placed")
     if not config.api_keys_available:
@@ -763,11 +904,19 @@ def main() -> None:
                 write_heartbeat(
                     config,
                     state,
-                    {"signal": "error", "reason": exc.__class__.__name__},
+                    {
+                        "signal": "error",
+                        "reason": exc.__class__.__name__,
+                        "strategy_variant": config.strategy_variant,
+                        "raw_signal": "error",
+                        "raw_reason": exc.__class__.__name__,
+                    },
                     None,
                     error_count,
                     loop_count,
                     None,
+                    "error",
+                    exc.__class__.__name__,
                 )
                 save_paper_state(config, state)
                 if error_count >= config.error_threshold:

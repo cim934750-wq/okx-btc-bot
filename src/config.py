@@ -49,6 +49,9 @@ class BotConfig:
     dry_run_raw: Optional[str]
     symbol: str
     timeframe: str
+    strategy_variant: str
+    atr_percentile_window: int
+    ema200_slope_lookback: int
     loop_interval_seconds: int
     max_risk_per_trade: float
     max_daily_loss: float
@@ -105,6 +108,9 @@ def load_config() -> BotConfig:
         dry_run_raw=os.getenv("DRY_RUN"),
         symbol=os.getenv("SYMBOL", "BTC/USDT"),
         timeframe=os.getenv("TIMEFRAME", "1h"),
+        strategy_variant=os.getenv("STRATEGY_VARIANT", "baseline").strip().lower(),
+        atr_percentile_window=_get_int("ATR_PERCENTILE_WINDOW", 200),
+        ema200_slope_lookback=_get_int("EMA200_SLOPE_LOOKBACK", 12),
         loop_interval_seconds=_get_int("LOOP_INTERVAL_SECONDS", 60),
         max_risk_per_trade=_get_float("MAX_RISK_PER_TRADE", 0.005),
         max_daily_loss=_get_float("MAX_DAILY_LOSS", 0.02),

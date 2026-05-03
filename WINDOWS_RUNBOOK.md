@@ -46,6 +46,32 @@ python -m src.bot
 The script forces `DRY_RUN=1`, `OKX_DEMO=1`, and `BOT_MODE=live_loop`.
 It does not edit `.env` and does not require API keys for market-data-only dry-run observation.
 
+## Research-Only 4h Candidate Dry-Runs
+
+These commands keep dry-run protections on and opt in to a research candidate without changing the default baseline strategy.
+
+Variant D2:
+
+```powershell
+$env:TIMEFRAME="4h"
+$env:STRATEGY_VARIANT="4h_d2"
+$env:DRY_RUN="1"
+$env:OKX_DEMO="1"
+python -m src.bot --live-loop --dry-run --okx-demo
+```
+
+Variant D6:
+
+```powershell
+$env:TIMEFRAME="4h"
+$env:STRATEGY_VARIANT="4h_d6"
+$env:DRY_RUN="1"
+$env:OKX_DEMO="1"
+python -m src.bot --live-loop --dry-run --okx-demo
+```
+
+`4h_d2` and `4h_d6` fail startup unless `TIMEFRAME=4h` and `DRY_RUN=1`.
+
 ## Watch Heartbeat
 
 ```powershell
