@@ -9,3 +9,4 @@ logs/
 runtime/
 data/paper_state.json
 data/*.json
+data/
