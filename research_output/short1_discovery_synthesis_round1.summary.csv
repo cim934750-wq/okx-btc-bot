@@ -1,0 +1,27 @@
+item,value
+study,short1_discovery_synthesis_round1
+workspace,D:\Bot\0412_Bot_short1_research_workspace
+old_c_workspace_written,false
+current_parent,below-EMA20 displacement mainly protects against adverse-dominant failure
+leading_antecedent,entry_short_ema20_gap_atr
+secondary_context,lower entry_adx
+usable_markets,"FILUSDT,DOTUSDT,ATOMUSDT,UNIUSDT,ADAUSDT,XRPUSDT,LTCUSDT,DOGEUSDT,NEARUSDT,ETCUSDT,AAVEUSDT"
+executed_total,155
+executed_clean_followthrough,61
+executed_adverse_dominant,66
+executed_weak_followthrough,11
+executed_failed_no_followthrough,1
+executed_mixed_chop,16
+starter_total,474
+starter_clean_followthrough,176
+starter_adverse_dominant,227
+starter_weak_followthrough,41
+starter_failed_no_followthrough,1
+starter_mixed_chop,29
+clean_vs_adverse_executed_support,10/11
+clean_vs_adverse_starter_support,11/11
+clean_vs_weak_executed_support,1/6
+clean_vs_weak_starter_support,8/11
+clean_vs_mixed_executed_support,3/9
+clean_vs_mixed_starter_support,4/9
+implementation_readiness,not implementation-ready

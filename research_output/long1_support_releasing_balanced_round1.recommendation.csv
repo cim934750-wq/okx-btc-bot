@@ -1,0 +1,2 @@
+recommendation,proxy_note,balanced_count,balanced_better_than_unbalanced,balanced_better_than_non_mp_balanced,balanced_better_than_all_other
+still_redesign_evidence_only,support_to_release_sequence and entry_exec_distance_atr <= entry_cont_gap_atr + p1_close_ema20_gap_atr,1,False,False,True

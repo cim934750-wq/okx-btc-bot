@@ -1,4 +1,10 @@
-ccxt>=4.4.0
-pandas>=2.2.0
-python-dotenv>=1.0.0
-numpy>=1.26.0
+fastapi==0.116.1
+httpx==0.28.1
+pydantic==2.11.7
+python-dotenv==1.1.1
+uvicorn==0.35.0
+backtesting==0.6.4
+matplotlib==3.10.5
+numpy==2.3.2
+optuna==4.5.0
+pandas==2.3.1

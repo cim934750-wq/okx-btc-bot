@@ -1,0 +1,2 @@
+recommendation,proxy_note,releasing_count,releasing_better_than_not_releasing,releasing_better_than_non_mp_releasing,releasing_better_than_all_other
+still_redesign_evidence_only,accepted_base and entry_close>p1_close and entry_gap>p1_gap and entry_atr_ratio<=p1_atr_ratio,2,True,True,True

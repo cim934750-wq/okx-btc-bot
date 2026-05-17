@@ -1,0 +1,2 @@
+verdict,branch_presence_judgment,scope_update,pre2022_total,post2022_total,pre2022_support_good_count,post2022_support_good_count,post2022_all_weak,implementation_trigger
+historically_asymmetric_positive_branch,positive branch is meaningfully present only in pre-2022; post-2022 is genuinely weak-side-only under the frozen stack on current sample,keep Early-only / pre-2022-biased scope,3,4,2,0,True,A promotion-ready result would need the positive branch to survive in a meaningfully populated later same-family sample or else be replaced by a later-regime redesign explanation.

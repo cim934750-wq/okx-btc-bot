@@ -1,0 +1,6 @@
+group,count,losers,winners,loser_share,avg_pnl
+orderly_reset_pre_acceptance_intact_and_accepted,2,0,2,0.0,162.49327310015084
+orderly_reset_pre_acceptance_loose_but_accepted,2,1,1,0.5,1.5743611452652155
+orderly_reset_pre_acceptance_intact_but_not_accepted,2,1,1,0.5,-7.947404262868421
+orderly_reset_pre_acceptance_loose_and_not_accepted,5,4,1,0.8,21.440852937920617
+outside_orderly_reset,79,55,24,0.6962025316455697,10.407453131190989

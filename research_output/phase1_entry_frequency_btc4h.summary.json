@@ -1,0 +1,14 @@
+{
+  "study_name": "phase1_entry_frequency_btc4h",
+  "storage_mode": "memory",
+  "best_params": {
+    "min_exec_adx": 16,
+    "min_exec_atr_ratio": 0.9,
+    "min_ema_distance_atr": 0.05,
+    "pullback_overshoot_atr": 0.7,
+    "cooldown_bars": 3,
+    "direction_cooldown_bars": 2
+  },
+  "best_value": 79.91233425316747,
+  "top_trials_csv": "C:\\Users\\matra\\OneDrive\\Desktop\\Bot\\0412_Bot\\research_output\\phase1_entry_frequency_btc4h.top_trials.csv"
+}

@@ -1,0 +1,8 @@
+item,value
+study_type,short1_fil_followthrough_vs_adverse_excursion_round1
+executed_followthrough_adverse,6/17
+starter_followthrough_adverse,21/53
+entry_extension_judgment,"entry_exec_distance_atr is lower in followthrough groups for executed and starter populations, so it deserves the next diagnostic focus as an antecedent, not as an implementation rule."
+first_parent_judgment,"less-extended downside continuation with adverse-excursion avoidance is the strongest current parent wording, but still descriptive and not finalized."
+next_step,Audit lower-extension Short1 contexts across FIL and other usable markets to test whether the entry-extension antecedent recurs beyond FIL.
+implementation_readiness,not_open_research_only

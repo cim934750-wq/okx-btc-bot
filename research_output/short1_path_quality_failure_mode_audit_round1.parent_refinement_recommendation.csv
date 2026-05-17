@@ -1,0 +1,6 @@
+item,judgment
+current_parent,adverse-excursion-avoidant downside followthrough
+refined_parent_candidate,clean downside followthrough versus adverse-dominant failure
+refinement_reason,Adverse-dominant failure is the leading ex-clean failure mode in both executed and starter populations.
+recommended_next_diagnostic,look for pre-entry predictors of adverse_dominant
+implementation_readiness,Not implementation-ready.

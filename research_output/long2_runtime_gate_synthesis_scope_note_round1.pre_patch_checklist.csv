@@ -1,0 +1,8 @@
+order,check,status,why_required
+1,identify exact code lines where runtime prices are scaled,required_not_done_in_this_synthesis,Confirms whether FractionalBacktest scaling is the source of runtime Close/entry units.
+2,identify exact code lines where ATR remains unscaled,required_not_done_in_this_synthesis,Confirms whether ATR is carried into Strategy in market-price units while prices are scaled.
+3,confirm whether mismatch exists only in Long2 in_profit or elsewhere,required_not_done_in_this_synthesis,Prevents a narrow patch from missing related unit mismatches.
+4,confirm intended units for add_on_profit_atr,required_not_done_in_this_synthesis,Determines whether the gate should compare ATR-distance in runtime units or market-price units.
+5,construct minimal read-only current comparison example,required_not_done_in_this_synthesis,Shows the exact current `Close > avg_entry + atr * add_on_profit_atr` values without modifying code.
+6,construct minimal read-only scale-consistent comparison example,required_not_done_in_this_synthesis,"Shows the diagnostic alternative as evidence only, not a patch."
+7,do not modify code during this checklist,standing_boundary,Keeps validation separate from implementation.

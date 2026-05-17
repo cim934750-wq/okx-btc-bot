@@ -1,0 +1,9 @@
+order,verification_step,command_or_check,expected_outcome,notes
+1,pre_patch_guard,git diff -- research/strategy.py research/config.py research/indicators.py research/data.py,No unintended source changes before implementation approval.,Patch-plan-only task should leave diff empty.
+2,compile_after_approved_patch,python -m py_compile research\strategy.py && python -m compileall research,No syntax errors after approved patch.,Only after patch approval.
+3,rerun_long2_gate_audit,rerun long2_runtime_in_profit_gate_audit_round1 logic,runtime in_profit no longer 0/1378 if units were the blocker; record new pass count.,Do not interpret as performance.
+4,confirm_or_explain_Long2_execution,rerun baseline trade export across 19 4h markets,"Long2 executes if remaining gates permit; if still zero, identify next blocker descriptively.",No profitability claim.
+5,check_short2_mirror,instrument Short2 add-on in_profit after approved patch if broad scope included,"Short2 mirror no longer suffers same unit mismatch, or excluded scope is documented.",Do not reopen Short1 discovery.
+6,baseline_trade_summary_before_after,"compare Long1, Long2, Short1, Short2 counts before/after patch",Any count changes are measured and explained by runtime unit consistency changes.,Especially watch Long1/Short1 because management paths may change.
+7,candidate_examples_after_patch,recreate BTC/ETH/TRX minimal examples,Current runtime threshold and scale-consistent threshold should align in units.,Examples should no longer show impossible mixed-scale thresholds.
+8,no_performance_claim_boundary,review outputs before summary,Report gate behavior and trade counts only unless a full approved post-patch backtest is run and interpreted separately.,Avoid optimization or threshold sweep.

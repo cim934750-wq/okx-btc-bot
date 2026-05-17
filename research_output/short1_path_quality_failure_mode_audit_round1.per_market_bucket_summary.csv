@@ -1,0 +1,12 @@
+symbol,executed_total_count,executed_clean_followthrough_count,executed_weak_followthrough_count,executed_adverse_dominant_count,executed_failed_no_followthrough_count,executed_mixed_chop_count,executed_failed_no_followthrough_exploratory_count,executed_delayed_after_initial_followthrough_count,executed_dominant_failure_mode,starter_total_count,starter_clean_followthrough_count,starter_weak_followthrough_count,starter_adverse_dominant_count,starter_failed_no_followthrough_count,starter_mixed_chop_count,starter_failed_no_followthrough_exploratory_count,starter_delayed_after_initial_followthrough_count,starter_dominant_failure_mode
+FILUSDT,23,6,3,11,0,3,7,3,adverse_dominant,74,21,5,43,0,5,30,5,adverse_dominant
+DOTUSDT,18,11,0,4,0,3,3,3,adverse_dominant,63,33,4,19,0,7,12,7,adverse_dominant
+ATOMUSDT,18,7,1,7,0,3,4,3,adverse_dominant,56,18,8,25,0,5,14,5,adverse_dominant
+UNIUSDT,16,7,4,5,0,0,4,0,adverse_dominant,42,19,7,16,0,0,9,0,adverse_dominant
+ADAUSDT,13,6,0,5,0,2,3,2,adverse_dominant,36,10,1,22,0,3,17,3,adverse_dominant
+XRPUSDT,13,5,1,6,0,1,2,1,adverse_dominant,34,15,3,15,0,1,6,1,adverse_dominant
+LTCUSDT,12,3,0,7,1,1,6,1,adverse_dominant,34,9,1,19,1,4,15,4,adverse_dominant
+DOGEUSDT,11,3,0,8,0,0,6,0,adverse_dominant,56,18,8,30,0,0,20,0,adverse_dominant
+NEARUSDT,11,7,1,2,0,1,2,1,adverse_dominant,28,15,1,10,0,2,8,2,adverse_dominant
+ETCUSDT,10,4,0,5,0,1,4,1,adverse_dominant,29,11,2,15,0,1,9,1,adverse_dominant
+AAVEUSDT,10,2,1,6,0,1,3,1,adverse_dominant,22,7,1,13,0,1,9,1,adverse_dominant

@@ -1,0 +1,12 @@
+item,judgment
+structural_interpretation,transition_bucket_or_underpowered_followthrough
+reason,"weak_followthrough has favorable 24-bar short return by definition, but MFE is not dominant over MAE; aggregate path affinity is split (executed closer to mixed_chop, starter closer to adverse_dominant), and per-market evidence is sparse/inconsistent."
+executed_clean_vs_weak_path_delta,"weak-minus-clean return -0.023539, MFE -3.535895, MAE 1.717281, MFE-MAE -5.253176"
+starter_clean_vs_weak_path_delta,"weak-minus-clean return -0.031951, MFE -3.176669, MAE 2.271985, MFE-MAE -5.448654"
+weak_path_affinity,executed mixed_chop; starter adverse_dominant
+entry_gap_delta,"weak-minus-clean entry_short_ema20_gap_atr avg delta: executed 0.012502, starter -0.042363"
+entry_adx_delta,"weak-minus-clean entry_adx avg delta: executed 0.421128, starter 0.521510"
+executed_affinity_counts,"{'sample_too_small_no_weak_followthrough': 5, 'mixed_chop': 2, 'adverse_dominant': 2, 'inconsistent_or_tied': 2}"
+starter_affinity_counts,"{'adverse_dominant': 6, 'mixed_chop': 3, 'inconsistent_or_tied': 2}"
+parent_update,Keep current parent; mention weak_followthrough as unresolved underpowered/transition followthrough behavior rather than a new parent.
+implementation_readiness,Not implementation-ready.

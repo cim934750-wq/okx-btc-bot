@@ -1,0 +1,3 @@
+comparison,accepted_gate_intact_missing_good_count,accepted_other_count,accepted_gate_intact_missing_good_avg_pnl,accepted_other_avg_pnl,intact_missing_good_count,intact_missing_bad_count,loose_missing_good_count,loose_missing_bad_count
+accepted_side_concentration,2.0,2.0,162.49327310015084,1.5743611452652155,,,,
+not_accepted_side_shape,,,,,0.0,2.0,4.0,1.0

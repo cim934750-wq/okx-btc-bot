@@ -1,0 +1,3 @@
+branch,total_trade_count,orderly_count,nonorderly_count,support_stable_count,support_unstable_count,support_stable_compact_count,support_stable_noncompact_count,accepted_support_stable_full_core_count,accepted_support_stable_noncore_compact_count,accepted_support_stable_noncore_noncompact_count,accepted_support_unstable_count,accepted_nonorderly_count
+pre2022_accepted_side_branch,3,3,0,3,0,3,0,1,2,0,0,0
+post2022_accepted_side_branch,1,1,0,1,0,1,0,1,0,0,0,0

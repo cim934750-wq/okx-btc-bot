@@ -1,0 +1,2 @@
+audit,run_status,raw_add_long_signal_total,active_long_candidates,runtime_in_profit_pass,scale_consistent_diagnostic_pass,primary_interpretation,pre_patch_judgment,next_step
+long2_scale_reference_validation_audit_round1,completed,3958,1378,0,1324,Validated: Long2 in_profit mixes FractionalBacktest-scaled runtime Close/avg_entry with unscaled ATR distance.,prepare_patch_plan_only may be justified after explicit user approval; no patch now.,"Ask for explicit approval to prepare a patch plan only, covering Long2 and any other runtime ATR-distance comparisons; do not implement."

@@ -1,0 +1,3 @@
+branch,total_trade_count,pathway_directional_complete_count,pathway_directional_absent_stall_count,pathway_directional_present_but_incomplete_count,pathway_other_count
+pre2022_pathway_branch,3,1,2,0,0
+post2022_pathway_branch,1,1,0,0,0

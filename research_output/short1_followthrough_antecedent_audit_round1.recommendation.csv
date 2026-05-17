@@ -1,0 +1,9 @@
+item,value
+study_type,short1_followthrough_antecedent_audit_round1
+source_labels,short1_path_quality_stability_audit_round1 executed/starter label outputs
+stable_both_population_fields,entry_short_ema20_gap_atr
+executed_only_fields,"entry_adx,entry_exec_distance_atr,entry_atr_ratio"
+entry_extension_status,"secondary; stable in executed but weaker in starter, not a standalone parent"
+parent_status,adverse-excursion-avoidant downside followthrough remains the first Short1 discovery parent
+next_step,"Run a same-basket short bearish-pressure antecedent audit around lower ADX / lower plus_di / stronger negative di_spread, while keeping entry extension secondary and descriptive."
+implementation_readiness,not_open_research_only

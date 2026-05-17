@@ -1,0 +1,11 @@
+branch,group,trade_count,losers,winners,loser_share,avg_pnl
+pre2022_accepted_side_sample,accepted_side_full_core,1,0,1,0.000000,213.024813
+pre2022_accepted_side_sample,accepted_side_partial_buildup_directional_only,1,0,1,0.000000,12.752680
+pre2022_accepted_side_sample,accepted_side_partial_buildup_preaccept_only,1,1,0,1.000000,-9.603957
+pre2022_accepted_side_sample,accepted_side_other_orderly,0,0,0,0.000000,0.000000
+pre2022_accepted_side_sample,accepted_side_nonorderly,0,0,0,0.000000,0.000000
+post2022_accepted_side_sample,accepted_side_full_core,1,0,1,0.000000,111.961733
+post2022_accepted_side_sample,accepted_side_partial_buildup_directional_only,0,0,0,0.000000,0.000000
+post2022_accepted_side_sample,accepted_side_partial_buildup_preaccept_only,0,0,0,0.000000,0.000000
+post2022_accepted_side_sample,accepted_side_other_orderly,0,0,0,0.000000,0.000000
+post2022_accepted_side_sample,accepted_side_nonorderly,0,0,0,0.000000,0.000000

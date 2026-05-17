@@ -1,0 +1,4 @@
+group,trade_count,support_stability_pass,support_stability_fail,base_compact_pass,base_compact_fail,directional_preparation_pass,directional_preparation_fail,support_to_release_yes,support_to_release_no,momentum_yes,momentum_no
+post2022_full_core_survivor,1,1,0,1,0,1,0,1,0,1,0
+post2022_upstream_fragility_cluster,3,0,3,1,2,3,0,0,3,2,1
+post2022_boundary_local_failure_reference,1,1,0,1,0,1,0,0,1,0,1

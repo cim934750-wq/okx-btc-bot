@@ -1,0 +1,6 @@
+question,status,allowed_next_work
+What explains weak_followthrough if displacement is often comparable to clean?,open,Investigate weak_followthrough separately with existing labels only.
+What distinguishes mixed_chop from clean when displacement can be high in both?,open,Compare adverse_dominant vs mixed_chop or clean vs mixed_chop descriptively; no thresholds.
+Is LTCUSDT an isolated executed contradiction or a subtype clue?,open,"Review LTCUSDT as contradiction context, not as a rule exception."
+Does lower ADX add explanatory value beyond context?,partly_open,Keep lower ADX secondary; do not promote unless future descriptive work supports it.
+Can failed_no_followthrough be interpreted?,not_enough_sample,Do not interpret strongly; n=1.

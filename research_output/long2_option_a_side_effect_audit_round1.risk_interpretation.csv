@@ -1,0 +1,5 @@
+item,judgment,evidence,next_need
+Option A side effects,too_broad_to_interpret_without_additional_instrumentation,Exported Long1 and Short1 counts increased materially after management ATR-distance scaling; exit reasons are not available in trade exports.,Narrow management-exit audit.
+Long2 remaining gates,in_profit_fixed_remaining_blockers_len_and_gap,post-patch Long2 in_profit 1034/1088; len pass 492; gap pass 875.,Gate accounting/timing audit if needed.
+Short2 zero exports,mostly_material_scarcity_or_position_context,raw add_short 39; active-short candidates 3; all Short2 gates 0.,Separate Short2 mirror audit only if Long2 side effects stabilize.
+Non-ATR indicator scale,separate_unpatched_risk,EMA trend_fail comparisons remain runtime Close vs unscaled ema50 features.,"Separate non-ATR scale audit, not optimization."

@@ -1,0 +1,5 @@
+group,count,losers,winners,loser_share,avg_pnl
+mp_orderly_support_releasing_first_step_reachable,2,0,2,0.0,162.49327310015084
+mp_orderly_support_releasing_first_step_bad,0,0,0,0.0,0.0
+non_mp_orderly_support_releasing_first_step_reachable,0,0,0,0.0,0.0
+other_long1,88,61,27,0.6931818181818182,10.41644290702824

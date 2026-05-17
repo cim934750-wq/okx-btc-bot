@@ -1,0 +1,9 @@
+metric,value
+starter_lifecycles,4.0
+tp1_leg_profitable_exits,3.0
+runner_profitable_exits,3.0
+tp1_theoretical_reached_count,3.0
+tp2_theoretical_reached_count,1.0
+legs_exit_same_time_count,1.0
+legs_exit_same_price_count,0.0
+tp1_leg_tp_column_median,120260.29433695106

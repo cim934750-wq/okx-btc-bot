@@ -1,0 +1,2 @@
+dataset,rows,columns,columns_match_expected,first_timestamp,last_timestamp,missing_4h_timestamps,non_4h_gap_count,max_gap_hours
+data/ETHUSDT_4h.csv,16152,"timestamp,open,high,low,close,volume",True,2019-01-01 00:00:00+00:00,2026-05-16 16:00:00+00:00,5,4,12.0

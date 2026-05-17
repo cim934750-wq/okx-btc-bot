@@ -1,0 +1,2 @@
+verdict,early_count,late_count,early_support_good_count,late_support_good_count,time_slice_durability_judgment,scope_update,implementation_trigger
+coherent_early_only,4,3,2,0,the frozen 3-layer stack is coherent only in the early slice on current sample,narrow scope to early-only,A promotion-ready result would need the frozen stack to remain interpretable on a meaningfully larger same-family population across more than one time subperiod.

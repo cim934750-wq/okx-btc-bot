@@ -1,0 +1,9 @@
+group,count,losers,winners,loser_share,avg_pnl
+post2022_gate_intact_missing_bad,1,1,0,1.0,-24.21175388391353
+post2022_gate_loose_missing_good_support_good,0,0,0,0.0,0.0
+post2022_gate_loose_missing_good_support_bad,3,3,0,1.0,-9.675846288697063
+post2022_gate_loose_missing_bad,0,0,0,0.0,0.0
+post2022_other,0,0,0,0.0,0.0
+pre2022_reference_slice,3,1,2,0.3333333333333333,48.18291630462366
+other_orderly_reset,4,1,3,0.25,82.03381712270803
+outside_orderly_reset,79,55,24,0.6962025316455697,10.407453131190989

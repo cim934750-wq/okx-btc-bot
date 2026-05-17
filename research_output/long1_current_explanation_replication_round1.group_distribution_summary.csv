@@ -1,0 +1,4 @@
+context,trade_count,subgroup_accepted_completed_reference,subgroup_accepted_nonintact_reference,subgroup_support_stable_compact_count,subgroup_directionally_absent_nonintact_count,losers,winners,loser_share,avg_pnl,subgroup_preaccept_intact_completed,subgroup_support_stable_compact_nonintact,subgroup_directionally_absent,subgroup_directionally_present,subgroup_directional_present_support_unstable,subgroup_directional_absent_support_stable,subgroup_compact_count,subgroup_support_residence_present
+accepted_seed_reference,4,2.0,2.0,4.0,2.0,1,3,0.25,82.03381712270803,,,,,,,,
+accepted_nearby_context,4,,,,,1,3,0.25,82.03381712270803,2.0,2.0,2.0,2.0,,,,
+weak_nearby_context,4,,,,,3,1,0.75,32.528741000848974,,,,,3.0,1.0,2.0,1.0

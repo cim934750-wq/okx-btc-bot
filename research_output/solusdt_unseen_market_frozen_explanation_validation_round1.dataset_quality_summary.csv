@@ -1,0 +1,2 @@
+dataset,rows,columns,columns_match_expected,first_timestamp,last_timestamp,missing_4h_timestamps,non_4h_gap_count,max_gap_hours
+data/SOLUSDT_4h.csv,12628,"timestamp,open,high,low,close,volume",True,2020-08-11 04:00:00+00:00,2026-05-16 16:00:00+00:00,0,0,0.0

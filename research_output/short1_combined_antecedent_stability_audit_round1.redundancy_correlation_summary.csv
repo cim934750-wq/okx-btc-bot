@@ -1,0 +1,15 @@
+population_scope,core_field,secondary_field,secondary_display,n,pearson_corr_with_core,spearman_corr_with_core,both_supporting_market_count,core_only_support_count,secondary_only_support_count,both_contradict_count,directional_overlap_share,redundancy_judgment
+executed_short1,entry_short_ema20_gap_atr,entry_adx,entry_adx,155,-0.28928905991675297,-0.3300989333247398,10,0,1,0,0.9090909090909091,not_obvious_duplicate
+executed_short1,entry_short_ema20_gap_atr,entry_exec_distance_atr,entry_exec_distance_atr,155,0.045693382944723214,0.006564403338596887,9,1,1,0,0.8181818181818182,not_obvious_duplicate
+executed_short1,entry_short_ema20_gap_atr,entry_di_spread,di_spread,155,-0.09926277160898876,-0.09438303631852017,7,3,0,1,0.6363636363636364,not_obvious_duplicate
+executed_short1,entry_short_ema20_gap_atr,entry_plus_di,plus_di,155,-0.149426778451069,-0.15270213657310433,6,4,1,0,0.5454545454545454,not_obvious_duplicate
+executed_short1,entry_short_ema20_gap_atr,entry_short_resumption_strong,entry_short_resumption_strong,155,0.2803053877490154,0.2756380729543084,7,3,0,1,0.6363636363636364,not_obvious_duplicate
+executed_short1,entry_short_ema20_gap_atr,entry_atr_ratio,entry_atr_ratio,155,-0.05741568221602441,-0.02725983693725629,8,2,1,0,0.7272727272727273,not_obvious_duplicate
+executed_short1,entry_short_ema20_gap_atr,entry_minus_di,minus_di,155,-0.006188070959563465,-0.01949663239985821,7,3,0,1,0.6363636363636364,not_obvious_duplicate
+starter_short_signal,entry_short_ema20_gap_atr,entry_adx,entry_adx,474,-0.33498344213396297,-0.3201492451121381,8,2,0,1,0.7272727272727273,not_obvious_duplicate
+starter_short_signal,entry_short_ema20_gap_atr,entry_exec_distance_atr,entry_exec_distance_atr,474,0.06959158924936586,0.04563886232293342,6,4,0,1,0.5454545454545454,not_obvious_duplicate
+starter_short_signal,entry_short_ema20_gap_atr,entry_di_spread,di_spread,474,-0.07106706162233316,-0.09568380769409543,7,3,1,0,0.6363636363636364,not_obvious_duplicate
+starter_short_signal,entry_short_ema20_gap_atr,entry_plus_di,plus_di,474,-0.16405961053191676,-0.15749832740118289,8,2,1,0,0.7272727272727273,not_obvious_duplicate
+starter_short_signal,entry_short_ema20_gap_atr,entry_short_resumption_strong,entry_short_resumption_strong,474,0.34730134477649194,0.3410424365597014,7,3,1,0,0.6363636363636364,not_obvious_duplicate
+starter_short_signal,entry_short_ema20_gap_atr,entry_atr_ratio,entry_atr_ratio,474,-0.05378815695753779,-0.019389751441251997,5,5,1,0,0.45454545454545453,not_obvious_duplicate
+starter_short_signal,entry_short_ema20_gap_atr,entry_minus_di,minus_di,474,-0.03928686608444111,-0.016465020500779613,7,3,1,0,0.6363636363636364,not_obvious_duplicate

@@ -1,0 +1,15 @@
+record_type,group,metric,pass_count,fail_count,pass_rate,avg_value,min_value,max_value
+component_pass_fail,accepted_nonintact_reference,precursor_atr_ge_atr_ma,0,2,0.0,,,
+component_pass_fail,accepted_nonintact_reference,gate_e0_atr_ratio_rebuild_matches_gate,2,0,1.0,,,
+precursor_value_summary,accepted_nonintact_reference,gate_e0_atr,,,,178.4309592498762,171.74725029395597,185.11466820579642
+precursor_value_summary,accepted_nonintact_reference,gate_e0_atr_ma,,,,192.69513204265922,185.684001376547,199.70626270877142
+precursor_value_summary,accepted_nonintact_reference,gate_e0_atr_ratio,,,,0.9259392169059748,0.9249437163176552,0.9269347174942946
+precursor_value_summary,accepted_nonintact_reference,gate_e0_atr_ratio_rebuilt,,,,0.9259392169059748,0.9249437163176552,0.9269347174942946
+precursor_value_summary,accepted_nonintact_reference,PnL,,,,1.5743611452652155,-9.60395747490415,12.75267976543458
+component_pass_fail,weak_nonintact_reference,precursor_atr_ge_atr_ma,3,0,1.0,,,
+component_pass_fail,weak_nonintact_reference,gate_e0_atr_ratio_rebuild_matches_gate,3,0,1.0,,,
+precursor_value_summary,weak_nonintact_reference,gate_e0_atr,,,,618.1010079025461,304.01755336347844,779.0577672519056
+precursor_value_summary,weak_nonintact_reference,gate_e0_atr_ma,,,,574.6848253399879,271.1333586565987,758.6679504108863
+precursor_value_summary,weak_nonintact_reference,gate_e0_atr_ratio,,,,1.0866638281420915,1.016555006277207,1.12215227000215
+precursor_value_summary,weak_nonintact_reference,gate_e0_atr_ratio_rebuilt,,,,1.0866638281420915,1.016555006277207,1.12215227000215
+precursor_value_summary,weak_nonintact_reference,PnL,,,,-9.675846288697063,-16.90353133430004,-0.7035496149555155

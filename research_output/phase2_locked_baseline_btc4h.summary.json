@@ -1,0 +1,10 @@
+{
+  "study_name": "phase2_locked_baseline_btc4h",
+  "storage_mode": "memory",
+  "best_params": {
+    "long_rsi_min": 54,
+    "short_rsi_max": 47
+  },
+  "best_value": 83.35222472187101,
+  "top_trials_csv": "C:\\Users\\matra\\OneDrive\\Desktop\\Bot\\0412_Bot\\research_output\\phase2_locked_baseline_btc4h.top_trials.csv"
+}

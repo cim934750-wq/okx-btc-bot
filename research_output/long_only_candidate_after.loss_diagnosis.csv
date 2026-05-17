@@ -1,0 +1,2 @@
+entry_timestamp,exit_timestamp,entry_price,exit_price,stop_price_at_exit,trailing_stop_at_exit,tp1_hit,tp2_hit,trailing_active,weekly_bias,daily_state,exec_distance_atr,rsi,adx,atr_ratio,pnl,return_pct,held_bars,exit_reason
+2025-08-12 00:00:00+00:00,2025-08-14 12:00:00+00:00,118857.69999999998,118257.25,116649.13906151651,121161.1585922748,True,True,True,bull,bull,1.317855780132553,54.33883817023973,33.792606937415,1.1579971942835496,-6.046284848844705,-0.006049313380622284,15,trailing_or_stop_exit

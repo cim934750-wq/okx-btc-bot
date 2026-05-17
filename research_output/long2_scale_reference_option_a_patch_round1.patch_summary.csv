@@ -1,0 +1,5 @@
+item,status,detail
+runtime_atr_distance_scaling,applied,"ATR-like distances in _manage_long, _manage_short, Long2 in_profit, and Short2 in_profit now use _to_runtime_distance before runtime price comparisons."
+signal_features,unchanged,research/indicators.py and signal construction were not modified.
+config_values,unchanged,StrategyParams and BacktestConfig were not modified.
+double_scaling_guard,observed,Existing broker-executable _enter_long path that already used _to_runtime_distance was left unchanged.

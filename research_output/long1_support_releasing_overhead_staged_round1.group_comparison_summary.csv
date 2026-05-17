@@ -1,0 +1,4 @@
+comparison,lhs_group,rhs_group,lhs_count,rhs_count,lhs_loser_share,rhs_loser_share,lhs_avg_pnl,rhs_avg_pnl
+mp_staged_vs_mp_compressed,mp_orderly_support_releasing_overhead_staged,mp_orderly_support_releasing_overhead_compressed,2,0,0.0,0.0,162.49327310015084,0.0
+mp_staged_vs_non_mp_staged,mp_orderly_support_releasing_overhead_staged,non_mp_orderly_support_releasing_overhead_staged,2,0,0.0,0.0,162.49327310015084,0.0
+mp_staged_vs_all_other_long1,mp_orderly_support_releasing_overhead_staged,all_other_baseline_long1,2,88,0.0,0.6931818181818182,162.49327310015084,10.41644290702824

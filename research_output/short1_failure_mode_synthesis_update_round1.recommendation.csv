@@ -1,0 +1,12 @@
+item,judgment
+diagnostic_or_synthesis,short1_failure_mode_synthesis_update_round1
+workspace_boundary,Created from D workspace only: D:\Bot\0412_Bot_short1_research_workspace; outputs saved under D:\Bot\0412_Bot_short1_research_workspace\research_output.
+methodological_boundary,"Synthesis only; used saved D outputs; no new diagnostic, no source/strategy changes, no proxy changes, no threshold sweep."
+main_parent,below-EMA20 displacement mainly protects against adverse-dominant failure
+leading_antecedent,"entry_short_ema20_gap_atr; diagnostic separator only, not a threshold rule."
+stable_finding,adverse_dominant is the stable main failure target.
+unresolved_behaviors,mixed_chop is separate unresolved behavior; weak_followthrough is unresolved underpowered/transition behavior; failed_no_followthrough is too small.
+closed_or_deprioritized,"Do not promote combined antecedents, DI/resumption/entry-distance fields, or weak/mixed buckets to implementation layers."
+allowed_future_work,"If continuing discovery, only one fixed descriptive unresolved non-clean grouping check is allowed; otherwise pause parent refinement."
+recommended_next_step,Pause implementation and create a concise handoff/scope note before any further Short1 diagnostics.
+implementation_readiness,Not implementation-ready.

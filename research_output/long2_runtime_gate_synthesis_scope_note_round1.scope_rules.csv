@@ -1,0 +1,10 @@
+rule_type,rule,detail
+forbidden,source patch,Do not modify strategy/source files or patch the in_profit gate during this scope.
+forbidden,strategy edit,Do not change strategy logic or proxy definitions.
+forbidden,threshold sweep,Do not sweep add_on_profit_atr or convert diagnostic counts into thresholds.
+forbidden,performance claim,Do not claim Long2 performance from zero executed Long2 trades.
+forbidden,implementation planning,Do not open implementation planning from this synthesis.
+allowed,fixed scale-reference validation audit,"Read-only validation of runtime prices, entry price, ATR units, and comparison inputs."
+allowed,unit-style read-only reproduction,Construct a minimal no-edit example of current and scale-consistent in_profit comparisons.
+allowed_with_explicit_approval,source-level patch proposal,Only after validation and explicit user approval.
+allowed_with_explicit_approval,post-patch backtest,Only after a patch has been explicitly approved and applied.

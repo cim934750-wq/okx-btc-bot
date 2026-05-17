@@ -1,0 +1,13 @@
+timeslice,group,count,losers,winners,loser_share,avg_pnl
+Early,timeslice_gate_intact_missing_bad,1,0,1,0.0,8.316945358176689
+Early,timeslice_gate_loose_missing_good_support_good,1,0,1,0.0,159.14250286948706
+Early,timeslice_gate_loose_missing_good_support_bad,1,1,0,1.0,-11.420457916835629
+Early,timeslice_gate_loose_missing_bad,1,1,0,1.0,-22.910699313792787
+Early,timeslice_other,0,0,0,0.0,0.0
+Late,timeslice_gate_intact_missing_bad,1,1,0,1.0,-24.21175388391353
+Late,timeslice_gate_loose_missing_good_support_good,0,0,0,0.0,0.0
+Late,timeslice_gate_loose_missing_good_support_bad,2,2,0,1.0,-8.803540474627779
+Late,timeslice_gate_loose_missing_bad,0,0,0,0.0,0.0
+Late,timeslice_other,0,0,0,0.0,0.0
+other_orderly_reset,other_orderly_reset,4,1,3,0.25,82.03381712270803
+outside_orderly_reset,outside_orderly_reset,79,55,24,0.6962025316455697,10.407453131190989

@@ -1,0 +1,4 @@
+branch,total_trade_count,nonintact_directional_absent_no_sequence_count,nonintact_directional_absent_sequence_present_count,nonintact_directional_present_count,nonintact_other_count,directional_preparation_pass_count,directional_preparation_fail_count
+pre2022_nonintact_accepted_branch,2,1,1,0,0,0,2
+post2022_nonintact_accepted_branch,0,0,0,0,0,0,0
+post2022_upstream_fragility_reference,3,,,,,3,0

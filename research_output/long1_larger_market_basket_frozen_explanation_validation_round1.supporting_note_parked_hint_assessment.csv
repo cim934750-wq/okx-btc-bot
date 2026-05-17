@@ -1,0 +1,6 @@
+item,status,assessment
+gate_e0_atr_ratio >= 1.0,supporting_note_only,Tracked inside frozen family reconstruction only; not promoted into a new layer.
+e0-decisive ATR-readiness timing,supporting_note_only,Not re-drilled in basket validation; remains subordinate.
+weak-side timing split,parked_scope_only,Not reopened.
+weak-side compactness hint,parked_scope_only,Not reopened.
+weak background note,monitoring_note_only,"weak_background_note appears in 3 markets (BCHUSDT,LINKUSDT,LTCUSDT) with 3 total trades; remains non-promoted."

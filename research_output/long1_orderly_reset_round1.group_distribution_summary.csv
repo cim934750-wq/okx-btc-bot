@@ -1,0 +1,5 @@
+group,count,losers,winners,loser_share,avg_pnl
+mp_orderly_reset,0,0,0,0.0,0.0
+mp_not_orderly_reset,8,5,3,0.625,29.625301765124274
+non_mp_orderly_reset,0,0,0,0.0,0.0
+other_long1,82,56,26,0.6829268292682927,12.251598876802348

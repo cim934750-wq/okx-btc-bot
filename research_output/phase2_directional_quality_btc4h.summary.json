@@ -1,0 +1,10 @@
+{
+  "study_name": "phase2_directional_quality_btc4h",
+  "storage_mode": "memory",
+  "best_params": {
+    "long_rsi_min": 54,
+    "short_rsi_max": 46
+  },
+  "best_value": 67.14819123825639,
+  "top_trials_csv": "C:\\Users\\matra\\OneDrive\\Desktop\\Bot\\0412_Bot\\research_output\\phase2_directional_quality_btc4h.top_trials.csv"
+}

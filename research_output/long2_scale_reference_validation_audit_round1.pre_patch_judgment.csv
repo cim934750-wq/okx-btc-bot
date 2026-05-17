@@ -1,0 +1,5 @@
+judgment_item,status,evidence,boundary
+source_patch_consideration,justified_to_plan_only_after_user_approval,Exact line evidence and examples confirm Long2 gate mixes runtime scaled prices with unscaled ATR.,Do not implement or patch in this audit.
+performance_claim_readiness,not_ready,Actual Long2 trades remain 0; scale-consistent pass count is diagnostic-only.,No profitability or quality claim allowed.
+next_approval_gated_step,prepare_patch_plan_only,"Before source change, plan should identify intended units and all possibly affected runtime ATR comparisons.",Patch plan only; implementation requires separate explicit approval.
+minimum_patch_scope_to_consider_later,unknown_until_plan,Mismatch may also affect Short2 and other runtime ATR-distance comparisons.,Do not assume a single-line fix without broader scope validation.

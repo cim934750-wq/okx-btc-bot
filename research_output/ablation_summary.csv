@@ -1,0 +1,5 @@
+variant,survives_validation,segment,net_profit,profit_factor,max_drawdown_pct,total_trades,percent_profitable,avg_trade,expectancy,allow_longs,allow_shorts,enable_add_on_entries
+long_only,False,full_sample,1207.6130452647485,2.0917050470765797,0.5486693266300358,88.0,30.681818181818183,13.722875514372832,13.722875514372832,True,False,True
+long_only_no_addons,False,full_sample,1207.6130452647485,2.0917050470765797,0.5486693266300358,88.0,30.681818181818183,13.722875514372832,13.722875514372832,True,False,False
+short_only,False,full_sample,-28.43767384137027,0.0,0.0849759216977164,1.0,0.0,-28.43767384136623,-28.43767384136623,False,True,True
+short_only_no_addons,False,full_sample,-28.43767384137027,0.0,0.0849759216977164,1.0,0.0,-28.43767384136623,-28.43767384136623,False,True,False

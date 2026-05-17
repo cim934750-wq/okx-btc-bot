@@ -1,0 +1,6 @@
+metric,value,reference
+focus_total,1,post-2022 accepted-side sample size
+full_core_count,1,accepted-side full-core recurrence count
+near_miss_core_count,0,accepted-side near-miss neighborhood count
+orderly_other_count,0,remaining orderly accepted-side cases
+nonorderly_count,0,non-orderly accepted-side cases

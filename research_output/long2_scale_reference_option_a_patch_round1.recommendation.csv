@@ -1,0 +1,2 @@
+prefix,run_status,post_patch_runtime_in_profit_pass,post_patch_active_candidates,post_patch_all_gates_pass,after_Long2,after_Short2,recommendation
+long2_scale_reference_option_a_patch_round1,completed_with_compileall_gap,1034,1088,438,501,0,Review before/after count deltas and run compileall when environment approval is available; do not make performance claims.

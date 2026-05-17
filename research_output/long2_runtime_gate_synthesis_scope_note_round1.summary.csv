@@ -1,0 +1,12 @@
+section,item,value,interpretation
+current_long2_state,markets_inspected,19,19 local 4h markets form the current Long2 material base.
+current_long2_state,actual_Long1_trades,872,Long1 exists as baseline context only; Long1 is not reopened.
+current_long2_state,actual_Long2_trades,0,No executed Long2 trades exist; this is not a performance study.
+gate_funnel,raw_add_long_signal,3958,Substantial raw add-long material exists.
+gate_funnel,post_management_active_long_candidates,1378,Long2 branch/gate context exists and can be studied descriptively.
+gate_funnel,runtime_in_profit_pass,0,Immediate observed runtime blocker.
+scale_mismatch,runtime_price_scale_seen,1e-08,Runtime Close/entry use scaled price references in candidate rows.
+scale_mismatch,scale_consistent_diagnostic_pass,1324,"Diagnostic-only evidence of a unit/reference mismatch, not a strategy rule."
+distribution_context,close_above_entry_share,0.9985486211901308,"Most candidates were above entry, so zero in_profit is not simply ordinary underwater positions."
+distribution_context,median_scale_consistent_profit_atr,3.3781120689048088,Diagnostic-only counterfactual profit-distance context.
+timing_context,median_bars_since_Long1_entry,11.0,Timing remains secondary until scale-reference issue is validated.

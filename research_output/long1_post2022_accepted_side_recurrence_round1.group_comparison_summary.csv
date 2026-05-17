@@ -1,0 +1,6 @@
+metric,value,reference
+focus_sample_total,1,total post-2022 accepted-side sample size
+accepted_side_orderly_core_count,1,core recurrence count
+accepted_side_orderly_partial_count,0,nearby orderly accepted-side cases outside core
+accepted_side_nonorderly_gate_intact_missing_good_count,0,nearby non-orderly accepted-side cases matching gate_intact+missing_good
+accepted_side_nonorderly_other_count,0,other nearby accepted-side cases

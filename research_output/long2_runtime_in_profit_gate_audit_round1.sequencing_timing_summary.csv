@@ -1,0 +1,10 @@
+check,value,evidence,interpretation
+manage_before_long2_evaluation,true,research.strategy next() calls _manage_long(i) before the Long2/add-on block.,Long2 candidates are post-management active-long contexts.
+raw_add_long_outside_active_long_context,2580,2580 / 3958 raw add_long_signal bars were not active-long Long2 candidates after management.,Most raw add_long signals fire outside eligible runtime add-on context.
+returned_after_new_entry_before_long2_eval,73,Existing material inventory tracked add_long_signal bars that returned after a new entry before Long2 evaluation.,"Some raw signals happen on new-entry/flat lifecycle bars, not eligible add-on bars."
+len_trades_gate,1378/1378,len(self.trades)<2 passed for every post-management active-long add_long_signal candidate.,Open-trade-count gating is not the observed blocker.
+add_on_gap_gate,1378/1378,add_on_gap_bars passed for every active candidate because no Long2 add had occurred previously.,The gap gate is not the observed blocker.
+runtime_in_profit_gate,0/1378,runtime Close never exceeded avg_entry + atr * add_on_profit_atr at the Long2 evaluation line.,The direct runtime blocker is in_profit.
+price_reference_scale_check,1e-08,"Candidate rows show runtime Close and avg entry use FractionalBacktest scale, while ATR remains in unscaled market-price units.","The in_profit threshold mixes scaled price references with unscaled ATR distance, making the threshold effectively unreachable."
+fee_slippage_accounting,not_direct_gate_input,"The Long2 in_profit expression uses Close, avg_entry, atr, and add_on_profit_atr; it does not include commission or slippage terms directly.",Fee/slippage is not the direct reason in_profit is always false in this audit.
+timing_distribution,median_bars_since_entry=11.000,Candidate rows include bars_since_long1_entry and unrealized/scale-consistent profit distributions.,"Timing can be studied later, but zero runtime passes are dominated by the scale-reference mismatch."

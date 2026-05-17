@@ -1,0 +1,2 @@
+study,weak_main_seed_like_count,weak_background_support_stable_directional_absent_count,weak_other_nearby_count,recurrence_label,justification
+weak_background_branch_recurrence_audit,3,1,0,one_off_exception,"The support-stable directional-absent weak background case appears exactly once in the weak nearby context, while the main weak seed-like branch appears three times and weak_other_nearby is empty."

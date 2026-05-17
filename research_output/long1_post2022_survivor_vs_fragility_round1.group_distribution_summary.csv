@@ -1,0 +1,6 @@
+group,trade_count,losers,winners,loser_share,avg_pnl
+post2022_full_core_survivor,1,0,1,0.000000,111.961733
+post2022_upstream_fragility_cluster,3,3,0,1.000000,-9.675846
+post2022_boundary_local_failure_reference,1,1,0,1.000000,-24.211754
+post2022_other_orderly_reset,0,0,0,0.000000,0.000000
+outside_orderly_reset,85,57,28,0.670588,13.916601

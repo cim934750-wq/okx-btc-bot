@@ -1,0 +1,10 @@
+item,judgment
+structural_interpretation,separate_failure_mode
+reason,"mixed_chop has much lower MAE and higher MFE-minus-MAE than adverse_dominant in both populations, so it is not just a softer adverse-dominant failure."
+executed_path_delta,"mixed-minus-adverse return 0.063348, MFE 1.742814, MAE -5.138816, MFE-MAE 6.881630"
+starter_path_delta,"mixed-minus-adverse return 0.046095, MFE 1.814146, MAE -3.480321, MFE-MAE 5.294466"
+entry_gap_delta,"mixed-minus-adverse entry_short_ema20_gap_atr avg delta: executed 0.100114, starter 0.067773"
+executed_affinity_counts,"{'clean_followthrough': 4, 'weak_followthrough': 3, 'sample_too_small_no_mixed_chop': 2, 'adverse_dominant': 1, 'inconsistent_or_tied': 1}"
+starter_affinity_counts,"{'clean_followthrough': 4, 'weak_followthrough': 3, 'sample_too_small_no_mixed_chop': 2, 'inconsistent_or_tied': 1, 'adverse_dominant': 1}"
+parent_update,Keep current parent and explicitly mark mixed_chop as unresolved separate behavior.
+implementation_readiness,Not implementation-ready.

@@ -1,0 +1,3 @@
+check,status,detail
+python -m py_compile research\strategy.py,passed_previously,Passed in long2_scale_reference_option_a_patch_round1 verification.
+python -m compileall research,failed_permission,Attempted once in this audit; failed with PermissionError writing research\__pycache__ pyc files; not retried via workaround.

@@ -1,0 +1,5 @@
+check,status,detail
+python -m py_compile research\strategy.py,passed,Command completed with exit code 0.
+python -m compileall research,not_completed,Escalated compileall command was rejected by the environment approval reviewer due usage-limit condition; not retried via workaround.
+post_patch_gate_audit,completed,runtime_in_profit 1034/1088; all gates 438/1088.
+before_after_trade_counts,completed,"Before/after counts saved; report counts only, no performance claims."

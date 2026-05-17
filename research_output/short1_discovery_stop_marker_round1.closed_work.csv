@@ -1,0 +1,13 @@
+diagnostic,output_prefix,status,reopen_condition
+Short1 material inventory,short1_cross_market_material_inventory_round1,closed for current Short1 first discovery round,Do not replay unless a genuinely new fixed descriptive question is justified.
+FIL-first structural discovery,short1_fil_first_structural_discovery_round1,closed for current Short1 first discovery round,Do not replay unless a genuinely new fixed descriptive question is justified.
+path-quality stability audit,short1_path_quality_stability_audit_round1,closed for current Short1 first discovery round,Do not replay unless a genuinely new fixed descriptive question is justified.
+followthrough antecedent audit,short1_followthrough_antecedent_audit_round1,closed for current Short1 first discovery round,Do not replay unless a genuinely new fixed descriptive question is justified.
+below-EMA20 displacement audit,short1_below_ema20_displacement_antecedent_audit_round1,closed for current Short1 first discovery round,Do not replay unless a genuinely new fixed descriptive question is justified.
+combined antecedent audit,short1_combined_antecedent_stability_audit_round1,closed for current Short1 first discovery round,Do not replay unless a genuinely new fixed descriptive question is justified.
+path-quality failure-mode audit,short1_path_quality_failure_mode_audit_round1,closed for current Short1 first discovery round,Do not replay unless a genuinely new fixed descriptive question is justified.
+adverse-dominant predictor audit,short1_adverse_dominant_predictor_audit_round1,closed for current Short1 first discovery round,Do not replay unless a genuinely new fixed descriptive question is justified.
+displacement cross-bucket audit,short1_displacement_cross_bucket_audit_round1,closed for current Short1 first discovery round,Do not replay unless a genuinely new fixed descriptive question is justified.
+adverse vs mixed_chop audit,short1_adverse_vs_mixed_chop_audit_round1,closed for current Short1 first discovery round,Do not replay unless a genuinely new fixed descriptive question is justified.
+weak_followthrough audit,short1_weak_followthrough_audit_round1,closed for current Short1 first discovery round,Do not replay unless a genuinely new fixed descriptive question is justified.
+unresolved non-clean grouping check,short1_unresolved_non_clean_grouping_check_round1,closed for current Short1 first discovery round,Do not replay unless a genuinely new fixed descriptive question is justified.

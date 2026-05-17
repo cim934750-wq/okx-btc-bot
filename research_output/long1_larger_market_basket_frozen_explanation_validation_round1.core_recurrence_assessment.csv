@@ -1,0 +1,4 @@
+core_item,rating,evidence
+accepted-side support-stable compact neighborhood collapse,partial_recurrence_not_clean_transfer,"accepted_completed appears in 0 markets (none); accepted_nonintact_buildup appears in 4 markets (ADAUSDT,ATOMUSDT,DOGEUSDT,LINKUSDT). The accepted-side support-stable compact neighborhood recurs in fragments but not as the full BTC pattern."
+loss of directionally-absent non-intact buildup population,does_not_generalize_cleanly,"accepted_nonintact_buildup appears 6 times across the basket, with 2 post-2022 cases across ADAUSDT,DOGEUSDT. This prevents clean transfer of the BTC loss component."
+"directionally-present, support-stability-led upstream fragility persistence",limited_recurrence_sparse_support,weak_main_fragility appears in 1 markets (LINKUSDT) with 1 total trades. This is broader than ETH/BNB/SOL but still sparse across a 10-market basket.

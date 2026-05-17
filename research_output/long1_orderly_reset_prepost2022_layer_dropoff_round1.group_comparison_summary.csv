@@ -1,0 +1,9 @@
+period,transition,from_count,to_count,drop_count
+pre2022,Stage 1 -> Stage 2,6,2,4
+pre2022,Stage 2 -> Stage 3,2,1,1
+pre2022,Stage 3 -> Stage 4,1,1,0
+pre2022,Stage 4 -> Stage 5,1,1,0
+post2022,Stage 1 -> Stage 2,5,2,3
+post2022,Stage 2 -> Stage 3,2,1,1
+post2022,Stage 3 -> Stage 4,1,1,0
+post2022,Stage 4 -> Stage 5,1,1,0

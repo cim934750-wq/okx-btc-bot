@@ -1,0 +1,2 @@
+recommendation,proxy_note,dominant_count,dominant_better_than_ambiguous,dominant_better_than_non_mp_dominant,dominant_better_than_all_other
+still_redesign_evidence_only,support_to_release_sequence and recent_high_count_within_0.5atr_of_cont_high <= 3 and ((gap12_atr >= gap23_atr) or (gap12_atr <= gap23_atr/2)),1,False,True,True

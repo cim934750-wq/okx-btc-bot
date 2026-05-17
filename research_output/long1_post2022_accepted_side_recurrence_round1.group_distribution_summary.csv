@@ -1,0 +1,6 @@
+group,count,losers,winners,loser_share,avg_pnl
+accepted_side_orderly_core,1,0,1,0.0,111.96173292113542
+accepted_side_orderly_partial,0,0,0,0.0,0.0
+accepted_side_nonorderly_gate_intact_missing_good,0,0,0,0.0,0.0
+accepted_side_nonorderly_other,0,0,0,0.0,0.0
+other_long1,89,61,28,0.6853932584269663,12.692941450535407

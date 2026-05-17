@@ -1,0 +1,6 @@
+bucket,executed_count,starter_count,status,interpretation,relationship_to_parent,action_boundary
+clean_followthrough,61,176,reference positive path-quality bucket,"Clean downside path with favorable return, strong MFE, low MAE.",Reference side of the current parent.,Use descriptively only; do not convert to rules.
+adverse_dominant,66,227,stable main failure target,Dominant failure mode with high adverse excursion and poor path quality.,Main failure side that below-EMA20 displacement appears to protect against.,"Stable as discovery parent target, not implementation-ready."
+mixed_chop,16,29,unresolved separate behavior,Not adverse_dominant-lite; contains meaningful favorable and adverse movement.,Not cleanly explained by leading antecedent; keep separate from adverse_dominant.,Future descriptive work allowed only if fixed and non-thresholded.
+weak_followthrough,11,41,unresolved underpowered / transition behavior,"Favorable return exists but MFE does not dominate MAE; executed leans mixed_chop pathwise, starter leans adverse_dominant pathwise.",Does not change main parent; remains unresolved non-clean behavior.,Do not promote to parent or implementation filter.
+failed_no_followthrough,1,1,too small to interpret,n=1 in both populations; insufficient evidence.,No parent implication.,Do not analyze strongly unless more sample appears in future material.

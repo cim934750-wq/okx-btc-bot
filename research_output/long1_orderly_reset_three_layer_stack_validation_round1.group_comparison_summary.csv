@@ -1,0 +1,4 @@
+comparison,core_count,core_loser_share,core_avg_pnl,residual_count,residual_loser_share,residual_avg_pnl,intact_missing_bad_count,loose_missing_good_support_good_count,loose_missing_good_support_bad_count,not_accepted_other_count,gate_only_unresolved_cross_buckets,gate_plus_directional_unresolved_loose_missing_good,three_layer_support_bad_count,three_layer_support_good_count
+accepted_core_vs_accepted_residual,2.0,0.0,162.49327310015084,2.0,0.5,1.5743611452652155,,,,,,,,
+not_accepted_shape,,,,,,,2.0,1.0,3.0,1.0,,,,
+prior_explanation_comparison,,,,,,,,,,,4.0,4.0,3.0,1.0

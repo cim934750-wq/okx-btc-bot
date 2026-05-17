@@ -1,0 +1,7 @@
+group,trade_count,losers,winners,loser_share,avg_pnl
+compact_full_core_with_directional,1,0,1,0.000000,213.024813
+compact_noncore_directional_absent,2,1,1,0.500000,1.574361
+compact_noncore_directional_present_but_incomplete,0,0,0,0.000000,0.000000
+compact_other,0,0,0,0.000000,0.000000
+post2022_support_stable_compact_reference,1,0,1,0.000000,111.961733
+other_long1,86,60,26,0.697674,10.622073

@@ -1,0 +1,4 @@
+core_item,rating,justification
+accepted-side support-stable compact neighborhood collapse,not meaningfully testable,"SOL produced accepted_completed=0 and accepted_nonintact_buildup=0; post-2022 accepted_completed=0, accepted_nonintact_buildup=0. This is sparse and does not provide a completed accepted-side survivor."
+loss of directionally-absent non-intact buildup population,partially supported,"SOL accepted_nonintact_buildup total=0, post-2022=0. This checks whether the BNB post-2022 non-intact recurrence repeats on SOL."
+"weak-side directionally-present, support-stability-led upstream fragility persistence",not meaningfully testable,"SOL produced weak_main_fragility=0, weak_background_note=2, with post-2022 weak_main_fragility=0."

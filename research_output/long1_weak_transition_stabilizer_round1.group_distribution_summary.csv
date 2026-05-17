@@ -1,0 +1,4 @@
+group,trade_count,losers,winners,loser_share,avg_pnl
+weak_ready_persistent,2,2,0,1.0,-14.161994625567836
+weak_ready_transition,1,1,0,1.0,-0.7035496149555155
+weak_ready_other,0,0,0,0.0,0.0

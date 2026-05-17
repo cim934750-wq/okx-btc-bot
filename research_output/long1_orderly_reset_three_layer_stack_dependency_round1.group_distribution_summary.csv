@@ -1,0 +1,8 @@
+group,count,losers,winners,loser_share,avg_pnl
+stack_core_accepted,2,0,2,0.0,162.49327310015084
+stack_accepted_residual,2,1,1,0.5,1.5743611452652155
+stack_not_accepted_intact_missing_bad,2,1,1,0.5,-7.947404262868421
+stack_not_accepted_loose_missing_good_support_good,1,0,1,0.0,159.14250286948706
+stack_not_accepted_loose_missing_good_support_bad,3,3,0,1.0,-9.675846288697063
+stack_not_accepted_other,1,1,0,1.0,-22.910699313792787
+outside_orderly_reset,79,55,24,0.6962025316455697,10.407453131190989

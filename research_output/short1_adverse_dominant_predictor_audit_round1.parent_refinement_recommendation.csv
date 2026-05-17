@@ -1,0 +1,6 @@
+item,judgment
+current_parent,clean downside followthrough versus adverse-dominant failure
+refined_parent_candidate,below-EMA20 displacement protected downside followthrough versus adverse-dominant failure
+refinement_reason,"Below-EMA20 displacement is the most stable clean-vs-adverse predictor, with lower ADX pressure as secondary context."
+strongest_predictor,"entry_short_ema20_gap_atr rank=1, executed=10/11, starter=11/11, both=10/11"
+implementation_readiness,Not implementation-ready.

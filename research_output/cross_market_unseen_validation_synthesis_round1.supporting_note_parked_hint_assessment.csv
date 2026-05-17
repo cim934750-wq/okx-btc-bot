@@ -1,0 +1,6 @@
+item,status,assessment
+gate_e0_atr_ratio >= 1.0,supporting_note_only,No cross-market promotion; remains internal readiness support under BTC directional-preparation split.
+e0-decisive ATR-readiness timing,supporting_note_only,No cross-market upgrade; remains subordinate timing detail.
+weak-side timing split,parked_local_hint,Not reopened and not promoted.
+weak-side compactness hint,parked_local_hint,Not reopened and not promoted.
+weak background note,monitoring_note_only,"ETH had one and SOL had two weak_background_note cases, but weak_main_fragility did not appear and this does not support promotion into a core branch."

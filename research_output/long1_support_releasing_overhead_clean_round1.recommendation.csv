@@ -1,0 +1,2 @@
+recommendation,proxy_note,clean_count,clean_better_than_congested,clean_better_than_non_mp_clean,clean_better_than_all_other
+still_redesign_evidence_only,support_to_release_sequence and recent_high_count_within_0.5atr_of_cont_high <= 3,1,False,True,True

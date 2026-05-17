@@ -1,0 +1,2 @@
+verdict,separator_stability_result,accepted_nonintact_atr_ready_pass_fail,weak_nonintact_atr_ready_pass_fail,accepted_completed_atr_ready_pass_fail,scope_read
+still_redesign_evidence_only,stable_across_nearby_families,0/2,3/0,2/0,"atr-ratio readiness now looks like a broader nearby-family stability property inside the directional-preparation split, but not a standalone redesign axis"

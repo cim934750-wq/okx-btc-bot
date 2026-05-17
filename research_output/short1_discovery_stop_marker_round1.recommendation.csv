@@ -1,0 +1,11 @@
+item,judgment
+stop_marker,short1_discovery_stop_marker_round1
+workspace_boundary,Created from D workspace only: D:\Bot\0412_Bot_short1_research_workspace; outputs saved under D:\Bot\0412_Bot_short1_research_workspace\research_output.
+source_boundary,Used saved D outputs only; no diagnostic run; no source/strategy changes; no proxy changes; no threshold sweep.
+current_parent,below-EMA20 displacement mainly protects against adverse-dominant failure
+leading_antecedent,entry_short_ema20_gap_atr; diagnostic-only.
+unresolved_ledger,"unresolved_non_clean may be used as high-level ledger label, but mixed_chop and weak_followthrough component labels must remain."
+closed_work,Current Short1 first discovery diagnostics are closed.
+allowed_future_work,"Only a genuinely new fixed descriptive question, synthesis/handoff update, or explicitly justified external validation material; no implementation."
+implementation_readiness,Not implementation-ready.
+recommended_next_action,Stop Short1 discovery and preserve this stop-marker as the current boundary.

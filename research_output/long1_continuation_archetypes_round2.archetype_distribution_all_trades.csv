@@ -1,0 +1,5 @@
+continuation_archetype,all_trades_count,all_trades_avg_pnl,all_trades_losers,all_trades_winners,all_trades_loser_share
+breakout_continuation,12,22.691348086431642,6,6,0.5
+late_stage_weakening_continuation,10,-18.39716859559342,9,1,0.9
+reclaim_continuation,40,13.098236832609564,28,12,0.7
+shallow_pullback_momentum_continuation,28,22.477841344041384,18,10,0.6428571428571429

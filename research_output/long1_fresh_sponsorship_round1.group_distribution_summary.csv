@@ -1,0 +1,6 @@
+group,count,losers,winners,loser_share,avg_pnl
+mp_fresh_sponsored,0,0,0,0.0,0.0
+mp_not_fresh_sponsored,8,5,3,0.625,29.625301765124274
+non_mp_fresh_sponsored,1,1,0,1.0,-16.90353133430004
+other_long1,81,55,26,0.6790123456790124,12.61153875595176
+all_other_baseline_long1,90,61,29,0.6777777777777778,13.795928022430962

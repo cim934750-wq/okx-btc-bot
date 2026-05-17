@@ -1,0 +1,10 @@
+branch,group,trade_count,losers,winners,loser_share,avg_pnl
+pre2022_gate_state_branch,gate_state_full_complete,1,0,1,0.000000,213.024813
+pre2022_gate_state_branch,gate_state_nonintact_directional_absent,1,1,0,1.000000,-9.603957
+pre2022_gate_state_branch,gate_state_nonintact_directional_absent_but_sequence_present,1,0,1,0.000000,12.752680
+pre2022_gate_state_branch,gate_state_other,0,0,0,0.000000,0.000000
+post2022_gate_state_branch,gate_state_full_complete,1,0,1,0.000000,111.961733
+post2022_gate_state_branch,gate_state_nonintact_directional_absent,0,0,0,0.000000,0.000000
+post2022_gate_state_branch,gate_state_nonintact_directional_absent_but_sequence_present,0,0,0,0.000000,0.000000
+post2022_gate_state_branch,gate_state_other,0,0,0,0.000000,0.000000
+context,other_long1,86,60,26,0.697674,10.622073

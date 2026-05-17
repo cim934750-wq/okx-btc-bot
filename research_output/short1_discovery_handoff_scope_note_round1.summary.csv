@@ -1,0 +1,8 @@
+section,status,detail
+current_short1_state,structural_discovery_only,Defensible failure-mode parent exists; not a strategy rule/filter/threshold/implementation layer.
+main_parent,preserve,below-EMA20 displacement mainly protects against adverse-dominant failure
+leading_antecedent,diagnostic_only,entry_short_ema20_gap_atr; do not convert into threshold rule/filter.
+key_support,stable_for_adverse_dominant_only,"clean-vs-adverse support executed 10/11, starter 11/11; deltas executed 0.072787, starter 0.064817."
+bucket_counts,ledger,executed total 155; starter total 474; adverse_dominant executed/starter 66/227; mixed_chop 16/29; weak_followthrough 11/41.
+unresolved_behaviors,not_implementation_ready,mixed_chop separate unresolved; weak_followthrough underpowered/transition; failed_no_followthrough too small.
+recommended_next_action,pause_or_fixed_descriptive_only,"Pause implementation; if continuing, run only a fixed descriptive unresolved non-clean grouping check."

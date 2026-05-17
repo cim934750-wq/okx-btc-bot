@@ -1,0 +1,11 @@
+item,judgment
+run_status,synthesis_completed_from_saved_outputs
+parent,below-EMA20 displacement mainly protects against adverse-dominant failure
+leading_antecedent,entry_short_ema20_gap_atr
+main_interpretation,"Below-EMA20 displacement mainly protects against adverse-dominant failure, not all non-clean outcomes."
+secondary_context,"Lower entry_adx remains secondary and broadly supportive, not uniquely adverse-dominant-specific."
+unresolved_behavior,weak_followthrough and mixed_chop remain unresolved; failed_no_followthrough n=1.
+closed_work,"No implementation, no thresholds, no proxy changes, no Long1 import, no combined-antecedent promotion."
+allowed_future_work,"Descriptive synthesis, adverse_dominant vs mixed_chop comparison, weak_followthrough-specific investigation, or fixed non-swept grouping checks."
+implementation_readiness,Not implementation-ready.
+next_step,Pause implementation and use this synthesis as the Short1 discovery checkpoint before any further descriptive-only bucket work.

@@ -1,0 +1,3 @@
+comparison,lhs_group,rhs_group,lhs_count,rhs_count,lhs_loser_share,rhs_loser_share,lhs_avg_pnl,rhs_avg_pnl,lhs_avg_min_b3b1_gap,rhs_avg_min_b3b1_gap
+loose_missing_good_not_accepted_support_good_vs_support_bad,loose_not_accepted_missing_good_support_good,loose_not_accepted_missing_good_support_bad,1.0,3.0,0.0,1.0,159.14250286948706,-9.675846288697063,0.14498989415968552,-0.946449851047638
+loose_accepted_missing_good_support_good_vs_support_bad,loose_accepted_missing_good_support_good,loose_accepted_missing_good_support_bad,0.0,1.0,0.0,0.0,0.0,12.75267976543458,0.0,-0.02668309323755995

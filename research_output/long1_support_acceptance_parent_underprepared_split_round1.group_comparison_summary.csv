@@ -1,0 +1,5 @@
+comparison,lhs_group,rhs_group,lhs_count,lhs_losers,lhs_winners,lhs_loser_share,lhs_avg_pnl,rhs_count,rhs_losers,rhs_winners,rhs_loser_share,rhs_avg_pnl
+prepared_release_seq_mp_vs_underprepared,support_acceptance_parent_prepared_release_seq_mp,support_acceptance_parent_underprepared,2,0,2,0.0,162.49327310015084,2,1,1,0.5,1.5743611452652155
+prepared_release_seq_mp_vs_prepared_other,support_acceptance_parent_prepared_release_seq_mp,support_acceptance_parent_prepared_other,2,0,2,0.0,162.49327310015084,0,0,0,0.0,0.0
+prepared_release_seq_mp_vs_unstable_other,support_acceptance_parent_prepared_release_seq_mp,support_acceptance_parent_unstable_other,2,0,2,0.0,162.49327310015084,0,0,0,0.0,0.0
+prepared_release_seq_mp_vs_outside_parent,support_acceptance_parent_prepared_release_seq_mp,outside_parent,2,0,2,0.0,162.49327310015084,86,60,26,0.6976744186046512,10.622072715441332

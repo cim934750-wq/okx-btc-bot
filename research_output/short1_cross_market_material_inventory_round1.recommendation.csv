@@ -1,0 +1,7 @@
+item,value
+study_type,short1_cross_market_material_inventory_round1
+classification_rule,"usable if executed Short1 >= 10 or starter_short_signal >= 20; borderline if executed Short1 >= 3 or starter_short_signal >= 8; otherwise too_sparse. This is a material sufficiency label, not a strategy threshold."
+best_candidate,FILUSDT
+discovery_readiness,usable_market_exists
+next_step,"Use FILUSDT as the first Short1 discovery parent/sample, with executed Short1 and starter_short_signal populations kept separate."
+implementation_readiness,not_open_research_only

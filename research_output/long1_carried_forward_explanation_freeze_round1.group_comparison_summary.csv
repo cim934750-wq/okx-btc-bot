@@ -1,0 +1,7 @@
+rule_type,statement
+do_not_reopen,Do not reopen weak-side persistent-ready versus transition-ready timing splitting unless new recurrence appears.
+do_not_reopen,Do not reopen weak-side compactness splitting unless another compact weak fragility case recurs under the same frozen framework.
+do_not_reopen,Do not promote the 2021-10-04 12:00:00+00:00 weak background case into a secondary branch unless genuine recurrence appears.
+allowed_validation,Future work may test whether the carried-forward explanation replicates in nearby same-framework validation contexts without changing proxy definitions.
+allowed_validation,Future work may monitor whether the current one-off weak background case ever recurs in later same-framework validation passes.
+out_of_scope,"Opening implementation planning, threshold sweeping, new proxy invention, or returning to overhead geometry remains out of scope."

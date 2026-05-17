@@ -1,0 +1,16 @@
+basket_rank,symbol,path,rows,first_timestamp,last_timestamp,history_days,columns,columns_match_btc_format,duplicate_timestamps,missing_4h_timestamps,non_4h_gap_count,max_gap_hours,major_market_relevance_rank,usable,quality_tier
+1,XRPUSDT,data\XRPUSDT_4h.csv,16152,2019-01-01 00:00:00+00:00,2026-05-16 16:00:00+00:00,2692,"timestamp,open,high,low,close,volume",True,0,5,4,12.0,1,True,tier_1_long_history_minor_known_gaps
+2,ADAUSDT,data\ADAUSDT_4h.csv,16152,2019-01-01 00:00:00+00:00,2026-05-16 16:00:00+00:00,2692,"timestamp,open,high,low,close,volume",True,0,5,4,12.0,2,True,tier_1_long_history_minor_known_gaps
+3,LTCUSDT,data\LTCUSDT_4h.csv,16152,2019-01-01 00:00:00+00:00,2026-05-16 16:00:00+00:00,2692,"timestamp,open,high,low,close,volume",True,0,5,4,12.0,5,True,tier_1_long_history_minor_known_gaps
+4,TRXUSDT,data\TRXUSDT_4h.csv,16152,2019-01-01 00:00:00+00:00,2026-05-16 16:00:00+00:00,2692,"timestamp,open,high,low,close,volume",True,0,5,4,12.0,6,True,tier_1_long_history_minor_known_gaps
+5,ETCUSDT,data\ETCUSDT_4h.csv,16152,2019-01-01 00:00:00+00:00,2026-05-16 16:00:00+00:00,2692,"timestamp,open,high,low,close,volume",True,0,5,4,12.0,12,True,tier_1_long_history_minor_known_gaps
+6,LINKUSDT,data\LINKUSDT_4h.csv,16060,2019-01-16 08:00:00+00:00,2026-05-16 16:00:00+00:00,2677,"timestamp,open,high,low,close,volume",True,0,5,4,12.0,4,True,tier_1_long_history_minor_known_gaps
+7,ATOMUSDT,data\ATOMUSDT_4h.csv,15444,2019-04-29 04:00:00+00:00,2026-05-16 16:00:00+00:00,2574,"timestamp,open,high,low,close,volume",True,0,4,3,12.0,10,True,tier_2_long_history_minor_known_gaps
+8,DOGEUSDT,data\DOGEUSDT_4h.csv,15042,2019-07-05 12:00:00+00:00,2026-05-16 16:00:00+00:00,2507,"timestamp,open,high,low,close,volume",True,0,2,2,8.0,3,True,tier_2_long_history_minor_known_gaps
+9,BCHUSDT,data\BCHUSDT_4h.csv,14168,2019-11-28 08:00:00+00:00,2026-05-16 16:00:00+00:00,2361,"timestamp,open,high,low,close,volume",True,0,1,1,8.0,9,True,tier_2_long_history_minor_known_gaps
+10,DOTUSDT,data\DOTUSDT_4h.csv,12582,2020-08-18 20:00:00+00:00,2026-05-16 16:00:00+00:00,2096,"timestamp,open,high,low,close,volume",True,0,0,0,0.0,8,True,tier_3_clean_shorter_history
+11,UNIUSDT,data\UNIUSDT_4h.csv,12407,2020-09-17 00:00:00+00:00,2026-05-16 16:00:00+00:00,2067,"timestamp,open,high,low,close,volume",True,0,0,0,0.0,11,True,tier_3_clean_shorter_history
+12,AVAXUSDT,data\AVAXUSDT_4h.csv,12376,2020-09-22 04:00:00+00:00,2026-05-16 16:00:00+00:00,2062,"timestamp,open,high,low,close,volume",True,0,0,0,0.0,7,True,tier_3_clean_shorter_history
+13,NEARUSDT,data\NEARUSDT_4h.csv,12244,2020-10-14 04:00:00+00:00,2026-05-16 16:00:00+00:00,2040,"timestamp,open,high,low,close,volume",True,0,0,0,0.0,13,True,tier_3_clean_shorter_history
+14,AAVEUSDT,data\AAVEUSDT_4h.csv,12239,2020-10-15 00:00:00+00:00,2026-05-16 16:00:00+00:00,2039,"timestamp,open,high,low,close,volume",True,0,0,0,0.0,15,True,tier_3_clean_shorter_history
+15,FILUSDT,data\FILUSDT_4h.csv,12235,2020-10-15 16:00:00+00:00,2026-05-16 16:00:00+00:00,2039,"timestamp,open,high,low,close,volume",True,0,0,0,0.0,14,True,tier_3_clean_shorter_history

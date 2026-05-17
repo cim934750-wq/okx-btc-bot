@@ -1,0 +1,7 @@
+group,count,losers,winners,loser_share,avg_pnl
+support_acceptance_parent_transition_intact_release_seq_mp,2,0,2,0.0,162.49327310015084
+support_acceptance_parent_transition_intact_release_seq_non_mp,0,0,0,0.0,0.0
+support_acceptance_parent_compound_failed_release_seq,1,0,1,0.0,12.75267976543458
+support_acceptance_parent_transition_intact_no_release_seq,0,0,0,0.0,0.0
+support_acceptance_parent_other,1,1,0,1.0,-9.60395747490415
+outside_parent,86,60,26,0.6976744186046512,10.622072715441332

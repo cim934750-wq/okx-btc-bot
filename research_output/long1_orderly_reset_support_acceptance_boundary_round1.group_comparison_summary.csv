@@ -1,0 +1,4 @@
+comparison,sa_size,sa_release_seq_count,sa_non_release_count,sa_avg_pnl,sa_loser_share,nsa_size,nsa_release_seq_count,nsa_non_release_count,nsa_avg_pnl,nsa_loser_share,sa_underprepared_count,sa_prepared_other_count,sa_unstable_other_count,sa_underprepared_avg_pnl,sa_prepared_other_avg_pnl,sa_unstable_other_avg_pnl,nsa_underprepared_count,nsa_prepared_other_count,nsa_unstable_other_count,nsa_underprepared_avg_pnl,nsa_prepared_other_avg_pnl,nsa_unstable_other_avg_pnl
+sa_vs_nsa_subparent_overview,4.0,3.0,1.0,82.03381712270803,0.25,7.0,0.0,7.0,13.044208023409466,0.7142857142857143,,,,,,,,,,,,
+sa_weak_side_shape,,,,,,,,,,,2.0,0.0,0.0,1.5743611452652155,0.0,0.0,,,,,,
+nsa_weak_side_shape,,,,,,,,,,,,,,,,,1.0,3.0,3.0,159.14250286948706,-10.932779953345628,-11.678235615194643

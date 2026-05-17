@@ -1,0 +1,4 @@
+group,trade_count,losers,winners,loser_share,avg_pnl
+accepted_nonintact_reference,2,1,1,0.500000,1.574361
+weak_nonintact_reference,3,3,0,1.000000,-9.675846
+other_long1,85,57,28,0.670588,14.911910

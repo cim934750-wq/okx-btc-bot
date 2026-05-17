@@ -1,0 +1,8 @@
+item,value
+study_type,short1_upstream_starter_signal_population_inventory
+starter_short_signal_count,2
+executed_short1_count,1
+blocked_by_open_trade_context_count,1
+interpretation,"Executed Short1 baseline is too sparse, but upstream starter_short_signal population is available for structural discovery without changing strategy logic."
+next_step,"Use starter_short_signal opportunities as the first Short1 discovery parent, then separate execution-suppressed vs executed and favorable vs unfavorable forward paths."
+implementation_readiness,not_open_research_only

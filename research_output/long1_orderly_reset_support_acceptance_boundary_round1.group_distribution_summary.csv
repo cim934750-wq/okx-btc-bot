@@ -1,0 +1,10 @@
+group,count,losers,winners,loser_share,avg_pnl
+sa_prepared_release_seq_mp,2,0,2,0.0,162.49327310015084
+sa_underprepared,2,1,1,0.5,1.5743611452652155
+sa_prepared_other,0,0,0,0.0,0.0
+sa_unstable_other,0,0,0,0.0,0.0
+nsa_prepared_release_seq_mp,0,0,0,0.0,0.0
+nsa_underprepared,1,0,1,0.0,159.14250286948706
+nsa_prepared_other,3,2,1,0.6666666666666666,-10.932779953345628
+nsa_unstable_other,3,3,0,1.0,-11.678235615194643
+outside_orderly_reset,79,55,24,0.6962025316455697,10.407453131190989

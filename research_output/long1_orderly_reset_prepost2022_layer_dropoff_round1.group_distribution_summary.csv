@@ -1,0 +1,11 @@
+period,stage,definition,count,losers,winners,loser_share,avg_pnl
+pre2022,Stage 1,orderly_reset == True,6,2,4,0.3333333333333333,60.12038074726127
+pre2022,Stage 2,Stage 1 + pre_acceptance_gate_intact == True,2,0,2,0.0,110.67087931867148
+pre2022,Stage 3,Stage 2 + acceptance_missing_layer_present == True,1,0,1,0.0,213.02481327916627
+pre2022,Stage 4,Stage 3 + multi_bar_support_acceptance == True,1,0,1,0.0,213.02481327916627
+pre2022,Stage 5,Stage 4 + support_to_release_sequence == True + momentum_persistence == True,1,0,1,0.0,213.02481327916627
+post2022,Stage 1,orderly_reset == True,5,4,1,0.8,11.74448803422614
+post2022,Stage 2,Stage 1 + pre_acceptance_gate_intact == True,2,1,1,0.5,43.874989518610946
+post2022,Stage 3,Stage 2 + acceptance_missing_layer_present == True,1,0,1,0.0,111.96173292113542
+post2022,Stage 4,Stage 3 + multi_bar_support_acceptance == True,1,0,1,0.0,111.96173292113542
+post2022,Stage 5,Stage 4 + support_to_release_sequence == True + momentum_persistence == True,1,0,1,0.0,111.96173292113542
