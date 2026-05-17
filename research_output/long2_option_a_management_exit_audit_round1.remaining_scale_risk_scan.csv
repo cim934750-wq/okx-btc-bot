@@ -1,0 +1,8 @@
+file,line_number,comparison,path,status,needs_separate_audit,notes
+research/strategy.py,145,self.data.Close[-1] < self.data.ema50[-1],long trend_fail,unpatched_likely_problematic,True,Runtime Close is scaled under FractionalBacktest while ema50 appears to be an unscaled feature; not patched by Option A.
+research/strategy.py,169,self.data.Close[-1] > self.data.ema50[-1],short trend_fail,unpatched_likely_problematic,True,Runtime Close is scaled under FractionalBacktest while ema50 appears to be an unscaled feature; not patched by Option A.
+research/strategy.py,109-143,ATR-derived long TP/stop/trail/floor vs runtime price,long management,patched_ATR_distance,False,Uses runtime_atr via _to_runtime_distance.
+research/strategy.py,161-183,ATR-derived short TP/stop/trail/floor vs runtime price,short management,patched_ATR_distance,False,Uses runtime_atr via _to_runtime_distance.
+research/strategy.py,211-220,Long2/Short2 add-on in_profit ATR distance vs runtime price,add-on gates,patched_ATR_distance,False,Uses _to_runtime_distance for add-on profit distance.
+research/indicators.py,209-294,indicator/feature construction comparisons in raw feature space,signal generation,unpatched_likely_safe,False,Computed before FractionalBacktest runtime scaling; Option A intentionally did not change signal construction.
+research/strategy.py,"145,169",DI and higher-timeframe boolean terms inside trend_fail,long/short trend_fail,mixed_non_price_terms_likely_safe_but_coupled_to_unpatched_Close_vs_ema50,True,"DI and boolean terms are feature-space values, but the price-vs-EMA term gates the trend_fail expression."
