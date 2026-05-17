@@ -1,0 +1,7 @@
+file,purpose,status,key_takeaway
+00_current_state_briefing.md,"Long1 / Short1 / Long2 전체 연구 상태를 MacBook 문서로 보존","active briefing","현재 Mac repo는 briefing 저장만 가능하며 Long2 audit 실행 준비는 아님"
+01_long1_closed_summary.md,"Long1 closed state와 해석 경계를 기록","closed","Long1은 BTC-specific redesign evidence이나 broad implementation candidate는 아님"
+02_short1_closed_summary.md,"Short1 closed discovery state와 bucket counts를 기록","closed","entry_short_ema20_gap_atr는 diagnostic-only이며 adverse_dominant가 stable main failure target"
+03_long2_current_status.md,"Long2 Option A 전후 상태와 다음 audit 필요성을 기록","active research","Option A는 ATR-distance unit blocker를 제거했지만 lifecycle side effects 때문에 implementation readiness는 not ready"
+04_migration_needed.md,"Mac repo와 Windows research workspace migration gap을 기록","migration required","research/strategy.py, research/config.py, research/indicators.py, research_output/ 및 prior Long2 outputs가 필요"
+05_next_codex_prompts.md,"다음 Windows migration, Mac verification, Long2 audit prompt를 보존","ready for next operator","다음 안전 단계는 migration 후 long2_option_a_management_exit_audit_round1"
