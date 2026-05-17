@@ -1,0 +1,6 @@
+scope_item,status,evidence,needs_future_patch_plan,notes
+trend_fail ema50 comparison,unit_mismatch_confirmed,strategy.py lines 145 and 169 compare runtime Close to unscaled ema50,True,Future work should plan only; no patch applied here.
+ATR-derived TP/stop/trail/breakeven comparisons,already_patched_by_Option_A,strategy.py uses runtime_atr via _to_runtime_distance in management paths,False,Not reopened by this audit.
+indicator construction comparisons in indicators.py,feature_space_likely_safe,ema/indicator comparisons are computed before FractionalBacktest runtime scaling,False,Signal generation remains unmodified and not runtime price-vs-feature mixed.
+other runtime Close vs EMA comparisons in strategy.py,limited_to_trend_fail_in_current_scan,Source inspection found direct self.data.Close[-1] vs self.data.ema50[-1] in trend_fail lines; add-on gates do not compare Close to EMA.,False,No broader patch recommended in this audit.
+whether ema50 is transformed by FractionalBacktest,not_transformed_by_local_strategy_code; prior artifacts indicate feature remains unscaled,ema50 is built before Backtest construction and no local helper scales indicator columns; prior audit flagged runtime Close vs unscaled ema50.,True,"This is sufficient for patch-plan justification, but source was not changed."

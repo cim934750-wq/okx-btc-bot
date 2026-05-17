@@ -1,0 +1,3 @@
+scope,path,estimated_trend_fail_evaluations,current_trend_fail_true_cases,scale_consistent_trend_fail_true_cases,trend_fail_disagreements,comparison_disagreements,current_true_scale_false,current_false_scale_true,disagreement_rate,estimation_method
+aggregate,long,8519,574,149,425,8320,425,0,0.04988848456391595,lightweight_state_reconstruction_from_feature_frame; not a replacement for instrumented backtest
+aggregate,short,3373,2,168,166,231,0,166,0.049214349243996446,lightweight_state_reconstruction_from_feature_frame; not a replacement for instrumented backtest
