@@ -1,0 +1,21 @@
+scope,raw_signal,active_candidates,inactive_or_ineligible,in_profit_pass,in_profit_fail,len_trades_lt_2_pass,len_trades_lt_2_fail,add_on_gap_bars_pass,add_on_gap_bars_fail,all_gates_pass,exported_count,top_remaining_blocker,prior_post_option_a_raw_signal,prior_post_option_a_active_candidates,prior_post_option_a_in_profit_pass,prior_post_option_a_all_gates_pass,prior_post_option_a_exported_count,notes
+AGGREGATE,39,3,36,0,3,3,0,3,0,0,0,in_profit_block:3,39,3,0,0,0,current post-trend_fail validation; gate counts are not performance evidence
+AAVEUSDT,0,0,0,0,0,0,0,0,0,0,0,no_active_candidates,0,0,0,0,,current post-trend_fail validation; gate counts are not performance evidence
+ADAUSDT,0,0,0,0,0,0,0,0,0,0,0,no_active_candidates,0,0,0,0,,current post-trend_fail validation; gate counts are not performance evidence
+ATOMUSDT,4,1,3,0,1,1,0,1,0,0,0,in_profit_block:1,4,1,0,0,,current post-trend_fail validation; gate counts are not performance evidence
+AVAXUSDT,2,0,2,0,0,0,0,0,0,0,0,inactive_or_ineligible:2,2,0,0,0,,current post-trend_fail validation; gate counts are not performance evidence
+BCHUSDT,3,0,3,0,0,0,0,0,0,0,0,inactive_or_ineligible:3,3,0,0,0,,current post-trend_fail validation; gate counts are not performance evidence
+BNBUSDT,0,0,0,0,0,0,0,0,0,0,0,no_active_candidates,0,0,0,0,,current post-trend_fail validation; gate counts are not performance evidence
+BTCUSDT,2,0,2,0,0,0,0,0,0,0,0,inactive_or_ineligible:2,2,0,0,0,,current post-trend_fail validation; gate counts are not performance evidence
+DOGEUSDT,6,0,6,0,0,0,0,0,0,0,0,inactive_or_ineligible:6,6,0,0,0,,current post-trend_fail validation; gate counts are not performance evidence
+DOTUSDT,4,0,4,0,0,0,0,0,0,0,0,inactive_or_ineligible:4,4,0,0,0,,current post-trend_fail validation; gate counts are not performance evidence
+ETCUSDT,3,0,3,0,0,0,0,0,0,0,0,inactive_or_ineligible:3,3,0,0,0,,current post-trend_fail validation; gate counts are not performance evidence
+ETHUSDT,2,0,2,0,0,0,0,0,0,0,0,inactive_or_ineligible:2,2,0,0,0,,current post-trend_fail validation; gate counts are not performance evidence
+FILUSDT,1,1,0,0,1,1,0,1,0,0,0,in_profit_block:1,1,1,0,0,,current post-trend_fail validation; gate counts are not performance evidence
+LINKUSDT,3,0,3,0,0,0,0,0,0,0,0,inactive_or_ineligible:3,3,0,0,0,,current post-trend_fail validation; gate counts are not performance evidence
+LTCUSDT,2,0,2,0,0,0,0,0,0,0,0,inactive_or_ineligible:2,2,0,0,0,,current post-trend_fail validation; gate counts are not performance evidence
+NEARUSDT,1,0,1,0,0,0,0,0,0,0,0,inactive_or_ineligible:1,1,0,0,0,,current post-trend_fail validation; gate counts are not performance evidence
+SOLUSDT,0,0,0,0,0,0,0,0,0,0,0,no_active_candidates,0,0,0,0,,current post-trend_fail validation; gate counts are not performance evidence
+TRXUSDT,1,0,1,0,0,0,0,0,0,0,0,inactive_or_ineligible:1,1,0,0,0,,current post-trend_fail validation; gate counts are not performance evidence
+UNIUSDT,1,0,1,0,0,0,0,0,0,0,0,inactive_or_ineligible:1,1,0,0,0,,current post-trend_fail validation; gate counts are not performance evidence
+XRPUSDT,4,1,3,0,1,1,0,1,0,0,0,in_profit_block:1,4,1,0,0,,current post-trend_fail validation; gate counts are not performance evidence

@@ -1,0 +1,3 @@
+check,command,returncode,status,stdout,stderr,continue_review
+py_compile_strategy,python3 -m py_compile research/strategy.py,0,pass,,,True
+compileall_research,python3 -m compileall research,0,pass,Listing 'research'...,,True

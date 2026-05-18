@@ -1,0 +1,21 @@
+scope,raw_signal,active_candidates,inactive_or_ineligible,in_profit_pass,in_profit_fail,len_trades_lt_2_pass,len_trades_lt_2_fail,add_on_gap_bars_pass,add_on_gap_bars_fail,all_gates_pass,exported_count,top_remaining_blocker,prior_post_option_a_raw_signal,prior_post_option_a_active_candidates,prior_post_option_a_in_profit_pass,prior_post_option_a_all_gates_pass,prior_post_option_a_exported_count,notes
+AGGREGATE,3958,1153,2805,1101,52,516,637,933,220,464,528,len_trades_lt_2_block:637,3958,1088,1034,438,501,current post-trend_fail validation; gate counts are not performance evidence
+AAVEUSDT,167,60,107,57,3,28,32,45,15,25,30,len_trades_lt_2_block:32,167,60,56,25,,current post-trend_fail validation; gate counts are not performance evidence
+ADAUSDT,220,45,175,43,2,19,26,38,7,17,18,len_trades_lt_2_block:26,220,44,42,17,,current post-trend_fail validation; gate counts are not performance evidence
+ATOMUSDT,153,32,121,31,1,19,13,23,9,18,20,len_trades_lt_2_block:13,153,31,30,17,,current post-trend_fail validation; gate counts are not performance evidence
+AVAXUSDT,155,36,119,35,1,18,18,30,6,17,20,len_trades_lt_2_block:18,155,25,25,14,,current post-trend_fail validation; gate counts are not performance evidence
+BCHUSDT,185,49,136,47,2,26,23,39,10,24,27,len_trades_lt_2_block:23,185,46,44,22,,current post-trend_fail validation; gate counts are not performance evidence
+BNBUSDT,339,145,194,143,2,49,96,119,26,47,50,len_trades_lt_2_block:96,339,141,137,45,,current post-trend_fail validation; gate counts are not performance evidence
+BTCUSDT,333,116,217,109,7,52,64,101,15,45,52,len_trades_lt_2_block:64,333,109,102,42,,current post-trend_fail validation; gate counts are not performance evidence
+DOGEUSDT,168,24,144,21,3,15,9,21,3,12,13,len_trades_lt_2_block:9,168,20,17,11,,current post-trend_fail validation; gate counts are not performance evidence
+DOTUSDT,122,20,102,17,3,12,8,18,2,9,10,len_trades_lt_2_block:8,122,17,14,7,,current post-trend_fail validation; gate counts are not performance evidence
+ETCUSDT,173,31,142,30,1,17,14,25,6,16,19,len_trades_lt_2_block:14,173,31,30,16,,current post-trend_fail validation; gate counts are not performance evidence
+ETHUSDT,335,134,201,129,5,51,83,112,22,46,50,len_trades_lt_2_block:83,335,127,122,44,,current post-trend_fail validation; gate counts are not performance evidence
+FILUSDT,80,10,70,9,1,4,6,9,1,3,3,len_trades_lt_2_block:6,80,10,9,3,,current post-trend_fail validation; gate counts are not performance evidence
+LINKUSDT,254,67,187,62,5,36,31,52,15,31,36,len_trades_lt_2_block:31,254,66,61,30,,current post-trend_fail validation; gate counts are not performance evidence
+LTCUSDT,200,81,119,79,2,35,46,60,21,33,45,len_trades_lt_2_block:46,200,76,74,31,,current post-trend_fail validation; gate counts are not performance evidence
+NEARUSDT,153,40,113,36,4,26,14,32,8,22,24,len_trades_lt_2_block:14,153,39,35,21,,current post-trend_fail validation; gate counts are not performance evidence
+SOLUSDT,235,85,150,81,4,36,49,66,19,32,39,len_trades_lt_2_block:49,235,85,81,32,,current post-trend_fail validation; gate counts are not performance evidence
+TRXUSDT,363,123,240,120,3,48,75,94,29,45,49,len_trades_lt_2_block:75,363,120,117,43,,current post-trend_fail validation; gate counts are not performance evidence
+UNIUSDT,134,13,121,10,3,11,2,11,2,8,8,in_profit_block:3,134,12,9,7,,current post-trend_fail validation; gate counts are not performance evidence
+XRPUSDT,189,42,147,42,0,14,28,38,4,14,15,len_trades_lt_2_block:28,189,29,29,11,,current post-trend_fail validation; gate counts are not performance evidence
