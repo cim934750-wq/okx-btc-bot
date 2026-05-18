@@ -1,0 +1,2 @@
+prefix,run_status,recommended_next_step,reason,implementation_readiness,performance_claim_boundary
+long2_option_a_side_effect_audit_round1,completed_with_compileall_permission_failure,run_narrower_management_exit_audit,Long1/Short1 count deltas are broad and exit reasons are unavailable; management lifecycle needs narrower instrumentation before interpreting Long2 counts.,not_ready,counts_only_no_profitability_claims

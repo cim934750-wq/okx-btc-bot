@@ -1,0 +1,6 @@
+variable,source_file,line_number,unit_scale,used_in_long_trend_fail,used_in_short_trend_fail,compatible_with_runtime_Close,evidence
+runtime Close,research/strategy.py,"149,174 via self.data.Close[-1]","runtime price scale under FractionalBacktest, observed 1e-8",True,True,self,Existing runtime_price_scale remains unchanged.
+runtime_ema50,research/strategy.py,"148,173",unscaled ema50 multiplied by runtime_price_scale,True,True,True,New helper _to_runtime_price_level converts ema50 before comparison.
+ema50 feature,research/indicators.py,113,unscaled feature-space price level,indirect_after_runtime_conversion,indirect_after_runtime_conversion,only after _to_runtime_price_level,indicators.py unchanged.
+plus_di / minus_di,research/indicators.py,120-129,dimensionless indicator values,True,True,not price-scaled; safe as direction-only terms,No change.
+weekly/daily trend booleans,research/indicators.py,131-182,boolean feature state,True,True,not price-scaled; safe as booleans,No change.

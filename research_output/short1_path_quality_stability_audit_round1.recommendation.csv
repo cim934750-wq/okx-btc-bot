@@ -1,0 +1,7 @@
+item,value
+study_type,short1_path_quality_stability_audit_round1
+path_quality_judgment,stable across testable markets; path-quality labels consistently separate followthrough from adverse behavior and generally align with executed PnL.
+entry_extension_judgment,"secondary antecedent only; lower extension appears in 10/11 executed markets and 6/11 starter markets, so it is useful but not parent-level."
+first_parent_judgment,adverse-excursion-avoidant downside followthrough
+next_step,"Audit internal pre-entry antecedents inside adverse-excursion-avoidant downside followthrough, starting with extension as a secondary candidate but not a rule."
+implementation_readiness,not_open_research_only

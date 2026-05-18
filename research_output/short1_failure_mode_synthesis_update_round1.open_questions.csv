@@ -1,0 +1,5 @@
+question,status,allowed_method,priority
+Are mixed_chop and weak_followthrough related as a broader unresolved non-clean behavior family?,open,Only a fixed descriptive grouping check using existing saved fields; no thresholds and no new proxies.,medium
+Does lower ADX remain useful after adverse_dominant is isolated from other non-clean buckets?,open but secondary,Descriptive context-only review; do not promote unless future evidence is stable in both populations.,low-medium
+Can failed_no_followthrough be interpreted?,closed for now,No further interpretation at n=1.,low
+Is entry_short_ema20_gap_atr implementation-ready?,closed / no,"No thresholding, no rule conversion, no implementation planning.",blocked

@@ -1,0 +1,6 @@
+method_step,description,exactness,limitation
+strategy_reproduction,Inline research-only Strategy subclass mirrors current research/strategy.py management logic and adds event logging.,exact for Python conditions copied from current source,Diagnostic code is not production source and is not permanently saved.
+explicit_close_events,"Logged TP1 partial closes, short TP2 closes, and long/short trend_fail position.close calls before invoking position.close.",exact strategy-triggered close attribution,Backtesting.py may materialize partial close rows after order processing; matching uses market/tag/entry_bar/side and exit_bar proximity.
+tp2_markers,Logged Long TP2 as a state marker because current long logic sets tp2_hit but does not directly close.,exact state marker,Long TP2 cannot be treated as final exit reason unless later stop/trend close follows.
+stop_assignment_and_hit_proxy,Logged every trade.sl assignment and classified subsequent unmatched closes by latest assigned stop kind.,"exact assignment, proxy hit attribution",Broker stop fills do not export an explicit reason; labels remain stop-hit proxies.
+add_on_interactions,Computed Long1/Short1 overlap with Long2/Short2 trade rows and recorded add-on gate material.,exact from trade rows and diagnostic gate records,Interaction does not imply profitability or causality by itself.

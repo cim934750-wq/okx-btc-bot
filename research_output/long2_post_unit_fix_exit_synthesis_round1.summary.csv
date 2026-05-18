@@ -1,0 +1,8 @@
+section,item,status,detail
+current_unit_fix_state,atr_distance_runtime_scaling,fixed,ATR-derived TP/stop/trail/breakeven/add-on distances are runtime-scaled before runtime price comparisons.
+current_unit_fix_state,trend_fail_ema_runtime_scaling,fixed,trend_fail compares runtime Close against runtime-scaled ema50; post-patch disagreements long 425->0 and short 166->0.
+counts,aggregate_counts_A_B_C,recorded,total 1056->2696->2730; Long1 872->1668->1678; Long2 0->501->528; Short1 184->527->524; Short2 0->0->0.
+lifecycle,duration_compression,remains,Long1 avg duration 16.32->7.23->8.29; Short1 avg duration 109.66->9.29->8.51.
+long2_gate,accessibility,confirmed_not_performance,"raw=3958, active=1153, in_profit=1101, all_gates=464, exported=528."
+short2_gate,zero_status,still_zero,"raw=39, active=3, in_profit=0, all_gates=0, exported=0."
+interpretation_boundary,performance_claims,closed,Nonzero Long2 tags prove gate accessibility only; they do not prove profitability or implementation readiness.

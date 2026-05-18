@@ -1,0 +1,24 @@
+file,line_number,mechanism,long_short_path,uses_runtime_ATR_distance,patched_or_unpatched,likely_affected_by_Option_A,notes
+research/strategy.py,61-62,_to_runtime_distance helper,shared,yes_when_called_with_ATR_distance,patched_helper_present,yes,Converts unscaled ATR-like distances into FractionalBacktest runtime price space.
+research/strategy.py,106-156,_manage_long,long,yes,patched_ATR_management_path,yes,"Long management now derives risk, TP, stop, floor, and trail from runtime_atr."
+research/strategy.py,158-186,_manage_short,short,yes,patched_ATR_management_path,yes,"Short management now derives risk, TP, stop, breakeven, and trail from runtime_atr."
+research/strategy.py,"111,127-129",TP1 threshold and partial close,long,yes,patched,yes,"TP1 is avg_entry + runtime-scaled risk; if reached, closes partial position and sets tp1_hit."
+research/strategy.py,"163,177-179",TP1 threshold and partial close,short,yes,patched,yes,"TP1 is avg_entry - runtime-scaled risk; if reached, closes partial position and sets tp1_hit."
+research/strategy.py,"112,131-132,142-144",TP2 threshold and optional TP2 floor,long,yes,patched,yes,TP2 reach sets tp2_hit; optional TP2 profit-lock floor uses runtime-scaled risk but parameter is currently zero by default.
+research/strategy.py,"164,184-186",TP2 full close,short,yes,patched,yes,"TP2 is avg_entry - runtime-scaled risk; if reached, closes short position and updates last_exit_bar."
+research/strategy.py,"113,147-152",stop assignment,long,yes,patched,yes,"Long stop is assigned from runner_stop, which is max of breakeven/floor and runtime-scaled trail."
+research/strategy.py,"165,173-175",stop assignment,short,yes,patched,yes,"Short stop is assigned from runner_stop, which is min of breakeven and runtime-scaled trail."
+research/strategy.py,135-141,trailing stop update,long,yes,patched,yes,Long trail subtracts runtime_atr * active_trail_mult from highest_since_entry.
+research/strategy.py,167-168,trailing stop update,short,yes,patched,yes,Short trail adds runtime_atr * trail_atr_mult to lowest_since_entry.
+research/strategy.py,"115-120,134,142-144",breakeven / floor logic,long,yes,patched,yes,TP1 floor uses runtime_atr plus fee buffer; optional profit-lock floors are runtime-distance based.
+research/strategy.py,166,breakeven floor logic,short,yes,patched,yes,"After TP1, short breakeven becomes avg_entry - runtime_atr * breakeven_offset_atr."
+research/strategy.py,"145,154-155",trend_fail logic and close,long,no,unpatched_non_ATR_scale_risk,indirect_or_separate_risk,Compares runtime Close with ema50 feature plus DI and higher-timeframe booleans; identified by prior scan as separate non-ATR scale risk.
+research/strategy.py,"169,180-182",trend_fail logic and close,short,no,unpatched_non_ATR_scale_risk,indirect_or_separate_risk,Compares runtime Close with ema50 feature plus DI and higher-timeframe booleans; identified by prior scan as separate non-ATR scale risk.
+research/strategy.py,128,position.close(portion=partial_exit_pct),long,triggered_by_runtime_ATR_TP1,close_call_unchanged_trigger_patched,yes,Close call itself unchanged; reachability of TP1 trigger changed with runtime-scaled risk.
+research/strategy.py,155,position.close(),long,no,close_call_unchanged_trend_fail_unpatched,not_directly,Trend-fail close remains separate from ATR-distance patch.
+research/strategy.py,178,position.close(portion=partial_exit_pct),short,triggered_by_runtime_ATR_TP1,close_call_unchanged_trigger_patched,yes,Close call itself unchanged; reachability of TP1 trigger changed with runtime-scaled risk.
+research/strategy.py,181,position.close(),short,no,close_call_unchanged_trend_fail_unpatched,not_directly,Trend-fail close remains separate from ATR-distance patch.
+research/strategy.py,185,position.close(),short,triggered_by_runtime_ATR_TP2,close_call_unchanged_trigger_patched,yes,Short TP2 full close trigger became reachable in runtime units.
+research/strategy.py,211-214,Long2 add-on in_profit gate,long,yes,patched,yes,Long2 in_profit now compares Close against avg_entry plus runtime-scaled ATR distance.
+research/strategy.py,219-222,Short2 add-on in_profit gate,short,yes,patched,yes,"Short2 in_profit now compares Close against avg_entry minus runtime-scaled ATR distance, though exported Short2 remains zero."
+research/strategy.py,268-273,runtime_price_scale assignment,shared,n/a,supporting_runtime_scale,yes,FractionalBacktest runtime uses 1e-8 scale; helper consumes this value.

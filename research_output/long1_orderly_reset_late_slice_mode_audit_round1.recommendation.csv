@@ -1,0 +1,2 @@
+verdict,late_mode_judgment,scope_judgment,late_total,late_support_good_count,late_support_bad_count,late_all_fit_existing_buckets,implementation_trigger
+late_slice_still_fits_frozen_weak_side_buckets,"late slice is still structurally described by the frozen stack, but only weak-side buckets remain and the positive support-good survivor is absent",keep Early-only scope,3,0,3,True,A promotion-ready result would need the frozen stack to show positive support-good persistence in a later same-family population or otherwise demonstrate durable cross-period coherence.

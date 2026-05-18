@@ -1,0 +1,7 @@
+variable,source_file,line_number,unit_scale,used_in_long_trend_fail,used_in_short_trend_fail,compatible_with_runtime_Close,evidence
+runtime Close,research/strategy.py,"145,169 via self.data.Close[-1]","runtime price scale under FractionalBacktest, observed 1e-8",True,True,self,runtime_price_scale set to 1/100e6 at strategy.py line 269 when FractionalBacktest is used
+ema50,research/indicators.py,113,unscaled feature space from raw close,True,True,False,ema50 computed before Backtest construction; no helper scales ema50 before trend_fail
+runtime price reference in ATR management,research/strategy.py,"109-143,161-183",runtime-scaled ATR distances after Option A,False,False,True,runtime_atr = _to_runtime_distance(atr) before TP/stop/trail calculations
+runtime_price_scale,research/strategy.py,"269,273",1e-8 for FractionalBacktest else 1.0,False,False,n/a,Injected into strategy class but not applied to ema50 in trend_fail
+plus_di / minus_di,research/indicators.py,120-129,dimensionless indicator values,True,True,not price-scaled; safe as direction-only terms,DMI outputs ratios; no price-unit comparison against runtime Close
+weekly_bull/daily_bull/weekly_bear/daily_bear,research/indicators.py,131-182,boolean feature state,True,True,not price-scaled; safe as boolean terms,"Computed from feature frame before runtime; used as booleans, not price comparisons"

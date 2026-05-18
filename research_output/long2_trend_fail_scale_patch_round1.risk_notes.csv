@@ -1,0 +1,5 @@
+risk,status,detail
+double_scaling,mitigated_in_patch,Only unscaled ema50 feature values are passed to _to_runtime_price_level; runtime Close and trade prices are not scaled again.
+broad_source_change,mitigated_in_patch,Only research/strategy.py changed; indicators.py and config.py unchanged.
+lifecycle_change,still_requires_review,"Trend_fail disagreement is fixed, but Long1/Short1 lifecycle compression still needs separate review because ATR management behavior also changed."
+performance_overread,guarded,No profitability or implementation readiness claim is made.

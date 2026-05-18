@@ -1,0 +1,2 @@
+prefix,run_status,future_patch_plan_justified,recommended_next_step,reason,implementation_readiness,performance_claim_boundary
+long2_option_a_trend_fail_scale_audit_round1,completed,True,prepare_trend_fail_patch_plan_only,"Trend_fail price component mixes runtime Close with unscaled ema50 on both long and short paths; reconstructed management contexts show result-level disagreements, with long over-trigger risk and short suppression risk.",not_ready,no profitability claim; validation only; no strategy behavior changed

@@ -1,0 +1,21 @@
+scope,exported_long2_count,long1_count,long1_with_long2_overlap_count,long1_fast_exit_count_le_8_bars,long1_fast_exit_with_long2_before_exit_count,long1_avg_duration_with_long2_overlap,long1_avg_duration_without_long2_overlap,long2_avg_duration_bars,long2_top_exit_mechanism,interpretation_boundary
+AGGREGATE,528,1678,792,1060,416,10.026515151515152,6.74040632054176,7.0018939393939394,stop_hit_proxy:long_trailing_stop,Long2 overlap can complicate lifecycle attribution but is not profitability evidence.
+AAVEUSDT,30,92,44,58,23,9.545454545454545,6.125,7.2,stop_hit_proxy:long_breakeven_floor_stop,Long2 overlap can complicate lifecycle attribution but is not profitability evidence.
+ADAUSDT,18,70,29,41,15,10.137931034482758,7.902439024390244,6.722222222222222,stop_hit_proxy:long_trailing_stop,Long2 overlap can complicate lifecycle attribution but is not profitability evidence.
+ATOMUSDT,20,49,27,31,15,8.0,6.0,4.75,stop_hit_proxy:long_breakeven_floor_stop,Long2 overlap can complicate lifecycle attribution but is not profitability evidence.
+AVAXUSDT,20,49,29,34,18,10.0,6.3,6.7,stop_hit_proxy:long_trailing_stop,Long2 overlap can complicate lifecycle attribution but is not profitability evidence.
+BCHUSDT,27,97,40,63,21,9.325,6.947368421052632,5.185185185185185,stop_hit_proxy:long_breakeven_floor_stop,Long2 overlap can complicate lifecycle attribution but is not profitability evidence.
+BNBUSDT,50,158,77,90,35,11.311688311688311,7.320987654320987,8.9,stop_hit_proxy:long_trailing_stop,Long2 overlap can complicate lifecycle attribution but is not profitability evidence.
+BTCUSDT,52,171,82,107,46,10.585365853658537,6.977528089887641,9.076923076923077,stop_hit_proxy:long_trailing_stop,Long2 overlap can complicate lifecycle attribution but is not profitability evidence.
+DOGEUSDT,13,54,18,36,7,12.88888888888889,6.388888888888889,6.0,stop_hit_proxy:long_breakeven_floor_stop,Long2 overlap can complicate lifecycle attribution but is not profitability evidence.
+DOTUSDT,10,45,15,27,7,10.4,7.9,7.0,stop_hit_proxy:long_trailing_stop,Long2 overlap can complicate lifecycle attribution but is not profitability evidence.
+ETCUSDT,19,55,29,32,18,8.206896551724139,10.076923076923077,4.2631578947368425,stop_hit_proxy:long_breakeven_floor_stop,Long2 overlap can complicate lifecycle attribution but is not profitability evidence.
+ETHUSDT,50,156,81,96,41,11.481481481481481,6.76,9.44,stop_hit_proxy:long_trailing_stop,Long2 overlap can complicate lifecycle attribution but is not profitability evidence.
+FILUSDT,3,9,5,5,4,8.8,10.5,6.666666666666667,stop_hit_proxy:long_breakeven_floor_stop,Long2 overlap can complicate lifecycle attribution but is not profitability evidence.
+LINKUSDT,36,119,51,77,30,8.607843137254902,6.838235294117647,5.472222222222222,stop_hit_proxy:long_trailing_stop,Long2 overlap can complicate lifecycle attribution but is not profitability evidence.
+LTCUSDT,45,100,60,65,34,8.366666666666667,6.925,5.955555555555556,stop_hit_proxy:long_trailing_stop,Long2 overlap can complicate lifecycle attribution but is not profitability evidence.
+NEARUSDT,24,79,38,55,23,8.289473684210526,6.341463414634147,4.166666666666667,stop_hit_proxy:long_breakeven_floor_stop,Long2 overlap can complicate lifecycle attribution but is not profitability evidence.
+SOLUSDT,39,109,60,67,25,10.2,4.877551020408164,8.025641025641026,stop_hit_proxy:long_trailing_stop,Long2 overlap can complicate lifecycle attribution but is not profitability evidence.
+TRXUSDT,49,180,73,122,40,10.191780821917808,6.299065420560748,6.857142857142857,stop_hit_proxy:long_trailing_stop,Long2 overlap can complicate lifecycle attribution but is not profitability evidence.
+UNIUSDT,8,26,13,15,5,9.923076923076923,5.6923076923076925,4.5,stop_hit_proxy:long_breakeven_floor_stop,Long2 overlap can complicate lifecycle attribution but is not profitability evidence.
+XRPUSDT,15,60,21,39,9,12.761904761904763,5.615384615384615,6.866666666666666,stop_hit_proxy:long_trailing_stop,Long2 overlap can complicate lifecycle attribution but is not profitability evidence.

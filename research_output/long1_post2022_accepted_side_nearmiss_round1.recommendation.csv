@@ -1,0 +1,2 @@
+verdict,neighborhood_judgment,relocation_strength_update,focus_total,full_core_count,near_miss_core_count,implementation_trigger
+survivor_isolated_no_nearmiss,the post-2022 accepted-side survivor remains effectively isolated; no near-miss neighborhood appears under the allowed frozen-stack rule,keep relocation hypothesis as plausible but weak,1,1,0,"A promotion-ready result would need at least one additional post-2022 accepted-side near-miss or full-core recurrence under the frozen framework, not just a single isolated survivor."

@@ -1,0 +1,2 @@
+recommendation,weak_loser_count,historical_winner_count,top_label,top_label_weak_loser_share,top_label_winner_share,top_label_share_gap_vs_winners,qualified_label_count
+do_not_patch_yet,3,29,reclaim_failed_hold,0.6666666666666666,0.3793103448275862,0.28735632183908044,0

@@ -1,0 +1,5 @@
+family,accepted_option_a_exported_count_before_trend_fail_patch,post_patch_exact_exported_count,post_patch_exact_exported_count_status,lightweight_before_trend_fail_patch_count_proxy,lightweight_after_trend_fail_patch_count_proxy,lightweight_proxy_delta,notes
+Long1,1668,,not_run_by_instruction_no_post_patch_backtest,1250,1222,-28,Lightweight proxy is not a backtest and not performance evidence.
+Long2,501,,not_run_by_instruction_no_post_patch_backtest,315,336,21,Lightweight proxy is not a backtest and not performance evidence.
+Short1,527,,not_run_by_instruction_no_post_patch_backtest,367,367,0,Lightweight proxy is not a backtest and not performance evidence.
+Short2,0,,not_run_by_instruction_no_post_patch_backtest,0,0,0,Lightweight proxy is not a backtest and not performance evidence.

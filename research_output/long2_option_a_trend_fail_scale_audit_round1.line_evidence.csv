@@ -1,0 +1,16 @@
+file,line_number,evidence_type,code,unit_implication
+research/strategy.py,61,runtime distance helper,"def _to_runtime_distance(self, unscaled_distance: float) -> float:",Helper only scales explicit distance values; it does not scale ema50.
+research/strategy.py,62,runtime distance helper,return unscaled_distance * self.runtime_price_scale,ATR-like distances become runtime-scaled when passed through helper.
+research/strategy.py,145,long trend_fail assignment,trend_fail = (self.data.Close[-1] < self.data.ema50[-1] and self.data.minus_di[-1] > self.data.plus_di[-1]) or ...,Uses runtime Close against feature ema50 with no ema50 runtime conversion.
+research/strategy.py,154,long trend_fail close condition,if trend_fail:,A true long trend_fail closes the current position.
+research/strategy.py,155,long trend_fail close action,self.position.close(),Close action is behaviorally material when trend_fail differs.
+research/strategy.py,169,short trend_fail assignment,trend_fail = (self.data.Close[-1] > self.data.ema50[-1] and self.data.plus_di[-1] > self.data.minus_di[-1]) or ...,Uses runtime Close against feature ema50 with no ema50 runtime conversion.
+research/strategy.py,180,short trend_fail close condition,if trend_fail:,A true short trend_fail closes the current position.
+research/strategy.py,181,short trend_fail close action,self.position.close(),Close action is behaviorally material when trend_fail differs.
+research/strategy.py,268,FractionalBacktest selection,bt_class = FractionalBacktest if FractionalBacktest is not None else Backtest,Runtime may use FractionalBacktest.
+research/strategy.py,269,runtime price scale,runtime_price_scale = (1 / 100e6) if bt_class is FractionalBacktest else 1.0,FractionalBacktest runtime scale observed as 1e-8.
+research/strategy.py,273,runtime scale injection,"{""runtime_price_scale"": runtime_price_scale}","Strategy knows scale for explicit helper use, but trend_fail does not use helper."
+research/indicators.py,110,feature frame starts from raw data,frame = df_4h.copy(),Indicator features are computed before Backtest/FractionalBacktest construction.
+research/indicators.py,113,ema50 assignment,"frame[""ema50""] = ema(frame[""close""], params.exec_mid_length)",ema50 is computed from raw unscaled close.
+research/strategy.py,258,features built before rename/backtest,"frame = build_feature_frame(raw_df, params)",ema50 already exists before FractionalBacktest receives frame.
+research_output/long2_option_a_management_exit_audit_round1.remaining_scale_risk_scan.csv,data row 1-2,prior accepted audit evidence,runtime Close vs unscaled ema50 flagged at strategy.py lines 145 and 169,Prior audit identified same non-ATR risk; this audit quantifies it.

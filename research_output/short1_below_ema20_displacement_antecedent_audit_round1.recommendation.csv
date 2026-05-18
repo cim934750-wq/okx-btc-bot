@@ -1,0 +1,14 @@
+item,judgment
+diagnostic,short1_below_ema20_displacement_antecedent_audit_round1
+methodological_boundary,"Used saved Short1 path-quality labels only; no strategy logic changes, no proxy-definition changes, no threshold sweep, no implementation planning."
+parent,Keep adverse-excursion-avoidant downside followthrough.
+leading_antecedent_wording,below-EMA20 displacement antecedent
+structural_vs_artifact,"Partly construction-adjacent, but not merely an executed-trade artifact: starter_short_signal also supports 10/11 markets with aggregate avg delta 0.054648; weak execution-selection half supports 6/6 markets."
+entry_exec_distance_comparison,"Core field is more stable in starter population than entry_exec_distance_atr: core 10/11, exec_distance 6/11."
+directional_distinctness,Core is related to but not identical to general entry extension: Pearson/Spearman vs entry_exec_distance_atr are 0.046/0.007 executed and 0.070/0.046 starter.
+combined_with_exec_distance,executed_short1: both_support=9/11; starter_short_signal: both_support=6/11
+combined_with_adx,executed_short1: both_support=10/11; starter_short_signal: both_support=8/11
+combined_with_di_spread,executed_short1: both_support=7/11; starter_short_signal: both_support=7/11
+discovery_readiness,Next diagnostic should test combined antecedents descriptively; do not implement and do not threshold-sweep.
+implementation_readiness,Not implementation-ready.
+next_step,Test combined antecedents around below-EMA20 displacement plus lower extension/ADX/DI-spread using fixed descriptive grouping only.

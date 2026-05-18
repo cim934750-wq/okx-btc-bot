@@ -1,0 +1,7 @@
+file,line_number,evidence_type,code,unit_implication
+research/strategy.py,64-65,runtime price-level helper,"def _to_runtime_price_level(self, unscaled_price: float) -> float: return unscaled_price * self.runtime_price_scale",Unscaled indicator price levels can be converted to runtime price units without reusing the distance helper.
+research/strategy.py,148-149,long trend_fail patched comparison,runtime_ema50 = self._to_runtime_price_level(float(self.data.ema50[-1])); self.data.Close[-1] < runtime_ema50,Runtime Close now compares against runtime-scaled ema50.
+research/strategy.py,158-159,long trend_fail close condition,if trend_fail: self.position.close(),Close behavior remains conditional on same logical trend_fail shape.
+research/strategy.py,173-174,short trend_fail patched comparison,runtime_ema50 = self._to_runtime_price_level(float(self.data.ema50[-1])); self.data.Close[-1] > runtime_ema50,Runtime Close now compares against runtime-scaled ema50.
+research/strategy.py,181-182,short trend_fail close condition,if trend_fail: self.position.close(); self.last_exit_bar = i,Close behavior remains conditional on same logical trend_fail shape.
+research/indicators.py,113,ema50 unchanged,"frame[""ema50""] = ema(frame[""close""], params.exec_mid_length)",Feature construction remains unscaled and unchanged.

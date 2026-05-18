@@ -1,0 +1,2 @@
+recommendation,proxy_note,accepted_count,accepted_better_than_not_accepted,accepted_better_than_non_mp_accepted,accepted_better_than_all_other
+still_redesign_evidence_only,p2_close>=ema20 and p1_close>=ema20 and (p2_low<=ema20 or p1_low<=ema20) and p1_close_gap>=0.5*p2_close_gap,2,True,True,True

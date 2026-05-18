@@ -1,0 +1,2 @@
+recommended_next_step,reason,not_recommended,requires_user_approval,notes
+create_post_unit_fix_exit_synthesis_note,The audit now separates exact strategy close events from stop-hit proxies; the next safe step is a concise synthesis before any further patch or strategy conclusion.,"live/dry-run, optimization, threshold sweep, profitability interpretation, implementation planning",True,No specific new unit-inconsistent mechanism was identified by this audit output.

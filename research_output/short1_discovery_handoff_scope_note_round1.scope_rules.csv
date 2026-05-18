@@ -1,0 +1,13 @@
+rule_type,item,scope
+forbidden,implementation planning,No implementation planning is open from this state.
+forbidden,threshold sweep,Do not sweep thresholds or invent cutoffs.
+forbidden,strategy/source edits,Do not modify strategy or source files.
+forbidden,proxy-definition changes,Do not create or change proxy definitions.
+forbidden,entry_short_ema20_gap_atr rule conversion,Do not convert the leading antecedent into a rule/filter.
+forbidden,combined antecedent promotion,Do not promote combined antecedents to implementation layers.
+forbidden,Long1 import,Do not import Long1 structure or assume Short1 is Long1 inverse.
+allowed,fixed unresolved non-clean grouping check,"Allowed only as descriptive, fixed-scope research."
+allowed,mixed_chop-specific descriptive review,Allowed only if it addresses unresolved behavior without thresholds.
+allowed,weak_followthrough-specific descriptive review,Allowed only if it addresses unresolved behavior without thresholds.
+allowed,context-only ADX review,Allowed only if ADX remains secondary/contextual.
+allowed,synthesis / handoff updates,Allowed to preserve boundaries and carry state forward.

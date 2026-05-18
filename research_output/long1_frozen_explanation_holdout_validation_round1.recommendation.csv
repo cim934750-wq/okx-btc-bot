@@ -1,0 +1,2 @@
+study,explicit_validation_judgment,explicit_redesign_scope_update,early_half_trade_count,late_half_trade_count
+frozen_explanation_holdout_stability_audit,"The frozen explanation remains coherent enough under holdout-style validation to keep carrying forward unchanged. The late half supports all three core items directly, while the early half behaves as expected background/setup rather than contradiction.","Keep the carried-forward explanation unchanged, keep the weak background note subordinate, and keep future work validation-only.",45,45

@@ -1,0 +1,9 @@
+section,status,detail
+current_short1_parent,final carry-forward discovery parent,below-EMA20 displacement mainly protects against adverse-dominant failure
+leading_diagnostic_antecedent,diagnostic_only,entry_short_ema20_gap_atr; do not convert into a rule/filter.
+bucket_ledger,final first-round ledger,"Executed clean 61, adverse 66, mixed 16, weak 11, unresolved_non_clean 27, failed excluded 1; starter clean 176, adverse 227, mixed 29, weak 41, unresolved_non_clean 70, failed excluded 1."
+stable_findings,preserve,adverse_dominant is the stable main failure target; below-EMA20 displacement mainly protects against adverse-dominant failure.
+unresolved_ledger,preserve with component labels,"mixed_chop and weak_followthrough can be grouped as unresolved_non_clean for a high-level ledger, but component behavior remains different: mixed_chop has non-favorable return with better MFE-MAE, while weak_followthrough has favorable return but adverse-dominant excursion quality. Keep component labels in analysis."
+closed_diagnostics,closed,Material inventory through unresolved non-clean grouping check are closed for this first discovery round.
+implementation_boundary,not implementation-ready,"No implementation planning, thresholds, rule conversion, strategy edits, or proxy changes."
+final_carry_forward_judgment,stop marker,Stop current Short1 first discovery round; future work requires a genuinely new fixed descriptive question.

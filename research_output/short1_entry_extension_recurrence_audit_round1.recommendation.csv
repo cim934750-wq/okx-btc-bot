@@ -1,0 +1,10 @@
+item,value
+study_type,short1_entry_extension_recurrence_audit_round1
+markets_tested,11
+executed_lower_extension_markets,10
+starter_lower_extension_markets,6
+both_lower_extension_markets,5
+interpretation,entry_exec_distance_atr recurs as a partial but not universal antecedent; path-quality separation is stronger than entry-extension recurrence.
+first_parent_update,weaken to path-quality separation with a recurring but inconsistent lower-extension antecedent
+next_step,Run a basket-level path-quality stability audit to identify whether adverse-excursion avoidance itself is stable across markets before naming any Short1 parent.
+implementation_readiness,not_open_research_only

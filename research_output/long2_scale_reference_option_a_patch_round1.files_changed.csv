@@ -1,0 +1,5 @@
+file_path,change_type,summary
+D:\Bot\0412_Bot_short1_research_workspace\research\strategy.py,modified,Applied Option A runtime ATR-distance scaling via existing _to_runtime_distance helper for long/short management and Long2/Short2 add-on profit gates.
+D:\Bot\0412_Bot_short1_research_workspace\research_output\long2_runtime_in_profit_gate_audit_post_patch_round1.gate_funnel_summary.csv,created,Post-patch Long2 gate funnel.
+D:\Bot\0412_Bot_short1_research_workspace\research_output\long2_runtime_in_profit_gate_audit_post_patch_round1.candidate_rows_sample.csv,created,Post-patch candidate sample rows.
+D:\Bot\0412_Bot_short1_research_workspace\research_output\long2_runtime_in_profit_gate_audit_post_patch_round1.before_after_trade_counts.csv,created,Post-patch before/after trade counts backing table.

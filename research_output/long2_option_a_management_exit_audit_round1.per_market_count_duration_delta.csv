@@ -1,0 +1,41 @@
+market,family,pre_count,post_count,count_delta,pre_avg_duration_bars,post_avg_duration_bars,avg_duration_delta_bars,pre_median_duration_bars,post_median_duration_bars,median_duration_delta_bars,pre_min_duration_bars,post_min_duration_bars,pre_max_duration_bars,post_max_duration_bars,exit_reason_available,interpretation_proxy
+AGGREGATE,Long1,872,1668,796,16.321286516674988,7.230169692941158,-9.091116823733831,10.0,6.0,-4.0,,,,,False,count increase with shorter duration
+AGGREGATE,Short1,184,527,343,109.65681919060542,9.290923454533726,-100.36589573607169,80.0,7.25,-72.75,,,,,False,count increase with shorter duration
+AAVEUSDT,Long1,43,94,51,15.325581395348838,6.882978723404255,-8.442602671944583,12.0,5.0,-7.0,1.0,1.0,78.0,49.0,False,count increase with shorter duration
+AAVEUSDT,Short1,10,22,12,74.8,8.681818181818182,-66.11818181818181,56.0,8.0,-48.0,18.0,3.0,159.0,18.0,False,count increase with shorter duration
+ADAUSDT,Long1,39,71,32,16.0,7.788732394366197,-8.211267605633804,10.0,6.0,-4.0,1.0,1.0,60.0,34.0,False,count increase with shorter duration
+ADAUSDT,Short1,13,33,20,86.3076923076923,8.121212121212121,-78.18648018648018,62.0,6.0,-56.0,5.0,2.0,278.0,29.0,False,count increase with shorter duration
+ATOMUSDT,Long1,23,48,25,17.304347826086957,6.3125,-10.991847826086957,11.0,4.0,-7.0,1.0,1.0,81.0,23.0,False,count increase with shorter duration
+ATOMUSDT,Short1,18,61,43,138.83333333333334,8.39344262295082,-130.4398907103825,75.0,6.0,-69.0,4.0,1.0,620.0,27.0,False,count increase with shorter duration
+AVAXUSDT,Long1,27,47,20,13.296296296296296,6.340425531914893,-6.955870764381403,9.0,5.0,-4.0,2.0,1.0,81.0,25.0,False,count increase with shorter duration
+AVAXUSDT,Short1,7,15,8,187.0,7.466666666666667,-179.53333333333333,146.0,6.0,-140.0,11.0,3.0,399.0,21.0,False,count increase with shorter duration
+BCHUSDT,Long1,54,94,40,12.444444444444445,6.446808510638298,-5.997635933806147,10.0,5.0,-5.0,1.0,1.0,39.0,25.0,False,count increase with shorter duration
+BCHUSDT,Short1,8,19,11,71.125,11.052631578947368,-60.07236842105263,78.0,11.0,-67.0,16.0,3.0,151.0,21.0,False,count increase with shorter duration
+BNBUSDT,Long1,80,159,79,18.2125,8.062893081761006,-10.149606918238993,11.5,6.0,-5.5,1.0,1.0,133.0,32.0,False,count increase with shorter duration
+BNBUSDT,Short1,0,0,0,,,,,,,,,,,False,no count-duration compression proxy
+BTCUSDT,Long1,90,169,79,16.4,7.615384615384615,-8.784615384615384,10.0,5.0,-5.0,1.0,1.0,71.0,49.0,False,count increase with shorter duration
+BTCUSDT,Short1,1,1,0,99.0,16.0,-83.0,99.0,16.0,-83.0,99.0,16.0,99.0,16.0,False,no count-duration compression proxy
+DOGEUSDT,Long1,27,51,24,17.185185185185187,8.07843137254902,-9.106753812636168,9.0,6.0,-3.0,1.0,1.0,107.0,27.0,False,count increase with shorter duration
+DOGEUSDT,Short1,11,35,24,108.36363636363636,9.628571428571428,-98.73506493506493,62.0,8.0,-54.0,6.0,2.0,322.0,27.0,False,count increase with shorter duration
+DOTUSDT,Long1,28,45,17,13.071428571428571,7.844444444444444,-5.226984126984127,8.5,6.0,-2.5,1.0,1.0,44.0,21.0,False,count increase with shorter duration
+DOTUSDT,Short1,18,69,51,161.55555555555554,8.971014492753623,-152.58454106280192,150.0,8.0,-142.0,8.0,1.0,488.0,32.0,False,count increase with shorter duration
+ETCUSDT,Long1,29,56,27,18.379310344827587,7.303571428571429,-11.075738916256158,13.0,6.0,-7.0,1.0,1.0,91.0,23.0,False,count increase with shorter duration
+ETCUSDT,Short1,10,28,18,109.1,7.214285714285714,-101.88571428571429,64.0,6.0,-58.0,9.0,2.0,304.0,20.0,False,count increase with shorter duration
+ETHUSDT,Long1,84,156,72,17.845238095238095,8.294871794871796,-9.5503663003663,8.0,6.0,-2.0,1.0,1.0,104.0,48.0,False,count increase with shorter duration
+ETHUSDT,Short1,1,3,2,93.0,14.0,-79.0,93.0,15.0,-78.0,93.0,6.0,93.0,21.0,False,count increase with shorter duration
+FILUSDT,Long1,4,9,5,35.75,8.777777777777779,-26.97222222222222,24.5,8.0,-16.5,18.0,4.0,76.0,19.0,False,count increase with shorter duration
+FILUSDT,Short1,23,65,42,110.7391304347826,8.23076923076923,-102.50836120401337,82.0,7.0,-75.0,8.0,1.0,480.0,26.0,False,count increase with shorter duration
+LINKUSDT,Long1,64,119,55,14.6875,6.689075630252101,-7.998424369747899,11.0,5.0,-6.0,1.0,1.0,78.0,37.0,False,count increase with shorter duration
+LINKUSDT,Short1,3,12,9,163.0,7.083333333333333,-155.91666666666666,158.0,7.0,-151.0,105.0,2.0,226.0,13.0,False,count increase with shorter duration
+LTCUSDT,Long1,49,102,53,15.16326530612245,6.745098039215686,-8.418167266906764,12.0,6.0,-6.0,1.0,1.0,42.0,22.0,False,count increase with shorter duration
+LTCUSDT,Short1,12,25,13,85.5,7.52,-77.98,68.0,7.0,-61.0,4.0,2.0,282.0,18.0,False,count increase with shorter duration
+NEARUSDT,Long1,42,79,37,15.88095238095238,6.822784810126582,-9.058167570825798,13.5,6.0,-7.5,1.0,1.0,46.0,24.0,False,count increase with shorter duration
+NEARUSDT,Short1,11,34,23,141.0,8.029411764705882,-132.97058823529412,103.0,7.5,-95.5,11.0,1.0,375.0,21.0,False,count increase with shorter duration
+SOLUSDT,Long1,52,111,59,14.788461538461538,7.342342342342342,-7.446119196119196,12.0,5.0,-7.0,1.0,1.0,70.0,28.0,False,count increase with shorter duration
+SOLUSDT,Short1,6,14,8,90.83333333333331,6.785714285714286,-84.04761904761902,85.5,6.5,-79.0,12.0,2.0,182.0,13.0,False,count increase with shorter duration
+TRXUSDT,Long1,84,176,92,17.25,7.045454545454546,-10.204545454545453,10.0,5.0,-5.0,1.0,1.0,88.0,43.0,False,count increase with shorter duration
+TRXUSDT,Short1,3,7,4,59.333333333333336,10.142857142857142,-49.19047619047619,36.0,11.0,-25.0,17.0,5.0,125.0,14.0,False,count increase with shorter duration
+UNIUSDT,Long1,16,25,9,9.6875,6.12,-3.5675,5.5,5.0,-0.5,2.0,1.0,27.0,20.0,False,count increase with shorter duration
+UNIUSDT,Short1,16,47,31,107.5625,8.914893617021276,-98.64760638297872,90.5,7.0,-83.5,8.0,1.0,314.0,40.0,False,count increase with shorter duration
+XRPUSDT,Long1,37,57,20,11.432432432432432,6.859649122807017,-4.5727833096254145,6.0,6.0,0.0,1.0,1.0,71.0,42.0,False,count increase with shorter duration
+XRPUSDT,Short1,13,37,24,86.76923076923077,11.0,-75.76923076923077,50.0,8.0,-42.0,8.0,1.0,331.0,29.0,False,count increase with shorter duration

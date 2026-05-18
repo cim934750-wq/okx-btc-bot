@@ -1,0 +1,2 @@
+study,explicit_recurrence_judgment,explicit_redesign_scope_update,carry_forward_explanation_unchanged
+weak_background_branch_recurrence_audit,"The support-stable directional-absent weak background case appears exactly once in the weak nearby context, while the main weak seed-like branch appears three times and weak_other_nearby is empty.","Keep the carried-forward explanation unchanged. The background case should remain only a scope note, not a named secondary weak-side branch.",True

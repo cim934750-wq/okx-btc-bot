@@ -1,0 +1,12 @@
+item,value
+study_type,fresh_short1_structural_identity_discovery_inventory
+baseline_dataset,C:\Users\matra\OneDrive\Desktop\Bot\0412_Bot\data\BTCUSDT_4h.csv
+total_baseline_trades,91
+short1_trade_count,1
+short1_losers_winners,1/0
+short1_avg_pnl,-28.437674
+short1_profit_factor,0.000000
+largest_initial_descriptive_archetype,other_short1
+interpretation,"Short1 has enough baseline recurrence for a separate structural discovery round, but this first pass is descriptive only and does not establish a frozen identity."
+next_step,"Run a Short1-specific archetype decomposition focused on winners vs losers and pre-entry bearish continuation/resumption geometry, without importing Long1 layers."
+implementation_readiness,not_open_research_only

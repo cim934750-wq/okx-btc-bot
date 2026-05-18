@@ -1,0 +1,2 @@
+verdict,weak_focus_trade_count,persistent_count,transition_count,submode_judgment,scope_read
+still_redesign_evidence_only,3,2,1,tentative_two_submode_hint_but_too_sparse_to_name,keep gate_e0_atr_ratio >= 1.0 as an e0-decisive internal readiness property; do not promote weak-side submodes yet

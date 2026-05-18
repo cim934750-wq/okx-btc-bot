@@ -1,0 +1,2 @@
+recommendation,rationale,allowed_scope,forbidden_scope
+open_PR_for_review_only_after_cleanup_commit,Cleanup removes bulky/redundant generated outputs from Git tracking while keeping approved unit-fix source and compact research evidence. Review should remain research/unit-fix scoped and not imply implementation readiness.,PR review of branch contents and unit-fix evidence only.,"No performance claims, no live/dry-run planning, no optimization, no threshold sweep."

@@ -1,0 +1,2 @@
+verdict,weak_focus_trade_count,compact_case_count,noncompact_case_count,compactness_judgment,scope_read
+still_redesign_evidence_only,3,1,2,compactness_does_not_recur_beyond_one_trade_in_the_broader_weak_fragility_family,"keep weak-side fragility described as directionally-present, support-stability-led upstream fragility persistence; compactness stays a local outlier note unless recurrence appears"

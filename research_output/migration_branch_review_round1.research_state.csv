@@ -1,0 +1,9 @@
+area,status,key_counts,interpretation_boundary
+Long1 research,closed,post-fix Long1=1678; prior baseline Long1=872; post Option A Long1=1668,Do not reopen structural discovery; lifecycle changed and remains a review topic only.
+Short1 research,closed,post-fix Short1=524; prior baseline Short1=184; post Option A Short1=527,Do not reopen structural discovery; lifecycle changed and remains a review topic only.
+Long2 unit-fix research,completed_validation_state,Long2 baseline=0; post Option A=501; post trend_fail fix=528; in_profit post-fix=1101; all Long2 gates=464,"Nonzero Long2 tags prove gate accessibility after unit fixes, not profitability."
+trend_fail scale risk,fixed_in_source,long disagreements 425->0; short disagreements 166->0,Unit consistency fixed; no strategy-performance claim.
+lifecycle compression,remains_mixed,Long1 avg bars 16.32->7.23->8.29; Short1 avg bars 109.66->9.29->8.51,Compression remains after unit fixes; attribution led by TP1 plus stop/trailing/breakeven proxy exits.
+exit attribution,completed_validation_state,"Long1 TP1=562, trailing proxy=510; Short1 TP1=157, trailing proxy=139",Attribution is validation-only and not profitability evidence.
+Short2,still_zero,raw add_short_signal=39; active short candidates=3; in_profit=0; exported Short2=0,Short2 remains blocked; no live/dry-run implication.
+implementation readiness,closed_not_ready,n/a,No implementation readiness; future performance audit requires explicit approval.

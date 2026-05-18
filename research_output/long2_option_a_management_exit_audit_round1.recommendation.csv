@@ -1,0 +1,2 @@
+prefix,run_status,recommended_next_step,reason,implementation_readiness,performance_claim_boundary
+long2_option_a_management_exit_audit_round1,completed,run_narrower_trend_fail_scale_audit,"Management ATR-distance paths are patched and lifecycle compression is directionally expected, but trend_fail still compares runtime Close against unscaled ema50 on both long and short paths; that can confound management-exit attribution.",not_ready,counts_and_lifecycle_proxies_only_no_profitability_claims

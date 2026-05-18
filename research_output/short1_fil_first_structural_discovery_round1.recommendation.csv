@@ -1,0 +1,10 @@
+item,value
+study_type,short1_fil_first_structural_discovery_round1
+dataset,C:\Users\matra\OneDrive\Desktop\Bot\0412_Bot\data\FILUSDT_4h.csv
+executed_short1_count,23
+executed_short1_winners_losers,7/16
+starter_short_signal_count,74
+starter_favorable_unfavorable,26/48
+interpretation,FILUSDT has enough Short1 material for descriptive discovery. Initial separation appears more tied to follow-through/adverse excursion and context strength than to a finalized Short1 layer.
+next_step,Run one focused Short1 diagnostic parent around downside follow-through vs adverse excursion using repo-native starter_short_signal and executed Short1 populations; do not create implementation rules.
+implementation_readiness,not_open_research_only

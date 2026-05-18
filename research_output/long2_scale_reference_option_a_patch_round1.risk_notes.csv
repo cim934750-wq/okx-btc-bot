@@ -1,0 +1,5 @@
+risk,status,detail
+management_path_side_effects,requires_review,"_manage_long and _manage_short runtime ATR distances changed, so Long1/Short1 counts and exits may differ; counts are reported without reopening closed research."
+non_atr_indicator_scale_mismatch,not_patched,EMA trend_fail comparisons remain outside this ATR-distance patch scope and may need separate validation.
+performance_overread,guarded,Long2 execution/count changes are not profitability evidence.
+compileall_not_completed,open,"py_compile passed, but compileall was not completed due environment approval rejection."

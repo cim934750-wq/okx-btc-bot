@@ -1,0 +1,2 @@
+recommendation,proxy_note,open_count,open_better_than_crowded,open_better_than_non_mp_open,open_better_than_all_other
+still_redesign_evidence_only,support_to_release_sequence and entry_cont_gap_atr > entry_close_ema20_gap_atr and entry_exec_distance_atr <= 2.25,2,False,False,True

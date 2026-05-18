@@ -1,0 +1,13 @@
+item,status,detail
+branch,confirmed,migration/0412-research-workspace
+head_before_review_commit,confirmed,e3db8a6
+latest_expected_synthesis_commit,confirmed,e3db8a6 research: add post unit fix exit synthesis
+git_status_short,command_hung,Required git status --short was run; it produced no output before timeout and was killed. No status conclusion was taken from that command.
+git_log_oneline_n12,captured,e3db8a6 research: add post unit fix exit synthesis | 62ab717 research: add Long2 exit instrumentation audit | 2310a13 research: add post trend_fail lifecycle review | 20ecec0 fix: make trend_fail EMA comparisons runtime-scale consistent | 2c6efaa research: add trend_fail scale patch plan | 615c043 research: add Long2 trend_fail scale audit | df1cbd7 research: add Long2 management exit side-effect audit | 973c63f migration: add 0412 research workspace for macOS Codex | 187e15f 0517_Demo | 09af250 ignore local research data | 9909083 add strategy diagnostics and align research backtest | ee041f5 add 4h d2 d6 dry-run strategy variants
+diff_stat_main_to_head,captured,"875 files changed, 532588 insertions(+), 4 deletions(-)"
+changed_file_count,captured,875
+source_file_count,captured,35
+research_output_file_count,captured,817
+data_file_count,captured,20
+merge_readiness,requires_cleanup_before_PR,"Branch contains approved unit-fix research plus broad migration artifacts: data files, generated outputs, DB/PNG artifacts, server/app files, and requirements changes."
+implementation_readiness,closed_not_ready,Research validation branch only; no profitability claim and no live/dry-run readiness.

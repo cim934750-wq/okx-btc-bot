@@ -1,0 +1,13 @@
+rule_type,item,scope
+forbidden,implementation planning,No implementation planning is open.
+forbidden,threshold sweep,Do not sweep or invent thresholds.
+forbidden,source/strategy edits,Do not modify strategy/source files.
+forbidden,proxy-definition changes,Do not create or change proxy definitions.
+forbidden,entry_short_ema20_gap_atr rule conversion,Do not convert the leading diagnostic antecedent into a rule/filter.
+forbidden,mixed_chop or weak_followthrough final-layer promotion,Do not promote unresolved components into final implementation layers.
+forbidden,merging mixed_chop and weak_followthrough for detailed analysis,Use unresolved_non_clean only as a high-level ledger label; keep component labels for detail.
+forbidden,Long1 import,Do not import Long1 structure.
+forbidden,Short1 inverse assumption,Do not assume Short1 is Long1 inverse.
+allowed_only_if_justified,new fixed descriptive question,Allowed only if genuinely new and not a replay of completed diagnostics.
+allowed_only_if_justified,synthesis / handoff updates,Allowed to preserve or clarify boundaries.
+allowed_only_if_justified,broader external validation material,Allowed only if explicitly justified and still non-implementation.

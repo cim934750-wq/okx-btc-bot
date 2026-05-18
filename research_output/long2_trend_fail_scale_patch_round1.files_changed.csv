@@ -1,0 +1,4 @@
+file,change_type,summary
+research/strategy.py,source_patch,Added _to_runtime_price_level helper and used runtime_ema50 for long/short trend_fail EMA comparisons.
+research/indicators.py,unchanged,Indicator and signal construction intentionally unchanged.
+research/config.py,unchanged,Parameters and thresholds intentionally unchanged.

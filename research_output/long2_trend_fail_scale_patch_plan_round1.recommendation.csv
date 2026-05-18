@@ -1,0 +1,2 @@
+prefix,run_status,recommended_plan,recommended_next_step,approval_boundary,implementation_readiness
+long2_trend_fail_scale_patch_plan_round1,completed_patch_plan_only,"trend_fail-only runtime price-level scaling helper, applied only to ema50 comparisons at strategy.py lines 145 and 169 after explicit approval",wait_for_explicit_user_approval_before_applying_patch,No files changed outside patch-plan CSVs; no source patch applied; no post-patch audit run; no performance claim made.,closed_until_user_approves_patch

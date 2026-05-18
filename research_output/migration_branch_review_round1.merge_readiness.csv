@@ -1,0 +1,4 @@
+decision,status,reason,blocking_items,allowed_next_action
+requires_cleanup_before_PR,not_ready_for_PR_as_is,"The branch diff is much broader than the approved unit-fix source changes and includes large data, generated research artifacts, DB/PNG files, app/server source, and dependency changes.",data/*.csv; research_output generated/binary artifacts; app.py; server/*.py; requirements.txt; broad research workspace files,create_cleanup_commit
+source_review_needed,review_before_merge,"research/strategy.py contains approved unit-fix changes, while config/indicators are new relative to main and requirements/server/app changes broaden merge scope.",Confirm intended PR surface before merge review.,create_cleanup_commit
+strategy_readiness,not_ready,"Research validation confirms unit consistency and gate accessibility, not profitability or live readiness.",Implementation readiness remains closed.,create_cleanup_commit

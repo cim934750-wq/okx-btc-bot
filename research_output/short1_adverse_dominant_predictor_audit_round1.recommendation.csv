@@ -1,0 +1,9 @@
+item,judgment
+diagnostic,short1_adverse_dominant_predictor_audit_round1
+workspace_boundary,Ran from D workspace only: D:\Bot\0412_Bot_short1_research_workspace; outputs saved under D:\Bot\0412_Bot_short1_research_workspace\research_output.
+methodological_boundary,"Used saved Short1 labels only; no strategy/source changes, no proxy-definition changes, no threshold sweep, no implementation planning."
+primary_result,"Top stable predictor is entry_short_ema20_gap_atr: executed 10/11, starter 11/11, both-population support 10/11."
+adverse_dominant_predictor_judgment,"Adverse-dominant failure is best described as preceded by lower below-EMA20 displacement, with higher ADX pressure / over-forced bearishness as secondary context."
+parent_refinement,below-EMA20 displacement protected downside followthrough versus adverse-dominant failure
+discovery_readiness,test the strongest adverse-dominant predictor across all buckets
+implementation_readiness,Not implementation-ready.

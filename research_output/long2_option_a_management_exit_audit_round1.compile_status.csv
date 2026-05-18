@@ -1,0 +1,3 @@
+command,status,return_code,stdout_summary,stderr_summary,notes
+python3 -m py_compile research/strategy.py,passed,0,,,Executed on macOS in active workspace; no syntax errors reported.
+python3 -m compileall research,passed,0,"Compiled research package files including strategy.py, config.py, indicators.py, and analysis scripts.",,MacBook retry succeeded; no permission workaround used.

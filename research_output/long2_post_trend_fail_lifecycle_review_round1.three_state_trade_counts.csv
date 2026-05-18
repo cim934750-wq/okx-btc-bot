@@ -1,0 +1,61 @@
+state,market,total_exported_trades,Long1,Long2,Short1,Short2,source,notes
+A_original_pre_unit_fix_baseline,AGGREGATE,1056,872,0,184,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted baseline counts; validation-only reuse
+B_post_option_a_atr_distance_patch,AGGREGATE,2696,1668,501,527,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted post-Option-A counts before trend_fail patch
+A_original_pre_unit_fix_baseline,AAVEUSDT,53,43,0,10,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted baseline counts; validation-only reuse
+B_post_option_a_atr_distance_patch,AAVEUSDT,145,94,29,22,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted post-Option-A counts before trend_fail patch
+A_original_pre_unit_fix_baseline,ADAUSDT,52,39,0,13,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted baseline counts; validation-only reuse
+B_post_option_a_atr_distance_patch,ADAUSDT,122,71,18,33,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted post-Option-A counts before trend_fail patch
+A_original_pre_unit_fix_baseline,ATOMUSDT,41,23,0,18,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted baseline counts; validation-only reuse
+B_post_option_a_atr_distance_patch,ATOMUSDT,128,48,19,61,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted post-Option-A counts before trend_fail patch
+A_original_pre_unit_fix_baseline,AVAXUSDT,34,27,0,7,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted baseline counts; validation-only reuse
+B_post_option_a_atr_distance_patch,AVAXUSDT,79,47,17,15,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted post-Option-A counts before trend_fail patch
+A_original_pre_unit_fix_baseline,BCHUSDT,62,54,0,8,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted baseline counts; validation-only reuse
+B_post_option_a_atr_distance_patch,BCHUSDT,138,94,25,19,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted post-Option-A counts before trend_fail patch
+A_original_pre_unit_fix_baseline,BNBUSDT,80,80,0,0,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted baseline counts; validation-only reuse
+B_post_option_a_atr_distance_patch,BNBUSDT,208,159,49,0,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted post-Option-A counts before trend_fail patch
+A_original_pre_unit_fix_baseline,BTCUSDT,91,90,0,1,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted baseline counts; validation-only reuse
+B_post_option_a_atr_distance_patch,BTCUSDT,219,169,49,1,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted post-Option-A counts before trend_fail patch
+A_original_pre_unit_fix_baseline,DOGEUSDT,38,27,0,11,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted baseline counts; validation-only reuse
+B_post_option_a_atr_distance_patch,DOGEUSDT,98,51,12,35,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted post-Option-A counts before trend_fail patch
+A_original_pre_unit_fix_baseline,DOTUSDT,46,28,0,18,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted baseline counts; validation-only reuse
+B_post_option_a_atr_distance_patch,DOTUSDT,122,45,8,69,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted post-Option-A counts before trend_fail patch
+A_original_pre_unit_fix_baseline,ETCUSDT,39,29,0,10,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted baseline counts; validation-only reuse
+B_post_option_a_atr_distance_patch,ETCUSDT,103,56,19,28,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted post-Option-A counts before trend_fail patch
+A_original_pre_unit_fix_baseline,ETHUSDT,85,84,0,1,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted baseline counts; validation-only reuse
+B_post_option_a_atr_distance_patch,ETHUSDT,206,156,47,3,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted post-Option-A counts before trend_fail patch
+A_original_pre_unit_fix_baseline,FILUSDT,27,4,0,23,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted baseline counts; validation-only reuse
+B_post_option_a_atr_distance_patch,FILUSDT,77,9,3,65,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted post-Option-A counts before trend_fail patch
+A_original_pre_unit_fix_baseline,LINKUSDT,67,64,0,3,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted baseline counts; validation-only reuse
+B_post_option_a_atr_distance_patch,LINKUSDT,166,119,35,12,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted post-Option-A counts before trend_fail patch
+A_original_pre_unit_fix_baseline,LTCUSDT,61,49,0,12,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted baseline counts; validation-only reuse
+B_post_option_a_atr_distance_patch,LTCUSDT,171,102,44,25,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted post-Option-A counts before trend_fail patch
+A_original_pre_unit_fix_baseline,NEARUSDT,53,42,0,11,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted baseline counts; validation-only reuse
+B_post_option_a_atr_distance_patch,NEARUSDT,136,79,23,34,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted post-Option-A counts before trend_fail patch
+A_original_pre_unit_fix_baseline,SOLUSDT,58,52,0,6,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted baseline counts; validation-only reuse
+B_post_option_a_atr_distance_patch,SOLUSDT,164,111,39,14,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted post-Option-A counts before trend_fail patch
+A_original_pre_unit_fix_baseline,TRXUSDT,87,84,0,3,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted baseline counts; validation-only reuse
+B_post_option_a_atr_distance_patch,TRXUSDT,230,176,47,7,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted post-Option-A counts before trend_fail patch
+A_original_pre_unit_fix_baseline,UNIUSDT,32,16,0,16,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted baseline counts; validation-only reuse
+B_post_option_a_atr_distance_patch,UNIUSDT,79,25,7,47,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted post-Option-A counts before trend_fail patch
+A_original_pre_unit_fix_baseline,XRPUSDT,50,37,0,13,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted baseline counts; validation-only reuse
+B_post_option_a_atr_distance_patch,XRPUSDT,105,57,11,37,0,long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,prior accepted post-Option-A counts before trend_fail patch
+C_post_trend_fail_patch_current_source,AGGREGATE,2730,1678,528,524,0,current source instrumented FractionalBacktest validation run,research-only lifecycle count; not performance evidence
+C_post_trend_fail_patch_current_source,AAVEUSDT,144,92,30,22,0,current source instrumented FractionalBacktest validation run,research-only lifecycle count; not performance evidence
+C_post_trend_fail_patch_current_source,ADAUSDT,120,70,18,32,0,current source instrumented FractionalBacktest validation run,research-only lifecycle count; not performance evidence
+C_post_trend_fail_patch_current_source,ATOMUSDT,130,49,20,61,0,current source instrumented FractionalBacktest validation run,research-only lifecycle count; not performance evidence
+C_post_trend_fail_patch_current_source,AVAXUSDT,84,49,20,15,0,current source instrumented FractionalBacktest validation run,research-only lifecycle count; not performance evidence
+C_post_trend_fail_patch_current_source,BCHUSDT,143,97,27,19,0,current source instrumented FractionalBacktest validation run,research-only lifecycle count; not performance evidence
+C_post_trend_fail_patch_current_source,BNBUSDT,208,158,50,0,0,current source instrumented FractionalBacktest validation run,research-only lifecycle count; not performance evidence
+C_post_trend_fail_patch_current_source,BTCUSDT,224,171,52,1,0,current source instrumented FractionalBacktest validation run,research-only lifecycle count; not performance evidence
+C_post_trend_fail_patch_current_source,DOGEUSDT,101,54,13,34,0,current source instrumented FractionalBacktest validation run,research-only lifecycle count; not performance evidence
+C_post_trend_fail_patch_current_source,DOTUSDT,123,45,10,68,0,current source instrumented FractionalBacktest validation run,research-only lifecycle count; not performance evidence
+C_post_trend_fail_patch_current_source,ETCUSDT,102,55,19,28,0,current source instrumented FractionalBacktest validation run,research-only lifecycle count; not performance evidence
+C_post_trend_fail_patch_current_source,ETHUSDT,209,156,50,3,0,current source instrumented FractionalBacktest validation run,research-only lifecycle count; not performance evidence
+C_post_trend_fail_patch_current_source,FILUSDT,77,9,3,65,0,current source instrumented FractionalBacktest validation run,research-only lifecycle count; not performance evidence
+C_post_trend_fail_patch_current_source,LINKUSDT,167,119,36,12,0,current source instrumented FractionalBacktest validation run,research-only lifecycle count; not performance evidence
+C_post_trend_fail_patch_current_source,LTCUSDT,170,100,45,25,0,current source instrumented FractionalBacktest validation run,research-only lifecycle count; not performance evidence
+C_post_trend_fail_patch_current_source,NEARUSDT,137,79,24,34,0,current source instrumented FractionalBacktest validation run,research-only lifecycle count; not performance evidence
+C_post_trend_fail_patch_current_source,SOLUSDT,162,109,39,14,0,current source instrumented FractionalBacktest validation run,research-only lifecycle count; not performance evidence
+C_post_trend_fail_patch_current_source,TRXUSDT,236,180,49,7,0,current source instrumented FractionalBacktest validation run,research-only lifecycle count; not performance evidence
+C_post_trend_fail_patch_current_source,UNIUSDT,81,26,8,47,0,current source instrumented FractionalBacktest validation run,research-only lifecycle count; not performance evidence
+C_post_trend_fail_patch_current_source,XRPUSDT,112,60,15,37,0,current source instrumented FractionalBacktest validation run,research-only lifecycle count; not performance evidence

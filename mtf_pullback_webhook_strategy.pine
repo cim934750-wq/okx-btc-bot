@@ -1,0 +1,357 @@
+//@version=6
+strategy("Robust MTF Trend Pullback", shorttitle="MTFTrend", overlay=true, pyramiding=2, initial_capital=10000, commission_type=strategy.commission.percent, commission_value=0.05, calc_on_order_fills=true, process_orders_on_close=true)
+
+//------------------------------------------------------------------------------
+// Helper functions for confirmed HTF values
+//------------------------------------------------------------------------------
+f_prev_ema(_length) =>
+    ta.ema(close, _length)[1]
+
+f_prev_ema_offset(_length, _offset) =>
+    ta.ema(close, _length)[_offset]
+
+f_prev_atr(_length) =>
+    ta.atr(_length)[1]
+
+f_prev_atr_sma(_atrLength, _smaLength) =>
+    _atrSeries = ta.atr(_atrLength)
+    ta.sma(_atrSeries, _smaLength)[1]
+
+f_prev_dmi_plus(_diLength, _adxSmoothing) =>
+    [_plus, _, _] = ta.dmi(_diLength, _adxSmoothing)
+    _plus[1]
+
+f_prev_dmi_minus(_diLength, _adxSmoothing) =>
+    [_, _minus, _] = ta.dmi(_diLength, _adxSmoothing)
+    _minus[1]
+
+f_prev_dmi_adx(_diLength, _adxSmoothing) =>
+    [_, _, _adx] = ta.dmi(_diLength, _adxSmoothing)
+    _adx[1]
+
+//------------------------------------------------------------------------------
+// General Inputs
+//------------------------------------------------------------------------------
+groupGeneral = "General"
+strategyName = input.string("Robust BTC MTF Trend Pullback", "Strategy Name", group=groupGeneral)
+webhookSymbol = input.string("BTC-USDT-SWAP", "Webhook Symbol", group=groupGeneral)
+starterQty = input.float(0.01, "Starter Qty", minval=0.001, step=0.001, group=groupGeneral)
+addOnQty = input.float(0.005, "Add-On Qty", minval=0.0, step=0.001, group=groupGeneral)
+enablePyramiding = input.bool(true, "Enable Add-On Entries", group=groupGeneral)
+
+//------------------------------------------------------------------------------
+// Timeframe Inputs
+//------------------------------------------------------------------------------
+groupTf = "Timeframes"
+weeklyTf = input.timeframe("W", "Weekly Direction TF", group=groupTf)
+dailyTf = input.timeframe("D", "Daily Confirmation TF", group=groupTf)
+
+//------------------------------------------------------------------------------
+// Weekly Direction Filter
+//------------------------------------------------------------------------------
+groupWeekly = "Weekly Filter"
+weeklyFastLength = input.int(50, "Weekly Fast EMA", minval=1, group=groupWeekly)
+weeklySlowLength = input.int(200, "Weekly Slow EMA", minval=1, group=groupWeekly)
+useWeeklyFastConfirm = input.bool(true, "Require Weekly EMA50 / EMA200 Alignment", group=groupWeekly)
+
+//------------------------------------------------------------------------------
+// Daily Confirmation
+//------------------------------------------------------------------------------
+groupDaily = "Daily Confirmation"
+dailyFastLength = input.int(20, "Daily EMA Fast", minval=1, group=groupDaily)
+dailyMidLength = input.int(50, "Daily EMA Mid", minval=1, group=groupDaily)
+dailySlowLength = input.int(200, "Daily EMA Slow", minval=1, group=groupDaily)
+dailyDiLength = input.int(14, "Daily DI Length", minval=1, group=groupDaily)
+dailyAdxSmoothing = input.int(14, "Daily ADX Smoothing", minval=1, group=groupDaily)
+minDailyAdx = input.float(20.0, "Daily Min ADX", minval=1.0, step=0.5, group=groupDaily)
+dailyAtrLength = input.int(14, "Daily ATR Length", minval=1, group=groupDaily)
+dailyAtrMaLength = input.int(20, "Daily ATR MA Length", minval=1, group=groupDaily)
+minDailyAtrRatio = input.float(1.0, "Daily Min ATR / ATR MA", minval=0.1, step=0.05, group=groupDaily)
+useDailyAdxFilter = input.bool(true, "Use Daily ADX Filter", group=groupDaily)
+useDailyAtrExpansion = input.bool(true, "Use Daily ATR Expansion Filter", group=groupDaily)
+
+//------------------------------------------------------------------------------
+// 4H Execution Filters
+//------------------------------------------------------------------------------
+groupExec = "4H Execution"
+execFastLength = input.int(20, "4H EMA Fast", minval=1, group=groupExec)
+execMidLength = input.int(50, "4H EMA Mid", minval=1, group=groupExec)
+execSlowLength = input.int(200, "4H EMA Slow", minval=1, group=groupExec)
+execSlopeLookback = input.int(5, "4H EMA50 Slope Lookback", minval=1, group=groupExec)
+execDiLength = input.int(14, "4H DI Length", minval=1, group=groupExec)
+execAdxSmoothing = input.int(14, "4H ADX Smoothing", minval=1, group=groupExec)
+minExecAdx = input.float(25.0, "4H Min ADX", minval=1.0, step=0.5, group=groupExec)
+execAtrLength = input.int(14, "4H ATR Length", minval=1, group=groupExec)
+execAtrMaLength = input.int(20, "4H ATR MA Length", minval=1, group=groupExec)
+minExecAtrRatio = input.float(1.0, "4H Min ATR / ATR MA", minval=0.1, step=0.05, group=groupExec)
+minEmaDistanceAtr = input.float(0.35, "Min Distance To EMA50 In ATR", minval=0.05, step=0.05, group=groupExec)
+pullbackOvershootAtr = input.float(0.40, "Pullback Overshoot ATR", minval=0.0, step=0.05, group=groupExec)
+rsiLength = input.int(14, "4H RSI Length", minval=1, group=groupExec)
+longRsiMin = input.float(55.0, "Long RSI Min", minval=1.0, maxval=99.0, step=0.5, group=groupExec)
+shortRsiMax = input.float(45.0, "Short RSI Max", minval=1.0, maxval=99.0, step=0.5, group=groupExec)
+continuationLookback = input.int(10, "Continuation Breakout Lookback", minval=2, group=groupExec)
+
+//------------------------------------------------------------------------------
+// Risk / Trade Management
+//------------------------------------------------------------------------------
+groupRisk = "Risk Management"
+stopAtrMult = input.float(1.5, "Stop ATR", minval=0.1, step=0.1, group=groupRisk)
+tp1RR = input.float(1.0, "TP1 R Multiple", minval=0.5, step=0.1, group=groupRisk)
+tp2RR = input.float(2.0, "TP2 R Multiple", minval=1.0, step=0.1, group=groupRisk)
+trailAtrMult = input.float(2.0, "Runner Trail ATR", minval=0.1, step=0.1, group=groupRisk)
+breakevenOffsetAtr = input.float(0.05, "Breakeven Offset ATR", minval=0.0, step=0.01, group=groupRisk)
+addOnProfitAtr = input.float(0.75, "Add Only After Profit ATR", minval=0.1, step=0.1, group=groupRisk)
+partialExitPercent = input.float(50.0, "TP1 Exit Percent", minval=1, maxval=99, step=1.0, group=groupRisk)
+
+//------------------------------------------------------------------------------
+// Overtrading Protection
+//------------------------------------------------------------------------------
+groupProtection = "Overtrading Protection"
+cooldownBars = input.int(10, "Cooldown Bars After Exit", minval=0, group=groupProtection)
+directionCooldownBars = input.int(8, "Per-Direction Reentry Block", minval=0, group=groupProtection)
+addOnGapBars = input.int(4, "Add-On Gap Bars", minval=0, group=groupProtection)
+
+//------------------------------------------------------------------------------
+// Current 4H Indicator Calculations
+//------------------------------------------------------------------------------
+ema20 = ta.ema(close, execFastLength)
+ema50 = ta.ema(close, execMidLength)
+ema200 = ta.ema(close, execSlowLength)
+atr = ta.atr(execAtrLength)
+atrMa = ta.sma(atr, execAtrMaLength)
+rsi = ta.rsi(close, rsiLength)
+continuationHigh = ta.highest(high, continuationLookback)[1]
+continuationLow = ta.lowest(low, continuationLookback)[1]
+[plusDI, minusDI, adxVal] = ta.dmi(execDiLength, execAdxSmoothing)
+
+//------------------------------------------------------------------------------
+// Weekly Bias
+//------------------------------------------------------------------------------
+weeklyCloseConfirmed = request.security(syminfo.tickerid, weeklyTf, close[1], barmerge.gaps_off, barmerge.lookahead_off)
+weeklyEmaFast = request.security(syminfo.tickerid, weeklyTf, f_prev_ema(weeklyFastLength), barmerge.gaps_off, barmerge.lookahead_off)
+weeklyEmaSlow = request.security(syminfo.tickerid, weeklyTf, f_prev_ema(weeklySlowLength), barmerge.gaps_off, barmerge.lookahead_off)
+weeklyEmaSlowPrev = request.security(syminfo.tickerid, weeklyTf, f_prev_ema_offset(weeklySlowLength, 2), barmerge.gaps_off, barmerge.lookahead_off)
+
+weeklyBullBase = weeklyCloseConfirmed > weeklyEmaSlow and weeklyEmaSlow > weeklyEmaSlowPrev
+weeklyBearBase = weeklyCloseConfirmed < weeklyEmaSlow and weeklyEmaSlow < weeklyEmaSlowPrev
+weeklyBull = weeklyBullBase and (not useWeeklyFastConfirm or weeklyEmaFast > weeklyEmaSlow)
+weeklyBear = weeklyBearBase and (not useWeeklyFastConfirm or weeklyEmaFast < weeklyEmaSlow)
+
+//------------------------------------------------------------------------------
+// Daily Confirmation
+//------------------------------------------------------------------------------
+dailyCloseConfirmed = request.security(syminfo.tickerid, dailyTf, close[1], barmerge.gaps_off, barmerge.lookahead_off)
+dailyEma20 = request.security(syminfo.tickerid, dailyTf, f_prev_ema(dailyFastLength), barmerge.gaps_off, barmerge.lookahead_off)
+dailyEma50 = request.security(syminfo.tickerid, dailyTf, f_prev_ema(dailyMidLength), barmerge.gaps_off, barmerge.lookahead_off)
+dailyEma200 = request.security(syminfo.tickerid, dailyTf, f_prev_ema(dailySlowLength), barmerge.gaps_off, barmerge.lookahead_off)
+dailyAtr = request.security(syminfo.tickerid, dailyTf, f_prev_atr(dailyAtrLength), barmerge.gaps_off, barmerge.lookahead_off)
+dailyAtrMa = request.security(syminfo.tickerid, dailyTf, f_prev_atr_sma(dailyAtrLength, dailyAtrMaLength), barmerge.gaps_off, barmerge.lookahead_off)
+dailyPlusDI = request.security(syminfo.tickerid, dailyTf, f_prev_dmi_plus(dailyDiLength, dailyAdxSmoothing), barmerge.gaps_off, barmerge.lookahead_off)
+dailyMinusDI = request.security(syminfo.tickerid, dailyTf, f_prev_dmi_minus(dailyDiLength, dailyAdxSmoothing), barmerge.gaps_off, barmerge.lookahead_off)
+dailyAdx = request.security(syminfo.tickerid, dailyTf, f_prev_dmi_adx(dailyDiLength, dailyAdxSmoothing), barmerge.gaps_off, barmerge.lookahead_off)
+
+dailyBullStructure = dailyCloseConfirmed > dailyEma200 and dailyEma20 > dailyEma50 and dailyEma50 > dailyEma200
+dailyBearStructure = dailyCloseConfirmed < dailyEma200 and dailyEma20 < dailyEma50 and dailyEma50 < dailyEma200
+dailyAdxPass = not useDailyAdxFilter or dailyAdx >= minDailyAdx
+dailyAtrPass = not useDailyAtrExpansion or (not na(dailyAtrMa) and dailyAtr >= dailyAtrMa * minDailyAtrRatio)
+dailyBull = weeklyBull and dailyBullStructure and dailyPlusDI > dailyMinusDI and dailyAdxPass and dailyAtrPass
+dailyBear = weeklyBear and dailyBearStructure and dailyMinusDI > dailyPlusDI and dailyAdxPass and dailyAtrPass
+dailyNeutral = not dailyBull and not dailyBear
+
+//------------------------------------------------------------------------------
+// 4H Execution Context
+//------------------------------------------------------------------------------
+execBullStructure = close > ema200 and ema20 > ema50 and ema50 > ema200
+execBearStructure = close < ema200 and ema20 < ema50 and ema50 < ema200
+execSlopeUp = ema50 > ema50[execSlopeLookback]
+execSlopeDown = ema50 < ema50[execSlopeLookback]
+execAdxPass = adxVal >= minExecAdx
+execAtrPass = not na(atrMa) and atr >= atrMa * minExecAtrRatio
+execDistanceAtr = atr > 0 ? math.abs(close - ema50) / atr : 0.0
+execDistancePass = execDistanceAtr >= minEmaDistanceAtr
+execBullMomentum = plusDI > minusDI and plusDI >= plusDI[1] and rsi >= longRsiMin
+execBearMomentum = minusDI > plusDI and minusDI >= minusDI[1] and rsi <= shortRsiMax
+
+//------------------------------------------------------------------------------
+// Pullback Continuation Logic
+//------------------------------------------------------------------------------
+longPullbackIntoZone = low <= ema20 and low >= (ema50 - atr * pullbackOvershootAtr) and close >= ema50
+shortPullbackIntoZone = high >= ema20 and high <= (ema50 + atr * pullbackOvershootAtr) and close <= ema50
+
+longResumption = close > open and close > ema20 and close > high[1]
+shortResumption = close < open and close < ema20 and close < low[1]
+
+longStarterSetup = dailyBull and execBullStructure and execSlopeUp and execAdxPass and execAtrPass and execDistancePass and execBullMomentum and longPullbackIntoZone and longResumption
+shortStarterSetup = dailyBear and execBearStructure and execSlopeDown and execAdxPass and execAtrPass and execDistancePass and execBearMomentum and shortPullbackIntoZone and shortResumption
+
+//------------------------------------------------------------------------------
+// Continuation Logic For Add-Ons
+//------------------------------------------------------------------------------
+longContinuation = close > continuationHigh and close > open and execBullMomentum
+shortContinuation = close < continuationLow and close < open and execBearMomentum
+trendStrengthImprovingLong = adxVal > adxVal[1] and plusDI >= plusDI[1]
+trendStrengthImprovingShort = adxVal > adxVal[1] and minusDI >= minusDI[1]
+
+//------------------------------------------------------------------------------
+// Overtrading Protection
+//------------------------------------------------------------------------------
+barsSinceExit = ta.barssince(strategy.position_size == 0 and strategy.position_size[1] != 0)
+cooldownPassed = na(barsSinceExit) or barsSinceExit >= cooldownBars
+
+var int lastLongStarterBar = na
+var int lastShortStarterBar = na
+var int lastLongAddBar = na
+var int lastShortAddBar = na
+
+longDirectionCooldownPassed = na(lastLongStarterBar) or bar_index - lastLongStarterBar > directionCooldownBars
+shortDirectionCooldownPassed = na(lastShortStarterBar) or bar_index - lastShortStarterBar > directionCooldownBars
+longAddGapPassed = na(lastLongAddBar) or bar_index - lastLongAddBar > addOnGapBars
+shortAddGapPassed = na(lastShortAddBar) or bar_index - lastShortAddBar > addOnGapBars
+
+//------------------------------------------------------------------------------
+// Entry Conditions
+//------------------------------------------------------------------------------
+starterLongSignal = barstate.isconfirmed and longStarterSetup and strategy.position_size <= 0 and cooldownPassed and longDirectionCooldownPassed
+starterShortSignal = barstate.isconfirmed and shortStarterSetup and strategy.position_size >= 0 and cooldownPassed and shortDirectionCooldownPassed
+
+longInProfit = strategy.position_size > 0 and close > strategy.position_avg_price + atr * addOnProfitAtr
+shortInProfit = strategy.position_size < 0 and close < strategy.position_avg_price - atr * addOnProfitAtr
+
+addLongSignal = barstate.isconfirmed and enablePyramiding and addOnQty > 0 and dailyBull and execBullStructure and execSlopeUp and execAdxPass and execAtrPass and execBullMomentum and longInProfit and longContinuation and trendStrengthImprovingLong and longAddGapPassed and strategy.opentrades < 2
+addShortSignal = barstate.isconfirmed and enablePyramiding and addOnQty > 0 and dailyBear and execBearStructure and execSlopeDown and execAdxPass and execAtrPass and execBearMomentum and shortInProfit and shortContinuation and trendStrengthImprovingShort and shortAddGapPassed and strategy.opentrades < 2
+
+if starterLongSignal
+    strategy.entry("Long1", strategy.long, qty=starterQty)
+    lastLongStarterBar := bar_index
+
+if starterShortSignal
+    strategy.entry("Short1", strategy.short, qty=starterQty)
+    lastShortStarterBar := bar_index
+
+if addLongSignal
+    strategy.entry("Long2", strategy.long, qty=addOnQty)
+    lastLongAddBar := bar_index
+
+if addShortSignal
+    strategy.entry("Short2", strategy.short, qty=addOnQty)
+    lastShortAddBar := bar_index
+
+//------------------------------------------------------------------------------
+// Trade State Tracking
+//------------------------------------------------------------------------------
+var float highestSinceEntry = na
+var float lowestSinceEntry = na
+
+newLongPosition = strategy.position_size > 0 and strategy.position_size[1] <= 0
+newShortPosition = strategy.position_size < 0 and strategy.position_size[1] >= 0
+flatPosition = strategy.position_size == 0
+
+if newLongPosition
+    highestSinceEntry := high
+    lowestSinceEntry := na
+else if strategy.position_size > 0
+    highestSinceEntry := math.max(nz(highestSinceEntry, high), high)
+else if flatPosition
+    highestSinceEntry := na
+
+if newShortPosition
+    lowestSinceEntry := low
+    highestSinceEntry := na
+else if strategy.position_size < 0
+    lowestSinceEntry := math.min(nz(lowestSinceEntry, low), low)
+else if flatPosition
+    lowestSinceEntry := na
+
+//------------------------------------------------------------------------------
+// Risk Management
+//------------------------------------------------------------------------------
+riskDistance = atr * stopAtrMult
+
+longBaseStop = strategy.position_avg_price - riskDistance
+shortBaseStop = strategy.position_avg_price + riskDistance
+longTp1 = strategy.position_avg_price + riskDistance * tp1RR
+shortTp1 = strategy.position_avg_price - riskDistance * tp1RR
+longTp2 = strategy.position_avg_price + riskDistance * tp2RR
+shortTp2 = strategy.position_avg_price - riskDistance * tp2RR
+
+longTp1Reached = strategy.position_size > 0 and not na(highestSinceEntry) and highestSinceEntry >= longTp1
+shortTp1Reached = strategy.position_size < 0 and not na(lowestSinceEntry) and lowestSinceEntry <= shortTp1
+
+longBreakEvenStop = longTp1Reached ? strategy.position_avg_price + atr * breakevenOffsetAtr : longBaseStop
+shortBreakEvenStop = shortTp1Reached ? strategy.position_avg_price - atr * breakevenOffsetAtr : shortBaseStop
+
+longTrailRaw = strategy.position_size > 0 ? nz(highestSinceEntry, high) - atr * trailAtrMult : na
+shortTrailRaw = strategy.position_size < 0 ? nz(lowestSinceEntry, low) + atr * trailAtrMult : na
+
+longRunnerStop = strategy.position_size > 0 and not na(longTrailRaw) ? math.max(longBreakEvenStop, longTrailRaw) : longBreakEvenStop
+shortRunnerStop = strategy.position_size < 0 and not na(shortTrailRaw) ? math.min(shortBreakEvenStop, shortTrailRaw) : shortBreakEvenStop
+
+longStructureFail = barstate.isconfirmed and strategy.position_size > 0 and ((close < ema50 and minusDI > plusDI) or dailyNeutral or not weeklyBull)
+shortStructureFail = barstate.isconfirmed and strategy.position_size < 0 and ((close > ema50 and plusDI > minusDI) or dailyNeutral or not weeklyBear)
+
+strategy.exit("L1 TP1", from_entry="Long1", qty_percent=partialExitPercent, stop=longBaseStop, limit=longTp1)
+strategy.exit("L1 TP2", from_entry="Long1", qty_percent=100 - partialExitPercent, stop=longRunnerStop, limit=longTp2)
+strategy.exit("L2 TP1", from_entry="Long2", qty_percent=partialExitPercent, stop=longBaseStop, limit=longTp1)
+strategy.exit("L2 TP2", from_entry="Long2", qty_percent=100 - partialExitPercent, stop=longRunnerStop, limit=longTp2)
+
+strategy.exit("S1 TP1", from_entry="Short1", qty_percent=partialExitPercent, stop=shortBaseStop, limit=shortTp1)
+strategy.exit("S1 TP2", from_entry="Short1", qty_percent=100 - partialExitPercent, stop=shortRunnerStop, limit=shortTp2)
+strategy.exit("S2 TP1", from_entry="Short2", qty_percent=partialExitPercent, stop=shortBaseStop, limit=shortTp1)
+strategy.exit("S2 TP2", from_entry="Short2", qty_percent=100 - partialExitPercent, stop=shortRunnerStop, limit=shortTp2)
+
+if longStructureFail
+    strategy.close("Long1", comment="Trend Fail")
+    strategy.close("Long2", comment="Trend Fail")
+
+if shortStructureFail
+    strategy.close("Short1", comment="Trend Fail")
+    strategy.close("Short2", comment="Trend Fail")
+
+//------------------------------------------------------------------------------
+// Alerts
+//------------------------------------------------------------------------------
+longEntrySignal = starterLongSignal or addLongSignal
+shortEntrySignal = starterShortSignal or addShortSignal
+exitSignal = barstate.isconfirmed and strategy.position_size[1] != 0 and strategy.position_size == 0
+
+longConditionMessage = "{\"action\":\"buy\",\"symbol\":\"{{ticker}}\",\"price\":\"{{close}}\",\"timestamp\":\"{{time}}\",\"timeframe\":\"{{interval}}\",\"strategy_name\":\"Robust MTF Trend Pullback\",\"market_type\":\"futures\",\"leverage\":3}"
+shortConditionMessage = "{\"action\":\"sell\",\"symbol\":\"{{ticker}}\",\"price\":\"{{close}}\",\"timestamp\":\"{{time}}\",\"timeframe\":\"{{interval}}\",\"strategy_name\":\"Robust MTF Trend Pullback\",\"market_type\":\"futures\",\"leverage\":3}"
+exitConditionMessage = "{\"action\":\"close\",\"symbol\":\"{{ticker}}\",\"price\":\"{{close}}\",\"timestamp\":\"{{time}}\",\"timeframe\":\"{{interval}}\",\"strategy_name\":\"Robust MTF Trend Pullback\",\"market_type\":\"futures\",\"leverage\":3}"
+
+longAlertMessage = "{\"action\":\"buy\",\"symbol\":\"" + webhookSymbol + "\",\"price\":\"" + str.tostring(close) + "\",\"timestamp\":\"" + str.tostring(time) + "\",\"timeframe\":\"" + timeframe.period + "\",\"strategy_name\":\"" + strategyName + "\",\"market_type\":\"futures\",\"leverage\":3}"
+shortAlertMessage = "{\"action\":\"sell\",\"symbol\":\"" + webhookSymbol + "\",\"price\":\"" + str.tostring(close) + "\",\"timestamp\":\"" + str.tostring(time) + "\",\"timeframe\":\"" + timeframe.period + "\",\"strategy_name\":\"" + strategyName + "\",\"market_type\":\"futures\",\"leverage\":3}"
+exitAlertMessage = "{\"action\":\"close\",\"symbol\":\"" + webhookSymbol + "\",\"price\":\"" + str.tostring(close) + "\",\"timestamp\":\"" + str.tostring(time) + "\",\"timeframe\":\"" + timeframe.period + "\",\"strategy_name\":\"" + strategyName + "\",\"market_type\":\"futures\",\"leverage\":3}"
+
+alertcondition(longEntrySignal, title="LONG ENTRY", message=longConditionMessage)
+alertcondition(shortEntrySignal, title="SHORT ENTRY", message=shortConditionMessage)
+alertcondition(exitSignal, title="EXIT", message=exitConditionMessage)
+
+if longEntrySignal
+    alert(longAlertMessage, alert.freq_once_per_bar_close)
+
+if shortEntrySignal
+    alert(shortAlertMessage, alert.freq_once_per_bar_close)
+
+if exitSignal
+    alert(exitAlertMessage, alert.freq_once_per_bar_close)
+
+//------------------------------------------------------------------------------
+// Visualization
+//------------------------------------------------------------------------------
+currentStopPlot = strategy.position_size > 0 ? longRunnerStop : strategy.position_size < 0 ? shortRunnerStop : na
+currentTp1Plot = strategy.position_size > 0 ? longTp1 : strategy.position_size < 0 ? shortTp1 : na
+currentTp2Plot = strategy.position_size > 0 ? longTp2 : strategy.position_size < 0 ? shortTp2 : na
+
+plot(dailyEma200, "Daily EMA200", color=color.blue, linewidth=2)
+plot(ema20, "4H EMA20", color=color.orange, linewidth=2)
+plot(ema50, "4H EMA50", color=color.yellow, linewidth=2)
+plot(currentStopPlot, "Stop", color=color.red, linewidth=2, style=plot.style_linebr)
+plot(currentTp1Plot, "TP1", color=color.green, linewidth=1, style=plot.style_linebr)
+plot(currentTp2Plot, "TP2", color=color.teal, linewidth=1, style=plot.style_linebr)
+
+plotshape(starterLongSignal, title="Long Starter", style=shape.triangleup, location=location.belowbar, color=color.lime, size=size.small, text="L1")
+plotshape(addLongSignal, title="Long Add", style=shape.circle, location=location.belowbar, color=color.green, size=size.tiny, text="L2")
+plotshape(starterShortSignal, title="Short Starter", style=shape.triangledown, location=location.abovebar, color=color.red, size=size.small, text="S1")
+plotshape(addShortSignal, title="Short Add", style=shape.circle, location=location.abovebar, color=color.maroon, size=size.tiny, text="S2")
+
+bgcolor(weeklyBull and dailyBull ? color.new(color.green, 90) : weeklyBear and dailyBear ? color.new(color.red, 90) : color.new(color.gray, 90), title="Regime")

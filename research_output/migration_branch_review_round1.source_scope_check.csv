@@ -1,0 +1,11 @@
+check,status,evidence,judgment
+research/strategy.py,approved_unit_fix_present,Contains runtime ATR-distance scaling helper usage plus trend_fail EMA runtime price-level scaling helper usage.,"Within approved Long2 unit-fix source scope, but still requires code review before merge."
+ATR-distance runtime scaling patch,present,_to_runtime_distance is used for runtime ATR-distance comparisons and add-on in_profit distances.,Approved patch area present.
+trend_fail EMA runtime scaling patch,present,_to_runtime_price_level scales ema50 before comparing with runtime Close in long and short trend_fail paths.,Approved patch area present.
+research/indicators.py,new_relative_to_main,File is added on this branch; accepted post-unit-fix tasks did not modify indicator/signal construction.,"Review before merge because it is new branch source, but no unit-fix scope violation observed from accepted tasks."
+research/config.py,new_relative_to_main,File is added on this branch and contains strategy parameters/grid definitions.,Review before merge; no post-unit-fix parameter change or threshold sweep identified in accepted tasks.
+requirements.txt,modified_relative_to_main,Dependency set changed relative to main.,Unexpected for a narrow unit-fix PR; requires cleanup or explicit PR scope decision.
+app.py and server/*.py,added_relative_to_main,Application/server/webhook source files are included in branch diff.,Outside narrow unit-fix research scope; should be reviewed or removed before PR if PR is review-only research.
+parameter optimization,not_observed_in_accepted_unit_fix_work,Review uses saved outputs only and no new backtests/optimization were run.,Scope boundary preserved in this review.
+threshold sweep,not_observed_in_accepted_unit_fix_work,No threshold sweep was run for this branch review.,Scope boundary preserved in this review.
+live/dry-run implementation planning,not_performed,No live/dry-run planning or execution was performed.,Scope boundary preserved in this review.

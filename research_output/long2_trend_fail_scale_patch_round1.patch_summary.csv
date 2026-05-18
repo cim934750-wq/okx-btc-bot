@@ -1,0 +1,5 @@
+item,status,detail
+helper_added,applied,Added _to_runtime_price_level(unscaled_price) to convert unscaled indicator price levels to runtime price units.
+long_trend_fail,applied,Line now compares runtime Close to runtime_ema50; DI and weekly/daily boolean clauses unchanged.
+short_trend_fail,applied,Line now compares runtime Close to runtime_ema50; DI and weekly/daily boolean clauses unchanged.
+scope_guard,honored,"No changes to indicators.py, config.py, signal construction, Long2 add-on logic, or ATR-distance logic."

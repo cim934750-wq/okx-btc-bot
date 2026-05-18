@@ -1,0 +1,14 @@
+item,judgment
+diagnostic,short1_combined_antecedent_stability_audit_round1
+workspace_boundary,Ran from D workspace only: D:\Bot\0412_Bot_short1_research_workspace; outputs saved under D:\Bot\0412_Bot_short1_research_workspace\research_output.
+methodological_boundary,"Used saved Short1 labels only; no strategy logic changes, no proxy-definition changes, no threshold sweep, no implementation planning."
+parent,Keep adverse-excursion-avoidant downside followthrough.
+leading_antecedent,Keep below-EMA20 displacement as leading antecedent wording.
+displacement_plus_lower_adx,Executed 10/11; starter 8/11. Lower ADX adds context but weakens starter consistency versus displacement alone.
+displacement_plus_lower_extension,Executed 9/11; starter 6/11. Lower extension is not stable enough upstream.
+displacement_plus_di_spread,Executed 7/11; starter 7/11. DI spread does not improve the antecedent.
+contradictions,"No true combination fixes LTCUSDT executed or NEARUSDT starter because displacement itself remains contradictory there; secondary-only support is descriptive, not a combined fix."
+redundancy,Correlations do not show obvious duplication for most secondary fields; combined directional overlap still generally weakens consistency versus displacement alone.
+discovery_readiness,Continue discovery with below-EMA20 displacement as the main antecedent; secondary fields remain context hints only.
+implementation_readiness,Not implementation-ready.
+next_step,Move to another stable repo-native field or path-quality refinement; do not implement and do not threshold-sweep combined antecedents.

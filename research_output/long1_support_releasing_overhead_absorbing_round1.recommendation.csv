@@ -1,0 +1,2 @@
+recommendation,proxy_note,absorbing_count,absorbing_better_than_nonabsorbing,absorbing_better_than_non_mp_absorbing,absorbing_better_than_all_other
+still_redesign_evidence_only,support_to_release_sequence and recent_high_count_within_0.5atr_of_cont_high <= 3 and entry_high_gap_atr < p1_high_gap_atr,1,False,True,True

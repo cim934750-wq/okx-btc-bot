@@ -1,0 +1,5 @@
+scope_item,status,evidence,needs_followup,notes
+trend_fail ema50 comparison,patched_to_runtime_unit_consistent,strategy.py now computes runtime_ema50 before long/short trend_fail comparisons,False,No remaining disagreement observed in lightweight audit.
+ATR-derived TP/stop/trail/breakeven comparisons,unchanged_from_Option_A,No edits to runtime_atr or add_on_profit_distance logic.,False,Out of scope for this patch.
+indicator construction comparisons,unchanged_feature_space,No edits to research/indicators.py.,False,Signal construction unchanged.
+config / thresholds,unchanged,No edits to research/config.py.,False,No optimization or parameter changes.
