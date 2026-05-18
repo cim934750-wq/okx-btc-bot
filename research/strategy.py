@@ -58,6 +58,11 @@ class _BaseMTFStrategy(Strategy):
             return float("nan")
         return notional / total_size
 
+    # FractionalBacktest scales runtime OHLC/order prices, while indicator
+    # ATR/EMA values stay in original market-price units. Use the distance
+    # helper only for ATR-derived distances and the price-level helper only
+    # for indicator price levels such as EMA. Do not pass already runtime-
+    # scaled Close/High/Low, entry, or avg_entry values into either helper.
     def _to_runtime_distance(self, unscaled_distance: float) -> float:
         return unscaled_distance * self.runtime_price_scale
 

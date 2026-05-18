@@ -35,6 +35,10 @@ The supporting `research/` files are included because `research/strategy.py` imp
 
 PR #1 remains the broad review-only research archive. This branch is the smaller source-review branch for the runtime unit consistency patch.
 
+## Out Of Scope
+
+Dependency/runtime integration is intentionally out of scope for this PR and should be handled in a separate review if this source package is promoted beyond research review.
+
 ## Known Remaining Risk
 
 - Long1/Short1 lifecycle compression still requires caution when interpreting strategy behavior.

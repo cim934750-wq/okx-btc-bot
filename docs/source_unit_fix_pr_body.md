@@ -28,6 +28,10 @@ The broad archive PR remains open separately as review-only research evidence.
 - Long2 accessibility proves the gate opens after unit fixes, not that it is profitable.
 - Broader research evidence remains in PR #1 / `migration/0412-research-workspace`.
 
+## Out of scope
+
+Dependency/runtime integration is intentionally out of scope for this PR and should be handled in a separate review if this source package is promoted beyond research review.
+
 ## Review focus
 
 Please review:
