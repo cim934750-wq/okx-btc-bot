@@ -1,0 +1,14 @@
+category,rule,rationale,allowed
+closed_work,ATR-distance unit mismatch fix is complete as a code unit-fix validation item.,Option A patch applied and post-patch validation confirmed Long2 gate accessibility.,False
+closed_work,trend_fail EMA unit mismatch fix is complete as a code unit-fix validation item.,Post-patch disagreement counts reached zero in accepted audit.,False
+closed_work,Do not reopen Long1 or Short1 structural discovery rounds in this Long2 validation thread.,Current task is post-unit-fix Long2/lifecycle validation only.,False
+allowed_future_work,Post-unit-fix performance audit only after explicit approval.,Performance has not been audited under the final post-unit-fix source state.,True
+allowed_future_work,Long2-specific lifecycle interaction audit if needed.,Long2 overlap complicates Long1 lifecycle attribution.,True
+allowed_future_work,Short2-specific gating audit if needed.,Short2 remains zero with sparse active candidates and in_profit failure.,True
+allowed_future_work,"Post-fix backtest comparison only as research, not live planning.","Counts and lifecycle are validation data, not deployment evidence.",True
+allowed_future_work,Synthesis and handoff updates.,Consolidation is safe and non-invasive.,True
+forbidden_future_work,No optimization or threshold sweep.,Would change the nature of validation and strategy parameters.,False
+forbidden_future_work,No live/dry-run planning.,Implementation readiness remains closed.,False
+forbidden_future_work,No performance claims without approved post-fix performance audit.,Nonzero tags and lifecycle counts do not establish profitability.,False
+forbidden_future_work,Do not convert Long2 nonzero tags directly into strategy confidence.,Tags prove gate accessibility only.,False
+forbidden_future_work,Do not ignore Long1/Short1 lifecycle changes.,Lifecycle compression remains mixed and material.,False

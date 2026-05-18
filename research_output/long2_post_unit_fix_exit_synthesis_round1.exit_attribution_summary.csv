@@ -1,0 +1,14 @@
+scope,trade_tag,exit_mechanism_label,count,share_of_tag,avg_duration_bars,median_duration_bars,fast_exit_count_le_8_bars,exact_or_proxy,interpretation
+AGGREGATE,Long1,long_tp1_partial_close,562,0.33492252681764,5.948398576512456,5.0,448,exact,Exact strategy close
+AGGREGATE,Long1,stop_hit_proxy:long_trailing_stop,510,0.3039332538736591,12.937254901960785,11.0,163,proxy,Broker stop-fill proxy from latest stop assignment
+AGGREGATE,Long1,stop_hit_proxy:long_base_stop,303,0.1805721096543504,4.551155115511551,4.0,276,proxy,Broker stop-fill proxy from latest stop assignment
+AGGREGATE,Long1,stop_hit_proxy:long_breakeven_floor_stop,241,0.1436233611442193,9.755186721991702,9.0,119,proxy,Broker stop-fill proxy from latest stop assignment
+AGGREGATE,Long1,long_trend_fail_close,62,0.0369487485101311,3.903225806451613,3.0,54,exact,Exact strategy close
+AGGREGATE,Short1,short_tp1_partial_close,157,0.299618320610687,7.305732484076433,6.0,107,exact,Exact strategy close
+AGGREGATE,Short1,stop_hit_proxy:short_trailing_stop,139,0.2652671755725191,10.690647482014388,10.0,61,proxy,Broker stop-fill proxy from latest stop assignment
+AGGREGATE,Short1,stop_hit_proxy:short_base_stop,101,0.1927480916030534,4.930693069306931,4.0,88,proxy,Broker stop-fill proxy from latest stop assignment
+AGGREGATE,Short1,short_tp2_close,55,0.1049618320610687,13.49090909090909,14.0,14,exact,Exact strategy close
+AGGREGATE,Short1,short_trend_fail_close,36,0.0687022900763358,5.861111111111111,5.0,29,exact,Exact strategy close
+AGGREGATE,Short1,stop_hit_proxy:short_breakeven_floor_stop,36,0.0687022900763358,10.38888888888889,9.5,12,proxy,Broker stop-fill proxy from latest stop assignment
+AGGREGATE,Long2,interaction_review,528,,7.0018939393939394,,,mixed,"Long1 with Long2 overlap=792; overlap complicates lifecycle attribution, not profitability evidence."
+AGGREGATE,Short2,zero_review,0,,,,,gate_review,"raw=39, active=3, in_profit=0, all_gates=0; remains zero."
