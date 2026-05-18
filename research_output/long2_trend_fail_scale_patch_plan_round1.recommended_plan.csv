@@ -1,0 +1,10 @@
+plan_item,recommendation,details
+chosen_option,Use Option D implemented with Option C helper semantics: a trend_fail-only patch plus a narrowly named _to_runtime_price_level helper.,This keeps the patch local to research/strategy.py while avoiding misuse of _to_runtime_distance for price levels.
+intended_code_edit_1,"Add a helper near _to_runtime_distance: _to_runtime_price_level(self, unscaled_price: float) -> float returns unscaled_price * self.runtime_price_scale.",Helper input must be documented by name as unscaled_price; do not alter _to_runtime_distance.
+intended_code_edit_2,"In _manage_long before trend_fail, compute runtime_ema50 = self._to_runtime_price_level(float(self.data.ema50[-1])).",Replace only the price part of line 145 with self.data.Close[-1] < runtime_ema50; keep DI and weekly/daily boolean terms unchanged.
+intended_code_edit_3,"In _manage_short before trend_fail, compute runtime_ema50 = self._to_runtime_price_level(float(self.data.ema50[-1])).",Replace only the price part of line 169 with self.data.Close[-1] > runtime_ema50; keep DI and weekly/daily boolean terms unchanged.
+use_existing_to_runtime_distance,Do not use _to_runtime_distance for ema50 in the patch.,"It is mathematically similar under zero-origin scaling but semantically reserved for distances such as ATR-based risk, stops, trails, and add-on thresholds."
+avoid_double_scaling,"Scale only feature-space price levels read from columns such as ema50; do not scale self.data.Close[-1], avg_entry, stop prices, or already-runtime trade fields.",Call helper exactly at trend_fail ema50 use sites; do not pre-scale indicator columns or store scaled EMA columns in build_feature_frame.
+preserve_indicators,Keep research/indicators.py unchanged.,Signal construction remains feature-space and should not be changed by a runtime trend_fail patch.
+preserve_config,Keep research/config.py unchanged.,No parameter or threshold changes are needed for unit consistency.
+preserve_signal_construction,Do not alter starter/add-on signal fields or indicator comparisons in build_feature_frame.,"Patch scope is runtime management only, not research signal discovery."

@@ -1,0 +1,7 @@
+step_order,command_or_check,expected_result,notes
+1,python3 -m py_compile research/strategy.py,Passes with no syntax errors.,Run after a future approved source patch only.
+2,python3 -m compileall research,Passes on macOS; report exact error if any.,No permission workaround; use the same environment convention as prior audits.
+3,Rerun long2_option_a_trend_fail_scale_audit_round1 with post-patch prefix long2_option_a_trend_fail_scale_audit_post_patch_round1,"Long/short trend_fail disagreements decrease materially; if fully unit-consistent for ema50, price-comparison-driven disagreements should be zero or explained by non-price terms.","This is a validation audit, not performance evaluation."
+4,Rerun long2_option_a_management_exit_audit_round1 or a narrower post-patch lifecycle check,Compare Long1/Long2/Short1/Short2 counts and durations before vs after trend_fail patch.,Counts are lifecycle evidence only; do not claim profitability.
+5,"Compare known pre-patch counts, Option A counts, and trend_fail-patched counts",Document whether Long1/Short1 lifecycle distortion changes after trend_fail unit consistency.,Keep Long2 interpretation bounded to gate opening and side-effect validation.
+6,Inspect git diff before commit,"Only research/strategy.py is changed; no config, indicator, or parameter edits.","If any source beyond strategy.py changes, stop and reassess scope."
