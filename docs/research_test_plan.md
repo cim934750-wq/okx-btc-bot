@@ -19,7 +19,21 @@ It is intentionally dependency/test integration only.
 
 ## Test Environment
 
-Use Python 3.10 or newer because the research package uses `dataclass(slots=True)`. Install only the narrow research dependencies with `pip install -r requirements-research.txt` before running the pytest smoke tests.
+Use Python 3.10 or newer because the research package uses `dataclass(slots=True)`.
+
+Install runtime research dependencies with:
+
+```bash
+pip install -r requirements-research.txt
+```
+
+Install test runner dependencies with:
+
+```bash
+pip install -r requirements-research-dev.txt
+```
+
+The tests are smoke-only and make no performance claims.
 
 ## What It Does Not Test
 
