@@ -1,0 +1,2 @@
+audit,classification,reason,aggregate_net_profit,aggregate_profit_factor,aggregate_max_drawdown_pct,aggregate_total_trades,Long1_total_pnl,Long2_total_pnl,Short1_total_pnl,Short2_count,evidence_boundary
+post_unit_fix_performance_audit_round1,park shorts,short side aggregate contribution is negative in the post-fix audit,5761.965446784985,1.1524025788548606,0.20397626781610828,2730,4863.715327414942,2469.5871175239813,-1571.3369981539386,0,performance audit only; no implementation readiness or live-trading recommendation

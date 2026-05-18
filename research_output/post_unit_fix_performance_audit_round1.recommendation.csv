@@ -1,0 +1,2 @@
+audit,recommendation,next_step,forbidden_next_steps,notes
+post_unit_fix_performance_audit_round1,Park the short side as a strategy candidate until a narrower short-side audit is approved.,pause_and_wait_for_user_review,live/dry-run planning; optimization; threshold sweep; implementation readiness claim,Use these results for conservative candidate triage only.
