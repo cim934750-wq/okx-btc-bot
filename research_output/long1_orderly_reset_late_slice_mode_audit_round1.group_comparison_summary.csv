@@ -1,5 +1,0 @@
-metric,value,reference
-late_support_good_count,0,0 means positive support-good survivor absent in late slice
-late_support_bad_count,3,all late cases land on support-bad side if value equals late_total
-late_all_trades_fit_existing_buckets,1,1 means no late residual outside frozen-stack buckets
-early_reference_support_good_count,2,used only as comparison context

@@ -1,8 +1,0 @@
-risk,severity,mitigation,validation_signal
-double_scaling_ema50,high,"Use helper name/input as _to_runtime_price_level(unscaled_price); call it only on ema50 feature values, never on runtime Close or trade prices.",Post-patch audit should show current-vs-scale-consistent trend_fail disagreements collapse rather than invert.
-accidentally_changing_feature_construction,high,Do not edit research/indicators.py; keep all signal and EMA construction in unscaled feature space.,Git diff should show no indicators.py changes.
-changing_Long1_Short1_lifecycle_again,high,Run post-patch lifecycle check and report counts/durations as side-effect evidence only.,Before/after count and duration deltas are explicitly documented by family and market.
-masking_an_intended_trend_filter,medium,Preserve exact DI and weekly/daily boolean clauses; change only units of the price-vs-ema50 comparison.,Line-level diff shows same trend_fail logic shape with only runtime_ema50 substituted.
-partial_patch_leaves_other_indicator_comparisons_inconsistent,medium,Document that this patch is trend_fail-specific; keep separate audits for any future runtime price-to-indicator comparisons.,Scope check confirms no other self.data.Close vs EMA comparisons in strategy.py.
-overreading_post_patch_trade_counts_as_performance,medium,"Treat counts, tags, and durations as validation artifacts only; no profitability claims or live planning.",Recommendation and interpretation outputs explicitly state no performance claim.
-using_unscaled_close_runtime_accessor_that_is_not_stable,medium,Prefer scaling ema50 to runtime units over deriving unscaled Close in Strategy runtime.,Patch plan does not depend on backtesting internals beyond existing runtime_price_scale.

@@ -1,0 +1,7 @@
+action,path_or_category,details
+cleanup_strategy,moderate_cleanup,"Kept source, data, docs, app/server files for explicit review, direct Long2/unit-fix evidence, branch review evidence, and summary-level research evidence."
+git_rm_cached_then_update_index,detailed_generated_audit_csvs,Removed 572 redundant detailed generated CSV artifacts from Git tracking; local copies preserved after normal git rm reported local modifications.
+git_rm_cached_then_update_index,caches_runtime_artifacts,Removed 31 generated binary/cache/runtime artifacts from Git tracking; local copies preserved.
+keep,raw_data_csvs,Kept data/*.csv because no file exceeded 50 MB and data may be needed for reproducibility.
+keep,source_patch_files,Kept research/strategy.py with approved unit-fix source changes.
+keep,direct_Long2_evidence,Kept compact Long2 patch/audit/synthesis outputs except raw row/event dumps.

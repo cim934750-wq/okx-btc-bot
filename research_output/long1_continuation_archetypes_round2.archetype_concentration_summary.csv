@@ -1,5 +1,0 @@
-continuation_archetype,all_trades_count,all_trades_avg_pnl,all_trades_losers,all_trades_winners,all_trades_loser_share,all_losers_count,all_losers_avg_pnl,all_losers_losers,all_losers_winners,all_losers_loser_share,historical_winners_count,historical_winners_avg_pnl,historical_winners_losers,historical_winners_winners,historical_winners_loser_share,loser_share_gap_vs_winners,loser_concentration_gap
-late_stage_weakening_continuation,10,-18.39716859559342,9,1,0.9,9,-20.625901487508372,9,0,1.0,1,1.6614274316411275,0,1,0.0,1.0,0.11305822498586772
-reclaim_continuation,40,13.098236832609564,28,12,0.7,28,-15.607210023334321,28,0,1.0,12,80.07761282981197,0,12,0.0,1.0,0.045223289994347105
-shallow_pullback_momentum_continuation,28,22.477841344041384,18,10,0.6428571428571429,18,-19.778379192239854,18,0,1.0,10,98.5390383093476,0,10,0.0,1.0,-0.049745618993781826
-breakout_continuation,12,22.691348086431642,6,6,0.5,6,-20.387146881371752,6,0,1.0,6,65.76984305423504,0,6,0.0,1.0,-0.10853589598643301

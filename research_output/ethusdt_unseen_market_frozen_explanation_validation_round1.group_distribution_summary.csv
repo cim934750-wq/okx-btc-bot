@@ -1,6 +1,0 @@
-family,trade_count,losers,winners,loser_share,avg_pnl,first_entry,last_entry
-accepted_completed,0,0,0,0.0,0.0,,
-accepted_nonintact_buildup,1,1,0,1.0,-63.57973492436361,2019-07-09 20:00:00+00:00,2019-07-09 20:00:00+00:00
-weak_main_fragility,0,0,0,0.0,0.0,,
-weak_background_note,1,1,0,1.0,-38.77734483223037,2024-05-28 08:00:00+00:00,2024-05-28 08:00:00+00:00
-other_long1,82,48,34,0.5853658536585366,29.75587265855627,2019-05-29 08:00:00+00:00,2025-10-05 20:00:00+00:00

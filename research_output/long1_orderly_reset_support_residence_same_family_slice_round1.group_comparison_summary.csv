@@ -1,7 +1,0 @@
-group,count,mp_count,non_mp_count,gate_intact_pass,gate_intact_fail,missing_good_pass,missing_good_fail,support_good_pass,support_good_fail
-slice_gate_intact_missing_good_support_good,0,0,0,0,0,0,0,0,0
-slice_gate_intact_missing_good_support_bad,0,0,0,0,0,0,0,0,0
-slice_gate_intact_missing_bad,2,0,2,2,0,0,2,1,1
-slice_gate_loose_missing_good_support_good,1,0,1,0,1,1,0,1,0
-slice_gate_loose_missing_good_support_bad,3,2,1,0,3,3,0,0,3
-slice_gate_loose_missing_bad,1,0,1,0,1,0,1,0,1

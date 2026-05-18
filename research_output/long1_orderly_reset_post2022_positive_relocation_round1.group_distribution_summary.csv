@@ -1,8 +1,0 @@
-group,count,losers,winners,loser_share,avg_pnl
-post2022_accepted_core,1,0,1,0.0,111.96173292113542
-post2022_accepted_residual,0,0,0,0.0,0.0
-post2022_nonaccepted_nonrelease_support_good,0,0,0,0.0,0.0
-post2022_nonaccepted_nonrelease_weak,4,4,0,1.0,-13.309823187501179
-post2022_nonaccepted_release_seq,0,0,0,0.0,0.0
-post2022_other_orderly_reset,0,0,0,0.0,0.0
-outside_orderly_reset,85,57,28,0.6705882352941176,13.916600962913598

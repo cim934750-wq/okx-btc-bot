@@ -1,5 +1,0 @@
-continuation_label,historical_winner_count,historical_winner_pnl,historical_winner_share
-immediate_reclaim_hold,16,1327.7513350033953,0.5517241379310345
-reclaim_failed_persistence,9,549.422415260558,0.3103448275862069
-reclaim_then_delayed_hold,1,215.01338397805316,0.034482758620689655
-secondary_confirmation_reclaim,3,250.41508856626461,0.10344827586206896

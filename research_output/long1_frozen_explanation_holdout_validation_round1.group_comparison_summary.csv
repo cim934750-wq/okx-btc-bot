@@ -1,7 +1,0 @@
-holdout_half,core_explanation_item,validation_label,justification
-holdout_early_half,accepted-side support-stable compact neighborhood collapse,partially supported,"The early half still contains the accepted-side support-stable compact neighborhood structure, but collapse itself is a later-regime claim and is not fully testable within the early holdout alone."
-holdout_early_half,loss of directionally-absent non-intact buildup population,supported,The early half contains the accepted non-intact buildup population that the frozen explanation says is later lost.
-holdout_early_half,"weak-side directionally-present, support-stability-led upstream fragility persistence",partially supported,"The early half contains only the one-off weak background note and not the recurring weak main fragility pattern, so the weak-side core explanation is only partially represented."
-holdout_late_half,accepted-side support-stable compact neighborhood collapse,supported,"The late half keeps accepted completed while accepted non-intact buildup is absent, which fits the accepted-side collapse read."
-holdout_late_half,loss of directionally-absent non-intact buildup population,supported,"The late half contains no accepted non-intact buildup trades, which is consistent with loss of that population."
-holdout_late_half,"weak-side directionally-present, support-stability-led upstream fragility persistence",supported,"The late half contains recurring weak main fragility and no weak background note, so the weak-side frozen explanation is cleanly supported."

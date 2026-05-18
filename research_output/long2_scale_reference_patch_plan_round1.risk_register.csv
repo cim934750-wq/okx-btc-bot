@@ -1,8 +1,0 @@
-risk,severity,description,mitigation
-partial_unit_fix,high,Fixing Long2 only may unlock add-ons while leaving management stops/TPs inconsistent.,Either label Long2-only as proof-of-fix or plan broad runtime-distance consistency validation.
-Long1_Short1_count_regression,high,Scaling runtime ATR distances in management paths may materially change Long1/Short1 exits and counts.,Before/after trade summary and per-path count diff required after any approved patch.
-double_scaling,high,Some paths already use _to_runtime_distance or distance_scale; applying scaling twice would distort stops/targets.,Inventory already marks broker-executable long TP1 path as scale-aware; patch plan must avoid double-scaling.
-stop_order_scale_error,high,trade.sl/tp order levels must be in broker runtime units under FractionalBacktest.,Minimal stop/TP sanity examples required after implementation.
-performance_overread,medium,Nonzero Long2 in_profit or execution after patch could be mistaken for profitability evidence.,Keep gate validation separate from performance backtesting and optimization.
-broad_wrapper_change,high,Avoiding FractionalBacktest may alter sizing/cash/commission assumptions across all research outputs.,Keep Option C as fallback only.
-closed_round_drift,medium,Short1/Long1 closed research could be accidentally reopened when checking management side effects.,"Limit checks to regression/safety counts, not structural rediscovery."

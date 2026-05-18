@@ -1,3 +1,0 @@
-partition,count,mp_count,non_mp_count,support_good_count,support_bad_count,missing_good_count,missing_bad_count,gate_intact_count,gate_loose_count
-Partition A,7,2,5,2,5,4,3,2,5
-Partition B,0,0,0,0,0,0,0,0,0

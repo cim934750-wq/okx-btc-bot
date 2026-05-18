@@ -1,6 +1,0 @@
-metric,value,reference
-pre2022_support_good_count,2,positive-branch presence in pre-2022 slice
-post2022_support_good_count,0,positive-branch presence in post-2022 slice
-pre2022_support_bad_count,1,weak-side count in pre-2022 slice
-post2022_support_bad_count,4,weak-side count in post-2022 slice
-post2022_all_fit_existing_buckets,1,1 means no post-2022 residual outside frozen buckets

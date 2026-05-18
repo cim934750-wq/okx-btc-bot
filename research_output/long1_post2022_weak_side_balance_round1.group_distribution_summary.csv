@@ -1,9 +1,0 @@
-group,trade_count,losers,winners,loser_share,avg_pnl
-weak_boundary_local_failure,1,1,0,1.000000,-24.211754
-weak_upstream_fragility_with_directional_persistence,3,3,0,1.000000,-9.675846
-weak_upstream_fragility_without_directional_persistence,0,0,0,0.000000,0.000000
-weak_support_residence_survivor,0,0,0,0.000000,0.000000
-weak_other,0,0,0,0.000000,0.000000
-pre2022_reference_weak_branch,3,1,2,0.333333,48.182916
-other_orderly_reset,4,1,3,0.250000,82.033817
-outside_orderly_reset,79,55,24,0.696203,10.407453

@@ -1,8 +1,0 @@
-variable_name,source_file_line,unit_scale,used_in_Long2_gate,compatible_with_runtime_close_avg_entry,evidence
-self.data.Close[-1],research/strategy.py:210; backtesting/lib.py:538-539,"runtime scaled by FractionalBacktest, observed 1e-08",True,"yes, it is the runtime close side of comparison",candidate rows show runtime_close_to_feature_close_ratio = 1e-08.
-avg_entry from _avg_entry_price(),"research/strategy.py:51-59; backtesting/backtesting.py:565-568,606-608","runtime trade entry price scale, observed comparable to runtime Close",True,yes,candidate active_long_avg_entry is ~1e-08 of unscaled entry estimate.
-self.data.atr[-1],"research/indicators.py:14-24,115; backtesting/lib.py:537-541",unscaled market-price ATR,True,"no, not without applying runtime_price_scale",FractionalBacktest scales only OHLC/Volume; candidate ATR values match unscaled market units.
-add_on_profit_atr,"research/config.py:36; research/strategy.py:27,236",dimensionless ATR multiple,True,only if multiplied by ATR in matching runtime units,default 0.8 is an ATR multiple; grid also treats it as ATR multiple.
-current threshold avg_entry + atr * add_on_profit_atr,research/strategy.py:210,mixed: runtime avg_entry + unscaled ATR distance,True,no,runtime_in_profit passed 0/1378 while scale-consistent diagnostic passed 1324/1378.
-scale_consistent_runtime_atr,diagnostic output only,ATR * runtime_price_scale,False,"yes, diagnostic-only",minimal examples show scale-consistent thresholds align with runtime Close/entry scale.
-runtime_price_scale,research/strategy.py:266-270; backtesting/lib.py:525-539,1e-08 under FractionalBacktest,False,would be needed for ATR distance conversion,repo computes runtime_price_scale but Long2 in_profit line does not apply it.

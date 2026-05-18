@@ -1,7 +1,0 @@
-group,count,losers,winners,loser_share,avg_pnl
-intact_and_accepted_missing_layer_good,2,0,2,0.0,162.49327310015084
-intact_and_accepted_missing_layer_bad,0,0,0,0.0,0.0
-intact_but_not_accepted_missing_layer_good,0,0,0,0.0,0.0
-intact_but_not_accepted_missing_layer_bad,2,1,1,0.5,-7.947404262868421
-other_orderly_reset,7,5,2,0.7142857142857143,15.76471242573336
-outside_orderly_reset,79,55,24,0.6962025316455697,10.407453131190989

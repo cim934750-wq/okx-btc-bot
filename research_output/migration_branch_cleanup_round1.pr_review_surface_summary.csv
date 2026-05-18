@@ -1,0 +1,15 @@
+item,status,detail
+cleanup_strategy,moderate_cleanup,"Review surface narrowed by removing redundant generated artifacts from Git tracking while retaining source, data, docs, final summaries, and direct unit-fix evidence."
+before_changed_files,captured,881
+before_shortstat,captured,"881 files changed, 533503 insertions(+), 4 deletions(-)"
+expected_after_changed_files_before_reports,calculated,278
+expected_after_changed_files_with_cleanup_reports,calculated,284
+removed_files_from_git_tracking,captured,603
+actual_staged_deletions,verified,603
+research_output_files_before,captured,823
+research_output_files_removed_from_git,captured,603
+data_files_before,captured,20
+data_files_removed,captured,0
+files_over_50mb,captured,0
+files_over_90mb,captured,0
+pr_reviewability,improved_but_requires_review,PR surface is much narrower; app/server/requirements and data files still require explicit reviewer attention.

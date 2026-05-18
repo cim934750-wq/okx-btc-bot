@@ -1,5 +1,0 @@
-market,status,long1_trades,accepted_completed,accepted_nonintact_buildup,weak_main_fragility,weak_background_note,interpretation
-BTCUSDT,closed_reference_baseline,90,2,2,3,1,Frozen explanation remains BTC redesign evidence; same-framework BTC validation is closed at long1_validation_inventory_round1.stop_marker.md.
-ETHUSDT,unseen_market_checked,84,0,1,0,1,Sparse partial accepted-side support; weak-side main fragility not meaningfully testable; weak background stays monitoring only.
-BNBUSDT,unseen_market_checked,80,0,2,0,0,"Sparse mixed transfer; accepted nonintact buildup recurs, including one post-2022 case, so accepted-side loss does not transfer cleanly."
-SOLUSDT,unseen_market_checked,52,0,0,0,2,"Sparse and mostly non-testable for BTC core items; weak background recurrence remains monitoring only, not promoted."

@@ -1,8 +1,0 @@
-group,trade_count,losers,winners,loser_share,avg_pnl
-fragility_support_stability_only,1,1,0,1.000000,-0.703550
-fragility_base_compact_only,0,0,0,0.000000,0.000000
-fragility_directional_gate_only,0,0,0,0.000000,0.000000
-fragility_multi_component,2,2,0,1.000000,-14.161995
-post2022_boundary_local_failure_reference,1,1,0,1.000000,-24.211754
-other_orderly_reset,7,2,5,0.285714,67.526288
-outside_orderly_reset,79,55,24,0.696203,10.407453

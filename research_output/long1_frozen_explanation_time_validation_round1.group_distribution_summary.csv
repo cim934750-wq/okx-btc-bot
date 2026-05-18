@@ -1,4 +1,0 @@
-segment,total_trade_count,accepted_completed_count,accepted_nonintact_buildup_count,weak_main_fragility_count,weak_background_note_count,segment_losers,segment_winners,segment_loser_share,accepted_completed_avg_pnl,accepted_nonintact_buildup_avg_pnl,weak_main_fragility_avg_pnl,weak_background_note_avg_pnl
-segment_1_pre2020,6,1,0,0,0,3,3,0.5,213.02481327916627,,,
-segment_2_2020_to_2021,39,0,2,0,1,24,15,0.6153846153846154,,1.5743611452652155,,159.14250286948706
-segment_3_post2022,45,1,0,3,0,34,11,0.7555555555555555,111.96173292113542,,-9.675846288697063,

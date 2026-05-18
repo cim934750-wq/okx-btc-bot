@@ -1,3 +1,0 @@
-group,trade_count,directional_preparation_pass,directional_preparation_fail,support_stability_pass,support_stability_fail,base_compact_pass,base_compact_fail,acceptance_missing_pass,acceptance_missing_fail,release_sequence_pass,release_sequence_fail,momentum_persistence_pass,momentum_persistence_fail
-accepted_nonintact_reference,2,0,2,2,0,2,0,1,1,1,1,0,2
-weak_nonintact_reference,3,3,0,0,3,1,2,3,0,0,3,2,1

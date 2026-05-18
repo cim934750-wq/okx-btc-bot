@@ -1,5 +1,0 @@
-failure_mode,count,share_of_losses,definition
-adverse_continuation_after_entry,11,0.6875,24-bar MAE in ATR exceeded 24-bar MFE in ATR
-lack_of_24bar_downside_followthrough,12,0.75,24-bar forward short return <= 0
-short_squeeze_risk_present_at_entry,0,0.0,repo-native short_squeeze_risk true at entry
-not_strong_resumption_entry,8,0.5,repo-native short_resumption_strong false at entry

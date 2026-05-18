@@ -1,5 +1,0 @@
-metric,value,reference
-accepted_side_positive_branch_count,1,positive post-2022 orderly-reset cases on accepted side
-nonaccepted_nonrelease_positive_branch_count,0,positive post-2022 cases on nonaccepted/nonrelease support-good side
-nonaccepted_nonrelease_weak_count,4,weak-side-only nonaccepted/nonrelease cases
-post2022_all_fit_existing_relocation_buckets,1,1 means no residual post-2022 orderly-reset cases outside requested buckets

@@ -1,7 +1,0 @@
-item,judgment
-current_parent,below-EMA20 displacement protected downside followthrough versus adverse-dominant failure
-recommended_parent_read,below-EMA20 displacement mainly protects against adverse-dominant failure
-parent_reason,"Displacement clean-minus-failure separation is strongest and most consistent against adverse_dominant, while weak/mixed buckets do not show the same stable clean advantage."
-adverse_specificity,"Clean vs adverse_dominant support: executed 10/11, starter 11/11. Clean vs all_non_clean support: executed 10/11, starter 10/11."
-secondary_adx_context,Lower ADX remains secondary: executed clean 24.538 vs adverse 27.500; starter clean 24.412 vs adverse 26.763.
-implementation_readiness,Not implementation-ready.

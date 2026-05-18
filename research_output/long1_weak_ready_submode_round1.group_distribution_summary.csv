@@ -1,7 +1,0 @@
-group,trade_count,losers,winners,loser_share,avg_pnl
-weak_ready_persistent,2,2,0,1.0,-14.161994625567836
-weak_ready_transition,1,1,0,1.0,-0.7035496149555155
-weak_ready_other,0,0,0,0.0,0.0
-accepted_nonintact_reference,2,1,1,0.5,1.5743611452652155
-accepted_completed_reference,2,0,2,0.0,162.49327310015084
-other_long1,83,57,26,0.6867469879518072,11.355732438482478

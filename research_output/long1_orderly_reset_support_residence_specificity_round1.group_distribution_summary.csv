@@ -1,8 +1,0 @@
-group,count,losers,winners,loser_share,avg_pnl
-loose_accepted_missing_good_support_good,0,0,0,0.0,0.0
-loose_accepted_missing_good_support_bad,1,0,1,0.0,12.75267976543458
-loose_not_accepted_missing_good_support_good,1,0,1,0.0,159.14250286948706
-loose_not_accepted_missing_good_support_bad,3,3,0,1.0,-9.675846288697063
-loose_missing_bad,2,2,0,1.0,-16.25732839434847
-other_orderly_reset,4,1,3,0.25,77.27293441864123
-outside_orderly_reset,79,55,24,0.6962025316455697,10.407453131190989

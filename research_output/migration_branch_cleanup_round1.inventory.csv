@@ -1,0 +1,882 @@
+path,category,size_bytes,insertions,deletions,decision,reason
+app.py,app_server_files,195,11,0,keep,source/data/docs or uncertain review item retained
+data/AAVEUSDT_4h.csv,raw_data_csvs,745257,12240,0,keep,source/data/docs or uncertain review item retained
+data/ADAUSDT_4h.csv,raw_data_csvs,1054015,16153,0,keep,source/data/docs or uncertain review item retained
+data/ATOMUSDT_4h.csv,raw_data_csvs,933989,15445,0,keep,source/data/docs or uncertain review item retained
+data/AVAXUSDT_4h.csv,raw_data_csvs,743020,12377,0,keep,source/data/docs or uncertain review item retained
+data/BCHUSDT_4h.csv,raw_data_csvs,863437,14169,0,keep,source/data/docs or uncertain review item retained
+data/BNBUSDT_4h.csv,raw_data_csvs,1019167,16153,0,keep,source/data/docs or uncertain review item retained
+data/BTCUSDT_1h.csv,raw_data_csvs,1336657,20001,0,keep,source/data/docs or uncertain review item retained
+data/BTCUSDT_4h.csv,raw_data_csvs,1149660,15948,0,keep,source/data/docs or uncertain review item retained
+data/DOGEUSDT_4h.csv,raw_data_csvs,1059750,15043,0,keep,source/data/docs or uncertain review item retained
+data/DOTUSDT_4h.csv,raw_data_csvs,759506,12583,0,keep,source/data/docs or uncertain review item retained
+data/ETCUSDT_4h.csv,raw_data_csvs,976819,16153,0,keep,source/data/docs or uncertain review item retained
+data/ETHUSDT_4h.csv,raw_data_csvs,1093890,16153,0,keep,source/data/docs or uncertain review item retained
+data/FILUSDT_4h.csv,raw_data_csvs,736701,12236,0,keep,source/data/docs or uncertain review item retained
+data/LINKUSDT_4h.csv,raw_data_csvs,988083,16061,0,keep,source/data/docs or uncertain review item retained
+data/LTCUSDT_4h.csv,raw_data_csvs,989339,16153,0,keep,source/data/docs or uncertain review item retained
+data/NEARUSDT_4h.csv,raw_data_csvs,737170,12245,0,keep,source/data/docs or uncertain review item retained
+data/SOLUSDT_4h.csv,raw_data_csvs,788800,12629,0,keep,source/data/docs or uncertain review item retained
+data/TRXUSDT_4h.csv,raw_data_csvs,1097538,16153,0,keep,source/data/docs or uncertain review item retained
+data/UNIUSDT_4h.csv,raw_data_csvs,746084,12408,0,keep,source/data/docs or uncertain review item retained
+data/XRPUSDT_4h.csv,raw_data_csvs,1060585,16153,0,keep,source/data/docs or uncertain review item retained
+mtf_pullback_webhook_strategy.pine,docs,23311,357,0,keep,source/data/docs or uncertain review item retained
+requirements.txt,app_server_files,164,10,4,keep,source/data/docs or uncertain review item retained
+research/README.md,docs,478,20,0,keep,source/data/docs or uncertain review item retained
+research/__init__.py,source_research_files,59,1,0,keep,source/data/docs or uncertain review item retained
+research/ablation_study.py,source_research_files,4065,114,0,keep,source/data/docs or uncertain review item retained
+research/analyze_long1_continuation_archetypes.py,source_research_files,8938,198,0,keep,source/data/docs or uncertain review item retained
+research/analyze_long1_momentum_candidate.py,source_research_files,17763,420,0,keep,source/data/docs or uncertain review item retained
+research/analyze_long1_reclaim_retest.py,source_research_files,10820,265,0,keep,source/data/docs or uncertain review item retained
+research/analyze_long_only_archetypes.py,source_research_files,7958,180,0,keep,source/data/docs or uncertain review item retained
+research/analyze_long_only_continuation.py,source_research_files,8577,184,0,keep,source/data/docs or uncertain review item retained
+research/analyze_long_only_paths.py,source_research_files,9126,217,0,keep,source/data/docs or uncertain review item retained
+research/analyze_long_only_reclaim.py,source_research_files,8103,175,0,keep,source/data/docs or uncertain review item retained
+research/analyze_long_only_reclaim_strength.py,source_research_files,5983,154,0,keep,source/data/docs or uncertain review item retained
+research/analyze_long_only_regimes.py,source_research_files,5698,140,0,keep,source/data/docs or uncertain review item retained
+research/analyze_long_runner_leg.py,source_research_files,9562,242,0,keep,source/data/docs or uncertain review item retained
+research/config.py,source_research_files,4015,133,0,keep,source/data/docs or uncertain review item retained
+research/data.py,source_research_files,1148,42,0,keep,source/data/docs or uncertain review item retained
+research/diagnose_failure_regime.py,source_research_files,10243,242,0,keep,source/data/docs or uncertain review item retained
+research/diagnose_long_only_candidate.py,source_research_files,6582,176,0,keep,source/data/docs or uncertain review item retained
+research/download_data.py,source_research_files,5760,183,0,keep,source/data/docs or uncertain review item retained
+research/indicators.py,source_research_files,13143,297,0,keep,source/data/docs or uncertain review item retained
+research/inspect_results.py,source_research_files,1656,51,0,keep,source/data/docs or uncertain review item retained
+research/long_only_candidate.py,source_research_files,1401,56,0,keep,source/data/docs or uncertain review item retained
+research/optimize.py,source_research_files,4162,130,0,keep,source/data/docs or uncertain review item retained
+research/run_backtest.py,source_research_files,1470,49,0,keep,source/data/docs or uncertain review item retained
+research/run_long_only_candidate.py,source_research_files,1669,52,0,keep,source/data/docs or uncertain review item retained
+research/run_split_leg_mini_experiment.py,source_research_files,6374,173,0,keep,source/data/docs or uncertain review item retained
+research/strategy.py,source_patch_files,14448,336,0,keep,source/data/docs or uncertain review item retained
+research/validate_candidates.py,source_research_files,7336,203,0,keep,source/data/docs or uncertain review item retained
+research/validate_long_only_candidate.py,source_research_files,1855,59,0,keep,source/data/docs or uncertain review item retained
+research_output/ablation_by_split.csv,detailed_generated_audit_csvs,2328,17,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/ablation_full_sample.csv,detailed_generated_audit_csvs,748,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/ablation_summary.csv,detailed_generated_audit_csvs,792,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/bnbusdt_unseen_market_frozen_explanation_validation_round1.dataset_quality_summary.csv,detailed_generated_audit_csvs,259,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/bnbusdt_unseen_market_frozen_explanation_validation_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,984,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/bnbusdt_unseen_market_frozen_explanation_validation_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,403,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/bnbusdt_unseen_market_frozen_explanation_validation_round1.recommendation.csv,core_research_summaries,859,2,0,keep,summary-level research evidence retained
+research_output/bnbusdt_unseen_market_frozen_explanation_validation_round1.trade_labels_all.csv,detailed_generated_audit_csvs,67504,81,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/btc_4h_after_fix.equity.csv,detailed_generated_audit_csvs,1066311,15876,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/btc_4h_after_fix.equity.png,caches_runtime_artifacts,56187,-,-,remove,generated binary/cache/runtime artifact
+research_output/btc_4h_after_fix.trades.csv,detailed_generated_audit_csvs,15938,90,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/btc_4h_run.equity.csv,detailed_generated_audit_csvs,1065513,15876,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/btc_4h_run.equity.png,caches_runtime_artifacts,56046,-,-,remove,generated binary/cache/runtime artifact
+research_output/btc_4h_run.trades.csv,detailed_generated_audit_csvs,14640,83,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/candidate_validation_by_split.csv,detailed_generated_audit_csvs,13722,41,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/candidate_validation_full_sample.csv,detailed_generated_audit_csvs,4430,11,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/candidate_validation_survivors.csv,detailed_generated_audit_csvs,1061,1,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/cross_market_unseen_validation_synthesis_round1.core_transfer_assessment.csv,detailed_generated_audit_csvs,894,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/cross_market_unseen_validation_synthesis_round1.cross_market_ledger.csv,detailed_generated_audit_csvs,827,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/cross_market_unseen_validation_synthesis_round1.recommendation.csv,core_research_summaries,470,2,0,keep,summary-level research evidence retained
+research_output/cross_market_unseen_validation_synthesis_round1.stop_marker.md,core_research_summaries,2051,35,0,keep,summary-level research evidence retained
+research_output/cross_market_unseen_validation_synthesis_round1.supporting_note_parked_hint_assessment.csv,detailed_generated_audit_csvs,629,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/ethusdt_unseen_market_frozen_explanation_validation_round1.dataset_quality_summary.csv,detailed_generated_audit_csvs,259,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/ethusdt_unseen_market_frozen_explanation_validation_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,1085,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/ethusdt_unseen_market_frozen_explanation_validation_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,468,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/ethusdt_unseen_market_frozen_explanation_validation_round1.recommendation.csv,core_research_summaries,810,2,0,keep,summary-level research evidence retained
+research_output/ethusdt_unseen_market_frozen_explanation_validation_round1.trade_labels_all.csv,detailed_generated_audit_csvs,70840,85,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/failure_2025_2026_adx_summary.csv,detailed_generated_audit_csvs,188,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/failure_2025_2026_after_fix_adx_summary.csv,detailed_generated_audit_csvs,290,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/failure_2025_2026_after_fix_atr_ratio_summary.csv,detailed_generated_audit_csvs,447,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/failure_2025_2026_after_fix_cumulative_pnl.png,caches_runtime_artifacts,43494,-,-,remove,generated binary/cache/runtime artifact
+research_output/failure_2025_2026_after_fix_daily_state_summary.csv,detailed_generated_audit_csvs,317,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/failure_2025_2026_after_fix_direction_pnl.png,caches_runtime_artifacts,15726,-,-,remove,generated binary/cache/runtime artifact
+research_output/failure_2025_2026_after_fix_direction_summary.csv,detailed_generated_audit_csvs,316,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/failure_2025_2026_after_fix_distance_summary.csv,detailed_generated_audit_csvs,246,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/failure_2025_2026_after_fix_metrics.csv,detailed_generated_audit_csvs,216,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/failure_2025_2026_after_fix_month_summary.csv,detailed_generated_audit_csvs,788,8,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/failure_2025_2026_after_fix_monthly_pnl.png,caches_runtime_artifacts,29739,-,-,remove,generated binary/cache/runtime artifact
+research_output/failure_2025_2026_after_fix_stop_overshoot_summary.csv,detailed_generated_audit_csvs,326,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/failure_2025_2026_after_fix_tag_summary.csv,detailed_generated_audit_csvs,312,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/failure_2025_2026_after_fix_trade_type_pnl.png,caches_runtime_artifacts,16788,-,-,remove,generated binary/cache/runtime artifact
+research_output/failure_2025_2026_after_fix_trade_type_summary.csv,detailed_generated_audit_csvs,250,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/failure_2025_2026_after_fix_trades_enriched.csv,detailed_generated_audit_csvs,4724,8,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/failure_2025_2026_after_fix_weekly_bias_summary.csv,detailed_generated_audit_csvs,323,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/failure_2025_2026_atr_ratio_summary.csv,detailed_generated_audit_csvs,399,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/failure_2025_2026_cumulative_pnl.png,caches_runtime_artifacts,39075,-,-,remove,generated binary/cache/runtime artifact
+research_output/failure_2025_2026_daily_state_summary.csv,detailed_generated_audit_csvs,286,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/failure_2025_2026_direction_pnl.png,caches_runtime_artifacts,16818,-,-,remove,generated binary/cache/runtime artifact
+research_output/failure_2025_2026_direction_summary.csv,detailed_generated_audit_csvs,285,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/failure_2025_2026_distance_summary.csv,detailed_generated_audit_csvs,195,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/failure_2025_2026_metrics.csv,detailed_generated_audit_csvs,184,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/failure_2025_2026_month_summary.csv,detailed_generated_audit_csvs,786,8,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/failure_2025_2026_monthly_pnl.png,caches_runtime_artifacts,29760,-,-,remove,generated binary/cache/runtime artifact
+research_output/failure_2025_2026_stop_overshoot_summary.csv,detailed_generated_audit_csvs,294,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/failure_2025_2026_tag_summary.csv,detailed_generated_audit_csvs,281,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/failure_2025_2026_trade_type_pnl.png,caches_runtime_artifacts,17830,-,-,remove,generated binary/cache/runtime artifact
+research_output/failure_2025_2026_trade_type_summary.csv,detailed_generated_audit_csvs,199,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/failure_2025_2026_trades_enriched.csv,detailed_generated_audit_csvs,4887,9,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/failure_2025_2026_weekly_bias_summary.csv,detailed_generated_audit_csvs,292,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_atr_ratio_nearby_family_stability_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,1379,19,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_atr_ratio_nearby_family_stability_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,282,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_atr_ratio_nearby_family_stability_round1.recommendation.csv,core_research_summaries,387,2,0,keep,summary-level research evidence retained
+research_output/long1_atr_ratio_nearby_family_stability_round1.trade_labels_all.csv,detailed_generated_audit_csvs,126761,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_atr_ratio_precursor_floor_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,1690,15,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_atr_ratio_precursor_floor_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,223,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_atr_ratio_precursor_floor_round1.recommendation.csv,core_research_summaries,602,2,0,keep,summary-level research evidence retained
+research_output/long1_atr_ratio_precursor_floor_round1.trade_labels_all.csv,detailed_generated_audit_csvs,125070,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_atr_ratio_timing_audit_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,3221,46,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_atr_ratio_timing_audit_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,282,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_atr_ratio_timing_audit_round1.recommendation.csv,core_research_summaries,332,2,0,keep,summary-level research evidence retained
+research_output/long1_atr_ratio_timing_audit_round1.trade_labels_all.csv,detailed_generated_audit_csvs,141440,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_broader_release_parent_compound_failure_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,2144,15,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_broader_release_parent_compound_failure_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,354,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_broader_release_parent_compound_failure_round1.recommendation.csv,core_research_summaries,847,2,0,keep,summary-level research evidence retained
+research_output/long1_broader_release_parent_compound_failure_round1.trade_labels_all.csv,detailed_generated_audit_csvs,66348,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_carried_forward_explanation_freeze_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,893,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_carried_forward_explanation_freeze_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,1626,9,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_carried_forward_explanation_freeze_round1.recommendation.csv,core_research_summaries,1286,2,0,keep,summary-level research evidence retained
+research_output/long1_continuation_archetypes_round1.archetype_concentration_summary.csv,detailed_generated_audit_csvs,861,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_continuation_archetypes_round1.archetype_distribution_all_losers.csv,detailed_generated_audit_csvs,290,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_continuation_archetypes_round1.archetype_distribution_all_trades.csv,detailed_generated_audit_csvs,319,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_continuation_archetypes_round1.archetype_distribution_historical_winners.csv,detailed_generated_audit_csvs,326,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_continuation_archetypes_round1.recommendation.csv,core_research_summaries,231,2,0,keep,summary-level research evidence retained
+research_output/long1_continuation_archetypes_round1.trade_labels_2025_2026.csv,detailed_generated_audit_csvs,1231,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_continuation_archetypes_round1.trade_labels_all.csv,detailed_generated_audit_csvs,28402,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_continuation_archetypes_round2.archetype_concentration_summary.csv,detailed_generated_audit_csvs,997,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_continuation_archetypes_round2.archetype_distribution_all_losers.csv,detailed_generated_audit_csvs,359,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_continuation_archetypes_round2.archetype_distribution_all_trades.csv,detailed_generated_audit_csvs,374,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_continuation_archetypes_round2.archetype_distribution_historical_winners.csv,detailed_generated_audit_csvs,391,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_continuation_archetypes_round2.recommendation.csv,core_research_summaries,231,2,0,keep,summary-level research evidence retained
+research_output/long1_continuation_archetypes_round2.trade_labels_2025_2026.csv,detailed_generated_audit_csvs,1251,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_continuation_archetypes_round2.trade_labels_all.csv,detailed_generated_audit_csvs,28941,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_current_explanation_closure_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,2862,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_current_explanation_closure_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,383,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_current_explanation_closure_round1.recommendation.csv,core_research_summaries,906,2,0,keep,summary-level research evidence retained
+research_output/long1_current_explanation_closure_round1.trade_labels_all.csv,detailed_generated_audit_csvs,146298,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_current_explanation_replication_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,930,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_current_explanation_replication_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,729,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_current_explanation_replication_round1.recommendation.csv,core_research_summaries,948,2,0,keep,summary-level research evidence retained
+research_output/long1_current_explanation_replication_round1.trade_labels_all.csv,detailed_generated_audit_csvs,13291,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_directional_preparation_decomposition_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,2672,25,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_directional_preparation_decomposition_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,223,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_directional_preparation_decomposition_round1.recommendation.csv,core_research_summaries,630,2,0,keep,summary-level research evidence retained
+research_output/long1_directional_preparation_decomposition_round1.trade_labels_all.csv,detailed_generated_audit_csvs,122139,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_example_validation_audit_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,1549,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_example_validation_audit_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,480,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_example_validation_audit_round1.recommendation.csv,core_research_summaries,640,2,0,keep,summary-level research evidence retained
+research_output/long1_example_validation_audit_round1.trade_labels_all.csv,detailed_generated_audit_csvs,12406,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_final_research_handoff_round1.handoff_note.md,core_research_summaries,3604,58,0,keep,summary-level research evidence retained
+research_output/long1_final_research_handoff_round1.summary.csv,core_research_summaries,324,2,0,keep,summary-level research evidence retained
+research_output/long1_fresh_sponsorship_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,316,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_fresh_sponsorship_round1.recommendation.csv,core_research_summaries,214,2,0,keep,summary-level research evidence retained
+research_output/long1_fresh_sponsorship_round1.trade_labels_all.csv,detailed_generated_audit_csvs,41319,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_frozen_explanation_holdout_validation_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,1549,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_frozen_explanation_holdout_validation_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,480,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_frozen_explanation_holdout_validation_round1.recommendation.csv,core_research_summaries,546,2,0,keep,summary-level research evidence retained
+research_output/long1_frozen_explanation_holdout_validation_round1.trade_labels_all.csv,detailed_generated_audit_csvs,12406,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_frozen_explanation_orderly_parent_validation_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,1126,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_frozen_explanation_orderly_parent_validation_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,315,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_frozen_explanation_orderly_parent_validation_round1.recommendation.csv,core_research_summaries,806,2,0,keep,summary-level research evidence retained
+research_output/long1_frozen_explanation_orderly_parent_validation_round1.trade_labels_all.csv,detailed_generated_audit_csvs,10742,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_frozen_explanation_time_validation_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,2231,10,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_frozen_explanation_time_validation_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,559,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_frozen_explanation_time_validation_round1.recommendation.csv,core_research_summaries,596,2,0,keep,summary-level research evidence retained
+research_output/long1_frozen_explanation_time_validation_round1.trade_labels_all.csv,detailed_generated_audit_csvs,12601,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_frozen_validation_baseline_note_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,1619,9,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_frozen_validation_baseline_note_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,1862,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_frozen_validation_baseline_note_round1.recommendation.csv,core_research_summaries,2643,2,0,keep,summary-level research evidence retained
+research_output/long1_larger_market_basket_frozen_explanation_validation_round1.aggregate_basket_composition_summary.csv,detailed_generated_audit_csvs,594,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_larger_market_basket_frozen_explanation_validation_round1.core_recurrence_assessment.csv,detailed_generated_audit_csvs,883,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_larger_market_basket_frozen_explanation_validation_round1.dataset_basket_confirmation.csv,detailed_generated_audit_csvs,1573,11,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_larger_market_basket_frozen_explanation_validation_round1.market_metrics_summary.csv,detailed_generated_audit_csvs,1340,11,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_larger_market_basket_frozen_explanation_validation_round1.per_market_composition_summary.csv,detailed_generated_audit_csvs,3620,51,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_larger_market_basket_frozen_explanation_validation_round1.recommendation.csv,core_research_summaries,825,2,0,keep,summary-level research evidence retained
+research_output/long1_larger_market_basket_frozen_explanation_validation_round1.stop_marker.md,core_research_summaries,2144,38,0,keep,summary-level research evidence retained
+research_output/long1_larger_market_basket_frozen_explanation_validation_round1.supporting_note_parked_hint_assessment.csv,detailed_generated_audit_csvs,532,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_larger_market_basket_frozen_explanation_validation_round1.trade_labels_all.csv,detailed_generated_audit_csvs,365330,435,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_larger_market_basket_material_inventory_round1.dataset_quality_table.csv,detailed_generated_audit_csvs,3076,16,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_larger_market_basket_material_inventory_round1.failed_or_invalid_candidates.csv,detailed_generated_audit_csvs,26,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_larger_market_basket_material_inventory_round1.recommendation.csv,core_research_summaries,485,2,0,keep,summary-level research evidence retained
+research_output/long1_larger_market_basket_material_inventory_round1.usable_market_basket_ranking.csv,detailed_generated_audit_csvs,3076,16,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_momentum_candidate_profiles_round1.candidate_stability_summary.csv,detailed_generated_audit_csvs,315,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_momentum_candidate_profiles_round1.exclusion_reason_summary.csv,detailed_generated_audit_csvs,1371,22,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_momentum_candidate_profiles_round1.profile_distribution_summary.csv,detailed_generated_audit_csvs,1097,16,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_momentum_candidate_profiles_round1.recommendation.csv,core_research_summaries,718,2,0,keep,summary-level research evidence retained
+research_output/long1_momentum_candidate_profiles_round1.trade_labels_all.csv,detailed_generated_audit_csvs,39013,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_momentum_candidate_round1.label_distribution_summary.csv,detailed_generated_audit_csvs,279,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_momentum_candidate_round1.recommendation.csv,core_research_summaries,190,2,0,keep,summary-level research evidence retained
+research_output/long1_momentum_candidate_round1.trade_labels_all.csv,detailed_generated_audit_csvs,24937,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_nonintact_asymmetry_crosspattern_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,314,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_nonintact_asymmetry_crosspattern_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,467,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_nonintact_asymmetry_crosspattern_round1.recommendation.csv,core_research_summaries,295,2,0,keep,summary-level research evidence retained
+research_output/long1_nonintact_asymmetry_crosspattern_round1.trade_labels_all.csv,detailed_generated_audit_csvs,113336,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_nonintact_earliest_divergence_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,408,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_nonintact_earliest_divergence_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,196,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_nonintact_earliest_divergence_round1.recommendation.csv,core_research_summaries,174,2,0,keep,summary-level research evidence retained
+research_output/long1_nonintact_earliest_divergence_round1.trade_labels_all.csv,detailed_generated_audit_csvs,117808,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_acceptance_persistence_validation_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,359,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_acceptance_persistence_validation_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,558,8,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_acceptance_persistence_validation_round1.recommendation.csv,core_research_summaries,931,2,0,keep,summary-level research evidence retained
+research_output/long1_orderly_reset_acceptance_persistence_validation_round1.trade_labels_all.csv,detailed_generated_audit_csvs,86696,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_intact_not_accepted_missing_layer_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,171,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_intact_not_accepted_missing_layer_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,427,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_intact_not_accepted_missing_layer_round1.recommendation.csv,core_research_summaries,798,2,0,keep,summary-level research evidence retained
+research_output/long1_orderly_reset_intact_not_accepted_missing_layer_round1.trade_labels_all.csv,detailed_generated_audit_csvs,86499,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_late_slice_mode_audit_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,363,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_late_slice_mode_audit_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,466,9,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_late_slice_mode_audit_round1.recommendation.csv,core_research_summaries,568,2,0,keep,summary-level research evidence retained
+research_output/long1_orderly_reset_late_slice_mode_audit_round1.trade_labels_all.csv,detailed_generated_audit_csvs,96878,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_loose_missing_good_support_residence_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,221,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_loose_missing_good_support_residence_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,473,8,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_loose_missing_good_support_residence_round1.recommendation.csv,core_research_summaries,680,2,0,keep,summary-level research evidence retained
+research_output/long1_orderly_reset_loose_missing_good_support_residence_round1.trade_labels_all.csv,detailed_generated_audit_csvs,87755,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_parent_underprepared_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,903,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_parent_underprepared_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,471,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_parent_underprepared_round1.recommendation.csv,core_research_summaries,967,2,0,keep,summary-level research evidence retained
+research_output/long1_orderly_reset_parent_underprepared_round1.trade_labels_all.csv,detailed_generated_audit_csvs,67462,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_post2022_accepted_core_alignment_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,159,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_post2022_accepted_core_alignment_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,349,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_post2022_accepted_core_alignment_round1.recommendation.csv,core_research_summaries,604,2,0,keep,summary-level research evidence retained
+research_output/long1_orderly_reset_post2022_accepted_core_alignment_round1.trade_labels_all.csv,detailed_generated_audit_csvs,97085,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_post2022_positive_relocation_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,436,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_post2022_positive_relocation_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,425,8,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_post2022_positive_relocation_round1.recommendation.csv,core_research_summaries,616,2,0,keep,summary-level research evidence retained
+research_output/long1_orderly_reset_post2022_positive_relocation_round1.trade_labels_all.csv,detailed_generated_audit_csvs,97143,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_post2022_scope_audit_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,385,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_post2022_scope_audit_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,503,9,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_post2022_scope_audit_round1.recommendation.csv,core_research_summaries,573,2,0,keep,summary-level research evidence retained
+research_output/long1_orderly_reset_post2022_scope_audit_round1.trade_labels_all.csv,detailed_generated_audit_csvs,96919,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_pre_acceptance_gate_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,212,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_pre_acceptance_gate_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,434,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_pre_acceptance_gate_round1.recommendation.csv,core_research_summaries,893,2,0,keep,summary-level research evidence retained
+research_output/long1_orderly_reset_pre_acceptance_gate_round1.trade_labels_all.csv,detailed_generated_audit_csvs,85689,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_prepost2022_branch_compare_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,384,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_prepost2022_branch_compare_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,966,13,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_prepost2022_branch_compare_round1.recommendation.csv,core_research_summaries,581,2,0,keep,summary-level research evidence retained
+research_output/long1_orderly_reset_prepost2022_branch_compare_round1.trade_labels_all.csv,detailed_generated_audit_csvs,97185,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_prepost2022_layer_dropoff_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,317,9,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_prepost2022_layer_dropoff_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,1017,11,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_prepost2022_layer_dropoff_round1.recommendation.csv,core_research_summaries,621,2,0,keep,summary-level research evidence retained
+research_output/long1_orderly_reset_prepost2022_layer_dropoff_round1.trade_labels_all.csv,detailed_generated_audit_csvs,100654,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,195,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,224,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_round1.recommendation.csv,core_research_summaries,217,2,0,keep,summary-level research evidence retained
+research_output/long1_orderly_reset_round1.trade_labels_all.csv,detailed_generated_audit_csvs,41287,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_round2.group_comparison_summary.csv,detailed_generated_audit_csvs,208,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_round2.group_distribution_summary.csv,detailed_generated_audit_csvs,268,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_round2.recommendation.csv,core_research_summaries,229,2,0,keep,summary-level research evidence retained
+research_output/long1_orderly_reset_round2.trade_labels_all.csv,detailed_generated_audit_csvs,41323,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_support_acceptance_boundary_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,777,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_support_acceptance_boundary_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,484,10,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_support_acceptance_boundary_round1.recommendation.csv,core_research_summaries,993,2,0,keep,summary-level research evidence retained
+research_output/long1_orderly_reset_support_acceptance_boundary_round1.trade_labels_all.csv,detailed_generated_audit_csvs,69919,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_support_residence_nearby_frame_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,591,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_support_residence_nearby_frame_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,1091,8,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_support_residence_nearby_frame_round1.recommendation.csv,core_research_summaries,694,2,0,keep,summary-level research evidence retained
+research_output/long1_orderly_reset_support_residence_nearby_frame_round1.trade_labels_all.csv,detailed_generated_audit_csvs,94976,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_support_residence_same_family_slice_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,479,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_support_residence_same_family_slice_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,541,9,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_support_residence_same_family_slice_round1.recommendation.csv,core_research_summaries,742,2,0,keep,summary-level research evidence retained
+research_output/long1_orderly_reset_support_residence_same_family_slice_round1.trade_labels_all.csv,detailed_generated_audit_csvs,96628,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_support_residence_second_nearby_frame_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,592,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_support_residence_second_nearby_frame_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,1243,8,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_support_residence_second_nearby_frame_round1.recommendation.csv,core_research_summaries,705,2,0,keep,summary-level research evidence retained
+research_output/long1_orderly_reset_support_residence_second_nearby_frame_round1.trade_labels_all.csv,detailed_generated_audit_csvs,96759,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_support_residence_specificity_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,236,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_support_residence_specificity_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,482,8,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_support_residence_specificity_round1.recommendation.csv,core_research_summaries,610,2,0,keep,summary-level research evidence retained
+research_output/long1_orderly_reset_support_residence_specificity_round1.trade_labels_all.csv,detailed_generated_audit_csvs,87729,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_three_layer_same_family_partition_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,207,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_three_layer_same_family_partition_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,890,13,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_three_layer_same_family_partition_round1.recommendation.csv,core_research_summaries,817,2,0,keep,summary-level research evidence retained
+research_output/long1_orderly_reset_three_layer_same_family_partition_round1.trade_labels_all.csv,detailed_generated_audit_csvs,96833,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_three_layer_stack_dependency_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,2104,19,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_three_layer_stack_dependency_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,499,8,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_three_layer_stack_dependency_round1.recommendation.csv,core_research_summaries,624,2,0,keep,summary-level research evidence retained
+research_output/long1_orderly_reset_three_layer_stack_dependency_round1.trade_labels_all.csv,detailed_generated_audit_csvs,87786,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_three_layer_stack_validation_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,575,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_three_layer_stack_validation_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,499,8,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_three_layer_stack_validation_round1.recommendation.csv,core_research_summaries,816,2,0,keep,summary-level research evidence retained
+research_output/long1_orderly_reset_three_layer_stack_validation_round1.trade_labels_all.csv,detailed_generated_audit_csvs,87786,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_three_layer_timeslice_validation_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,194,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_three_layer_timeslice_validation_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,855,13,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_orderly_reset_three_layer_timeslice_validation_round1.recommendation.csv,core_research_summaries,443,2,0,keep,summary-level research evidence retained
+research_output/long1_orderly_reset_three_layer_timeslice_validation_round1.trade_labels_all.csv,detailed_generated_audit_csvs,96965,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_post2022_accepted_side_nearmiss_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,309,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_post2022_accepted_side_nearmiss_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,283,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_post2022_accepted_side_nearmiss_round1.recommendation.csv,core_research_summaries,536,2,0,keep,summary-level research evidence retained
+research_output/long1_post2022_accepted_side_nearmiss_round1.trade_labels_all.csv,detailed_generated_audit_csvs,96194,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_post2022_accepted_side_recurrence_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,432,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_post2022_accepted_side_recurrence_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,315,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_post2022_accepted_side_recurrence_round1.recommendation.csv,core_research_summaries,725,2,0,keep,summary-level research evidence retained
+research_output/long1_post2022_accepted_side_recurrence_round1.trade_labels_all.csv,detailed_generated_audit_csvs,96197,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_post2022_survivor_vs_fragility_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,400,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_post2022_survivor_vs_fragility_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,339,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_post2022_survivor_vs_fragility_round1.recommendation.csv,core_research_summaries,224,2,0,keep,summary-level research evidence retained
+research_output/long1_post2022_survivor_vs_fragility_round1.trade_labels_all.csv,detailed_generated_audit_csvs,107732,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_post2022_upstream_fragility_components_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,282,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_post2022_upstream_fragility_components_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,434,8,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_post2022_upstream_fragility_components_round1.recommendation.csv,core_research_summaries,197,2,0,keep,summary-level research evidence retained
+research_output/long1_post2022_upstream_fragility_components_round1.trade_labels_all.csv,detailed_generated_audit_csvs,105659,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_post2022_weak_side_balance_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,345,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_post2022_weak_side_balance_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,506,9,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_post2022_weak_side_balance_round1.recommendation.csv,core_research_summaries,157,2,0,keep,summary-level research evidence retained
+research_output/long1_post2022_weak_side_balance_round1.trade_labels_all.csv,detailed_generated_audit_csvs,103619,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_pre2022_accepted_side_partial_buildup_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,307,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_pre2022_accepted_side_partial_buildup_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,939,11,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_pre2022_accepted_side_partial_buildup_round1.recommendation.csv,core_research_summaries,263,2,0,keep,summary-level research evidence retained
+research_output/long1_pre2022_accepted_side_partial_buildup_round1.trade_labels_all.csv,detailed_generated_audit_csvs,99146,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_pre2022_compact_completion_separator_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,259,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_pre2022_compact_completion_separator_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,394,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_pre2022_compact_completion_separator_round1.recommendation.csv,core_research_summaries,273,2,0,keep,summary-level research evidence retained
+research_output/long1_pre2022_compact_completion_separator_round1.trade_labels_all.csv,detailed_generated_audit_csvs,110396,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_pre2022_nonintact_buildup_driver_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,397,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_pre2022_nonintact_buildup_driver_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,915,11,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_pre2022_nonintact_buildup_driver_round1.recommendation.csv,core_research_summaries,290,2,0,keep,summary-level research evidence retained
+research_output/long1_pre2022_nonintact_buildup_driver_round1.trade_labels_all.csv,detailed_generated_audit_csvs,112015,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_prepost2022_accepted_side_density_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,281,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_prepost2022_accepted_side_density_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,694,9,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_prepost2022_accepted_side_density_round1.recommendation.csv,core_research_summaries,164,2,0,keep,summary-level research evidence retained
+research_output/long1_prepost2022_accepted_side_density_round1.trade_labels_all.csv,detailed_generated_audit_csvs,97714,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_prepost2022_accepted_support_stability_breadth_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,461,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_prepost2022_accepted_support_stability_breadth_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,973,12,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_prepost2022_accepted_support_stability_breadth_round1.recommendation.csv,core_research_summaries,207,2,0,keep,summary-level research evidence retained
+research_output/long1_prepost2022_accepted_support_stability_breadth_round1.trade_labels_all.csv,detailed_generated_audit_csvs,109182,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_prepost2022_boundary_breadth_balance_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,493,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_prepost2022_boundary_breadth_balance_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,1304,20,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_prepost2022_boundary_breadth_balance_round1.recommendation.csv,core_research_summaries,211,2,0,keep,summary-level research evidence retained
+research_output/long1_prepost2022_boundary_breadth_balance_round1.trade_labels_all.csv,detailed_generated_audit_csvs,101500,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_prepost2022_buildup_population_loss_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,248,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_prepost2022_buildup_population_loss_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,758,10,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_prepost2022_buildup_population_loss_round1.recommendation.csv,core_research_summaries,193,2,0,keep,summary-level research evidence retained
+research_output/long1_prepost2022_buildup_population_loss_round1.trade_labels_all.csv,detailed_generated_audit_csvs,111971,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_prepost2022_directional_pathway_survival_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,235,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_prepost2022_directional_pathway_survival_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,730,10,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_prepost2022_directional_pathway_survival_round1.recommendation.csv,core_research_summaries,215,2,0,keep,summary-level research evidence retained
+research_output/long1_prepost2022_directional_pathway_survival_round1.trade_labels_all.csv,detailed_generated_audit_csvs,110570,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_prepost2022_gate_state_population_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,265,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_prepost2022_gate_state_population_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,804,10,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_prepost2022_gate_state_population_round1.recommendation.csv,core_research_summaries,184,2,0,keep,summary-level research evidence retained
+research_output/long1_prepost2022_gate_state_population_round1.trade_labels_all.csv,detailed_generated_audit_csvs,110591,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_reclaim_retest_before_recheck.label_concentration_summary.csv,detailed_generated_audit_csvs,664,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_reclaim_retest_before_recheck.label_distribution_2025_2026_losers.csv,detailed_generated_audit_csvs,194,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_reclaim_retest_before_recheck.label_distribution_all_trades.csv,detailed_generated_audit_csvs,243,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_reclaim_retest_before_recheck.label_distribution_historical_winners.csv,detailed_generated_audit_csvs,276,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_reclaim_retest_before_recheck.recommendation.csv,core_research_summaries,271,2,0,keep,summary-level research evidence retained
+research_output/long1_reclaim_retest_before_recheck.trade_labels_2025_2026.csv,detailed_generated_audit_csvs,1365,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_reclaim_retest_before_recheck.trade_labels_all.csv,detailed_generated_audit_csvs,30115,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_reclaim_retest_reclaim_confirm.label_concentration_summary.csv,detailed_generated_audit_csvs,632,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_reclaim_retest_reclaim_confirm.label_distribution_2025_2026_losers.csv,detailed_generated_audit_csvs,116,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_reclaim_retest_reclaim_confirm.label_distribution_all_trades.csv,detailed_generated_audit_csvs,257,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_reclaim_retest_reclaim_confirm.label_distribution_historical_winners.csv,detailed_generated_audit_csvs,277,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_reclaim_retest_reclaim_confirm.recommendation.csv,core_research_summaries,256,2,0,keep,summary-level research evidence retained
+research_output/long1_reclaim_retest_reclaim_confirm.trade_labels_2025_2026.csv,detailed_generated_audit_csvs,1359,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_reclaim_retest_reclaim_confirm.trade_labels_all.csv,detailed_generated_audit_csvs,29094,88,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_reclaim_retest_round1.label_concentration_summary.csv,detailed_generated_audit_csvs,664,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_reclaim_retest_round1.label_distribution_2025_2026_losers.csv,detailed_generated_audit_csvs,194,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_reclaim_retest_round1.label_distribution_all_trades.csv,detailed_generated_audit_csvs,243,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_reclaim_retest_round1.label_distribution_historical_winners.csv,detailed_generated_audit_csvs,276,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_reclaim_retest_round1.recommendation.csv,core_research_summaries,271,2,0,keep,summary-level research evidence retained
+research_output/long1_reclaim_retest_round1.trade_labels_2025_2026.csv,detailed_generated_audit_csvs,1365,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_reclaim_retest_round1.trade_labels_all.csv,detailed_generated_audit_csvs,30115,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_sponsored_family_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,226,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_sponsored_family_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,292,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_sponsored_family_round1.recommendation.csv,core_research_summaries,252,2,0,keep,summary-level research evidence retained
+research_output/long1_sponsored_family_round1.trade_labels_all.csv,detailed_generated_audit_csvs,41804,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_acceptance_parent_transition_quality_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,3440,21,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_acceptance_parent_transition_quality_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,489,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_acceptance_parent_transition_quality_round1.recommendation.csv,core_research_summaries,888,2,0,keep,summary-level research evidence retained
+research_output/long1_support_acceptance_parent_transition_quality_round1.trade_labels_all.csv,detailed_generated_audit_csvs,66420,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_acceptance_parent_underprepared_nonrelease_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,1152,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_acceptance_parent_underprepared_nonrelease_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,543,8,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_acceptance_parent_underprepared_nonrelease_round1.recommendation.csv,core_research_summaries,954,2,0,keep,summary-level research evidence retained
+research_output/long1_support_acceptance_parent_underprepared_nonrelease_round1.trade_labels_all.csv,detailed_generated_audit_csvs,66830,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_acceptance_parent_underprepared_split_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,877,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_acceptance_parent_underprepared_split_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,435,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_acceptance_parent_underprepared_split_round1.recommendation.csv,core_research_summaries,878,2,0,keep,summary-level research evidence retained
+research_output/long1_support_acceptance_parent_underprepared_split_round1.trade_labels_all.csv,detailed_generated_audit_csvs,66783,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_accepted_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,790,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_accepted_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,285,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_accepted_round1.recommendation.csv,core_research_summaries,297,2,0,keep,summary-level research evidence retained
+research_output/long1_support_accepted_round1.trade_labels_all.csv,detailed_generated_audit_csvs,41878,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_anchored_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,220,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_anchored_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,254,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_anchored_round1.recommendation.csv,core_research_summaries,281,2,0,keep,summary-level research evidence retained
+research_output/long1_support_anchored_round1.trade_labels_all.csv,detailed_generated_audit_csvs,42362,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_contained_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,221,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_contained_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,272,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_contained_round1.recommendation.csv,core_research_summaries,326,2,0,keep,summary-level research evidence retained
+research_output/long1_support_contained_round1.trade_labels_all.csv,detailed_generated_audit_csvs,42391,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_rejecting_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,221,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_rejecting_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,272,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_rejecting_round1.recommendation.csv,core_research_summaries,321,2,0,keep,summary-level research evidence retained
+research_output/long1_support_rejecting_round1.trade_labels_all.csv,detailed_generated_audit_csvs,42421,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_balanced_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,920,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_balanced_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,297,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_balanced_round1.recommendation.csv,core_research_summaries,292,2,0,keep,summary-level research evidence retained
+research_output/long1_support_releasing_balanced_round1.trade_labels_all.csv,detailed_generated_audit_csvs,43714,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_ceiling_dominant_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,1051,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_ceiling_dominant_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,335,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_ceiling_dominant_round1.recommendation.csv,core_research_summaries,330,2,0,keep,summary-level research evidence retained
+research_output/long1_support_releasing_ceiling_dominant_round1.trade_labels_all.csv,detailed_generated_audit_csvs,46262,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_clearance_controlled_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,1108,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_clearance_controlled_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,346,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_clearance_controlled_round1.recommendation.csv,core_research_summaries,304,2,0,keep,summary-level research evidence retained
+research_output/long1_support_releasing_clearance_controlled_round1.trade_labels_all.csv,detailed_generated_audit_csvs,43779,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_clearance_persistent_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,1108,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_clearance_persistent_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,346,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_clearance_persistent_round1.recommendation.csv,core_research_summaries,275,2,0,keep,summary-level research evidence retained
+research_output/long1_support_releasing_clearance_persistent_round1.trade_labels_all.csv,detailed_generated_audit_csvs,44141,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_first_step_reachable_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,603,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_first_step_reachable_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,310,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_first_step_reachable_round1.recommendation.csv,core_research_summaries,584,2,0,keep,summary-level research evidence retained
+research_output/long1_support_releasing_first_step_reachable_round1.trade_labels_all.csv,detailed_generated_audit_csvs,47876,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_headroom_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,1066,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_headroom_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,336,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_headroom_round1.recommendation.csv,core_research_summaries,292,2,0,keep,summary-level research evidence retained
+research_output/long1_support_releasing_headroom_round1.trade_labels_all.csv,detailed_generated_audit_csvs,43775,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_ladder_distributed_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,611,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_ladder_distributed_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,308,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_ladder_distributed_round1.recommendation.csv,core_research_summaries,594,2,0,keep,summary-level research evidence retained
+research_output/long1_support_releasing_ladder_distributed_round1.trade_labels_all.csv,detailed_generated_audit_csvs,46026,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_ladder_gradient_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,662,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_ladder_gradient_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,336,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_ladder_gradient_round1.recommendation.csv,core_research_summaries,579,2,0,keep,summary-level research evidence retained
+research_output/long1_support_releasing_ladder_gradient_round1.trade_labels_all.csv,detailed_generated_audit_csvs,51648,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_lane_sustained_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,888,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_lane_sustained_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,303,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_lane_sustained_round1.recommendation.csv,core_research_summaries,589,2,0,keep,summary-level research evidence retained
+research_output/long1_support_releasing_lane_sustained_round1.trade_labels_all.csv,detailed_generated_audit_csvs,69767,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_open_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,847,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_open_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,271,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_open_round1.recommendation.csv,core_research_summaries,281,2,0,keep,summary-level research evidence retained
+research_output/long1_support_releasing_open_round1.trade_labels_all.csv,detailed_generated_audit_csvs,42381,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_overhead_absorbing_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,1087,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_overhead_absorbing_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,343,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_overhead_absorbing_round1.recommendation.csv,core_research_summaries,318,2,0,keep,summary-level research evidence retained
+research_output/long1_support_releasing_overhead_absorbing_round1.trade_labels_all.csv,detailed_generated_audit_csvs,45624,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_overhead_clean_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,1030,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_overhead_clean_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,332,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_overhead_clean_round1.recommendation.csv,core_research_summaries,254,2,0,keep,summary-level research evidence retained
+research_output/long1_support_releasing_overhead_clean_round1.trade_labels_all.csv,detailed_generated_audit_csvs,42653,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_overhead_staged_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,583,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_overhead_staged_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,305,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_overhead_staged_round1.recommendation.csv,core_research_summaries,543,2,0,keep,summary-level research evidence retained
+research_output/long1_support_releasing_overhead_staged_round1.trade_labels_all.csv,detailed_generated_audit_csvs,48393,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,804,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,287,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_round1.recommendation.csv,core_research_summaries,289,2,0,keep,summary-level research evidence retained
+research_output/long1_support_releasing_round1.trade_labels_all.csv,detailed_generated_audit_csvs,41869,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_transition_failure_modes_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,2117,14,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_transition_failure_modes_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,343,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_transition_failure_modes_round1.recommendation.csv,core_research_summaries,780,2,0,keep,summary-level research evidence retained
+research_output/long1_support_releasing_transition_failure_modes_round1.trade_labels_all.csv,detailed_generated_audit_csvs,66096,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_transition_intact_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,949,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_transition_intact_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,309,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_releasing_transition_intact_round1.recommendation.csv,core_research_summaries,743,2,0,keep,summary-level research evidence retained
+research_output/long1_support_releasing_transition_intact_round1.trade_labels_all.csv,detailed_generated_audit_csvs,66097,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_retained_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,220,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_retained_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,276,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_support_retained_round1.recommendation.csv,core_research_summaries,281,2,0,keep,summary-level research evidence retained
+research_output/long1_support_retained_round1.trade_labels_all.csv,detailed_generated_audit_csvs,41851,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_validation_inventory_round1.note.md,core_research_summaries,1585,20,0,keep,summary-level research evidence retained
+research_output/long1_validation_inventory_round1.recommendation.csv,core_research_summaries,1018,2,0,keep,summary-level research evidence retained
+research_output/long1_validation_inventory_round1.stop_marker.md,core_research_summaries,1663,32,0,keep,summary-level research evidence retained
+research_output/long1_validation_inventory_round1.validation_inventory.csv,detailed_generated_audit_csvs,2241,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_weak_background_branch_recurrence_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,406,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_weak_background_branch_recurrence_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,324,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_weak_background_branch_recurrence_round1.recommendation.csv,core_research_summaries,489,2,0,keep,summary-level research evidence retained
+research_output/long1_weak_background_branch_recurrence_round1.trade_labels_all.csv,detailed_generated_audit_csvs,12047,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_weak_fragility_compactness_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,4672,63,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_weak_fragility_compactness_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,302,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_weak_fragility_compactness_round1.recommendation.csv,core_research_summaries,402,2,0,keep,summary-level research evidence retained
+research_output/long1_weak_fragility_compactness_round1.trade_labels_all.csv,detailed_generated_audit_csvs,145027,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_weak_ready_submode_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,3108,45,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_weak_ready_submode_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,363,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_weak_ready_submode_round1.recommendation.csv,core_research_summaries,293,2,0,keep,summary-level research evidence retained
+research_output/long1_weak_ready_submode_round1.trade_labels_all.csv,detailed_generated_audit_csvs,142580,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_weak_transition_stabilizer_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,6135,85,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_weak_transition_stabilizer_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,188,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long1_weak_transition_stabilizer_round1.recommendation.csv,core_research_summaries,350,2,0,keep,summary-level research evidence retained
+research_output/long1_weak_transition_stabilizer_round1.trade_labels_all.csv,detailed_generated_audit_csvs,143790,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_candidate_material_inventory_round1.aggregate_summary.csv,detailed_generated_audit_csvs,1070,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_candidate_material_inventory_round1.candidate_ranking.csv,detailed_generated_audit_csvs,4222,20,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_candidate_material_inventory_round1.gating_context_summary.csv,detailed_generated_audit_csvs,2242,10,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_candidate_material_inventory_round1.market_inventory.csv,detailed_generated_audit_csvs,7104,20,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_candidate_material_inventory_round1.recommendation.csv,core_research_summaries,884,2,0,keep,summary-level research evidence retained
+research_output/long2_exit_instrumentation_audit_round1.compile_status.csv,detailed_generated_audit_csvs,224,3,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_exit_instrumentation_audit_round1.exit_event_summary.csv,detailed_generated_audit_csvs,1310244,2731,0,remove,raw Long2 row/event dump; compact Long2 audit outputs and final synthesis retained
+research_output/long2_exit_instrumentation_audit_round1.exit_mechanism_inventory.csv,detailed_generated_audit_csvs,3466,15,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_exit_instrumentation_audit_round1.instrumentation_method.csv,detailed_generated_audit_csvs,1351,6,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_exit_instrumentation_audit_round1.lifecycle_compression_judgment.csv,detailed_generated_audit_csvs,2087,7,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_exit_instrumentation_audit_round1.long1_exit_attribution.csv,detailed_generated_audit_csvs,21238,98,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_exit_instrumentation_audit_round1.long2_interaction_review.csv,detailed_generated_audit_csvs,4038,21,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_exit_instrumentation_audit_round1.recommendation.csv,core_research_summaries,468,2,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_exit_instrumentation_audit_round1.short1_exit_attribution.csv,detailed_generated_audit_csvs,20225,97,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_exit_instrumentation_audit_round1.short2_zero_review.csv,detailed_generated_audit_csvs,2986,21,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_option_a_management_exit_audit_round1.compile_status.csv,detailed_generated_audit_csvs,385,3,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_option_a_management_exit_audit_round1.exit_mechanism_inventory.csv,detailed_generated_audit_csvs,4454,24,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_option_a_management_exit_audit_round1.exit_reason_proxy_summary.csv,detailed_generated_audit_csvs,3591,7,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_option_a_management_exit_audit_round1.per_market_count_duration_delta.csv,detailed_generated_audit_csvs,6122,41,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_option_a_management_exit_audit_round1.pre_post_lifecycle_summary.csv,detailed_generated_audit_csvs,2928,10,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_option_a_management_exit_audit_round1.recommendation.csv,core_research_summaries,498,2,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_option_a_management_exit_audit_round1.remaining_scale_risk_scan.csv,detailed_generated_audit_csvs,1615,8,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_option_a_management_exit_audit_round1.risk_interpretation.csv,detailed_generated_audit_csvs,2360,9,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,detailed_generated_audit_csvs,1221,21,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_option_a_side_effect_audit_round1.compile_status.csv,detailed_generated_audit_csvs,322,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_option_a_side_effect_audit_round1.management_side_effect_summary.csv,detailed_generated_audit_csvs,25959,161,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_option_a_side_effect_audit_round1.non_atr_scale_scan.csv,detailed_generated_audit_csvs,1097,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_option_a_side_effect_audit_round1.recommendation.csv,core_research_summaries,421,2,0,keep,summary-level research evidence retained
+research_output/long2_option_a_side_effect_audit_round1.remaining_long2_gates.csv,detailed_generated_audit_csvs,1651,21,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_option_a_side_effect_audit_round1.risk_interpretation.csv,detailed_generated_audit_csvs,831,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_option_a_side_effect_audit_round1.short2_mirror_gate_summary.csv,detailed_generated_audit_csvs,669,21,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_option_a_trend_fail_scale_audit_post_patch_round1.lifecycle_relevance.csv,detailed_generated_audit_csvs,844,4,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_option_a_trend_fail_scale_audit_post_patch_round1.line_evidence.csv,detailed_generated_audit_csvs,1326,7,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_option_a_trend_fail_scale_audit_post_patch_round1.per_market_disagreement.csv,detailed_generated_audit_csvs,4953,39,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_option_a_trend_fail_scale_audit_post_patch_round1.recommendation.csv,core_research_summaries,493,2,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_option_a_trend_fail_scale_audit_post_patch_round1.runtime_examples.csv,detailed_generated_audit_csvs,1336,5,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_option_a_trend_fail_scale_audit_post_patch_round1.scope_check.csv,detailed_generated_audit_csvs,661,5,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_option_a_trend_fail_scale_audit_post_patch_round1.trigger_disagreement_summary.csv,detailed_generated_audit_csvs,769,3,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_option_a_trend_fail_scale_audit_post_patch_round1.unit_consistency_table.csv,detailed_generated_audit_csvs,1000,6,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_option_a_trend_fail_scale_audit_round1.lifecycle_relevance.csv,detailed_generated_audit_csvs,1324,4,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_option_a_trend_fail_scale_audit_round1.line_evidence.csv,detailed_generated_audit_csvs,2710,16,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_option_a_trend_fail_scale_audit_round1.per_market_disagreement.csv,detailed_generated_audit_csvs,6870,39,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_option_a_trend_fail_scale_audit_round1.recommendation.csv,core_research_summaries,524,2,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_option_a_trend_fail_scale_audit_round1.runtime_examples.csv,detailed_generated_audit_csvs,1497,5,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_option_a_trend_fail_scale_audit_round1.scope_check.csv,detailed_generated_audit_csvs,1310,6,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_option_a_trend_fail_scale_audit_round1.trigger_disagreement_summary.csv,detailed_generated_audit_csvs,568,3,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_option_a_trend_fail_scale_audit_round1.unit_consistency_table.csv,detailed_generated_audit_csvs,1370,7,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_post_trend_fail_lifecycle_review_round1.compile_status.csv,detailed_generated_audit_csvs,225,3,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_post_trend_fail_lifecycle_review_round1.lifecycle_duration_summary.csv,detailed_generated_audit_csvs,46734,161,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_post_trend_fail_lifecycle_review_round1.lifecycle_interpretation.csv,detailed_generated_audit_csvs,1416,6,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_post_trend_fail_lifecycle_review_round1.long2_gate_review.csv,detailed_generated_audit_csvs,3574,21,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_post_trend_fail_lifecycle_review_round1.per_market_count_delta.csv,detailed_generated_audit_csvs,9978,101,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_post_trend_fail_lifecycle_review_round1.recommendation.csv,core_research_summaries,446,2,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_post_trend_fail_lifecycle_review_round1.remaining_scale_risk_scan.csv,detailed_generated_audit_csvs,1847,8,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_post_trend_fail_lifecycle_review_round1.short2_gate_review.csv,detailed_generated_audit_csvs,3192,21,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_post_trend_fail_lifecycle_review_round1.three_state_trade_counts.csv,detailed_generated_audit_csvs,11015,61,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_post_unit_fix_exit_synthesis_round1.exit_attribution_summary.csv,detailed_generated_audit_csvs,1939,14,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_post_unit_fix_exit_synthesis_round1.fixed_items.csv,core_research_summaries,1029,4,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_post_unit_fix_exit_synthesis_round1.note.md,core_research_summaries,4573,98,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_post_unit_fix_exit_synthesis_round1.recommendation.csv,core_research_summaries,635,2,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_post_unit_fix_exit_synthesis_round1.scope_rules.csv,core_research_summaries,1882,14,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_post_unit_fix_exit_synthesis_round1.summary.csv,core_research_summaries,1005,8,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_runtime_gate_synthesis_scope_note_round1.note.md,core_research_summaries,3384,48,0,keep,summary-level research evidence retained
+research_output/long2_runtime_gate_synthesis_scope_note_round1.pre_patch_checklist.csv,detailed_generated_audit_csvs,1218,8,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_runtime_gate_synthesis_scope_note_round1.recommendation.csv,core_research_summaries,590,2,0,keep,summary-level research evidence retained
+research_output/long2_runtime_gate_synthesis_scope_note_round1.scope_rules.csv,core_research_summaries,979,10,0,keep,summary-level research evidence retained
+research_output/long2_runtime_gate_synthesis_scope_note_round1.summary.csv,core_research_summaries,1276,12,0,keep,summary-level research evidence retained
+research_output/long2_runtime_in_profit_gate_audit_post_patch_round1.before_after_trade_counts.csv,detailed_generated_audit_csvs,1221,21,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_runtime_in_profit_gate_audit_post_patch_round1.candidate_rows_sample.csv,detailed_generated_audit_csvs,78555,360,0,remove,raw Long2 row/event dump; compact Long2 audit outputs and final synthesis retained
+research_output/long2_runtime_in_profit_gate_audit_post_patch_round1.gate_funnel_summary.csv,detailed_generated_audit_csvs,1655,21,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_runtime_in_profit_gate_audit_round1.candidate_rows_sample.csv,detailed_generated_audit_csvs,1384481,1379,0,remove,raw Long2 row/event dump; compact Long2 audit outputs and final synthesis retained
+research_output/long2_runtime_in_profit_gate_audit_round1.gate_funnel_summary.csv,detailed_generated_audit_csvs,3510,21,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_runtime_in_profit_gate_audit_round1.in_profit_distribution.csv,detailed_generated_audit_csvs,11088,27,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_runtime_in_profit_gate_audit_round1.market_ranking.csv,detailed_generated_audit_csvs,5930,20,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_runtime_in_profit_gate_audit_round1.recommendation.csv,core_research_summaries,1051,2,0,keep,summary-level research evidence retained
+research_output/long2_runtime_in_profit_gate_audit_round1.sequencing_timing_summary.csv,detailed_generated_audit_csvs,1981,10,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_scale_reference_option_a_patch_round1.before_after_trade_counts.csv,detailed_generated_audit_csvs,1221,21,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_scale_reference_option_a_patch_round1.files_changed.csv,detailed_generated_audit_csvs,806,5,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_scale_reference_option_a_patch_round1.patch_summary.csv,detailed_generated_audit_csvs,512,5,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_scale_reference_option_a_patch_round1.post_patch_gate_funnel.csv,detailed_generated_audit_csvs,1655,21,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_scale_reference_option_a_patch_round1.recommendation.csv,core_research_summaries,365,2,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_scale_reference_option_a_patch_round1.risk_notes.csv,detailed_generated_audit_csvs,590,5,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_scale_reference_option_a_patch_round1.verification_results.csv,detailed_generated_audit_csvs,472,5,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_scale_reference_patch_plan_round1.affected_line_inventory.csv,detailed_generated_audit_csvs,10309,34,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_scale_reference_patch_plan_round1.patch_options.csv,detailed_generated_audit_csvs,2676,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_scale_reference_patch_plan_round1.recommendation.csv,core_research_summaries,680,2,0,keep,summary-level research evidence retained
+research_output/long2_scale_reference_patch_plan_round1.recommended_plan.csv,detailed_generated_audit_csvs,2333,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_scale_reference_patch_plan_round1.risk_register.csv,detailed_generated_audit_csvs,1440,8,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_scale_reference_patch_plan_round1.verification_plan.csv,detailed_generated_audit_csvs,1768,9,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_scale_reference_validation_audit_round1.line_evidence.csv,detailed_generated_audit_csvs,4697,17,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_scale_reference_validation_audit_round1.minimal_examples.csv,detailed_generated_audit_csvs,2012,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_scale_reference_validation_audit_round1.pre_patch_judgment.csv,detailed_generated_audit_csvs,836,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_scale_reference_validation_audit_round1.recommendation.csv,core_research_summaries,582,2,0,keep,summary-level research evidence retained
+research_output/long2_scale_reference_validation_audit_round1.scope_check.csv,detailed_generated_audit_csvs,1430,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_scale_reference_validation_audit_round1.unit_consistency_table.csv,detailed_generated_audit_csvs,1745,8,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_trend_fail_scale_patch_plan_round1.affected_line_inventory.csv,detailed_generated_audit_csvs,3818,12,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_trend_fail_scale_patch_plan_round1.patch_options.csv,detailed_generated_audit_csvs,3261,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_trend_fail_scale_patch_plan_round1.recommendation.csv,core_research_summaries,520,2,0,keep,summary-level research evidence retained
+research_output/long2_trend_fail_scale_patch_plan_round1.recommended_plan.csv,detailed_generated_audit_csvs,2162,10,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_trend_fail_scale_patch_plan_round1.risk_register.csv,detailed_generated_audit_csvs,1742,8,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_trend_fail_scale_patch_plan_round1.verification_plan.csv,detailed_generated_audit_csvs,1391,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long2_trend_fail_scale_patch_round1.before_after_trade_counts.csv,detailed_generated_audit_csvs,799,5,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_trend_fail_scale_patch_round1.compile_status.csv,detailed_generated_audit_csvs,248,3,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_trend_fail_scale_patch_round1.files_changed.csv,detailed_generated_audit_csvs,338,4,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_trend_fail_scale_patch_round1.patch_summary.csv,detailed_generated_audit_csvs,527,5,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_trend_fail_scale_patch_round1.post_patch_disagreement_summary.csv,detailed_generated_audit_csvs,769,3,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_trend_fail_scale_patch_round1.recommendation.csv,core_research_summaries,357,2,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long2_trend_fail_scale_patch_round1.risk_notes.csv,detailed_generated_audit_csvs,575,5,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/long_only_archetypes_round1.archetype_concentration_summary.csv,detailed_generated_audit_csvs,890,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_archetypes_round1.archetype_distribution_2025_2026_losers.csv,detailed_generated_audit_csvs,185,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_archetypes_round1.archetype_distribution_all_trades.csv,detailed_generated_audit_csvs,364,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_archetypes_round1.archetype_distribution_historical_winners.csv,detailed_generated_audit_csvs,325,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_archetypes_round1.recommendation.csv,core_research_summaries,226,2,0,keep,summary-level research evidence retained
+research_output/long_only_archetypes_round1.trade_features_2025_2026.csv,detailed_generated_audit_csvs,1234,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_archetypes_round1.trade_features_all.csv,detailed_generated_audit_csvs,29111,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_adxweak.equity.csv,detailed_generated_audit_csvs,1057146,15876,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_adxweak.equity.png,caches_runtime_artifacts,51082,-,-,remove,generated binary/cache/runtime artifact
+research_output/long_only_candidate_adxweak.loss_diagnosis.csv,detailed_generated_audit_csvs,659,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_adxweak.trades.csv,detailed_generated_audit_csvs,5604,32,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_adxweak.validation.csv,detailed_generated_audit_csvs,574,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_after.equity.csv,detailed_generated_audit_csvs,1041227,15876,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_after.equity.png,caches_runtime_artifacts,54461,-,-,remove,generated binary/cache/runtime artifact
+research_output/long_only_candidate_after.loss_diagnosis.csv,detailed_generated_audit_csvs,504,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_after.trades.csv,detailed_generated_audit_csvs,7261,41,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_after.validation.csv,detailed_generated_audit_csvs,596,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_after_protect.equity.csv,detailed_generated_audit_csvs,1053043,15876,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_after_protect.equity.png,caches_runtime_artifacts,60984,-,-,remove,generated binary/cache/runtime artifact
+research_output/long_only_candidate_after_protect.loss_diagnosis.csv,detailed_generated_audit_csvs,1315,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_after_protect.trades.csv,detailed_generated_audit_csvs,15753,89,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_after_protect.validation.csv,detailed_generated_audit_csvs,577,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_after_tp1broker.equity.csv,detailed_generated_audit_csvs,1056241,15876,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_after_tp1broker.equity.png,caches_runtime_artifacts,60951,-,-,remove,generated binary/cache/runtime artifact
+research_output/long_only_candidate_after_tp1broker.loss_diagnosis.csv,detailed_generated_audit_csvs,2336,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_after_tp1broker.runner_analysis_summary.csv,detailed_generated_audit_csvs,269,9,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_after_tp1broker.runner_lifecycle_summary.csv,detailed_generated_audit_csvs,5826,15,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_after_tp1broker.runner_stop_path.csv,detailed_generated_audit_csvs,50633,180,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_after_tp1broker.trades.csv,detailed_generated_audit_csvs,33643,177,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_after_tp1broker.validation.csv,detailed_generated_audit_csvs,572,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_after_tp1broker_scaledfix.equity.csv,detailed_generated_audit_csvs,1057494,15876,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_after_tp1broker_scaledfix.equity.png,caches_runtime_artifacts,63329,-,-,remove,generated binary/cache/runtime artifact
+research_output/long_only_candidate_after_tp1broker_scaledfix.runner_analysis_summary.csv,detailed_generated_audit_csvs,266,9,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_after_tp1broker_scaledfix.runner_lifecycle_summary.csv,detailed_generated_audit_csvs,2041,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_after_tp1broker_scaledfix.runner_stop_path.csv,detailed_generated_audit_csvs,11582,41,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_after_tp1broker_scaledfix.trades.csv,detailed_generated_audit_csvs,50007,233,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_after_tp1broker_scaledfix.validation.csv,detailed_generated_audit_csvs,609,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_after_tp1broker_split2025.runner_analysis_summary.csv,detailed_generated_audit_csvs,264,9,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_after_tp1broker_split2025.runner_lifecycle_summary.csv,detailed_generated_audit_csvs,1603,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_after_tp1broker_split2025.runner_stop_path.csv,detailed_generated_audit_csvs,12707,45,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_baseline_restore_check.validation.csv,detailed_generated_audit_csvs,574,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_before.equity.csv,detailed_generated_audit_csvs,1053043,15876,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_before.equity.png,caches_runtime_artifacts,60984,-,-,remove,generated binary/cache/runtime artifact
+research_output/long_only_candidate_before.loss_diagnosis.csv,detailed_generated_audit_csvs,1043,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_before.trades.csv,detailed_generated_audit_csvs,15753,89,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_before.validation.csv,detailed_generated_audit_csvs,577,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_before_after_adx_revert.validation.csv,detailed_generated_audit_csvs,574,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_before_after_atr_revert.validation.csv,detailed_generated_audit_csvs,574,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_before_postrevertcheck.validation.csv,detailed_generated_audit_csvs,574,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_before_recheck.equity.csv,detailed_generated_audit_csvs,1053809,15876,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_before_recheck.equity.png,caches_runtime_artifacts,60832,-,-,remove,generated binary/cache/runtime artifact
+research_output/long_only_candidate_before_recheck.trades.csv,detailed_generated_audit_csvs,16064,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_before_recheck.validation.csv,detailed_generated_audit_csvs,574,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_before_restored.validation.csv,detailed_generated_audit_csvs,574,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_losscooldown.equity.csv,detailed_generated_audit_csvs,1055596,15876,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_losscooldown.equity.png,caches_runtime_artifacts,60449,-,-,remove,generated binary/cache/runtime artifact
+research_output/long_only_candidate_losscooldown.loss_diagnosis.csv,detailed_generated_audit_csvs,1319,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_losscooldown.trades.csv,detailed_generated_audit_csvs,14097,80,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_losscooldown.validation.csv,detailed_generated_audit_csvs,572,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_reclaim_confirm.equity.csv,detailed_generated_audit_csvs,1056943,15876,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_reclaim_confirm.equity.png,caches_runtime_artifacts,60060,-,-,remove,generated binary/cache/runtime artifact
+research_output/long_only_candidate_reclaim_confirm.trades.csv,detailed_generated_audit_csvs,15391,88,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_reclaim_confirm.validation.csv,detailed_generated_audit_csvs,617,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_risingatr.equity.csv,detailed_generated_audit_csvs,1053331,15876,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_risingatr.equity.png,caches_runtime_artifacts,59667,-,-,remove,generated binary/cache/runtime artifact
+research_output/long_only_candidate_risingatr.loss_diagnosis.csv,detailed_generated_audit_csvs,1319,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_risingatr.trades.csv,detailed_generated_audit_csvs,13000,74,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_risingatr.validation.csv,detailed_generated_audit_csvs,575,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_stretchedfilter.equity.csv,detailed_generated_audit_csvs,1052200,15876,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_stretchedfilter.equity.png,caches_runtime_artifacts,57326,-,-,remove,generated binary/cache/runtime artifact
+research_output/long_only_candidate_stretchedfilter.loss_diagnosis.csv,detailed_generated_audit_csvs,1336,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_stretchedfilter.trades.csv,detailed_generated_audit_csvs,13107,74,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_candidate_stretchedfilter.validation.csv,detailed_generated_audit_csvs,584,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_continuation_round1.label_concentration_summary.csv,detailed_generated_audit_csvs,863,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_continuation_round1.label_distribution_2025_2026_losers.csv,detailed_generated_audit_csvs,265,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_continuation_round1.label_distribution_all_trades.csv,detailed_generated_audit_csvs,340,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_continuation_round1.label_distribution_historical_winners.csv,detailed_generated_audit_csvs,358,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_continuation_round1.recommendation.csv,core_research_summaries,213,2,0,keep,summary-level research evidence retained
+research_output/long_only_continuation_round1.trade_labels_2025_2026.csv,detailed_generated_audit_csvs,1152,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_continuation_round1.trade_labels_all.csv,detailed_generated_audit_csvs,24773,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_paths_round1.label_concentration_summary.csv,detailed_generated_audit_csvs,752,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_paths_round1.label_distribution_2025_2026_losers.csv,detailed_generated_audit_csvs,180,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_paths_round1.label_distribution_all_trades.csv,detailed_generated_audit_csvs,302,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_paths_round1.label_distribution_historical_winners.csv,detailed_generated_audit_csvs,262,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_paths_round1.recommendation.csv,core_research_summaries,215,2,0,keep,summary-level research evidence retained
+research_output/long_only_paths_round1.trade_labels_2025_2026.csv,detailed_generated_audit_csvs,1352,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_paths_round1.trade_labels_all.csv,detailed_generated_audit_csvs,29415,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_reclaim_confirm_2025_2026.loss_diagnosis.csv,detailed_generated_audit_csvs,1006,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_reclaim_round1.label_concentration_summary.csv,detailed_generated_audit_csvs,531,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_reclaim_round1.label_distribution_2025_2026_losers.csv,detailed_generated_audit_csvs,188,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_reclaim_round1.label_distribution_all_trades.csv,detailed_generated_audit_csvs,190,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_reclaim_round1.label_distribution_historical_winners.csv,detailed_generated_audit_csvs,208,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_reclaim_round1.recommendation.csv,core_research_summaries,177,2,0,keep,summary-level research evidence retained
+research_output/long_only_reclaim_round1.trade_labels_2025_2026.csv,detailed_generated_audit_csvs,1171,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_reclaim_round1.trade_labels_all.csv,detailed_generated_audit_csvs,25746,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_reclaim_strength_round1.bucket_summary.csv,detailed_generated_audit_csvs,2711,22,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_reclaim_strength_round1.focus_reclaim_then_failed_hold.csv,detailed_generated_audit_csvs,1078,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_reclaim_strength_round1.recommendation.csv,core_research_summaries,208,2,0,keep,summary-level research evidence retained
+research_output/long_only_reclaim_strength_round1.strict_reclaim_labels_all.csv,detailed_generated_audit_csvs,28946,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_reclaim_strict_round1.label_concentration_summary.csv,detailed_generated_audit_csvs,805,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_reclaim_strict_round1.label_distribution_2025_2026_losers.csv,detailed_generated_audit_csvs,192,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_reclaim_strict_round1.label_distribution_all_trades.csv,detailed_generated_audit_csvs,313,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_reclaim_strict_round1.label_distribution_historical_winners.csv,detailed_generated_audit_csvs,331,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_reclaim_strict_round1.recommendation.csv,core_research_summaries,166,2,0,keep,summary-level research evidence retained
+research_output/long_only_reclaim_strict_round1.trade_labels_2025_2026.csv,detailed_generated_audit_csvs,1242,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_reclaim_strict_round1.trade_labels_all.csv,detailed_generated_audit_csvs,26336,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_regime_round2.recommendation.csv,core_research_summaries,192,2,0,keep,summary-level research evidence retained
+research_output/long_only_regime_round2.regime_concentration_summary.csv,detailed_generated_audit_csvs,836,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_regime_round2.regime_distribution_2025_2026_losers.csv,detailed_generated_audit_csvs,149,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_regime_round2.regime_distribution_all_trades.csv,detailed_generated_audit_csvs,318,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_regime_round2.regime_distribution_historical_winners.csv,detailed_generated_audit_csvs,196,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/long_only_regime_round2.trade_regimes.csv,detailed_generated_audit_csvs,30779,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/migration_branch_review_round1.changed_files.csv,detailed_generated_audit_csvs,134117,876,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/migration_branch_review_round1.merge_readiness.csv,core_research_summaries,926,4,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/migration_branch_review_round1.recommendation.csv,core_research_summaries,473,2,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/migration_branch_review_round1.research_state.csv,core_research_summaries,1477,9,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/migration_branch_review_round1.source_scope_check.csv,core_research_summaries,2002,11,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/migration_branch_review_round1.summary.csv,core_research_summaries,1622,13,0,keep,direct Long2/unit-fix or branch-review evidence retained
+research_output/phase1_entry_frequency_btc4h.summary.json,detailed_generated_audit_csvs,454,14,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/phase1_entry_frequency_btc4h.top_trials.csv,detailed_generated_audit_csvs,6405,21,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/phase2_directional_quality_btc4h.summary.json,detailed_generated_audit_csvs,329,10,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/phase2_directional_quality_btc4h.top_trials.csv,detailed_generated_audit_csvs,4137,13,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/phase2_locked_baseline_btc4h.summary.json,detailed_generated_audit_csvs,321,10,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/phase2_locked_baseline_btc4h.top_trials.csv,detailed_generated_audit_csvs,3324,10,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/phase3_locked_baseline_btc4h.summary.json,detailed_generated_audit_csvs,375,12,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/phase3_locked_baseline_btc4h.top_trials.csv,detailed_generated_audit_csvs,6394,21,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/phase3_trade_management_btc4h.summary.json,detailed_generated_audit_csvs,377,12,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/phase3_trade_management_btc4h.top_trials.csv,detailed_generated_audit_csvs,5215,17,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_adverse_dominant_predictor_audit_round1.aggregate_predictor_ranking.csv,detailed_generated_audit_csvs,8667,22,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_adverse_dominant_predictor_audit_round1.contradiction_summary.csv,detailed_generated_audit_csvs,21626,187,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_adverse_dominant_predictor_audit_round1.parent_refinement_recommendation.csv,detailed_generated_audit_csvs,492,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_adverse_dominant_predictor_audit_round1.per_market_predictor_consistency.csv,detailed_generated_audit_csvs,90949,463,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_adverse_dominant_predictor_audit_round1.population_comparison_summary.csv,detailed_generated_audit_csvs,1003,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_adverse_dominant_predictor_audit_round1.predictor_profile.csv,detailed_generated_audit_csvs,9719,46,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_adverse_dominant_predictor_audit_round1.recommendation.csv,core_research_summaries,977,9,0,keep,summary-level research evidence retained
+research_output/short1_adverse_vs_mixed_chop_audit_round1.adverse_vs_mixed_entry_context.csv,detailed_generated_audit_csvs,3855,27,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_adverse_vs_mixed_chop_audit_round1.adverse_vs_mixed_path_profile.csv,detailed_generated_audit_csvs,2053,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_adverse_vs_mixed_chop_audit_round1.per_market_bucket_affinity.csv,detailed_generated_audit_csvs,14864,23,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_adverse_vs_mixed_chop_audit_round1.population_summary.csv,detailed_generated_audit_csvs,1586,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_adverse_vs_mixed_chop_audit_round1.recommendation.csv,core_research_summaries,769,8,0,keep,summary-level research evidence retained
+research_output/short1_adverse_vs_mixed_chop_audit_round1.structural_interpretation.csv,detailed_generated_audit_csvs,1022,10,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_below_ema20_displacement_antecedent_audit_round1.aggregate_displacement_comparison.csv,detailed_generated_audit_csvs,722,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_below_ema20_displacement_antecedent_audit_round1.contradiction_summary.csv,detailed_generated_audit_csvs,1236,12,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_below_ema20_displacement_antecedent_audit_round1.per_market_displacement_consistency.csv,detailed_generated_audit_csvs,5622,23,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_below_ema20_displacement_antecedent_audit_round1.population_summary.csv,detailed_generated_audit_csvs,453,13,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_below_ema20_displacement_antecedent_audit_round1.recommendation.csv,core_research_summaries,1563,14,0,keep,summary-level research evidence retained
+research_output/short1_below_ema20_displacement_antecedent_audit_round1.secondary_field_comparison.csv,detailed_generated_audit_csvs,10569,47,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_combined_antecedent_stability_audit_round1.combined_antecedent_comparison.csv,detailed_generated_audit_csvs,5196,15,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_combined_antecedent_stability_audit_round1.contradiction_impact_summary.csv,detailed_generated_audit_csvs,2377,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_combined_antecedent_stability_audit_round1.per_market_combination_consistency.csv,detailed_generated_audit_csvs,5777,23,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_combined_antecedent_stability_audit_round1.population_summary.csv,detailed_generated_audit_csvs,453,13,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_combined_antecedent_stability_audit_round1.recommendation.csv,core_research_summaries,1601,14,0,keep,summary-level research evidence retained
+research_output/short1_combined_antecedent_stability_audit_round1.redundancy_correlation_summary.csv,detailed_generated_audit_csvs,2670,15,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_combined_antecedent_stability_audit_round1.standalone_antecedent_recap.csv,detailed_generated_audit_csvs,793,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_cross_market_material_inventory_round1.aggregate_summary.csv,detailed_generated_audit_csvs,285,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_cross_market_material_inventory_round1.candidate_ranking.csv,detailed_generated_audit_csvs,5890,20,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_cross_market_material_inventory_round1.executed_short1_trade_labels_all.csv,detailed_generated_audit_csvs,40424,185,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_cross_market_material_inventory_round1.market_inventory.csv,detailed_generated_audit_csvs,5841,20,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_cross_market_material_inventory_round1.recommendation.csv,core_research_summaries,558,7,0,keep,summary-level research evidence retained
+research_output/short1_cross_market_material_inventory_round1.starter_short_signal_labels_all.csv,detailed_generated_audit_csvs,359754,541,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_discovery_handoff_scope_note_round1.note.md,core_research_summaries,2988,73,0,keep,summary-level research evidence retained
+research_output/short1_discovery_handoff_scope_note_round1.recommendation.csv,core_research_summaries,912,10,0,keep,summary-level research evidence retained
+research_output/short1_discovery_handoff_scope_note_round1.scope_rules.csv,core_research_summaries,1143,13,0,keep,summary-level research evidence retained
+research_output/short1_discovery_handoff_scope_note_round1.summary.csv,core_research_summaries,978,8,0,keep,summary-level research evidence retained
+research_output/short1_discovery_stop_marker_round1.closed_work.csv,core_research_summaries,2476,13,0,keep,summary-level research evidence retained
+research_output/short1_discovery_stop_marker_round1.note.md,core_research_summaries,3288,76,0,keep,summary-level research evidence retained
+research_output/short1_discovery_stop_marker_round1.recommendation.csv,core_research_summaries,1052,11,0,keep,summary-level research evidence retained
+research_output/short1_discovery_stop_marker_round1.scope_rules.csv,core_research_summaries,1210,13,0,keep,summary-level research evidence retained
+research_output/short1_discovery_stop_marker_round1.summary.csv,core_research_summaries,1437,9,0,keep,summary-level research evidence retained
+research_output/short1_discovery_synthesis_round1.note.md,core_research_summaries,6972,209,0,keep,summary-level research evidence retained
+research_output/short1_discovery_synthesis_round1.open_questions.csv,core_research_summaries,746,6,0,keep,summary-level research evidence retained
+research_output/short1_discovery_synthesis_round1.recommendation.csv,core_research_summaries,1008,11,0,keep,summary-level research evidence retained
+research_output/short1_discovery_synthesis_round1.summary.csv,core_research_summaries,1014,27,0,keep,summary-level research evidence retained
+research_output/short1_displacement_cross_bucket_audit_round1.clean_vs_failure_comparison.csv,detailed_generated_audit_csvs,3058,11,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_displacement_cross_bucket_audit_round1.cross_bucket_displacement_profile.csv,detailed_generated_audit_csvs,2408,13,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_displacement_cross_bucket_audit_round1.parent_refinement_recommendation.csv,detailed_generated_audit_csvs,740,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_displacement_cross_bucket_audit_round1.per_market_cross_bucket_consistency.csv,detailed_generated_audit_csvs,22463,111,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_displacement_cross_bucket_audit_round1.population_bucket_summary.csv,detailed_generated_audit_csvs,622,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_displacement_cross_bucket_audit_round1.recommendation.csv,core_research_summaries,847,8,0,keep,summary-level research evidence retained
+research_output/short1_displacement_cross_bucket_audit_round1.secondary_context_by_bucket.csv,detailed_generated_audit_csvs,4487,13,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_entry_extension_recurrence_audit_round1.aggregate_summary.csv,detailed_generated_audit_csvs,2312,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_entry_extension_recurrence_audit_round1.contradicting_markets.csv,detailed_generated_audit_csvs,1415,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_entry_extension_recurrence_audit_round1.executed_short1_labels_all.csv,detailed_generated_audit_csvs,82947,156,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_entry_extension_recurrence_audit_round1.market_recurrence_summary.csv,detailed_generated_audit_csvs,2174,12,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_entry_extension_recurrence_audit_round1.population_summary.csv,detailed_generated_audit_csvs,19771,45,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_entry_extension_recurrence_audit_round1.recommendation.csv,core_research_summaries,680,10,0,keep,summary-level research evidence retained
+research_output/short1_entry_extension_recurrence_audit_round1.recurrence_assessment.csv,detailed_generated_audit_csvs,200,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_entry_extension_recurrence_audit_round1.starter_short_signal_labels_all.csv,detailed_generated_audit_csvs,412745,475,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_failure_mode_synthesis_update_round1.bucket_status.csv,detailed_generated_audit_csvs,1370,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_failure_mode_synthesis_update_round1.note.md,core_research_summaries,5238,140,0,keep,summary-level research evidence retained
+research_output/short1_failure_mode_synthesis_update_round1.open_questions.csv,core_research_summaries,713,5,0,keep,summary-level research evidence retained
+research_output/short1_failure_mode_synthesis_update_round1.recommendation.csv,core_research_summaries,1301,12,0,keep,summary-level research evidence retained
+research_output/short1_failure_mode_synthesis_update_round1.summary.csv,core_research_summaries,2378,11,0,keep,summary-level research evidence retained
+research_output/short1_fil_first_structural_discovery_round1.candidate_separating_fields.csv,detailed_generated_audit_csvs,3938,33,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_fil_first_structural_discovery_round1.executed_short1_trade_labels.csv,detailed_generated_audit_csvs,17945,24,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_fil_first_structural_discovery_round1.executed_winners_vs_losers_profile.csv,detailed_generated_audit_csvs,3382,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_fil_first_structural_discovery_round1.failure_mode_summary.csv,detailed_generated_audit_csvs,384,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_fil_first_structural_discovery_round1.population_summary.csv,detailed_generated_audit_csvs,782,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_fil_first_structural_discovery_round1.recommendation.csv,core_research_summaries,731,10,0,keep,summary-level research evidence retained
+research_output/short1_fil_first_structural_discovery_round1.starter_favorable_vs_unfavorable_profile.csv,detailed_generated_audit_csvs,3455,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_fil_first_structural_discovery_round1.starter_short_signal_labels.csv,detailed_generated_audit_csvs,82189,75,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_fil_followthrough_vs_adverse_excursion_round1.consistent_separator_summary.csv,detailed_generated_audit_csvs,3986,33,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_fil_followthrough_vs_adverse_excursion_round1.executed_context_distribution.csv,detailed_generated_audit_csvs,107,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_fil_followthrough_vs_adverse_excursion_round1.executed_short1_labels.csv,detailed_generated_audit_csvs,17609,24,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_fil_followthrough_vs_adverse_excursion_round1.population_summary.csv,detailed_generated_audit_csvs,5135,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_fil_followthrough_vs_adverse_excursion_round1.recommendation.csv,core_research_summaries,732,8,0,keep,summary-level research evidence retained
+research_output/short1_fil_followthrough_vs_adverse_excursion_round1.starter_context_distribution.csv,detailed_generated_audit_csvs,104,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_fil_followthrough_vs_adverse_excursion_round1.starter_short_signal_labels.csv,detailed_generated_audit_csvs,79989,75,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_followthrough_antecedent_audit_round1.aggregate_antecedent_comparison.csv,detailed_generated_audit_csvs,4451,30,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_followthrough_antecedent_audit_round1.candidate_antecedent_ranking.csv,detailed_generated_audit_csvs,10250,30,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_followthrough_antecedent_audit_round1.contradictions_weak_fields.csv,detailed_generated_audit_csvs,3007,25,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_followthrough_antecedent_audit_round1.per_market_consistency_summary.csv,detailed_generated_audit_csvs,4185,30,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_followthrough_antecedent_audit_round1.recommendation.csv,core_research_summaries,731,9,0,keep,summary-level research evidence retained
+research_output/short1_followthrough_antecedent_audit_round1.top_field_per_market_deltas.csv,detailed_generated_audit_csvs,5489,12,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_path_quality_failure_mode_audit_round1.entry_context_by_bucket.csv,detailed_generated_audit_csvs,5304,13,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_path_quality_failure_mode_audit_round1.failure_mode_summary.csv,detailed_generated_audit_csvs,952,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_path_quality_failure_mode_audit_round1.parent_refinement_recommendation.csv,detailed_generated_audit_csvs,416,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_path_quality_failure_mode_audit_round1.per_market_bucket_summary.csv,detailed_generated_audit_csvs,1506,12,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_path_quality_failure_mode_audit_round1.population_bucket_summary.csv,detailed_generated_audit_csvs,2598,13,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_path_quality_failure_mode_audit_round1.recommendation.csv,core_research_summaries,921,9,0,keep,summary-level research evidence retained
+research_output/short1_path_quality_stability_audit_round1.aggregate_path_quality_summary.csv,detailed_generated_audit_csvs,2758,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_path_quality_stability_audit_round1.executed_short1_labels_all.csv,detailed_generated_audit_csvs,88873,156,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_path_quality_stability_audit_round1.market_path_quality_summary.csv,detailed_generated_audit_csvs,2682,12,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_path_quality_stability_audit_round1.population_summary.csv,detailed_generated_audit_csvs,23656,45,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_path_quality_stability_audit_round1.recommendation.csv,core_research_summaries,696,7,0,keep,summary-level research evidence retained
+research_output/short1_path_quality_stability_audit_round1.stability_assessment.csv,detailed_generated_audit_csvs,330,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_path_quality_stability_audit_round1.starter_short_signal_labels_all.csv,detailed_generated_audit_csvs,430767,475,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_path_quality_stability_audit_round1.weak_or_contradicting_markets.csv,detailed_generated_audit_csvs,659,1,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_starter_signal_population_inventory_round1.recommendation.csv,core_research_summaries,566,8,0,keep,summary-level research evidence retained
+research_output/short1_starter_signal_population_inventory_round1.signal_component_summary.csv,detailed_generated_audit_csvs,403,15,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_starter_signal_population_inventory_round1.signal_context_summary.csv,detailed_generated_audit_csvs,772,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_starter_signal_population_inventory_round1.signal_numeric_profile_summary.csv,detailed_generated_audit_csvs,2776,5,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_starter_signal_population_inventory_round1.signal_year_summary.csv,detailed_generated_audit_csvs,524,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_starter_signal_population_inventory_round1.starter_short_signal_labels_all.csv,detailed_generated_audit_csvs,2952,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_structural_identity_discovery_round1.baseline_tag_summary.csv,detailed_generated_audit_csvs,373,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_structural_identity_discovery_round1.baseline_trades_all.csv,detailed_generated_audit_csvs,18221,92,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_structural_identity_discovery_round1.recommendation.csv,core_research_summaries,739,12,0,keep,summary-level research evidence retained
+research_output/short1_structural_identity_discovery_round1.short1_entry_component_summary.csv,detailed_generated_audit_csvs,403,15,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_structural_identity_discovery_round1.short1_exploratory_archetype_summary.csv,detailed_generated_audit_csvs,252,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_structural_identity_discovery_round1.short1_numeric_profile_summary.csv,detailed_generated_audit_csvs,2192,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_structural_identity_discovery_round1.short1_trade_labels_all.csv,detailed_generated_audit_csvs,2992,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_structural_identity_discovery_round1.short1_year_summary.csv,detailed_generated_audit_csvs,227,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_unresolved_non_clean_grouping_check_round1.entry_context_comparison.csv,detailed_generated_audit_csvs,9280,91,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_unresolved_non_clean_grouping_check_round1.grouping_judgment.csv,detailed_generated_audit_csvs,1397,11,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_unresolved_non_clean_grouping_check_round1.path_profile_comparison.csv,detailed_generated_audit_csvs,4728,7,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_unresolved_non_clean_grouping_check_round1.per_market_affinity.csv,detailed_generated_audit_csvs,14837,23,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_unresolved_non_clean_grouping_check_round1.population_summary.csv,detailed_generated_audit_csvs,1459,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_unresolved_non_clean_grouping_check_round1.recommendation.csv,core_research_summaries,731,8,0,keep,summary-level research evidence retained
+research_output/short1_weak_followthrough_audit_round1.clean_vs_weak_entry_context.csv,detailed_generated_audit_csvs,4245,31,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_weak_followthrough_audit_round1.clean_vs_weak_path_profile.csv,detailed_generated_audit_csvs,2130,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_weak_followthrough_audit_round1.per_market_bucket_affinity.csv,detailed_generated_audit_csvs,15525,23,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_weak_followthrough_audit_round1.population_summary.csv,detailed_generated_audit_csvs,1586,3,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_weak_followthrough_audit_round1.recommendation.csv,core_research_summaries,816,8,0,keep,summary-level research evidence retained
+research_output/short1_weak_followthrough_audit_round1.structural_interpretation.csv,detailed_generated_audit_csvs,1284,12,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/short1_weak_followthrough_audit_round1.weak_vs_reference_bucket_profile.csv,detailed_generated_audit_csvs,2674,11,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/solusdt_unseen_market_frozen_explanation_validation_round1.cross_market_summary.csv,detailed_generated_audit_csvs,414,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/solusdt_unseen_market_frozen_explanation_validation_round1.dataset_quality_summary.csv,detailed_generated_audit_csvs,258,2,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/solusdt_unseen_market_frozen_explanation_validation_round1.group_comparison_summary.csv,detailed_generated_audit_csvs,744,4,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/solusdt_unseen_market_frozen_explanation_validation_round1.group_distribution_summary.csv,detailed_generated_audit_csvs,387,6,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/solusdt_unseen_market_frozen_explanation_validation_round1.recommendation.csv,core_research_summaries,612,2,0,keep,summary-level research evidence retained
+research_output/solusdt_unseen_market_frozen_explanation_validation_round1.trade_labels_all.csv,detailed_generated_audit_csvs,44455,53,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/split_leg_mini.detail.csv,detailed_generated_audit_csvs,2358,11,0,remove,redundant detailed generated research output; summary/recommendation evidence retained
+research_output/split_leg_mini.summary.csv,core_research_summaries,1616,6,0,keep,summary-level research evidence retained
+research_output/studies/phase1_entry_frequency_btc4h.db,caches_runtime_artifacts,8192,-,-,remove,generated binary/cache/runtime artifact
+research_output/studies/phase1_entry_frequency_btc4h.db-journal,caches_runtime_artifacts,512,-,-,remove,generated binary/cache/runtime artifact
+research_output/studies/phase2_directional_quality_btc4h.db,caches_runtime_artifacts,8192,-,-,remove,generated binary/cache/runtime artifact
+research_output/studies/phase2_directional_quality_btc4h.db-journal,caches_runtime_artifacts,512,-,-,remove,generated binary/cache/runtime artifact
+research_output/studies/phase2_locked_baseline_btc4h.db,caches_runtime_artifacts,8192,-,-,remove,generated binary/cache/runtime artifact
+research_output/studies/phase2_locked_baseline_btc4h.db-journal,caches_runtime_artifacts,512,-,-,remove,generated binary/cache/runtime artifact
+research_output/studies/phase3_locked_baseline_btc4h.db,caches_runtime_artifacts,8192,-,-,remove,generated binary/cache/runtime artifact
+research_output/studies/phase3_locked_baseline_btc4h.db-journal,caches_runtime_artifacts,512,-,-,remove,generated binary/cache/runtime artifact
+research_output/studies/phase3_trade_management_btc4h.db,caches_runtime_artifacts,8192,-,-,remove,generated binary/cache/runtime artifact
+research_output/studies/phase3_trade_management_btc4h.db-journal,caches_runtime_artifacts,512,-,-,remove,generated binary/cache/runtime artifact
+server/__init__.py,app_server_files,49,1,0,keep,source/data/docs or uncertain review item retained
+server/config.py,app_server_files,1277,35,0,keep,source/data/docs or uncertain review item retained
+server/dedup.py,app_server_files,2244,69,0,keep,source/data/docs or uncertain review item retained
+server/logging_setup.py,app_server_files,177,8,0,keep,source/data/docs or uncertain review item retained
+server/main.py,app_server_files,3767,107,0,keep,source/data/docs or uncertain review item retained
+server/models.py,app_server_files,1611,47,0,keep,source/data/docs or uncertain review item retained
+server/okx.py,app_server_files,8155,202,0,keep,source/data/docs or uncertain review item retained

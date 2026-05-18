@@ -1,2 +1,0 @@
-year,signal_count,executed_short1,blocked_by_open_trade,favorable_24bar,avg_fwd_24bar_short_return,avg_fwd_24bar_mfe_atr,avg_fwd_24bar_mae_atr,avg_rsi,avg_adx,avg_atr_ratio,avg_bear_di_spread,avg_close_to_cont_low_atr,first_signal,last_signal,executed_share,blocked_share,favorable_24bar_share
-2019,2,1,1,0,-0.0054221234930701325,1.1607584968870566,2.560386868269284,44.03623562723952,18.382987264589982,0.9987850706254426,1.338034491690193,2.2364710854919343,2019-01-23 12:00:00+00:00,2019-01-23 16:00:00+00:00,0.5,0.5,0.0

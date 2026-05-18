@@ -1,6 +1,0 @@
-group,trade_count,losers,winners,loser_share,avg_pnl
-weak_fragility_compact_ready,1,1,0,1.0,-0.7035496149555155
-weak_fragility_compact_unready,0,0,0,0.0,0.0
-weak_fragility_noncompact_ready,2,2,0,1.0,-14.161994625567836
-weak_fragility_noncompact_unready,0,0,0,0.0,0.0
-weak_fragility_other,0,0,0,0.0,0.0

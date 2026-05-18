@@ -1,7 +1,0 @@
-group,count,losers,winners,loser_share,avg_pnl
-orderly_reset_parent_prepared_release_seq_mp,2,0,2,0.0,162.49327310015084
-orderly_reset_parent_prepared_release_seq_non_mp,0,0,0,0.0,0.0
-orderly_reset_parent_underprepared,3,1,2,0.3333333333333333,54.09707505333916
-orderly_reset_parent_prepared_other,3,2,1,0.6666666666666666,-10.932779953345628
-orderly_reset_parent_unstable_other,3,3,0,1.0,-11.678235615194643
-outside_parent,79,55,24,0.6962025316455697,10.407453131190989

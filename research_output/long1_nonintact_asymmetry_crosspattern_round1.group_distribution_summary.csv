@@ -1,7 +1,0 @@
-group,trade_count,losers,winners,loser_share,avg_pnl
-accepted_nonintact_directionally_absent_support_stable,2,1,1,0.500000,1.574361
-accepted_nonintact_directionally_present_support_stable,0,0,0,0.000000,0.000000
-weak_nonintact_directionally_present_support_unstable,3,3,0,1.000000,-9.675846
-weak_nonintact_directionally_present_support_stable,0,0,0,0.000000,0.000000
-weak_nonintact_directionally_absent,0,0,0,0.000000,0.000000
-other_long1,85,57,28,0.670588,14.911910

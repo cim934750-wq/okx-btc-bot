@@ -1,0 +1,14 @@
+category,before_files,before_bytes,kept_files,kept_bytes,removed_files,removed_bytes
+app_server_files,9,17639,9,17639,0,0
+caches_runtime_artifacts,31,1015108,0,0,31,1015108
+core_research_summaries,169,142757,169,142757,0,0
+detailed_generated_audit_csvs,623,26651067,51,326157,572,26324910
+docs,2,23789,2,23789,0,0
+raw_data_csvs,20,18879467,20,18879467,0,0
+source_patch_files,1,14448,1,14448,0,0
+source_research_files,26,163466,26,163466,0,0
+TOTAL,881,46907741,278,19567723,603,27340018
+ACTUAL_STAGED_DELETIONS,,,,,603,
+LARGEST_30_REFERENCE,30,31587857,15,15171235,15,16416622
+FILES_OVER_50_MB,0,,0,,0,
+FILES_OVER_90_MB,0,,0,,0,

@@ -1,7 +1,0 @@
-file,line,comparison,classification,reason
-research/strategy.py,145,self.data.Close[-1] < self.data.ema50[-1],unpatched_likely_problematic,runtime Close is FractionalBacktest-scaled while ema50 feature appears unscaled; not ATR-distance so left outside Option A scope.
-research/strategy.py,168,self.data.Close[-1] > self.data.ema50[-1],unpatched_likely_problematic,runtime Close vs unscaled ema50 feature in short trend_fail; separate audit needed.
-research/strategy.py,109-143,ATR-derived long TP/stop/trail distances,patched_atr_distance_comparison,runtime_atr now uses _to_runtime_distance.
-research/strategy.py,161-183,ATR-derived short TP/stop/trail distances,patched_atr_distance_comparison,runtime_atr now uses _to_runtime_distance.
-research/strategy.py,211-220,Long2/Short2 add-on in_profit ATR distance,patched_atr_distance_comparison,add_on_profit_distance now uses _to_runtime_distance.
-research/indicators.py,"226,231",feature-space pullback ATR checks,unpatched_likely_safe,computed before FractionalBacktest using unscaled feature space; signal construction intentionally unchanged.

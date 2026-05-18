@@ -1,4 +1,0 @@
-comparison,lhs_group,rhs_group,lhs_count,rhs_count,lhs_loser_share,rhs_loser_share,lhs_avg_pnl,rhs_avg_pnl
-mp_distributed_vs_mp_clustered,mp_orderly_support_releasing_ladder_distributed,mp_orderly_support_releasing_ladder_clustered,2,0,0.0,0.0,162.49327310015084,0.0
-mp_distributed_vs_non_mp_distributed,mp_orderly_support_releasing_ladder_distributed,non_mp_orderly_support_releasing_ladder_distributed,2,0,0.0,0.0,162.49327310015084,0.0
-mp_distributed_vs_all_other_long1,mp_orderly_support_releasing_ladder_distributed,all_other_baseline_long1,2,88,0.0,0.6931818181818182,162.49327310015084,10.41644290702824

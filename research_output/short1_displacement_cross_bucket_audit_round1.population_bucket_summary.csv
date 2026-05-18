@@ -1,3 +1,0 @@
-base_population,total_count,clean_followthrough_count,clean_followthrough_share,adverse_dominant_count,adverse_dominant_share,weak_followthrough_count,weak_followthrough_share,failed_no_followthrough_count,failed_no_followthrough_share,mixed_chop_count,mixed_chop_share,non_clean_count,non_clean_share
-executed_short1,155,61,0.3935483870967742,66,0.4258064516129032,11,0.07096774193548387,1,0.0064516129032258064,16,0.1032258064516129,94,0.6064516129032258
-starter_short_signal,474,176,0.37130801687763715,227,0.47890295358649787,41,0.08649789029535865,1,0.002109704641350211,29,0.06118143459915612,298,0.6286919831223629

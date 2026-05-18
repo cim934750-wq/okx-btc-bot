@@ -1,6 +1,0 @@
-group,count,losers,winners,loser_share,avg_pnl
-mp_orderly_support_releasing_transition_intact,2,0,2,0.0,162.49327310015084
-release_sequence_containment_failed,0,0,0,0.0,0.0
-release_sequence_directional_failed,0,0,0,0.0,0.0
-release_sequence_compound_failed,1,0,1,0.0,12.75267976543458
-other_long1,87,61,26,0.7011494252873564,10.389589609805176

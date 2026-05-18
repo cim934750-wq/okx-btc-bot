@@ -1,5 +1,0 @@
-group,count,losers,winners,loser_share,avg_pnl
-mp_orderly_support_accepted,2,0,2,0.0,162.49327310015084
-mp_orderly_support_not_accepted,2,2,0,1.0,-6.062003765895571
-non_mp_orderly_support_accepted,2,1,1,0.5,1.5743611452652155
-other_long1,84,58,26,0.6904761904761905,11.019312631663642

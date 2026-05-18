@@ -1,5 +1,0 @@
-continuation_label,all_trades_count,all_trades_pnl,all_trades_share
-immediate_reclaim_hold,24,1211.479194660285,0.26666666666666666
-reclaim_failed_persistence,59,-412.8997081654824,0.6555555555555556
-reclaim_then_delayed_hold,2,214.30983436309765,0.022222222222222223
-secondary_confirmation_reclaim,5,228.74420116088646,0.05555555555555555
