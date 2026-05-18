@@ -1,0 +1,2 @@
+prefix,run_status,recommended_next_step,reason,implementation_readiness,performance_claim_boundary
+long2_trend_fail_scale_patch_round1,completed,review_post_patch_lifecycle_effects_if_user_approves,"trend_fail unit consistency is fixed; remaining question is lifecycle side effects, not profitability",not_ready_for_live_or_dry_run,no profitability claim

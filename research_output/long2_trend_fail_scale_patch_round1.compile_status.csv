@@ -1,0 +1,3 @@
+command,status,return_code,stdout_summary,stderr_summary,notes
+python3 -m py_compile research/strategy.py,passed,0,,,Required compile check passed.
+python3 -m compileall research,passed,0,Listing 'research'...,,Required compileall check passed.

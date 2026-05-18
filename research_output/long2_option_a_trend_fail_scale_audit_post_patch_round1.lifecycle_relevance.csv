@@ -1,0 +1,4 @@
+topic,post_patch_trend_fail_result,judgment,notes
+Long1 lifecycle compression,long disagreements reduced from 425 to 0 in lightweight management-context audit,trend_fail unit mismatch fixed for audited comparison; Long1 lifecycle compression still needs management/lifecycle review because ATR exits also changed,No profitability claim.
+Short1 lifecycle compression,short disagreements reduced from 166 to 0 in lightweight management-context audit,trend_fail unit mismatch fixed for audited comparison; Short1 lifecycle compression still needs management/lifecycle review because ATR exits also changed,No profitability claim.
+Long2 interpretation,trend_fail patch does not change Long2 add-on logic directly,Long2 tag/gate interpretation remains validation-only; counts need post-patch lifecycle review if approved,No profitability claim.

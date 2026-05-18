@@ -61,6 +61,9 @@ class _BaseMTFStrategy(Strategy):
     def _to_runtime_distance(self, unscaled_distance: float) -> float:
         return unscaled_distance * self.runtime_price_scale
 
+    def _to_runtime_price_level(self, unscaled_price: float) -> float:
+        return unscaled_price * self.runtime_price_scale
+
     def _reset_state_if_flat(self) -> None:
         if not self.position:
             self.highest_since_entry = np.nan
@@ -142,7 +145,8 @@ class _BaseMTFStrategy(Strategy):
         if self.tp2_hit and self.long_tp2_profit_lock_rr > 0:
             tp2_floor = avg_entry + round_trip_fee_buffer + risk * self.long_tp2_profit_lock_rr
             runner_stop = max(runner_stop, tp2_floor)
-        trend_fail = (self.data.Close[-1] < self.data.ema50[-1] and self.data.minus_di[-1] > self.data.plus_di[-1]) or (not self.data.weekly_bull[-1]) or (not self.data.daily_bull[-1])
+        runtime_ema50 = self._to_runtime_price_level(float(self.data.ema50[-1]))
+        trend_fail = (self.data.Close[-1] < runtime_ema50 and self.data.minus_di[-1] > self.data.plus_di[-1]) or (not self.data.weekly_bull[-1]) or (not self.data.daily_bull[-1])
 
         safe_long_stop = runner_stop if np.isfinite(runner_stop) and runner_stop > 0 else None
         for trade in self.trades:
@@ -166,7 +170,8 @@ class _BaseMTFStrategy(Strategy):
         break_even = avg_entry - runtime_atr * self.breakeven_offset_atr if self.tp1_hit else base_stop
         trail_raw = self.lowest_since_entry + runtime_atr * self.trail_atr_mult if not np.isnan(self.lowest_since_entry) else base_stop
         runner_stop = min(break_even, trail_raw)
-        trend_fail = (self.data.Close[-1] > self.data.ema50[-1] and self.data.plus_di[-1] > self.data.minus_di[-1]) or (not self.data.weekly_bear[-1]) or (not self.data.daily_bear[-1])
+        runtime_ema50 = self._to_runtime_price_level(float(self.data.ema50[-1]))
+        trend_fail = (self.data.Close[-1] > runtime_ema50 and self.data.plus_di[-1] > self.data.minus_di[-1]) or (not self.data.weekly_bear[-1]) or (not self.data.daily_bear[-1])
 
         # Keep short stops as live stop orders so large reversal bars are handled
         # more like hard stops instead of waiting for close-based liquidation.
