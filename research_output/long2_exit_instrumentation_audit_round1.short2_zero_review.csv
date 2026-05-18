@@ -1,0 +1,21 @@
+scope,raw_signal,active_candidates,inactive_or_ineligible,in_profit_pass,in_profit_fail,len_trades_lt_2_pass,len_trades_lt_2_fail,add_on_gap_bars_pass,add_on_gap_bars_fail,all_gates_pass,top_blocker,exported_short2_count,interpretation,notes
+AGGREGATE,39,3,36,0,3,3,0,3,0,0,inactive_or_ineligible,0,Short2 remains zero; active candidates fail in_profit.,Gate review only; no performance interpretation.
+AAVEUSDT,0,0,0,0,0,0,0,0,0,0,inactive_or_ineligible,0,No Short2 exported in this scope.,Gate review only; no performance interpretation.
+ADAUSDT,0,0,0,0,0,0,0,0,0,0,inactive_or_ineligible,0,No Short2 exported in this scope.,Gate review only; no performance interpretation.
+ATOMUSDT,4,1,3,0,1,1,0,1,0,0,inactive_or_ineligible,0,No Short2 exported in this scope.,Gate review only; no performance interpretation.
+AVAXUSDT,2,0,2,0,0,0,0,0,0,0,inactive_or_ineligible,0,No Short2 exported in this scope.,Gate review only; no performance interpretation.
+BCHUSDT,3,0,3,0,0,0,0,0,0,0,inactive_or_ineligible,0,No Short2 exported in this scope.,Gate review only; no performance interpretation.
+BNBUSDT,0,0,0,0,0,0,0,0,0,0,inactive_or_ineligible,0,No Short2 exported in this scope.,Gate review only; no performance interpretation.
+BTCUSDT,2,0,2,0,0,0,0,0,0,0,inactive_or_ineligible,0,No Short2 exported in this scope.,Gate review only; no performance interpretation.
+DOGEUSDT,6,0,6,0,0,0,0,0,0,0,inactive_or_ineligible,0,No Short2 exported in this scope.,Gate review only; no performance interpretation.
+DOTUSDT,4,0,4,0,0,0,0,0,0,0,inactive_or_ineligible,0,No Short2 exported in this scope.,Gate review only; no performance interpretation.
+ETCUSDT,3,0,3,0,0,0,0,0,0,0,inactive_or_ineligible,0,No Short2 exported in this scope.,Gate review only; no performance interpretation.
+ETHUSDT,2,0,2,0,0,0,0,0,0,0,inactive_or_ineligible,0,No Short2 exported in this scope.,Gate review only; no performance interpretation.
+FILUSDT,1,1,0,0,1,1,0,1,0,0,in_profit_block,0,No Short2 exported in this scope.,Gate review only; no performance interpretation.
+LINKUSDT,3,0,3,0,0,0,0,0,0,0,inactive_or_ineligible,0,No Short2 exported in this scope.,Gate review only; no performance interpretation.
+LTCUSDT,2,0,2,0,0,0,0,0,0,0,inactive_or_ineligible,0,No Short2 exported in this scope.,Gate review only; no performance interpretation.
+NEARUSDT,1,0,1,0,0,0,0,0,0,0,inactive_or_ineligible,0,No Short2 exported in this scope.,Gate review only; no performance interpretation.
+SOLUSDT,0,0,0,0,0,0,0,0,0,0,inactive_or_ineligible,0,No Short2 exported in this scope.,Gate review only; no performance interpretation.
+TRXUSDT,1,0,1,0,0,0,0,0,0,0,inactive_or_ineligible,0,No Short2 exported in this scope.,Gate review only; no performance interpretation.
+UNIUSDT,1,0,1,0,0,0,0,0,0,0,inactive_or_ineligible,0,No Short2 exported in this scope.,Gate review only; no performance interpretation.
+XRPUSDT,4,1,3,0,1,1,0,1,0,0,inactive_or_ineligible,0,No Short2 exported in this scope.,Gate review only; no performance interpretation.
