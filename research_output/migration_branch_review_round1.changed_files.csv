@@ -1,0 +1,876 @@
+path,change_status,category,insertions,deletions,risk_flag,notes
+app.py,A,app_source_py,11,0,outside_unit_fix_scope_for_merge_review,Top-level app source added; outside narrow unit-fix scope.
+data/AAVEUSDT_4h.csv,A,data_file,12240,0,merge_size_risk,Large local market data file added to branch.
+data/ADAUSDT_4h.csv,A,data_file,16153,0,merge_size_risk,Large local market data file added to branch.
+data/ATOMUSDT_4h.csv,A,data_file,15445,0,merge_size_risk,Large local market data file added to branch.
+data/AVAXUSDT_4h.csv,A,data_file,12377,0,merge_size_risk,Large local market data file added to branch.
+data/BCHUSDT_4h.csv,A,data_file,14169,0,merge_size_risk,Large local market data file added to branch.
+data/BNBUSDT_4h.csv,A,data_file,16153,0,merge_size_risk,Large local market data file added to branch.
+data/BTCUSDT_1h.csv,A,data_file,20001,0,merge_size_risk,Large local market data file added to branch.
+data/BTCUSDT_4h.csv,A,data_file,15948,0,merge_size_risk,Large local market data file added to branch.
+data/DOGEUSDT_4h.csv,A,data_file,15043,0,merge_size_risk,Large local market data file added to branch.
+data/DOTUSDT_4h.csv,A,data_file,12583,0,merge_size_risk,Large local market data file added to branch.
+data/ETCUSDT_4h.csv,A,data_file,16153,0,merge_size_risk,Large local market data file added to branch.
+data/ETHUSDT_4h.csv,A,data_file,16153,0,merge_size_risk,Large local market data file added to branch.
+data/FILUSDT_4h.csv,A,data_file,12236,0,merge_size_risk,Large local market data file added to branch.
+data/LINKUSDT_4h.csv,A,data_file,16061,0,merge_size_risk,Large local market data file added to branch.
+data/LTCUSDT_4h.csv,A,data_file,16153,0,merge_size_risk,Large local market data file added to branch.
+data/NEARUSDT_4h.csv,A,data_file,12245,0,merge_size_risk,Large local market data file added to branch.
+data/SOLUSDT_4h.csv,A,data_file,12629,0,merge_size_risk,Large local market data file added to branch.
+data/TRXUSDT_4h.csv,A,data_file,16153,0,merge_size_risk,Large local market data file added to branch.
+data/UNIUSDT_4h.csv,A,data_file,12408,0,merge_size_risk,Large local market data file added to branch.
+data/XRPUSDT_4h.csv,A,data_file,16153,0,merge_size_risk,Large local market data file added to branch.
+mtf_pullback_webhook_strategy.pine,A,pine_script,357,0,outside_unit_fix_scope_for_merge_review,Pine strategy script added; outside narrow unit-fix scope.
+requirements.txt,M,requirements,10,4,outside_unit_fix_scope_for_merge_review,Requirements changed relative to main; review dependency/runtime impact before merge.
+research/README.md,A,docs,20,0,review_documentation,Documentation or text artifact.
+research/__init__.py,A,research_source_py,1,0,research_workspace_scope,Research script/module added by migration branch.
+research/ablation_study.py,A,research_source_py,114,0,research_workspace_scope,Research script/module added by migration branch.
+research/analyze_long1_continuation_archetypes.py,A,research_source_py,198,0,research_workspace_scope,Research script/module added by migration branch.
+research/analyze_long1_momentum_candidate.py,A,research_source_py,420,0,research_workspace_scope,Research script/module added by migration branch.
+research/analyze_long1_reclaim_retest.py,A,research_source_py,265,0,research_workspace_scope,Research script/module added by migration branch.
+research/analyze_long_only_archetypes.py,A,research_source_py,180,0,research_workspace_scope,Research script/module added by migration branch.
+research/analyze_long_only_continuation.py,A,research_source_py,184,0,research_workspace_scope,Research script/module added by migration branch.
+research/analyze_long_only_paths.py,A,research_source_py,217,0,research_workspace_scope,Research script/module added by migration branch.
+research/analyze_long_only_reclaim.py,A,research_source_py,175,0,research_workspace_scope,Research script/module added by migration branch.
+research/analyze_long_only_reclaim_strength.py,A,research_source_py,154,0,research_workspace_scope,Research script/module added by migration branch.
+research/analyze_long_only_regimes.py,A,research_source_py,140,0,research_workspace_scope,Research script/module added by migration branch.
+research/analyze_long_runner_leg.py,A,research_source_py,242,0,research_workspace_scope,Research script/module added by migration branch.
+research/config.py,A,research_source_py,133,0,review_required_new_relative_to_main,New research module relative to main; not changed by post-unit-fix tasks but should be reviewed before merge.
+research/data.py,A,research_source_py,42,0,research_workspace_scope,Research script/module added by migration branch.
+research/diagnose_failure_regime.py,A,research_source_py,242,0,research_workspace_scope,Research script/module added by migration branch.
+research/diagnose_long_only_candidate.py,A,research_source_py,176,0,research_workspace_scope,Research script/module added by migration branch.
+research/download_data.py,A,research_source_py,183,0,research_workspace_scope,Research script/module added by migration branch.
+research/indicators.py,A,research_source_py,297,0,review_required_new_relative_to_main,New research module relative to main; not changed by post-unit-fix tasks but should be reviewed before merge.
+research/inspect_results.py,A,research_source_py,51,0,research_workspace_scope,Research script/module added by migration branch.
+research/long_only_candidate.py,A,research_source_py,56,0,research_workspace_scope,Research script/module added by migration branch.
+research/optimize.py,A,research_source_py,130,0,research_workspace_scope,Research script/module added by migration branch.
+research/run_backtest.py,A,research_source_py,49,0,research_workspace_scope,Research script/module added by migration branch.
+research/run_long_only_candidate.py,A,research_source_py,52,0,research_workspace_scope,Research script/module added by migration branch.
+research/run_split_leg_mini_experiment.py,A,research_source_py,173,0,research_workspace_scope,Research script/module added by migration branch.
+research/strategy.py,A,research_source_py,336,0,unit_fix_source_contains_approved_runtime_scaling_helpers,Approved unit-fix source target; review helper use and trend_fail comparisons.
+research/validate_candidates.py,A,research_source_py,203,0,research_workspace_scope,Research script/module added by migration branch.
+research/validate_long_only_candidate.py,A,research_source_py,59,0,research_workspace_scope,Research script/module added by migration branch.
+research_output/ablation_by_split.csv,A,research_output,17,0,research_artifact,Saved research/audit output.
+research_output/ablation_full_sample.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/ablation_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/bnbusdt_unseen_market_frozen_explanation_validation_round1.dataset_quality_summary.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/bnbusdt_unseen_market_frozen_explanation_validation_round1.group_comparison_summary.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/bnbusdt_unseen_market_frozen_explanation_validation_round1.group_distribution_summary.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/bnbusdt_unseen_market_frozen_explanation_validation_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/bnbusdt_unseen_market_frozen_explanation_validation_round1.trade_labels_all.csv,A,research_output,81,0,research_artifact,Saved research/audit output.
+research_output/btc_4h_after_fix.equity.csv,A,research_output,15876,0,research_artifact,Saved research/audit output.
+research_output/btc_4h_after_fix.equity.png,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+research_output/btc_4h_after_fix.trades.csv,A,research_output,90,0,research_artifact,Saved research/audit output.
+research_output/btc_4h_run.equity.csv,A,research_output,15876,0,research_artifact,Saved research/audit output.
+research_output/btc_4h_run.equity.png,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+research_output/btc_4h_run.trades.csv,A,research_output,83,0,research_artifact,Saved research/audit output.
+research_output/candidate_validation_by_split.csv,A,research_output,41,0,research_artifact,Saved research/audit output.
+research_output/candidate_validation_full_sample.csv,A,research_output,11,0,research_artifact,Saved research/audit output.
+research_output/candidate_validation_survivors.csv,A,research_output,1,0,research_artifact,Saved research/audit output.
+research_output/cross_market_unseen_validation_synthesis_round1.core_transfer_assessment.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/cross_market_unseen_validation_synthesis_round1.cross_market_ledger.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/cross_market_unseen_validation_synthesis_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/cross_market_unseen_validation_synthesis_round1.stop_marker.md,A,research_output,35,0,research_artifact,Saved research/audit output.
+research_output/cross_market_unseen_validation_synthesis_round1.supporting_note_parked_hint_assessment.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/ethusdt_unseen_market_frozen_explanation_validation_round1.dataset_quality_summary.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/ethusdt_unseen_market_frozen_explanation_validation_round1.group_comparison_summary.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/ethusdt_unseen_market_frozen_explanation_validation_round1.group_distribution_summary.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/ethusdt_unseen_market_frozen_explanation_validation_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/ethusdt_unseen_market_frozen_explanation_validation_round1.trade_labels_all.csv,A,research_output,85,0,research_artifact,Saved research/audit output.
+research_output/failure_2025_2026_adx_summary.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/failure_2025_2026_after_fix_adx_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/failure_2025_2026_after_fix_atr_ratio_summary.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/failure_2025_2026_after_fix_cumulative_pnl.png,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+research_output/failure_2025_2026_after_fix_daily_state_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/failure_2025_2026_after_fix_direction_pnl.png,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+research_output/failure_2025_2026_after_fix_direction_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/failure_2025_2026_after_fix_distance_summary.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/failure_2025_2026_after_fix_metrics.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/failure_2025_2026_after_fix_month_summary.csv,A,research_output,8,0,research_artifact,Saved research/audit output.
+research_output/failure_2025_2026_after_fix_monthly_pnl.png,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+research_output/failure_2025_2026_after_fix_stop_overshoot_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/failure_2025_2026_after_fix_tag_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/failure_2025_2026_after_fix_trade_type_pnl.png,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+research_output/failure_2025_2026_after_fix_trade_type_summary.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/failure_2025_2026_after_fix_trades_enriched.csv,A,research_output,8,0,research_artifact,Saved research/audit output.
+research_output/failure_2025_2026_after_fix_weekly_bias_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/failure_2025_2026_atr_ratio_summary.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/failure_2025_2026_cumulative_pnl.png,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+research_output/failure_2025_2026_daily_state_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/failure_2025_2026_direction_pnl.png,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+research_output/failure_2025_2026_direction_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/failure_2025_2026_distance_summary.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/failure_2025_2026_metrics.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/failure_2025_2026_month_summary.csv,A,research_output,8,0,research_artifact,Saved research/audit output.
+research_output/failure_2025_2026_monthly_pnl.png,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+research_output/failure_2025_2026_stop_overshoot_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/failure_2025_2026_tag_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/failure_2025_2026_trade_type_pnl.png,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+research_output/failure_2025_2026_trade_type_summary.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/failure_2025_2026_trades_enriched.csv,A,research_output,9,0,research_artifact,Saved research/audit output.
+research_output/failure_2025_2026_weekly_bias_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long1_atr_ratio_nearby_family_stability_round1.group_comparison_summary.csv,A,research_output,19,0,research_artifact,Saved research/audit output.
+research_output/long1_atr_ratio_nearby_family_stability_round1.group_distribution_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_atr_ratio_nearby_family_stability_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_atr_ratio_nearby_family_stability_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_atr_ratio_precursor_floor_round1.group_comparison_summary.csv,A,research_output,15,0,research_artifact,Saved research/audit output.
+research_output/long1_atr_ratio_precursor_floor_round1.group_distribution_summary.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_atr_ratio_precursor_floor_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_atr_ratio_precursor_floor_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_atr_ratio_timing_audit_round1.group_comparison_summary.csv,A,research_output,46,0,research_artifact,Saved research/audit output.
+research_output/long1_atr_ratio_timing_audit_round1.group_distribution_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_atr_ratio_timing_audit_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_atr_ratio_timing_audit_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_broader_release_parent_compound_failure_round1.group_comparison_summary.csv,A,research_output,15,0,research_artifact,Saved research/audit output.
+research_output/long1_broader_release_parent_compound_failure_round1.group_distribution_summary.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/long1_broader_release_parent_compound_failure_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_broader_release_parent_compound_failure_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_carried_forward_explanation_freeze_round1.group_comparison_summary.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/long1_carried_forward_explanation_freeze_round1.group_distribution_summary.csv,A,research_output,9,0,research_artifact,Saved research/audit output.
+research_output/long1_carried_forward_explanation_freeze_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_continuation_archetypes_round1.archetype_concentration_summary.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_continuation_archetypes_round1.archetype_distribution_all_losers.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_continuation_archetypes_round1.archetype_distribution_all_trades.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_continuation_archetypes_round1.archetype_distribution_historical_winners.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_continuation_archetypes_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_continuation_archetypes_round1.trade_labels_2025_2026.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_continuation_archetypes_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_continuation_archetypes_round2.archetype_concentration_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_continuation_archetypes_round2.archetype_distribution_all_losers.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_continuation_archetypes_round2.archetype_distribution_all_trades.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_continuation_archetypes_round2.archetype_distribution_historical_winners.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_continuation_archetypes_round2.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_continuation_archetypes_round2.trade_labels_2025_2026.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_continuation_archetypes_round2.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_current_explanation_closure_round1.group_comparison_summary.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/long1_current_explanation_closure_round1.group_distribution_summary.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/long1_current_explanation_closure_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_current_explanation_closure_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_current_explanation_replication_round1.group_comparison_summary.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_current_explanation_replication_round1.group_distribution_summary.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_current_explanation_replication_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_current_explanation_replication_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_directional_preparation_decomposition_round1.group_comparison_summary.csv,A,research_output,25,0,research_artifact,Saved research/audit output.
+research_output/long1_directional_preparation_decomposition_round1.group_distribution_summary.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_directional_preparation_decomposition_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_directional_preparation_decomposition_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_example_validation_audit_round1.group_comparison_summary.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/long1_example_validation_audit_round1.group_distribution_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long1_example_validation_audit_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_example_validation_audit_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_final_research_handoff_round1.handoff_note.md,A,research_output,58,0,research_artifact,Saved research/audit output.
+research_output/long1_final_research_handoff_round1.summary.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_fresh_sponsorship_round1.group_distribution_summary.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/long1_fresh_sponsorship_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_fresh_sponsorship_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_frozen_explanation_holdout_validation_round1.group_comparison_summary.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/long1_frozen_explanation_holdout_validation_round1.group_distribution_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long1_frozen_explanation_holdout_validation_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_frozen_explanation_holdout_validation_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_frozen_explanation_orderly_parent_validation_round1.group_comparison_summary.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_frozen_explanation_orderly_parent_validation_round1.group_distribution_summary.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/long1_frozen_explanation_orderly_parent_validation_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_frozen_explanation_orderly_parent_validation_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_frozen_explanation_time_validation_round1.group_comparison_summary.csv,A,research_output,10,0,research_artifact,Saved research/audit output.
+research_output/long1_frozen_explanation_time_validation_round1.group_distribution_summary.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_frozen_explanation_time_validation_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_frozen_explanation_time_validation_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_frozen_validation_baseline_note_round1.group_comparison_summary.csv,A,research_output,9,0,research_artifact,Saved research/audit output.
+research_output/long1_frozen_validation_baseline_note_round1.group_distribution_summary.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/long1_frozen_validation_baseline_note_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_larger_market_basket_frozen_explanation_validation_round1.aggregate_basket_composition_summary.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/long1_larger_market_basket_frozen_explanation_validation_round1.core_recurrence_assessment.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_larger_market_basket_frozen_explanation_validation_round1.dataset_basket_confirmation.csv,A,research_output,11,0,research_artifact,Saved research/audit output.
+research_output/long1_larger_market_basket_frozen_explanation_validation_round1.market_metrics_summary.csv,A,research_output,11,0,research_artifact,Saved research/audit output.
+research_output/long1_larger_market_basket_frozen_explanation_validation_round1.per_market_composition_summary.csv,A,research_output,51,0,research_artifact,Saved research/audit output.
+research_output/long1_larger_market_basket_frozen_explanation_validation_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_larger_market_basket_frozen_explanation_validation_round1.stop_marker.md,A,research_output,38,0,research_artifact,Saved research/audit output.
+research_output/long1_larger_market_basket_frozen_explanation_validation_round1.supporting_note_parked_hint_assessment.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/long1_larger_market_basket_frozen_explanation_validation_round1.trade_labels_all.csv,A,research_output,435,0,research_artifact,Saved research/audit output.
+research_output/long1_larger_market_basket_material_inventory_round1.dataset_quality_table.csv,A,research_output,16,0,research_artifact,Saved research/audit output.
+research_output/long1_larger_market_basket_material_inventory_round1.failed_or_invalid_candidates.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_larger_market_basket_material_inventory_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_larger_market_basket_material_inventory_round1.usable_market_basket_ranking.csv,A,research_output,16,0,research_artifact,Saved research/audit output.
+research_output/long1_momentum_candidate_profiles_round1.candidate_stability_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_momentum_candidate_profiles_round1.exclusion_reason_summary.csv,A,research_output,22,0,research_artifact,Saved research/audit output.
+research_output/long1_momentum_candidate_profiles_round1.profile_distribution_summary.csv,A,research_output,16,0,research_artifact,Saved research/audit output.
+research_output/long1_momentum_candidate_profiles_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_momentum_candidate_profiles_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_momentum_candidate_round1.label_distribution_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_momentum_candidate_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_momentum_candidate_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_nonintact_asymmetry_crosspattern_round1.group_comparison_summary.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_nonintact_asymmetry_crosspattern_round1.group_distribution_summary.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/long1_nonintact_asymmetry_crosspattern_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_nonintact_asymmetry_crosspattern_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_nonintact_earliest_divergence_round1.group_comparison_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long1_nonintact_earliest_divergence_round1.group_distribution_summary.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_nonintact_earliest_divergence_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_nonintact_earliest_divergence_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_acceptance_persistence_validation_round1.group_comparison_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_acceptance_persistence_validation_round1.group_distribution_summary.csv,A,research_output,8,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_acceptance_persistence_validation_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_acceptance_persistence_validation_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_intact_not_accepted_missing_layer_round1.group_comparison_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_intact_not_accepted_missing_layer_round1.group_distribution_summary.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_intact_not_accepted_missing_layer_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_intact_not_accepted_missing_layer_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_late_slice_mode_audit_round1.group_comparison_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_late_slice_mode_audit_round1.group_distribution_summary.csv,A,research_output,9,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_late_slice_mode_audit_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_late_slice_mode_audit_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_loose_missing_good_support_residence_round1.group_comparison_summary.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_loose_missing_good_support_residence_round1.group_distribution_summary.csv,A,research_output,8,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_loose_missing_good_support_residence_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_loose_missing_good_support_residence_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_parent_underprepared_round1.group_comparison_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_parent_underprepared_round1.group_distribution_summary.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_parent_underprepared_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_parent_underprepared_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_post2022_accepted_core_alignment_round1.group_comparison_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_post2022_accepted_core_alignment_round1.group_distribution_summary.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_post2022_accepted_core_alignment_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_post2022_accepted_core_alignment_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_post2022_positive_relocation_round1.group_comparison_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_post2022_positive_relocation_round1.group_distribution_summary.csv,A,research_output,8,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_post2022_positive_relocation_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_post2022_positive_relocation_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_post2022_scope_audit_round1.group_comparison_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_post2022_scope_audit_round1.group_distribution_summary.csv,A,research_output,9,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_post2022_scope_audit_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_post2022_scope_audit_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_pre_acceptance_gate_round1.group_comparison_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_pre_acceptance_gate_round1.group_distribution_summary.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_pre_acceptance_gate_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_pre_acceptance_gate_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_prepost2022_branch_compare_round1.group_comparison_summary.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_prepost2022_branch_compare_round1.group_distribution_summary.csv,A,research_output,13,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_prepost2022_branch_compare_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_prepost2022_branch_compare_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_prepost2022_layer_dropoff_round1.group_comparison_summary.csv,A,research_output,9,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_prepost2022_layer_dropoff_round1.group_distribution_summary.csv,A,research_output,11,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_prepost2022_layer_dropoff_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_prepost2022_layer_dropoff_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_round1.group_comparison_summary.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_round1.group_distribution_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_round2.group_comparison_summary.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_round2.group_distribution_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_round2.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_round2.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_support_acceptance_boundary_round1.group_comparison_summary.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_support_acceptance_boundary_round1.group_distribution_summary.csv,A,research_output,10,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_support_acceptance_boundary_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_support_acceptance_boundary_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_support_residence_nearby_frame_round1.group_comparison_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_support_residence_nearby_frame_round1.group_distribution_summary.csv,A,research_output,8,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_support_residence_nearby_frame_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_support_residence_nearby_frame_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_support_residence_same_family_slice_round1.group_comparison_summary.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_support_residence_same_family_slice_round1.group_distribution_summary.csv,A,research_output,9,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_support_residence_same_family_slice_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_support_residence_same_family_slice_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_support_residence_second_nearby_frame_round1.group_comparison_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_support_residence_second_nearby_frame_round1.group_distribution_summary.csv,A,research_output,8,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_support_residence_second_nearby_frame_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_support_residence_second_nearby_frame_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_support_residence_specificity_round1.group_comparison_summary.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_support_residence_specificity_round1.group_distribution_summary.csv,A,research_output,8,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_support_residence_specificity_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_support_residence_specificity_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_three_layer_same_family_partition_round1.group_comparison_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_three_layer_same_family_partition_round1.group_distribution_summary.csv,A,research_output,13,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_three_layer_same_family_partition_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_three_layer_same_family_partition_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_three_layer_stack_dependency_round1.group_comparison_summary.csv,A,research_output,19,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_three_layer_stack_dependency_round1.group_distribution_summary.csv,A,research_output,8,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_three_layer_stack_dependency_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_three_layer_stack_dependency_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_three_layer_stack_validation_round1.group_comparison_summary.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_three_layer_stack_validation_round1.group_distribution_summary.csv,A,research_output,8,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_three_layer_stack_validation_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_three_layer_stack_validation_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_three_layer_timeslice_validation_round1.group_comparison_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_three_layer_timeslice_validation_round1.group_distribution_summary.csv,A,research_output,13,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_three_layer_timeslice_validation_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_orderly_reset_three_layer_timeslice_validation_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_post2022_accepted_side_nearmiss_round1.group_comparison_summary.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/long1_post2022_accepted_side_nearmiss_round1.group_distribution_summary.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/long1_post2022_accepted_side_nearmiss_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_post2022_accepted_side_nearmiss_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_post2022_accepted_side_recurrence_round1.group_comparison_summary.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/long1_post2022_accepted_side_recurrence_round1.group_distribution_summary.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/long1_post2022_accepted_side_recurrence_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_post2022_accepted_side_recurrence_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_post2022_survivor_vs_fragility_round1.group_comparison_summary.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_post2022_survivor_vs_fragility_round1.group_distribution_summary.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/long1_post2022_survivor_vs_fragility_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_post2022_survivor_vs_fragility_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_post2022_upstream_fragility_components_round1.group_comparison_summary.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_post2022_upstream_fragility_components_round1.group_distribution_summary.csv,A,research_output,8,0,research_artifact,Saved research/audit output.
+research_output/long1_post2022_upstream_fragility_components_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_post2022_upstream_fragility_components_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_post2022_weak_side_balance_round1.group_comparison_summary.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_post2022_weak_side_balance_round1.group_distribution_summary.csv,A,research_output,9,0,research_artifact,Saved research/audit output.
+research_output/long1_post2022_weak_side_balance_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_post2022_weak_side_balance_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_pre2022_accepted_side_partial_buildup_round1.group_comparison_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long1_pre2022_accepted_side_partial_buildup_round1.group_distribution_summary.csv,A,research_output,11,0,research_artifact,Saved research/audit output.
+research_output/long1_pre2022_accepted_side_partial_buildup_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_pre2022_accepted_side_partial_buildup_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_pre2022_compact_completion_separator_round1.group_comparison_summary.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_pre2022_compact_completion_separator_round1.group_distribution_summary.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/long1_pre2022_compact_completion_separator_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_pre2022_compact_completion_separator_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_pre2022_nonintact_buildup_driver_round1.group_comparison_summary.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_pre2022_nonintact_buildup_driver_round1.group_distribution_summary.csv,A,research_output,11,0,research_artifact,Saved research/audit output.
+research_output/long1_pre2022_nonintact_buildup_driver_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_pre2022_nonintact_buildup_driver_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_prepost2022_accepted_side_density_round1.group_comparison_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long1_prepost2022_accepted_side_density_round1.group_distribution_summary.csv,A,research_output,9,0,research_artifact,Saved research/audit output.
+research_output/long1_prepost2022_accepted_side_density_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_prepost2022_accepted_side_density_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_prepost2022_accepted_support_stability_breadth_round1.group_comparison_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long1_prepost2022_accepted_support_stability_breadth_round1.group_distribution_summary.csv,A,research_output,12,0,research_artifact,Saved research/audit output.
+research_output/long1_prepost2022_accepted_support_stability_breadth_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_prepost2022_accepted_support_stability_breadth_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_prepost2022_boundary_breadth_balance_round1.group_comparison_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long1_prepost2022_boundary_breadth_balance_round1.group_distribution_summary.csv,A,research_output,20,0,research_artifact,Saved research/audit output.
+research_output/long1_prepost2022_boundary_breadth_balance_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_prepost2022_boundary_breadth_balance_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_prepost2022_buildup_population_loss_round1.group_comparison_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long1_prepost2022_buildup_population_loss_round1.group_distribution_summary.csv,A,research_output,10,0,research_artifact,Saved research/audit output.
+research_output/long1_prepost2022_buildup_population_loss_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_prepost2022_buildup_population_loss_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_prepost2022_directional_pathway_survival_round1.group_comparison_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long1_prepost2022_directional_pathway_survival_round1.group_distribution_summary.csv,A,research_output,10,0,research_artifact,Saved research/audit output.
+research_output/long1_prepost2022_directional_pathway_survival_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_prepost2022_directional_pathway_survival_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_prepost2022_gate_state_population_round1.group_comparison_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long1_prepost2022_gate_state_population_round1.group_distribution_summary.csv,A,research_output,10,0,research_artifact,Saved research/audit output.
+research_output/long1_prepost2022_gate_state_population_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_prepost2022_gate_state_population_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_reclaim_retest_before_recheck.label_concentration_summary.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_reclaim_retest_before_recheck.label_distribution_2025_2026_losers.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long1_reclaim_retest_before_recheck.label_distribution_all_trades.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_reclaim_retest_before_recheck.label_distribution_historical_winners.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_reclaim_retest_before_recheck.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_reclaim_retest_before_recheck.trade_labels_2025_2026.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_reclaim_retest_before_recheck.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_reclaim_retest_reclaim_confirm.label_concentration_summary.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_reclaim_retest_reclaim_confirm.label_distribution_2025_2026_losers.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_reclaim_retest_reclaim_confirm.label_distribution_all_trades.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_reclaim_retest_reclaim_confirm.label_distribution_historical_winners.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_reclaim_retest_reclaim_confirm.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_reclaim_retest_reclaim_confirm.trade_labels_2025_2026.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_reclaim_retest_reclaim_confirm.trade_labels_all.csv,A,research_output,88,0,research_artifact,Saved research/audit output.
+research_output/long1_reclaim_retest_round1.label_concentration_summary.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_reclaim_retest_round1.label_distribution_2025_2026_losers.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long1_reclaim_retest_round1.label_distribution_all_trades.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_reclaim_retest_round1.label_distribution_historical_winners.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_reclaim_retest_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_reclaim_retest_round1.trade_labels_2025_2026.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_reclaim_retest_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_sponsored_family_round1.group_comparison_summary.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_sponsored_family_round1.group_distribution_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_sponsored_family_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_sponsored_family_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_support_acceptance_parent_transition_quality_round1.group_comparison_summary.csv,A,research_output,21,0,research_artifact,Saved research/audit output.
+research_output/long1_support_acceptance_parent_transition_quality_round1.group_distribution_summary.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/long1_support_acceptance_parent_transition_quality_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_support_acceptance_parent_transition_quality_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_support_acceptance_parent_underprepared_nonrelease_round1.group_comparison_summary.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/long1_support_acceptance_parent_underprepared_nonrelease_round1.group_distribution_summary.csv,A,research_output,8,0,research_artifact,Saved research/audit output.
+research_output/long1_support_acceptance_parent_underprepared_nonrelease_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_support_acceptance_parent_underprepared_nonrelease_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_support_acceptance_parent_underprepared_split_round1.group_comparison_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_support_acceptance_parent_underprepared_split_round1.group_distribution_summary.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/long1_support_acceptance_parent_underprepared_split_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_support_acceptance_parent_underprepared_split_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_support_accepted_round1.group_comparison_summary.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/long1_support_accepted_round1.group_distribution_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_support_accepted_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_support_accepted_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_support_anchored_round1.group_comparison_summary.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_support_anchored_round1.group_distribution_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_support_anchored_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_support_anchored_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_support_contained_round1.group_comparison_summary.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_support_contained_round1.group_distribution_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_support_contained_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_support_contained_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_support_rejecting_round1.group_comparison_summary.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_support_rejecting_round1.group_distribution_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_support_rejecting_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_support_rejecting_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_balanced_round1.group_comparison_summary.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_balanced_round1.group_distribution_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_balanced_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_balanced_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_ceiling_dominant_round1.group_comparison_summary.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_ceiling_dominant_round1.group_distribution_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_ceiling_dominant_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_ceiling_dominant_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_clearance_controlled_round1.group_comparison_summary.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_clearance_controlled_round1.group_distribution_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_clearance_controlled_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_clearance_controlled_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_clearance_persistent_round1.group_comparison_summary.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_clearance_persistent_round1.group_distribution_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_clearance_persistent_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_clearance_persistent_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_first_step_reachable_round1.group_comparison_summary.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_first_step_reachable_round1.group_distribution_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_first_step_reachable_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_first_step_reachable_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_headroom_round1.group_comparison_summary.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_headroom_round1.group_distribution_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_headroom_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_headroom_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_ladder_distributed_round1.group_comparison_summary.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_ladder_distributed_round1.group_distribution_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_ladder_distributed_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_ladder_distributed_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_ladder_gradient_round1.group_comparison_summary.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_ladder_gradient_round1.group_distribution_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_ladder_gradient_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_ladder_gradient_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_lane_sustained_round1.group_comparison_summary.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_lane_sustained_round1.group_distribution_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_lane_sustained_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_lane_sustained_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_open_round1.group_comparison_summary.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_open_round1.group_distribution_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_open_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_open_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_overhead_absorbing_round1.group_comparison_summary.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_overhead_absorbing_round1.group_distribution_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_overhead_absorbing_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_overhead_absorbing_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_overhead_clean_round1.group_comparison_summary.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_overhead_clean_round1.group_distribution_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_overhead_clean_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_overhead_clean_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_overhead_staged_round1.group_comparison_summary.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_overhead_staged_round1.group_distribution_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_overhead_staged_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_overhead_staged_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_round1.group_comparison_summary.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_round1.group_distribution_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_transition_failure_modes_round1.group_comparison_summary.csv,A,research_output,14,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_transition_failure_modes_round1.group_distribution_summary.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_transition_failure_modes_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_transition_failure_modes_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_transition_intact_round1.group_comparison_summary.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_transition_intact_round1.group_distribution_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_transition_intact_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_support_releasing_transition_intact_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_support_retained_round1.group_comparison_summary.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_support_retained_round1.group_distribution_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long1_support_retained_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_support_retained_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_validation_inventory_round1.note.md,A,research_output,20,0,research_artifact,Saved research/audit output.
+research_output/long1_validation_inventory_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_validation_inventory_round1.stop_marker.md,A,research_output,32,0,research_artifact,Saved research/audit output.
+research_output/long1_validation_inventory_round1.validation_inventory.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/long1_weak_background_branch_recurrence_round1.group_comparison_summary.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_weak_background_branch_recurrence_round1.group_distribution_summary.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/long1_weak_background_branch_recurrence_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_weak_background_branch_recurrence_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_weak_fragility_compactness_round1.group_comparison_summary.csv,A,research_output,63,0,research_artifact,Saved research/audit output.
+research_output/long1_weak_fragility_compactness_round1.group_distribution_summary.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/long1_weak_fragility_compactness_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_weak_fragility_compactness_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_weak_ready_submode_round1.group_comparison_summary.csv,A,research_output,45,0,research_artifact,Saved research/audit output.
+research_output/long1_weak_ready_submode_round1.group_distribution_summary.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/long1_weak_ready_submode_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_weak_ready_submode_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long1_weak_transition_stabilizer_round1.group_comparison_summary.csv,A,research_output,85,0,research_artifact,Saved research/audit output.
+research_output/long1_weak_transition_stabilizer_round1.group_distribution_summary.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long1_weak_transition_stabilizer_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long1_weak_transition_stabilizer_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long2_candidate_material_inventory_round1.aggregate_summary.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long2_candidate_material_inventory_round1.candidate_ranking.csv,A,research_output,20,0,research_artifact,Saved research/audit output.
+research_output/long2_candidate_material_inventory_round1.gating_context_summary.csv,A,research_output,10,0,research_artifact,Saved research/audit output.
+research_output/long2_candidate_material_inventory_round1.market_inventory.csv,A,research_output,20,0,research_artifact,Saved research/audit output.
+research_output/long2_candidate_material_inventory_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long2_exit_instrumentation_audit_round1.compile_status.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long2_exit_instrumentation_audit_round1.exit_event_summary.csv,A,research_output,2731,0,research_artifact,Saved research/audit output.
+research_output/long2_exit_instrumentation_audit_round1.exit_mechanism_inventory.csv,A,research_output,15,0,research_artifact,Saved research/audit output.
+research_output/long2_exit_instrumentation_audit_round1.instrumentation_method.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/long2_exit_instrumentation_audit_round1.lifecycle_compression_judgment.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/long2_exit_instrumentation_audit_round1.long1_exit_attribution.csv,A,research_output,98,0,research_artifact,Saved research/audit output.
+research_output/long2_exit_instrumentation_audit_round1.long2_interaction_review.csv,A,research_output,21,0,research_artifact,Saved research/audit output.
+research_output/long2_exit_instrumentation_audit_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long2_exit_instrumentation_audit_round1.short1_exit_attribution.csv,A,research_output,97,0,research_artifact,Saved research/audit output.
+research_output/long2_exit_instrumentation_audit_round1.short2_zero_review.csv,A,research_output,21,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_management_exit_audit_round1.compile_status.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_management_exit_audit_round1.exit_mechanism_inventory.csv,A,research_output,24,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_management_exit_audit_round1.exit_reason_proxy_summary.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_management_exit_audit_round1.per_market_count_duration_delta.csv,A,research_output,41,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_management_exit_audit_round1.pre_post_lifecycle_summary.csv,A,research_output,10,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_management_exit_audit_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_management_exit_audit_round1.remaining_scale_risk_scan.csv,A,research_output,8,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_management_exit_audit_round1.risk_interpretation.csv,A,research_output,9,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_side_effect_audit_round1.before_after_trade_counts.csv,A,research_output,21,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_side_effect_audit_round1.compile_status.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_side_effect_audit_round1.management_side_effect_summary.csv,A,research_output,161,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_side_effect_audit_round1.non_atr_scale_scan.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_side_effect_audit_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_side_effect_audit_round1.remaining_long2_gates.csv,A,research_output,21,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_side_effect_audit_round1.risk_interpretation.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_side_effect_audit_round1.short2_mirror_gate_summary.csv,A,research_output,21,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_trend_fail_scale_audit_post_patch_round1.lifecycle_relevance.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_trend_fail_scale_audit_post_patch_round1.line_evidence.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_trend_fail_scale_audit_post_patch_round1.per_market_disagreement.csv,A,research_output,39,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_trend_fail_scale_audit_post_patch_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_trend_fail_scale_audit_post_patch_round1.runtime_examples.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_trend_fail_scale_audit_post_patch_round1.scope_check.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_trend_fail_scale_audit_post_patch_round1.trigger_disagreement_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_trend_fail_scale_audit_post_patch_round1.unit_consistency_table.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_trend_fail_scale_audit_round1.lifecycle_relevance.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_trend_fail_scale_audit_round1.line_evidence.csv,A,research_output,16,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_trend_fail_scale_audit_round1.per_market_disagreement.csv,A,research_output,39,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_trend_fail_scale_audit_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_trend_fail_scale_audit_round1.runtime_examples.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_trend_fail_scale_audit_round1.scope_check.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_trend_fail_scale_audit_round1.trigger_disagreement_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long2_option_a_trend_fail_scale_audit_round1.unit_consistency_table.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/long2_post_trend_fail_lifecycle_review_round1.compile_status.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long2_post_trend_fail_lifecycle_review_round1.lifecycle_duration_summary.csv,A,research_output,161,0,research_artifact,Saved research/audit output.
+research_output/long2_post_trend_fail_lifecycle_review_round1.lifecycle_interpretation.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/long2_post_trend_fail_lifecycle_review_round1.long2_gate_review.csv,A,research_output,21,0,research_artifact,Saved research/audit output.
+research_output/long2_post_trend_fail_lifecycle_review_round1.per_market_count_delta.csv,A,research_output,101,0,research_artifact,Saved research/audit output.
+research_output/long2_post_trend_fail_lifecycle_review_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long2_post_trend_fail_lifecycle_review_round1.remaining_scale_risk_scan.csv,A,research_output,8,0,research_artifact,Saved research/audit output.
+research_output/long2_post_trend_fail_lifecycle_review_round1.short2_gate_review.csv,A,research_output,21,0,research_artifact,Saved research/audit output.
+research_output/long2_post_trend_fail_lifecycle_review_round1.three_state_trade_counts.csv,A,research_output,61,0,research_artifact,Saved research/audit output.
+research_output/long2_post_unit_fix_exit_synthesis_round1.exit_attribution_summary.csv,A,research_output,14,0,research_artifact,Saved research/audit output.
+research_output/long2_post_unit_fix_exit_synthesis_round1.fixed_items.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long2_post_unit_fix_exit_synthesis_round1.note.md,A,research_output,98,0,research_artifact,Saved research/audit output.
+research_output/long2_post_unit_fix_exit_synthesis_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long2_post_unit_fix_exit_synthesis_round1.scope_rules.csv,A,research_output,14,0,research_artifact,Saved research/audit output.
+research_output/long2_post_unit_fix_exit_synthesis_round1.summary.csv,A,research_output,8,0,research_artifact,Saved research/audit output.
+research_output/long2_runtime_gate_synthesis_scope_note_round1.note.md,A,research_output,48,0,research_artifact,Saved research/audit output.
+research_output/long2_runtime_gate_synthesis_scope_note_round1.pre_patch_checklist.csv,A,research_output,8,0,research_artifact,Saved research/audit output.
+research_output/long2_runtime_gate_synthesis_scope_note_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long2_runtime_gate_synthesis_scope_note_round1.scope_rules.csv,A,research_output,10,0,research_artifact,Saved research/audit output.
+research_output/long2_runtime_gate_synthesis_scope_note_round1.summary.csv,A,research_output,12,0,research_artifact,Saved research/audit output.
+research_output/long2_runtime_in_profit_gate_audit_post_patch_round1.before_after_trade_counts.csv,A,research_output,21,0,research_artifact,Saved research/audit output.
+research_output/long2_runtime_in_profit_gate_audit_post_patch_round1.candidate_rows_sample.csv,A,research_output,360,0,research_artifact,Saved research/audit output.
+research_output/long2_runtime_in_profit_gate_audit_post_patch_round1.gate_funnel_summary.csv,A,research_output,21,0,research_artifact,Saved research/audit output.
+research_output/long2_runtime_in_profit_gate_audit_round1.candidate_rows_sample.csv,A,research_output,1379,0,research_artifact,Saved research/audit output.
+research_output/long2_runtime_in_profit_gate_audit_round1.gate_funnel_summary.csv,A,research_output,21,0,research_artifact,Saved research/audit output.
+research_output/long2_runtime_in_profit_gate_audit_round1.in_profit_distribution.csv,A,research_output,27,0,research_artifact,Saved research/audit output.
+research_output/long2_runtime_in_profit_gate_audit_round1.market_ranking.csv,A,research_output,20,0,research_artifact,Saved research/audit output.
+research_output/long2_runtime_in_profit_gate_audit_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long2_runtime_in_profit_gate_audit_round1.sequencing_timing_summary.csv,A,research_output,10,0,research_artifact,Saved research/audit output.
+research_output/long2_scale_reference_option_a_patch_round1.before_after_trade_counts.csv,A,research_output,21,0,research_artifact,Saved research/audit output.
+research_output/long2_scale_reference_option_a_patch_round1.files_changed.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long2_scale_reference_option_a_patch_round1.patch_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long2_scale_reference_option_a_patch_round1.post_patch_gate_funnel.csv,A,research_output,21,0,research_artifact,Saved research/audit output.
+research_output/long2_scale_reference_option_a_patch_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long2_scale_reference_option_a_patch_round1.risk_notes.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long2_scale_reference_option_a_patch_round1.verification_results.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long2_scale_reference_patch_plan_round1.affected_line_inventory.csv,A,research_output,34,0,research_artifact,Saved research/audit output.
+research_output/long2_scale_reference_patch_plan_round1.patch_options.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long2_scale_reference_patch_plan_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long2_scale_reference_patch_plan_round1.recommended_plan.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long2_scale_reference_patch_plan_round1.risk_register.csv,A,research_output,8,0,research_artifact,Saved research/audit output.
+research_output/long2_scale_reference_patch_plan_round1.verification_plan.csv,A,research_output,9,0,research_artifact,Saved research/audit output.
+research_output/long2_scale_reference_validation_audit_round1.line_evidence.csv,A,research_output,17,0,research_artifact,Saved research/audit output.
+research_output/long2_scale_reference_validation_audit_round1.minimal_examples.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long2_scale_reference_validation_audit_round1.pre_patch_judgment.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long2_scale_reference_validation_audit_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long2_scale_reference_validation_audit_round1.scope_check.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/long2_scale_reference_validation_audit_round1.unit_consistency_table.csv,A,research_output,8,0,research_artifact,Saved research/audit output.
+research_output/long2_trend_fail_scale_patch_plan_round1.affected_line_inventory.csv,A,research_output,12,0,research_artifact,Saved research/audit output.
+research_output/long2_trend_fail_scale_patch_plan_round1.patch_options.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long2_trend_fail_scale_patch_plan_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long2_trend_fail_scale_patch_plan_round1.recommended_plan.csv,A,research_output,10,0,research_artifact,Saved research/audit output.
+research_output/long2_trend_fail_scale_patch_plan_round1.risk_register.csv,A,research_output,8,0,research_artifact,Saved research/audit output.
+research_output/long2_trend_fail_scale_patch_plan_round1.verification_plan.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/long2_trend_fail_scale_patch_round1.before_after_trade_counts.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long2_trend_fail_scale_patch_round1.compile_status.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long2_trend_fail_scale_patch_round1.files_changed.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long2_trend_fail_scale_patch_round1.patch_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long2_trend_fail_scale_patch_round1.post_patch_disagreement_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long2_trend_fail_scale_patch_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long2_trend_fail_scale_patch_round1.risk_notes.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long_only_archetypes_round1.archetype_concentration_summary.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/long_only_archetypes_round1.archetype_distribution_2025_2026_losers.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long_only_archetypes_round1.archetype_distribution_all_trades.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/long_only_archetypes_round1.archetype_distribution_historical_winners.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long_only_archetypes_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long_only_archetypes_round1.trade_features_2025_2026.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long_only_archetypes_round1.trade_features_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_adxweak.equity.csv,A,research_output,15876,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_adxweak.equity.png,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+research_output/long_only_candidate_adxweak.loss_diagnosis.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_adxweak.trades.csv,A,research_output,32,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_adxweak.validation.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_after.equity.csv,A,research_output,15876,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_after.equity.png,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+research_output/long_only_candidate_after.loss_diagnosis.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_after.trades.csv,A,research_output,41,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_after.validation.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_after_protect.equity.csv,A,research_output,15876,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_after_protect.equity.png,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+research_output/long_only_candidate_after_protect.loss_diagnosis.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_after_protect.trades.csv,A,research_output,89,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_after_protect.validation.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_after_tp1broker.equity.csv,A,research_output,15876,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_after_tp1broker.equity.png,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+research_output/long_only_candidate_after_tp1broker.loss_diagnosis.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_after_tp1broker.runner_analysis_summary.csv,A,research_output,9,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_after_tp1broker.runner_lifecycle_summary.csv,A,research_output,15,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_after_tp1broker.runner_stop_path.csv,A,research_output,180,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_after_tp1broker.trades.csv,A,research_output,177,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_after_tp1broker.validation.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_after_tp1broker_scaledfix.equity.csv,A,research_output,15876,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_after_tp1broker_scaledfix.equity.png,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+research_output/long_only_candidate_after_tp1broker_scaledfix.runner_analysis_summary.csv,A,research_output,9,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_after_tp1broker_scaledfix.runner_lifecycle_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_after_tp1broker_scaledfix.runner_stop_path.csv,A,research_output,41,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_after_tp1broker_scaledfix.trades.csv,A,research_output,233,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_after_tp1broker_scaledfix.validation.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_after_tp1broker_split2025.runner_analysis_summary.csv,A,research_output,9,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_after_tp1broker_split2025.runner_lifecycle_summary.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_after_tp1broker_split2025.runner_stop_path.csv,A,research_output,45,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_baseline_restore_check.validation.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_before.equity.csv,A,research_output,15876,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_before.equity.png,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+research_output/long_only_candidate_before.loss_diagnosis.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_before.trades.csv,A,research_output,89,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_before.validation.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_before_after_adx_revert.validation.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_before_after_atr_revert.validation.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_before_postrevertcheck.validation.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_before_recheck.equity.csv,A,research_output,15876,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_before_recheck.equity.png,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+research_output/long_only_candidate_before_recheck.trades.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_before_recheck.validation.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_before_restored.validation.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_losscooldown.equity.csv,A,research_output,15876,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_losscooldown.equity.png,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+research_output/long_only_candidate_losscooldown.loss_diagnosis.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_losscooldown.trades.csv,A,research_output,80,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_losscooldown.validation.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_reclaim_confirm.equity.csv,A,research_output,15876,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_reclaim_confirm.equity.png,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+research_output/long_only_candidate_reclaim_confirm.trades.csv,A,research_output,88,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_reclaim_confirm.validation.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_risingatr.equity.csv,A,research_output,15876,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_risingatr.equity.png,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+research_output/long_only_candidate_risingatr.loss_diagnosis.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_risingatr.trades.csv,A,research_output,74,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_risingatr.validation.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_stretchedfilter.equity.csv,A,research_output,15876,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_stretchedfilter.equity.png,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+research_output/long_only_candidate_stretchedfilter.loss_diagnosis.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_stretchedfilter.trades.csv,A,research_output,74,0,research_artifact,Saved research/audit output.
+research_output/long_only_candidate_stretchedfilter.validation.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long_only_continuation_round1.label_concentration_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long_only_continuation_round1.label_distribution_2025_2026_losers.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long_only_continuation_round1.label_distribution_all_trades.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long_only_continuation_round1.label_distribution_historical_winners.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long_only_continuation_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long_only_continuation_round1.trade_labels_2025_2026.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long_only_continuation_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long_only_paths_round1.label_concentration_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long_only_paths_round1.label_distribution_2025_2026_losers.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long_only_paths_round1.label_distribution_all_trades.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long_only_paths_round1.label_distribution_historical_winners.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long_only_paths_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long_only_paths_round1.trade_labels_2025_2026.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long_only_paths_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long_only_reclaim_confirm_2025_2026.loss_diagnosis.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long_only_reclaim_round1.label_concentration_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long_only_reclaim_round1.label_distribution_2025_2026_losers.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long_only_reclaim_round1.label_distribution_all_trades.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long_only_reclaim_round1.label_distribution_historical_winners.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long_only_reclaim_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long_only_reclaim_round1.trade_labels_2025_2026.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long_only_reclaim_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long_only_reclaim_strength_round1.bucket_summary.csv,A,research_output,22,0,research_artifact,Saved research/audit output.
+research_output/long_only_reclaim_strength_round1.focus_reclaim_then_failed_hold.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long_only_reclaim_strength_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long_only_reclaim_strength_round1.strict_reclaim_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long_only_reclaim_strict_round1.label_concentration_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long_only_reclaim_strict_round1.label_distribution_2025_2026_losers.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/long_only_reclaim_strict_round1.label_distribution_all_trades.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long_only_reclaim_strict_round1.label_distribution_historical_winners.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long_only_reclaim_strict_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long_only_reclaim_strict_round1.trade_labels_2025_2026.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long_only_reclaim_strict_round1.trade_labels_all.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/long_only_regime_round2.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/long_only_regime_round2.regime_concentration_summary.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/long_only_regime_round2.regime_distribution_2025_2026_losers.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/long_only_regime_round2.regime_distribution_all_trades.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/long_only_regime_round2.regime_distribution_historical_winners.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/long_only_regime_round2.trade_regimes.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/phase1_entry_frequency_btc4h.summary.json,A,research_output,14,0,research_artifact,Saved research/audit output.
+research_output/phase1_entry_frequency_btc4h.top_trials.csv,A,research_output,21,0,research_artifact,Saved research/audit output.
+research_output/phase2_directional_quality_btc4h.summary.json,A,research_output,10,0,research_artifact,Saved research/audit output.
+research_output/phase2_directional_quality_btc4h.top_trials.csv,A,research_output,13,0,research_artifact,Saved research/audit output.
+research_output/phase2_locked_baseline_btc4h.summary.json,A,research_output,10,0,research_artifact,Saved research/audit output.
+research_output/phase2_locked_baseline_btc4h.top_trials.csv,A,research_output,10,0,research_artifact,Saved research/audit output.
+research_output/phase3_locked_baseline_btc4h.summary.json,A,research_output,12,0,research_artifact,Saved research/audit output.
+research_output/phase3_locked_baseline_btc4h.top_trials.csv,A,research_output,21,0,research_artifact,Saved research/audit output.
+research_output/phase3_trade_management_btc4h.summary.json,A,research_output,12,0,research_artifact,Saved research/audit output.
+research_output/phase3_trade_management_btc4h.top_trials.csv,A,research_output,17,0,research_artifact,Saved research/audit output.
+research_output/short1_adverse_dominant_predictor_audit_round1.aggregate_predictor_ranking.csv,A,research_output,22,0,research_artifact,Saved research/audit output.
+research_output/short1_adverse_dominant_predictor_audit_round1.contradiction_summary.csv,A,research_output,187,0,research_artifact,Saved research/audit output.
+research_output/short1_adverse_dominant_predictor_audit_round1.parent_refinement_recommendation.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/short1_adverse_dominant_predictor_audit_round1.per_market_predictor_consistency.csv,A,research_output,463,0,research_artifact,Saved research/audit output.
+research_output/short1_adverse_dominant_predictor_audit_round1.population_comparison_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/short1_adverse_dominant_predictor_audit_round1.predictor_profile.csv,A,research_output,46,0,research_artifact,Saved research/audit output.
+research_output/short1_adverse_dominant_predictor_audit_round1.recommendation.csv,A,research_output,9,0,research_artifact,Saved research/audit output.
+research_output/short1_adverse_vs_mixed_chop_audit_round1.adverse_vs_mixed_entry_context.csv,A,research_output,27,0,research_artifact,Saved research/audit output.
+research_output/short1_adverse_vs_mixed_chop_audit_round1.adverse_vs_mixed_path_profile.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/short1_adverse_vs_mixed_chop_audit_round1.per_market_bucket_affinity.csv,A,research_output,23,0,research_artifact,Saved research/audit output.
+research_output/short1_adverse_vs_mixed_chop_audit_round1.population_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/short1_adverse_vs_mixed_chop_audit_round1.recommendation.csv,A,research_output,8,0,research_artifact,Saved research/audit output.
+research_output/short1_adverse_vs_mixed_chop_audit_round1.structural_interpretation.csv,A,research_output,10,0,research_artifact,Saved research/audit output.
+research_output/short1_below_ema20_displacement_antecedent_audit_round1.aggregate_displacement_comparison.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/short1_below_ema20_displacement_antecedent_audit_round1.contradiction_summary.csv,A,research_output,12,0,research_artifact,Saved research/audit output.
+research_output/short1_below_ema20_displacement_antecedent_audit_round1.per_market_displacement_consistency.csv,A,research_output,23,0,research_artifact,Saved research/audit output.
+research_output/short1_below_ema20_displacement_antecedent_audit_round1.population_summary.csv,A,research_output,13,0,research_artifact,Saved research/audit output.
+research_output/short1_below_ema20_displacement_antecedent_audit_round1.recommendation.csv,A,research_output,14,0,research_artifact,Saved research/audit output.
+research_output/short1_below_ema20_displacement_antecedent_audit_round1.secondary_field_comparison.csv,A,research_output,47,0,research_artifact,Saved research/audit output.
+research_output/short1_combined_antecedent_stability_audit_round1.combined_antecedent_comparison.csv,A,research_output,15,0,research_artifact,Saved research/audit output.
+research_output/short1_combined_antecedent_stability_audit_round1.contradiction_impact_summary.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/short1_combined_antecedent_stability_audit_round1.per_market_combination_consistency.csv,A,research_output,23,0,research_artifact,Saved research/audit output.
+research_output/short1_combined_antecedent_stability_audit_round1.population_summary.csv,A,research_output,13,0,research_artifact,Saved research/audit output.
+research_output/short1_combined_antecedent_stability_audit_round1.recommendation.csv,A,research_output,14,0,research_artifact,Saved research/audit output.
+research_output/short1_combined_antecedent_stability_audit_round1.redundancy_correlation_summary.csv,A,research_output,15,0,research_artifact,Saved research/audit output.
+research_output/short1_combined_antecedent_stability_audit_round1.standalone_antecedent_recap.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/short1_cross_market_material_inventory_round1.aggregate_summary.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/short1_cross_market_material_inventory_round1.candidate_ranking.csv,A,research_output,20,0,research_artifact,Saved research/audit output.
+research_output/short1_cross_market_material_inventory_round1.executed_short1_trade_labels_all.csv,A,research_output,185,0,research_artifact,Saved research/audit output.
+research_output/short1_cross_market_material_inventory_round1.market_inventory.csv,A,research_output,20,0,research_artifact,Saved research/audit output.
+research_output/short1_cross_market_material_inventory_round1.recommendation.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/short1_cross_market_material_inventory_round1.starter_short_signal_labels_all.csv,A,research_output,541,0,research_artifact,Saved research/audit output.
+research_output/short1_discovery_handoff_scope_note_round1.note.md,A,research_output,73,0,research_artifact,Saved research/audit output.
+research_output/short1_discovery_handoff_scope_note_round1.recommendation.csv,A,research_output,10,0,research_artifact,Saved research/audit output.
+research_output/short1_discovery_handoff_scope_note_round1.scope_rules.csv,A,research_output,13,0,research_artifact,Saved research/audit output.
+research_output/short1_discovery_handoff_scope_note_round1.summary.csv,A,research_output,8,0,research_artifact,Saved research/audit output.
+research_output/short1_discovery_stop_marker_round1.closed_work.csv,A,research_output,13,0,research_artifact,Saved research/audit output.
+research_output/short1_discovery_stop_marker_round1.note.md,A,research_output,76,0,research_artifact,Saved research/audit output.
+research_output/short1_discovery_stop_marker_round1.recommendation.csv,A,research_output,11,0,research_artifact,Saved research/audit output.
+research_output/short1_discovery_stop_marker_round1.scope_rules.csv,A,research_output,13,0,research_artifact,Saved research/audit output.
+research_output/short1_discovery_stop_marker_round1.summary.csv,A,research_output,9,0,research_artifact,Saved research/audit output.
+research_output/short1_discovery_synthesis_round1.note.md,A,research_output,209,0,research_artifact,Saved research/audit output.
+research_output/short1_discovery_synthesis_round1.open_questions.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/short1_discovery_synthesis_round1.recommendation.csv,A,research_output,11,0,research_artifact,Saved research/audit output.
+research_output/short1_discovery_synthesis_round1.summary.csv,A,research_output,27,0,research_artifact,Saved research/audit output.
+research_output/short1_displacement_cross_bucket_audit_round1.clean_vs_failure_comparison.csv,A,research_output,11,0,research_artifact,Saved research/audit output.
+research_output/short1_displacement_cross_bucket_audit_round1.cross_bucket_displacement_profile.csv,A,research_output,13,0,research_artifact,Saved research/audit output.
+research_output/short1_displacement_cross_bucket_audit_round1.parent_refinement_recommendation.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/short1_displacement_cross_bucket_audit_round1.per_market_cross_bucket_consistency.csv,A,research_output,111,0,research_artifact,Saved research/audit output.
+research_output/short1_displacement_cross_bucket_audit_round1.population_bucket_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/short1_displacement_cross_bucket_audit_round1.recommendation.csv,A,research_output,8,0,research_artifact,Saved research/audit output.
+research_output/short1_displacement_cross_bucket_audit_round1.secondary_context_by_bucket.csv,A,research_output,13,0,research_artifact,Saved research/audit output.
+research_output/short1_entry_extension_recurrence_audit_round1.aggregate_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/short1_entry_extension_recurrence_audit_round1.contradicting_markets.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/short1_entry_extension_recurrence_audit_round1.executed_short1_labels_all.csv,A,research_output,156,0,research_artifact,Saved research/audit output.
+research_output/short1_entry_extension_recurrence_audit_round1.market_recurrence_summary.csv,A,research_output,12,0,research_artifact,Saved research/audit output.
+research_output/short1_entry_extension_recurrence_audit_round1.population_summary.csv,A,research_output,45,0,research_artifact,Saved research/audit output.
+research_output/short1_entry_extension_recurrence_audit_round1.recommendation.csv,A,research_output,10,0,research_artifact,Saved research/audit output.
+research_output/short1_entry_extension_recurrence_audit_round1.recurrence_assessment.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/short1_entry_extension_recurrence_audit_round1.starter_short_signal_labels_all.csv,A,research_output,475,0,research_artifact,Saved research/audit output.
+research_output/short1_failure_mode_synthesis_update_round1.bucket_status.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/short1_failure_mode_synthesis_update_round1.note.md,A,research_output,140,0,research_artifact,Saved research/audit output.
+research_output/short1_failure_mode_synthesis_update_round1.open_questions.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/short1_failure_mode_synthesis_update_round1.recommendation.csv,A,research_output,12,0,research_artifact,Saved research/audit output.
+research_output/short1_failure_mode_synthesis_update_round1.summary.csv,A,research_output,11,0,research_artifact,Saved research/audit output.
+research_output/short1_fil_first_structural_discovery_round1.candidate_separating_fields.csv,A,research_output,33,0,research_artifact,Saved research/audit output.
+research_output/short1_fil_first_structural_discovery_round1.executed_short1_trade_labels.csv,A,research_output,24,0,research_artifact,Saved research/audit output.
+research_output/short1_fil_first_structural_discovery_round1.executed_winners_vs_losers_profile.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/short1_fil_first_structural_discovery_round1.failure_mode_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/short1_fil_first_structural_discovery_round1.population_summary.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/short1_fil_first_structural_discovery_round1.recommendation.csv,A,research_output,10,0,research_artifact,Saved research/audit output.
+research_output/short1_fil_first_structural_discovery_round1.starter_favorable_vs_unfavorable_profile.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/short1_fil_first_structural_discovery_round1.starter_short_signal_labels.csv,A,research_output,75,0,research_artifact,Saved research/audit output.
+research_output/short1_fil_followthrough_vs_adverse_excursion_round1.consistent_separator_summary.csv,A,research_output,33,0,research_artifact,Saved research/audit output.
+research_output/short1_fil_followthrough_vs_adverse_excursion_round1.executed_context_distribution.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/short1_fil_followthrough_vs_adverse_excursion_round1.executed_short1_labels.csv,A,research_output,24,0,research_artifact,Saved research/audit output.
+research_output/short1_fil_followthrough_vs_adverse_excursion_round1.population_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/short1_fil_followthrough_vs_adverse_excursion_round1.recommendation.csv,A,research_output,8,0,research_artifact,Saved research/audit output.
+research_output/short1_fil_followthrough_vs_adverse_excursion_round1.starter_context_distribution.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/short1_fil_followthrough_vs_adverse_excursion_round1.starter_short_signal_labels.csv,A,research_output,75,0,research_artifact,Saved research/audit output.
+research_output/short1_followthrough_antecedent_audit_round1.aggregate_antecedent_comparison.csv,A,research_output,30,0,research_artifact,Saved research/audit output.
+research_output/short1_followthrough_antecedent_audit_round1.candidate_antecedent_ranking.csv,A,research_output,30,0,research_artifact,Saved research/audit output.
+research_output/short1_followthrough_antecedent_audit_round1.contradictions_weak_fields.csv,A,research_output,25,0,research_artifact,Saved research/audit output.
+research_output/short1_followthrough_antecedent_audit_round1.per_market_consistency_summary.csv,A,research_output,30,0,research_artifact,Saved research/audit output.
+research_output/short1_followthrough_antecedent_audit_round1.recommendation.csv,A,research_output,9,0,research_artifact,Saved research/audit output.
+research_output/short1_followthrough_antecedent_audit_round1.top_field_per_market_deltas.csv,A,research_output,12,0,research_artifact,Saved research/audit output.
+research_output/short1_path_quality_failure_mode_audit_round1.entry_context_by_bucket.csv,A,research_output,13,0,research_artifact,Saved research/audit output.
+research_output/short1_path_quality_failure_mode_audit_round1.failure_mode_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/short1_path_quality_failure_mode_audit_round1.parent_refinement_recommendation.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/short1_path_quality_failure_mode_audit_round1.per_market_bucket_summary.csv,A,research_output,12,0,research_artifact,Saved research/audit output.
+research_output/short1_path_quality_failure_mode_audit_round1.population_bucket_summary.csv,A,research_output,13,0,research_artifact,Saved research/audit output.
+research_output/short1_path_quality_failure_mode_audit_round1.recommendation.csv,A,research_output,9,0,research_artifact,Saved research/audit output.
+research_output/short1_path_quality_stability_audit_round1.aggregate_path_quality_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/short1_path_quality_stability_audit_round1.executed_short1_labels_all.csv,A,research_output,156,0,research_artifact,Saved research/audit output.
+research_output/short1_path_quality_stability_audit_round1.market_path_quality_summary.csv,A,research_output,12,0,research_artifact,Saved research/audit output.
+research_output/short1_path_quality_stability_audit_round1.population_summary.csv,A,research_output,45,0,research_artifact,Saved research/audit output.
+research_output/short1_path_quality_stability_audit_round1.recommendation.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/short1_path_quality_stability_audit_round1.stability_assessment.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/short1_path_quality_stability_audit_round1.starter_short_signal_labels_all.csv,A,research_output,475,0,research_artifact,Saved research/audit output.
+research_output/short1_path_quality_stability_audit_round1.weak_or_contradicting_markets.csv,A,research_output,1,0,research_artifact,Saved research/audit output.
+research_output/short1_starter_signal_population_inventory_round1.recommendation.csv,A,research_output,8,0,research_artifact,Saved research/audit output.
+research_output/short1_starter_signal_population_inventory_round1.signal_component_summary.csv,A,research_output,15,0,research_artifact,Saved research/audit output.
+research_output/short1_starter_signal_population_inventory_round1.signal_context_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/short1_starter_signal_population_inventory_round1.signal_numeric_profile_summary.csv,A,research_output,5,0,research_artifact,Saved research/audit output.
+research_output/short1_starter_signal_population_inventory_round1.signal_year_summary.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/short1_starter_signal_population_inventory_round1.starter_short_signal_labels_all.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/short1_structural_identity_discovery_round1.baseline_tag_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/short1_structural_identity_discovery_round1.baseline_trades_all.csv,A,research_output,92,0,research_artifact,Saved research/audit output.
+research_output/short1_structural_identity_discovery_round1.recommendation.csv,A,research_output,12,0,research_artifact,Saved research/audit output.
+research_output/short1_structural_identity_discovery_round1.short1_entry_component_summary.csv,A,research_output,15,0,research_artifact,Saved research/audit output.
+research_output/short1_structural_identity_discovery_round1.short1_exploratory_archetype_summary.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/short1_structural_identity_discovery_round1.short1_numeric_profile_summary.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/short1_structural_identity_discovery_round1.short1_trade_labels_all.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/short1_structural_identity_discovery_round1.short1_year_summary.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/short1_unresolved_non_clean_grouping_check_round1.entry_context_comparison.csv,A,research_output,91,0,research_artifact,Saved research/audit output.
+research_output/short1_unresolved_non_clean_grouping_check_round1.grouping_judgment.csv,A,research_output,11,0,research_artifact,Saved research/audit output.
+research_output/short1_unresolved_non_clean_grouping_check_round1.path_profile_comparison.csv,A,research_output,7,0,research_artifact,Saved research/audit output.
+research_output/short1_unresolved_non_clean_grouping_check_round1.per_market_affinity.csv,A,research_output,23,0,research_artifact,Saved research/audit output.
+research_output/short1_unresolved_non_clean_grouping_check_round1.population_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/short1_unresolved_non_clean_grouping_check_round1.recommendation.csv,A,research_output,8,0,research_artifact,Saved research/audit output.
+research_output/short1_weak_followthrough_audit_round1.clean_vs_weak_entry_context.csv,A,research_output,31,0,research_artifact,Saved research/audit output.
+research_output/short1_weak_followthrough_audit_round1.clean_vs_weak_path_profile.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/short1_weak_followthrough_audit_round1.per_market_bucket_affinity.csv,A,research_output,23,0,research_artifact,Saved research/audit output.
+research_output/short1_weak_followthrough_audit_round1.population_summary.csv,A,research_output,3,0,research_artifact,Saved research/audit output.
+research_output/short1_weak_followthrough_audit_round1.recommendation.csv,A,research_output,8,0,research_artifact,Saved research/audit output.
+research_output/short1_weak_followthrough_audit_round1.structural_interpretation.csv,A,research_output,12,0,research_artifact,Saved research/audit output.
+research_output/short1_weak_followthrough_audit_round1.weak_vs_reference_bucket_profile.csv,A,research_output,11,0,research_artifact,Saved research/audit output.
+research_output/solusdt_unseen_market_frozen_explanation_validation_round1.cross_market_summary.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/solusdt_unseen_market_frozen_explanation_validation_round1.dataset_quality_summary.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/solusdt_unseen_market_frozen_explanation_validation_round1.group_comparison_summary.csv,A,research_output,4,0,research_artifact,Saved research/audit output.
+research_output/solusdt_unseen_market_frozen_explanation_validation_round1.group_distribution_summary.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/solusdt_unseen_market_frozen_explanation_validation_round1.recommendation.csv,A,research_output,2,0,research_artifact,Saved research/audit output.
+research_output/solusdt_unseen_market_frozen_explanation_validation_round1.trade_labels_all.csv,A,research_output,53,0,research_artifact,Saved research/audit output.
+research_output/split_leg_mini.detail.csv,A,research_output,11,0,research_artifact,Saved research/audit output.
+research_output/split_leg_mini.summary.csv,A,research_output,6,0,research_artifact,Saved research/audit output.
+research_output/studies/phase1_entry_frequency_btc4h.db,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+research_output/studies/phase1_entry_frequency_btc4h.db-journal,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+research_output/studies/phase2_directional_quality_btc4h.db,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+research_output/studies/phase2_directional_quality_btc4h.db-journal,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+research_output/studies/phase2_locked_baseline_btc4h.db,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+research_output/studies/phase2_locked_baseline_btc4h.db-journal,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+research_output/studies/phase3_locked_baseline_btc4h.db,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+research_output/studies/phase3_locked_baseline_btc4h.db-journal,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+research_output/studies/phase3_trade_management_btc4h.db,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+research_output/studies/phase3_trade_management_btc4h.db-journal,A,research_output,-,-,generated_or_binary_artifact,Generated/binary research artifact; review whether it belongs in PR.
+server/__init__.py,A,server_source_py,1,0,outside_unit_fix_scope_for_merge_review,Server/webhook source added; outside narrow unit-fix scope.
+server/config.py,A,server_source_py,35,0,outside_unit_fix_scope_for_merge_review,Server/webhook source added; outside narrow unit-fix scope.
+server/dedup.py,A,server_source_py,69,0,outside_unit_fix_scope_for_merge_review,Server/webhook source added; outside narrow unit-fix scope.
+server/logging_setup.py,A,server_source_py,8,0,outside_unit_fix_scope_for_merge_review,Server/webhook source added; outside narrow unit-fix scope.
+server/main.py,A,server_source_py,107,0,outside_unit_fix_scope_for_merge_review,Server/webhook source added; outside narrow unit-fix scope.
+server/models.py,A,server_source_py,47,0,outside_unit_fix_scope_for_merge_review,Server/webhook source added; outside narrow unit-fix scope.
+server/okx.py,A,server_source_py,202,0,outside_unit_fix_scope_for_merge_review,Server/webhook source added; outside narrow unit-fix scope.

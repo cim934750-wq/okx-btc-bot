@@ -1,0 +1,2 @@
+recommendation,rationale,allowed_scope,forbidden_scope
+create_cleanup_commit,Prepare branch for PR review by separating or removing unexpected generated/data/runtime artifacts and clarifying the intended research/source review surface.,"Cleanup/review-scope only; no new diagnostics, no backtests, no optimization, no live/dry-run planning, no profitability claims.","Do not implement strategy changes, sweep thresholds, or treat Long2 nonzero tags as strategy success."
