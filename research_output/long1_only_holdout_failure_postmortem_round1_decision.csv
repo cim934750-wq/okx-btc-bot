@@ -1,0 +1,10 @@
+field,value,interpretation
+postmortem_name,long1_only_holdout_failure_postmortem_round1,scope note only
+validation_decision,Fail — park Long1-only; no implementation,predeclared holdout failed
+reference_net_pnl,5275.31,"reference strength, not validation pass"
+reference_pf,1.2571,"reference strength, not validation pass"
+holdout_net_pnl,-69.89,failed aggregate gate
+holdout_pf,0.9832,failed PF gate
+holdout_positive_markets,8/19,missed 10/19 pass gate
+BTCUSDT_holdout,net_pnl=-50.21; pf=0.8475,failed BTC boundary
+implementation_readiness,closed / not ready,no dry-run/live/production claim

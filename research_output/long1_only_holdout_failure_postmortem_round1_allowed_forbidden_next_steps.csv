@@ -1,0 +1,13 @@
+scope_type,item,rule
+closed,Long1-only as base candidate,park after failed holdout
+closed,Long1-only dry-run discussion,not allowed after fail
+closed,production implementation,not allowed
+closed,profitability claim,not allowed
+allowed,postmortem-only analysis,no new backtests unless separately approved
+allowed_with_explicit_preapproval,BTC-only research path,must be separately predeclared; BTC alone is not sufficient for current candidate
+allowed,new candidate research,requires fresh hypothesis and predeclared gates
+allowed,weak-market failure review,DOGE/DOT/UNI and weak markets remain visible; no cherry-picking
+forbidden,remove DOGE/DOT/UNI post-result,cherry-picking
+forbidden,optimization_or_threshold_sweep,outside scope
+forbidden,dry-run_or_live_plan,readiness closed
+forbidden,implementation_readiness_claim,not supported

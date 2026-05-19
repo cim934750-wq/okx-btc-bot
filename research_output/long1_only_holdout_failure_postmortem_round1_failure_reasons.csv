@@ -1,0 +1,8 @@
+reason,evidence,impact
+aggregate_holdout_negative,holdout net PnL -69.89,predeclared fail gate triggered
+profit_factor_below_1,holdout PF 0.9832,predeclared fail gate triggered
+BTCUSDT_negative,BTCUSDT net PnL -50.21; PF 0.8475,serious project-specific failure
+market_breadth_missed_pass,positive markets 8/19; flat/no-trade 4/19,missed pass threshold of at least 10/19 positive
+reference_strength_did_not_transfer,reference net PnL 5275.31 vs holdout -69.89,in-sample/reference evidence not enough
+weak_market_visibility_required,DOGE -287.14; worst3 SOLUSDT;DOGEUSDT;NEARUSDT -804.05,cannot remove weak markets post-result
+concentration_not_pass_evidence,aggregate holdout PnL negative,concentration gates blocked by aggregate failure
