@@ -1,0 +1,12 @@
+category,item,rule
+allowed,create no-trade baseline rules,This task defines the conservative minimum hurdle only.
+allowed,choose one future hypothesis later,Must be selected before testing with fresh predeclared gates.
+allowed,future buy-and-hold BTC comparison,Allowed only inside a predeclared validation plan for the selected hypothesis.
+allowed,future no-trade comparison,Future candidates must explicitly compare against doing nothing.
+allowed,postmortem and evidence hygiene,May document why failed evidence should not be overused.
+forbidden,run backtests or validation in this task,This is a plan-only task.
+forbidden,restart dry-run or plan live trading,Dry-run requires future validation pass plus explicit approval.
+forbidden,reopen Long1-only as base candidate,Long1-only is parked after failed holdout.
+forbidden,optimize or threshold sweep,Would overfit after failure and is outside scope.
+forbidden,modify PR #1/#2/#3 or source code,This task only adds research output notes.
+forbidden,claim implementation readiness or profitability,Readiness remains closed and no strategy is selected.

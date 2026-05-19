@@ -1,0 +1,7 @@
+step,phase,action,execute_now,output
+1,baseline_rules,Freeze no-trade / capital preservation baseline rules.,yes,no_trade_capital_preservation_baseline_plan_round1
+2,hypothesis_selection,Choose exactly one new research hypothesis without running it.,no,future hypothesis selection note
+3,validation_plan,"Create a predeclared validation plan comparing the hypothesis against no-trade, buy-and-hold BTC, failed Long1-only, and D2/D6 references.",no,future validation plan
+4,validation_execution,Run only the approved validation with frozen parameters and no market cherry-picking.,no,future validation outputs
+5,decision,"If the candidate fails no-trade or BTC/breadth gates, park it; if it passes, create synthesis without readiness claim.",no,future synthesis note
+6,readiness_boundary,Discuss dry-run only after pass plus separate explicit approval.,no,future readiness plan only if authorized
