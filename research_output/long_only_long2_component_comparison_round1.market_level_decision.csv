@@ -1,0 +1,20 @@
+market,long2_delta_net_pnl,long2_delta_effect,short_parking_validation,long_only_long1_long2_net_pnl,long_only_long1_only_net_pnl,decision,notes
+AAVEUSDT,-81.54713322489988,long2_worsens_result,short_parking_supported,48.26377478882205,129.81090801372193,long1_only_preferred_market,market-level triage only; no cherry-picking or implementation claim
+ADAUSDT,310.89930290268967,long2_improves_result,short_parking_supported,407.23479238421714,96.33548948152747,long1_long2_preferred_market,market-level triage only; no cherry-picking or implementation claim
+ATOMUSDT,-215.22496311261784,long2_worsens_result,short_parking_supported,-14.548101795240655,200.6768613173772,long1_only_preferred_market,market-level triage only; no cherry-picking or implementation claim
+AVAXUSDT,-15.395036034926306,long2_worsens_result,short_parking_supported,445.853882090174,461.2489181251003,long1_only_preferred_market,market-level triage only; no cherry-picking or implementation claim
+BCHUSDT,108.04937077104114,long2_improves_result,short_parking_supported,-135.6537183278706,-243.70308909891173,not_worth_continuing_market,market-level triage only; no cherry-picking or implementation claim
+BNBUSDT,1183.0734590342036,long2_improves_result,short_parking_not_supported_for_this_scope,3100.9942727210437,1917.9208136868401,long1_long2_preferred_market,market-level triage only; no cherry-picking or implementation claim
+BTCUSDT,76.89553589177376,long2_improves_result,short_parking_supported,498.158474429787,421.26293853801326,long1_long2_preferred_market,market-level triage only; no cherry-picking or implementation claim
+DOGEUSDT,-62.35322852336685,long2_worsens_result,short_parking_supported,-482.51996174588567,-420.1667332225188,not_worth_continuing_market,market-level triage only; no cherry-picking or implementation claim
+DOTUSDT,-32.76456577533099,long2_worsens_result,short_parking_not_supported_for_this_scope,-778.0769736610964,-745.3124078857654,not_worth_continuing_market,market-level triage only; no cherry-picking or implementation claim
+ETCUSDT,9.434791852210765,long2_improves_result,short_parking_supported,-33.8994349292625,-43.33422678147326,not_worth_continuing_market,market-level triage only; no cherry-picking or implementation claim
+ETHUSDT,728.6998401197634,long2_improves_result,short_parking_not_supported_for_this_scope,1426.6378510415816,697.9380109218182,long1_long2_preferred_market,market-level triage only; no cherry-picking or implementation claim
+FILUSDT,129.43062124306743,long2_improves_result,short_parking_supported,394.1716715129005,264.74105026983307,long1_long2_preferred_market,market-level triage only; no cherry-picking or implementation claim
+LINKUSDT,-42.17682387291279,long2_worsens_result,short_parking_supported,259.2644667893328,301.4412906622456,long1_only_preferred_market,market-level triage only; no cherry-picking or implementation claim
+LTCUSDT,287.6969078145048,long2_improves_result,short_parking_supported,1114.0493389131589,826.352431098654,long1_long2_preferred_market,market-level triage only; no cherry-picking or implementation claim
+NEARUSDT,-116.98463378642919,long2_worsens_result,short_parking_not_supported_for_this_scope,-291.41757153767685,-174.43293775124766,not_worth_continuing_market,market-level triage only; no cherry-picking or implementation claim
+SOLUSDT,165.3260207146668,long2_improves_result,short_parking_supported,803.9638846763846,638.6378639617178,long1_long2_preferred_market,market-level triage only; no cherry-picking or implementation claim
+TRXUSDT,108.29046262841439,long2_improves_result,short_parking_not_supported_for_this_scope,79.07548533512454,-29.21497729328985,long1_long2_preferred_market,market-level triage only; no cherry-picking or implementation claim
+UNIUSDT,-117.91814741007693,long2_worsens_result,short_parking_supported,-566.039381594237,-448.12123418416013,not_worth_continuing_market,market-level triage only; no cherry-picking or implementation claim
+XRPUSDT,582.3111955490167,long2_improves_result,short_parking_supported,1057.9971133800427,475.685917831026,long1_long2_preferred_market,market-level triage only; no cherry-picking or implementation claim

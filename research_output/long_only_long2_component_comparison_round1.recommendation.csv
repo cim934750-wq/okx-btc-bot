@@ -1,0 +1,2 @@
+audit,recommendation,next_step,forbidden_next_steps,notes
+long_only_long2_component_comparison_round1,Park shorts; treat Long2 as inconclusive and require narrower Long2 robustness review before promotion.,pause_and_wait_for_user_review,live/dry-run planning; optimization; threshold sweep; implementation readiness claim,No strategy behavior was changed; only allow_longs/allow_shorts/enable_add_on_entries config toggles were compared.
