@@ -1,0 +1,2 @@
+scope,total_count,mean_pnl,median_pnl,win_rate,p25_pnl,p75_pnl,worst_trade,best_trade,skew,positive_pnl_sum,negative_pnl_sum,top5_positive_trades_pct_of_total_long2_pnl,top10_positive_trades_pct_of_total_long2_pnl,outlier_dependency_assessment
+all_long2_trades,528,4.676637315462144,-4.16778018475445,41.09848484848485,-13.176363731413293,8.747415046087719,-77.58142003803006,392.00215396538874,4.094753366265768,6877.7446622547905,-4408.480159690778,53.403976341741725,83.85091983486129,outlier_sensitive

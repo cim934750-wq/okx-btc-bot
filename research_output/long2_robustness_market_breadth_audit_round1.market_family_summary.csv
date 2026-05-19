@@ -1,0 +1,4 @@
+family_proxy,markets,market_count,positive_delta_markets,negative_delta_markets,delta_net_pnl_sum,Long2_count,Long2_total_pnl,Long2_avg_pnl,Long2_win_rate,interpretation_boundary
+large_alts,ADAUSDT;BCHUSDT;DOGEUSDT;DOTUSDT;LINKUSDT;LTCUSDT;XRPUSDT,7,4,3,1151.6621588656417,164,786.8132314812913,4.797641655373727,40.853658536585364,symbol-family proxy only; no external liquidity data used
+majors,BNBUSDT;BTCUSDT;ETHUSDT;SOLUSDT,4,4,0,2153.9948557604075,191,2016.0119240785648,10.555036251720235,48.167539267015705,symbol-family proxy only; no external liquidity data used
+smaller_alts,AAVEUSDT;ATOMUSDT;AVAXUSDT;ETCUSDT;FILUSDT;NEARUSDT;TRXUSDT;UNIUSDT,8,3,5,-299.91403784525755,173,-333.56065299584463,-1.9280962600915874,33.52601156069364,symbol-family proxy only; no external liquidity data used

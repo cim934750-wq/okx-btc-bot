@@ -1,0 +1,2 @@
+recommendation,next_step,allowed_scope,forbidden_scope,performance_claim_boundary
+do_not_promote_long2_universally; continue only as market-filter research idea or require more robustness evidence,create Long2 robustness synthesis/scope note before any additional research,research-only synthesis or explicitly approved Long2 market-breadth validation,"live planning, optimization, threshold sweep, parameter change, implementation-readiness claim",candidate triage metrics only; no live trading or profitability claim
