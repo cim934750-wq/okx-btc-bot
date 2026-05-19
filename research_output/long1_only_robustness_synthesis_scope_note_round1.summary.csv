@@ -1,0 +1,12 @@
+field,value,interpretation
+synthesis_name,long1_only_robustness_synthesis_scope_note_round1,scope note only; no new diagnostic
+current_long1_only_status,"cleanest base candidate so far, but concentrated",research-only candidate
+broader_candidate_state,shorts parked; Long2 market-filter research only,"Long1-only is base candidate for validation, not deployment"
+candidate_decision,long1_only_positive_but_concentrated,frozen current Long1-only decision
+trades,1671,Long1-only trades
+net_pnl,4327.77,research-run metric only
+profit_factor,1.1626,research-run metric only
+max_drawdown_pct,0.1253,research-run metric only
+positive_markets,12,market breadth
+negative_markets,7,market breadth
+implementation_readiness,closed / not ready,no live/dry-run or production claim

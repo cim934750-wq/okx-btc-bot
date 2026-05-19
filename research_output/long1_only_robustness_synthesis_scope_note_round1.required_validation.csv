@@ -1,0 +1,8 @@
+requirement,reason,minimum_standard
+predeclared_holdout_plan,Avoid post-hoc confirmation,Define markets/time windows and pass/fail criteria before rerun
+genuinely_new_data_check,Current 19-market sample may be sample-specific,Evaluate Long1-only unchanged on new data
+concentration_sensitivity,Top 3 markets contributed 79.54% of total PnL,Report result excluding or capping top contributors descriptively
+outlier_sensitivity,Top 10 positive trades contributed 68.44% of total PnL,Report dependence on largest winners
+weak_market_failure_review,DOGE/DOT/UNI were strong negative markets,Document whether failure is structural without parameter changes
+BTC_vs_basket_boundary,BTCUSDT supports but is not enough alone,Compare BTC-only to 19-market and majors-only evidence
+no_readiness_claim,Research evidence is insufficient for deployment,Keep dry-run blocked until explicit approval after validation

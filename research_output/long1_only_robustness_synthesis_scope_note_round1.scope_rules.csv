@@ -1,0 +1,18 @@
+scope_type,item,rule
+allowed,predeclared_holdout_validation,Allowed before any dry-run discussion
+allowed,genuinely_new_data_validation,Allowed to test robustness outside current sample
+allowed,BTC_only_vs_19_market_basket_comparison,Allowed as research comparison; BTC alone is not sufficient
+allowed,majors_only_vs_all_market_comparison,Allowed as proxy-only research; no external liquidity claim
+allowed,outlier_sensitivity_audit,Allowed because concentration is a core risk
+allowed,weak_market_failure_review_DOGE_DOT_UNI,Allowed to document failure modes without optimizing
+allowed,post_fix_performance_comparison_research_only,Allowed only as research evidence
+allowed_with_separate_approval,dry_run_discussion_after_holdout_validation,Requires separate explicit approval after holdout/new-data validation
+forbidden,implementation_promotion_from_current_evidence,Current evidence is not readiness
+forbidden,live_or_dry_run_planning_now,Dry-run discussion is blocked before validation
+forbidden,threshold_sweep_or_optimization,Would violate current boundary
+forbidden,cherry_picking_positive_markets,Weak markets must remain visible
+forbidden,hiding_losing_markets,DOGE/DOT/UNI and other weak markets must be reported
+forbidden,claiming_production_readiness,Implementation readiness remains closed
+forbidden,merging_research_branches_as_strategy_deployment,Research branch is not deployment
+forbidden,ignoring_concentration_risk,Top-market and top-trade concentration are central risks
+forbidden,treating_BTCUSDT_alone_as_sufficient,BTC supports but does not validate the strategy alone

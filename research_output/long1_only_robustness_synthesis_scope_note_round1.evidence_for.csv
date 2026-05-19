@@ -1,0 +1,7 @@
+evidence,value,source,interpretation
+aggregate_positive,net PnL 4327.77; PF 1.1626,aggregate_metrics,Long1-only is positive across the 19-market research basket
+positive_market_breadth,12 positive / 7 negative,candidate_decision,More markets positive than negative
+win_rate,64.27%,aggregate_metrics,Long1-only had majority winning trades
+btc_support,BTCUSDT net PnL 421.26; PF 1.2717,btcusdt_relevance,BTCUSDT supports Long1-only as research evidence
+majors_proxy_support,net PnL 3675.76; PF 1.5671; positive 4/4,market_family_summary,Majors proxy supports Long1-only; proxy only
+complexity_reduction_vs_Long1_Long2,trade count delta -535; DD delta -0.0140pp,comparison_judgment,Long1-only is simpler and lower drawdown than Long1+Long2

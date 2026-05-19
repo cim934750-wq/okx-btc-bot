@@ -1,0 +1,8 @@
+evidence,value,source,interpretation
+concentration,top3 79.54%; top5 105.29%,concentration_risk,Aggregate PnL depends heavily on a few markets
+negative_markets,7,candidate_decision,7 markets were negative
+strong_negative_markets,DOGEUSDT;DOTUSDT;UNIUSDT,market_breadth,"DOGE, DOT, UNI materially weaken breadth"
+worst3_loss,DOTUSDT;UNIUSDT;DOGEUSDT total -1613.60,concentration_risk,Worst markets offset a substantial part of gross gains
+top10_trade_concentration,68.44%,distribution_shape,Top 10 positive trades contributed a large share of total PnL
+outlier_sensitivity,outlier_sensitive,distribution_shape,Distribution remains outlier-sensitive
+lower_pnl_than_Long1_Long2,PnL delta -3005.74; PF delta -0.0703,comparison_judgment,Long1-only is simpler but gives up aggregate PnL/PF versus Long1+Long2
