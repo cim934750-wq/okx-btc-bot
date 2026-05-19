@@ -1,0 +1,8 @@
+hypothesis,status,reason
+BTC-only strategy path with fresh predeclared gate,deferred,BTCUSDT failed the holdout; selecting BTC-only now risks turning BTC hopes into a rescue narrative without a separate framing.
+Regime-filtered long-only basket strategy,deferred,"Addresses transfer failure, but regime definitions can be fitted after the fact; needs stricter design later."
+Anti-chase entry filter using distance from EMA/ATR,deferred,Plausible for late entries but high threshold-sweep risk.
+ATR percentile / volatility filter,deferred,Plausible but percentile-band selection can become optimization.
+Market-family split,deferred,Can become market selection and does not directly address stop/whipsaw losses.
+Predeclared weak-market exclusion framework,deferred,Too close to post-result removal of weak markets unless independently predeclared later.
+No-trade / capital preservation as default until stronger evidence appears,baseline_not_selected_as_active_hypothesis,"No-trade is the required comparison gate, not the next active strategy hypothesis."

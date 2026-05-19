@@ -1,0 +1,9 @@
+requirement,detail
+frozen_hypothesis_definition,Define exactly what counts as cooldown after exit / stop-loss before testing; no cooldown-length sweep.
+data_scope,"Use predeclared data scope, preferably the same 19 local 4h markets and chronological split or explicitly approved new-data extension."
+metrics,"Report net PnL, PF, max DD, win rate, avg/median trade, trade count, BTCUSDT metrics, breadth, concentration, and fee treatment."
+pass_caution_fail_bands,"Use no-trade gate defaults: positive holdout PnL, PF >= 1.10, BTCUSDT non-negative with PF >= 1.05 if BTC-relevant, enough breadth, and controlled concentration."
+no_trade_comparison,"Compare against zero active PnL, zero strategy fees, and zero strategy-driven drawdown."
+buy_and_hold_comparison_if_relevant,"For BTC-relevant reporting, compare active results with passive BTC exposure over the same window."
+failed_baseline_comparison,Compare with failed Long1-only holdout and D2/D6 negative dry-run references without using them as validation replacements.
+forbidden_work,"Forbid backtests before plan approval, optimization, threshold sweep, per-market cooldown tuning, post-result market selection, dry-run/live planning, and readiness claims."
