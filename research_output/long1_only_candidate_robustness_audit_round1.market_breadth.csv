@@ -1,0 +1,20 @@
+market,net_profit,profit_factor,max_drawdown_pct,win_rate,total_trades,Long1_count,label,interpretation
+AAVEUSDT,129.81090801372193,1.0745773579717655,0.4156887078779902,70.32967032967034,91,91,weak_positive,Long1-only final unit-fixed source; shorts and add-ons disabled
+ADAUSDT,96.33548948152747,1.0600669859747653,0.34644280457201404,57.14285714285714,70,70,weak_positive,Long1-only final unit-fixed source; shorts and add-ons disabled
+ATOMUSDT,200.6768613173772,1.188706678729461,0.4761399197592448,72.54901960784314,51,51,weak_positive,Long1-only final unit-fixed source; shorts and add-ons disabled
+AVAXUSDT,461.2489181251003,1.5127665912432018,0.4577070400022423,70.0,50,50,strong_positive,Long1-only final unit-fixed source; shorts and add-ons disabled
+BCHUSDT,-243.70308909891173,0.8604694403544008,0.8898543766205074,55.670103092783506,97,97,weak_negative,Long1-only final unit-fixed source; shorts and add-ons disabled
+BNBUSDT,1917.9208136868401,2.175143251399215,0.31460380667034527,70.70063694267516,157,157,strong_positive,Long1-only final unit-fixed source; shorts and add-ons disabled
+BTCUSDT,421.26293853801326,1.2716716126304415,0.21584385076715895,62.721893491124256,169,169,strong_positive,Long1-only final unit-fixed source; shorts and add-ons disabled
+DOGEUSDT,-420.1667332225188,0.6835998873821202,0.609189295123344,61.111111111111114,54,54,strong_negative,Long1-only final unit-fixed source; shorts and add-ons disabled
+DOTUSDT,-745.3124078857654,0.4616300314396954,0.9359411482670265,46.666666666666664,45,45,strong_negative,Long1-only final unit-fixed source; shorts and add-ons disabled
+ETCUSDT,-43.33422678147326,0.9625000283252375,0.4748143713097547,63.63636363636363,55,55,weak_negative,Long1-only final unit-fixed source; shorts and add-ons disabled
+ETHUSDT,697.9380109218182,1.4281380807224866,0.37879891932837784,66.23376623376623,154,154,strong_positive,Long1-only final unit-fixed source; shorts and add-ons disabled
+FILUSDT,264.74105026983307,5.356441015128564,0.11748425593941471,77.77777777777779,9,9,strong_positive,Long1-only final unit-fixed source; shorts and add-ons disabled
+LINKUSDT,301.4412906622456,1.1376024525266064,0.4564726124366351,62.71186440677966,118,118,weak_positive,Long1-only final unit-fixed source; shorts and add-ons disabled
+LTCUSDT,826.352431098654,1.7014036412466382,0.17519137487717543,73.73737373737373,99,99,strong_positive,Long1-only final unit-fixed source; shorts and add-ons disabled
+NEARUSDT,-174.43293775124766,0.9127287523595901,0.8630248821733306,64.1025641025641,78,78,weak_negative,Long1-only final unit-fixed source; shorts and add-ons disabled
+SOLUSDT,638.6378639617178,1.3827642730995366,0.5161361863134275,66.35514018691589,107,107,strong_positive,Long1-only final unit-fixed source; shorts and add-ons disabled
+TRXUSDT,-29.21497729328985,0.9850692843643353,0.6387613367757891,64.08839779005525,181,181,weak_negative,Long1-only final unit-fixed source; shorts and add-ons disabled
+UNIUSDT,-448.12123418416013,0.3991476718158387,0.5644050818447199,50.0,26,26,strong_negative,Long1-only final unit-fixed source; shorts and add-ons disabled
+XRPUSDT,475.685917831026,1.4409473701026512,0.6004873346499373,53.333333333333336,60,60,strong_positive,Long1-only final unit-fixed source; shorts and add-ons disabled

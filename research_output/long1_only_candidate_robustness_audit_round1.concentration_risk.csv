@@ -1,0 +1,5 @@
+metric,markets,pnl_sum,percent_of_total_pnl,interpretation
+top_3_markets_by_long1_only_pnl,BNBUSDT;LTCUSDT;ETHUSDT,3442.2112557073124,79.53781580745519,positive concentration share can exceed 100 when losing markets offset aggregate total
+top_5_markets_by_long1_only_pnl,BNBUSDT;LTCUSDT;ETHUSDT;SOLUSDT;XRPUSDT,4556.535037500056,105.28605527391586,positive concentration share can exceed 100 when losing markets offset aggregate total
+worst_3_markets_by_long1_only_pnl,DOTUSDT;UNIUSDT;DOGEUSDT,-1613.6003752924444,-37.28482649751809,negative share shows offset from weak markets
+concentration_assessment,ALL_4H_MARKETS,4327.766887690508,100.0,concentrated

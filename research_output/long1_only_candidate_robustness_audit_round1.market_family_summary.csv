@@ -1,0 +1,4 @@
+family_proxy,markets,market_count,positive_markets,negative_markets,total_trades,net_profit,profit_factor,win_rate,avg_trade,interpretation_boundary
+large_alts,ADAUSDT;BCHUSDT;DOGEUSDT;DOTUSDT;LINKUSDT;LTCUSDT;XRPUSDT,7,4,3,543,290.63289886625716,1.0276521146982738,60.22099447513812,0.5352355411905064,symbol-family proxy only; no external liquidity data used
+majors,BNBUSDT;BTCUSDT;ETHUSDT;SOLUSDT,4,4,0,587,3675.7596271083894,1.5671273031215356,66.43952299829643,6.261941443115162,symbol-family proxy only; no external liquidity data used
+smaller_alts,AAVEUSDT;ATOMUSDT;AVAXUSDT;ETCUSDT;FILUSDT;NEARUSDT;TRXUSDT;UNIUSDT,8,4,4,541,361.3743617158616,1.0375602527931953,65.98890942698706,0.6679747906021369,symbol-family proxy only; no external liquidity data used

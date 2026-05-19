@@ -1,0 +1,2 @@
+recommendation,next_step,allowed_scope,forbidden_scope,performance_claim_boundary
+continue_Long1_only_as_base_candidate_research_only,create Long1-only robustness synthesis/scope note before any dry-run discussion,"research-only synthesis, holdout/new-data validation, drawdown and concentration review","live planning, optimization, threshold sweep, parameter change, implementation-readiness claim",candidate triage metrics only; no live trading or profitability claim
