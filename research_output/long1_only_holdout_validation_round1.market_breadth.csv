@@ -1,0 +1,20 @@
+market,family_proxy,net_pnl,profit_factor,max_drawdown_pct,win_rate,total_trades,Long1_count,label,interpretation
+AAVEUSDT,smaller_alts,231.0065550474974,1.4219402581495826,0.29444323994580973,71.42857142857143,42,42,strong_positive,holdout Long1-only; DOGE/DOT/UNI retained; no market removal
+ADAUSDT,large_alts,-65.76827136038628,0.2879138045925503,0.09491471357045618,50.0,6,6,weak_negative,holdout Long1-only; DOGE/DOT/UNI retained; no market removal
+ATOMUSDT,smaller_alts,0.0,0.0,0.0,0.0,0,0,neutral,holdout Long1-only; DOGE/DOT/UNI retained; no market removal
+AVAXUSDT,smaller_alts,-84.91235153673915,0.7581547393435203,0.2535858128444036,60.0,20,20,weak_negative,holdout Long1-only; DOGE/DOT/UNI retained; no market removal
+BCHUSDT,large_alts,-58.89003056357615,0.563949298032238,0.1574631044248075,60.0,15,15,weak_negative,holdout Long1-only; DOGE/DOT/UNI retained; no market removal
+BNBUSDT,majors,101.25139873420994,1.281495671336425,0.14235214119133355,68.88888888888889,45,45,strong_positive,holdout Long1-only; DOGE/DOT/UNI retained; no market removal
+BTCUSDT,majors,-50.212502327383845,0.847503359020859,0.158127046834254,65.95744680851064,47,47,weak_negative,holdout Long1-only; DOGE/DOT/UNI retained; no market removal
+DOGEUSDT,large_alts,-287.13657997443806,0.35862000088491885,0.31323159207186835,57.14285714285714,21,21,strong_negative,holdout Long1-only; DOGE/DOT/UNI retained; no market removal
+DOTUSDT,large_alts,7.806350716811721,1.1486731429857848,0.0937031719097067,66.66666666666666,3,3,neutral,holdout Long1-only; DOGE/DOT/UNI retained; no market removal
+ETCUSDT,smaller_alts,0.0,0.0,0.0,0.0,0,0,neutral,holdout Long1-only; DOGE/DOT/UNI retained; no market removal
+ETHUSDT,majors,0.0,0.0,0.0,0.0,0,0,neutral,holdout Long1-only; DOGE/DOT/UNI retained; no market removal
+FILUSDT,smaller_alts,45.51590092261904,1.2985181988564198,0.17778923943608244,50.0,8,8,weak_positive,holdout Long1-only; DOGE/DOT/UNI retained; no market removal
+LINKUSDT,large_alts,0.0,0.0,0.0,0.0,0,0,neutral,holdout Long1-only; DOGE/DOT/UNI retained; no market removal
+LTCUSDT,large_alts,75.93135758370045,1.567219474303955,0.07885408457076602,73.68421052631578,19,19,weak_positive,holdout Long1-only; DOGE/DOT/UNI retained; no market removal
+NEARUSDT,smaller_alts,-220.53150946828828,0.3373540450662414,0.2533021389948924,36.36363636363637,11,11,strong_negative,holdout Long1-only; DOGE/DOT/UNI retained; no market removal
+SOLUSDT,majors,-296.38346385733166,0.16973164785812664,0.3065587120508717,50.0,16,16,strong_negative,holdout Long1-only; DOGE/DOT/UNI retained; no market removal
+TRXUSDT,smaller_alts,109.00700175361999,1.50202284571532,0.07904597277787188,70.0,50,50,strong_positive,holdout Long1-only; DOGE/DOT/UNI retained; no market removal
+UNIUSDT,smaller_alts,405.19654909695964,2.046098518295316,0.15331924662340693,75.0,40,40,strong_positive,holdout Long1-only; DOGE/DOT/UNI retained; no market removal
+XRPUSDT,large_alts,18.2280275321682,1.069847309792639,0.1758668824848767,47.05882352941176,17,17,neutral,holdout Long1-only; DOGE/DOT/UNI retained; no market removal

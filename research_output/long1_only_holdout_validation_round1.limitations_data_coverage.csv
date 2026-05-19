@@ -1,0 +1,25 @@
+market,data_file,rows_total,split_method,reference_rows_raw,holdout_rows_raw,reference_start,reference_end,holdout_start,holdout_end,btc_1h_excluded,item,status,note
+AAVEUSDT,AAVEUSDT_4h.csv,12239.0,chronological_70_reference_30_holdout,8567.0,3672.0,2020-10-15T00:00:00+00:00,2024-09-11T16:00:00+00:00,2024-09-11T20:00:00+00:00,2026-05-16T16:00:00+00:00,True,market_coverage,,
+ADAUSDT,ADAUSDT_4h.csv,16152.0,chronological_70_reference_30_holdout,11306.0,4846.0,2019-01-01T00:00:00+00:00,2024-02-29T00:00:00+00:00,2024-02-29T04:00:00+00:00,2026-05-16T16:00:00+00:00,True,market_coverage,,
+ATOMUSDT,ATOMUSDT_4h.csv,15444.0,chronological_70_reference_30_holdout,10810.0,4634.0,2019-04-29T04:00:00+00:00,2024-04-04T08:00:00+00:00,2024-04-04T12:00:00+00:00,2026-05-16T16:00:00+00:00,True,market_coverage,,
+AVAXUSDT,AVAXUSDT_4h.csv,12376.0,chronological_70_reference_30_holdout,8663.0,3713.0,2020-09-22T04:00:00+00:00,2024-09-04T20:00:00+00:00,2024-09-05T00:00:00+00:00,2026-05-16T16:00:00+00:00,True,market_coverage,,
+BCHUSDT,BCHUSDT_4h.csv,14168.0,chronological_70_reference_30_holdout,9917.0,4251.0,2019-11-28T08:00:00+00:00,2024-06-07T04:00:00+00:00,2024-06-07T08:00:00+00:00,2026-05-16T16:00:00+00:00,True,market_coverage,,
+BNBUSDT,BNBUSDT_4h.csv,16152.0,chronological_70_reference_30_holdout,11306.0,4846.0,2019-01-01T00:00:00+00:00,2024-02-29T00:00:00+00:00,2024-02-29T04:00:00+00:00,2026-05-16T16:00:00+00:00,True,market_coverage,,
+BTCUSDT,BTCUSDT_4h.csv,15947.0,chronological_70_reference_30_holdout,11162.0,4785.0,2019-01-01T00:00:00+00:00,2024-02-05T00:00:00+00:00,2024-02-05T04:00:00+00:00,2026-04-12T12:00:00+00:00,True,market_coverage,,
+DOGEUSDT,DOGEUSDT_4h.csv,15042.0,chronological_70_reference_30_holdout,10529.0,4513.0,2019-07-05T12:00:00+00:00,2024-04-24T12:00:00+00:00,2024-04-24T16:00:00+00:00,2026-05-16T16:00:00+00:00,True,market_coverage,,
+DOTUSDT,DOTUSDT_4h.csv,12582.0,chronological_70_reference_30_holdout,8807.0,3775.0,2020-08-18T20:00:00+00:00,2024-08-25T12:00:00+00:00,2024-08-25T16:00:00+00:00,2026-05-16T16:00:00+00:00,True,market_coverage,,
+ETCUSDT,ETCUSDT_4h.csv,16152.0,chronological_70_reference_30_holdout,11306.0,4846.0,2019-01-01T00:00:00+00:00,2024-02-29T00:00:00+00:00,2024-02-29T04:00:00+00:00,2026-05-16T16:00:00+00:00,True,market_coverage,,
+ETHUSDT,ETHUSDT_4h.csv,16152.0,chronological_70_reference_30_holdout,11306.0,4846.0,2019-01-01T00:00:00+00:00,2024-02-29T00:00:00+00:00,2024-02-29T04:00:00+00:00,2026-05-16T16:00:00+00:00,True,market_coverage,,
+FILUSDT,FILUSDT_4h.csv,12235.0,chronological_70_reference_30_holdout,8564.0,3671.0,2020-10-15T16:00:00+00:00,2024-09-11T20:00:00+00:00,2024-09-12T00:00:00+00:00,2026-05-16T16:00:00+00:00,True,market_coverage,,
+LINKUSDT,LINKUSDT_4h.csv,16060.0,chronological_70_reference_30_holdout,11242.0,4818.0,2019-01-16T08:00:00+00:00,2024-03-04T16:00:00+00:00,2024-03-04T20:00:00+00:00,2026-05-16T16:00:00+00:00,True,market_coverage,,
+LTCUSDT,LTCUSDT_4h.csv,16152.0,chronological_70_reference_30_holdout,11306.0,4846.0,2019-01-01T00:00:00+00:00,2024-02-29T00:00:00+00:00,2024-02-29T04:00:00+00:00,2026-05-16T16:00:00+00:00,True,market_coverage,,
+NEARUSDT,NEARUSDT_4h.csv,12244.0,chronological_70_reference_30_holdout,8570.0,3674.0,2020-10-14T04:00:00+00:00,2024-09-11T08:00:00+00:00,2024-09-11T12:00:00+00:00,2026-05-16T16:00:00+00:00,True,market_coverage,,
+SOLUSDT,SOLUSDT_4h.csv,12628.0,chronological_70_reference_30_holdout,8839.0,3789.0,2020-08-11T04:00:00+00:00,2024-08-23T04:00:00+00:00,2024-08-23T08:00:00+00:00,2026-05-16T16:00:00+00:00,True,market_coverage,,
+TRXUSDT,TRXUSDT_4h.csv,16152.0,chronological_70_reference_30_holdout,11306.0,4846.0,2019-01-01T00:00:00+00:00,2024-02-29T00:00:00+00:00,2024-02-29T04:00:00+00:00,2026-05-16T16:00:00+00:00,True,market_coverage,,
+UNIUSDT,UNIUSDT_4h.csv,12407.0,chronological_70_reference_30_holdout,8684.0,3723.0,2020-09-17T00:00:00+00:00,2024-09-03T04:00:00+00:00,2024-09-03T08:00:00+00:00,2026-05-16T16:00:00+00:00,True,market_coverage,,
+XRPUSDT,XRPUSDT_4h.csv,16152.0,chronological_70_reference_30_holdout,11306.0,4846.0,2019-01-01T00:00:00+00:00,2024-02-29T00:00:00+00:00,2024-02-29T04:00:00+00:00,2026-05-16T16:00:00+00:00,True,market_coverage,,
+,,,,,,,,,,,data_scope,used_existing_4h_data_only,No new OHLCV was fetched; secondary new-data extension not evaluated because no separate local extension was available.
+,,,,,,,,,,,split_method,chronological_70_30_per_market,Each segment was backtested separately; indicator warmup occurs within each segment.
+,,,,,,,,,,,market_universe,same_19_markets,DOGE/DOT/UNI retained; BTCUSDT_1h excluded.
+,,,,,,,,,,,candidate,frozen_Long1_only,"allow_longs=True, allow_shorts=False, enable_add_on_entries=False; no parameter changes."
+,,,,,,,,,,,readiness,closed_not_ready,Validation result is research-only and does not authorize dry-run/live planning.

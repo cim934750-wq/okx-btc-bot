@@ -1,0 +1,4 @@
+scope,family_proxy,markets,market_count,positive_markets,negative_markets,total_trades,net_pnl,profit_factor,win_rate,interpretation_boundary
+holdout,large_alts,ADAUSDT;BCHUSDT;DOGEUSDT;DOTUSDT;LINKUSDT;LTCUSDT;XRPUSDT,7,3,3,81,-309.8291460657201,0.7239684610166583,59.25925925925925,symbol-family proxy only; no external liquidity data used
+holdout,majors,BNBUSDT;BTCUSDT;ETHUSDT;SOLUSDT,4,1,2,108,-245.34456745050556,0.7654300384243495,64.81481481481481,symbol-family proxy only; no external liquidity data used
+holdout,smaller_alts,AAVEUSDT;ATOMUSDT;AVAXUSDT;ETCUSDT;FILUSDT;NEARUSDT;TRXUSDT;UNIUSDT,8,4,2,171,485.2821458156686,1.2440637372190366,67.2514619883041,symbol-family proxy only; no external liquidity data used

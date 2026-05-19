@@ -1,0 +1,4 @@
+scope,metric,markets,pnl_sum,signed_percent_of_total_pnl,percent_of_positive_market_pnl,pass_threshold,gate_status,interpretation
+holdout,top3_market_contribution,UNIUSDT;AAVEUSDT;TRXUSDT,745.210105898077,-1066.2375024850637,74.97512431724539,<=75% of total PnL when aggregate positive,not_evaluable_negative_aggregate,"aggregate holdout PnL is negative, so total-PnL concentration pass gate is blocked by aggregate failure"
+holdout,top5_market_contribution,UNIUSDT;AAVEUSDT;TRXUSDT;BNBUSDT;LTCUSDT,922.3928622159874,-1319.748422539155,92.80137100481303,<=100% of total PnL when aggregate positive,not_evaluable_negative_aggregate,"aggregate holdout PnL is negative, so total-PnL concentration pass gate is blocked by aggregate failure"
+holdout,worst3_market_contribution,SOLUSDT;DOGEUSDT;NEARUSDT,-804.051553300058,1150.4271255510118,0.0,not applicable,weakness_evidence,worst markets drove aggregate failure and must remain visible

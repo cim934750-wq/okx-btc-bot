@@ -1,0 +1,2 @@
+final_decision,next_step,implementation_readiness,performance_claim_boundary
+Fail: park Long1-only; no implementation.,park Long1-only as current base candidate; do not continue toward implementation; optional research-only postmortem can inspect weak markets/outliers if explicitly approved,closed / not ready,research-only validation; no live trading or profitability claim

@@ -1,0 +1,12 @@
+field,value
+run_status,completed long1_only_holdout_validation_round1
+branch,research/long1-only-candidate-robustness
+validation_data,same 19 local 4h markets; chronological 70/30 split; BTCUSDT_1h excluded
+holdout_net_pnl,-69.89
+holdout_profit_factor,0.9832
+holdout_positive_markets,8/19 positive; 7/19 negative; 4/19 flat/no-trade
+btc_result,net_pnl=-50.21; pf=0.8475; fail
+weak_market_result,DOGE negative; DOT slightly positive with only 3 trades; UNI positive
+concentration_result,aggregate negative; concentration gates not evaluable as pass; top3 positive-market share shown for context
+decision,Fail: park Long1-only; no implementation.
+readiness,closed / not ready

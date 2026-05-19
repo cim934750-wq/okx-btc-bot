@@ -1,0 +1,15 @@
+check_type,check,result,metric_value,interpretation
+pass_gate,aggregate_net_pnl_positive,False,-69.89,required for pass
+pass_gate,aggregate_pf_at_least_1_10,False,0.9832,required for pass
+pass_gate,BTCUSDT_non_negative_pf_at_least_1_05,False,net_pnl=-50.21; pf=0.8475,required for pass
+pass_gate,positive_markets_at_least_10_of_19,False,8/19 positive; 4 flat/no-trade,required for pass
+pass_gate,top3_concentration_at_most_75,not_evaluable_negative_aggregate,signed=-1066.24%; positive_market_share=74.98%,aggregate failure blocks concentration pass
+pass_gate,top5_concentration_at_most_100,not_evaluable_negative_aggregate,signed=-1319.75%; positive_market_share=92.80%,aggregate failure blocks concentration pass
+pass_gate,top10_positive_trade_contribution_at_most_65,not_evaluable_negative_aggregate,signed=-1161.36%; gross_positive_share=19.86%,aggregate failure blocks top-trade pass
+fail_gate,aggregate_net_pnl_non_positive,True,-69.89,fail trigger
+fail_gate,aggregate_pf_below_1_00,True,0.9832,fail trigger
+fail_gate,BTCUSDT_negative,True,-50.21,fail trigger
+fail_gate,positive_markets_at_most_7_of_19,False,8/19,fail trigger not met but breadth is weak
+fail_gate,top3_concentration_at_least_90,not_evaluable_negative_aggregate,aggregate negative,aggregate failure is already decisive
+fail_gate,top10_positive_trade_contribution_at_least_80,not_evaluable_negative_aggregate,aggregate negative,aggregate failure is already decisive
+final_decision,predeclared_decision,Fail: park Long1-only; no implementation.,research-only validation decision,"triggered by aggregate negative, PF below 1.00, and BTCUSDT negative"
