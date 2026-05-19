@@ -1,0 +1,14 @@
+metric,purpose,required_breakdown
+net_pnl,Primary measure of active trading versus no-trade.,"aggregate, per-market, BTCUSDT, DOGE/DOT/UNI"
+profit_factor,Detect whether active trades have positive payoff profile.,"aggregate, per-market, BTCUSDT"
+max_drawdown,Check capital preservation and downside impact.,"aggregate, BTCUSDT, weak markets if feasible"
+win_rate,Context only; not sufficient without PnL/PF.,"aggregate, per-market, BTCUSDT"
+trade_count_reduction,Measure whether cooldown reduces activity.,candidate vs failed Long1-only baseline
+skipped_entries_count,Quantify entries blocked by cooldown.,"by trigger, market, and split"
+re_entry_delay_impact,Assess whether blocked immediate re-entries avoided losses or missed gains.,descriptive only; no profitability overclaim
+fee_reduction,Estimate whether fewer trades reduce costs enough to matter.,aggregate and per-market if fee model available
+BTCUSDT_result,BTC boundary is serious for this project.,"net PnL, PF, max DD, trade count, skipped entries"
+DOGE_DOT_UNI_result,Weak markets remain visible and cannot be dropped post-result.,"net PnL, PF, trade count, skipped entries"
+top_market_concentration,Avoid outlier/market concentration being mistaken for robustness.,"top 3, top 5, top 10 positive trade contribution when aggregate positive"
+no_trade_comparison,Candidate must beat capital preservation after fees/drawdown.,"net active PnL, fees, DD, opportunity cost note"
+failed_reference_comparison,Candidate must improve on failed Long1-only/D2/D6 references.,"failed Long1 holdout, D2, D6"

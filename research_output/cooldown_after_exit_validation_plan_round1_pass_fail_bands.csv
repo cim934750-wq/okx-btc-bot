@@ -1,0 +1,14 @@
+band,condition,threshold,interpretation
+pass,aggregate_holdout_positive,net PnL > 0 after fees where feasible,Must beat no-trade on active PnL.
+pass,profit_factor,PF >= 1.10 by default,"Research pass only, not implementation readiness."
+pass,BTCUSDT_boundary,BTCUSDT net PnL >= 0 and PF >= 1.05 if BTC-relevant,BTC failure blocks advancement for BTC-relevant strategy.
+pass,drawdown_control,DD controlled and compensated by return; not materially worse than failed reference without return improvement,Capital preservation remains the baseline.
+pass,re_entry_loss_reduction,skipped/re-entry analysis shows reduced whipsaw or adverse re-entry losses without trade-count collapse,Must address selected failure mode.
+pass,concentration,"top 3 <= 75%, top 5 <= 100%, top 10 positive trades <= 65% when aggregate positive",Avoid outlier-only improvement.
+caution,marginal_positive,net PnL > 0 but PF 1.00 to <1.10 or BTCUSDT weak,Continue only with synthesis; no dry-run.
+caution,trade_count_collapse,cooldown reduces trades heavily while edge remains unclear,May simply suppress activity rather than improve quality.
+fail,aggregate_holdout_negative,net PnL <= 0,No-trade remains preferred.
+fail,profit_factor_below_one,PF < 1.00,Negative active trade profile.
+fail,BTCUSDT_negative,BTCUSDT net PnL < 0 for BTC-relevant strategy,Blocks advancement.
+fail,no_risk_adjusted_improvement,cooldown only reduces trades but does not improve risk-adjusted result,Activity reduction alone is not edge.
+fail,outlier_or_hidden_weak_markets,gains from outliers only or DOGE/DOT/UNI removed/hidden,Invalid research result.

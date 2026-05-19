@@ -1,0 +1,12 @@
+category,item,rule
+allowed_now,document cooldown validation plan,Plan-only; no execution.
+allowed_future_only_after_approval,execute primary 6-candle cooldown validation,Only the frozen primary rule may be tested first.
+allowed_future_only_after_primary_result,secondary sensitivity,May inspect nearby cooldown robustness only after primary result and explicit approval; not as optimization.
+required_future,compare against no-trade,Candidate must beat capital preservation after fees/drawdown.
+required_future,keep DOGE/DOT/UNI visible,Weak markets cannot be removed or hidden.
+forbidden,cooldown length sweep,Do not test multiple cooldown lengths as candidates in the primary validation.
+forbidden,choose cooldown length after seeing result,Primary value is fixed at 6 completed 4h candles.
+forbidden,per-market tuning,No market-specific cooldown settings.
+forbidden,market cherry-picking,No dropping DOGE/DOT/UNI or selecting only favorable markets.
+forbidden,dry-run/live planning,Not authorized by this plan.
+forbidden,implementation-readiness claim,Readiness remains closed even if a future validation passes.

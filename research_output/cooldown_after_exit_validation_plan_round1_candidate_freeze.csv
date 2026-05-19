@@ -1,0 +1,9 @@
+field,value,notes
+selected_hypothesis,Cooldown after exit / stop-loss,Research hypothesis only; not an implementation candidate.
+primary_cooldown_trigger_1,confirmed_close_below_ema20,"After this exit reason, block same-market new entries for the fixed cooldown window."
+primary_cooldown_trigger_2,stop_loss,"After this exit reason, block same-market new entries for the fixed cooldown window."
+primary_cooldown_length,6 completed 4h candles,Equals 24 hours; fixed before testing; no sweep.
+scope_of_block,same_market_new_entries_only,Per-market cooldown; not global across all markets.
+position_management,unchanged,"Cooldown must not alter exits, stops, indicators, thresholds, or existing position management."
+data_universe,same 19 local 4h markets,DOGE/DOT/UNI included; BTCUSDT visible; BTCUSDT_1h excluded unless separately scoped.
+candidate_status,plan_only_not_execution,No validation/backtest/source change is authorized here.
