@@ -1,0 +1,11 @@
+check_type,check,result,metric_value,interpretation
+pass_gate,aggregate_holdout_positive_after_fees,False,-91.4642603474349,required for pass
+pass_gate,profit_factor_at_least_1_10,False,0.9725045547983604,required for pass
+pass_gate,BTCUSDT_non_negative_pf_at_least_1_05,False,net_pnl=-73.14377904534922; pf=0.7461057097425067,required for pass
+pass_gate,trade_count_reduced,True,75,required for pass
+pass_gate,skipped_entries_present,True,86,required for pass
+fail_gate,aggregate_holdout_negative,True,-91.4642603474349,fail trigger
+fail_gate,profit_factor_below_1_00,True,0.9725045547983604,fail trigger
+fail_gate,BTCUSDT_negative,True,-73.14377904534922,fail trigger
+fail_gate,no_risk_adjusted_improvement_vs_failed_reference,True,delta_pnl=-21.57269264687784; delta_pf=-0.010681315783388379,fail trigger
+final_decision,predeclared_decision,Fail: cooldown does not beat no-trade gate; do not advance.,research-only validation decision,No implementation readiness claim.

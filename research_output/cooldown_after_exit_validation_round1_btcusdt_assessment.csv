@@ -1,0 +1,3 @@
+scope,market,baseline_net_pnl,cooldown_net_pnl,delta_net_pnl,baseline_pf,cooldown_pf,baseline_trades,cooldown_trades,trade_count_reduction,cooldown_boundary_result,interpretation
+reference,BTCUSDT,444.40850691903324,75.56826594640734,-368.8402409726259,1.3706611072770671,1.0693195738997228,118,91,27,context,BTCUSDT is BTC-relevant; holdout must be non-negative with PF >= 1.05 to pass.
+holdout,BTCUSDT,-50.212502327383845,-73.14377904534922,-22.931276717965375,0.847503359020859,0.7461057097425067,47,39,8,fail,BTCUSDT is BTC-relevant; holdout must be non-negative with PF >= 1.05 to pass.

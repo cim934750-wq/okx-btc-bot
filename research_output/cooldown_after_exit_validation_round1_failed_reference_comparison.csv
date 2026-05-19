@@ -1,0 +1,4 @@
+comparison,failed_reference_net_pnl,cooldown_net_pnl,delta_net_pnl,failed_reference_pf,cooldown_pf,failed_reference_trades,cooldown_trades,interpretation
+cooldown_holdout_vs_failed_Long1_holdout,-69.89156770055706,-91.4642603474349,-21.57269264687784,0.9831858705817488,0.9725045547983604,360,285,"Cooldown must improve risk-adjusted result, not merely reduce trades."
+cooldown_holdout_vs_D2_dry_run_reference,-51.92,-91.4642603474349,-39.5442603474349,,0.9725045547983604,,285,"D2 is a negative operational reference, not a validation replacement."
+cooldown_holdout_vs_D6_dry_run_reference,-103.78,-91.4642603474349,12.3157396525651,,0.9725045547983604,,285,"D6 is a negative operational reference, not a validation replacement."

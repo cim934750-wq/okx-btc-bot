@@ -1,0 +1,2 @@
+scope,variant,candidate_net_pnl,no_trade_net_pnl,candidate_minus_no_trade,candidate_pf,candidate_max_drawdown_pct,trading_better_than_no_trade,interpretation
+holdout,cooldown_after_exit_6x4h,-91.4642603474349,0.0,-91.4642603474349,0.9725045547983604,0.04763810661705392,False,Must beat preserved capital after fees/drawdown; fewer trades alone is not sufficient.
