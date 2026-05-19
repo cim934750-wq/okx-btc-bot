@@ -1,0 +1,7 @@
+evidence,value,source,interpretation
+aggregate_long2_pnl_positive,2469.26,long2_robustness_market_breadth_audit_round1,Long2 showed positive aggregate contribution in the research run
+variant_delta_positive,3005.74,long2_robustness_market_breadth_audit_round1,Long1+Long2 beat Long1-only in aggregate
+markets_improved,11,long2_robustness_market_breadth_audit_round1,"Long2 variant improved more markets than it worsened, but not decisively"
+strong_positive_markets,7,long2_robustness_market_breadth_audit_round1,Some market-level support exists
+majors_group_support,Long2 PnL 2016.01; positive delta markets 4/4,market_family_summary,"Majors proxy group was supportive; proxy only, no external liquidity data"
+btcusdt_marginal_support,delta 76.90; Long2 PnL 156.20,btcusdt_relevance,BTCUSDT supports Long2 marginally

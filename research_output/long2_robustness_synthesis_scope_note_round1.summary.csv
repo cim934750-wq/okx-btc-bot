@@ -1,0 +1,12 @@
+field,value,interpretation
+synthesis_name,long2_robustness_synthesis_scope_note_round1,scope note only; no new diagnostic
+current_long2_status,research-active only as market-filter / robustness candidate,do not universally enable Long2
+broader_candidate_state,shorts parked for research focus; Long1 remains long-only base,Long2 not promoted
+candidate_decision,long2_market_filter_research_only,frozen current decision
+long2_trades,528,closed Long2-tag trades
+long2_aggregate_pnl,2469.26,research-run metric only
+markets_improved_by_variant_delta,11,Long1+Long2 vs Long1-only
+markets_worsened_by_variant_delta,8,Long1+Long2 vs Long1-only
+long2_positive_pnl_markets,10,closed Long2-tag PnL
+long2_negative_pnl_markets,9,closed Long2-tag PnL
+implementation_readiness,closed / not ready,no live or production claim

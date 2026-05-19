@@ -1,0 +1,4 @@
+recommendation,status,rationale
+freeze_Long2_as_market_filter_research_only,current,"Positive aggregate evidence is offset by concentration, outlier sensitivity, and mixed market breadth"
+keep_Long1_as_long_only_base_candidate,current,Broader candidate state has shorts parked and Long2 not universally promoted
+next_action,recommended,Pause new diagnostics and use this scope note as the boundary for any future approved Long2 validation

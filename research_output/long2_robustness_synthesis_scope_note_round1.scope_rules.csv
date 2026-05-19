@@ -1,0 +1,15 @@
+scope_type,item,rule
+allowed,pre_declared_market_filter_validation_only,Market-filter work must be predeclared and include losing markets
+allowed,outlier_sensitivity_audit,Allowed only as research validation of concentration risk
+allowed,majors_only_vs_all_market_comparison,Allowed as research-only comparison; no external liquidity claims without data
+allowed,BTC_ETH_BNB_SOL_focused_holdout_check,Allowed only as holdout-style robustness check
+allowed,Long1_only_vs_Long1_plus_Long2_new_data_check,Allowed on genuinely new data with fixed rules
+allowed_with_separate_approval,paper_or_dry_run_after_performance_validation,Not part of current scope; requires separate explicit approval after performance validation
+forbidden,universal_Long2_promotion,Current evidence is insufficient
+forbidden,threshold_sweep_or_optimization,Would violate current research boundary
+forbidden,cherry_picking_positive_markets,Must include weak and losing markets
+forbidden,live_or_dry_run_planning_from_current_evidence,No implementation readiness
+forbidden,claiming_implementation_readiness,Readiness remains closed
+forbidden,ignoring_concentration_risk,Top-market and outlier concentration is central evidence
+forbidden,hiding_losing_markets,Weak markets must remain visible
+forbidden,merge_research_branch_as_production_strategy,Research branch is not production strategy

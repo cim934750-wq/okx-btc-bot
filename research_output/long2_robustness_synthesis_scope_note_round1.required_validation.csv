@@ -1,0 +1,7 @@
+requirement,reason,minimum_standard
+predeclared_market_filter_rule,Avoid cherry-picking after seeing winners,Filter criteria declared before rerun or holdout
+outlier_sensitivity_check,Top 10 positive trades contributed 83.85% of Long2 PnL,Show result with largest winners capped or removed descriptively
+majors_only_vs_all_market_comparison,Majors proxy supported Long2 while smaller/alts did not,Compare BTC/ETH/BNB/SOL against full basket without optimization
+new_data_or_holdout_validation,Current evidence may be sample-specific,Long1-only vs Long1+Long2 on genuinely new or reserved data
+drawdown_relevance_review,Long2 worsened both PnL and DD in 8 markets,Document markets where Long2 worsens downside
+no_performance_claim_boundary,Accessibility and positive aggregate do not prove deployability,Keep all claims research-only

@@ -1,0 +1,9 @@
+evidence,value,source,interpretation
+markets_worsened,8,candidate_decision,Breadth remains mixed
+long2_negative_pnl_markets,9,concentration_risk,Closed Long2-tag PnL was negative in nearly half the markets
+top3_concentration,BNBUSDT;ETHUSDT;XRPUSDT; 95.09%,concentration_risk,Aggregate Long2 gain is highly concentrated
+top10_trade_outlier_sensitivity,83.85%,long2_distribution,A small number of winning trades explains a large share of total Long2 PnL
+median_trade_negative,-4.17,long2_distribution,Typical Long2 trade was negative despite positive mean
+win_rate_low,41.10%,long2_distribution,Long2 wins less than half the time
+worsens_both_pnl_and_drawdown_markets,AAVEUSDT;ATOMUSDT;AVAXUSDT;DOGEUSDT;DOTUSDT;LINKUSDT;NEARUSDT;UNIUSDT,drawdown_relevance,Long2 worsened both PnL and DD in 8 markets
+smaller_alts_negative,Long2 PnL -333.56; positive/negative 3/5,market_family_summary,Smaller/alts proxy group does not support universal Long2
