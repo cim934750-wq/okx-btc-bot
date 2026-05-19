@@ -1,0 +1,14 @@
+scope_type,item,condition
+allowed,execute_predeclared_holdout_validation,after this plan; no tuning
+allowed_with_explicit_approval,fetch_or_update_new_4h_OHLCV_data,same symbols/timeframe; clean provenance
+allowed,BTC_only_vs_basket_comparison,research only; BTC alone not sufficient
+allowed,weak_market_failure_review_after_holdout,DOGE/DOT/UNI remain included
+allowed,outlier_sensitivity_audit_after_holdout,"descriptive only, no optimization"
+forbidden,parameter_optimization,not allowed
+forbidden,threshold_sweeping,not allowed
+forbidden,choosing_markets_after_seeing_results,not allowed
+forbidden,dropping_DOGE_DOT_UNI_without_predeclared_validation,not allowed
+forbidden,live_or_dry_run_planning_from_current_evidence,not allowed
+forbidden,implementation_readiness_claim,not allowed
+forbidden,merge_research_branch_as_production_strategy,not allowed
+forbidden,profitability_claim_from_in_sample_evidence,not allowed

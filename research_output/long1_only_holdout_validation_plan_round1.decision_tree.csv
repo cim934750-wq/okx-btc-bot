@@ -1,0 +1,5 @@
+validation_result,next_action,dry_run_boundary
+pass,create Long1-only candidate synthesis update,still no implementation claim; separate dry-run readiness plan only after explicit approval
+caution,run weak-market/outlier review,no dry-run
+fail,park Long1-only as current candidate,do not continue to implementation
+mixed_BTC_positive_basket_weak,decide whether BTC-only research path is justified,BTC-only success cannot override basket weakness without explicit BTC-only strategy decision

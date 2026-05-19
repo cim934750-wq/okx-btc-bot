@@ -1,0 +1,5 @@
+metric,current_reference,pass_threshold,caution_threshold,fail_threshold
+top3_market_contribution_pct,79.54%,<= 75%,> 75%,>= 90%
+top5_market_contribution_pct,105.29%,<= 100%,> 100%,sharp worsening plus weak breadth
+top10_positive_trade_contribution_pct,68.44%,<= 65%,> 65%,>= 80%
+skew_best_trade_dependency,skew 1.58; best trade 462.55,no material worsening,skew/outlier dependence persists,aggregate depends on a few outsized trades

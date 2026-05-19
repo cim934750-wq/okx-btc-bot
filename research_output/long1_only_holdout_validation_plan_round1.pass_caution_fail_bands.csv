@@ -1,0 +1,14 @@
+band,criterion,threshold,interpretation
+pass,aggregate_net_pnl,> 0,research pass gate only
+pass,aggregate_profit_factor,>= 1.10,requires margin above near-flat
+pass,BTCUSDT,net PnL >= 0 and PF >= 1.05,BTC must not fail
+pass,positive_markets,>= 10 of 19,minimum breadth
+pass,top3_concentration,<= 75%,must improve from current 79.54% concentration
+pass,top5_concentration,<= 100%,must avoid gains fully offset by losers
+pass,top10_positive_trade_contribution,<= 65%,must not worsen current 68.44% top-trade concentration
+caution,aggregate_positive_but_weak,PF 1.00 to < 1.10 or positive markets 8-9 of 19,requires weak-market/outlier review
+caution,concentration,"top3 > 75%, top5 > 100%, or top10 trades > 65%",positive aggregate not enough
+fail,aggregate_failure,net PnL <= 0 or PF < 1.00,park candidate
+fail,BTC_failure,BTCUSDT net PnL < 0,serious project-specific failure
+fail,breadth_failure,positive markets <= 7 of 19,market breadth insufficient
+fail,severe_concentration,top3 >= 90% or top10 positive trades >= 80%,aggregate too concentrated

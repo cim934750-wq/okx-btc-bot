@@ -1,0 +1,10 @@
+field,value,status
+allow_longs,True,frozen
+allow_shorts,False,frozen
+enable_add_on_entries,False,frozen
+Long1,enabled,candidate under test
+Long2,disabled,not part of candidate
+Short1,disabled,parked
+Short2,disabled,parked
+parameters,unchanged,no optimization / no sweep
+source,final unit-fixed source only,no source changes

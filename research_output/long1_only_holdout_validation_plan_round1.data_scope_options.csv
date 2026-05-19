@@ -1,0 +1,4 @@
+option,description,example_split,recommended_role,rules
+A_time_based_holdout,Split each market chronologically within existing 4h data,70% reference / 30% holdout; or pre-2023 vs post-2023 if dates allow,primary,no tuning on holdout; same 19 symbols; BTCUSDT_1h excluded
+B_new_data_extension,Add later OHLCV candles after current dataset end,"same symbols, same 4h timeframe, later candles only",secondary if fresh data can be obtained cleanly,no parameter changes after seeing new data
+C_market_holdout,Hold out a predeclared subset of symbols,must include weak markets and major markets,secondary,do not choose only winners; 19-market universe is small

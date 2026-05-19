@@ -1,0 +1,4 @@
+recommendation,status,rationale
+approve_only_predeclared_holdout_validation_as_next_possible_work,recommended,Long1-only is positive but concentrated; validation must be predeclared before seeing new results
+do_not_run_validation_in_this_task,completed_boundary,This task is plan-only
+keep_implementation_readiness_closed,current,No holdout/new-data validation has been run

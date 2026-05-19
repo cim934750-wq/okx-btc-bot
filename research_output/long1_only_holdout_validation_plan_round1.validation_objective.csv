@@ -1,0 +1,3 @@
+objective_id,objective,boundary,readiness_claim
+primary_question,Is Long1-only robust enough to remain the base research candidate after holdout/new-data validation?,plan only; no validation run,none
+candidate_state,Test the current Long1-only base candidate after shorts are parked and Long2 is market-filter research only,research-only candidate triage,closed / not ready

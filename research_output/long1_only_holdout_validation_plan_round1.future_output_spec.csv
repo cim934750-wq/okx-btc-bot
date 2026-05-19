@@ -1,0 +1,10 @@
+output_path,purpose
+research_output/long1_only_holdout_validation_round1.market_metrics.csv,per-market holdout metrics
+research_output/long1_only_holdout_validation_round1.aggregate_metrics.csv,aggregate holdout metrics
+research_output/long1_only_holdout_validation_round1.btcusdt_relevance.csv,BTCUSDT boundary check
+research_output/long1_only_holdout_validation_round1.market_breadth.csv,positive/negative market breadth and labels
+research_output/long1_only_holdout_validation_round1.concentration_risk.csv,top market and top trade concentration
+research_output/long1_only_holdout_validation_round1.weak_market_review.csv,DOGE/DOT/UNI and weak-market handling
+research_output/long1_only_holdout_validation_round1.pass_fail_decision.csv,predeclared pass/caution/fail application
+research_output/long1_only_holdout_validation_round1.recommendation.csv,research-only next step
+research_output/long1_only_holdout_validation_round1.note.md,human-readable validation note

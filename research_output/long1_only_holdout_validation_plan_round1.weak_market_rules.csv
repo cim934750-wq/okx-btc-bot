@@ -1,0 +1,6 @@
+market,rule,reason
+DOGEUSDT,must remain included,strong negative in prior Long1-only audit
+DOTUSDT,must remain included,strong negative in prior Long1-only audit
+UNIUSDT,must remain included,strong negative in prior Long1-only audit
+ALL_WEAK_MARKETS,do not remove after seeing results,prevent cherry-picking
+FUTURE_FILTERS,must be predeclared and separately validated,same validation cannot both discover and validate exclusion

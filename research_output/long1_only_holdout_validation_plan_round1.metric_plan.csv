@@ -1,0 +1,13 @@
+metric,scope,purpose
+net_pnl,"aggregate, market, BTCUSDT, family proxy",directional research outcome
+profit_factor,"aggregate, market, BTCUSDT, family proxy",gross profit/loss balance
+max_drawdown_pct,"aggregate, market, BTCUSDT",downside robustness
+win_rate,"aggregate, market, BTCUSDT",trade outcome breadth
+avg_trade,"aggregate, market, BTCUSDT",average trade quality
+median_trade,"aggregate, market, BTCUSDT",typical trade quality
+trade_count,"aggregate, market, BTCUSDT",sample size and activity
+positive_negative_market_count,19-market basket,market breadth
+top3_pnl_concentration_pct,market PnL contribution,concentration risk
+top5_pnl_concentration_pct,market PnL contribution,concentration risk
+top10_positive_trade_contribution_pct,trade-level distribution,outlier risk
+DOGE_DOT_UNI_metrics,weak markets,verify weak markets do not get hidden
