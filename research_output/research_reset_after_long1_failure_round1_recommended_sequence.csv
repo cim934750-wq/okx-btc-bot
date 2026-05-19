@@ -1,0 +1,7 @@
+step,phase,recommended_action,execute_now,notes
+1,reset,Archive the Long1-only failure boundary and do not reopen it as a base candidate.,yes,This note performs the reset only.
+2,baseline,Create a no-trade / capital preservation baseline comparison plan.,no,Sets the minimum bar before new strategy work.
+3,hypothesis_selection,Choose exactly one next hypothesis in a predeclared note.,no,"Candidates include BTC-only, regime-filtered, cooldown, anti-chase, ATR-percentile, family split, or weak-market framework."
+4,validation_plan,Define data scope and pass/caution/fail gates before testing.,no,"No cherry-picking, tuning, or market removal after seeing results."
+5,execution,Run only the approved validation for the selected hypothesis.,no,No live/dry-run or implementation planning.
+6,decision,"If the selected hypothesis fails, park it; if it passes, create a synthesis update without claiming readiness.",no,Readiness discussion requires separate explicit approval.

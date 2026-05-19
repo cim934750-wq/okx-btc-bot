@@ -1,0 +1,12 @@
+category,item,rule
+allowed,postmortem-only analysis,May summarize failures and boundaries without new tests or source changes.
+allowed,separately approved BTC-only research path,"Only with a fresh hypothesis, predeclared gates, and no claim that BTC-only rescues the failed basket."
+allowed,new candidate research with fresh predeclared gates,"Must define candidate, data, pass/caution/fail criteria, and forbidden overfitting actions before execution."
+allowed,weak-market failure review without cherry-picking,"May study DOGE/DOT/UNI failure modes, but cannot remove them from the failed validation after the fact."
+allowed,no-trade / capital preservation baseline comparison,May use as a conservative research benchmark before advancing any new candidate.
+forbidden,reopen Long1-only as base candidate,Closed by failed predeclared holdout validation.
+forbidden,dry-run or live trading planning,Not authorized; strategy readiness is closed even though infrastructure is validated.
+forbidden,optimization or threshold sweep,Would overfit after a failed holdout unless a separate research design explicitly permits bounded exploration.
+forbidden,post-result market removal,Do not remove DOGE/DOT/UNI or any weak market after seeing validation results.
+forbidden,profitability or implementation-readiness claim,Failed holdout and dry-run evidence block readiness claims.
+forbidden,modify PR #1/#2/#3,This reset note is independent research output only.
