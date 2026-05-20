@@ -1,0 +1,8 @@
+closed_item,status,reason
+Long1-only base candidate,closed,Failed predeclared holdout before cooldown and remains parked.
+D2 dry-run continuation,closed,Negative reference; not a candidate for continuation.
+D6 dry-run continuation,closed,Negative early-stop reference; not a candidate for continuation.
+Frozen 6-candle cooldown hypothesis,closed,Failed predeclared cooldown validation and worsened failed Long1 holdout.
+Cooldown dry-run or live planning,closed,Research gate failed; no dry-run/live planning authorized.
+Production implementation from this path,closed,No implementation-readiness evidence.
+Profitability claim,closed,Validation failed; no profitability claim is supported.

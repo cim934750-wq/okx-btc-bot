@@ -1,0 +1,9 @@
+failure_reason,evidence,interpretation
+aggregate_holdout_negative,holdout_net_pnl=-91.46,Fails no-trade gate because capital preservation beats negative active trading.
+profit_factor_below_one,holdout_pf=0.9725,Remaining trades did not produce positive gross edge after costs.
+BTCUSDT_boundary_failed,BTCUSDT_net_pnl=-73.14; BTCUSDT_pf=0.7461,BTCUSDT failure blocks advancement for this project context.
+fewer_trades_not_edge,trades=360 -> 285; skipped_entries=86; commission_reduction=52.03,Activity and fee reduction did not translate into improved expectancy.
+worse_than_failed_long1_holdout,failed_Long1=-69.89; cooldown=-91.46; delta=-21.57,Cooldown worsened the already failed reference.
+worse_than_D2_reference,D2=-51.92; cooldown=-91.46,Cooldown was worse than the negative D2 reference and still failed.
+DOGE_remained_weak,DOGE_net_pnl=-364.54; DOGE_pf=0.1480,Weak markets cannot be hidden or removed after the result.
+isolated_strength_not_rescue,UNI_net_pnl=402.58; DOT_net_pnl=7.81; DOT_trades=3,UNI strength and tiny-sample DOT positivity do not overcome aggregate and BTC failure.

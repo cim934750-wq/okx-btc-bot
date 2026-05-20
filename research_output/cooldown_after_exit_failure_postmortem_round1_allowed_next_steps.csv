@@ -1,0 +1,9 @@
+next_step,allowed_status,boundary
+No-trade baseline default,allowed,Capital preservation remains preferred until a candidate beats the predeclared gate.
+Anti-chase EMA/ATR distance filter,allowed_as_fresh_hypothesis_only,"Requires separate selection, frozen rule, and predeclared validation before testing."
+BTC-only path,allowed_only_with_separate_gate,Must not use BTC-only hope to rescue basket failure after the fact.
+New hypothesis research,allowed,Must start with fresh hypothesis selection and plan; no parameter sweep.
+Postmortem-only analysis,allowed,Can explain failures without running new validation.
+Cooldown length sweep,forbidden,Would violate frozen-hypothesis boundary and invite overfitting.
+Drop DOGE/DOT/UNI after result,forbidden,Post-result market removal is cherry-picking.
+Dry-run or live planning,forbidden,Implementation readiness remains closed.
