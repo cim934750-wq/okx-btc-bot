@@ -1,0 +1,8 @@
+assessment_item,finding,selection_impact
+BTC_only_rescue_bias,BTC-only after failed basket could cherry-pick scope after seeing losses.,Counts against immediate validation.
+BTCUSDT_repeated_failures,"BTCUSDT failed Long1-only, cooldown, and anti-chase.",Strong reason to pause.
+no_trade_gate,All active candidates lost against no-trade/default capital preservation.,BTC-only must prove positive after fees before any consideration.
+buy_and_hold_context,BTC-only active trading must also face passive BTC opportunity-cost comparison.,"Requires a future plan, not immediate execution."
+failed_references,D2/D6/cooldown/anti-chase are negative references.,Cannot be used as implementation support.
+trade_count_requirement,BTC-only may have limited trade count in holdout.,Future plan must guard against tiny-sample illusion.
+current_selection,pause_no_trade_default,BTC-only is not selected for validation now.

@@ -1,0 +1,11 @@
+plan_requirement,required_if_BTC_only_revisited,boundary
+frozen_candidate_definition,Specify exact BTC-only strategy source/logic before testing.,Cannot reuse failed Long1/cooldown/anti-chase as implementation candidates.
+data_scope,BTCUSDT 4h only by default; no BTCUSDT_1h unless separately justified.,No new OHLCV unless explicitly approved.
+reference_holdout_split,Chronological split or genuinely new-data extension defined before results.,No tuning on holdout.
+no_trade_comparison,BTC-only must beat zero active PnL after fees/drawdown.,No-trade remains default.
+buy_and_hold_BTC_comparison,Compare active BTC-only against passive BTC over the same period.,Opportunity cost must be visible.
+metrics,"Net PnL, PF, max DD, win rate, trade count, avg/median trade, concentration/outlier dependence, fees, BTC buy-and-hold return/DD.",No profitability claim from partial metrics.
+pass_gate,"Positive BTCUSDT holdout after fees, PF >= 1.10, controlled DD, enough trade count, no outlier dependence, better than no-trade and risk-adjusted buy-and-hold context.","Research gate only, not implementation gate."
+caution_gate,"Positive but PF 1.00-1.10, small sample, or underperforms buy-and-hold on risk-adjusted basis.",No dry-run.
+fail_gate,"BTCUSDT negative, PF < 1.00, tiny-sample illusion, outlier dependence, or underperforms no-trade.",Park immediately.
+forbidden_work,"No optimization, threshold sweep, parameter changes, dry-run/live planning, or implementation-readiness claim.",Must remain research-only.

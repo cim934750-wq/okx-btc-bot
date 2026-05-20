@@ -1,0 +1,7 @@
+risk,why_it_matters,control_if_revisited
+BTC_only_rescue_bias,Selecting BTC after basket failure can be a post-result rescue attempt.,Require a fresh premise and predeclared plan before any validation.
+overfitting_after_multiple_failed_filters,The research chain has already tried repairs that failed.,"No threshold sweeps, no parameter changes, no reusing failed filters."
+selecting_BTC_because_basket_failed,Narrowing the universe after seeing failures can hide broader weakness.,"Document why BTC-only is a distinct strategy, not a basket rescue."
+opportunity_cost_vs_buy_and_hold,BTC-only active trading may underperform passive BTC even if positive.,Compare against buy-and-hold BTC over identical windows.
+small_sample_or_regime_specific_success,BTC holdout may produce too few trades or one-regime success.,Set minimum trade count and outlier/concentration checks.
+implementation_leakage,A BTC-only note could be mistaken for readiness.,State implementation readiness remains closed.

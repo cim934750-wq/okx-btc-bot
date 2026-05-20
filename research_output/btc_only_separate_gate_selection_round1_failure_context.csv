@@ -1,0 +1,7 @@
+path,aggregate_result,BTCUSDT_result,status,interpretation
+Long1-only holdout,net_pnl=-69.89; PF=0.9832; positive_markets=8/19,net_pnl=-50.21; PF=0.8475,failed,BTCUSDT failed within the base candidate.
+D2 dry-run reference,pnl=-51.92 USDT,not a validated BTC-only gate,failed_reference,"Negative operational reference, not a strategy proof."
+D6 dry-run reference,pnl=-103.78 USDT,not a validated BTC-only gate,failed_reference,"Negative early-stop reference, not a strategy proof."
+Cooldown validation,net_pnl=-91.46; PF=0.9725,net_pnl=-73.14; PF=0.7461,failed,BTCUSDT worsened under the repair hypothesis.
+Anti-chase validation,net_pnl=-225.26; PF=0.9445,net_pnl=-82.62; PF=0.7259,failed,BTCUSDT worsened again; anti-chase is parked.
+No-trade baseline,"0.00 active PnL, no strategy fees/drawdown",0.00 active PnL,default,Preferred over negative active trading.

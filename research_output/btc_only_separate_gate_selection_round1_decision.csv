@@ -1,0 +1,6 @@
+decision_field,value,reason
+selected_decision,pause_no_trade_default,BTCUSDT failed repeatedly and all active candidates lost to no-trade; immediate BTC-only validation is not justified.
+BTC_only_validation_now,no,Would risk rescue bias after failed basket and failed BTCUSDT sub-results.
+BTC_only_plan_later,allowed_only_after_explicit_approval,"Must be separate, frozen, and compare against no-trade and buy-and-hold."
+implementation_readiness,closed_not_ready,No candidate has passed predeclared validation.
+dry_run_live_planning,forbidden,No dry-run/live continuation is authorized.
