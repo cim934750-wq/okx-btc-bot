@@ -1,0 +1,7 @@
+comparison_item,current_evidence,anti_chase_relevance,selection_judgment
+no_trade_baseline,No-trade preserves capital when active strategies lose after fees.,Anti-chase must beat no-trade with positive fee-adjusted holdout PnL and controlled drawdown.,baseline_gate_required
+failed_Long1_only_holdout,holdout_pnl=-69.89; pf=0.9832; BTCUSDT=-50.21; BTC_PF=0.8475,Targets late/stretched entries that may have driven stop/EMA20 exits and negative transfer.,fresh_hypothesis_not_revival
+D2_dry_run_reference,D2_pnl=-51.92,May address post-entry whipsaw if D2 losses were linked to chasing overextended moves.,reference_only
+D6_dry_run_reference,D6_pnl=-103.78,May reduce overextended entries but cannot claim readiness from comparison alone.,reference_only
+failed_cooldown,cooldown_pnl=-91.46; pf=0.9725; trades=360 -> 285; commission_reduction=52.03,Cooldown reduced trades after exits; anti-chase shifts focus to entry quality before bad trades occur.,selected_for_plan
+BTCUSDT_boundary,cooldown_BTCUSDT=-73.14; cooldown_BTC_PF=0.7461,Future validation must keep BTCUSDT visible and require BTC boundary pass if BTC-relevant.,mandatory_gate

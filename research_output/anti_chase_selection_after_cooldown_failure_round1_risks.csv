@@ -1,0 +1,8 @@
+risk,why_it_matters,control_required_in_next_plan
+threshold_overfitting,EMA/ATR distance thresholds can be tuned to remove historical losers.,Freeze one distance formula and threshold before validation; no sweep.
+historical_loser_filtering,A filter could accidentally select only known losing samples after the fact.,Use predeclared chronological holdout and retain all 19 markets.
+trade_reduction_without_edge,Cooldown showed fewer trades and lower fees can still worsen PnL.,"Require positive holdout PnL, PF gate, and comparison to failed references."
+BTCUSDT_still_failing,BTC failure was decisive in Long1 and cooldown validations.,Keep BTCUSDT visible with explicit BTC boundary.
+market_family_concentration,Prior candidates showed concentration and mixed market-family behavior.,"Report majors, large alts, smaller/alts and concentration metrics."
+per_market_tuning,Different thresholds by symbol would invite cherry-picking.,Forbid per-market tuning unless a separate predeclared framework is approved.
+Long1_revival_by_renaming,The parked Long1-only path must not be reopened implicitly.,Frame anti-chase as a fresh hypothesis tested against failed Long1 reference.

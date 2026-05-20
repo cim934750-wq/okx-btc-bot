@@ -1,0 +1,2 @@
+selected_hypothesis,selection_status,purpose,failure_mode_addressed,not_authorized
+Anti-chase EMA/ATR distance filter,selected_for_future_predeclared_validation_plan_only,Avoid long entries when price is stretched too far from EMA20/EMA60 relative to ATR.,late entries; post-entry whipsaw; stop-loss after stretched entry; EMA20 exit losses after overextended long entries,"No validation, backtest, parameter change, source patch, dry-run, or live plan is authorized by this note."

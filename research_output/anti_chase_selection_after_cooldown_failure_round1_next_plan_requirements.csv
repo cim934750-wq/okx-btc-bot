@@ -1,0 +1,12 @@
+plan_requirement,must_freeze_or_define,boundary
+distance_formula,Predefine formula such as price distance from selected EMA divided by ATR; examples only until plan freezes exact rule.,No formula changes after seeing results.
+reference_EMA,"Choose EMA20, EMA60, or a predeclared combination before validation.",No switching reference EMA post-result.
+ATR_period,Freeze ATR period used in denominator before validation.,No ATR period sweep.
+max_allowed_distance,Freeze one maximum allowed EMA/ATR distance threshold before validation.,No threshold sweep or per-market threshold.
+candidate_scope,"Long-only research candidate with anti-chase entry filter; no Long2, no shorts unless explicitly planned otherwise.",Do not revive Long1-only as implementation candidate.
+data_scope,"Same 19 local 4h markets, chronological split, BTCUSDT visible, DOGE/DOT/UNI included.",No post-result market removal.
+metrics,"Net PnL, PF, max DD, win rate, trade count, skipped entries, fee impact, BTCUSDT, DOGE/DOT/UNI, concentration, market-family proxy.",Reduced trades alone is not pass evidence.
+no_trade_comparison,Compare active filtered strategy to no-trade capital preservation.,No-trade remains default unless beaten after fees.
+failed_reference_comparison,"Compare against failed Long1 holdout, D2, D6, and cooldown references.",References do not replace pass gates.
+pass_caution_fail_bands,Set positive holdout/PF/BTC/breadth/concentration gates before running.,No gate changes after seeing results.
+forbidden_work,"No optimization, threshold sweep, market cherry-picking, dry-run/live planning, implementation-readiness claim.",Plan-only until explicitly approved.
