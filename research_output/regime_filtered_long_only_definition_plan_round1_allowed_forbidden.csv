@@ -1,0 +1,12 @@
+type,item,detail,reason
+allowed,future_validation_after_explicit_approval,Execute exactly this frozen regime definition in a separate validation task if approved.,This plan only defines the candidate.
+allowed,research_only_runner_if_needed,A future research-only diagnostic runner may implement the regime gate without production source changes.,Keeps production untouched.
+allowed,blocked_entry_accounting,Count blocked entries by regime reason in future validation.,Required to know whether the filter changes behavior.
+allowed,benchmark_comparison,Compare against no-trade and passive BTC buy-and-hold.,No-trade remains default and BTC is the anchor.
+forbidden,validation_now,Do not run backtests or validation from this definition task.,Plan-only boundary.
+forbidden,threshold_sweep,"Do not test multiple EMA periods, slope lookbacks, rolling windows, or drawdown thresholds.",Would convert definition into optimization.
+forbidden,post_result_threshold_change,Do not change regime thresholds after seeing results.,Prevents overfitting.
+forbidden,weak_market_removal,"Do not remove DOGE, DOT, UNI, BTCUSDT, or other markets after results.",Prevents cherry-picking.
+forbidden,BTC_only_switch_after_basket,Do not select BTC-only after basket results inside the same validation.,Avoids rescue bias.
+forbidden,dry_run_live_planning,"No dry-run restart, live trading, or deployment planning.",No implementation readiness.
+forbidden,implementation_claim,Do not claim production or implementation readiness.,Candidate must pass future validation first and still require confirmation.

@@ -1,0 +1,12 @@
+component,value,formula_or_rule,rationale
+anchor_symbol,BTCUSDT,Use BTCUSDT 4h close as primary regime anchor.,BTC regime is broad market proxy and remains visible after repeated BTC failures.
+timeframe,4h,Use closed 4h candles only.,Matches prior local validation timeframe.
+ema_period,200,"btc_ema200 = EMA(close, period=200, adjust=False, min_periods=200).",Broad standard trend filter; not tuned here.
+slope_lookback,24 candles,ema200_slope_24 = btc_ema200[t] - btc_ema200[t-24].,4 days of 4h candles; checks broad trend is rising.
+rolling_high_window,180 candles,"rolling_high_180 = rolling max(close, 180 candles, min_periods=180).",Roughly 30 days of 4h candles; structural severe-drawdown context.
+drawdown_threshold,-20.0 percent,drawdown_from_rolling_high_pct = (close / rolling_high_180 - 1) * 100; require >= -20.0.,Conservative crypto severe-drawdown guard; not fitted from results.
+risk_on_condition_1,close_above_ema200,BTCUSDT close > btc_ema200.,Avoid long basket entries in broad BTC downtrend.
+risk_on_condition_2,positive_ema200_slope,ema200_slope_24 > 0.,Avoid flat/down broad trend even if close is temporarily above EMA200.
+risk_on_condition_3,not_severe_drawdown,drawdown_from_rolling_high_pct >= -20.0.,Avoid severe recent BTC drawdown regimes.
+risk_on_final,all_three_conditions_true,risk_on = close > ema200 AND ema200_slope_24 > 0 AND drawdown_from_rolling_high_pct >= -20.0.,"Requires trend, slope, and drawdown checks together."
+warmup_missing_rule,risk_off,"If any required field is unavailable, classify as risk_off and block new entries.",No fake or inferred regime states.

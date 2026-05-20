@@ -1,0 +1,11 @@
+field,value,status,notes
+candidate_name,regime_filtered_long_only_candidate,frozen,Fresh research hypothesis only; not implementation candidate.
+candidate_role,future_executable_definition_plan,frozen,Created because tournament marked regime candidate not executable.
+allow_longs,True,frozen,Long-only research structure.
+allow_shorts,False,frozen,Short side remains parked.
+enable_add_on_entries,False,frozen,Long2 remains disabled; no add-on entries.
+entry_behavior,new long entries allowed only when BTCUSDT 4h regime is risk_on,frozen,Blocks entries only; does not force exits.
+exit_stop_sizing_behavior,unchanged from final unit-fixed research source,frozen,No exit/stop/sizing changes in future validation.
+market_universe,same 19 local 4h markets,frozen,DOGE/DOT/UNI remain included and visible.
+BTCUSDT_1h,excluded,frozen,Only BTCUSDT 4h is regime anchor.
+dry_run_live,forbidden,frozen,No dry-run/live planning from this definition.

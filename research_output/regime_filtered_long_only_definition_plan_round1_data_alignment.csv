@@ -1,0 +1,8 @@
+rule,definition,action_if_missing,lookahead_risk_control
+timestamp_basis,Use UTC closed-candle timestamps for BTCUSDT and every market.,NA,No future candle is used.
+same_timestamp_alignment,"If market candle timestamp equals a BTCUSDT 4h timestamp, use that BTCUSDT regime value.",Use most recent prior BTCUSDT regime candle.,Same closed candle only.
+prior_timestamp_alignment,"If exact BTCUSDT timestamp is missing, use most recent prior BTCUSDT 4h closed candle at or before market timestamp.","If no prior BTCUSDT candle exists, risk_off.",Never use later BTCUSDT candle.
+warmup_alignment,"Before EMA200/slope/rolling-high values exist, BTC regime is not available.",risk_off; block new entries.,Avoids inferred warmup regime.
+BTCUSDT_self_filter,BTCUSDT market uses its own BTCUSDT 4h regime filter.,risk_off.,Same alignment as other markets.
+missing_BTCUSDT_data,Missing anchor data means regime cannot be confirmed.,risk_off; block entries and count missing-regime block reason.,Prevents fake/inferred OHLCV.
+entry_only_filter,Filter blocks new long entries only.,Open positions are not force-closed by regime state.,Preserves existing exit/stop/sizing behavior.

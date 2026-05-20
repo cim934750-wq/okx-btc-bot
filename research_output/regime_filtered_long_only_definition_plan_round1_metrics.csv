@@ -1,0 +1,15 @@
+metric,scope,purpose
+net_PnL,"aggregate, market, BTCUSDT, DOGE/DOT/UNI",Primary fee-aware active result versus no-trade.
+profit_factor,"aggregate, market, BTCUSDT",PF gate; PF below 1.00 fails.
+max_drawdown,aggregate and market where available,Risk check versus no-trade and failed references.
+win_rate,aggregate and market,"Trade-quality context, not sufficient alone."
+trade_count,"aggregate, market, BTCUSDT",Activity and sample-size check.
+blocked_entries,aggregate and market,Measure how often regime filter blocks candidate entries.
+blocked_entries_by_regime_reason,"close_below_ema200, nonpositive_slope, severe_drawdown, missing_or_warmup",Verify filter behavior and diagnose gate effect.
+active_regime_exposure,percentage of candles risk_on by market and aggregate,Ensure candidate has sufficient opportunity and does not simply stop trading.
+BTCUSDT_result,BTCUSDT,BTC-relevant boundary; BTC failure is serious.
+DOGE_DOT_UNI_result,weak-market review,Keep weak markets visible; no post-result removal.
+no_trade_comparison,aggregate holdout,Candidate must beat capital preservation.
+buy_and_hold_BTC_comparison,BTCUSDT holdout window,Opportunity-cost benchmark for BTC-relevant regime anchor.
+failed_reference_comparison,"Long1, D2, D6, cooldown, anti-chase",Candidate must not merely lose less than failed paths.
+concentration,top3/top5 market contribution and top10 positive trade contribution,Detect market or outlier dependence.

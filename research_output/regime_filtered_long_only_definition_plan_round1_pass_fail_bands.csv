@@ -1,0 +1,9 @@
+gate,pass,caution,fail,notes
+no_trade_comparison,net PnL > 0 after fees,slightly positive but weak after costs,net PnL <= 0,No-trade remains default until beaten.
+aggregate_holdout,aggregate holdout net PnL positive,positive but fragile or tiny,aggregate holdout negative,Negative aggregate cannot pass.
+profit_factor,PF >= 1.10,1.00 <= PF < 1.10,PF < 1.00,Matches no-trade baseline gate.
+BTCUSDT_boundary,BTCUSDT non-negative and PF >= 1.05,BTCUSDT weak but not clearly negative,BTCUSDT negative for BTC-relevant framing,Regime anchor is BTC-relevant.
+basket_breadth,at least 10/19 positive markets by default,8-9 positive markets or many flat/no-trade markets,<= 7 positive markets or broad deterioration,Avoid isolated market dependence.
+concentration,"top3 <= 75%, top5 <= 100%, top10 positive trades <= 65% when aggregate positive",positive but above concentration caution bands,aggregate negative or top3 >= 90% / top10 trades >= 80%,Positive aggregate is weak if concentrated.
+expectancy_improvement,avg/median trade and PF improve versus failed Long1 without hiding weak markets,fewer trades but mixed expectancy,filter merely reduces trades or fees without improved expectancy,Cooldown and anti-chase already failed this trap.
+failed_reference_comparison,"beats Long1 holdout, D2, D6, cooldown, and anti-chase while also beating no-trade",beats failed references but not no-trade or BTC gate,resembles or underperforms failed references,Beating failed Long1 alone is insufficient.
