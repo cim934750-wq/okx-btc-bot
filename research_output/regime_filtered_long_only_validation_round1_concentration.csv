@@ -1,0 +1,2 @@
+scope,aggregate_net_pnl,positive_market_pnl_sum,top3_markets,top3_pnl,top3_pct_of_total_if_positive,top5_markets,top5_pnl,top5_pct_of_total_if_positive,top10_positive_trade_pnl,top10_positive_trade_pct_of_total_if_positive,interpretation
+holdout,-266.26047514550737,829.3804626729107,UNIUSDT|AAVEUSDT|TRXUSDT,725.7487042897992,NA_negative_aggregate,UNIUSDT|AAVEUSDT|TRXUSDT|BNBUSDT|FILUSDT,821.5741119560989,NA_negative_aggregate,767.8113828491419,NA_negative_aggregate,concentration cannot be pass evidence when aggregate holdout is negative

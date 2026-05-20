@@ -1,0 +1,2 @@
+market,scope,net_pnl,profit_factor,max_drawdown_pct,win_rate,trade_count,raw_blocked_starter_signals,actual_blocked_entries,btc_boundary,assessment
+BTCUSDT,holdout,-30.08284111713874,0.9020517935100748,0.15812705717832554,65.9090909090909,44,0,0,fail,BTCUSDT is BTC-relevant because regime anchor is BTCUSDT; negative BTC result fails boundary.

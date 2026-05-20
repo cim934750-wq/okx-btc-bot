@@ -1,0 +1,4 @@
+market,included,net_pnl,profit_factor,max_drawdown_pct,win_rate,trade_count,raw_blocked_starter_signals,actual_blocked_entries,assessment
+DOGEUSDT,yes,-287.13657997443806,0.35862000088491885,0.313231592071872,57.14285714285714,21,0,0,visible; not removed; result included in aggregate decision
+DOTUSDT,yes,7.806350716811721,1.1486731429857848,0.09370317190970923,66.66666666666666,3,0,0,visible; not removed; result included in aggregate decision
+UNIUSDT,yes,436.61621891245886,2.226722115976799,0.1533192466234068,76.92307692307693,39,2,1,visible; not removed; result included in aggregate decision

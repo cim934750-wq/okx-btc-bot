@@ -1,0 +1,4 @@
+decision_field,value,evidence,interpretation
+pass_caution_fail,fail,aggregate_holdout_negative_or_not_positive|profit_factor_below_1|BTCUSDT_negative|basket_breadth_below_10_positive_markets|nonpositive_avg_trade_expectancy|regime_filter_blocked_entries_but_did_not_beat_no_trade,No dry-run/live; implementation remains closed.
+recommendation,park_regime_filtered_candidate_keep_no_trade_default,holdout_net_pnl=-266.26047514550737; PF=0.9317578752397165; BTCUSDT=-30.08284111713874,No-trade remains default unless future explicitly approved path passes.
+implementation_readiness,closed_not_ready,research validation only,No implementation or dry-run claim.

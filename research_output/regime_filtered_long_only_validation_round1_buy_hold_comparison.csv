@@ -1,0 +1,2 @@
+scope,candidate,candidate_net_pnl,passive_BTC_start,passive_BTC_end,passive_BTC_start_close,passive_BTC_end_close,passive_BTC_return_pct,passive_BTC_normalized_pnl_per_100k,passive_BTC_max_close_to_close_dd_pct,interpretation
+holdout,regime_filtered_long_only,-266.26047514550737,2024-02-05 04:00:00+00:00,2026-04-12 12:00:00+00:00,43071.88,70976.19,64.78544702483384,64785.44702483384,49.83697178895503,passive BTC is opportunity-cost benchmark only; active candidate must first beat no-trade and own gates
