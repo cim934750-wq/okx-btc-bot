@@ -1,0 +1,9 @@
+closed_item,status,reason
+Long1-only base candidate,closed,Failed predeclared holdout validation and remains parked.
+D2 dry-run continuation,closed,Negative reference; not a candidate for continuation.
+D6 dry-run continuation,closed,Negative early-stop reference; not a candidate for continuation.
+Frozen 6-candle cooldown hypothesis,closed,Failed predeclared cooldown validation and remains parked.
+Frozen anti-chase EMA/ATR distance filter,closed,Failed predeclared anti-chase validation.
+Dry-run/live planning,closed,No candidate passed the no-trade gate.
+Production implementation path,closed,Implementation readiness remains closed.
+Profitability claim,closed,Validation failed; no profitability claim is supported.

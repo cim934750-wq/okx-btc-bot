@@ -1,0 +1,10 @@
+next_step,allowed_status,boundary
+No-trade baseline default,allowed,Capital preservation remains preferred unless a fresh hypothesis beats the gate.
+Pause research,recommended_default,No current candidate deserves advancement.
+New hypothesis inventory,allowed_after_explicit_approval,Inventory only; do not immediately test or select multiple hypotheses for execution.
+BTC-only path,allowed_only_with_separate_predeclared_gate,Must not be used to rescue failed basket candidates after the fact.
+Weak-market/failure analysis,allowed,Must retain DOGE/DOT/UNI visibility and avoid cherry-picking.
+Postmortem-only analysis,allowed,Can explain failures without running new validation.
+Anti-chase threshold sweep,forbidden,Would violate the frozen threshold and invite overfitting.
+Revive Long1/cooldown/anti-chase as implementation candidate,forbidden,All failed predeclared validation gates.
+Dry-run/live planning,forbidden,Implementation readiness remains closed.

@@ -1,0 +1,11 @@
+failure_reason,evidence,interpretation
+aggregate_holdout_negative,holdout_net_pnl=-225.26,Fails no-trade gate because active trading lost after fees.
+profit_factor_below_one,holdout_pf=0.9445,PF below 1.00 indicates negative active edge.
+BTCUSDT_boundary_failed,BTCUSDT_net_pnl=-82.62; BTCUSDT_pf=0.7259,BTCUSDT failure blocks advancement in this project context.
+too_few_skipped_entries,actual_skipped_entries=12; raw_blocked_signals=9,The filter touched too little material to materially improve the system.
+fee_reduction_not_edge,trades=360 -> 346; commission_reduction=9.11; delta_vs_failed_Long1=-155.37,Slightly lower activity and fees did not improve expectancy.
+worse_than_failed_Long1,delta_net_pnl=-155.37,Anti-chase worsened the already failed Long1 holdout reference.
+worse_than_failed_cooldown,delta_net_pnl=-133.80,Anti-chase did not improve on the parked cooldown hypothesis.
+worse_than_D2_D6_references,delta_vs_D2=-173.34; delta_vs_D6=-121.48,It underperformed both negative dry-run references.
+DOGE_remained_weak,DOGE_net_pnl=-287.14; DOGE_pf=0.3586,DOGE weakness remains visible and cannot be hidden.
+isolated_strength_not_rescue,DOT_net_pnl=7.81; UNI_net_pnl=380.59,DOT/UNI pockets do not overcome aggregate and BTC failure.
