@@ -1,0 +1,9 @@
+area,item,scope,purpose,boundary
+monitoring_definition,observation_only,"No entries, exits, orders, paper trading, dry-run service, or live service.",Preserve context without creating trading activity.,Monitoring cannot produce signals or readiness claims.
+benchmark,no_trade_baseline,Capital preservation with no strategy fees and no strategy drawdown.,Default reference after failed active candidates.,Opportunity cost may be noted but does not justify negative-edge trading.
+benchmark,buy_and_hold_btc,Passive BTC benchmark over matching observation windows.,Opportunity-cost context for BTC-relevant future hypotheses.,Passive benchmark does not validate active strategy edge.
+market_context,BTCUSDT_4h_trend_context,Observe 4h trend/range context without generating entries.,Keep BTC-relevant context visible after repeated BTCUSDT failures.,No BTC-only validation or trading decision is implied.
+market_context,volatility_regime,Track volatility expansion/compression observations.,Support future hypothesis design if research is explicitly reopened.,No threshold selection or sweep.
+market_context,drawdown_windows,Observe passive benchmark drawdown/recovery windows.,Frame risk context for future predeclared gates.,No operational action.
+market_context,trend_range_candidates,Record candidate regime-classification observations.,Idea inventory only.,"No model, signal, or validation execution."
+basket_context,market_breadth,"If basket research is revisited, observe broad market context.",Avoid over-reliance on isolated market pockets.,No post-result market cherry-picking.

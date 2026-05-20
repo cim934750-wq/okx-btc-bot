@@ -1,0 +1,11 @@
+type,item,detail,reason
+allowed,periodic_benchmark_notes,Weekly or monthly text-only notes on passive benchmarks and context.,Keeps research context without trading.
+allowed,regime_observations,Non-signal observations about trend/range/volatility context.,May inform later hypothesis selection.
+allowed,future_hypothesis_ideas,Ideas may be inventoried but not validated without a separate plan.,Maintains discipline after repeated failures.
+allowed,data_quality_notes,Document missing/dirty data or benchmark window limitations.,Improves future research hygiene.
+forbidden,trade_signals,"No entries, exits, alerts, or signal generation.",Monitoring-only plan is not a strategy.
+forbidden,paper_or_dry_run,"No paper trading, dry-run service, or bot restart.",No candidate passed validation.
+forbidden,live_readiness,No live-readiness or production-readiness claim.,Implementation readiness is closed.
+forbidden,parameter_or_threshold_work,"No optimization, threshold sweep, or strategy parameter change.",This plan does not test a strategy.
+forbidden,reopening_failed_paths,"Do not revive Long1-only, D2, D6, cooldown, anti-chase, or BTC-only as implementation candidates.",Each is closed or paused by prior research decisions.
+forbidden,market_cherry_picking,No post-result removal of weak markets or isolated winner selection.,Avoid overfitting and rescue bias.

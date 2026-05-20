@@ -1,0 +1,4 @@
+cadence,use,contents,forbidden
+weekly,Optional compact benchmark note.,"BTCUSDT 4h context, passive BTC change, no-trade baseline reminder, volatility regime observations, data-quality notes.","No intraday action, no entries/exits, no dry-run restart."
+monthly,Preferred conservative monitoring cadence if no active research is approved.,"Benchmark window summary, drawdown/recovery context, regime observations, hypothesis inventory updates.",No strategy validation or production-readiness claim.
+event_driven,Only for data-quality or explicit user-approved hypothesis planning.,Document event context and whether it suggests a future predeclared research question.,No immediate trading or post-event threshold selection.

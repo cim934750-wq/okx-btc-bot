@@ -1,0 +1,9 @@
+trigger,requirement,status
+fresh_hypothesis_proposed,A new hypothesis must be explicitly stated before any research resumes.,required
+predeclared_selection_note,Selection must explain why the hypothesis addresses prior failures and why alternatives are deferred.,required
+validation_plan_before_validation,"Metrics, data scope, pass/caution/fail bands, no-trade comparison, and forbidden work must be frozen before testing.",required
+no_trade_comparison,Future active candidate must beat no-trade after fees and drawdown.,required
+buy_and_hold_comparison_if_BTC_relevant,BTC-relevant hypotheses must compare to passive BTC benchmark over the same window.,required_if_applicable
+BTCUSDT_visibility,BTCUSDT failure must remain visible and cannot be bypassed for BTC-relevant work.,required_if_applicable
+weak_market_visibility,"If basket research resumes, weak markets must remain visible unless exclusions are predeclared and separately validated.",required_if_basket
+explicit_user_approval,"Any validation execution, data fetch, dry-run discussion, or bot operation requires separate explicit approval.",required
