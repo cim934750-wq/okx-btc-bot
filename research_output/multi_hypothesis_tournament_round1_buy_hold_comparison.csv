@@ -1,0 +1,6 @@
+candidate_id,candidate,executed,window,start,end,start_close,end_close,return_pct,normalized_pnl_per_100k,max_drawdown_pct,interpretation
+B,passive_btc_buy_and_hold_benchmark,yes,BTCUSDT_4h_holdout_70_30,2024-02-05T04:00:00+00:00,2026-04-12T12:00:00+00:00,43071.88,70976.19,64.785447,64785.447025,49.836972,Passive benchmark only; no active trade edge claim.
+C,btc_only_fresh_gate_candidate,no,NA,NA,NA,NA,NA,NA,NA,NA,"If future BTC-relevant validation is approved, it must compare to passive BTC; not executable in this tournament."
+D,regime_filtered_long_only_candidate,no,NA,NA,NA,NA,NA,NA,NA,NA,"If future BTC-relevant validation is approved, it must compare to passive BTC; not executable in this tournament."
+E,volatility_regime_candidate,no,NA,NA,NA,NA,NA,NA,NA,NA,"If future BTC-relevant validation is approved, it must compare to passive BTC; not executable in this tournament."
+H,optional_short_or_hedged_framework_candidate,no,NA,NA,NA,NA,NA,NA,NA,NA,"If future BTC-relevant validation is approved, it must compare to passive BTC; not executable in this tournament."

@@ -1,0 +1,9 @@
+candidate_id,candidate,executed,candidate_net_pnl,no_trade_net_pnl,candidate_minus_no_trade,interpretation
+A,no_trade_baseline,yes,0.0,0.0,0.0,No-trade baseline; default.
+B,passive_btc_buy_and_hold_benchmark,yes,64785.447025,0.0,64785.447025,"Passive opportunity-cost benchmark, not active strategy."
+G,benchmark_only_monitoring_candidate,yes,0.0,0.0,0.0,Observation-only monitoring; no strategy PnL.
+C,btc_only_fresh_gate_candidate,no,NA,0.0,NA,Not executable from frozen plan; cannot challenge no-trade.
+D,regime_filtered_long_only_candidate,no,NA,0.0,NA,Not executable from frozen plan; cannot challenge no-trade.
+E,volatility_regime_candidate,no,NA,0.0,NA,Not executable from frozen plan; cannot challenge no-trade.
+F,market_family_framework_candidate,no,NA,0.0,NA,Not executable from frozen plan; cannot challenge no-trade.
+H,optional_short_or_hedged_framework_candidate,no,NA,0.0,NA,Not executable from frozen plan; cannot challenge no-trade.

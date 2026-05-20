@@ -1,0 +1,6 @@
+candidate_id,candidate,reason,missing_freeze
+C,btc_only_fresh_gate_candidate,"Plan requires exact BTC-only entry/exit/risk rules before validation, but does not freeze those rules.",exact executable trading/filter/risk rules required before validation
+D,regime_filtered_long_only_candidate,"Plan requires a regime classifier, timeframe, lookback, and allowed state, but does not freeze them.",exact executable trading/filter/risk rules required before validation
+E,volatility_regime_candidate,"Plan requires volatility measure, lookback, percentile/bucket, and allowed state, but does not freeze them.",exact executable trading/filter/risk rules required before validation
+F,market_family_framework_candidate,Plan predeclares framework concept but not executable trading rules or family-specific actions.,exact executable trading/filter/risk rules required before validation
+H,optional_short_or_hedged_framework_candidate,Plan marks high-risk and requires separate selection note plus exact hedge/short rules; not immediately executable.,exact executable trading/filter/risk rules required before validation

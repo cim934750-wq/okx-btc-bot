@@ -1,0 +1,22 @@
+candidate_id,candidate,market,scope,executed,rows,start,end,net_pnl,profit_factor,max_drawdown_pct,win_rate,trade_count,notes
+A,no_trade_baseline,AAVEUSDT,holdout,yes,3672,2024-09-11T20:00:00+00:00,2026-05-16T16:00:00+00:00,0.0,NA,0.0,NA,0,No position; no strategy fees; no strategy drawdown.
+A,no_trade_baseline,ADAUSDT,holdout,yes,4846,2024-02-29T04:00:00+00:00,2026-05-16T16:00:00+00:00,0.0,NA,0.0,NA,0,No position; no strategy fees; no strategy drawdown.
+A,no_trade_baseline,ATOMUSDT,holdout,yes,4634,2024-04-04T12:00:00+00:00,2026-05-16T16:00:00+00:00,0.0,NA,0.0,NA,0,No position; no strategy fees; no strategy drawdown.
+A,no_trade_baseline,AVAXUSDT,holdout,yes,3713,2024-09-05T00:00:00+00:00,2026-05-16T16:00:00+00:00,0.0,NA,0.0,NA,0,No position; no strategy fees; no strategy drawdown.
+A,no_trade_baseline,BCHUSDT,holdout,yes,4251,2024-06-07T08:00:00+00:00,2026-05-16T16:00:00+00:00,0.0,NA,0.0,NA,0,No position; no strategy fees; no strategy drawdown.
+A,no_trade_baseline,BNBUSDT,holdout,yes,4846,2024-02-29T04:00:00+00:00,2026-05-16T16:00:00+00:00,0.0,NA,0.0,NA,0,No position; no strategy fees; no strategy drawdown.
+A,no_trade_baseline,BTCUSDT,holdout,yes,4785,2024-02-05T04:00:00+00:00,2026-04-12T12:00:00+00:00,0.0,NA,0.0,NA,0,No position; no strategy fees; no strategy drawdown.
+A,no_trade_baseline,DOGEUSDT,holdout,yes,4513,2024-04-24T16:00:00+00:00,2026-05-16T16:00:00+00:00,0.0,NA,0.0,NA,0,No position; no strategy fees; no strategy drawdown.
+A,no_trade_baseline,DOTUSDT,holdout,yes,3775,2024-08-25T16:00:00+00:00,2026-05-16T16:00:00+00:00,0.0,NA,0.0,NA,0,No position; no strategy fees; no strategy drawdown.
+A,no_trade_baseline,ETCUSDT,holdout,yes,4846,2024-02-29T04:00:00+00:00,2026-05-16T16:00:00+00:00,0.0,NA,0.0,NA,0,No position; no strategy fees; no strategy drawdown.
+A,no_trade_baseline,ETHUSDT,holdout,yes,4846,2024-02-29T04:00:00+00:00,2026-05-16T16:00:00+00:00,0.0,NA,0.0,NA,0,No position; no strategy fees; no strategy drawdown.
+A,no_trade_baseline,FILUSDT,holdout,yes,3671,2024-09-12T00:00:00+00:00,2026-05-16T16:00:00+00:00,0.0,NA,0.0,NA,0,No position; no strategy fees; no strategy drawdown.
+A,no_trade_baseline,LINKUSDT,holdout,yes,4818,2024-03-04T20:00:00+00:00,2026-05-16T16:00:00+00:00,0.0,NA,0.0,NA,0,No position; no strategy fees; no strategy drawdown.
+A,no_trade_baseline,LTCUSDT,holdout,yes,4846,2024-02-29T04:00:00+00:00,2026-05-16T16:00:00+00:00,0.0,NA,0.0,NA,0,No position; no strategy fees; no strategy drawdown.
+A,no_trade_baseline,NEARUSDT,holdout,yes,3674,2024-09-11T12:00:00+00:00,2026-05-16T16:00:00+00:00,0.0,NA,0.0,NA,0,No position; no strategy fees; no strategy drawdown.
+A,no_trade_baseline,SOLUSDT,holdout,yes,3789,2024-08-23T08:00:00+00:00,2026-05-16T16:00:00+00:00,0.0,NA,0.0,NA,0,No position; no strategy fees; no strategy drawdown.
+A,no_trade_baseline,TRXUSDT,holdout,yes,4846,2024-02-29T04:00:00+00:00,2026-05-16T16:00:00+00:00,0.0,NA,0.0,NA,0,No position; no strategy fees; no strategy drawdown.
+A,no_trade_baseline,UNIUSDT,holdout,yes,3723,2024-09-03T08:00:00+00:00,2026-05-16T16:00:00+00:00,0.0,NA,0.0,NA,0,No position; no strategy fees; no strategy drawdown.
+A,no_trade_baseline,XRPUSDT,holdout,yes,4846,2024-02-29T04:00:00+00:00,2026-05-16T16:00:00+00:00,0.0,NA,0.0,NA,0,No position; no strategy fees; no strategy drawdown.
+B,passive_btc_buy_and_hold_benchmark,BTCUSDT,holdout,yes,4785,2024-02-05T04:00:00+00:00,2026-04-12T12:00:00+00:00,64785.447025,NA,49.836972,NA,1,Passive close-to-close return 64.785447% from 43071.88 to 70976.19.
+G,benchmark_only_monitoring_candidate,ALL,monitoring,yes,NA,NA,NA,0.0,NA,0.0,NA,0,Observation-only; no signal or trade generation.

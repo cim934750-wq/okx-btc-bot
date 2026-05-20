@@ -1,0 +1,9 @@
+candidate_id,candidate,category,execution_eligibility,executed,reason,active_trading_candidate,result_role
+A,no_trade_baseline,baseline,executable_baseline,yes,"Fully specified: no position, no fees, no strategy drawdown.",no,default capital-preservation baseline
+B,passive_btc_buy_and_hold_benchmark,benchmark,executable_benchmark,yes,Plan defines passive BTC benchmark; computed from existing BTCUSDT_4h chronological holdout window.,no,opportunity-cost benchmark only
+C,btc_only_fresh_gate_candidate,active_candidate,not_executable_from_plan,no,"Plan requires exact BTC-only entry/exit/risk rules before validation, but does not freeze those rules.",yes,not evaluated
+D,regime_filtered_long_only_candidate,active_candidate,not_executable_from_plan,no,"Plan requires a regime classifier, timeframe, lookback, and allowed state, but does not freeze them.",yes,not evaluated
+E,volatility_regime_candidate,active_candidate,not_executable_from_plan,no,"Plan requires volatility measure, lookback, percentile/bucket, and allowed state, but does not freeze them.",yes,not evaluated
+F,market_family_framework_candidate,framework_candidate,not_executable_from_plan,no,Plan predeclares framework concept but not executable trading rules or family-specific actions.,conditional,not evaluated
+G,benchmark_only_monitoring_candidate,monitoring,executable_observation_baseline,yes,"Fully specified as observation-only, no entries/exits/orders/dry-run/live readiness.",no,monitoring default if no active candidate passes
+H,optional_short_or_hedged_framework_candidate,high_risk_framework,not_executable_from_plan,no,Plan marks high-risk and requires separate selection note plus exact hedge/short rules; not immediately executable.,yes_high_risk,not evaluated

@@ -1,0 +1,9 @@
+candidate_id,candidate,executed,top3_concentration_pct,top5_concentration_pct,top10_positive_trade_contribution_pct,interpretation
+A,no_trade_baseline,yes,NA,NA,NA,No trades and no market PnL concentration.
+B,passive_btc_buy_and_hold_benchmark,yes,100.0,100.0,NA,Single-asset passive BTC benchmark; concentration is inherent and not comparable to basket strategy.
+G,benchmark_only_monitoring_candidate,yes,NA,NA,NA,No trades and no market PnL concentration.
+C,btc_only_fresh_gate_candidate,no,NA,NA,NA,Not executable; concentration not computed.
+D,regime_filtered_long_only_candidate,no,NA,NA,NA,Not executable; concentration not computed.
+E,volatility_regime_candidate,no,NA,NA,NA,Not executable; concentration not computed.
+F,market_family_framework_candidate,no,NA,NA,NA,Not executable; concentration not computed.
+H,optional_short_or_hedged_framework_candidate,no,NA,NA,NA,Not executable; concentration not computed.

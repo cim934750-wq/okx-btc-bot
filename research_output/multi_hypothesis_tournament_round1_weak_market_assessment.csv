@@ -1,0 +1,4 @@
+market,included,holdout_rows,holdout_start,holdout_end,tournament_active_result,assessment
+DOGEUSDT,yes,4513,2024-04-24T16:00:00+00:00,2026-05-16T16:00:00+00:00,none_executed,Visible in scope; no active executable candidate tested; cannot be removed or hidden.
+DOTUSDT,yes,3775,2024-08-25T16:00:00+00:00,2026-05-16T16:00:00+00:00,none_executed,Visible in scope; no active executable candidate tested; cannot be removed or hidden.
+UNIUSDT,yes,3723,2024-09-03T08:00:00+00:00,2026-05-16T16:00:00+00:00,none_executed,Visible in scope; no active executable candidate tested; cannot be removed or hidden.

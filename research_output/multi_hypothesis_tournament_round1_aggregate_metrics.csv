@@ -1,0 +1,9 @@
+candidate_id,candidate,scope,executed,metric_type,net_pnl,profit_factor,max_drawdown_pct,win_rate,avg_trade,median_trade,trade_count,positive_markets,negative_markets,fee_adjusted_return,selection_status
+A,no_trade_baseline,holdout,yes,baseline,0.0,NA,0.0,NA,NA,NA,0,NA,NA,0; no strategy fees,default_preferred_unless_active_candidate_passes
+B,passive_btc_buy_and_hold_benchmark,BTCUSDT_holdout,yes,passive_benchmark,64785.447025,NA,49.836972,NA,NA,NA,1,NA,NA,"passive normalized return, no active trade fees modeled",benchmark_only_not_active_strategy
+G,benchmark_only_monitoring_candidate,monitoring,yes,observation_only,0.0,NA,0.0,NA,NA,NA,0,NA,NA,0; no strategy fees,allowed_monitoring_only
+C,btc_only_fresh_gate_candidate,holdout,no,not_executable,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,not_executable_from_plan
+D,regime_filtered_long_only_candidate,holdout,no,not_executable,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,not_executable_from_plan
+E,volatility_regime_candidate,holdout,no,not_executable,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,not_executable_from_plan
+F,market_family_framework_candidate,holdout,no,not_executable,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,not_executable_from_plan
+H,optional_short_or_hedged_framework_candidate,holdout,no,not_executable,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,not_executable_from_plan

@@ -1,0 +1,11 @@
+candidate,candidate_net_pnl,candidate_status,reference,reference_net_pnl,candidate_minus_reference,interpretation
+no_trade_baseline,0.0,baseline,failed_Long1_only_holdout,-69.89,69.89,No-trade remains better than this negative active reference.
+passive_btc_buy_and_hold_benchmark,64785.447025,passive_benchmark_not_active,failed_Long1_only_holdout,-69.89,64855.337025,Opportunity-cost benchmark only; does not validate active trading.
+no_trade_baseline,0.0,baseline,D2_dry_run_reference,-51.92,51.92,No-trade remains better than this negative active reference.
+passive_btc_buy_and_hold_benchmark,64785.447025,passive_benchmark_not_active,D2_dry_run_reference,-51.92,64837.367025,Opportunity-cost benchmark only; does not validate active trading.
+no_trade_baseline,0.0,baseline,D6_early_stop_dry_run_reference,-103.78,103.78,No-trade remains better than this negative active reference.
+passive_btc_buy_and_hold_benchmark,64785.447025,passive_benchmark_not_active,D6_early_stop_dry_run_reference,-103.78,64889.227025,Opportunity-cost benchmark only; does not validate active trading.
+no_trade_baseline,0.0,baseline,cooldown_after_exit_validation,-91.46,91.46,No-trade remains better than this negative active reference.
+passive_btc_buy_and_hold_benchmark,64785.447025,passive_benchmark_not_active,cooldown_after_exit_validation,-91.46,64876.907025,Opportunity-cost benchmark only; does not validate active trading.
+no_trade_baseline,0.0,baseline,anti_chase_validation,-225.26,225.26,No-trade remains better than this negative active reference.
+passive_btc_buy_and_hold_benchmark,64785.447025,passive_benchmark_not_active,anti_chase_validation,-225.26,65010.707025,Opportunity-cost benchmark only; does not validate active trading.

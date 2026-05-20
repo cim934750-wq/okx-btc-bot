@@ -1,0 +1,6 @@
+decision_field,value,interpretation
+active_candidates_executed,0,No active candidate had sufficiently frozen rules in the plan.
+baselines_executed,no_trade_baseline; passive_btc_buy_and_hold_benchmark; benchmark_only_monitoring_candidate,Only non-trading baselines/benchmarks were executable.
+selected_tournament_outcome,all_active_candidates_not_executable_keep_no_trade_default,No active candidate can pass or proceed to confirmation from this tournament.
+recommendation,keep_no_trade_default_and_bot_stopped,Create a separate frozen candidate plan only if explicitly approved.
+implementation_readiness,closed_not_ready,No implementation or dry-run readiness claim is allowed.

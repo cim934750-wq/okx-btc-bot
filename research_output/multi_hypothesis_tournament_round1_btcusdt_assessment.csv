@@ -1,0 +1,4 @@
+candidate_id,candidate,BTCUSDT_visible,executed,BTCUSDT_net_pnl,BTCUSDT_profit_factor,BTCUSDT_max_drawdown_pct,assessment,BTCUSDT_start,BTCUSDT_end,BTCUSDT_start_close,BTCUSDT_end_close,BTCUSDT_return_pct,BTCUSDT_normalized_pnl_per_100k
+A,no_trade_baseline,yes,yes,0.0,NA,0.0,No-trade preserves capital; no BTC strategy activity.,,,,,,
+B,passive_btc_buy_and_hold_benchmark,yes,yes,,,49.836972,Passive benchmark only; not an active strategy pass.,2024-02-05T04:00:00+00:00,2026-04-12T12:00:00+00:00,43071.88,70976.19,64.785447,64785.447025
+C,btc_only_fresh_gate_candidate,yes,no,NA,NA,NA,Not executable; exact BTC-only rules missing.,,,,,,
