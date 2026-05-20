@@ -1,0 +1,9 @@
+pattern,evidence,interpretation
+failed_holdout_transfer,"Long1 reference strength did not transfer; holdout net PnL -69.89, PF 0.9832",Reference/in-sample strength is not enough.
+BTCUSDT_weakness,Long1 BTC -50.21/PF 0.8475; cooldown BTC -73.14/PF 0.7461; anti-chase BTC -82.62/PF 0.7259,BTC failure repeatedly blocks advancement.
+weak_market_drag_DOGE,DOGE remained materially weak in Long1/cooldown/anti-chase reviews.,Weak markets must remain visible and cannot be removed after results.
+isolated_UNI_strength_not_enough,"UNI stayed positive in later tests, while aggregate and BTCUSDT failed.",Pockets of strength cannot rescue a failed basket.
+DOT_tiny_positive_not_enough,DOT was slightly positive but tiny sample in later reviews.,Small positive pockets do not establish robustness.
+trade_reduction_without_expectancy,Cooldown trades 360 -> 285 with commission reduction 52.03; anti-chase trades 360 -> 346 with commission reduction 9.11,Lower activity/fees did not create edge.
+filter_reduced_activity_not_edge,Cooldown and anti-chase both reduced some activity yet failed no-trade gate.,Filters are not sufficient unless expectancy improves.
+no_trade_preferred,All active candidates had negative holdout/dry-run references.,Capital preservation remains the default.

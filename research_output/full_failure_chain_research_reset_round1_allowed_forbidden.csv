@@ -1,0 +1,14 @@
+type,item,status_or_boundary
+allowed,pause research and keep no-trade default,recommended conservative default
+allowed,new hypothesis inventory/selection plan,only after explicit approval; no execution in the same step
+allowed,BTC-only path,only with separate predeclared gate; cannot rescue basket failure retroactively
+allowed,weak-market/failure analysis,must retain weak markets and avoid cherry-picking
+allowed,benchmark-only monitoring concept,research/monitoring only; not active trading
+forbidden,run backtests or validation from this reset note,forbidden
+forbidden,fetch new OHLCV,forbidden
+forbidden,"change source, parameters, thresholds, deployment, PRs",forbidden
+forbidden,optimization or threshold sweeps,forbidden
+forbidden,restart dry-run or create live plan,forbidden
+forbidden,claim implementation readiness,forbidden
+forbidden,reopen Long1/D2/D6/cooldown/anti-chase as implementation candidates,forbidden
+forbidden,"hide DOGE or losing markets, or use UNI/DOT pockets as rescue evidence",forbidden

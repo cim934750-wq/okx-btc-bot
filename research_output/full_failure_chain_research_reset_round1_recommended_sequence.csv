@@ -1,0 +1,7 @@
+step_order,step,status,notes
+1,Pause and keep no-trade default,recommended_now,No current candidate beat no-trade.
+2,"If user explicitly approves continuation, create fresh hypothesis selection note",allowed_later,Do not execute validation in the same task.
+3,Choose exactly one hypothesis and freeze validation design,allowed_later,"Must include no-trade, BTC, weak-market, concentration, and failed-reference gates."
+4,Execute only the predeclared validation,allowed_only_after_plan_approval,"No optimization, threshold sweep, or market removal."
+5,"If validation fails, park candidate immediately",required,No dry-run/live discussion.
+6,"If validation passes, create synthesis and still do not claim implementation readiness",required,Dry-run discussion requires separate explicit approval and readiness plan.
