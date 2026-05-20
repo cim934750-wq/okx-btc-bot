@@ -1,0 +1,10 @@
+rule_id,rule,rationale
+negative_aggregate_fail,No candidate can pass if aggregate holdout is negative.,No-trade remained better in the failure chain.
+pf_floor,No candidate can pass if PF < 1.00.,PF below 1 indicates a negative active trade profile.
+btc_relevant_fail,BTC-relevant candidates fail if BTCUSDT holdout is negative.,BTCUSDT repeatedly failed and is serious for this project.
+basket_breadth,Basket candidates fail if breadth/concentration is poor even when aggregate is positive.,Avoid isolated market dependence.
+lower_trade_count_not_edge,Lower trade count or lower fees alone is not edge.,Cooldown and anti-chase reduced activity but failed.
+must_beat_no_trade,Beating failed Long1-only is not enough; active candidates must beat no-trade.,Capital preservation is the default gate.
+winner_not_ready,A top-ranked candidate is not implementation-ready.,Tournament result still needs confirmation and synthesis.
+weak_markets_visible,"DOGE, DOT, UNI and BTCUSDT must remain visible where applicable.",Prevents post-result hiding and rescue bias.
+postmortem_required,"Every candidate, including any winner, requires postmortem/synthesis.",Forces conservative interpretation.

@@ -1,0 +1,12 @@
+type,item,detail,reason
+allowed,predeclared_tournament_plan,"Define candidate set, metrics, gates, and controls before execution.",Allows controlled comparison without optimization.
+allowed,fixed_interpretable_hypotheses,Candidates must have frozen rules before future validation.,Keeps hypotheses reviewable.
+allowed,benchmark_comparisons,No-trade and passive BTC comparisons are allowed and required where applicable.,Preserves capital baseline discipline.
+allowed,future_synthesis,"After any future tournament, create synthesis/postmortem before any next step.",Prevents accidental promotion.
+forbidden,validation_execution_now,Do not run tournament validation from this plan.,This task is plan-only.
+forbidden,backtests_or_OHLCV_fetch,"No backtests, validation, or new OHLCV fetch in this task.",Plan-only boundary.
+forbidden,optimization_threshold_sweeps,No parameter searches or threshold sweeps.,Would convert tournament into optimization.
+forbidden,market_cherry_picking,Do not remove weak markets or select winners after results.,Avoids rescue bias.
+forbidden,dry_run_live_planning,"No dry-run restart, live planning, or operations.",Implementation readiness remains closed.
+forbidden,failed_path_revival,"Do not reopen Long1-only, D2, D6, cooldown, or anti-chase as implementation candidates.",Those paths are closed.
+forbidden,PR_or_source_changes,"Do not modify PR #1/#2/#3, production source, or parameters.",Research plan only.

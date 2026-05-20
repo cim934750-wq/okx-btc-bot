@@ -1,0 +1,17 @@
+metric,scope,purpose
+net_PnL,"aggregate, market, BTCUSDT, weak markets",Primary fee-aware active result versus no-trade.
+profit_factor,"aggregate, market, BTCUSDT",Detect negative trade profile; PF < 1.00 fails.
+max_drawdown,aggregate and BTCUSDT where applicable,Risk check versus no-trade and passive benchmark.
+win_rate,aggregate and market,"Trade quality context, not sufficient alone."
+avg_trade,aggregate and tag/market if available,Expectancy proxy after costs.
+median_trade,aggregate and market if available,Outlier sensitivity check.
+trade_count,"aggregate, market, BTCUSDT",Sample size and activity check; lower count alone is not edge.
+positive_negative_market_count,19-market basket where applicable,Breadth check.
+BTCUSDT_result,BTCUSDT,Boundary for BTC-relevant candidates.
+DOGE_DOT_UNI_result,weak-market visibility,Prevent hiding known weak markets.
+top3_top5_concentration,market PnL contributions,Market concentration / rescue-bias check.
+top10_positive_trade_contribution,trade-level where available,Outlier dependency check.
+fee_adjusted_return,all active candidates,Ensure edge remains after costs.
+no_trade_comparison,all active candidates,Candidate must beat capital preservation.
+buy_and_hold_comparison,BTC-relevant candidates,Opportunity-cost and passive BTC context.
+failed_reference_comparison,"Long1, D2, D6, cooldown, anti-chase",New candidate must not merely repeat or slightly outperform failed paths.

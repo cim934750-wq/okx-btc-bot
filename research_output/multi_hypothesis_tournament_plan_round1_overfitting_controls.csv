@@ -1,0 +1,9 @@
+control,description,prevents
+limited_candidate_count,Use only the predeclared A-H list unless a new plan explicitly replaces it.,unbounded hypothesis mining
+no_threshold_sweeps,Each executable candidate must freeze one rule set before validation.,optimization disguised as research
+no_post_result_parameter_changes,Do not adjust settings after seeing tournament results.,overfitting to holdout
+no_market_removal,"Do not remove DOGE, DOT, UNI, BTCUSDT, or losing markets after results.",market cherry-picking
+same_split,Use chronological 70/30 split for comparable candidates unless separately justified before execution.,split shopping
+separate_confirmation,Any winner requires a new confirmation validation before dry-run can be discussed.,single-test promotion
+postmortem_even_for_winner,Create synthesis/postmortem for winner and losers.,overconfidence
+explicit_approval,Execution beyond this plan requires explicit user approval.,accidental validation or operations
