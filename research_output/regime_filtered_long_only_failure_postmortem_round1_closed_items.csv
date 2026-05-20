@@ -1,0 +1,11 @@
+item,status,reason
+Long1-only base candidate,closed,Failed predeclared holdout validation.
+D2 dry-run continuation,closed,Negative dry-run reference and no active candidate rescue.
+D6 dry-run continuation,closed,Negative early-stop dry-run reference and no active candidate rescue.
+6-candle cooldown hypothesis,closed,Failed validation; reduced trades/fees did not create edge.
+anti-chase EMA/ATR filter,closed,Failed validation; skipped too few entries and worsened result.
+BTC-only immediate path,closed,Separate-gate selection paused BTC-only; BTCUSDT failures remained serious.
+regime-filtered long-only candidate,closed,Failed holdout with net_pnl=-266.26 and PF=0.9318.
+long-only basket implementation path,closed,Multiple long-only variants failed or were parked.
+dry-run/live planning,closed,No validated strategy candidate beat no-trade gates.
+implementation readiness,closed_not_ready,Research evidence does not justify production or dry-run readiness.

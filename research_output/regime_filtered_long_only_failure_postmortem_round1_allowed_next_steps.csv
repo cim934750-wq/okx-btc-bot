@@ -1,0 +1,11 @@
+next_step,allowed_or_forbidden,conditions_or_reason
+no-trade default,allowed,Default state until a fresh candidate beats predeclared gates.
+benchmark-only monitoring,allowed,"Observation only; no entries, exits, orders, paper trading, or dry-run restart."
+fresh hypothesis selection note,allowed,Must be explicitly approved and must not revive failed candidates as implementation candidates.
+fresh predeclared validation plan,allowed_after_selection,Required before any future validation execution.
+non-long-only framework exploration,allowed_only_with_separate_gate,Requires a new hypothesis and predeclared validation rules.
+non-price framework exploration,allowed_only_with_separate_gate,"Requires data definition, no-trade comparison, and overfitting controls."
+another immediate long-only filter test,forbidden_now,Current long-only filter chain failed and should not be extended without a fresh thesis.
+threshold sweep or optimization,forbidden,Would violate research boundary and overfit after failures.
+remove DOGE/DOT/UNI post-result,forbidden,Would be cherry-picking after visible weak-market results.
+dry-run/live planning,forbidden,Implementation readiness remains closed.

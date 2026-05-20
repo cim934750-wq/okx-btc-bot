@@ -1,0 +1,10 @@
+reason,evidence,interpretation
+predeclared_gate_failure,holdout net_pnl=-266.26; PF=0.9318; avg_trade=-0.83; positive_markets=6/19; negative_markets=9/19; flat_markets=4/19,"Failed aggregate, PF, breadth, and expectancy gates."
+risk_on_filter_did_not_create_edge,risk_on_exposure=47.00%; raw_blocked_starter_signals=37; actual_blocked_entries=36,Blocked/reduced activity did not produce positive expectancy or beat no-trade.
+btc_boundary_failure,BTCUSDT trades=44; net_pnl=-30.08; PF=0.9021,BTC-relevant candidate cannot advance when BTCUSDT remains negative.
+weak_basket_breadth,positive_markets=6; negative_markets=9; flat_no_trade_markets=4,Breadth was too weak for a basket strategy.
+doge_drag_visible,DOGE net_pnl=-287.14; PF=0.3586,DOGE weakness remained serious and cannot be hidden or removed post-result.
+isolated_uni_strength_not_rescue,UNI net_pnl=+436.62; PF=2.2267; aggregate holdout=-266.26; BTCUSDT=-30.08,"UNI strength cannot rescue aggregate loss, BTC failure, and weak breadth."
+no_trade_not_beaten,candidate=-266.26 vs no_trade=0,Capital preservation remains preferred.
+worse_than_failed_references,"worse than failed Long1 holdout, D2, D6, cooldown, and anti-chase by net PnL","Beating or losing less than a failed reference would not be enough, and this candidate did not even do that."
+buy_hold_not_strategy_approval,passive BTC return=64.7854%; max close-to-close DD=49.8370%,"Buy-and-hold is only opportunity-cost context, not active strategy approval."
