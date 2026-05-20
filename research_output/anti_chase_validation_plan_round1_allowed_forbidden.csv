@@ -1,0 +1,13 @@
+type,item,status
+allowed,Future execution of this exact frozen validation plan after explicit approval,allowed_later
+allowed,Count skipped entries and skipped reasons,allowed_in_validation
+allowed,Report distance buckets descriptively if feasible,allowed_if_not_used_to_reselect_threshold
+allowed,Secondary sensitivity after primary result,allowed_only_as_separate_robustness_not_optimization
+forbidden,Run validation during this plan task,forbidden
+forbidden,Fetch new OHLCV without explicit approval,forbidden
+forbidden,Change source code or production strategy now,forbidden
+forbidden,"Change exits, stops, sizing, signal construction, EMA/ATR periods, or parameters",forbidden
+forbidden,Test multiple anti-chase thresholds as selectable candidates,forbidden
+forbidden,Drop DOGE/DOT/UNI or hide weak markets,forbidden
+forbidden,Modify PR #1/#2/#3,forbidden
+forbidden,"Restart dry-run, create live plan, or claim implementation readiness",forbidden

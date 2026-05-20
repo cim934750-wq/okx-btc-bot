@@ -1,0 +1,10 @@
+item,frozen_definition,notes
+formula_name,ema20_atr14_long_entry_anti_chase,Primary anti-chase formula for future validation.
+distance_formula,distance_atr = (close - ema20) / atr14,"Use close, ema20, and atr14 from the validation feature frame."
+reference_ema,ema20,Selected because EMA20 exits were part of the observed failure mode.
+atr_period,14,Volatility-normalized distance denominator; no ATR period sweep.
+max_allowed_distance,2.0 ATR,Conservative overextension gate; no threshold sweep.
+block_condition,block long entry when distance_atr > 2.0,"If distance is exactly 2.0, do not block; block only above threshold."
+nan_or_invalid_values,do not infer; follow existing warmup/exclusion behavior and record counts,No fake data or silent filling.
+allowed_effect,skip entry and count skipped entry reason,Positions already open are not force-closed.
+forbidden_effect,"no changes to exits, stops, sizing, EMA/ATR periods, market universe, or parameters",Keep strategy behavior otherwise unchanged.

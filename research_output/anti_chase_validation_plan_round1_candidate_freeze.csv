@@ -1,0 +1,8 @@
+field,frozen_value,rationale,boundary
+candidate_type,research_only_anti_chase_entry_filter,Tests whether avoiding overextended long entries addresses the failure mode.,Not implementation-ready.
+side_scope,long_entries_only,Current hypothesis concerns late/stretched long entries.,"No shorts, no Long2 revival, no production change."
+reference_signal_context,prior Long1-style long entry eligibility only,Compares against failed Long1-style behavior without reopening it as base candidate.,Long1-only remains parked.
+entry_filter_action,block overextended long entries,Filter can skip entries that are too far above EMA20 relative to ATR.,Must not alter exits/stops/sizing.
+cooldown_interaction,none,Cooldown failed and is parked.,Do not combine with cooldown in primary validation.
+market_universe,same 19 local 4h markets,Prevents post-result market selection.,DOGE/DOT/UNI and BTCUSDT remain visible.
+data_split,chronological 70_reference_30_holdout,Consistent with failed Long1 holdout validation.,No tuning on holdout.

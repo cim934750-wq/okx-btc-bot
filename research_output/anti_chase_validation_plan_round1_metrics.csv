@@ -1,0 +1,19 @@
+metric,scope,purpose
+net_pnl,"aggregate, per-market, BTCUSDT, DOGE/DOT/UNI",Primary no-trade comparison after fees.
+profit_factor,"aggregate, per-market, BTCUSDT",Detect whether expectancy improves above failed references.
+max_drawdown_pct,"aggregate, per-market, BTCUSDT",Ensure drawdown is controlled and compensated by return.
+win_rate,"aggregate, per-market, BTCUSDT",Secondary quality metric; not sufficient alone.
+avg_trade,aggregate and per-market,Estimate trade expectancy.
+median_trade,aggregate and per-market,Check distribution center and outlier dependence.
+trade_count,aggregate and per-market,Track activity reduction.
+skipped_entries_count,aggregate and per-market,Measure how much the filter blocks.
+skipped_entries_by_market,all 19 markets,Detect market-specific filtering concentration.
+skipped_entries_by_distance_bucket,if feasible,Describe which extension bands were affected without threshold re-selection.
+fee_reduction,aggregate and per-market,Verify lower fees are not mistaken for edge.
+post_entry_adverse_movement,if feasible,Check whether the filter reduces immediate adverse movement.
+stop_loss_frequency,if available,Check whether stretched-entry stop-loss events fall.
+EMA20_exit_frequency,if available,Check whether EMA20-exit losses fall.
+positive_negative_market_count,holdout basket,Breadth gate.
+concentration,top 3/top 5 markets and top 10 positive trades,Avoid isolated outlier dependence.
+no_trade_comparison,holdout aggregate and BTCUSDT,Capital preservation remains default.
+failed_reference_comparison,"Long1 holdout, D2, D6, cooldown",Candidate must improve on known failures without reopening them.

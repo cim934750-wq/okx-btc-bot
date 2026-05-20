@@ -1,0 +1,11 @@
+gate,pass,caution,fail,interpretation
+aggregate_holdout_net_pnl,> 0 after fees,slightly positive but weak breadth or concentration,<= 0,Must beat no-trade.
+profit_factor,>= 1.10,1.00 <= PF < 1.10,< 1.00,PF below 1.00 indicates negative active edge.
+BTCUSDT_boundary,BTCUSDT net PnL >= 0 and PF >= 1.05,BTC weak but aggregate strong; requires separate review,BTCUSDT net PnL < 0,BTC failure is serious for this project.
+drawdown,controlled and not materially worse without compensation,drawdown expands while returns are marginal,drawdown not compensated by return,Risk must be justified by return.
+overextended_entry_losses,reduced stop-loss/EMA20-exit losses if measurable,mixed or unclear reduction,no improvement or worse losses,Core mechanism check.
+trade_and_fee_reduction,reduced trades plus improved expectancy,reduced trades but weak edge improvement,only reduces trades/fees without improving expectancy,Cooldown failure showed reduction alone is not enough.
+market_breadth,at least 10/19 positive markets by default,8-9 positive markets or many no-trade markets,<= 7 positive markets,Avoid isolated market dependency.
+concentration,"top3 <= 75%, top5 <= 100%, top10 positive trades <= 65% when aggregate positive",positive but concentration above pass bands,aggregate negative or extreme outlier dependence,Positive aggregate alone is insufficient.
+weak_market_visibility,DOGE/DOT/UNI included and reported,included but weak result needs review,"hidden, removed, or post-result excluded",No cherry-picking.
+threshold_integrity,2.0 ATR threshold retained exactly,secondary sensitivity proposed separately after primary result,threshold changed after seeing result or swept as candidate selection,No optimization.
