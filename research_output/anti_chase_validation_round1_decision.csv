@@ -1,0 +1,14 @@
+check_type,check,result,metric_value,interpretation
+pass_gate,aggregate_holdout_positive_after_fees,False,-225.2597544391174,required for pass
+pass_gate,profit_factor_at_least_1_10,False,0.9445481804349803,required for pass
+pass_gate,BTCUSDT_non_negative_pf_at_least_1_05,False,net_pnl=-82.62; pf=0.7259,required for pass
+pass_gate,positive_markets_at_least_10_of_19,False,8/19 positive,breadth requirement
+pass_gate,trade_reduction_with_expectancy_improvement,False,trade_reduction=14; avg_trade_delta=-0.4569,mechanism requirement
+pass_gate,overextended_entry_losses_reduced,False,baseline_overextended_pnl=155.41; anti_overextended_trades=0,mechanism check
+fail_gate,aggregate_holdout_negative,True,-225.2597544391174,fail trigger
+fail_gate,profit_factor_below_1_00,True,0.9445481804349803,fail trigger
+fail_gate,BTCUSDT_negative,True,-82.62229826110706,fail trigger
+fail_gate,only_reduces_trades_without_expectancy_improvement,True,trade_reduction=14; avg_trade_delta=-0.4569,fail trigger if true
+fail_gate,weak_markets_hidden_or_removed,False,DOGE/DOT/UNI present,must remain false
+fail_gate,threshold_deviation_or_sweep,False,single threshold 2.0 used,must remain false
+final_decision,predeclared_decision,Fail: park anti-chase; no implementation.,research-only validation decision,No dry-run/live/implementation claim.

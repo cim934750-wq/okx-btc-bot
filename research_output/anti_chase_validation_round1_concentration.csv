@@ -1,0 +1,37 @@
+scope,variant,metric,value,details
+reference,failed_reference_long1,total_net_pnl,5275.312424885502,aggregate market net pnl
+reference,failed_reference_long1,top3_markets,3356.716689372959,BNBUSDT=1783.98;SOLUSDT=822.88;LTCUSDT=749.85
+reference,failed_reference_long1,top3_pct_of_total,63.63067092553888,signed pct; not pass evidence if aggregate negative
+reference,failed_reference_long1,top3_pct_of_positive_market_pnl,49.55314305707593,positive-market share
+reference,failed_reference_long1,top5_markets,4547.59682082705,BNBUSDT=1783.98;SOLUSDT=822.88;LTCUSDT=749.85;ETHUSDT=742.68;BCHUSDT=448.20
+reference,failed_reference_long1,top5_pct_of_total,86.20526055242601,signed pct; not pass evidence if aggregate negative
+reference,failed_reference_long1,worst3_markets,-1296.7637835878413,DOTUSDT=-745.31;UNIUSDT=-413.07;TRXUSDT=-138.38
+reference,failed_reference_long1,top10_positive_trades,2926.075461725233,pct_of_total=55.47; pct_of_gross_positive=11.34
+reference,failed_reference_long1,concentration_interpretation,,concentration can be evaluated against pass bands
+reference,anti_chase,total_net_pnl,5747.278375042355,aggregate market net pnl
+reference,anti_chase,top3_markets,3487.03325174941,BNBUSDT=1850.60;SOLUSDT=822.88;ETHUSDT=813.55
+reference,anti_chase,top3_pct_of_total,60.672774558683386,signed pct; not pass evidence if aggregate negative
+reference,anti_chase,top3_pct_of_positive_market_pnl,49.464392815138616,positive-market share
+reference,anti_chase,top5_markets,4744.205654176214,BNBUSDT=1850.60;SOLUSDT=822.88;ETHUSDT=813.55;LTCUSDT=766.08;BCHUSDT=491.10
+reference,anti_chase,top5_pct_of_total,82.54699606648602,signed pct; not pass evidence if aggregate negative
+reference,anti_chase,worst3_markets,-1234.816903675106,DOTUSDT=-701.41;UNIUSDT=-413.07;DOGEUSDT=-120.34
+reference,anti_chase,top10_positive_trades,2926.754914669479,pct_of_total=50.92; pct_of_gross_positive=11.51
+reference,anti_chase,concentration_interpretation,,concentration can be evaluated against pass bands
+holdout,failed_reference_long1,total_net_pnl,-69.89156770055706,aggregate market net pnl
+holdout,failed_reference_long1,top3_markets,745.210105898077,UNIUSDT=405.20;AAVEUSDT=231.01;TRXUSDT=109.01
+holdout,failed_reference_long1,top3_pct_of_total,-1066.2375024850637,signed pct; not pass evidence if aggregate negative
+holdout,failed_reference_long1,top3_pct_of_positive_market_pnl,74.97512431724539,positive-market share
+holdout,failed_reference_long1,top5_markets,922.3928622159874,UNIUSDT=405.20;AAVEUSDT=231.01;TRXUSDT=109.01;BNBUSDT=101.25;LTCUSDT=75.93
+holdout,failed_reference_long1,top5_pct_of_total,-1319.748422539155,signed pct; not pass evidence if aggregate negative
+holdout,failed_reference_long1,worst3_markets,-804.051553300058,SOLUSDT=-296.38;DOGEUSDT=-287.14;NEARUSDT=-220.53
+holdout,failed_reference_long1,top10_positive_trades,811.6951616359937,pct_of_total=-1161.36; pct_of_gross_positive=19.86
+holdout,failed_reference_long1,concentration_interpretation,,aggregate negative blocks concentration as pass evidence
+holdout,anti_chase,total_net_pnl,-225.2597544392629,aggregate market net pnl
+holdout,anti_chase,top3_markets,633.6012784771883,UNIUSDT=380.59;AAVEUSDT=144.42;TRXUSDT=108.59
+holdout,anti_chase,top3_pct_of_total,-281.2758453255027,signed pct; not pass evidence if aggregate negative
+holdout,anti_chase,top3_pct_of_positive_market_pnl,77.91980330580623,positive-market share
+holdout,anti_chase,top5_markets,755.0485369835078,UNIUSDT=380.59;AAVEUSDT=144.42;TRXUSDT=108.59;LTCUSDT=75.93;FILUSDT=45.52
+holdout,anti_chase,top5_pct_of_total,-335.1901625139579,signed pct; not pass evidence if aggregate negative
+holdout,anti_chase,worst3_markets,-746.2121798824082,SOLUSDT=-296.38;DOGEUSDT=-287.14;NEARUSDT=-162.69
+holdout,anti_chase,top10_positive_trades,806.0500420502838,pct_of_total=-357.83; pct_of_gross_positive=21.01
+holdout,anti_chase,concentration_interpretation,,aggregate negative blocks concentration as pass evidence

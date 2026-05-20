@@ -1,0 +1,4 @@
+scope,market,baseline_trades,anti_chase_trades,baseline_net_pnl,anti_chase_net_pnl,delta_net_pnl,baseline_pf,anti_chase_pf,anti_chase_positive,visibility_rule
+holdout,DOGEUSDT,21,21,-287.13657997443806,-287.13657997443806,0.0,0.35862000088491885,0.35862000088491885,False,DOGE/DOT/UNI retained and visible; no post-result removal.
+holdout,DOTUSDT,3,3,7.806350716811721,7.806350716811721,0.0,1.1486731429857848,1.1486731429857848,True,DOGE/DOT/UNI retained and visible; no post-result removal.
+holdout,UNIUSDT,40,38,405.19654909695964,380.5883829073864,-24.60816618957324,2.046098518295316,1.9826433280809164,True,DOGE/DOT/UNI retained and visible; no post-result removal.

@@ -1,0 +1,2 @@
+scope,variant,candidate_net_pnl,no_trade_net_pnl,candidate_minus_no_trade,trading_better_than_no_trade,interpretation
+holdout,anti_chase,-225.2597544391174,0.0,-225.2597544391174,False,No-trade remains preferred unless active validation is positive after fees.

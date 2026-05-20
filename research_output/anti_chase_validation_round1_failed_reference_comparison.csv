@@ -1,0 +1,5 @@
+comparison,failed_reference_net_pnl,anti_chase_net_pnl,delta_net_pnl,failed_reference_pf,anti_chase_pf,failed_reference_trades,anti_chase_trades,interpretation
+anti_chase_holdout_vs_failed_Long1_holdout,-69.89156770030968,-225.2597544391174,-155.3681867388077,0.9831858705817488,0.9445481804349803,360.0,346,"Anti-chase must improve risk-adjusted result, not merely reduce trades."
+anti_chase_holdout_vs_failed_cooldown_holdout,-91.46,-225.2597544391174,-133.7997544391174,0.9725,0.9445481804349803,285.0,346,Cooldown is parked; comparison is a failed reference only.
+anti_chase_holdout_vs_D2_dry_run_reference,-51.92,-225.2597544391174,-173.33975443911737,,0.9445481804349803,,346,"D2 is a negative operational reference, not a validation replacement."
+anti_chase_holdout_vs_D6_dry_run_reference,-103.78,-225.2597544391174,-121.47975443911739,,0.9445481804349803,,346,"D6 is a negative operational reference, not a validation replacement."

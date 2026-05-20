@@ -1,0 +1,2 @@
+scope,market,baseline_trades,anti_chase_trades,baseline_net_pnl,anti_chase_net_pnl,delta_net_pnl,baseline_pf,anti_chase_pf,baseline_max_drawdown_pct,anti_chase_max_drawdown_pct,baseline_win_rate,anti_chase_win_rate,btc_boundary_result,interpretation
+holdout,BTCUSDT,47,42,-50.212502327383845,-82.62229826110706,-32.40979593372322,0.847503359020859,0.7259450931693896,0.1581270468342555,0.13023792299102777,65.95744680851064,64.28571428571429,fail,BTCUSDT must be non-negative with PF >= 1.05 for a BTC-relevant strategy.
