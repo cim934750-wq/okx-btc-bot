@@ -1,0 +1,9 @@
+risk,why_it_matters,required_control
+later_data_failure,The current pass may not transfer beyond the batch/confirmation dataset.,Validate on later local or newly approved 4h OHLCV with frozen rules.
+crash_regime_failure,Oversold bounce entries can fail repeatedly during severe selloffs.,"Report drawdown windows, stop-loss clusters, and crash-like loss periods."
+intrabar_ambiguity,24 holdout cases had multiple possible exit conditions in one candle.,Keep conservative OHLC ordering and report ambiguity counts again.
+stop_loss_frequency,102 holdout stop-loss exits show material downside exposure.,Track stop-loss frequency and stop-loss PnL share in later-data validation.
+time_stop_dependence,122 holdout time-stop exits mean the fixed time stop materially shapes outcomes.,Report time-stop frequency and PnL; do not tune the 8-candle value.
+sample_or_regime_dependence,Strong holdout may reflect a favorable rebound regime.,Compare later-data outcome against confirmation result and passive BTC context.
+slippage_and_fee_sensitivity,Real execution may be worse than research fills.,Add slippage/fee sensitivity if feasible without changing candidate rules.
+live_demo_mismatch,Research validation does not prove operational behavior.,Keep dry-run/live planning closed until later-data validation and explicit approval.

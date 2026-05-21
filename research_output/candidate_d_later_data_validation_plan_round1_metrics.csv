@@ -1,0 +1,17 @@
+metric,scope,purpose
+net_pnl,"aggregate, market, family, BTCUSDT, DOGE/DOT/UNI",Confirm fee-adjusted edge versus no-trade.
+profit_factor,"aggregate, market, BTCUSDT",Measure gross profit versus gross loss quality.
+max_drawdown_pct,aggregate and market where feasible,Check downside relative to return.
+win_rate,"aggregate, market, family",Track hit rate and compare to confirmation behavior.
+avg_trade_and_median_trade,aggregate and market,Detect expectancy deterioration or outlier dependence.
+trade_count,"aggregate, market, family",Identify low-sample caution conditions.
+avg_and_median_hold_time,aggregate and exit reason,Confirm holding profile stays close to research expectation.
+exit_reason_frequencies,"EMA20 touch, take-profit, stop-loss, time-stop",Track whether stop-loss or time-stop dependence rises.
+BTCUSDT_result,BTCUSDT only,Maintain BTC relevance boundary.
+DOGE_DOT_UNI_result,weak-market watchlist,Keep previously important weak/volatile symbols visible.
+family_level_result,predefined families,Detect family concentration or failure.
+concentration,top 3/top 5 markets and top 10 positive trades,Prevent one-market or one-trade rescue.
+no_trade_comparison,aggregate,Capital preservation remains the default baseline.
+passive_BTC_comparison,same later-data window,"Opportunity-cost benchmark only, not trading approval."
+confirmation_result_comparison,aggregate and BTCUSDT,Assess whether later-data result is materially weaker than confirmation.
+slippage_fee_sensitivity,aggregate if feasible,Stress whether edge survives less favorable execution assumptions.

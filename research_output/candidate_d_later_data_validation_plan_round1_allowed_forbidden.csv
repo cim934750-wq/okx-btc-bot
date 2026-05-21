@@ -1,0 +1,12 @@
+category,item,status,detail
+allowed,later_data_validation_plan_review,allowed,Review this plan before any execution.
+allowed,use_existing_later_local_OHLCV_if_present,allowed_after_verification,Only if timestamps prove it is later/new relative to the confirmation window.
+allowed,fetch_later_4h_OHLCV,requires_explicit_approval,No fetch occurs in this task.
+allowed,slippage_fee_sensitivity,allowed_if_feasible,Sensitivity only; must not change candidate rules.
+forbidden,parameter_tuning,forbidden,No RSI/ATR/EMA/R multiple/stop/time-stop changes.
+forbidden,threshold_sweeps,forbidden,No optimization or alternate values.
+forbidden,market_removal,forbidden,DOGE/DOT/UNI and all available universe members remain visible.
+forbidden,post_result_selection,forbidden,No choosing markets after seeing later-data results.
+forbidden,dry_run_or_live_planning,forbidden,No dry-run/live discussion from this synthesis.
+forbidden,implementation_readiness_claim,forbidden,Candidate D is research-confirmed only.
+forbidden,production_source_or_parameter_change,forbidden,No production code or parameter edits.

@@ -1,0 +1,11 @@
+evidence_item,value,interpretation
+holdout_net_pnl,+3853.32,"Positive after fees and beats no-trade, supporting research continuation."
+holdout_profit_factor,1.7601,"Above preferred confirmation threshold, stronger than failed references."
+holdout_trade_count,339,"Large enough for an initial standalone confirmation, but still needs later-data validation."
+holdout_max_drawdown_pct,0.0492,"Controlled in this historical holdout, but not a live risk claim."
+BTCUSDT_result,+253.84 net PnL; PF 2.3689; 19 trades,BTCUSDT boundary passed in confirmation.
+DOGE_DOT_UNI_visibility,DOGE +305.79; DOT +151.54; UNI -40.73,Weak-market symbols were not removed; UNI remains a visible weak pocket.
+family_breadth,majors +494.62; large_alts +1397.37; defi +52.68; meme_high_beta +305.79; other +1602.86,Family-level results were positive across all predefined families in holdout.
+batch_reproduction,key metrics reproduced exactly,Standalone confirmation matched the batch discovery results.
+implementation_audit,no known lookahead; 24 intrabar ambiguity cases documented,"No major mismatch found, but execution ambiguity remains a risk."
+decision,pass_research_confirmation_requires_no_trading_action,Research confirmation passed without authorizing implementation or dry-run.

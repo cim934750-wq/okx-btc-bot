@@ -1,0 +1,14 @@
+band,condition,interpretation
+pass,Later-data aggregate net PnL > 0 after fees.,Must beat no-trade on the validation window.
+pass,PF >= 1.20 preferred and at least >= 1.10 minimum.,Keeps a conservative edge threshold.
+pass,"BTCUSDT non-negative, or clearly no BTC trades in a way that does not hide failure.",BTC boundary remains serious.
+pass,Drawdown controlled and not disproportionate to return.,Positive PnL alone is not enough.
+pass,"No excessive single-market, family, or top-trade concentration.",Breadth must remain credible.
+pass,No major implementation mismatch or lookahead issue.,Research validity depends on reproducible execution logic.
+caution,Aggregate positive but materially weaker than confirmation.,May require synthesis rather than advancement.
+caution,"Low trade count, BTC weak, concentration high, or stop-loss frequency rises materially.",Potential fragility despite positive aggregate.
+fail,Aggregate net PnL <= 0 or PF < 1.00.,No-trade remains preferred.
+fail,No-trade not beaten.,Active trading is not justified.
+fail,BTCUSDT negative with meaningful trade count.,BTC-relevant failure blocks advancement.
+fail,Edge concentrated in one outlier market/trade/family.,Result is not robust enough for continuation.
+fail,Crash-regime losses dominate.,Oversold bounce risk is not controlled.

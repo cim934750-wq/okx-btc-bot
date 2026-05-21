@@ -1,0 +1,4 @@
+option,description,allowed_now,requirements,notes
+A_already_available_later_local_OHLCV,Use later local 4h OHLCV already present if it is clearly outside the batch/confirmation period.,plan_only,"Verify timestamps, same symbols where available, BTCUSDT visible, DOGE/DOT/UNI visible, no fake/inferred data.",Preferred if clean later local data exists.
+B_fetch_later_4h_OHLCV_after_approval,Fetch later 4h OHLCV for the same universe only after explicit approval.,not_without_explicit_approval,"Predeclare source, timeframe, symbols, date range, and data quality checks before validation.",No fetching in this synthesis task.
+C_paper_forward_test_planning,Plan paper forward-test only after later-data validation passes.,not_now,Separate explicit approval after later-data pass; no live/dry-run readiness claim from current evidence.,This is not a dry-run authorization.
