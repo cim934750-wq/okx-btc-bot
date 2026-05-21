@@ -1,0 +1,13 @@
+item,allowed_or_forbidden,condition_or_reason
+standalone confirmation validation,allowed_after_explicit_approval,Must use exact frozen Candidate D rules.
+same 19 local 4h markets,allowed,Primary confirmation scope.
+stricter trade-level audit,allowed,"Required to check exits, holds, stop frequency, and alignment."
+later/new OHLCV extension,allowed_only_after_explicit_approval,"Secondary option, not part of this plan execution."
+BTCUSDT-only diagnostic,allowed_as_diagnostic,Not selection or implementation by itself.
+family-level diagnostic,allowed_as_diagnostic,No post-result market selection.
+parameter tuning,forbidden,No RSI/ATR/EMA/R/time-stop tuning.
+threshold sweep,forbidden,Would overfit the batch-discovered candidate.
+stop or exit changes,forbidden,Confirmation must preserve frozen rules.
+market removal,forbidden,DOGE/DOT/UNI and all 19 markets remain included.
+dry-run/live planning,forbidden,No implementation readiness.
+implementation claim,forbidden,Candidate remains research-only.

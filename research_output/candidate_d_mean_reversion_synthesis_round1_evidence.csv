@@ -1,0 +1,16 @@
+evidence_item,value,interpretation
+fresh_batch_holdout_net_pnl,+3853.32,"Strong positive holdout screen, but batch result requires standalone confirmation."
+fresh_batch_holdout_profit_factor,1.7601,"Above preferred confirmation pass band, but not yet confirmed."
+fresh_batch_holdout_trades,339,Enough activity for screening; confirmation should audit trade distribution and exits.
+fresh_batch_holdout_win_rate,55.46%,Positive but not sufficient alone; expectancy and downside need audit.
+fresh_batch_avg_trade,+11.37,Positive average trade in batch.
+fresh_batch_median_trade,+12.13,Positive median trade reduces immediate outlier concern.
+positive_markets,18/19,Broad market support in batch holdout.
+BTCUSDT_result,+253.84; PF 2.3689; 19 trades,"BTCUSDT was supportive in batch, unlike several failed prior candidates."
+DOGE_result,+305.79; PF 1.7331; 22 trades,Prior weak market was positive in Candidate D batch.
+DOT_result,+151.54; PF 1.7586; 12 trades,Prior weak market was positive in Candidate D batch.
+UNI_result,-40.73; PF 0.8909; 20 trades,One prior pocket of strength was weak here; must remain visible.
+family_result,positive across proxy families,"Supports confirmation, but family concentration must be audited."
+top3_concentration,top3 30.60% of total PnL,"Below the prior concentration concern levels in batch, still needs confirmation."
+top5_concentration,top5 46.82% of total PnL,Not dominated by a single small group in batch.
+top10_trade_contribution,31.20% of total PnL,"Initial outlier risk looks controlled, but trade-level confirmation is required."

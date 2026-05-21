@@ -1,0 +1,15 @@
+field,frozen_value,notes
+candidate_name,Candidate D mean-reversion / oversold bounce,Research-only candidate for confirmation.
+timeframe,4h,Use same local 4h data unless later extension explicitly approved.
+universe,same 19 local 4h markets,BTCUSDT_1h excluded; DOGE/DOT/UNI remain included.
+entry_rsi,RSI14 <= 28,No RSI threshold tuning.
+entry_distance,close below EMA20 by at least 1.5 * ATR14,No ATR/EMA threshold tuning.
+entry_bounce,current close > previous candle close,First-bounce condition.
+stop,recent 10-candle low - 0.5 * ATR14,No stop change in confirmation.
+exit_ema20,exit at EMA20 touch,Preserve from batch definition.
+exit_take_profit,take profit at 1.5R,No R multiple tuning.
+exit_time_stop,time stop after 8 completed 4h candles,No time-stop tuning.
+averaging_down,forbidden,No averaging down.
+add_on_entries,forbidden,No add-ons.
+sizing,same research-only convention used in batch unless explicitly documented,No production sizing claim.
+confirmation_purpose,standalone validation only,"Not implementation, dry-run, or live planning."

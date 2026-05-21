@@ -1,0 +1,23 @@
+metric,scope,purpose
+net_pnl,aggregate/market/family/BTCUSDT/weak markets,Verify positive fee-adjusted result.
+profit_factor,aggregate/market/family/BTCUSDT,Check edge quality beyond raw PnL.
+max_drawdown_pct,aggregate/market,Assess downside under confirmation.
+win_rate,aggregate/market,Context only; not pass criterion alone.
+avg_trade,aggregate/market,Expectancy proxy.
+median_trade,aggregate/market,Outlier sensitivity check.
+trade_count,aggregate/market/family,Sample adequacy and activity check.
+average_hold_time,trade-level,Confirm short holding-period thesis.
+median_hold_time,trade-level,Confirm holding-time distribution.
+stop_loss_frequency,trade-level,Crash/downside sensitivity.
+EMA20_touch_exit_frequency,trade-level,Confirm intended mean-reversion exit path.
+take_profit_frequency,trade-level,Check realized reward path.
+time_stop_frequency,trade-level,Check stalled rebounds.
+BTCUSDT_result,BTCUSDT,BTC boundary check.
+DOGE_DOT_UNI_result,weak-market assessment,Ensure weak markets stay visible.
+family_metrics,family proxy,Check family concentration or broad transfer.
+top3_top5_concentration,market-level,Check market concentration.
+top10_positive_trade_contribution,trade-level,Check outlier dependence.
+no_trade_comparison,aggregate,Must beat capital preservation.
+passive_BTC_buy_hold_comparison,BTC-relevant benchmark,Opportunity-cost context only.
+failed_reference_comparison,aggregate/BTC,Compare to failed Long1/D2/D6/cooldown/anti-chase/regime-filtered references.
+data_alignment_audit,trade-level,Check lookahead and candle alignment.

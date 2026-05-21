@@ -1,0 +1,10 @@
+risk,why_it_matters,confirmation_control
+crash_regime_failure,Oversold bounce entries can keep losing when downside accelerates.,"Report crash-like windows, stop-loss frequency, and worst trades."
+stop_width_mismatch,Recent 10-candle low minus 0.5 ATR may be too wide or too tight by market.,Do not tune stop; audit stop-loss frequency and loss distribution.
+short_holdout_or_regime_dependence,The favorable batch holdout may reflect a rebound-friendly regime.,Run standalone confirmation and optionally later/new data only after approval.
+family_concentration,Family-wide rebound can make results look robust.,Report family-level PnL and concentration.
+market_wide_rebound_bias,Mean-reversion can look strong after broad selloffs reverse.,"Compare to passive BTC and no-trade, and audit entry dates/clusters."
+lookahead_or_alignment_mismatch,Bounce and EMA20-touch exits can be sensitive to bar alignment.,Trade-level audit must confirm no future data or same-bar leakage.
+OHLC_path_ambiguity,Within-bar stop/take-profit ordering can affect results.,Document conservative path assumptions and sensitivity only after primary confirmation.
+implementation_mismatch,Research simulator may differ from production execution.,No implementation until separate code review and execution model review.
+overfitting_after_batch,"Candidate emerged from a batch, not a single predeclared standalone plan.",Freeze exact rules and require separate confirmation before any dry-run talk.

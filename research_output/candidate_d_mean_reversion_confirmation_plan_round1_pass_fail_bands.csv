@@ -1,0 +1,19 @@
+band,condition,interpretation
+pass,aggregate holdout positive after fees,Required.
+pass,PF >= 1.20 preferred and minimum PF >= 1.10,Confirms edge quality above a low-margin result.
+pass,BTCUSDT net PnL >= 0 and PF >= 1.05,BTC boundary remains required.
+pass,no-trade beaten,Capital preservation must be beaten.
+pass,drawdown controlled and proportionate to returns,Positive PnL alone is not enough.
+pass,no single market or family explains most of the edge,Avoid one-market/family rescue.
+pass,DOGE/DOT/UNI remain visible,No weak-market hiding.
+caution,aggregate positive but PF between 1.00 and 1.20,May need more data; no dry-run.
+caution,BTCUSDT weak or negative despite aggregate positive,BTC-relevant caution/fail depending severity.
+caution,concentration high or trade count too low,Run synthesis; no implementation.
+caution,exit frequencies dominated by time stops or stop losses,Mechanism may be weak.
+fail,aggregate net PnL <= 0,Fails no-trade gate.
+fail,PF < 1.00,Negative active trade profile.
+fail,BTCUSDT negative,Fails BTC boundary.
+fail,no-trade not beaten,Trading not justified.
+fail,edge concentrated in one outlier market or trade cluster,Insufficient robustness.
+fail,crash-like regimes cause unacceptable losses,Oversold bounce risk not controlled.
+fail,lookahead or implementation mismatch found,Invalidates confirmation.
