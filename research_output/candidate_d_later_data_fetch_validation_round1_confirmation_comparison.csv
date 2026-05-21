@@ -1,0 +1,5 @@
+metric,later_value,confirmation_value,delta,assessment
+net_pnl,-174.23466018511795,3853.3206954951756,-4027.5553556802934,materially_weaker
+profit_factor,0.13132609206323043,1.760127441945461,-1.6288013498822305,materially_weaker
+trades,15,339,-324,lower_trade_count_expected_short_later_window
+BTCUSDT_net_pnl,-11.62159801510027,253.84076938536865,-265.4623674004689,weaker_than_confirmation

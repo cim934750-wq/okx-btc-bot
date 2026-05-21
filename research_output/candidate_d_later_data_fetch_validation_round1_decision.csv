@@ -1,0 +1,10 @@
+check,result,value,threshold
+later_data_aggregate_positive_after_fees,False,-174.23466018511795,> 0
+PF_preferred_1_20,False,0.13132609206323043,>= 1.20 preferred
+PF_minimum_1_10,False,0.13132609206323043,>= 1.10 minimum
+BTCUSDT_nonnegative_or_no_trades,False,trades=1; net=-11.62159801510027; PF=0.0,BTC net >= 0 if meaningful trades
+no_trade_beaten,False,-174.23466018511795,> 0
+top3_concentration_not_excessive,True,NA_aggregate_not_positive,<= 75%
+top10_trade_contribution_not_excessive,True,NA_aggregate_not_positive,<= 65%
+slippage_fee_sensitivity_10bps,False,-204.07534586777416,> 0 after 10bps per side
+final_decision,fail,aggregate_net_pnl_not_positive|no_trade_not_beaten|profit_factor_below_1|BTCUSDT_negative_with_trades|low_trade_count|stop_loss_frequency_material|10bps_slippage_erodes_edge,research-only; not implementation-ready

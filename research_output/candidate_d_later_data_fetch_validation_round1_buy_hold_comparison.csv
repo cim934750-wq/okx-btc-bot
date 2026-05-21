@@ -1,0 +1,2 @@
+benchmark,scope,first_close,last_close,normalized_notional,normalized_pnl,return_pct,max_close_to_close_drawdown_pct,candidate_net_pnl,candidate_minus_buy_hold_normalized_pnl,interpretation
+passive_BTC_buy_hold,later_fetched,70742.7,77893.9,100000,10108.74620278841,10.10874620278841,7.402035271906801,-174.23466018511795,-10282.980862973529,opportunity_cost_benchmark_only_not_active_strategy_approval

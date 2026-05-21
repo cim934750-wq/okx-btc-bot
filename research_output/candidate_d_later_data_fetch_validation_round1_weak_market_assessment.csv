@@ -1,0 +1,4 @@
+candidate,scope,market,family,net_pnl,profit_factor,trade_count,win_rate,assessment
+D_mean_reversion_oversold_bounce,later_fetched,DOGEUSDT,meme_high_beta,-18.121240959269223,0.0,1,0.0,visible_included_not_removed
+D_mean_reversion_oversold_bounce,later_fetched,DOTUSDT,other,-9.88803556992734,0.0,1,0.0,visible_included_not_removed
+D_mean_reversion_oversold_bounce,later_fetched,UNIUSDT,defi,0,NA,0,0.0,visible_included_not_removed

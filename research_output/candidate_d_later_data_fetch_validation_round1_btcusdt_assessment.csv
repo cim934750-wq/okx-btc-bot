@@ -1,0 +1,2 @@
+candidate,scope,market,net_pnl,profit_factor,trade_count,max_drawdown_pct,win_rate,assessment
+D_mean_reversion_oversold_bounce,later_fetched,BTCUSDT,-11.62159801510027,0.0,1,0.011621598015102791,0.0,fail_btc_boundary

@@ -1,0 +1,2 @@
+candidate,scope,market_count,total_trades,net_pnl,profit_factor,max_drawdown_pct,win_rate,avg_trade,median_trade,gross_profit,gross_loss,commission,avg_hold_bars,median_hold_bars,positive_markets,negative_markets,flat_markets,raw_signals,skipped_or_invalid_signals,ambiguous_intrabar_exits
+D_mean_reversion_oversold_bounce,later_fetched,19,15,-174.23466018511795,0.13132609206323043,0.17423466018513137,13.333333333333334,-11.615644012341196,-9.88803556992734,26.34079004217311,200.57545022729101,14.920342841328106,6.066666666666666,8,2,9,8,15,0,0

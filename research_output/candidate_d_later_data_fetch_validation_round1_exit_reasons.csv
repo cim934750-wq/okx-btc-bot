@@ -1,0 +1,4 @@
+candidate,scope,exit_reason,count,pct_of_trades,net_pnl,avg_pnl,win_rate
+D_mean_reversion_oversold_bounce,later_fetched,EMA20_touch,1,6.666666666666667,22.88536656520441,22.88536656520441,100.0
+D_mean_reversion_oversold_bounce,later_fetched,stop_loss,6,40.0,-137.91394042025786,-22.985656736709643,0.0
+D_mean_reversion_oversold_bounce,later_fetched,time_stop_8_bars,8,53.333333333333336,-59.206086330064444,-7.4007607912580555,12.5
