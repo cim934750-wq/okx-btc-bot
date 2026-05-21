@@ -1,0 +1,10 @@
+check,result,interpretation
+branch_and_head_verified,true,Branch research/long1-only-candidate-robustness at a1b5964 before this output set.
+same_19_local_4h_markets_found,true,The expected 19 local 4h market files are present.
+BTCUSDT_1h_excluded,true,BTCUSDT_1h.csv was not used.
+separate_later_local_OHLCV_found,false,No separate/verifiable later-only local OHLCV dataset was found.
+fetch_new_OHLCV,false,Fetching was not approved for this run and was not performed.
+fake_infer_forward_fill_missing_OHLCV,false,"No missing OHLCV was faked, inferred, synthesized, or forward-filled."
+later_data_validation_executed,false,Stopped per plan because later data was unavailable.
+pass_caution_fail_decision,data_unavailable_stop_no_validation,No pass/caution/fail trading result can be assigned without later data.
+implementation_readiness,closed_not_ready,"Candidate D remains research-confirmed only, not implementation-ready."
