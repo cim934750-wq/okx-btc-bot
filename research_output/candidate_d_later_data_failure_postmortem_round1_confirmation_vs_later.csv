@@ -1,0 +1,11 @@
+metric,historical_confirmation,later_data,delta_or_status,interpretation
+trades,339,15,-324,Later window had a much smaller sample.
+net_pnl,+3853.32,-174.23,-4027.56,"Transfer failure, not mild deterioration."
+profit_factor,1.7601,0.1313,-1.6288,Later PF failed decisively.
+max_drawdown_pct,0.0492%,0.1742%,worse,Drawdown expanded while returns turned negative.
+win_rate,55.46%,13.33%,-42.13pp,Signal quality collapsed in the fetched window.
+BTCUSDT,+253.84 PF 2.3689,-11.62 PF 0.0,failed BTC boundary,BTCUSDT later failure blocks advancement.
+DOGE,+305.79 PF 1.7331,-18.12 PF 0.0,reversed negative,Previously supportive weak-market evidence did not transfer.
+DOT,+151.54 PF 1.7586,-9.89 PF 0.0,reversed negative,Previously supportive weak-market evidence did not transfer.
+UNI,-40.73 PF 0.8909,0.00 no trades,no later signal,UNI did not rescue later-data performance.
+family_level,positive across families,no active family positive,breadth failed,Family breadth disappeared in later data.

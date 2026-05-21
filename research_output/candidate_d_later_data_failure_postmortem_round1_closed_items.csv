@@ -1,0 +1,9 @@
+item,status,reason
+Candidate_D_dry_run_readiness,closed,Later-data fail; no-trade preferred; BTCUSDT negative.
+Candidate_D_live_readiness,closed,No implementation readiness and no dry-run authorization.
+Candidate_D_implementation_claim,closed,Historical confirmation did not survive fetched later data.
+parameter_tuning_after_failure,forbidden,Would be post-result optimization.
+threshold_sweep,forbidden,Would violate frozen-rule research boundary.
+market_removal_after_failure,forbidden,Would be cherry-picking after observing weak markets.
+dry_run_or_live_planning,forbidden,Later-data gate failed.
+implementation_readiness,closed_not_ready,No trading action is authorized.

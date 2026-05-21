@@ -1,0 +1,7 @@
+next_step,status,conditions
+no_trade_default,allowed_default,Capital preservation remains preferred after later-data failure.
+benchmark_only_monitoring,allowed,"Observation only; no entries, exits, orders, dry-run, or live planning."
+longer_later_data_validation_plan,allowed_only_if_explicitly_approved,"Must be predeclared, use frozen Candidate D rules, and avoid cherry-picking the window."
+forward_data_observation_plan,allowed_only_if_explicitly_approved,Research observation only; no dry-run/live claim.
+fresh_hypothesis_inventory,allowed,Must not tune Candidate D or revive failed rules as implementation candidates.
+Candidate_D_research_record,allowed,Can remain archived as historical pass plus later-data fail evidence.

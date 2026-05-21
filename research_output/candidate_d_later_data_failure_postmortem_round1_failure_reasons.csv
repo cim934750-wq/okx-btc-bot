@@ -1,0 +1,10 @@
+reason,evidence,interpretation
+aggregate_negative,later-data net PnL -174.23,Active trading failed to beat capital preservation.
+profit_factor_failure,PF 0.1313,Far below PF >= 1.00 fail threshold and research pass bands.
+no_trade_not_beaten,no-trade preferred by 174.23,No-trade remains the default baseline.
+BTCUSDT_failure,"BTCUSDT 1 trade, net PnL -11.62, PF 0.0",BTC boundary failed despite Candidate D previously passing BTC confirmation.
+take_profit_absent,take-profit count 0,Later rebounds did not reach the 1.5R objective.
+stop_time_stop_dominated,6 stop-loss exits and 8 time-stop exits out of 15 trades,Exit profile was dominated by failed or stalled bounces.
+passive_btc_opportunity_cost,passive BTC +10.1087% while Candidate D lost -174.23,"Passive BTC is only a benchmark, but it highlights poor active-strategy timing."
+slippage_fee_fragility,base negative; extra 10 bps per side worsened result to -204.08,Execution friction cannot rescue the candidate.
+material_confirmation_decay,net PnL delta -4027.56; PF delta -1.6288; BTC delta -265.46,Historical confirmation did not transfer to later fetched data.
