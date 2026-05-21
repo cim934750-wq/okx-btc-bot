@@ -1,0 +1,3 @@
+scope,candidate,trade_count,net_pnl,return_pct,max_dd_pct,start_timestamp,end_timestamp,interpretation
+holdout,B_passive_btc_buy_hold_benchmark,1,64785.447025,64.785447,49.836972,2024-02-05T04:00:00+00:00,2026-04-12T12:00:00+00:00,opportunity_cost_benchmark_only_not_active_strategy_approval
+later_fetched,B_passive_btc_buy_hold_benchmark,1,10108.746203,10.108746,7.402035,2026-04-12T20:00:00+00:00,2026-05-21T04:00:00+00:00,opportunity_cost_benchmark_only_not_active_strategy_approval

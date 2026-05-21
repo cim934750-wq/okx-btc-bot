@@ -1,0 +1,13 @@
+candidate,executability_status,tested,reason
+A_no_trade_control,executable_from_frozen_definition,control_or_benchmark,Frozen definition sufficient for research-only handling.
+B_passive_btc_buy_hold_benchmark,executable_from_frozen_definition,control_or_benchmark,Frozen definition sufficient for research-only handling.
+C_volatility_compression_breakout_v2,executable_from_frozen_definition,yes,Frozen definition sufficient for research-only handling.
+D_volatility_expansion_continuation,executable_from_frozen_definition,yes,Frozen definition sufficient for research-only handling.
+E_true_mean_reversion_v2,executable_from_frozen_definition,yes,Frozen definition sufficient for research-only handling.
+F_relative_strength_rotation,executable_from_frozen_definition,yes,Frozen definition sufficient for research-only handling.
+G_btc_dominance_alt_filter,not_executable_missing_data,no,BTC dominance series is not available in local OHLCV and no fetch was approved.
+H_market_family_framework_v2,executable_from_frozen_definition,yes,Frozen definition sufficient for research-only handling.
+I_defensive_short_only,executable_from_frozen_definition,yes,Frozen definition sufficient for research-only handling.
+J_long_short_regime_switch,executable_from_frozen_definition,yes,Frozen definition sufficient for research-only handling.
+K_liquidation_wick_bounce,executable_from_frozen_definition,yes,Frozen definition sufficient for research-only handling.
+L_breakout_failure_reversal,executable_from_frozen_definition,yes,Frozen definition sufficient for research-only handling.

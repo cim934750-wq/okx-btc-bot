@@ -1,0 +1,13 @@
+candidate,promotion_status,reason
+A_no_trade_control,parked,baseline control only
+B_passive_btc_buy_hold_benchmark,parked,benchmark only
+C_volatility_compression_breakout_v2,parked,"holdout net PnL -1013.75 does not beat no-trade; holdout PF 0.8364428433708734 below 1.00; BTCUSDT holdout net PnL -111.71; later-data trade count 2 too low; later-data net PnL -21.76, PF 0.0; later BTCUSDT net PnL -21.76"
+D_volatility_expansion_continuation,parked,"holdout net PnL -1347.51 does not beat no-trade; holdout PF 0.7619911977390703 below 1.00; BTCUSDT holdout net PnL -13.53; later-data trade count 2 too low; later-data net PnL -45.48, PF 0.0"
+E_true_mean_reversion_v2,parked,holdout net PnL -311.78 does not beat no-trade; holdout PF 0.6349100524722596 below 1.00; BTCUSDT holdout net PnL -5.42; later-data trade count 0 too low
+F_relative_strength_rotation,parked,holdout net PnL -508.32 does not beat no-trade; holdout PF 0.9679495177998049 below 1.00; later-data trade count 0 too low
+G_btc_dominance_alt_filter,parked,not executable from frozen local inputs
+H_market_family_framework_v2,parked,holdout net PnL -100.38 does not beat no-trade; holdout PF 0.9142813154660375 below 1.00; BTCUSDT holdout net PnL -13.53; later-data trade count 0 too low
+I_defensive_short_only,parked,holdout net PnL -409.84 does not beat no-trade; holdout PF 0.7314036014805521 below 1.00; BTCUSDT holdout net PnL -16.65; later-data trade count 0 too low
+J_long_short_regime_switch,parked,"holdout net PnL -3293.53 does not beat no-trade; holdout PF 0.6885776529356817 below 1.00; BTCUSDT holdout net PnL -17.39; later-data trade count 3 too low; later-data net PnL -13.27, PF 0.7637844068075735"
+K_liquidation_wick_bounce,parked,"BTCUSDT holdout net PnL -14.46; top3 concentration 111.07%; top10 positive trade contribution 136.36%; later-data trade count 2 too low; later-data net PnL -35.43, PF 0.0; later BTCUSDT net PnL -9.54"
+L_breakout_failure_reversal,parked,"holdout net PnL -634.52 does not beat no-trade; holdout PF 0.9510801834300735 below 1.00; later-data net PnL -33.71, PF 0.30183924996544653; later BTCUSDT net PnL -24.30"
