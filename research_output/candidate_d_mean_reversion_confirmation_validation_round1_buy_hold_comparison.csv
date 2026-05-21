@@ -1,0 +1,3 @@
+candidate,scope,candidate_net_pnl,passive_BTC_start,passive_BTC_end,passive_BTC_start_close,passive_BTC_end_close,passive_BTC_return_pct,passive_BTC_normalized_pnl_per_100k,passive_BTC_max_close_to_close_dd_pct,interpretation
+D_mean_reversion_oversold_bounce,reference,3243.0036289571476,2019-01-01T00:00:00+00:00,2024-02-05T00:00:00+00:00,3693.13,42718.31,1056.6966231895437,1056696.6231895438,77.04339319608702,opportunity_cost_benchmark_only_not_active_strategy_approval
+D_mean_reversion_oversold_bounce,holdout,3853.3206954951756,2024-02-05T04:00:00+00:00,2026-04-12T12:00:00+00:00,43071.88,70976.19,64.78544702483384,64785.44702483385,49.83697178895504,opportunity_cost_benchmark_only_not_active_strategy_approval

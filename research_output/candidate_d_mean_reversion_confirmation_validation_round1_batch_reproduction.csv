@@ -1,0 +1,7 @@
+metric,confirmation_value,batch_value,delta,assessment
+net_pnl,3853.3206954951756,3853.3206954951756,0.0,reproduced
+profit_factor,1.760127441945461,1.760127441945461,0.0,reproduced
+trades,339,339,0,reproduced
+BTCUSDT_net_pnl,253.84076938536865,253.84076938536865,0.0,reproduced
+BTCUSDT_profit_factor,2.3689022585477293,2.3689022585477293,0.0,reproduced
+positive_markets,18,18,0,reproduced

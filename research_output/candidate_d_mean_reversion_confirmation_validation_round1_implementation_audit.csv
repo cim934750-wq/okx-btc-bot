@@ -1,0 +1,10 @@
+audit_item,result,evidence,interpretation
+entry_candle_timing,pass,entry at signal candle close; no future candle used for entry,matches frozen batch convention
+stop_target_interpretation,documented_conservative,stop checked before take-profit and EMA20 touch within each post-entry bar,conservative OHLC ambiguity handling
+EMA20_touch_definition,pass,exit at EMA20 level when post-entry bar high >= EMA20,matches frozen exit definition
+time_stop_counting,pass,time stop when exit_bar - entry_bar >= 8 completed 4h candles,matches frozen 8-candle stop
+OHLC_availability,pass,used local 4h OHLCV only; BTCUSDT_1h excluded,no missing/fake OHLCV used
+fee_handling,pass,"0.05% commission on entry and exit using fixed 1,000 USDT notional",same research convention as batch
+lookahead_check,pass,features use current/past candles only; previous close explicit; no future BTC or market data,no known lookahead in confirmation runner
+batch_reproduction,pass,"aggregate, PF, trades, BTCUSDT and positive-market counts reproduce batch values",standalone confirmation reproduces batch Candidate D metrics
+intrabar_ambiguity_count_holdout,documented,24,bars with more than one exit condition possible; conservative order used

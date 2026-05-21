@@ -1,0 +1,3 @@
+candidate,scope,candidate_net_pnl,no_trade_net_pnl,candidate_minus_no_trade,interpretation
+D_mean_reversion_oversold_bounce,reference,3243.0036289571476,0.0,3243.0036289571476,beats_no_trade
+D_mean_reversion_oversold_bounce,holdout,3853.3206954951756,0.0,3853.3206954951756,beats_no_trade

@@ -1,0 +1,2 @@
+candidate,scope,market,net_pnl,profit_factor,trade_count,max_drawdown_pct,win_rate,assessment
+D_mean_reversion_oversold_bounce,holdout,BTCUSDT,253.84076938536865,2.3689022585477293,19,0.08878870398991175,63.1578947368421,pass_btc_boundary

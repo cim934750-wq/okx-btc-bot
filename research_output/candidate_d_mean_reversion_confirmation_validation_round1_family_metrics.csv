@@ -1,0 +1,11 @@
+candidate,scope,family,market_count,total_trades,net_pnl,positive_markets,negative_markets,flat_markets,raw_signals,skipped_or_invalid_signals
+D_mean_reversion_oversold_bounce,holdout,defi,2,35,52.68368189375037,1,1,0,35,0
+D_mean_reversion_oversold_bounce,holdout,large_alts,6,104,1397.3716661583078,6,0,0,104,0
+D_mean_reversion_oversold_bounce,holdout,majors,2,46,494.6157696473565,2,0,0,46,0
+D_mean_reversion_oversold_bounce,holdout,meme_high_beta,1,22,305.78665357378543,1,0,0,22,0
+D_mean_reversion_oversold_bounce,holdout,other,8,132,1602.8629242219758,8,0,0,135,3
+D_mean_reversion_oversold_bounce,reference,defi,2,85,771.2410608423786,2,0,0,85,0
+D_mean_reversion_oversold_bounce,reference,large_alts,6,239,1614.5928200639946,5,1,0,243,4
+D_mean_reversion_oversold_bounce,reference,majors,2,110,-910.3246380676139,0,2,0,110,0
+D_mean_reversion_oversold_bounce,reference,meme_high_beta,1,47,-31.311844430398125,0,1,0,47,0
+D_mean_reversion_oversold_bounce,reference,other,8,358,1798.8062305487863,7,1,0,358,0

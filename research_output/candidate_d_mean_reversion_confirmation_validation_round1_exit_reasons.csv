@@ -1,0 +1,10 @@
+candidate,scope,exit_reason,count,pct_of_trades,net_pnl,avg_pnl,win_rate
+D_mean_reversion_oversold_bounce,reference,EMA20_touch,121,14.421930870083433,11093.469491473854,91.68156604523845,100.0
+D_mean_reversion_oversold_bounce,reference,scope_end_forced,1,0.11918951132300357,23.560461893764437,23.560461893764437,100.0
+D_mean_reversion_oversold_bounce,reference,stop_loss,304,36.23361144219309,-17914.124011076427,-58.928039510119824,0.0
+D_mean_reversion_oversold_bounce,reference,take_profit_1_5R,96,11.442193087008343,6978.450276259011,72.69219037769803,100.0
+D_mean_reversion_oversold_bounce,reference,time_stop_8_bars,317,37.783075089392135,3061.647410406946,9.658193723681219,59.305993690851736
+D_mean_reversion_oversold_bounce,holdout,EMA20_touch,54,15.929203539823009,3760.8667369382483,69.64568031367126,100.0
+D_mean_reversion_oversold_bounce,holdout,stop_loss,102,30.08849557522124,-4034.0901335118524,-39.54990326972404,0.0
+D_mean_reversion_oversold_bounce,holdout,take_profit_1_5R,61,17.99410029498525,3126.4671000401654,51.25355901705189,100.0
+D_mean_reversion_oversold_bounce,holdout,time_stop_8_bars,122,35.9882005899705,1000.0769920286147,8.19735239367717,59.83606557377049

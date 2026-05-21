@@ -1,0 +1,11 @@
+check,result,value,threshold
+aggregate_holdout_positive_after_fees,True,3853.3206954951756,required > 0
+PF_preferred_1_20_min_1_10,True,1.760127441945461,preferred >= 1.20; minimum >= 1.10
+PF_minimum_1_10,True,1.760127441945461,>= 1.10
+BTCUSDT_nonnegative_PF_1_05,True,net=253.84076938536865; PF=2.3689022585477293,net >= 0 and PF >= 1.05
+no_trade_beaten,True,3853.3206954951756,> 0
+top3_concentration_not_excessive,True,30.5964453404063,<= 75%
+top10_trade_contribution_not_excessive,True,31.202343329096056,<= 65%
+batch_reproduction_consistent,True,all key metrics reproduced,required for confirmation
+implementation_audit,True,no known lookahead; conservative OHLC handling documented,no major mismatch
+final_decision,pass_research_confirmation_requires_no_trading_action,OHLC_ambiguity_documented,research-only; not implementation-ready

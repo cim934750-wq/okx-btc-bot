@@ -1,0 +1,4 @@
+candidate,scope,market,family,net_pnl,profit_factor,trade_count,win_rate,assessment
+D_mean_reversion_oversold_bounce,holdout,DOGEUSDT,meme_high_beta,305.78665357378543,1.7331489637910011,22,40.909090909090914,visible_included_not_removed
+D_mean_reversion_oversold_bounce,holdout,DOTUSDT,other,151.53734023201287,1.7586437060867928,12,41.66666666666667,visible_included_not_removed
+D_mean_reversion_oversold_bounce,holdout,UNIUSDT,defi,-40.72737456383444,0.8909211894253196,20,40.0,visible_included_not_removed
