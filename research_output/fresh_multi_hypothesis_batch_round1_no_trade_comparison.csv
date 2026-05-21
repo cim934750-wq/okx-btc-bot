@@ -1,0 +1,9 @@
+candidate,candidate_type,candidate_net_pnl,no_trade_net_pnl,candidate_minus_no_trade,interpretation
+A_no_trade_baseline,baseline,0.0,0.0,0.0,equals_no_trade
+H_benchmark_only_monitoring,observation_only,0.0,0.0,0.0,equals_no_trade
+C_volatility_compression_breakout,active_long,57.87683139049534,0.0,57.87683139049534,beats_no_trade
+D_mean_reversion_oversold_bounce,active_long,3853.3206954951756,0.0,3853.3206954951756,beats_no_trade
+E_btc_relative_strength_alt,active_long,-822.1964390415072,0.0,-822.1964390415072,does_not_beat_no_trade
+F_market_family_framework,active_long,-59.923860961391284,0.0,-59.923860961391284,does_not_beat_no_trade
+G_defensive_short_hedge,active_short,-127.25986684591584,0.0,-127.25986684591584,does_not_beat_no_trade
+B_passive_BTC_buy_hold,opportunity_cost_benchmark,64785.44702483385,0.0,64785.44702483385,beats_no_trade

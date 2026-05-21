@@ -1,0 +1,9 @@
+candidate,type,definition_summary
+A_no_trade_baseline,baseline,"No positions, no fees, no strategy drawdown, capital preservation."
+B_passive_BTC_buy_hold,benchmark,"Buy BTCUSDT first holdout close and hold to last holdout close; normalized per 100,000 USDT."
+C_volatility_compression_breakout,active_long,ATR14 <= 30th percentile of trailing 120 and BB width bottom 35th percentile; close breaks prior 20 high above EMA50; stop 1.5 ATR; TP 2R; EMA20 or 12-bar exit.
+D_mean_reversion_oversold_bounce,active_long,"RSI14 <= 28, close at least 1.5 ATR below EMA20, first bounce; stop 10-candle low - 0.5 ATR; EMA20 touch/1.5R/8-bar exit."
+E_btc_relative_strength_alt,active_long_alt,Non-BTC alts only; RS EMA20 > EMA60 and slope positive with BTC safety; alt EMA50/prior-high breakout; stop 1.5 ATR; RS/EMA20/2R/12-bar exit.
+F_market_family_framework,active_family,"C on majors/large_alts, D on defi, meme/high-beta observation-only/no-trade, other no-trade."
+G_defensive_short_hedge,active_short_high_risk,"BTCUSDT-only short when close < EMA200 and EMA200 slope24 < 0, breakdown below prior 20 low; stop 1.5 ATR; EMA20/2R/12-bar exit."
+H_benchmark_only_monitoring,observation_only,No trades; observation-only continuation option.

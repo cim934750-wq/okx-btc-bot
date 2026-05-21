@@ -1,0 +1,16 @@
+candidate,market,family,net_pnl,profit_factor,trade_count,raw_signals,skipped_or_not_traded,assessment
+C_volatility_compression_breakout,DOGEUSDT,meme_high_beta,-89.7583495860369,0.8389355912673226,27,27,0,visible_included_not_removed
+C_volatility_compression_breakout,DOTUSDT,other,242.11797461089557,1.8232055135101777,25,25,0,visible_included_not_removed
+C_volatility_compression_breakout,UNIUSDT,defi,144.41277165859623,1.509888896153566,17,17,0,visible_included_not_removed
+D_mean_reversion_oversold_bounce,DOGEUSDT,meme_high_beta,305.78665357378543,1.7331489637910011,22,22,0,visible_included_not_removed
+D_mean_reversion_oversold_bounce,DOTUSDT,other,151.53734023201287,1.7586437060867928,12,12,0,visible_included_not_removed
+D_mean_reversion_oversold_bounce,UNIUSDT,defi,-40.72737456383444,0.8909211894253196,20,20,0,visible_included_not_removed
+E_btc_relative_strength_alt,DOGEUSDT,meme_high_beta,788.0069347856512,1.498320766800707,70,70,0,visible_included_not_removed
+E_btc_relative_strength_alt,DOTUSDT,other,160.47180282521091,1.1748043738612632,44,44,0,visible_included_not_removed
+E_btc_relative_strength_alt,UNIUSDT,defi,-351.5987181115013,0.7583894634995223,52,52,0,visible_included_not_removed
+F_market_family_framework,DOGEUSDT,meme_high_beta,0.0,NA_no_trades,0,67,67,visible_included_not_removed
+F_market_family_framework,DOTUSDT,other,0.0,NA_no_trades,0,53,53,visible_included_not_removed
+F_market_family_framework,UNIUSDT,defi,-40.72737456383444,0.8909211894253196,20,20,0,visible_included_not_removed
+G_defensive_short_hedge,DOGEUSDT,meme_high_beta,0.0,NA_no_trades,0,0,0,visible_included_not_removed
+G_defensive_short_hedge,DOTUSDT,other,0.0,NA_no_trades,0,0,0,visible_included_not_removed
+G_defensive_short_hedge,UNIUSDT,defi,0.0,NA_no_trades,0,0,0,visible_included_not_removed

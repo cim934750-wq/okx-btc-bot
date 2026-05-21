@@ -1,0 +1,9 @@
+candidate,scope,start,end,start_close,end_close,return_pct,normalized_pnl_per_100k,max_close_to_close_dd_pct,interpretation,candidate_net_pnl,passive_btc_normalized_pnl_per_100k,candidate_minus_passive_btc_reference
+B_passive_BTC_buy_hold,holdout,2024-02-05T04:00:00+00:00,2026-04-12T12:00:00+00:00,43071.88,70976.19,64.78544702483384,64785.44702483385,49.83697178895504,opportunity_cost_benchmark_only_not_active_strategy_pass,,,
+A_no_trade_baseline,holdout,,,,,,,,comparison_only_passive_btc_not_active_strategy_approval,0.0,64785.44702483385,-64785.44702483385
+H_benchmark_only_monitoring,holdout,,,,,,,,comparison_only_passive_btc_not_active_strategy_approval,0.0,64785.44702483385,-64785.44702483385
+C_volatility_compression_breakout,holdout,,,,,,,,comparison_only_passive_btc_not_active_strategy_approval,57.87683139049534,64785.44702483385,-64727.57019344335
+D_mean_reversion_oversold_bounce,holdout,,,,,,,,comparison_only_passive_btc_not_active_strategy_approval,3853.3206954951756,64785.44702483385,-60932.12632933867
+E_btc_relative_strength_alt,holdout,,,,,,,,comparison_only_passive_btc_not_active_strategy_approval,-822.1964390415072,64785.44702483385,-65607.64346387536
+F_market_family_framework,holdout,,,,,,,,comparison_only_passive_btc_not_active_strategy_approval,-59.923860961391284,64785.44702483385,-64845.37088579524
+G_defensive_short_hedge,holdout,,,,,,,,comparison_only_passive_btc_not_active_strategy_approval,-127.25986684591584,64785.44702483385,-64912.706891679765

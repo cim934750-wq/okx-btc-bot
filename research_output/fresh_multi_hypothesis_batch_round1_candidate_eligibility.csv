@@ -1,0 +1,9 @@
+candidate,eligibility,reason
+A_no_trade_baseline,executable_baseline,No trading logic required.
+B_passive_BTC_buy_hold,executable_benchmark,BTCUSDT 4h holdout data exists.
+C_volatility_compression_breakout,executable_active_research,"All frozen indicators, entry, stop, exit, and sizing convention are defined."
+D_mean_reversion_oversold_bounce,executable_active_research,"All frozen indicators, entry, stop, exit, and sizing convention are defined."
+E_btc_relative_strength_alt,executable_active_research,BTC anchor and non-BTC alt universe are available and rules are fully defined.
+F_market_family_framework,executable_active_research,Families and mapped candidate rules are fully defined; no market removal.
+G_defensive_short_hedge,executable_high_risk_research,Repo contains short-capable research backtest logic; fixed BTC-only short rule is fully defined.
+H_benchmark_only_monitoring,executable_observation_only,No trading logic required.

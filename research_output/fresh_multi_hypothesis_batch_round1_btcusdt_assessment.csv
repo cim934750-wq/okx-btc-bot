@@ -1,0 +1,9 @@
+candidate,scope,btc_traded_or_relevant,net_pnl,profit_factor,trade_count,assessment
+C_volatility_compression_breakout,holdout,yes,-101.96367385501422,0.6972352113161302,32,fail_if_negative_for_btc_relevant
+D_mean_reversion_oversold_bounce,holdout,yes,253.84076938536865,2.3689022585477293,19,not_direct_btc_trade_or_nonnegative
+E_btc_relative_strength_alt,holdout,anchor_only_not_traded,0.0,NA_no_trades,0,not_direct_btc_trade_or_nonnegative
+F_market_family_framework,holdout,yes,-101.96367385501422,0.6972352113161302,32,fail_if_negative_for_btc_relevant
+G_defensive_short_hedge,holdout,yes,-127.25986684591584,0.8715625179777207,67,fail_if_negative_for_btc_relevant
+A_no_trade_baseline,holdout,no_trade,0.0,NA_no_trades,0,non_trading_baseline
+B_passive_BTC_buy_hold,holdout,benchmark_only,64785.44702483385,NA_benchmark,1,opportunity_cost_benchmark_not_active_pass
+H_benchmark_only_monitoring,holdout,no_trade,0.0,NA_no_trades,0,non_trading_baseline
