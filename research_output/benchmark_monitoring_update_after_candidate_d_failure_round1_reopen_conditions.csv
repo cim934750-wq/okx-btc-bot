@@ -1,0 +1,9 @@
+condition,required_status,detail
+explicit_user_approval,required,"Any new research execution, data fetch, validation, dry-run discussion, or bot action requires explicit approval."
+fresh_hypothesis_or_longer_data_plan,required,Must be proposed before any research resumes; Candidate D cannot be silently revived.
+predeclared_rules,required,Rules must be frozen before testing; no tuning after seeing results.
+validation_plan_before_validation,required,"Metrics, data scope, pass/caution/fail bands, no-trade comparison, and forbidden work must be documented first."
+no_trade_comparison,required,Any future active candidate must beat no-trade after fees.
+passive_BTC_comparison_if_BTC_relevant,required_if_applicable,BTC-relevant work must compare to passive BTC benchmark.
+no_parameter_tuning,required,Candidate D or any future candidate cannot be optimized after failure evidence.
+weak_market_visibility,required_if_basket,DOGE/DOT/UNI and other weak markets remain visible unless exclusions are predeclared and separately validated.

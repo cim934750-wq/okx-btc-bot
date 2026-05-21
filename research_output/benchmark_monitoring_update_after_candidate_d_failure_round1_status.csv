@@ -1,0 +1,9 @@
+item,status,detail
+long_only_chain,closed,Prior Long1/D2/D6/cooldown/anti-chase/regime chain failed or was parked.
+Candidate_D_historical_confirmation,passed_research_confirmation,"Historical holdout net PnL +3853.32, PF 1.7601, BTCUSDT +253.84."
+Candidate_D_fetched_later_data,failed,"Later-data net PnL -174.23, PF 0.1313, BTCUSDT -11.62, zero take-profits."
+Candidate_D_implementation_status,parked_for_implementation,"Not dry-run-ready, not live-ready, not implementation-ready."
+active_strategy_status,none_ready,No active strategy is implementation-ready.
+default_state,no_trade_capital_preservation,No-trade remains preferred after later-data failure.
+allowed_continuation,benchmark_only_monitoring,Observation only; no trading actions.
+bot_state_recommendation,keep_stopped,No dry-run/live continuation authorized.

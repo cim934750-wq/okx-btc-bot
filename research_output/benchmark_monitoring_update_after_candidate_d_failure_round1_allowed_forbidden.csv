@@ -1,0 +1,11 @@
+category,item,detail
+allowed,benchmark_only_notes,"Periodic observation-only notes on BTCUSDT context, passive BTC, no-trade, volatility, and drawdown/rally windows."
+allowed,regime_observations,Non-signal observations about volatility and oversold-bounce environment.
+allowed,future_hypothesis_inventory,Ideas may be listed but not tested without selection note and validation plan.
+allowed,data_quality_notes,Document benchmark/data limitations without triggering trades.
+forbidden,trade_signals,"Monitoring must not generate entries, exits, orders, alerts, or actionable signals."
+forbidden,dry_run_or_paper_trading,"No dry-run restart, paper trading, or operational bot restart."
+forbidden,live_readiness,No live-readiness or production-readiness claim.
+forbidden,Candidate_D_tuning,No RSI/ATR/EMA/R/stop/time-stop changes after later-data failure.
+forbidden,market_removal_or_cherry_picking,No removing DOGE/DOT/UNI or selecting markets after results.
+forbidden,implementation_claim,No active strategy is implementation-ready.
