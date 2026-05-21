@@ -1,0 +1,13 @@
+check,status,detail
+no_active_strategy_approved,confirmed,No active strategy is implementation-ready.
+no_trade_default,confirmed,Capital preservation remains default after Candidate D later-data failure.
+Candidate_D_parked_for_implementation,confirmed,Historical confirmation did not transfer to fetched later data.
+bot_should_remain_stopped,confirmed,No dry-run/live continuation authorized.
+no_trade_signal,confirmed,Monitoring note produces no trade signal.
+no_entry_exit,confirmed,No entries or exits are recommended.
+no_dry_run_restart,confirmed,No paper/dry-run service restart.
+no_live_trading,confirmed,No live trading plan or readiness claim.
+no_implementation_readiness,confirmed,Implementation readiness remains closed / not ready.
+no_Candidate_D_tuning,confirmed,No RSI/ATR/EMA/R/stop/time-stop changes.
+no_new_OHLCV_fetch,confirmed,No OHLCV fetched for this monitoring note.
+reopen_requires_explicit_approval,confirmed,Future research requires explicit approval and predeclared plan.
