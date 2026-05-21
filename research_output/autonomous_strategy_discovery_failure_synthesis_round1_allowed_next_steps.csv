@@ -1,0 +1,6 @@
+status,item,condition,reason
+allowed,benchmark_only_monitoring,"Observation only; no signals, orders, dry-run, or live planning.",No-trade remains the default after zero promotions.
+allowed,failure_synthesis_and_archival_review,Research-note only.,Preserves lessons from the autonomous loop without tuning.
+allowed_with_explicit_approval,new_frozen_definition_inventory,Must use clearly new data source or feature class and freeze rules before testing.,"This loop does not prove automated trading impossible, only that these families failed gates."
+allowed_with_explicit_approval,K_near_miss_observation,Observation only or future frozen-definition review; no parameter tuning and no direct confirmation validation.,"K was closest but failed BTC, concentration, PF, and later-data gates."
+default,pause_no_trade_default,Remain in effect unless user explicitly approves a new research plan.,Conservative decision after all active candidates parked.

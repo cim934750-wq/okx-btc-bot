@@ -1,0 +1,10 @@
+item,value,interpretation
+candidate_families_generated,12,"Includes controls, benchmarks, and active research families."
+controls_and_benchmarks,2,A_no_trade_control;B_passive_btc_buy_hold_benchmark
+executable_or_control_benchmark_definitions,11,Definitions sufficient for research-only handling.
+not_executable_candidates,1,G_btc_dominance_alt_filter
+tested_active_candidates,9,C_volatility_compression_breakout_v2;D_volatility_expansion_continuation;E_true_mean_reversion_v2;F_relative_strength_rotation;H_market_family_framework_v2;I_defensive_short_only;J_long_short_regime_switch;K_liquidation_wick_bounce;L_breakout_failure_reversal
+promoted_candidates,0,No candidate survived promotion gates.
+best_holdout_active_candidate,K_liquidation_wick_bounce,"Holdout net PnL 769.17, PF 1.0843, trades 611."
+later_data_status,existing_fetched_data_used,Existing fetched later-data was used; no new OHLCV was fetched.
+final_decision,pause_no_trade_default,No active candidate deserves confirmation or implementation planning.

@@ -1,0 +1,9 @@
+item,status,reason
+autonomous_loop_candidates_as_trading_candidates,closed,No active candidate survived promotion gates.
+K_liquidation_wick_bounce_direct_promotion,closed,"PF 1.0843, BTCUSDT negative, concentration excessive, later-data negative/low sample."
+G_btc_dominance_alt_filter_execution,closed_pending_data_approval,Missing BTC dominance data; no fetch was approved.
+dry_run_or_live_planning,closed,No candidate is dry-run-ready or live-ready.
+implementation_readiness_claim,closed,Research gates did not produce a surviving candidate.
+parameter_tuning_or_threshold_sweep,forbidden,Would convert failure synthesis into overfitting.
+market_removal_or_cherry_picking,forbidden,DOGE/DOT/UNI and BTCUSDT must remain visible; no post-result removal.
+reviving_Candidate_D_or_prior_failed_paths,closed,Prior chain and Candidate D later-data failure remain closed.
