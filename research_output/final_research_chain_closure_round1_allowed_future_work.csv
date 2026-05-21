@@ -1,0 +1,9 @@
+future_work,allowed_status,conditions
+No-trade default,allowed,"Default state; no fees, no strategy drawdown, no orders."
+Benchmark-only monitoring,allowed,"Observation only; may produce notes, regime observations, future hypothesis ideas, and data quality notes."
+Fresh hypothesis selection note,allowed_after_explicit_approval,Must not reopen failed paths as implementation candidates.
+Predeclared validation plan,required_before_future_validation,"Must define candidate, data scope, metrics, no-trade comparison, and pass/caution/fail bands before execution."
+Future validation execution,allowed_only_after_plan_and_approval,"Must follow frozen plan exactly; no tuning, sweeps, or market removal."
+Additional same-family long-only filters,not_recommended,Current long-only filter family failed repeatedly; do not continue incremental filters without a genuinely fresh thesis.
+Dry-run/live restart,forbidden,No strategy candidate passed validation and bot should remain stopped.
+Production implementation claim,forbidden,Implementation readiness remains closed.

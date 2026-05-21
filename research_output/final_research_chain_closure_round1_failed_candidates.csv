@@ -1,0 +1,10 @@
+candidate_or_reference,status,net_pnl,profit_factor,BTCUSDT_net_pnl,BTCUSDT_profit_factor,key_interpretation
+Long1-only holdout,failed,-69.89,0.9832,-50.21,0.8475,"Failed predeclared holdout; aggregate negative, PF below 1, BTCUSDT negative."
+D2 dry-run reference,failed,-51.92 USDT,NA,NA,NA,Negative dry-run reference; not a continuation candidate.
+D6 early-stop dry-run reference,failed,-103.78 USDT,NA,NA,NA,Negative early-stop dry-run reference; not a continuation candidate.
+6-candle cooldown validation,failed,-91.46,0.9725,-73.14,0.7461,Reduced trades/fees but worsened net PnL versus failed Long1 holdout.
+Anti-chase EMA/ATR validation,failed,-225.26,0.9445,-82.62,0.7259,Skipped too few entries and worsened expectancy; BTCUSDT failed.
+BTC-only immediate path,paused,NA,NA,repeated BTC failures,repeated BTC PF failures,Paused to avoid rescue bias; separate gate required for any future BTC-only work.
+Multi-hypothesis tournament active candidates,not_executable,NA,NA,NA,NA,No active candidate had sufficiently frozen executable rules.
+Regime-filtered long-only validation,failed,-266.26,0.9318,-30.08,0.9021,Risk-on gating blocked entries but did not create positive expectancy or beat no-trade.
+No-trade baseline,default,0,NA,0,NA,Preferred default after active candidates failed.

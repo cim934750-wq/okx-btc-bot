@@ -1,0 +1,9 @@
+field,value,interpretation
+research_chain,failed_long_only_chain_closed,Long1/D2/D6/cooldown/anti-chase/regime-filtered long-only chain is closed.
+default_state,no_trade_capital_preservation,No-trade remains preferred over failed active candidates.
+monitoring_state,benchmark_only_allowed,Observation-only monitoring may continue without trade signals or bot restart.
+bot_state,keep_stopped,Bot service should remain stopped; no dry-run/live continuation is authorized.
+infrastructure_status,useful_but_not_strategy_edge,"GCP/systemd/dry-run operation helped validate operations, not profitability or readiness."
+strategy_status,no_active_candidate,No current candidate is implementation-ready or dry-run-ready.
+implementation_readiness,closed_not_ready,"No production merge, live planning, or readiness claim."
+next_direction,pause_or_benchmark_monitoring,Only fresh hypothesis work after explicit approval and predeclared gates.

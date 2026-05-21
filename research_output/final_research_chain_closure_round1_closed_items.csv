@@ -1,0 +1,11 @@
+item,status,reason
+Long1-only,closed,Failed predeclared holdout validation.
+D2,closed,Negative dry-run reference.
+D6,closed,Negative early-stop dry-run reference.
+Cooldown,closed,Frozen 6-candle cooldown failed validation.
+Anti-chase,closed,Frozen EMA/ATR distance filter failed validation.
+BTC-only immediate path,closed_or_paused,Decision was pause_no_trade_default; future BTC-only requires separate explicit gate.
+Regime-filtered long-only,closed,Frozen BTCUSDT regime filter failed validation.
+Long-only basket implementation path,closed,Multiple long-only variants failed or were not executable.
+Dry-run/live planning,closed,No validated strategy candidate beat no-trade gates.
+Implementation readiness,closed_not_ready,Research chain produced no implementation-ready candidate.
