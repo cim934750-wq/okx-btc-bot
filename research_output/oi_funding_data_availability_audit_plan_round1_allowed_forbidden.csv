@@ -1,0 +1,11 @@
+status,item,condition,reason
+allowed,audit_plan_only,Current task only defines what future audit should check.,No data fetch or strategy definition authorized.
+allowed,path_and_market_context_inspection,Existing local paths/config may be inspected without network fetch.,Needed to identify same 19 markets and local OHLCV context.
+allowed_with_explicit_approval,future_oi_funding_data_fetch_audit,Must be explicitly approved later and produce fetch log/data coverage outputs.,Only after this audit plan is reviewed.
+allowed_after_successful_data_audit,frozen_feature_definition_plan,Only if OI/funding data is usable or partially usable with documented caveats.,Strategy rules must not be invented before coverage is known.
+forbidden,data_fetch,Forbidden in this task.,User explicitly requested no fetch yet.
+forbidden,backtest_or_validation,Forbidden in this task.,This is audit-design only.
+forbidden,trading_strategy_definition,Forbidden until data coverage is known.,Avoid building rules around unknown fields or missing coverage.
+forbidden,parameter_tuning_or_threshold_sweep,Forbidden.,Would overfit after failed research chain.
+forbidden,failed_candidate_revival,"Candidate D, K, Long1, D2, D6, cooldown, anti-chase, and regime-filtered remain closed.",No prior failed path is implementation-ready.
+forbidden,dry_run_live_or_implementation_claim,Forbidden.,Implementation readiness remains closed.

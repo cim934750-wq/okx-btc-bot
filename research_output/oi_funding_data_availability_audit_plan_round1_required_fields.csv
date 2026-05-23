@@ -1,0 +1,14 @@
+field_name,feature_class,required,description,quality_rule
+timestamp,both,yes,UTC timestamp for observation or funding period.,Must be timezone-aware or explicitly normalized to UTC; no duplicate timestamps per instrument/field.
+spot_style_symbol,both,yes,Local symbol such as BTCUSDT mapped from derivative instrument.,Must map back to one of the same 19 markets; no substitute markets.
+okx_inst_id,both,yes,OKX derivative instrument ID such as BTC-USDT-SWAP.,Must be verified from exchange metadata during future audit.
+instrument_type,both,yes,Expected to be USDT-margined perpetual/swap where available.,"Must not mix spot OHLCV, coin-margined swaps, futures expiries, or unrelated instruments without explicit labeling."
+open_interest_value,open_interest,yes_for_oi,Open interest numeric value.,"Must document units and whether value is contracts, base currency, quote currency, or USD notional."
+open_interest_unit,open_interest,yes_for_oi,Unit for OI value.,Required for cross-market comparability; inconsistent/unknown units make data partially usable or unusable.
+open_interest_notional_usdt,open_interest,preferred,Normalized OI notional if safely derivable.,Do not infer silently; derivation must be documented and auditable.
+funding_rate,funding_rate,yes_for_funding,Funding rate for current or completed funding interval.,Must distinguish realized/historical funding from next/predicted funding to avoid leakage.
+funding_time,funding_rate,preferred,Timestamp of funding event/settlement.,Needed to align 8h funding to 4h candles without future leakage.
+next_funding_timestamp,funding_rate,optional_diagnostic,Next funding timestamp if returned by exchange.,Must not be used as predictive future data unless proven available at candle close.
+source_name,both,yes,API/library/vendor/local-cache source.,Every row must include provenance.
+raw_payload_hash_or_archive_ref,both,preferred,Reference to raw response or immutable archive.,Improves reproducibility; absence must be documented.
+fetch_timestamp,both,yes_for_future_fetch,UTC time of future audit fetch.,Required in future fetch/audit outputs.

@@ -1,0 +1,9 @@
+rule_id,topic,rule,failure_if_violated
+align_to_4h_ohlcv,time_alignment,All OI/funding observations must be mapped to the same 4h candle grid used by local OHLCV validation.,Cannot compare with prior validation windows or detect leakage.
+no_future_leakage,time_alignment,A feature value may only be attached to a 4h candle if it was observable at or before that candle close.,Data unusable for strategy research until corrected.
+funding_8h_handling,funding_rate,"Funding typically updates at a lower frequency such as 8h; future audit must record whether rate is historical settled, current, or predicted and define candle assignment before validation.",Funding data is partially usable at best; strategy definition forbidden.
+oi_sampling_frequency,open_interest,"Open interest sampling frequency must be documented. If higher than 4h, aggregate by last-known-observable within candle; if lower than 4h, document sparse coverage without unapproved forward-fill.",OI feature cannot be used as a precise 4h signal.
+no_forward_fill_default,missing_data,Do not forward-fill missing OI/funding values by default. Any future fill policy must be separately studied and documented before validation.,Risk of fabricated continuity; data not usable for primary validation.
+timezone_utc,timestamp,All source timestamps must be normalized to UTC and compared against OHLCV UTC timestamps.,Data unusable until timestamp normalization is fixed.
+same_19_market_visibility,market_scope,"Audit must report coverage for all 19 prior markets and keep BTCUSDT, DOGEUSDT, DOTUSDT, and UNIUSDT visible.",Coverage cannot support fair continuation of this research chain.
+document_missing_instruments,market_scope,"If a swap/perpetual instrument is missing for a market, document it; do not replace the market with a different symbol.",Market selection/cherry-picking risk.
