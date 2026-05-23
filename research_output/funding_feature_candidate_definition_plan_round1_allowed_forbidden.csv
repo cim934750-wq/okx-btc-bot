@@ -1,0 +1,13 @@
+status,item,condition,reason
+allowed,funding_feature_definition_plan,This task only freezes funding feature formula/alignment/scope.,Funding audit showed 19/19 availability with constraints.
+allowed_after_explicit_approval,future_validation_plan,Must freeze a base entry/exit stream and preserve this funding formula before any validation.,Funding filter is not standalone trade logic.
+allowed_after_explicit_approval,funding_feature_validation,Only after validation plan approval; no threshold sweep or tuning.,Needed to test whether funding improves expectancy.
+allowed_diagnostic_only,open_interest_reporting,OI may be reported but not used in the primary candidate.,Historical OI is constrained as 1h/base-currency aggregate.
+forbidden,new_data_fetch,Forbidden in this plan task.,Use existing audited data constraints only.
+forbidden,backtest_or_validation,Forbidden in this plan task.,Definition only.
+forbidden,funding_threshold_sweep,No 80/85/90/95 comparisons or post-result changes.,Avoid overfitting.
+forbidden,percentile_window_sweep,180 funding observations fixed.,Avoid post-result optimization.
+forbidden,oi_substitution_after_funding_result,Cannot add OI to rescue a failed funding result.,OI is second-stage diagnostic only.
+forbidden,post_result_market_removal,Same 19 markets and key markets remain visible.,Avoid cherry-picking.
+forbidden,failed_candidate_revival,"Candidate D, K, Long1, D2, D6, cooldown, anti-chase, regime-filtered remain closed.","Can only be comparators, not implementation candidates."
+forbidden,dry_run_live_or_implementation_claim,Forbidden.,Implementation readiness remains closed.

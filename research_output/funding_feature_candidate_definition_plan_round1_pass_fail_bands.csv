@@ -1,0 +1,15 @@
+band,criterion,interpretation
+pass,aggregate_net_pnl_after_fees > 0,Must beat no-trade in absolute terms.
+pass,PF >= 1.20 preferred and PF >= 1.10 minimum,Below 1.10 cannot pass.
+pass,BTCUSDT non-negative if meaningful BTC trades exist,BTC boundary remains active.
+pass,expectancy improves versus same frozen base entry stream without funding filter,Trade reduction alone is not edge.
+pass,no excessive single-market/family concentration,No edge dominated by one market or family.
+pass,missing/stale/warmup blocks are reported and not excessive,Feature must be operationally available.
+caution,aggregate positive but trade count low,Requires more data or longer validation before any promotion.
+caution,PF between 1.00 and 1.10 or materially weaker than base expectations,No pass; only diagnostic continuation.
+caution,"BTC weak, funding coverage weak, or concentration high",No dry-run; synthesize limitations.
+fail,aggregate_net_pnl <= 0 or PF < 1.00,Candidate fails capital-preservation gate.
+fail,no-trade not beaten,No active trading justification.
+fail,funding unavailable/stale/warmup for many candidate entries,Feature not usable as planned.
+fail,result depends only on one market/family or post-result market selection,Concentration/cherry-picking failure.
+fail,funding threshold/window changed after results,Invalidates predeclared research gate.

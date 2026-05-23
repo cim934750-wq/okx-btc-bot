@@ -1,0 +1,10 @@
+scope_item,frozen_scope,notes
+market_universe,AAVEUSDT;ADAUSDT;ATOMUSDT;AVAXUSDT;BCHUSDT;BNBUSDT;BTCUSDT;DOGEUSDT;DOTUSDT;ETCUSDT;ETHUSDT;FILUSDT;LINKUSDT;LTCUSDT;NEARUSDT;SOLUSDT;TRXUSDT;UNIUSDT;XRPUSDT,Same 19 approved markets; no post-result market removal.
+funding_coverage_from_audit,19/19 markets available; 2026-02-19T16:00:00+00:00 to 2026-05-23T08:00:00+00:00,Future validation must use overlapping OHLCV/funding windows or explicitly approved additional funding fetch.
+key_markets,BTCUSDT;DOGEUSDT;DOTUSDT;UNIUSDT,Must remain visible in all future reports.
+instrument_mapping,spot-style SYMBOLUSDT -> OKX SYMBOL-USDT-SWAP funding,"Use audited mapping; missing future funding blocks entries, no substitution."
+oi_primary_usage,excluded_from_primary_candidate,OI may be reported as diagnostic only because historical OI is constrained.
+base_entry_logic,not_selected_in_this_plan,"Funding filter is a feature candidate, not standalone trade logic. Future validation must separately freeze the base entry/exit stream before testing."
+candidate_d_and_k_status,comparators_only_not_revived,"Candidate D and K may be referenced only as failed/near-miss baselines, not as implementation candidates."
+no_trade_baseline,required,Future validation must beat no-trade after fees.
+passive_btc_benchmark,required_if_btc_relevant,"Benchmark only, not active strategy approval."

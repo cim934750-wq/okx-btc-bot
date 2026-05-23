@@ -1,0 +1,20 @@
+metric,required,purpose
+net_pnl,yes,Measure aggregate fee-adjusted result once paired with a frozen base entry/exit stream.
+profit_factor,yes,Primary profitability quality gate.
+max_drawdown_pct,yes,Risk control check.
+win_rate,yes,Distribution context.
+trade_count,yes,Detect low-sample/inconclusive results and trade reduction effects.
+blocked_entries_by_funding_state,yes,"Show whether filter acts through positive_extreme, neutral_positive, missing, stale, or warmup blocks."
+funding_bucket_performance,yes,"Compare outcomes by negative_extreme, neutral_to_negative, neutral_positive, positive_extreme, missing/stale."
+BTCUSDT_result,yes,BTC boundary remains mandatory if meaningful BTC trades exist.
+DOGE_DOT_UNI_result,yes,Prior weak/special markets remain visible.
+family_level_result,yes,Detect family concentration and broad support.
+top3_top5_market_concentration,yes,Check whether edge is concentrated.
+top10_positive_trade_contribution,yes,Outlier dependence check.
+no_trade_comparison,yes,Capital preservation baseline.
+passive_BTC_comparison,yes_if_BTC_relevant,Opportunity-cost benchmark only.
+comparison_against_Candidate_D_and_autonomous_loop_failures,yes,"Must beat no-trade, not merely failed references."
+missing_funding_count,yes,Feature availability and block accounting.
+stale_funding_count,yes,Alignment quality and no-forward-fill enforcement.
+warmup_insufficient_count,yes,Percentile lookback feasibility check.
+expectancy_delta_vs_base_entry_stream,yes,"Filter must improve expectancy, not only reduce trades."

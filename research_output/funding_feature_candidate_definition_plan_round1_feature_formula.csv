@@ -1,0 +1,10 @@
+feature_name,formula,primary_or_diagnostic,notes
+current_funding_rate,most_recent_funding_rate where funding_timestamp <= candle_close and candle_close - funding_timestamp <= 4h,primary,Decimal rate per funding interval.
+funding_percentile_lookback,180 completed prior funding observations for the same market; exclude current funding from percentile reference window,primary,Approximately 60 days at 8h cadence.
+funding_percentile_rank_prior_180,percent_rank(current_funding_rate against prior_180_funding_rates),primary,"If fewer than 180 prior observations, state is warmup_insufficient and entries are blocked."
+positive_extreme,funding_percentile_rank_prior_180 >= 90,primary,Blocks all new long entries for that market.
+negative_extreme,funding_percentile_rank_prior_180 <= 10,diagnostic_tag,Tag only; does not increase sizing or trigger trades.
+neutral_to_negative,current_funding_rate <= 0 OR funding_percentile_rank_prior_180 <= 50,primary,Required for future long mean-reversion entry eligibility.
+neutral_positive,current_funding_rate > 0 AND 50 < funding_percentile_rank_prior_180 < 90,primary_block_state,Blocked in primary candidate to keep the feature gate contrarian and avoid crowded-long exposure.
+funding_change_24h,current_funding_rate - funding_rate_lag_3_funding_observations,diagnostic_only,Not used in primary blocking rule; no change threshold is defined.
+missing_or_stale_funding,no funding value satisfying timestamp and staleness rules,primary_block_state,Blocks feature-based entries and is counted in future validation.

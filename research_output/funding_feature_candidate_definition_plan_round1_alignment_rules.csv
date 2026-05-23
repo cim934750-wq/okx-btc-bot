@@ -1,0 +1,10 @@
+rule_id,frozen_rule,reason
+timeframe,strategy_timeframe_is_4h; funding_observation_cadence_is_8h,Audit showed funding history is available at 8h cadence for 19/19 markets.
+timestamp_availability,for_a_4h_candle_close_use_only_funding_timestamp <= candle_close_timestamp,Prevents future funding leakage.
+max_staleness,max_allowed_funding_staleness_hours = 4,A complete 8h funding series should map to same funding timestamp or the immediately following 4h candle only.
+stale_or_missing,if_no_funding_observation_within_4h_then_state = stale_or_missing_and_new_long_entry_blocked,No arbitrary forward-fill across funding gaps.
+funding_event_candle,if_candle_close_timestamp == funding_timestamp_then_funding_value_is_available_for_that_candle_close,Uses settled/current funding only at or before the decision timestamp.
+intermediate_4h_candle,if_candle_close_is_4h_after_prior_funding_and_before_next_funding_then_prior_funding_may_be_used_with_staleness=4h,Explicit sparse 8h-to-4h mapping; not silent fill.
+warmup,require_180_prior_completed_funding_observations_before_percentile_classification,Avoids unstable early percentile buckets.
+no_forward_fill_default,no_forward_fill_beyond_explicit_4h_staleness_window,Matches audit constraint and prevents fabricated feature continuity.
+timezone,all_funding_and_ohlcv_timestamps_must_be_UTC,Audit data uses UTC ISO timestamps.

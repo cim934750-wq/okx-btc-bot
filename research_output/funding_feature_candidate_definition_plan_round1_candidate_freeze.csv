@@ -1,0 +1,13 @@
+field,frozen_value,notes
+candidate_name,funding_extreme_avoidance_filter_round1,Research-only feature gate; not a standalone trading strategy and not implementation-ready.
+candidate_type,market_specific_funding_rate_contrarian_eligibility_filter,Blocks or permits future long research entries based on funding state; does not generate entries by itself.
+primary_purpose,avoid_long_entries_when_funding_is_extremely_positive_and_require_neutral_to_negative_funding_for_long_mean_reversion_entries,Targets crowded-long avoidance and possible short-squeeze/rebound context without reviving failed OHLCV candidates.
+standalone_trade_trigger,false,Funding state alone must not create an entry. Future validation requires a separately predeclared base entry/exit stream.
+market_specific_or_btc_anchor,market_specific_primary_btc_anchor_diagnostic_only,"Each market uses its own OKX USDT-swap funding. BTC funding may be reported as diagnostic, not used to gate all markets in the primary candidate."
+funding_lookback,180_completed_funding_observations_per_market,"At 8h cadence, approximately 60 days. Structural default chosen for enough observations without short-window overfit."
+positive_extreme_rule,funding_percentile_rank_prior_180 >= 90,Block all new long entries for that market when true.
+negative_extreme_rule,funding_percentile_rank_prior_180 <= 10,"Observation tag only in primary candidate; no extra sizing, leverage, or standalone long trigger."
+neutral_to_negative_long_eligibility,current_funding_rate <= 0 OR funding_percentile_rank_prior_180 <= 50,Future long mean-reversion entries are eligible only in neutral-to-negative funding conditions and only if not positive_extreme.
+blocked_states,positive_extreme;neutral_positive;missing;stale;warmup_insufficient,neutral_positive means funding is positive and percentile > 50 but < 90; blocked to keep primary candidate contrarian/avoidance-focused.
+missing_funding_behavior,block_feature_based_trading_and_count_missing,"Do not infer, synthesize, or forward-fill missing funding."
+oi_usage,diagnostic_only_not_primary_candidate,OI excluded because audit classified OI as partially_usable; historical OI is constrained and not exact instrument-specific via current route.
