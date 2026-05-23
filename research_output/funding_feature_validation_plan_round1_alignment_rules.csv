@@ -1,0 +1,12 @@
+rule_id,frozen_rule,validation_requirement
+time_grid,base stream uses completed 4h OHLCV candles; funding observations are 8h cadence,Report sparse funding-to-4h alignment explicitly.
+funding_availability,at candle close use only funding timestamp <= candle close,Never use next funding print.
+max_staleness,funding may be used only when candle_close - funding_timestamp <= 4h,Older funding is stale and blocks entry.
+funding_event_candle,"if candle_close == funding_timestamp, funding value is available for that candle close",Same-timestamp value is allowed.
+intermediate_candle,"if candle close is 4h after funding and before next funding, prior funding may be used","This is explicit alignment, not arbitrary forward-fill."
+no_forward_fill,do not fill missing funding beyond the 4h staleness window,Missing/stale states block and are counted.
+percentile_reference,"current funding compared against 180 prior completed observations, excluding current value",Avoids leakage and self-referential percentile ranks.
+warmup,entries before 180 prior funding observations are blocked,Count warmup-blocked entries separately from positive-extreme blocks.
+timezone,all OHLCV and funding timestamps must be UTC,Report timezone consistency.
+market_alignment,use each market funding series for that market only,"BTC funding diagnostic-only, not basket anchor gate."
+open_positions,funding gate applies only to new entries,Do not force exits for already-open positions.

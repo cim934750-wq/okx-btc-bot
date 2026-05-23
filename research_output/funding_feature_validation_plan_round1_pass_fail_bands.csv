@@ -1,0 +1,22 @@
+band,condition,interpretation
+pass,aggregate filtered candidate positive after fees on the defined validation window,Must make money after costs.
+pass,PF >= 1.20 preferred and PF >= 1.10 minimum,Minimum research edge quality.
+pass,no-trade beaten,Capital preservation remains the default gate.
+pass,filtered stream improves over base Candidate D later-data result on comparable window,Funding gate must add value beyond base stream.
+pass,BTCUSDT non-negative if meaningful BTC trades exist,BTC boundary must not fail.
+pass,reduced stop-loss/time-stop damage or clear avoided-loser evidence,Not merely lower trade count.
+pass,no excessive market/family/trade concentration,Avoid outlier-only edge.
+pass,funding coverage sufficient and missing/stale/warmup blocking not dominant,"Feature must be usable, not mostly unavailable."
+caution,aggregate positive but PF < 1.10,Weak edge; no promotion without synthesis.
+caution,trade count too low for interpretation,"May require longer data plan, not implementation."
+caution,BTCUSDT weak or no meaningful BTC sample,BTC-relevant caution.
+caution,improvement driven by one market or one family,Concentration risk.
+caution,many blocked entries are missing/stale/warmup rather than funding state,"Data availability, not signal."
+fail,aggregate negative,No active candidate can advance.
+fail,PF < 1.00,Insufficient edge.
+fail,no-trade not beaten,Capital preservation remains better.
+fail,worse than base Candidate D on comparable window,Funding gate damages base stream.
+fail,funding filter mainly blocks winners,Avoidance logic not useful.
+fail,insufficient funding coverage or stale/missing dominates,Feature not usable for validation.
+fail,BTCUSDT negative with meaningful trades,BTC boundary failure.
+fail,edge concentrated in one outlier market/family/trade cluster,Not robust.

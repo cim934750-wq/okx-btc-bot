@@ -1,0 +1,31 @@
+metric,applies_to,purpose
+net_pnl,base_stream;funding_gated_stream;market;family,Primary fee-aware result.
+profit_factor,base_stream;funding_gated_stream;market;family,Risk/edge quality check.
+max_drawdown,base_stream;funding_gated_stream,Controlled DD requirement.
+win_rate,base_stream;funding_gated_stream;market,Behavioral diagnostic only.
+avg_trade,base_stream;funding_gated_stream,Expectancy check.
+median_trade,base_stream;funding_gated_stream,Outlier sensitivity check.
+trade_count,base_stream;funding_gated_stream;market,Low sample warning.
+blocked_entry_count,funding_gate,How many base entries the funding gate blocks.
+blocked_entries_by_reason,positive_extreme;neutral_positive;missing;stale;warmup_insufficient,Separate crowding avoidance from data-unavailability blocking.
+blocked_entries_by_funding_percentile_bucket,<=10;10-50;50-90;>=90;missing/stale/warmup,Bucket-level behavior audit.
+missed_winners,blocked_base_entries_that_would_have_been_positive,Tests whether gate mainly blocks edge.
+avoided_losers,blocked_base_entries_that_would_have_been_negative,Tests whether gate avoids damage.
+stop_loss_frequency,base_stream;funding_gated_stream,Check whether funding gate reduces stop damage.
+time_stop_frequency,base_stream;funding_gated_stream,Check whether funding gate reduces dead-money holds.
+ema20_touch_frequency,base_stream;funding_gated_stream,Exit composition.
+take_profit_frequency,base_stream;funding_gated_stream,Check whether rebound quality improves.
+average_hold_time,base_stream;funding_gated_stream,Holding behavior.
+median_hold_time,base_stream;funding_gated_stream,Holding behavior.
+BTCUSDT_result,base_stream;funding_gated_stream,BTC boundary check if meaningful BTC trades.
+DOGE_DOT_UNI_result,base_stream;funding_gated_stream,Weak/key market transparency.
+family_level_result,base_stream;funding_gated_stream,Breadth and concentration diagnostic.
+positive_negative_market_count,base_stream;funding_gated_stream,Breadth check.
+top3_top5_concentration,funding_gated_stream,Market concentration risk.
+top10_positive_trade_contribution,funding_gated_stream,Trade outlier dependence.
+no_trade_comparison,funding_gated_stream,Capital-preservation gate.
+passive_btc_comparison,BTC_relevant_windows,Opportunity-cost benchmark only.
+base_candidate_d_comparison,funding_gated_stream_vs_base_stream,Tests actual feature impact.
+candidate_d_later_data_failure_comparison,funding_gated_stream,Must improve over -174.23/PF 0.1313 later-data failure where comparable.
+funding_coverage_counts,all_entries,Missing/stale/warmup coverage audit.
+slippage_fee_sensitivity,if_feasible,Check fragility; not optimization.

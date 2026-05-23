@@ -1,0 +1,15 @@
+field,frozen_value,notes
+base_stream_name,candidate_d_mean_reversion_oversold_bounce_research_baseline,Used only as frozen research comparator/gated stream; Candidate D remains parked for implementation.
+timeframe,4h,BTCUSDT_1h excluded.
+direction,long_only,No shorting or hedging in this validation plan.
+entry_condition_1,RSI14 <= 28,No RSI threshold tuning or sweep.
+entry_condition_2,close <= EMA20 - 1.5 * ATR14,No EMA/ATR multiplier tuning or sweep.
+entry_condition_3,close > previous_close,First-bounce condition from frozen Candidate D.
+entry_timing,evaluate at completed 4h candle close; entry on the same research-runner convention used for Candidate D confirmation,Future validation must audit candle timing and avoid lookahead.
+initial_stop,recent_10_candle_low - 0.5 * ATR14,Use prior/current completed 4h data according to existing Candidate D confirmation convention; no stop changes.
+take_profit,1.5R,No R multiple tuning.
+ema_exit,EMA20 touch,Use same EMA20-touch definition as Candidate D confirmation validation.
+time_stop,after 8 completed 4h candles,No time-stop tuning.
+position_management,no_averaging_down; no_add_on_entries,One position stream per market according to prior research runner convention.
+sizing,reuse_candidate_d_confirmation_research_sizing_convention,"Do not alter sizing; if sizing cannot be reproduced, future validation must stop and report."
+base_status,research_baseline_only_not_implementation_candidate,"Base stream is used to test feature-gate effect, not to revive Candidate D as dry-run/live candidate."

@@ -1,0 +1,16 @@
+category,item,status,notes
+allowed,create_predeclared_validation_plan,allowed,This task only.
+allowed,define_frozen_base_stream,allowed,"Candidate D research baseline only, not implementation revival."
+allowed,define_frozen_funding_gate,allowed,Use already frozen thresholds/window/staleness.
+allowed,future_validation_after_explicit_approval,allowed_later,Must execute exactly this plan.
+allowed,OI_diagnostic_reporting,allowed_later,Cannot affect eligibility in round1.
+forbidden,run_validation_or_backtest_now,forbidden,Plan-only task.
+forbidden,fetch_new_data_now,forbidden,Use audited funding constraints only.
+forbidden,change_funding_thresholds,forbidden,No percentile threshold sweep.
+forbidden,change_180_observation_window,forbidden,No lookback sweep.
+forbidden,change_4h_staleness,forbidden,No alignment tuning.
+forbidden,use_OI_as_primary_feature,forbidden,OI is constrained/partial.
+forbidden,change_candidate_d_base_rules,forbidden,No RSI/ATR/EMA/R/stop/time-stop changes.
+forbidden,remove_markets_after_results,forbidden,BTCUSDT/DOGE/DOT/UNI visible.
+forbidden,dry_run_live_or_implementation_claim,forbidden,Research-only.
+forbidden,revive_failed_candidates_as_trading_candidates,forbidden,Candidate D/K/Long1/D2/D6/cooldown/anti-chase/regime remain closed.

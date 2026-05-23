@@ -1,0 +1,13 @@
+scope_item,frozen_scope,notes
+market_universe,AAVEUSDT;ADAUSDT;ATOMUSDT;AVAXUSDT;BCHUSDT;BNBUSDT;BTCUSDT;DOGEUSDT;DOTUSDT;ETCUSDT;ETHUSDT;FILUSDT;LINKUSDT;LTCUSDT;NEARUSDT;SOLUSDT;TRXUSDT;UNIUSDT;XRPUSDT,Same 19 approved markets; no post-result removal.
+key_markets,BTCUSDT;DOGEUSDT;DOTUSDT;UNIUSDT,Must be visible in future validation outputs.
+funding_coverage_from_audit,19/19 markets; 279 rows each; 2026-02-19T16:00:00+00:00 to 2026-05-23T08:00:00+00:00,Funding data is 8h cadence and usable for research.
+ohlcv_scope,same historical OHLCV and fetched later-data windows where available,Future validation must document exact overlap; no fake/inferred OHLCV.
+primary_validation_window,"fetched later-data window where Candidate D failed, if OHLCV/funding overlap is sufficient",Tests whether funding gate addresses later-data transfer failure.
+historical_reference_window,Candidate D confirmation/holdout window only if funding overlap is sufficient,Use for reference diagnostics; do not optimize against it.
+btc_1h,excluded,Do not use BTCUSDT_1h.csv.
+funding_data,existing audited funding data only,No new fetch in this plan. Future validation may only use available audited files unless separately approved.
+oi_data,diagnostic_only,Historical OI constrained/partial and not exact instrument-specific via current route.
+missing_or_stale_data,block entries and count by reason,"No forward-fill, inference, synthesis, or substitution."
+market_selection,none,DOGE/DOT/UNI and BTCUSDT remain visible regardless of result.
+benchmarks,no_trade and passive_BTC where BTC-relevant,Passive BTC is opportunity-cost benchmark only.

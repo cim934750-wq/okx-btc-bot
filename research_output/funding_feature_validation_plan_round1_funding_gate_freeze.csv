@@ -1,0 +1,18 @@
+field,frozen_value,notes
+candidate_name,funding_extreme_avoidance_filter_round1,Research-only market-specific funding gate.
+gated_stream,candidate_d_mean_reversion_oversold_bounce_research_baseline,Funding gate cannot be validated alone.
+funding_source,audited OKX USDT-swap funding history per market,Use existing audit data in future validation unless a separate task approves additional fetch.
+instrument_mapping,SYMBOLUSDT -> SYMBOL-USDT-SWAP,Use audited mapping for the same 19 markets.
+timestamp_rule,funding_timestamp <= 4h_candle_close,Same or prior funding only; no future leakage.
+max_staleness,4h,"If most recent funding is older than 4h, block entry and count stale."
+percentile_window,180 prior completed funding observations,Exclude current funding from reference window.
+percentile_formula,percent_rank(current_funding_rate against prior_180_funding_rates),"If fewer than 180 prior observations, block and count warmup_insufficient."
+positive_extreme,funding_percentile_rank_prior_180 >= 90,Block long entry.
+neutral_to_negative_eligibility,current_funding_rate <= 0 OR funding_percentile_rank_prior_180 <= 50,Required for allowing base long entry.
+neutral_positive,current_funding_rate > 0 AND 50 < percentile < 90,Block long entry to keep round1 contrarian/avoidance-focused.
+negative_extreme,funding_percentile_rank_prior_180 <= 10,"Diagnostic tag only; no entry priority, sizing, stop, or exit change."
+missing_funding,block_entry_and_count_missing,Do not infer or synthesize funding.
+stale_funding,block_entry_and_count_stale,No arbitrary forward-fill beyond max 4h.
+warmup_insufficient,block_entry_and_count_warmup,No percentile estimate before 180 prior observations.
+oi_usage,diagnostic_only_not_eligibility,No OI substitution after funding result.
+allowed_action,block_or_allow_new_long_entries_only,Does not force exits; does not alter open positions.
