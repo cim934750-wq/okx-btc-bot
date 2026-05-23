@@ -1,0 +1,11 @@
+requirement,target,reason,failure_condition
+market_coverage,same 19 approved markets,Preserve prior validation universe and visibility,Too many missing instruments or key BTC/DOGE/DOT/UNI missing
+key_market_visibility,BTCUSDT DOGEUSDT DOTUSDT UNIUSDT explicitly reported,Prior weak/key markets must not be hidden,Any key market omitted from coverage report
+history_overlap,Overlap prior OHLCV reference/holdout/later-data windows where possible,Enable future research comparison without new selection bias,History too short for meaningful overlap
+start_end_per_market,Earliest/latest timestamp per instrument,Expose short histories and uneven coverage,Missing start/end timestamps
+row_count_per_market,Rows per instrument and source,Quantify usable sample size,Row count insufficient or undocumented
+sampling_interval,Observed cadence per instrument,Determine 4h alignment method,Cadence irregular beyond documented gaps
+gap_report,Gap count and largest gap per market,Prevent silent missing data,Excessive gaps or no gap audit
+duplicate_report,Duplicate timestamp count per market,Prevent double-counting,Duplicates cannot be resolved without assumptions
+timezone_consistency,UTC normalized or clearly convertible timestamps,Avoid alignment and leakage errors,Mixed or ambiguous timezone basis
+four_hour_alignment,Same/prior OI observation available at each 4h candle under documented staleness rule,Required before any strategy definition,Cannot align without forward-looking data or arbitrary fill

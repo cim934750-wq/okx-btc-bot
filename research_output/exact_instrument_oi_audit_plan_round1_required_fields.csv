@@ -1,0 +1,12 @@
+field,required,description,failure_if_missing
+timestamp,yes,Exchange event/sample timestamp in UTC or convertibly timestamped,Cannot align to 4h candles
+instrument_id,yes,Exact OKX swap instrument ID such as BTC-USDT-SWAP,Cannot prove exact-instrument coverage
+spot_style_symbol,yes,Repository market symbol such as BTCUSDT,Cannot join to prior 19-market universe
+open_interest_value,yes,Raw OI value as supplied by source,Cannot audit availability
+oi_unit,yes,"Contract count, base currency, quote notional, or explicit exchange unit field",Cannot compare over time or across markets
+currency_or_contract_denomination,yes,Settlement/contract denomination and contract size if relevant,Cannot normalize or interpret units
+source_endpoint,yes,Native endpoint or ccxt method plus params,Cannot preserve provenance
+fetch_timestamp,yes_for_future_audit,Timestamp when future audit fetch is executed,Cannot reproduce audit timing
+raw_response_archive_or_hash,yes_for_future_audit,Path to raw response archive or content hash,Cannot verify source payload
+timezone_basis,yes,UTC or documented exchange timestamp basis,Cannot assess leakage or alignment
+sampling_interval,yes,Observed or declared sample cadence,Cannot decide 4h alignment feasibility

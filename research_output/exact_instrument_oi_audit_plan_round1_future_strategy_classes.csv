@@ -1,0 +1,6 @@
+strategy_class,unlocked_only_if,feature_logic,not_defined_in_this_plan,primary_risk
+OI expansion breakout,usable_exact_instrument_oi,Rising OI with price expansion may indicate participation behind a move,yes,Can confuse crowded late entries with real continuation
+price OI divergence filter,usable_exact_instrument_oi,Price move without confirming OI or OI rise against price may flag fragile moves,yes,Divergence definitions are easy to overfit
+crowded-position avoidance,usable_exact_instrument_oi,Extreme OI expansion may identify squeeze or crowded-position risk,yes,Requires careful directionality and unit normalization
+OI contraction exhaustion,usable_exact_instrument_oi,OI washout after directional stress may indicate forced-position exhaustion,yes,May be regime-specific and sparse
+squeeze-risk regime classifier,usable_exact_instrument_oi,OI level/change can classify squeeze-prone environments before entry logic,yes,Classifier can become an implicit threshold sweep

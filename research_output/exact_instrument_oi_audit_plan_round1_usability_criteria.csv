@@ -1,0 +1,5 @@
+class,definition,strategy_research_allowed,constraints
+usable_exact_instrument_oi,Historical OI is exact OKX swap instId-specific across enough markets/windows with clear units and 4h alignment,yes_after_separate_frozen_strategy_plan,No strategy until a predeclared plan is approved
+partially_usable_exact_but_short_history,Exact instrument OI is available but history is short or uneven,limited_after_constraints_plan,Future validation must declare limited window and sample-size risks
+usable_only_as_aggregate_context,"Only base-currency or aggregate OI history is available, not exact instrument history",no_for_instrument_strategy,May be used only as context/regime research after separate plan
+not_usable_for_strategy_research,"OI history missing, unit-ambiguous, too gappy, or not alignable without leakage",no,Stay benchmark-only or seek a different data source

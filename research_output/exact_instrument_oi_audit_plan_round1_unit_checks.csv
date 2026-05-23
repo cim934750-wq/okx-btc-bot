@@ -1,0 +1,7 @@
+check_id,unit_check,method,usable_condition,failure_condition
+contract_vs_base,Identify whether OI is contract count or base currency,"Compare source metadata, raw fields, and current exact OI unit checks",Unit can be named and remains stable per instrument,Unit cannot be determined or changes silently
+quote_notional_conversion,Assess whether conversion to quote notional is possible,"Require contract size, mark/index price timing, and no future price leakage",Conversion method is timestamp-safe and documented,Conversion requires future prices or undocumented assumptions
+cross_market_comparison,Assess whether OI values can be compared across symbols,Normalize only when unit and contract denomination are compatible,Cross-market values are interpretable after normalization,Only raw heterogeneous units exist
+time_consistency,Check for unit changes over time,Scan metadata and discontinuities around contract changes or source schema changes,No unexplained unit breaks or unit breaks are documented and segmentable,Unexplained unit discontinuities exist
+current_vs_historical_match,Compare current exact OI unit with historical route unit,Use overlapping timestamp if a future audit permits current/history comparison,Historical route matches exact instrument unit semantics,Historical route appears aggregate or incompatible
+aggregate_detection,Detect aggregate base-currency history,"Compare instrument IDs, endpoint params, and market-specific payload fields",Payload proves exact instId history,Payload only identifies currency/base aggregate

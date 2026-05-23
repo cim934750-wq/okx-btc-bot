@@ -1,0 +1,12 @@
+item,status,notes
+Create exact-instrument OI audit plan,allowed,This task only designs the future audit
+Inspect existing prior audit outputs,allowed,Use existing files for context only
+Fetch OI data now,forbidden,Future audit fetch requires explicit approval
+Run backtests or validation,forbidden,No strategy is defined or tested in this plan
+Define OI trading strategy,forbidden,Strategy definition waits until data usability is known
+Tune parameters or sweep thresholds,forbidden,No optimization or threshold search
+Use aggregate OI as exact instrument OI,forbidden,Must classify aggregate-only data separately
+Revive Candidate D K funding Long1 D2 D6 cooldown anti-chase regime paths,forbidden,Closed paths remain closed as implementation candidates
+Restart dry-run or create live plans,forbidden,No active strategy is implementation-ready
+No-trade default,allowed,Capital preservation remains default
+Benchmark-only monitoring,allowed,Observation only with no signals or readiness claims
