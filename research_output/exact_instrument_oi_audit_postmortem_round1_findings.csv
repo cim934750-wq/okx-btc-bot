@@ -1,0 +1,8 @@
+finding_id,finding,evidence,interpretation,research_effect
+current_exact_available,Current exact OI snapshot is available,19/19 markets via /api/v5/public/open-interest with instId oi oiCcy oiUsd,Useful for unit checks only,does_not_enable_historical_validation
+historical_route_available,Historical OI-like data is available,19/19 markets via /api/v5/rubik/stat/contracts/open-interest-volume,Timestamped 1h ccy-level context exists,aggregate_context_only
+historical_exact_not_proven,Historical exact instrument identity is not proven,Historical response lacks instId and adding instId did not prove exact filtering,Cannot treat as exact instrument OI,blocks_exact_oi_strategy
+ccxt_not_sufficient,ccxt route did not prove exact historical identity,ccxt fetch_open_interest_history relies on comparable historical route/provenance,Wrapper does not solve source limitation,blocks_exact_oi_strategy
+alignment_limited,1h data can align to 4h only as aggregate context,Same/prior timestamp alignment possible but not exact-instrument,Alignment is not the blocking issue; provenance is,aggregate_context_only
+unit_reconciliation_blocked,Current exact units cannot reconcile historical exact series,Current has oi/oiCcy/oiUsd; historical has value/volume arrays without instId,Unit precision differs across routes,blocks_cross_market_exact_feature
+strategy_not_allowed,No exact OI strategy should be defined,Usability decision usable_only_as_aggregate_context,Data does not support exact instrument feature claims,keep_no_trade_default

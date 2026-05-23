@@ -1,0 +1,9 @@
+item,status,reason
+exact-instrument OI strategy from current OKX/ccxt historical route,closed,Historical route is ccy-level/aggregate and exact instId identity is not proven
+OI-based entry/exit strategy definition from current data,closed,Current exact snapshot plus aggregate history cannot validate an instrument-level strategy
+treating historical ccy OI as exact instrument OI,closed,Response lacks instId and unit reconciliation is unsafe
+funding_extreme_avoidance_filter_round1 revival,closed,Funding-gated Candidate D failed and remains closed
+Candidate D implementation path,closed,Candidate D failed fetched later-data and funding-gated follow-up failed
+dry-run planning,closed,No research gate authorizes dry-run
+live trading planning,closed,No implementation-ready strategy exists
+implementation readiness,closed,No active strategy has passed required gates

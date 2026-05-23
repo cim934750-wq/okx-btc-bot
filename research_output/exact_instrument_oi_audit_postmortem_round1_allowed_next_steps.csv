@@ -1,0 +1,10 @@
+next_step,status,constraints
+no-trade default,allowed,Capital preservation remains the default
+benchmark-only monitoring,allowed,Observation only; no signals entries exits readiness claims
+aggregate-context-only audit plan,allowed_with_explicit_approval,Must state data is not instrument-level and cannot drive entries/exits alone
+external vendor exact-OI history audit,allowed_with_explicit_approval,Must verify exact instId history units timestamps licensing and provenance before strategy planning
+fresh feature inventory,allowed_with_explicit_approval,Only if genuinely new data source or feature class appears
+postmortem/synthesis documentation,allowed,No validation or strategy definition
+exact OI strategy from current OKX/ccxt historical route,forbidden,Historical exact instrument identity was not proven
+aggregate OI treated as exact instrument OI,forbidden,Would overstate data precision and provenance
+dry-run/live planning,forbidden,No active strategy is implementation-ready

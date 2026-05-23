@@ -1,0 +1,4 @@
+concept,observed_in_audit,data_fields,can_support_historical_4h_validation,allowed_use,not_allowed_use
+exact_current_instrument_snapshot,yes_19_of_19,instId instType oi oiCcy oiUsd ts,no,unit/provenance check for current instrument OI,historical feature validation or entry/exit logic
+historical_aggregate_ccy_context,yes_19_of_19,timestamp OI-like value volume arrays without instId,only_as_context_if_separately_planned,market-wide or base-currency context audit with constraints,instrument-level signal or exact OI claim
+exact_historical_instrument_feature,not_proven,would require timestamp instId OI unit and stable denomination,not_available_from_current_route,none until a proven source exists,strategy definition validation dry-run or live planning

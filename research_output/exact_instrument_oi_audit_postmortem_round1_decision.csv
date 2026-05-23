@@ -1,0 +1,4 @@
+decision_option,status,reason,next_action
+stop_oi_research_keep_benchmark_only,selected_conservative_default,Exact historical instrument OI was not proven and no exact OI strategy should be defined from current route,keep no-trade and benchmark-only monitoring
+plan_aggregate_context_only_audit,allowed_optional_with_explicit_approval,Historical ccy-level data is timestamped and alignable only as aggregate context,create plan-only audit with strict aggregate-context constraints before any validation
+seek_external_vendor_exact_oi_history,allowed_optional_with_explicit_approval,A vendor may provide exact historical instId-level OI with units,audit vendor coverage/provenance/licensing before strategy planning
