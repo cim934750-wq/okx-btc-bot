@@ -1,0 +1,9 @@
+rank,feature_class,data_availability,independence_from_failed_ohlcv,likely_crypto_usefulness,implementation_complexity,overfitting_risk,validate_without_live,ranking_reason,selected_for_next_audit
+1,taker_buy_sell_volume,medium,high,high,medium,medium,yes,Most direct new order-flow feature and likely public data candidate,yes_primary
+2,aggressive_buy_sell_imbalance,medium,high,high,medium,medium_high,yes,Turns taker volumes into directional pressure; must avoid threshold sweep,yes_primary_with_taker_volume
+3,abnormal_turnover,medium_high,medium,medium_high,low_medium,medium,yes,Useful secondary context and easier to audit; less independent if only OHLCV total volume,yes_secondary
+4,volume_delta,medium_low,high,high,medium_high,high,yes_if_data_exists,Powerful but depends on exact aggressor-side data quality,not_first_but_related
+5,candle_range_volume_impulse,high,low_medium,medium,low,high,yes,Close to failed OHLCV-only work unless paired with taker flow,not_primary
+6,liquidation_wick_proxy_with_flow,medium_low,medium,medium_high,medium,high,yes_if_flow_exists,"Could revisit K only if genuinely flow-confirmed, but revival risk is high",not_primary
+7,spread_liquidity_proxy,low_medium,high,medium,high,medium,maybe,Useful execution context but historical availability uncertain,defer
+8,historical_order_book_imbalance,low,high,medium_high,very_high,high,maybe,Potentially useful but data/complexity risk is highest,defer

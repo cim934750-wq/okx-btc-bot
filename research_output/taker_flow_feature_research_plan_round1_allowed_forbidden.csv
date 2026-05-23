@@ -1,0 +1,14 @@
+item,classification,notes
+Create taker-flow research plan,allowed,Planning/inventory only
+Create data-availability audit plan for taker buy/sell volume,recommended_next,No fetch until explicitly approved
+Benchmark-only monitoring,allowed,No signals or readiness claims
+No-trade default,allowed,Capital preservation remains default
+Immediate strategy validation,forbidden,Data availability must be audited first
+Data fetch in this task,forbidden,Future fetch requires explicit approval
+Threshold sweep,forbidden,Would repeat overfitting pattern
+OHLCV-only retest,forbidden,Not justified without genuinely new data feature
+Candidate D or K direct revival,forbidden,Closed/parked paths cannot be reopened as trading candidates
+Funding threshold tuning,forbidden,Funding gate failed and is closed
+Exact OI strategy from current route,forbidden,Historical exact instrument OI not proven
+Dry-run/live planning,forbidden,No active strategy is implementation-ready
+Implementation readiness claim,forbidden,Research planning only

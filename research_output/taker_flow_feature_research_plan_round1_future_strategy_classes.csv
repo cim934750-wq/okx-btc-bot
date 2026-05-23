@@ -1,0 +1,6 @@
+future_strategy_class,unlocked_only_if_data_usable,concept,required_guardrail,not_defined_now
+taker_flow_confirmed_breakout,historical taker buy/sell volume alignable to 4h,Breakout only considered when aggressive flow confirms participation,Must compare to no-trade and avoid threshold sweep,yes
+exhaustion_reversal_after_sell_imbalance,sell imbalance and rebound context available,Look for rebound after aggressive selling exhaustion,Must not revive Candidate D without fresh frozen rules,yes
+aggressive_buy_continuation,persistent aggressive buy imbalance available,Continuation only when buyers are demonstrably initiating flow,Must test BTCUSDT and weak markets visibly,yes
+liquidation_wick_bounce_with_flow_confirmation,wick proxy plus taker-flow data available,Revisit wick/capitulation only with flow confirmation,Must not directly revive K or hide later-data failure,yes
+no_trade_filter_during_low_flow_chop,turnover/flow intensity available,Avoid entries during low-flow noise regimes,Must prove expectancy improvement not just lower trade count,yes

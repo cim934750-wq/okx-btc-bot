@@ -1,0 +1,13 @@
+field,required_for,requirement,reason,failure_condition
+timestamp,all_features,UTC timestamp or exchange timestamp convertible to UTC,Required for 4h alignment and leakage checks,missing or ambiguous timestamp
+symbol_or_instrument,all_features,Spot/swap symbol or OKX instrument identifier,Required to map same 19 markets and keep BTC/DOGE/DOT/UNI visible,cannot map to approved universe
+taker_buy_volume,primary,Aggressive buyer-initiated volume in base or contract units,Core taker-flow input,not available or unit unclear
+taker_sell_volume,primary,Aggressive seller-initiated volume or safely derivable equivalent,Needed for imbalance/delta,not available and not safely derivable
+total_volume,primary_secondary,Total traded volume in same unit basis as taker fields,Needed to derive sell volume or normalize imbalance,unit mismatch or missing
+quote_volume,secondary,Quote/notional turnover if available,Useful for turnover and cross-market normalization,missing is acceptable only if base volume units are stable
+source_endpoint_or_method,all_features,Exact endpoint/method and request params,Provenance and reproducibility,undocumented source
+sampling_interval,all_features,Native cadence and observed gaps,Determines aggregation to 4h,irregular cadence without gap report
+fetch_timestamp,future_audit,Timestamp of future data fetch,Audit reproducibility,missing future audit timestamp
+raw_archive_path,future_audit,Path/hash for raw response archive,Prevents silent transformations,no raw/provenance archive
+unit_currency_contract_denomination,all_features,Base/quote/contract unit label,Prevents invalid cross-market comparisons,unit unclear or changes silently
+gap_duplicate_report,all_features,Gaps and duplicate timestamps by market,Quality control,no missing/duplicate audit
