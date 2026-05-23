@@ -1,0 +1,10 @@
+path,artifact_type,description
+/Users/immuhyun/Documents/Coin_Demo/okx-btc-bot/research_output/oi_funding_data_availability_audit_round1_raw,raw_directory,Raw/audit data directory for OI/funding availability audit.
+/Users/immuhyun/Documents/Coin_Demo/okx-btc-bot/research_output/oi_funding_data_availability_audit_round1_raw/funding_history.csv,raw_csv,Fetched funding-rate history rows.
+/Users/immuhyun/Documents/Coin_Demo/okx-btc-bot/research_output/oi_funding_data_availability_audit_round1_raw/open_interest_history_1h.csv,raw_csv,Fetched 1h historical OI rows from ccxt/OKX history endpoint.
+/Users/immuhyun/Documents/Coin_Demo/okx-btc-bot/research_output/oi_funding_data_availability_audit_round1_raw/current_open_interest.csv,raw_csv,Current exact instrument OI rows used for unit/provenance check.
+/Users/immuhyun/Documents/Coin_Demo/okx-btc-bot/research_output/oi_funding_data_availability_audit_round1_raw/funding_history_raw.jsonl,raw_jsonl,Raw ccxt funding history payloads.
+/Users/immuhyun/Documents/Coin_Demo/okx-btc-bot/research_output/oi_funding_data_availability_audit_round1_raw/open_interest_history_raw.jsonl,raw_jsonl,Raw ccxt open-interest history payloads.
+/Users/immuhyun/Documents/Coin_Demo/okx-btc-bot/research_output/oi_funding_data_availability_audit_round1_raw/current_open_interest_raw.jsonl,raw_jsonl,Raw ccxt current open-interest payloads.
+/Users/immuhyun/Documents/Coin_Demo/okx-btc-bot/research_output/oi_funding_data_availability_audit_round1_raw/fetch_log_raw.csv,raw_csv,Raw fetch log before summary copy.
+/Users/immuhyun/Documents/Coin_Demo/okx-btc-bot/research_output/oi_funding_data_availability_audit_round1_raw/market_mapping_raw.csv,raw_csv,Raw market mapping copy.
