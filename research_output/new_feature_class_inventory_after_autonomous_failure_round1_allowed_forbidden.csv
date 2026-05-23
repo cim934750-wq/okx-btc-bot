@@ -1,0 +1,11 @@
+status,item,condition,reason
+allowed,benchmark_only_monitoring,Observation-only; no signals or orders.,No active candidate survived autonomous gates.
+allowed,data_availability_audit_plan,Plan/audit only until explicit approval; no validation.,Need to know whether funding/OI/dominance data exists before strategy definition.
+allowed_with_explicit_approval,data_availability_audit_for_open_interest_and_funding_rate,Audit coverage/provenance first; do not turn it into strategy validation.,These are the top-ranked new feature classes.
+allowed_with_explicit_approval,frozen_definition_plan_for_one_selected_feature_class,Only after data availability is understood; freeze rules before testing.,Avoid Codex inventing rules during validation.
+forbidden,another_immediate_ohlcv_only_batch,Forbidden without a genuinely new feature/data class.,Autonomous OHLCV-only batch promoted zero candidates.
+forbidden,backtests_or_validation,Forbidden in this inventory task.,Task is inventory/planning only.
+forbidden,data_fetch,Forbidden in this inventory task.,User explicitly prohibited fetching data.
+forbidden,parameter_tuning_or_threshold_sweeps,Always forbidden from post-failure synthesis.,Would overfit after failures.
+forbidden,revive_candidate_d_or_k_as_trading_candidates,Forbidden without fresh approved research path; not implementation-ready.,Candidate D failed later data; K failed promotion gates.
+forbidden,dry_run_live_or_implementation_claim,Forbidden.,Implementation readiness remains closed.

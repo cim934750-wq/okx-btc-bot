@@ -1,0 +1,11 @@
+rank,feature_class,data_availability_score_1_to_5,independence_from_failed_ohlcv_score_1_to_5,crypto_usefulness_score_1_to_5,implementation_simplicity_score_1_to_5,overfitting_control_score_1_to_5,total_score,selected_for_next_planning,ranking_interpretation
+1,open_interest,4,5,5,3,3,20,yes,"High crypto-market relevance, materially independent from failed OHLCV-only rules, and plausibly auditable from public derivatives data."
+2,funding_rate,4,5,4,4,3,20,yes,"Directly measures derivatives crowding, can be used as filter/condition without changing production behavior, and is separate from prior OHLCV-only feature family."
+3,btc_or_alt_dominance,3,4,4,3,3,17,no,Potentially useful but requires external data governance before strategy planning.
+4,liquidation_or_long_short_squeeze_proxy,2,5,5,2,2,16,no,"Conceptually relevant to the K near-miss, but data availability and overfitting risk are too high before an audit."
+5,taker_buy_sell_volume,2,5,4,2,3,16,no,"Useful if available, but historical taker-side data may be costly or incomplete."
+6,stablecoin_dominance_or_liquidity_proxy,2,5,4,2,3,16,no,"Interesting macro feature, but data sourcing and interpretation risk are higher than funding/OI."
+7,volume_expansion_abnormal_turnover,4,2,3,5,2,16,no,Availability is good but independence from failed OHLCV-only candidates is weak.
+8,cross_market_relative_strength,4,2,3,3,2,14,no,A relative-strength candidate already failed in the autonomous loop; another RS-only path is not sufficiently new without broader data.
+9,event_news_exclusion_filter,2,5,3,1,1,12,no,"Potentially valuable as risk control, but high hindsight-labeling risk means it should not be first."
+10,volatility_regime_classifier,3,2,3,2,2,12,no,A pure OHLCV regime filter failed; worthwhile only after new data classes are available.
