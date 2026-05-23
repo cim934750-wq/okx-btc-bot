@@ -1,0 +1,7 @@
+condition,status,minimum_requirements,not_allowed
+genuinely_new_data_source,allowed_with_explicit_approval,Document source provenance coverage units and leakage controls before any strategy plan,No immediate validation or trading
+external_exact_oi_vendor_audit,allowed_with_explicit_approval,Audit exact instrument historical OI coverage units timestamps licensing and raw provenance,No strategy definition before audit passes
+aggregate_context_only_audit_plan,allowed_with_explicit_approval,State non-instrument-level scope and prohibit entry/exit decisions from aggregate OI alone,No exact-OI claims
+fresh_feature_inventory,allowed_with_explicit_approval,Use genuinely new feature classes and predeclared constraints,No revival of failed candidates as implementation-ready
+benchmark_only_monitoring_note,allowed,Observation-only update with no signals or readiness claims,No trading action
+dry_run_or_live_plan,forbidden,Requires separate research gates and explicit future approval not present here,No operational restart

@@ -1,0 +1,9 @@
+area,status,evidence,monitoring_interpretation
+OHLCV-only research,closed_failed,Long1 D2 D6 cooldown anti-chase regime and autonomous OHLCV-only discovery failed,Do not run another OHLCV-only batch by default
+Candidate D,parked_for_implementation,Historical confirmation passed but fetched later-data validation failed,May be referenced only as failure context
+Funding feature,closed_current_gate,Funding-gated Candidate D improved loss but stayed negative with PF 0.0000,Funding observation only; no threshold tuning
+Exact instrument OI,not_available_historically_from_current_route,Current exact snapshots exist for 19/19 but historical exact identity not proven,No exact-OI strategy from current route
+Historical OI route,aggregate_context_only,ccy-level 1h route lacks instId and cannot reconcile exact units,Label as aggregate context only
+No-trade baseline,default,No active strategy has cleared gates,Capital preservation remains preferred
+Bot service,remain_stopped,No dry-run/live continuation authorized,Do not restart bot
+Implementation readiness,closed_not_ready,No active strategy approved,No production claims

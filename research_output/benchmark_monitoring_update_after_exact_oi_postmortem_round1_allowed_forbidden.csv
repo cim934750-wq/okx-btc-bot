@@ -1,0 +1,16 @@
+item,classification,notes
+BTCUSDT 4h context observation,allowed,Observation only; no signals
+Passive BTC benchmark observation,allowed,Opportunity-cost benchmark only
+No-trade baseline tracking,allowed,Capital preservation baseline
+Volatility regime observation,allowed,Descriptive monitoring only
+Aggregate OI context observation,allowed_with_label,Must be labeled non-instrument-level and aggregate/ccy context only
+Funding context observation,allowed,No threshold tuning or signal generation
+Data quality/provenance notes,allowed,Monitoring/research notes only
+Trade signals,forbidden,Monitoring must not produce entries/exits
+Dry-run readiness,forbidden,No strategy is dry-run-ready
+Live readiness,forbidden,No strategy is live-ready
+Implementation claims,forbidden,Implementation readiness is closed
+Candidate D tuning,forbidden,Candidate D and funding-gated path are parked/closed
+Funding threshold sweep,forbidden,Post-result optimization not allowed
+Exact OI strategy from current route,forbidden,Historical exact-instrument OI not proven
+Bot restart,forbidden,Bot should remain stopped
