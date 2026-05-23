@@ -1,0 +1,4 @@
+scope,classification,markets,key_markets_visible,reason
+current_exact_oi,available_for_unit_checks,19,True,Native current endpoint returns exact instId payloads with oi oiCcy oiUsd but only current snapshot.
+historical_oi,usable_only_as_aggregate_context,19,True,"Historical public route is ccy-based, response lacks instId, and adding instId returns the same ccy payload; exact instrument history is not proven."
+overall_exact_instrument_oi,usable_only_as_aggregate_context,19,True,Exact current OI exists but historical exact-instrument OI was not available through the audited public route; no exact OI strategy research from this route.

@@ -1,0 +1,5 @@
+path,description,provenance,committed
+research_output/exact_instrument_oi_audit_round1_raw/okx_native_current_exact_open_interest.jsonl,Native OKX current exact instrument open-interest payloads by instId,/api/v5/public/open-interest instType=SWAP instId=<instrument>,yes
+research_output/exact_instrument_oi_audit_round1_raw/okx_native_rubik_historical_oi_volume_by_ccy_1h.jsonl,Native OKX historical OI/volume payloads by currency at 1H cadence,/api/v5/rubik/stat/contracts/open-interest-volume ccy=<base> period=1H,yes
+research_output/exact_instrument_oi_audit_round1_raw/okx_native_rubik_historical_oi_volume_by_ccy_with_instid_1h.jsonl,Native OKX historical OI/volume payloads with ccy plus instId to test whether instId is honored,/api/v5/rubik/stat/contracts/open-interest-volume ccy=<base> instId=<instrument> period=1H,yes
+research_output/exact_instrument_oi_audit_round1_raw/ccxt_fetch_open_interest_history_1h.jsonl,ccxt OKX fetch_open_interest_history payloads at 1h for comparison,"ccxt.okx.fetch_open_interest_history(symbol,timeframe=1h,limit=100)",yes
