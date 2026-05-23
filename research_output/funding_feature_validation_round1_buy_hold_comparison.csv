@@ -1,0 +1,3 @@
+candidate,scope,first_close,last_close,normalized_notional,passive_btc_normalized_pnl,passive_btc_return_pct,passive_btc_max_close_to_close_dd_pct,candidate_net_pnl,candidate_minus_passive_btc,interpretation
+base_candidate_d,later_fetched,70742.7,77893.9,100000.0,10108.74620278841,10.10874620278841,7.402035271906804,-174.23466018511795,-10282.980862973529,passive_btc_opportunity_cost_only
+funding_gated_candidate_d,later_fetched,70742.7,77893.9,100000.0,10108.74620278841,10.10874620278841,7.402035271906804,-126.24202935696461,-10234.988232145375,passive_btc_opportunity_cost_only

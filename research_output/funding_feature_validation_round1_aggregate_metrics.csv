@@ -1,0 +1,3 @@
+candidate,scope,market_count,total_trades,net_pnl,profit_factor,max_drawdown_pct,win_rate,avg_trade,median_trade,gross_profit,gross_loss,commission,avg_hold_bars,median_hold_bars,positive_markets,negative_markets,flat_markets,base_entry_candidates,gated_entry_candidates,blocked_entries
+base_candidate_d,later_fetched,19,15,-174.23466018511795,0.13132609206323043,0.17423466018513523,13.333333333333334,-11.615644012341193,-9.88803556992734,26.34079004217311,200.57545022729101,14.920342841328106,6.066666666666666,8.0,2,9,8,15,17,0
+funding_gated_candidate_d,later_fetched,19,7,-126.24202935696461,0.0,0.12624202935695994,0.0,-18.034575622423514,-11.62159801510027,0,126.24202935696461,6.940349159901468,5.285714285714286,4.0,0,6,13,15,17,10

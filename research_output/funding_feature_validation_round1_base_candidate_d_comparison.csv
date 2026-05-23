@@ -1,0 +1,2 @@
+scope,base_net_pnl,filtered_net_pnl,filtered_minus_base_net_pnl,base_profit_factor,filtered_profit_factor,profit_factor_delta,base_trades,filtered_trades,trade_reduction,blocked_entries,interpretation
+later_fetched,-174.23466018511795,-126.24202935696461,47.99263082815334,0.13132609206323043,0.0,-0.13132609206323043,15,7,8,10,improved_but_still_negative

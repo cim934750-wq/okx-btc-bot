@@ -1,0 +1,5 @@
+candidate,scope,extra_slippage_bps_per_side,net_pnl_after_extra_slippage,profit_factor_after_extra_slippage,candidate_minus_no_trade,interpretation
+funding_gated_candidate_d,later_fetched,0.0,-126.24202935696461,0.0,-126.24202935696461,no_trade_preferred_under_sensitivity
+funding_gated_candidate_d,later_fetched,2.5,-129.71220393691533,0.0,-129.71220393691533,no_trade_preferred_under_sensitivity
+funding_gated_candidate_d,later_fetched,5.0,-133.18237851686607,0.0,-133.18237851686607,no_trade_preferred_under_sensitivity
+funding_gated_candidate_d,later_fetched,10.0,-140.12272767676757,0.0,-140.12272767676757,no_trade_preferred_under_sensitivity

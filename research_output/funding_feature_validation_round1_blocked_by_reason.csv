@@ -1,0 +1,6 @@
+funding_state,blocked_entries,matched_base_trades,avoided_losers,missed_winners,net_base_pnl_blocked,interpretation
+positive_extreme,3,3,2,1,-5.010415495421476,positive_if_blocked_base_pnl_was_negative
+neutral_positive,7,6,5,1,-53.66813700996547,positive_if_blocked_base_pnl_was_negative
+missing,0,0,0,0,0.0,blocked_winners_or_no_effect
+stale,0,0,0,0,0.0,blocked_winners_or_no_effect
+warmup_insufficient,0,0,0,0,0.0,blocked_winners_or_no_effect

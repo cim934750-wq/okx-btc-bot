@@ -1,0 +1,2 @@
+scope,blocked_entries,matched_base_trades,avoided_losers,avoided_loser_pnl_sum,missed_winners,missed_winner_pnl_sum,net_base_pnl_blocked,filtered_minus_base_net_pnl
+later_fetched,10,9,7,-85.01934254756006,2,26.34079004217311,-58.67855250538695,47.99263082815334

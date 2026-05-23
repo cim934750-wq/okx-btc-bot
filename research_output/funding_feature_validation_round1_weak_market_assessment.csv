@@ -1,0 +1,7 @@
+candidate,scope,market,total_trades,net_pnl,profit_factor,max_drawdown_pct,win_rate,avg_trade,median_trade,gross_profit,gross_loss,commission,avg_hold_bars,median_hold_bars
+base_candidate_d,later_fetched,DOGEUSDT,1,-18.121240959269223,0.0,0.018121240959267926,0.0,-18.121240959269223,-18.121240959269223,0,18.121240959269223,0.9914350970688999,8.0,8.0
+base_candidate_d,later_fetched,DOTUSDT,1,-9.88803556992734,0.0,0.009888035569927123,0.0,-9.88803556992734,-9.88803556992734,0,9.88803556992734,0.9955537590945837,8.0,8.0
+base_candidate_d,later_fetched,UNIUSDT,0,0,,0.0,0.0,,,0,0,0,,
+funding_gated_candidate_d,later_fetched,DOGEUSDT,0,0,,0.0,0.0,,,0,0,0,,
+funding_gated_candidate_d,later_fetched,DOTUSDT,1,-9.88803556992734,0.0,0.009888035569927123,0.0,-9.88803556992734,-9.88803556992734,0,9.88803556992734,0.9955537590945837,8.0,8.0
+funding_gated_candidate_d,later_fetched,UNIUSDT,0,0,,0.0,0.0,,,0,0,0,,

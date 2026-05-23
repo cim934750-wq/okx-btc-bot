@@ -1,0 +1,2 @@
+candidate,scope,candidate_d_later_failure_net_pnl,filtered_net_pnl,net_pnl_delta_vs_later_failure,candidate_d_later_failure_pf,filtered_profit_factor,pf_delta_vs_later_failure,interpretation
+funding_gated_candidate_d,later_fetched,-174.23466018511795,-126.24202935696461,47.99263082815334,0.13132609206323043,0.0,-0.13132609206323043,improved_vs_failed_base_but_no_trade_still_preferred
