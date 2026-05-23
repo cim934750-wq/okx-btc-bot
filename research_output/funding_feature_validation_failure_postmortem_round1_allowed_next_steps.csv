@@ -1,0 +1,11 @@
+next_step,status,restriction
+no-trade default,allowed,Capital preservation remains the default baseline
+benchmark-only monitoring,allowed,Observation notes only; no signals entries exits or readiness claims
+fresh OI/funding research definition,allowed_with_explicit_approval,Must use a new frozen definition before validation and cannot tune this failed gate
+deeper exact-instrument OI audit,allowed_with_explicit_approval,Audit/data availability only unless a later frozen strategy plan is approved
+new feature-class inventory,allowed_with_explicit_approval,Must be genuinely different and predeclared
+longer observation or synthesis,allowed,Research-only documentation is acceptable
+dry-run restart,forbidden,No candidate is dry-run-ready
+live trading,forbidden,No implementation-ready edge exists
+funding threshold sweep,forbidden,Would be post-result optimization
+Candidate D revival as implementation-ready,forbidden,Later-data and funding-gated paths failed

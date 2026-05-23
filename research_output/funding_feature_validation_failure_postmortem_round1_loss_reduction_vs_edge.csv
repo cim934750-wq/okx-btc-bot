@@ -1,0 +1,15 @@
+item,value,interpretation
+base_candidate_d_later_data_trades,15,Original Candidate D later-data trade count
+base_candidate_d_later_data_net_pnl,-174.23,Base stream failed later-data validation
+base_candidate_d_later_data_pf,0.1313,Base stream had weak profit factor
+funding_gated_trades,7,Funding gate reduced activity
+funding_gated_net_pnl,-126.24,Filtered stream remained negative
+funding_gated_pf,0.0000,Filtered stream produced no gross profit
+funding_gated_win_rate,0.00%,All filtered trades lost
+filtered_minus_base_net_pnl,47.99,Loss was reduced but not converted into edge
+blocked_entries,10,Filter blocked entries before execution
+avoided_losers,7 losers totaling -85.02,Useful loss avoidance signal existed
+missed_winners,2 winners totaling +26.34,Filter also removed profitable base trades
+blocked_base_net,-58.68,Blocked set was net harmful in the base stream
+no_trade_gap,-126.24,No-trade remained preferred by 126.24
+edge_conclusion,not_created,"A valid strategy needs positive expectancy after filtering, not only smaller loss"

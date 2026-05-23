@@ -1,0 +1,11 @@
+item,status,reason
+Candidate D implementation path,closed,Candidate D failed fetched later-data and the funding-gated variant also failed
+funding_extreme_avoidance_filter_round1 as frozen,closed,Filtered result remained negative with PF 0.0000 and win rate 0.00%
+direct funding-gated Candidate D path,closed,Loss reduction did not become positive expectancy
+dry-run planning,closed,No research gate authorized dry-run discussion
+live trading planning,closed,No implementation-ready strategy exists
+implementation readiness,closed,Predeclared validation gates failed
+funding threshold tuning from this result,forbidden,Post-result tuning would be threshold fitting
+Candidate D rule changes from this result,forbidden,Base stream was frozen and may not be adjusted after failure
+market removal or cherry-picking,forbidden,DOGE DOT UNI BTCUSDT and all approved markets must remain visible
+OI substitution after funding failure,forbidden,OI was diagnostic-only in this candidate and cannot replace funding after results

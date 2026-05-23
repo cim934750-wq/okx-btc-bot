@@ -1,0 +1,11 @@
+reason_id,category,evidence,interpretation,gate_effect
+aggregate_negative,performance,Funding-gated net PnL -126.24 after fees,Filtered candidate remained negative,fail
+pf_zero,performance,Funding-gated PF 0.0000 with gross profit 0,No positive payoff stream survived the gate,fail
+win_rate_zero,performance,7 filtered trades and 0.00% win rate,Every allowed filtered trade lost,fail
+no_trade_not_beaten,baseline,No-trade 0 versus filtered -126.24,Capital preservation remained superior,fail
+btc_boundary_failure,market_boundary,BTCUSDT 1 filtered trade net -11.62 PF 0.0,BTC-relevant path did not clear BTC boundary,fail
+loss_reduction_not_edge,expectancy,Filtered improved by +47.99 versus base but stayed negative,Loss reduction did not create positive expectancy,fail
+blocked_entry_mixed_effect,filter_effect,10 blocked entries avoided 7 losers but missed 2 winners,Blocking helped but did not rescue remaining trades,fail
+funding_buckets_negative,feature_evidence,Gated p00-p10 and p10-p50 buckets were both negative,Neutral-to-negative funding eligibility did not produce edge,fail
+family_breadth_failure,breadth,Majors -22.31 large_alts -24.81 other -79.13,No broad family-level support for advancement,fail
+implementation_not_ready,readiness,Predeclared pass gates not met,No dry-run live or implementation claim authorized,closed
