@@ -1,0 +1,8 @@
+field,frozen_value,validation_plan_requirement
+candidate_name,aggregate_taker_flow_exhaustion_reversal_round1,must match definition plan
+candidate_type,constrained_aggregate_taker_flow_context_gate,label aggregate context in every output
+data_claim,OKX Rubik 1h CONTRACTS ccy aggregate taker buy/sell-like flow,no exact-instrument claim
+primary_gate,sell_imbalance_4h >= 0.20,no threshold change
+direction,long_only_research_stream,no shorts/hedges
+validation_status,planned_not_executed,do not run in this task
+implementation_status,closed_not_ready,no dry-run/live/readiness

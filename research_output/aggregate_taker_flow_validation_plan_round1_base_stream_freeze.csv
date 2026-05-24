@@ -1,0 +1,12 @@
+component,frozen_rule,validation_requirement
+timeframe,4h,BTCUSDT_1h excluded
+direction,long_only,research stream only
+entry_1,RSI14 <= 30,no tuning
+entry_2,close < EMA20,no tuning
+entry_3,current close > previous close,bounce candle condition
+stop,recent 10-candle low - 0.5 * ATR14,no stop change
+exit_1,EMA20 touch,no exit change
+exit_2,1.5R take profit,no R-multiple change
+exit_3,8 completed 4h candle time stop,no time-stop change
+position_management,no add-ons; no averaging down,must preserve
+Candidate D status,not implementation-ready; reference only,do not revive Candidate D

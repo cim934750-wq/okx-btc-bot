@@ -1,0 +1,8 @@
+comparison_id,comparison_target,purpose,required_output
+base_vs_gated,Ungated base stream vs aggregate taker-flow-gated stream,Determine whether gate improves expectancy beyond activity reduction,base-stream comparison table
+gated_vs_no_trade,Gated stream vs no-trade baseline,Capital preservation test,no-trade comparison table
+gated_vs_passive_btc,Gated stream vs passive BTC benchmark,Opportunity-cost context,passive BTC comparison table
+gated_vs_candidate_d_later_failure,Gated stream vs Candidate D later-data failure,Context against recent failed mean-reversion path,Candidate D failure comparison table
+gated_vs_autonomous_failures,Gated stream vs prior autonomous loop failed references,Context against broad OHLCV-only failure set,failed-reference comparison table
+benchmark_observation_status,Gated result vs benchmark-only mode,Confirm no operational readiness,recommendation/decision table
+blocked_entries,Blocked base entries outcome audit,Separate avoided losers from missed winners,missed winners / avoided losers table

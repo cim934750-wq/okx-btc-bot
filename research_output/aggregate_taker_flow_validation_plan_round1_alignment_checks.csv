@@ -1,0 +1,11 @@
+check_id,required_check,pass_condition,fail_or_block_condition
+bucket_completeness,Verify 1h taker-flow rows cover the entire closed 4h bucket before candidate entry,All expected 1h rows are present for the completed bucket,Missing rows block entry or cause data-insufficient report if widespread
+closed_interval_only,Verify each 4h bucket uses only rows inside the completed 4h interval,No row timestamp after candidate 4h candle close,Future row invalidates validation
+no_future_data,Verify no future 1h taker data is used,All taker rows timestamped <= candidate candle close,Any future use is failure
+no_partial_bucket,Verify current/incomplete 4h bucket is not used,Only completed 4h bucket values used,Partial bucket blocks entry
+no_forward_fill,Verify missing taker rows are not forward-filled,Missing data remains missing and is counted,Forward-filled or synthetic data invalidates result
+total_volume_positive,Verify total_taker_volume_4h > 0,Positive denominator,total <= 0 blocks entry
+gate_threshold,Verify sell_imbalance_4h >= 0.20 for gated entries,Threshold met exactly as frozen,sell imbalance < 0.20 blocks entry
+aggregate_context_label,Verify outputs label data as aggregate ccy/contracts context,Every report states not exact-instrument flow,Missing label invalidates interpretation
+key_markets_visible,Verify BTCUSDT DOGEUSDT DOTUSDT UNIUSDT reported,Key markets present in outputs,Hidden/missing key markets fail validation
+blocked_outcome_audit,Compare blocked entries to ungated base trade outcomes,Missed winners and avoided losers reported,Cannot determine reduction vs expectancy

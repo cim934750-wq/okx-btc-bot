@@ -1,0 +1,14 @@
+item,classification,notes
+Create validation plan,allowed,This task only plans validation
+Run validation now,forbidden,Requires explicit later approval
+Run backtests now,forbidden,No execution in this task
+Fetch new data,forbidden,Use existing audited data in future execution or stop/request approval
+Change base stream,forbidden,Frozen RSI/EMA/stop/exit rules must remain
+Change sell_imbalance threshold,forbidden,0.20 frozen threshold
+Threshold sweep,forbidden,No optimization
+Remove markets,forbidden,same 19 markets and key markets visible
+Claim exact-instrument taker flow,forbidden,data is aggregate ccy/contracts context
+Revive Candidate D/K/funding/OI paths,forbidden,closed/parked paths remain non-implementation candidates
+Dry-run/live planning,forbidden,No implementation readiness
+Implementation claim,forbidden,research-only plan
+No-trade default,allowed,remains default until future gates pass

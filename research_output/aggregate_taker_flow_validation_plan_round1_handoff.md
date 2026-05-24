@@ -1,0 +1,17 @@
+=== CHATGPT HANDOFF START ===
+1. run status: aggregate_taker_flow_validation_plan_round1 created as validation plan only; no validation, backtest, data fetch, tuning, source change, dry-run, or live planning was performed.
+2. branch / workspace state: research/long1-only-candidate-robustness in /Users/immuhyun/Documents/Coin_Demo/okx-btc-bot; source HEAD before this plan was 243af2e research: add aggregate taker-flow candidate definition plan.
+3. commands run: verified branch/HEAD and frozen candidate/audit inputs; inspected candidate freeze, base stream, feature formulas, taker-flow usability, and key-market coverage; created ten validation-plan outputs; verified files; staged only aggregate_taker_flow_validation_plan_round1.* outputs; committed and pushed.
+4. files changed / output paths: research_output/aggregate_taker_flow_validation_plan_round1_note.md; _candidate_freeze.csv; _base_stream_freeze.csv; _alignment_checks.csv; _data_scope.csv; _comparison_design.csv; _metrics.csv; _pass_fail_bands.csv; _allowed_forbidden.csv; _handoff.md.
+5. validation objective: determine whether aggregate taker-flow exhaustion context improves the frozen oversold-reversal base stream without merely reducing trade count.
+6. frozen candidate and base stream: aggregate_taker_flow_exhaustion_reversal_round1; 4h long-only stream with RSI14 <= 30, close < EMA20, close > previous close, stop at 10-candle low - 0.5 ATR14, exits at EMA20 touch, 1.5R take profit, or 8 completed 4h candles; no add-ons or averaging down.
+7. aggregate taker-flow alignment checks: use complete closed 1h OKX Rubik CONTRACTS ccy aggregate taker rows inside each 4h interval only; no future rows, no partial buckets, no forward-fill, total volume > 0, sell_imbalance_4h >= 0.20, aggregate-context labeling required.
+8. data scope: same 19 markets, existing audited taker-flow data only, existing OHLCV only, BTC/DOGE/DOT/UNI visible, BTCUSDT_1h excluded, no new fetch, no fake/inferred data, no market removal.
+9. comparison design: compare ungated base, taker-flow-gated stream, no-trade, passive BTC, Candidate D later-data failure reference, prior autonomous loop failed references, benchmark-only status, and blocked-entry outcomes.
+10. metrics and pass/fail bands: PnL, PF, DD, win rate, trade count, blocked reasons, taker-flow coverage, bucket performance, missed winners/avoided losers, BTC/key markets, family/concentration, no-trade/passive BTC/base/Candidate D/autonomous comparisons; pass requires positive aggregate, PF >= 1.10 minimum, no-trade beaten, base improved, BTC non-negative if meaningful, sufficient trade count/coverage, no excessive concentration, and not just trade reduction.
+11. what remains forbidden: validation now, backtests, new fetch, threshold tuning, base-rule changes, stop/exit changes, market removal, exact-instrument taker-flow claims, dry-run/live planning, implementation claims, and reviving closed paths.
+12. implementation readiness judgment: closed / not ready.
+13. commit / push result: pending at file creation time; verify final response for actual commit and push result.
+14. next recommended Codex prompt: Execute aggregate_taker_flow_validation_round1 exactly according to aggregate_taker_flow_validation_plan_round1; do not change thresholds, base stream, data scope, or aggregate-context labeling.
+15. one-sentence conclusion: The aggregate taker-flow candidate now has a frozen validation plan, but no trading action or readiness is authorized.
+=== CHATGPT HANDOFF END ===

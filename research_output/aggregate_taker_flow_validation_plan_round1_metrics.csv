@@ -1,0 +1,25 @@
+metric,required,notes
+net_pnl,yes,aggregate and per-market
+profit_factor,yes,pass requires >= 1.10 minimum; preferred >= 1.20
+max_drawdown,yes,controlled DD required
+win_rate,yes,aggregate and per-market
+average_trade,yes,expectancy check
+median_trade,yes,outlier sensitivity
+trade_count,yes,sample adequacy
+blocked_entry_count,yes,gate activity
+blocked_entries_by_reason,yes,missing taker-flow; incomplete bucket; total <= 0; sell imbalance < 0.20
+taker_flow_coverage_count,yes,complete valid 4h buckets
+missing_incomplete_bucket_count,yes,coverage weakness
+sell_imbalance_bucket_performance,yes,performance by imbalance bucket
+missed_winners,yes,blocked base winners
+avoided_losers,yes,blocked base losers
+BTCUSDT_result,yes,BTC boundary if meaningful trades
+DOGE_DOT_UNI_result,yes,key weak-market visibility
+family_level_result,yes,breadth
+concentration,yes,single-market/family/outlier risk
+no_trade_comparison,yes,capital preservation baseline
+passive_BTC_comparison,yes,opportunity-cost benchmark
+base_stream_comparison,yes,must improve beyond ungated base
+Candidate_D_later_data_failure_comparison,yes,context vs failed mean-reversion path
+prior_autonomous_loop_comparison,yes,context vs failed OHLCV-only search
+slippage_fee_sensitivity,if_feasible,research-only robustness

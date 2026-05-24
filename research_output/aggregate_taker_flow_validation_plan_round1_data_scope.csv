@@ -1,0 +1,10 @@
+scope_item,validation_scope,stop_condition
+market_universe,same 19 markets,missing market coverage must be reported; no market removal
+taker_flow_data,existing audited OKX Rubik 1h CONTRACTS ccy aggregate taker-flow raw data,if insufficient for validation coverage stop or request explicit fetch approval
+OHLCV_data,existing OHLCV data only,if required OHLCV unavailable stop; do not fetch in plan task
+key_markets,BTCUSDT DOGEUSDT DOTUSDT UNIUSDT visible,hidden key market fails validation
+BTCUSDT_1h,excluded,do not use 1h OHLCV
+new_fetch,not authorized by this plan,stop if needed
+fake_inferred_forward_filled_data,forbidden,invalidates result
+post_result_market_removal,forbidden,invalidates result
+exact_instrument_claim,forbidden,invalidates interpretation
