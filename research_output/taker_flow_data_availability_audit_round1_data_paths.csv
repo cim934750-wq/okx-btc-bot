@@ -1,0 +1,6 @@
+path,description,provenance,committed
+research_output/taker_flow_data_availability_audit_round1_raw/okx_rubik_contracts_taker_volume_1h_by_ccy.jsonl,OKX Rubik taker-volume 1h CONTRACTS by ccy raw payloads,/api/v5/rubik/stat/taker-volume ccy=<base> instType=CONTRACTS period=1H,yes
+research_output/taker_flow_data_availability_audit_round1_raw/okx_rubik_contracts_taker_volume_1h_by_ccy_plus_instid.jsonl,OKX Rubik taker-volume 1h CONTRACTS by ccy plus instId probe raw payloads,/api/v5/rubik/stat/taker-volume ccy=<base> instType=CONTRACTS instId=<swap> period=1H,yes
+research_output/taker_flow_data_availability_audit_round1_raw/okx_market_trades_sample.jsonl,OKX recent public trades sample raw payloads,/api/v5/market/trades instId=<swap> limit=20,yes
+research_output/taker_flow_data_availability_audit_round1_raw/okx_market_history_trades_sample.jsonl,OKX public history-trades sample raw payloads,/api/v5/market/history-trades instId=<swap> limit=20,yes
+research_output/taker_flow_data_availability_audit_round1_raw/ccxt_method_capability_snapshot.jsonl,ccxt OKX capability snapshot for taker/trade methods,ccxt.okx method/has inspection,yes

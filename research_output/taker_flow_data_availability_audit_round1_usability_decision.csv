@@ -1,0 +1,4 @@
+scope,classification,markets,key_markets_visible,reason
+rubik_contracts_taker_volume,partially_usable_short_history,19,True,"1h taker buy/sell volume-like arrays are available for all 19 base currencies at CONTRACTS ccy aggregate scope, but exact instrument scope is not proven and history is endpoint-limited."
+public_trade_reconstruction,usable_derived_from_public_trades_possible_sample_only,19,True,"Recent public/history trade samples expose side, size, price, and timestamp for all 19 instruments, but full historical reconstruction was not performed and likely needs a separate feasibility plan."
+overall_taker_flow,partially_usable_short_history,19,True,"Direct aggregate taker-flow context is available, but exact instrument-level and full-history reconstruction constraints prevent immediate strategy definition."
