@@ -1,0 +1,10 @@
+rule_id,rule,reason,failure_action
+source_cadence,Use audited 1h aggregate CONTRACTS taker-flow data,Future validation rolls to 4h,Stop/request approval if data insufficient
+closed_bucket_only,Use only complete closed 4h buckets,Avoid incomplete current candle leakage,Block entry
+no_future_1h_bars,Do not use taker data after candidate 4h candle close,Prevent future leakage,Fail audit/validation
+no_partial_bucket,Do not use partially closed 4h bucket,Prevent live/validation mismatch,Block entry
+no_forward_fill,Do not forward-fill missing 1h taker rows,Avoid synthetic flow,Block entry
+same_market_base_ccy_context,Use ccy/contracts aggregate context corresponding to market base asset,Respect audited data scope,Mark as aggregate context only
+missing_bucket,Missing or incomplete taker-flow bucket blocks entry,Conservative data handling,Count as blocked_missing_or_incomplete
+unit_scope_label,All reports must label feature aggregate ccy/contracts context,Prevent exact-instrument claim,Fail documentation if omitted
+key_market_visibility,BTCUSDT DOGEUSDT DOTUSDT UNIUSDT remain visible,Prior weak/key markets cannot be hidden,Fail if hidden

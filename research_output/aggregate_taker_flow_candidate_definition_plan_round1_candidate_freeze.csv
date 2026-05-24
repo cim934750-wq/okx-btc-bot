@@ -1,0 +1,10 @@
+field,frozen_value,notes
+candidate_name,aggregate_taker_flow_exhaustion_reversal_round1,Research-only candidate
+candidate_type,constrained_aggregate_taker_flow_context_gate,Not exact instrument-level order flow
+core_hypothesis,Extreme aggregate sell-side taker imbalance after downside move may indicate short-term exhaustion and rebound potential,Must be validated later before any claim
+data_scope_claim,aggregate ccy/contracts context only,Do not describe as exact-instrument flow
+direction,long_only_research_stream,No shorting or hedging
+primary_gate,sell_imbalance_4h >= 0.20,Structural default; not optimized here
+base_stream,simple_ohlcv_oversold_reversal,Candidate D is not revived as implementation-ready
+validation_status,not_executed,This plan does not authorize validation
+implementation_status,not_ready_closed,No dry-run/live/readiness claim

@@ -1,0 +1,15 @@
+item,classification,notes
+Create frozen candidate definition plan,allowed,This task only defines future research candidate
+Use aggregate taker-flow context label,required,Do not claim exact instrument order flow
+Future validation plan,allowed_after_explicit_approval,Must preserve frozen rules and data scope
+Run validation now,forbidden,This task is plan-only
+Fetch new data now,forbidden,No new fetch in this task
+Backtest now,forbidden,No validation execution
+Tune sell_imbalance threshold,forbidden,0.20 is frozen structural default
+Tune RSI EMA ATR stop exit time stop,forbidden,Base stream is frozen
+Market removal,forbidden,Same 19 markets and key markets visible
+Exact-instrument taker-flow claim,forbidden,Audit did not prove exact instrument flow
+Candidate D or K revival as implementation-ready,forbidden,Closed/parked paths remain closed
+Dry-run/live planning,forbidden,No readiness claim
+Implementation claim,forbidden,Research-only
+No-trade default,allowed,Remains default until future gates pass

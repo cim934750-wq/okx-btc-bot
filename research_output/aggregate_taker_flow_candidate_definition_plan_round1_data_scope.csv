@@ -1,0 +1,10 @@
+scope_item,frozen_scope,notes
+market_universe,same 19 markets,No market removal
+taker_flow_source,audited OKX Rubik CONTRACTS ccy aggregate taker-volume data,Not exact instrument-level
+timeframe,4h strategy candles with 1h taker data rolled into closed 4h buckets,No partial buckets
+key_markets,BTCUSDT DOGEUSDT DOTUSDT UNIUSDT visible,Must report individually
+BTCUSDT_1h,excluded,Do not use 1h OHLCV
+new_fetch_in_this_task,not_allowed,Plan only
+future_validation_data,use existing audited taker-flow raw data if sufficient; otherwise stop or request explicit fetch approval,No silent data extension
+fake_inferred_data,forbidden,No synthetic taker-flow data
+post_result_market_selection,forbidden,No cherry-picking

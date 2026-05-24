@@ -1,0 +1,24 @@
+band,condition,decision_effect
+pass,aggregate positive after fees,required
+pass,PF >= 1.20 preferred and minimum PF >= 1.10,required
+pass,no-trade beaten,required
+pass,improvement over ungated base stream,required
+pass,BTCUSDT non-negative if meaningful BTC trades,required
+pass,sufficient trade count,required
+pass,no excessive single-market or family concentration,required
+pass,taker-flow coverage sufficient,required
+pass,improvement not merely from reducing trades,required
+caution,aggregate positive but PF < 1.10,separate review; no promotion
+caution,trade count low,sample risk
+caution,BTC weak,BTC boundary concern
+caution,edge concentrated in one market/family,breadth concern
+caution,many entries blocked due missing/incomplete buckets,coverage concern
+caution,result relies on aggregate context that may not map to traded instrument,scope concern
+fail,aggregate negative,fail
+fail,PF < 1.00,fail
+fail,no-trade not beaten,fail
+fail,worse than base stream,fail
+fail,taker-flow mainly blocks winners,fail
+fail,BTCUSDT negative with meaningful trades,fail
+fail,insufficient coverage,fail
+fail,concentration excessive,fail

@@ -1,0 +1,12 @@
+component,frozen_rule,notes
+timeframe,4h,BTCUSDT_1h excluded
+direction,long_only,Research stream only
+entry_condition_1,RSI14 <= 30,No threshold sweep
+entry_condition_2,close < EMA20,Oversold/reversal context
+entry_condition_3,current close > previous close,Bounce candle condition
+stop,recent 10-candle low - 0.5 * ATR14,No tuning after plan
+exit_1,EMA20 touch,Same style as prior research exits but not implementation-ready
+exit_2,1.5R take profit,No R-multiple tuning
+exit_3,8 completed 4h candle time stop,No time-stop tuning
+position_management,no add-ons; no averaging down,Fixed for future validation
+parameter_change_after_plan,forbidden,No post-result changes

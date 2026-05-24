@@ -1,0 +1,7 @@
+feature,formula,input_source,validity_rule,notes
+taker_buy_volume_4h,sum(endpoint_defined_buy_volume_1h over complete closed 4h bucket),OKX Rubik CONTRACTS ccy aggregate taker-volume data[2],all required 1h rows for bucket present and closed,Aggregate context only
+taker_sell_volume_4h,sum(endpoint_defined_sell_volume_1h over complete closed 4h bucket),OKX Rubik CONTRACTS ccy aggregate taker-volume data[1],all required 1h rows for bucket present and closed,Aggregate context only
+total_taker_volume_4h,taker_buy_volume_4h + taker_sell_volume_4h,derived,must be > 0,Blocks entry if zero or invalid
+taker_imbalance_4h,(taker_buy_volume_4h - taker_sell_volume_4h) / total_taker_volume_4h,derived,total_taker_volume_4h > 0,Diagnostic and possible future reporting
+sell_imbalance_4h,(taker_sell_volume_4h - taker_buy_volume_4h) / total_taker_volume_4h,derived,total_taker_volume_4h > 0,Primary gate feature
+gate_rule,allow long only if sell_imbalance_4h >= 0.20,derived aggregate context,missing/incomplete/invalid bucket blocks entry,Structural default; no optimization

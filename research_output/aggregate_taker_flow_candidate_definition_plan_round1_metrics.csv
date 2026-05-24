@@ -1,0 +1,23 @@
+metric,required_for_future_validation,notes
+net_pnl,yes,Aggregate and per-market
+profit_factor,yes,PF gate minimum 1.10 preferred 1.20
+max_drawdown,yes,Controlled drawdown required
+win_rate,yes,Aggregate and per-market
+avg_trade,yes,Expectancy check
+median_trade,yes,Outlier sensitivity
+trade_count,yes,Sample adequacy
+blocked_entry_count,yes,Gate behavior
+blocked_entries_by_reason,yes,missing/incomplete bucket sell_imbalance_fail base_invalid etc.
+taker_flow_bucket_coverage,yes,Complete closed 4h bucket availability
+missing_incomplete_bucket_count,yes,Coverage failure mode
+sell_imbalance_bucket_performance,yes,Performance by sell imbalance bucket
+missed_winners_avoided_losers,yes,Determine if gate blocks winners or avoids losers
+BTCUSDT_result,yes,BTC boundary
+DOGE_DOT_UNI_result,yes,Weak/key market visibility
+family_level_result,yes,Breadth and concentration context
+concentration,yes,Top 3/top 5 and positive-trade contribution
+no_trade_comparison,yes,Capital preservation baseline
+passive_BTC_comparison,yes,Opportunity-cost benchmark
+base_stream_comparison,yes,Must improve beyond ungated base
+later_data_comparison,if_applicable,Compare to Candidate D later-data failure context
+slippage_fee_sensitivity,if_feasible,Research-only robustness
