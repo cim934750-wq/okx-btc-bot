@@ -1,0 +1,2 @@
+candidate,scope,taker_flow_scope,base_net_pnl,gated_net_pnl,gated_minus_base_net_pnl,base_profit_factor,gated_profit_factor,profit_factor_delta,base_trades,gated_trades,trade_reduction,blocked_entries,interpretation
+aggregate_taker_flow_exhaustion_reversal_round1,later_fetched,aggregate_ccy_contracts_context_not_exact_instrument_flow,-306.51890217175946,0,306.51890217175946,0.309246599327338,,-0.309246599327338,35,0,35,67,failed_or_not_improved
