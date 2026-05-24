@@ -1,0 +1,8 @@
+metric,value,interpretation
+blocked_entries,67,The gate blocked every executable candidate entry.
+avoided_losers_count,24,The gate avoided many losing base trades.
+avoided_losers_pnl_sum,-443.745774,Loss avoidance helped relative to the ungated base stream.
+missed_winners_count,11,The gate also blocked winners.
+missed_winners_pnl_sum,137.226871,Missed winners reduced the usefulness of broad blocking.
+blocked_base_net_pnl,-306.518902,"Blocked base net was negative, but the remaining allowed set was empty."
+edge_creation_result,none,"Blocking everything is equivalent to no-trade, not a tradable edge."

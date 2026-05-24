@@ -1,0 +1,6 @@
+item,status,reason
+aggregate_taker_flow_exhaustion_reversal_round1_as_currently_frozen,closed_for_implementation,Zero gated trades and no positive edge.
+direct_aggregate_taker_flow_gated_oversold_reversal_path,closed_for_implementation,The gate reduced exposure only by blocking everything.
+exact_instrument_taker_flow_claims_from_current_rubik_data,closed,Current data is aggregate ccy/contracts context only.
+dry_run_live_planning,closed,No research candidate passed gates.
+implementation_readiness,closed_not_ready,No active strategy is implementation-ready.

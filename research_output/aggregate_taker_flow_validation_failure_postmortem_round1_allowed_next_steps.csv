@@ -1,0 +1,7 @@
+next_step,status,constraints
+no_trade_default,allowed,Keep capital preservation as default; no signals or entries.
+benchmark_only_monitoring,allowed,Observation only; no dry-run/live readiness claims.
+public_trade_reconstruction_feasibility_plan,allowed_only_if_explicitly_approved,"Plan only; must assess exact instrument-level trade reconstruction cost, rate limits, and provenance before validation."
+new_feature_class_inventory,allowed_only_with_new_data_or_rationale,Must be genuinely different; no OHLCV/funding/OI/taker-flow threshold retread.
+threshold_sweep_or_tuning,forbidden,"No sell_imbalance tuning, base stream tuning, market removal, or cherry-picking."
+dry_run_or_live_restart,forbidden,No implementation or trading authorization.

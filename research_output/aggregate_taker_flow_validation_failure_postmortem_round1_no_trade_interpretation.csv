@@ -1,0 +1,4 @@
+comparison,candidate_net_pnl,no_trade_net_pnl,candidate_minus_no_trade,interpretation
+gated_candidate_vs_no_trade,0.0,0.0,0.0,No-trade remains preferred because the candidate did not produce positive PnL or executable evidence.
+ungated_base_vs_no_trade,-306.518902,0.0,-306.518902,The ungated base stream lost money and confirmed the need for capital preservation.
+key_markets,BTC=0;DOGE=0;DOT=0;UNI=0,0.0,0.0,No key-market evidence exists because the gate allowed no trades.

@@ -1,0 +1,7 @@
+candidate,failure_reason,evidence,interpretation,decision_effect
+aggregate_taker_flow_exhaustion_reversal_round1,zero_gated_trades,gated trades = 0,No executable remaining trade set was produced by the frozen gate.,fail
+aggregate_taker_flow_exhaustion_reversal_round1,no_positive_pnl,gated net PnL = 0.00,No positive expectancy was demonstrated after fees.,fail
+aggregate_taker_flow_exhaustion_reversal_round1,profit_factor_unavailable,PF = NA due zero trades,Profit factor gate cannot be satisfied without realized trades.,fail
+aggregate_taker_flow_exhaustion_reversal_round1,no_trade_not_beaten,candidate-minus-no-trade = 0.00,Equaling no-trade is not a strategy pass.,fail
+aggregate_taker_flow_exhaustion_reversal_round1,no_key_market_evidence,BTCUSDT/DOGE/DOT/UNI all had no gated trades,The gate produced no BTC or weak-market trade evidence.,fail
+aggregate_taker_flow_exhaustion_reversal_round1,aggregate_context_limitation,aggregate_ccy_contracts_context_not_exact_instrument_flow,The data is aggregate context and cannot support exact-instrument order-flow claims.,scope_limit
