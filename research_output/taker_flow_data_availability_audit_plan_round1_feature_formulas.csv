@@ -1,0 +1,7 @@
+feature,formula,required_inputs,audit_requirement,strategy_use_in_this_plan
+taker_buy_ratio,taker_buy_volume / total_taker_volume,taker_buy_volume total_taker_volume,Inputs must share same unit/time bucket and denominator must be nonzero,none
+taker_sell_ratio,taker_sell_volume / total_taker_volume,taker_sell_volume total_taker_volume,Inputs must share same unit/time bucket and denominator must be nonzero,none
+taker_imbalance,(taker_buy_volume - taker_sell_volume) / total_taker_volume,taker_buy_volume taker_sell_volume total_taker_volume,Sell volume must be direct or safely derived; denominator must be same unit,none
+taker_delta,taker_buy_volume - taker_sell_volume,taker_buy_volume taker_sell_volume,Both sides must use identical units and bucket boundaries,none
+abnormal_turnover,current_volume / rolling_median_volume,current volume and predeclared rolling median window,This plan audits computability only; window must be frozen later before validation,none
+range_volume_impulse,candle_range * volume or normalized variant,OHLCV candle range and audited volume/turnover,Variant must be predeclared in a future plan; no tuning here,none

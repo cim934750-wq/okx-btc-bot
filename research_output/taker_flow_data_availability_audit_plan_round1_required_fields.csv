@@ -1,0 +1,16 @@
+field,required,description,failure_if_missing_or_ambiguous
+timestamp,yes,UTC timestamp or exchange timestamp convertible to UTC,Cannot align to 4h candles or prevent leakage
+symbol_or_instrument_id,yes,Spot-style symbol and/or OKX instrument ID,Cannot map to same 19 markets
+taker_buy_volume,primary,Aggressive buyer-initiated volume in documented units,Cannot compute direct taker buy flow
+taker_sell_volume,primary_or_derived,Aggressive seller-initiated volume or safely derivable equivalent,Cannot compute imbalance unless derivation is proven
+total_taker_volume,yes_for_ratios,Total taker volume in same unit as buy/sell components,Cannot normalize buy/sell ratios
+total_volume,yes,Total traded volume in same instrument/time bucket,Needed for turnover and derivation checks
+quote_volume,preferred,Quote/notional volume if available,Cross-market normalization weaker if absent
+buy_sell_ratio,conditional,Buy/sell or taker volume ratio if only ratio exists,Ratio-only must be context-only unless volumes recoverable
+unit_currency_contract_denomination,yes,"Base, quote, contract, or notional unit definition",Cannot compare or derive fields safely
+endpoint_or_method,yes,"Native endpoint, ccxt method, vendor endpoint, and params",No provenance or reproducibility
+source_provenance,yes,Exchange/vendor/source name and raw schema notes,Cannot audit source quality
+future_fetch_timestamp,yes_for_future_audit,Timestamp when future fetch is performed,Cannot reproduce audit timing
+raw_archive_path_or_hash,yes_for_future_audit,Raw payload archive path and/or response hash,Cannot verify transformations
+sampling_interval,yes,Native data cadence or observed cadence,Cannot aggregate or align to 4h
+gap_duplicate_report,yes,Gap count and duplicate timestamp count per market,Cannot assess coverage quality

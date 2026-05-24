@@ -1,0 +1,11 @@
+coverage_item,requirement,reason,failure_condition
+market_coverage_count,Report coverage count across the same 19 markets,Preserve prior validation universe,Too many missing markets or unreported omissions
+key_market_coverage,Report BTCUSDT DOGEUSDT DOTUSDT UNIUSDT explicitly,Prior key/weak markets must remain visible,Any key market missing or hidden
+earliest_latest_timestamp,Earliest and latest timestamp per market/source,Assess reference/holdout/later overlap,Missing time boundaries
+row_count,Row count per market/source,Assess sample size and reconstruction feasibility,Insufficient rows or row count unknown
+sampling_interval,Native or observed sampling interval,Determine 4h aggregation feasibility,Irregular cadence without documentation
+reference_holdout_overlap,Overlap with prior OHLCV reference/holdout windows,Needed for future comparison to prior research,No overlap or undocumented overlap
+later_data_overlap,Overlap with fetched later-data window if present,Needed to avoid historical-only overconfidence,No later-data coverage for future robustness check
+gap_report,Gap count and largest gap per market,Avoid silent missing data,Excessive gaps or no report
+duplicate_report,Duplicate timestamp count per market,Avoid double counting,Duplicates not resolvable by deterministic rule
+source_provenance,Endpoint/method/raw archive/hash per source,Reproducibility and auditability,No raw/provenance evidence

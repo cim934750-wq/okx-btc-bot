@@ -1,0 +1,6 @@
+class,definition,future_strategy_research_allowed,constraints
+usable_direct_taker_flow,Historical direct taker buy and sell volumes available with units across enough markets/windows and alignable to 4h,yes_after_separate_frozen_strategy_plan,No validation until rules/gates are predeclared
+usable_derived_from_public_trades,Public trade history can reconstruct aggressor-side flow with adequate history and manageable rate limits,yes_after_reconstruction_audit_and_frozen_plan,Must document reconstruction assumptions and costs
+usable_ratio_only_context,Only buy/sell or taker ratio exists without recoverable volume units,context_only,Cannot be instrument-level entry/exit signal alone
+partially_usable_short_history,Taker-flow data exists but history is short or market coverage uneven,limited_research_only,Must declare sample constraints and no implementation claim
+not_usable_for_research,"No historical public data, private endpoint required, unit ambiguity, too many gaps, or no safe 4h alignment",no,Stay benchmark-only or seek another source

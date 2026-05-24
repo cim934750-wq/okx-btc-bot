@@ -1,0 +1,13 @@
+item,classification,notes
+Create taker-flow data availability audit plan,allowed,This task only designs the future audit
+Inspect existing research context and mappings,allowed,No data fetch or validation
+Future taker-flow data fetch,allowed_only_after_explicit_approval,Must be restricted to approved markets/sources
+Strategy definition,forbidden,Data usability must be proven first
+Backtest or validation,forbidden,No strategy and no data audit execution in this task
+Threshold sweep or tuning,forbidden,Would repeat overfitting risk
+OHLCV-only retest,forbidden,Not justified after failed OHLCV-only discovery
+Candidate D K funding gate OI path revival,forbidden,Closed/parked paths cannot be rebranded as implementation candidates
+Private account/order data fetch,forbidden,Only public data may be considered in a future approved audit
+Dry-run/live planning,forbidden,No active strategy is implementation-ready
+Implementation readiness claim,forbidden,Audit-plan only
+No-trade benchmark-only monitoring,allowed,Default project state

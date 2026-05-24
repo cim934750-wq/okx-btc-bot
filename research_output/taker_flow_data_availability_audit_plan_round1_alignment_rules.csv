@@ -1,0 +1,10 @@
+rule_id,alignment_rule,audit_requirement,failure_condition
+time_basis,All timestamps must be UTC or exactly convertible to UTC,Record timezone and conversion method,Ambiguous timezone
+four_hour_buckets,Align to closed 4h OHLCV candles,Lower-timeframe data must aggregate into completed 4h buckets only,Uses incomplete or future bucket data
+same_prior_only,Use same/prior timestamps only where point-in-time alignment is needed,No future observations in candle features,Future leakage
+no_forward_fill,No arbitrary forward-fill of missing taker-flow values,Missing values must be reported or excluded by predeclared rule,Silent fill or synthetic values
+lower_timeframe_source,Aggregate lower timeframe rows into exact closed 4h buckets,Report row counts per bucket and missing subintervals,Cannot reconstruct complete 4h buckets
+higher_timeframe_or_sparse_source,Classify sparse/higher-timeframe sources as not suitable for 4h strategy features,May be context-only under separate plan,Sparse source treated as precise 4h signal
+gap_duplicates,Report gaps and duplicate timestamps per market,"Provide gap count, largest gap, duplicate count",No quality report
+unit_consistency,Ensure buy sell total volume units match before deriving imbalance,Document unit/currency/contract denomination,Unit mismatch or unknown units
+key_market_visibility,BTCUSDT DOGEUSDT DOTUSDT UNIUSDT must be reported separately,Coverage and quality rows must include key markets,Key markets hidden or aggregated away

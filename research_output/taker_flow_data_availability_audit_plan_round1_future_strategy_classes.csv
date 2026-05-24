@@ -1,0 +1,6 @@
+future_strategy_class,unlocked_only_if,concept,required_guardrail,not_defined_now
+taker_flow_confirmed_breakout,usable_direct_taker_flow or usable_derived_from_public_trades,Breakout considered only when aggressive flow confirms participation,Separate frozen rules and no threshold sweep,yes
+sell_imbalance_exhaustion_reversal,usable_direct_taker_flow with sell-side history,Reversal after heavy aggressive selling and exhaustion context,Must not revive Candidate D without fresh frozen definition,yes
+aggressive_buy_continuation,usable_direct_taker_flow,Continuation only when aggressive buy flow persists,Must compare BTCUSDT and weak markets visibly,yes
+liquidation_wick_bounce_with_flow_confirmation,usable taker-flow plus wick context,Wick bounce only with flow confirmation,Must not directly revive K; must pass new gates,yes
+low_flow_chop_no_trade_filter,usable flow/turnover intensity,Avoid action during low-flow chop regimes,Must prove expectancy improvement not just fewer trades,yes
