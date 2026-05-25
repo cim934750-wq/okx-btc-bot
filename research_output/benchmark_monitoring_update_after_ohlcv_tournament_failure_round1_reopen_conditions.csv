@@ -1,0 +1,7 @@
+condition,allowed_status,required_approval,purpose,forbidden_actions,notes
+explicit_user_approval,required_for_any_research_reopen,yes,Prevent accidental continuation from failed paths.,"No validation, data fetch, or strategy definition without scope.",Approval must specify task type.
+public_trade_reconstruction_feasibility_plan,allowed_plan_only,yes,Assess whether exact instrument-level taker flow can be reconstructed from public trades.,No full public-trade fetch or reconstruction unless separately approved.,Useful only if exact flow remains desired.
+external_exact_instrument_data_audit,allowed_plan_or_audit_after_approval,yes,"Evaluate vendor/external exact historical OI, taker-flow, or basis data.",No proprietary paid strategy copying or unapproved vendor spend.,Must preserve provenance and data rights.
+passive_btc_hurdle_memo,allowed_memo,yes,Formalize when active strategy complexity is justified relative to passive BTC.,No strategy promotion or threshold tuning.,Recommended after passive BTC dominated all candidates.
+genuinely_new_data_source,allowed_for_audit_planning,yes,Open research only when data addresses known limitations.,No direct validation or live planning.,"Must document source, fields, units, coverage, and alignment."
+fresh_feature_inventory_with_strict_gates,allowed_plan_only,yes,Explore materially different features without reviving failed candidates.,"No threshold sweeps, market removal, or candidate spam.",Must keep no-trade as default.

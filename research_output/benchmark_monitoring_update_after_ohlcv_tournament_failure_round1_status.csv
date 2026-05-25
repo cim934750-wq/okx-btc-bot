@@ -1,0 +1,9 @@
+status_item,current_state,evidence,decision,notes
+project_mode,no_trade_benchmark_only_observation,All recent active strategy paths failed or are parked; first-pass OHLCV tournament promoted zero candidates.,remain_benchmark_only,No trade signal or implementation readiness is authorized.
+active_strategy_approval,none_approved,"Pass 0, caution 0, fail 6 in first-pass OHLCV tournament; prior funding/OI/taker paths also failed or constrained.",do_not_trade,No candidate is dry-run-ready or live-ready.
+bot_service,must_remain_stopped,No dry-run/live continuation authorized and no active edge validated.,keep_stopped,Do not restart dry-run or live loop.
+first_pass_ohlcv_tournament,closed_failed_current_freeze,"A/B/C/D/E/I validated; pass 0, caution 0, fail 6, promoted 0.",no_promotion,C/D/I beat no-trade numerically but failed full gates.
+best_active_candidate,not_promoted,"C Donchian +3239.13 PnL, PF 1.1643, BTCUSDT +636.24, but passive BTC +64785.45.",do_not_cherry_pick,Positive PnL alone is not enough.
+passive_btc_benchmark,dominant_holdout_benchmark,Passive BTC beat C Donchian by 61546.32 and dominated every active candidate.,report_as_primary_opportunity_cost,"Use as benchmark context only, not a live recommendation."
+no_trade_baseline,default,Zero active candidates cleared all gates; active complexity not justified.,preserve_capital,No-trade avoids strategy fees and drawdown while research remains inconclusive.
+implementation_readiness,closed_not_ready,No candidate promoted from OHLCV/funding/OI/taker-flow/tournament research.,no_implementation_claim,No production source or parameter changes allowed.

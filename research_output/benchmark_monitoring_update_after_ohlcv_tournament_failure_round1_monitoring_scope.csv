@@ -1,0 +1,11 @@
+scope_item,allowed_status,data_type,trade_signal_allowed,implementation_allowed,notes
+no_trade_baseline,allowed,baseline,no,no,Default capital-preservation reference.
+passive_btc_benchmark,allowed,benchmark,no,no,Report opportunity cost and benchmark dominance only.
+BTCUSDT_4h_context,allowed_observation_only,OHLCV_context,no,no,May observe trend/volatility context without entries or exits.
+broad_19_market_ohlcv_context,allowed_observation_only,OHLCV_context,no,no,"BTCUSDT, DOGEUSDT, DOTUSDT, UNIUSDT remain visible in reporting."
+volatility_regime_observation,allowed_observation_only,derived_context,no,no,Context only; no regime-filtered strategy revival.
+funding_context,allowed_observation_only,funding_rate_context,no,no,Funding gate failed; no threshold tuning or Candidate D revival.
+aggregate_oi_context,allowed_observation_only_with_labeling,aggregate_non_instrument_OI_context,no,no,Must be labeled non-instrument-level; exact historical OI was not proven.
+aggregate_taker_flow_context,allowed_observation_only_with_labeling,aggregate_ccy_contracts_context,no,no,Aggregate taker-flow gate failed; no exact-instrument flow claims.
+data_quality_notes,allowed,provenance_and_coverage,no,no,Document limitations and blockers only.
+research_backlog,allowed_plan_only,planning,no,no,Requires explicit user approval before audits or validation.

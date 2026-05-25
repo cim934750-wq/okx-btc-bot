@@ -1,0 +1,12 @@
+action,status,reason,requires_user_approval,notes
+no_trade_default,allowed_default,No active strategy cleared gates; capital preservation remains preferred.,no,Default project state.
+benchmark_only_monitoring,allowed,"Observation-only monitoring can track no-trade, passive BTC, and context without signals.",no,Must not become trade advice or implementation plan.
+passive_btc_hurdle_memo,allowed_optional,Passive BTC dominated every tournament candidate and should define active-strategy opportunity cost.,yes,Plan/memo only unless separately approved.
+public_trade_reconstruction_feasibility_plan,allowed_optional,Could assess exact instrument-level taker-flow feasibility without full reconstruction.,yes,No fetch/reconstruction unless separately approved.
+external_exact_instrument_data_audit_plan,allowed_optional,Could address current OI/taker/basis data limitations.,yes,No paid/proprietary strategy copying.
+fresh_feature_inventory_with_new_data_source,allowed_optional,Only if genuinely new data/rationale exists.,yes,Must use strict predeclared gates.
+trade_signal_generation,forbidden,Monitoring is observation-only and no strategy is approved.,not_applicable,No entries or exits.
+dry_run_restart,forbidden,No dry-run-ready candidate exists.,not_applicable,Bot remains stopped.
+live_trading,forbidden,No live-ready candidate exists.,not_applicable,No live plan.
+threshold_sweep_or_candidate_variants,forbidden,Would violate overfitting controls after failed tournament.,not_applicable,No tuning from failed results.
+cherry_pick_C_donchian,forbidden,"C was positive but failed passive BTC, breadth, concentration, and full promotion context.",not_applicable,No implementation claim.
