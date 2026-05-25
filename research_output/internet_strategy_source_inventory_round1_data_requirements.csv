@@ -1,0 +1,20 @@
+candidate_id,required_data_item,available_now,source_or_needed_audit,alignment_requirement,blocker_if_missing,notes
+A_ts_momentum_ema_return_round1,4h OHLCV for same 19 markets,yes,existing local OHLCV,closed 4h candles only,candidate cannot compute indicators,BTCUSDT/DOGE/DOT/UNI visible
+A_ts_momentum_ema_return_round1,fees and slippage assumptions,yes,existing research convention,same assumptions across tournament,comparison invalid,No leverage
+B_cross_sectional_top3_round1,4h OHLCV for same 19 markets,yes,existing local OHLCV,weekly rebalance using only prior closed candles,ranking unavailable,No survivorship or market removal
+B_cross_sectional_top3_round1,portfolio ranking support,partial,future validation script support,rank all markets at same timestamp,candidate cannot be tested cleanly,"Not a data blocker, but an implementation planning requirement"
+C_donchian_breakout_round1,4h OHLCV,yes,existing local OHLCV,prior 55/20 bars only,breakout unavailable,No current-bar high lookahead
+D_vol_contraction_breakout_round1,4h OHLCV volume,yes,existing local OHLCV,prior bandwidth percentile and closed-bar volume,compression or trigger unavailable,Volume units must be consistent per market
+E_rsi_bollinger_reversion_round1,4h OHLCV,yes,existing local OHLCV,closed bars only,BB/RSI unavailable,Not Candidate D
+F_intraday_predictability_round1,1h or 15m market-wide OHLCV/public trades,no,future data availability audit,intraday buckets must close before signal,strategy invalid on 4h only,BTCUSDT_1h alone cannot cover 19-market tournament
+G_funding_carry_context_round1,funding history,partial,prior funding audit data,same/prior funding timestamp only,funding feature unavailable,Fresh definition required; failed gate not retuned
+G_funding_carry_context_round1,basis/spot-perp hedge data if carry,no,future basis audit,no future leakage; funding and prices synchronized,carry strategy invalid,No live carry plan
+H_basis_perp_spot_spread_round1,spot and perp prices,no,future basis data audit,same timestamp or prior closed observation,basis cannot be computed,Plan-only
+H_basis_perp_spot_spread_round1,"borrow, fees, slippage, margin assumptions",no,future operational audit,explicit cost model before validation,net carry overstated,No leverage by default
+I_regime_filtered_trend_round1,4h OHLCV and BTC anchor OHLCV,yes,existing local OHLCV,BTC regime from prior closed BTC candle,regime unavailable,Compare to ungated A
+J_pairs_relative_value_round1,predeclared pair universe and OHLCV,partial,future pair plan,formation window before test window only,pair selection overfit,No post-result pair choice
+J_pairs_relative_value_round1,shortability/funding/borrow costs,no,future execution data audit,costs applied before pass gates,market-neutral PnL invalid,Plan-only
+K_capped_grid_sim_round1,lower timeframe or orderbook for realistic grid fills,no,future data audit if approved,fills must be executable without lookahead,grid simulation unrealistic,Excluded from first pass
+K_capped_grid_sim_round1,hard drawdown/loss cap definition,partial,future plan,loss cap predeclared before validation,tail risk hidden,No averaging down implementation
+L_logistic_classifier_baseline_round1,fixed OHLCV features and labels,partial,future ML validation plan,walk-forward train/test only,leakage risk,No training in this inventory
+L_logistic_classifier_baseline_round1,baseline comparison and calibration protocol,no,future ML plan,nested or strictly chronological split,accuracy not comparable,Plan-only until controls exist

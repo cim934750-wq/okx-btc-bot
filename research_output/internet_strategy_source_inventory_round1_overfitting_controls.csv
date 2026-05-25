@@ -1,0 +1,11 @@
+control_id,control_rule,purpose
+one_candidate_per_family,Only one representative template per A-L family in first tournament,Prevents variant shopping
+frozen_parameters,All thresholds/windows frozen before validation,No threshold sweeps after results
+same_market_universe,Use same 19 markets where data supports it; BTCUSDT DOGEUSDT DOTUSDT UNIUSDT visible,Prevents cherry-picking and hiding weak markets
+same_cost_model,Same fee/slippage assumptions across candidates,Prevents favorable cost assumptions
+no_claimed_online_performance,Internet references are idea sources only; copied performance claims are ignored,Prevents external backtest trust
+chronological_split,Future validation must use chronological split and later-data checks where available,Reduces lookahead and overfit
+no_post_result_market_removal,No symbol/family removal after seeing results,Prevents data snooping
+compare_to_simple_baselines,"Compare to no-trade, passive BTC, buy-and-hold, and failed references",Keeps complexity honest
+data_blocked_not_failed,"Unavailable data means blocked/plan-only, not failed or manually approximated",Avoids fake features
+no_implementation_ready_label,Tournament can at most mark promising_for_confirmation,Keeps research and deployment separated

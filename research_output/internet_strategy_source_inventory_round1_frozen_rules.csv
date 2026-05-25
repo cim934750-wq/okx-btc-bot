@@ -1,0 +1,29 @@
+candidate_id,rule_component,frozen_rule,parameter_value,parameter_source,tuning_allowed,notes
+A_ts_momentum_ema_return_round1,entry,Enter long when close > EMA100 and 20-bar return > 0,EMA100; return_20 > 0,canonical_simple_default,no,One own-market trend signal per market
+A_ts_momentum_ema_return_round1,exit,Exit when close < EMA50 or after 12 completed 4h bars,EMA50; max_hold_12_bars,tournament_plan_default,no,No profit target optimization
+A_ts_momentum_ema_return_round1,stop,Initial stop at entry close - 2 * ATR14,2*ATR14,canonical_risk_default,no,No trailing variant in first pass
+A_ts_momentum_ema_return_round1,sizing,Fixed notional per eligible market; no leverage,fixed_notional,repo_research_convention,no,Same fees/slippage as tournament
+B_cross_sectional_top3_round1,ranking,At weekly rebalance rank same 19 markets by 30-day return,30_day_return; top_3,canonical_simple_default,no,Universe frozen before results
+B_cross_sectional_top3_round1,entry,Hold top 3 markets only if their 30-day return is positive,top_3_positive_return,tournament_plan_default,no,Max 3 concurrent positions
+B_cross_sectional_top3_round1,exit,Exit when market drops out of top half at rebalance or stop triggers,top_half_rank_exit,tournament_plan_default,no,Weekly rebalance only
+B_cross_sectional_top3_round1,stop,ATR trailing stop at 2 * ATR14 from entry reference,2*ATR14,canonical_risk_default,no,No market-specific stop tuning
+C_donchian_breakout_round1,entry,Enter long on close above prior 55-bar high,55_bar_high_breakout,canonical_Donchian_Turtle_style,no,Uses prior high only; no current-bar lookahead
+C_donchian_breakout_round1,exit,Exit on close below prior 20-bar low,20_bar_low_exit,canonical_Donchian_Turtle_style,no,One exit definition
+C_donchian_breakout_round1,stop,"Stop at max(prior 20-bar low, entry - 2 * ATR14)",20_bar_low_or_2ATR,tournament_plan_default,no,No add-ons
+D_vol_contraction_breakout_round1,compression,Require BB20/2 bandwidth percentile <= 20 over trailing 120 bars,percentile_20_of_120,simple_structural_default,no,Fixed structural squeeze definition
+D_vol_contraction_breakout_round1,entry,"After compression, enter long when close > upper BB20/2 and volume > rolling 20-bar median",upper_BB20_2; volume_gt_median20,tournament_plan_default,no,No alternative volume trigger
+D_vol_contraction_breakout_round1,exit,Exit on close below SMA20 or after 8 completed 4h bars,SMA20; max_hold_8_bars,tournament_plan_default,no,No take-profit sweep
+D_vol_contraction_breakout_round1,stop,Initial stop at entry - 1.5 * ATR14,1.5*ATR14,tournament_plan_default,no,Fixed risk rule
+E_rsi_bollinger_reversion_round1,entry,Enter long when close < lower BB20/2 and RSI14 < 30,BB20_2_lower; RSI14_lt_30,canonical_simple_default,no,Distinct from Candidate D: no EMA20 - 1.5 ATR condition and RSI threshold differs
+E_rsi_bollinger_reversion_round1,exit,"Exit on SMA20 touch, RSI14 > 50, or after 8 completed 4h bars",SMA20; RSI14_gt_50; max_hold_8_bars,tournament_plan_default,no,Research-only comparator
+E_rsi_bollinger_reversion_round1,stop,Stop at entry candle low - 1 * ATR14,1*ATR14,tournament_plan_default,no,No averaging down
+F_intraday_predictability_round1,status,No frozen executable rule until 1h/15m market-wide data availability is audited,data_blocked,data_constraint,no,Do not approximate intraday effect with 4h bars
+G_funding_carry_context_round1,status,No executable rule in this inventory; requires fresh funding definition not derived from failed Candidate D gate,definition_blocked,prior_failure_constraint,no,No funding threshold retune
+H_basis_perp_spot_spread_round1,status,Plan-only cash-and-carry/basis concept; no executable rule until basis and execution data audited,plan_only,data_constraint,no,No leverage or live carry planning
+I_regime_filtered_trend_round1,regime,BTC regime on only when BTC close > BTC EMA200 and BTC realized volatility below trailing 75th percentile,BTC_EMA200; vol_percentile_lt_75,tournament_plan_default,no,Must compare against ungated A
+I_regime_filtered_trend_round1,entry,"When regime is on, enter long per market if close > EMA100",EMA100,simple_trend_default,no,Not Long1 revival
+I_regime_filtered_trend_round1,exit,Exit when regime turns off or market close < EMA50,BTC_regime_off; market_EMA50_loss,tournament_plan_default,no,No threshold tuning
+I_regime_filtered_trend_round1,stop,Initial stop at entry close - 2 * ATR14,2*ATR14,canonical_risk_default,no,Fixed
+J_pairs_relative_value_round1,status,"No executable rule until pair universe, formation window, z-score definition, and short costs are frozen",plan_only,complexity_constraint,no,No post-result pair selection
+K_capped_grid_sim_round1,status,No executable grid in first tournament; only future capped simulation with hard stop may be planned,plan_only_or_excluded,tail_risk_constraint,no,No averaging-down implementation
+L_logistic_classifier_baseline_round1,status,No model training in this task; requires separate leakage-safe ML validation plan,plan_only,leakage_constraint,no,Must compare against simple rule baselines

@@ -1,0 +1,7 @@
+candidate_id,blocker_type,blocker_description,resolution_needed,classification
+F_intraday_predictability_round1,missing_marketwide_intraday_data,Only BTCUSDT_1h is known/excluded from 19-market tests; 4h bars cannot represent intraday timing,requires_1h_or_15m_data_audit,blocked
+G_funding_carry_context_round1,prior_failed_funding_gate,Funding-gated Candidate D reduced losses but failed to create positive edge; thresholds cannot be retuned,requires_fresh_definition_and_maybe_basis_audit,blocked
+H_basis_perp_spot_spread_round1,basis_data_not_audited,"Spot/perp basis, borrow, margin, and execution costs are not available as validated data",requires_basis_data_availability_audit,plan_only
+J_pairs_relative_value_round1,pair_selection_and_short_costs,"Pairs require predeclared universe, formation window, shortability, funding/borrow costs",requires_pair_and_execution_audit,plan_only
+K_capped_grid_sim_round1,tail_risk_and_fill_realism,"4h data can hide fill ordering, inventory accumulation, and fee drag; grid can mask tail losses",requires_strict_loss_cap_and_lower_tf_audit,excluded_first_pass
+L_logistic_classifier_baseline_round1,ml_leakage_controls_missing,"ML requires frozen features, labels, walk-forward split, calibration, and simple baseline comparison",requires_ml_validation_framework_plan,plan_only

@@ -1,0 +1,7 @@
+candidate_id,family_id,status,reason,possible_future_step
+F_intraday_predictability_round1,F,data_blocked,Needs market-wide 1h/15m data; not first-pass OHLCV tournament eligible,future_intraday_data_availability_audit
+G_funding_carry_context_round1,G,definition_blocked,Prior funding gate failed; fresh funding/carry definition needed before validation,future_funding_or_basis_definition_plan
+H_basis_perp_spot_spread_round1,H,plan_only,Basis and execution data unavailable/not audited,future_basis_data_availability_audit
+J_pairs_relative_value_round1,J,plan_only,"Requires predeclared pair universe, spread formation, short costs, and portfolio mechanics",future_pairs_feasibility_plan
+K_capped_grid_sim_round1,K,excluded_first_pass,Grid tail risk and fill realism too high for first tournament from 4h only,future_capped_grid_feasibility_plan_if_approved
+L_logistic_classifier_baseline_round1,L,plan_only,ML requires separate leakage-safe framework; no training in this inventory,future_ml_baseline_validation_plan

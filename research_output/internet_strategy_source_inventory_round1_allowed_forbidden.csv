@@ -1,0 +1,11 @@
+classification,item,notes
+allowed,create_first_pass_ohlcv_tournament_validation_plan,Allowed because at least six candidates are eligible with existing 4h OHLCV; validation still requires explicit next task
+allowed,benchmark_only_monitoring,No-trade remains default and monitoring may continue
+allowed,data_availability_audits_for_blocked_families,Only with explicit approval and no strategy validation in audit tasks
+allowed,fresh_frozen_definition_for_blocked_family,Only if data and rationale are genuinely new and predeclared
+forbidden,run_validation_or_backtests_in_this_task,Inventory only
+forbidden,fetch_market_data,No market data fetch approved for this task
+forbidden,threshold_sweep_or_parameter_optimization,All candidates must remain frozen
+forbidden,copy_proprietary_paid_strategy_or_trust_online_performance,Public references are idea sources only
+forbidden,revive_failed_candidates_as_active,"Candidate D, funding gate, aggregate taker-flow, Long1 derivatives remain closed for implementation"
+forbidden,dry_run_live_or_implementation_claim,No active strategy is ready
