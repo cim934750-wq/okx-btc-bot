@@ -1,0 +1,11 @@
+control_id,control_rule,purpose
+one_frozen_candidate_per_family,Only A/B/C/D/E/I one representative each,No multiple variants or family-internal competitions
+no_threshold_sweeps,Use frozen source-inventory thresholds exactly,No tuning after seeing results
+same_19_markets,Use same 19 markets where feasible and keep BTC/DOGE/DOT/UNI visible,No post-result market removal
+same_cost_model,Same fee and slippage assumptions for every candidate,No favorable cost assumptions
+same_sizing_model,Same fixed-notional/no-leverage convention unless candidate B portfolio cap requires equivalent notional normalization,Comparable tournament accounting
+closed_candle_only,All signals from prior/same closed 4h candles only,No lookahead or intrabar leakage
+chronological_split,Use same chronological split and later-data logic if available,No randomized leakage or sample cherry-pick
+failed_references_context_only,"Prior failed candidates are references, not promotion targets",No revival of closed paths
+data_insufficient_stop,"If data coverage is insufficient, produce data-insufficient output rather than invent/fill data",No fake data
+no_implementation_claim,Even a pass only means promising_for_confirmation,Research/deployment separation

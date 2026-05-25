@@ -1,0 +1,28 @@
+metric_name,metric_definition,applies_to,required,pass_gate_related,notes
+aggregate_net_pnl,Sum of closed-trade net PnL after fees and baseline slippage,each_candidate,yes,yes,Primary pass/fail gate
+profit_factor,Gross profits divided by gross losses; NA if no losses/trades and must be explained,each_candidate,yes,yes,PF >= 1.20 preferred; >= 1.10 minimum
+max_drawdown,Maximum equity drawdown under tournament accounting,each_candidate,yes,yes,Must be acceptable and compared across candidates
+win_rate,Winning trades divided by total trades,each_candidate,yes,no,Interpret with trade count
+average_trade,Net PnL divided by trade count,each_candidate,yes,no,Detect fee drag
+median_trade,Median closed-trade net PnL,each_candidate,yes,no,Robustness check
+trade_count,Number of closed trades,each_candidate,yes,yes,Low trade count triggers caution/fail
+exposure_time_in_market,Bars or percent time with open positions,each_candidate,yes,yes,Ensure result is not merely low exposure
+fee_burden,Total fees paid and percent of gross PnL,each_candidate,yes,no,Same assumptions across candidates
+slippage_sensitivity,Sensitivity to extra slippage/fees where feasible,each_candidate,yes_if_feasible,yes,Edge must survive reasonable friction
+BTCUSDT_result,"BTCUSDT trade count, net PnL, PF, win rate",each_candidate,yes,yes,BTC boundary visible
+DOGEUSDT_result,"DOGEUSDT trade count, net PnL, PF, win rate",each_candidate,yes,no,Key weak/high-beta market visible
+DOTUSDT_result,"DOTUSDT trade count, net PnL, PF, win rate",each_candidate,yes,no,Key market visible
+UNIUSDT_result,"UNIUSDT trade count, net PnL, PF, win rate",each_candidate,yes,no,Key market visible
+per_market_result,Per-symbol PnL/PF/trades/win rate,each_candidate,yes,yes,Breadth and hidden concentration
+family_level_result,Market-family aggregate if family labels exist,each_candidate,yes_if_labels_exist,yes,Detect family concentration
+market_concentration,Top market and top 3/5 market contribution share,each_candidate,yes,yes,Excess concentration blocks promotion
+trade_concentration,Top 1/top 5/top 10 positive trade contribution share,each_candidate,yes,yes,Outlier dependence check
+positive_market_count,Count of markets with positive net PnL,each_candidate,yes,yes,Breadth gate
+negative_market_count,Count of markets with negative net PnL,each_candidate,yes,yes,Breadth gate
+no_trade_comparison,Candidate net PnL minus zero-trade baseline,each_candidate,yes,yes,No-trade must be beaten
+passive_btc_comparison,Candidate return/PnL compared with passive BTC benchmark over same window,each_candidate,yes,yes,BTC benchmark must be reported
+buy_and_hold_comparison,Per-market buy-and-hold comparison where feasible,each_candidate,yes_if_feasible,yes,Long beta check
+failed_reference_comparison,Comparison to prior failed candidates as context only,each_candidate,yes,no,Do not use failed-reference beat alone as pass
+data_coverage,"Start/end, candle counts, gaps, duplicates per market",each_candidate_and_dataset,yes,yes,Clean coverage required
+warmup_loss_count,Signals skipped due insufficient indicator warmup,each_candidate,yes,yes,Coverage/warmup issue visibility
+skipped_entries,Count of skipped entries and reason,each_candidate,yes_if_applicable,yes,Especially B ranking and data coverage

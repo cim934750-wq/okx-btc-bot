@@ -1,0 +1,22 @@
+gate_type,gate_rule,notes
+pass,aggregate_net_pnl_positive_after_fees,Required; otherwise no promotion
+pass,PF >= 1.20 preferred and PF >= 1.10 minimum,Below 1.10 cannot be pass
+pass,no-trade baseline beaten,No-trade remains default unless beaten
+pass,passive BTC comparison reported,Cannot pass without BTC benchmark context
+pass,BTCUSDT non-negative if meaningful BTC trades exist,BTC boundary remains visible
+pass,positive market breadth and no excessive concentration,Avoid one-market/outlier dependence
+pass,acceptable max DD and sufficient trade count,Avoid low-sample or high-DD pass
+pass,not merely low exposure or low trade count,Candidate must create expectancy
+pass,clean data coverage and no lookahead/future leakage,Data quality gate
+pass,status can only be promising_for_confirmation,Never implementation_ready/dry_run_ready/live_ready
+caution,aggregate positive but PF < 1.10,Improvement but weak quality
+caution,too few trades or low exposure,Potentially uninterpretable
+caution,BTC weak or passive BTC dominates,Long-beta concern
+caution,result concentrated in one market or one trade,Fragility concern
+caution,warmup/data coverage issues,May need data-insufficient classification
+caution,strategy structurally hard to execute,Portfolio/ranking/accounting complexity
+fail,aggregate negative or PF < 1.00,Eliminate or park
+fail,no-trade not beaten,No-trade remains default
+fail,passive BTC dominates with lower complexity,Do not promote complexity without edge
+fail,high drawdown or weak market breadth,Risk/robustness failure
+fail,"data unavailable, hidden lookahead risk, or cherry-picking dependence",Invalid result

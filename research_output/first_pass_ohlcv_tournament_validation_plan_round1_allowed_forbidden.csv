@@ -1,0 +1,13 @@
+classification,item,notes
+allowed,create_execution_script_in_future_task,Only if explicitly approved and exactly follows this plan
+allowed,use_existing_4h_ohlcv,Future validation may use existing local 4h OHLCV only
+allowed,compare_against_no_trade_and_passive_btc,Required baseline context
+allowed,mark_data_insufficient_or_ambiguous,Required if coverage/rules cannot be executed cleanly
+forbidden,run_validation_in_this_task,This task is validation-plan only
+forbidden,fetch_market_data,No fetch approved
+forbidden,change_frozen_candidate_definitions,Use source inventory rules only
+forbidden,threshold_sweeps_or_parameter_optimization,No tuning
+forbidden,multiple_variants_per_family,One representative per family only
+forbidden,market_removal_or_cherry_picking,Same 19-market universe visible
+forbidden,production_source_or_parameter_changes,Research outputs only
+forbidden,dry_run_live_or_implementation_claim,No strategy is ready

@@ -1,0 +1,11 @@
+rank_order,ranking_dimension,ranking_rule,tie_breaker,notes
+1,pass_fail_decision,"Pass candidates rank above caution, caution above fail","If same decision, compare aggregate net PnL",No implementation-ready label allowed
+2,aggregate_net_pnl_after_fees,Higher positive net PnL ranks higher,PF breaks ties,Negative PnL is fail regardless of other dimensions
+3,profit_factor,"Higher PF ranks higher, with >=1.20 preferred and >=1.10 minimum",Max DD breaks ties,PF NA from zero trades is not a pass
+4,max_drawdown,Lower drawdown ranks higher if PnL/PF are comparable,Breadth breaks ties,Controlled DD required
+5,breadth_across_markets,More positive markets and fewer severe weak markets rank higher,BTCUSDT breaks ties,No one-market edge
+6,BTCUSDT_result,Non-negative BTCUSDT preferred when meaningful BTC trades exist,Concentration breaks ties,BTC weak triggers caution/fail
+7,concentration_risk,Lower market/trade/family concentration ranks higher,Trade count breaks ties,Outlier-driven results downgraded
+8,trade_count_sufficiency,Adequate trade count ranks above low sample,Passive BTC comparison breaks ties,Too few trades blocks promotion
+9,passive_btc_comparison,Candidate must report and preferably beat passive BTC risk-adjusted/complexity comparison,Simplicity breaks ties,Passive BTC dominance triggers caution/fail
+10,simplicity_implementation_risk,"Simpler, cleaner accounting ranks higher",No further tie beyond synthesis,Still research-only
