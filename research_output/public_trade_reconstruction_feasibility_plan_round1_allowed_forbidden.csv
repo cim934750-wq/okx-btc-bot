@@ -1,0 +1,12 @@
+action,status,reason,requires_user_approval,notes
+create_public_trade_reconstruction_feasibility_plan,allowed_completed_by_this_task,Plan-only step after aggregate taker-flow was insufficient.,no,No data fetch performed.
+minimal_public_trade_sample_audit,allowed_future_only,"Needed to prove side semantics, pagination, gaps, and storage/runtime burden.",yes,Start with BTCUSDT plus DOGEUSDT or DOTUSDT.
+use_OKX_history_trades_as_primary_candidate_source,allowed_for_future_audit_only,"Endpoint may provide exact instId trades with taker side, but feasibility is unproven.",yes,No full backfill without sample audit.
+use_ccxt_fetchTrades_wrapper,allowed_as_cross_check_only,ccxt can help access public trades but raw OKX payload remains source of truth.,yes,Must preserve raw info and side semantics.
+fetch_public_trades_now,forbidden,Current task is feasibility plan only.,not_applicable,Separate explicit audit approval required.
+run_backtest_or_validation,forbidden,Data feasibility must be proven before any candidate plan or validation.,not_applicable,No strategy test.
+define_taker_flow_strategy,forbidden,Exact reconstruction is not proven.,not_applicable,No candidate variants.
+claim_reconstruction_possible,forbidden,Only feasibility plan exists; no sample audit completed.,not_applicable,Use possible_in_principle only with caveats.
+use_private_account_or_order_data,forbidden,Scope allows only public data in future audit.,not_applicable,No private endpoints.
+restart_dry_run_or_live,forbidden,No implementation-ready strategy exists.,not_applicable,Bot remains stopped.
+claim_implementation_readiness,forbidden,Plan does not validate a strategy or produce deployable evidence.,not_applicable,No dry-run/live readiness.

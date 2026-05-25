@@ -1,0 +1,13 @@
+field_name,required,source_field_name,purpose,missing_field_impact,notes
+instrument_id,yes,instId,Guarantee exact OKX swap instrument scope.,Cannot prove exact instrument-level reconstruction.,Must match planned mapping such as BTC-USDT-SWAP.
+trade_id,yes,tradeId,Stable deduplication and pagination audit.,Duplicate removal and gap detection become unreliable.,"If tradeId uniqueness is not stable per instrument, use composite key and mark caution."
+timestamp_ms,yes,ts,UTC-normalized 4h bucket assignment and gap checks.,No 4h alignment possible.,Unix milliseconds; convert to timezone-aware UTC.
+trade_price,yes,px,Compute notional and price-aware diagnostics.,Notional unavailable; volume-only reconstruction may remain possible but weaker.,Store as decimal string/raw plus parsed numeric.
+trade_size,yes,sz,Compute taker buy/sell volume.,No volume reconstruction possible.,"For OKX SWAP/FUTURES/OPTION, docs indicate unit is contract."
+trade_side,yes,side,Separate taker buy from taker sell.,Not valid for taker-flow research; classify infeasible_due_missing_side.,"Must be verified as taker/aggressor side, not passive maker side."
+side_semantics_proof,yes,documentation_and_sample_audit,Prove side can be interpreted as taker/aggressor side.,Classify feasible_trade_flow_but_side_uncertain or not_recommended.,Docs indicate trade side of taker; future audit must record source/version and raw examples.
+source,recommended,source,Distinguish normal order vs enhanced liquidity program order if needed.,Less diagnostic detail; not necessarily fatal.,Do not filter post hoc unless predeclared.
+raw_payload,yes,full_response_object,"Provenance, replay, parser audit, and future schema checks.",Cannot verify transformations or source schema.,Archive JSONL with fetch metadata.
+raw_payload_hash,yes,computed_sha256,Integrity check for raw archives.,Weaker provenance.,Hash canonical raw line or response page.
+fetch_timestamp,yes,audit_fetch_time_utc,Provenance and reproducibility.,Harder to audit mutable source behavior.,Future audit only; no fetch in this plan.
+contract_metadata,conditional,public instruments metadata,Convert contract size to base/quote notional if needed.,Notional formulas remain untrusted or contract-only.,Fetching metadata would require separate approval if not already cached.

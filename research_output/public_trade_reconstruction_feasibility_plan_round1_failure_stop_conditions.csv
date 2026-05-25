@@ -1,0 +1,10 @@
+stop_condition,reason,required_action,notes
+side_not_proven_taker_aggressor,"Without taker-side semantics, buy/sell flow is not valid.",Stop reconstruction audit or reclassify as trade-flow-only context.,Documentation plus sample provenance required.
+missing_side_field,Cannot separate taker buys and sells.,Classify infeasible_due_missing_side.,Do not infer side ad hoc.
+instId_not_exact_or_mixed,Reconstruction must be exact instrument-level.,Stop and report scope contamination.,Do not mix aggregate Rubik context with exact trades.
+history_depth_too_short,Short history cannot support intended validation windows.,Stop or propose external/archive data audit.,Native endpoint appears limited to last 3 months.
+pagination_unstable_or_unbounded,Cannot prove complete interval coverage.,Stop broad audit and archive failure evidence.,No incomplete bucket aggregation.
+duplicate_conflicts,Same trade key has conflicting price/size/side/timestamp.,Quarantine conflicts and stop if unresolved.,Duplicates from page overlap are OK only if identical.
+request_error_rate_high,Rate-limit or server errors make fetch incomplete.,Stop and report rate-limit burden.,No aggressive scraping.
+storage_runtime_exceeds_budget,Raw archive and verification burden too high.,Stop and propose smaller scope or external data source.,Do not fetch all 19 markets blindly.
+4h_bucket_incomplete_many_buckets,Feature coverage too weak for research.,Classify partially usable or not usable.,No forward-fill.

@@ -1,0 +1,15 @@
+feature_name,formula,required_fields,valid_only_if,caveat,notes
+trade_price,px parsed as decimal,px,price is present and numeric,Use raw decimal precision; avoid float-only archives.,"Input field, not derived feature."
+trade_size,sz parsed as decimal,sz,size is present and numeric,"For swaps, size is contract count unless converted with contract metadata.",Input field for volume aggregation.
+trade_notional,trade_price * trade_size * contract_multiplier_if_required,"px, sz, contract_metadata",contract denomination and multiplier are audited,"Without contract metadata, notional is plan-only and must not be reported as quote notional.",May be skipped in first sample audit.
+trade_side,side normalized to buy_or_sell,"side, side_semantics_proof",side is proven taker/aggressor side for endpoint used,"If side semantics are uncertain, taker-flow reconstruction is invalid.",Core stop condition.
+taker_buy_volume,sum(sz for trades where side == buy),"instId, tradeId, ts, sz, side",side means taker buy/sell and duplicates removed,Volume unit is contract count for swaps unless converted.,Computed per 4h closed bucket.
+taker_sell_volume,sum(sz for trades where side == sell),"instId, tradeId, ts, sz, side",side means taker buy/sell and duplicates removed,Volume unit is contract count for swaps unless converted.,Computed per 4h closed bucket.
+taker_buy_notional,sum(trade_notional for trades where side == buy),"px, sz, side, contract_metadata",trade_notional conversion is audited,Do not infer quote notional from contracts without metadata.,Optional second-stage feature.
+taker_sell_notional,sum(trade_notional for trades where side == sell),"px, sz, side, contract_metadata",trade_notional conversion is audited,Do not infer quote notional from contracts without metadata.,Optional second-stage feature.
+total_taker_volume,taker_buy_volume + taker_sell_volume,"taker_buy_volume, taker_sell_volume",both sides reconstructed from complete deduplicated bucket,"If total is zero, ratios are invalid.",Per instrument and 4h bucket.
+total_taker_notional,taker_buy_notional + taker_sell_notional,"taker_buy_notional, taker_sell_notional",notional conversion is audited,Optional; not valid in contract-only mode.,Use only if units are proven.
+taker_buy_ratio,taker_buy_volume / total_taker_volume,"taker_buy_volume, total_taker_volume",total_taker_volume > 0 and bucket complete,No forward-fill for missing buckets.,Range 0..1.
+taker_sell_ratio,taker_sell_volume / total_taker_volume,"taker_sell_volume, total_taker_volume",total_taker_volume > 0 and bucket complete,No forward-fill for missing buckets.,Range 0..1.
+taker_imbalance,(taker_buy_volume - taker_sell_volume) / total_taker_volume,"taker_buy_volume, taker_sell_volume, total_taker_volume",total_taker_volume > 0 and bucket complete,"Contract-volume imbalance, not quote-normalized unless notional version is audited.",Positive means buy taker dominance.
+taker_delta,taker_buy_volume - taker_sell_volume,"taker_buy_volume, taker_sell_volume",bucket complete and duplicates removed,Unit is contracts unless converted.,Not cross-market comparable without normalization.

@@ -1,0 +1,20 @@
+market,okx_inst_id,instrument_type,mapping_confidence,mapping_issue,notes
+AAVEUSDT,AAVE-USDT-SWAP,SWAP,high,prior taker-flow audit mapping,same 19 market universe
+ADAUSDT,ADA-USDT-SWAP,SWAP,high,prior taker-flow audit mapping,same 19 market universe
+ATOMUSDT,ATOM-USDT-SWAP,SWAP,high,prior taker-flow audit mapping,same 19 market universe
+AVAXUSDT,AVAX-USDT-SWAP,SWAP,high,prior taker-flow audit mapping,same 19 market universe
+BCHUSDT,BCH-USDT-SWAP,SWAP,high,prior taker-flow audit mapping,same 19 market universe
+BNBUSDT,BNB-USDT-SWAP,SWAP,high,prior taker-flow audit mapping,same 19 market universe
+BTCUSDT,BTC-USDT-SWAP,SWAP,high,prior taker-flow audit mapping,required visible anchor
+DOGEUSDT,DOGE-USDT-SWAP,SWAP,high,prior taker-flow audit mapping,required visible key market
+DOTUSDT,DOT-USDT-SWAP,SWAP,high,prior taker-flow audit mapping,required visible key market
+ETCUSDT,ETC-USDT-SWAP,SWAP,high,prior taker-flow audit mapping,same 19 market universe
+ETHUSDT,ETH-USDT-SWAP,SWAP,high,prior taker-flow audit mapping,same 19 market universe
+FILUSDT,FIL-USDT-SWAP,SWAP,high,prior taker-flow audit mapping,same 19 market universe
+LINKUSDT,LINK-USDT-SWAP,SWAP,high,prior taker-flow audit mapping,same 19 market universe
+LTCUSDT,LTC-USDT-SWAP,SWAP,high,prior taker-flow audit mapping,same 19 market universe
+NEARUSDT,NEAR-USDT-SWAP,SWAP,high,prior taker-flow audit mapping,same 19 market universe
+SOLUSDT,SOL-USDT-SWAP,SWAP,high,prior taker-flow audit mapping,same 19 market universe
+TRXUSDT,TRX-USDT-SWAP,SWAP,high,prior taker-flow audit mapping,same 19 market universe
+UNIUSDT,UNI-USDT-SWAP,SWAP,high,prior taker-flow audit mapping,required visible key market
+XRPUSDT,XRP-USDT-SWAP,SWAP,high,prior taker-flow audit mapping,same 19 market universe
