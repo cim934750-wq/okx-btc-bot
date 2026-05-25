@@ -1,0 +1,13 @@
+metric,value,interpretation,promotion_impact,notes
+candidate_id,C_donchian_breakout_round1,Best first-pass OHLCV tournament candidate.,Case study only.,Not revived as implementation-ready.
+holdout_net_pnl,+3239.13,Positive active PnL and numerically better than no-trade.,Constructive but insufficient.,Positive PnL is only one gate.
+profit_factor,1.1643,Above minimum 1.10 but below preferred 1.20.,Does not clear preferred expectancy standard.,PF alone cannot offset passive BTC dominance.
+passive_btc_holdout_pnl,+64785.45,Simple passive BTC benchmark dominated the active candidate.,Major failure reason.,Future validations must report this comparison.
+active_minus_passive_btc_gap,-61546.32,Large opportunity-cost deficit.,Blocks promotion absent proven lower-risk role.,C did not predeclare or prove a defensive role.
+BTCUSDT_result,+636.24,BTCUSDT was positive.,Helpful but insufficient.,Passive BTC still dominated.
+DOGEUSDT_result,-155.06,Key high-beta market was negative.,Weakens breadth.,Key markets must remain visible.
+DOTUSDT_result,+126.16,Key alt market was positive but small.,Minor positive evidence.,Does not change full decision.
+UNIUSDT_result,+337.50,Key DeFi market was positive.,Minor positive evidence.,Does not overcome passive BTC gap.
+market_breadth,9 positive / 10 negative markets,Weak breadth across 19 markets.,Blocks strong promotion.,A basket candidate should not rely on narrow support.
+top_3_positive_market_contribution,67.07%,Concentration risk in best markets.,Caution or fail depending on benchmark result.,No post-result market removal allowed.
+final_decision,fail_passive_btc_dominates,Positive but under benchmark and not sufficiently broad.,Not promoted.,No dry-run/live path.

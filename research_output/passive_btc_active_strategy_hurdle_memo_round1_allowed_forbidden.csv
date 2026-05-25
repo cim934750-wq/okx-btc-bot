@@ -1,0 +1,12 @@
+action,status,reason,requires_user_approval,notes
+use_memo_as_future_validation_gate,allowed,"Standardizes no-trade, passive BTC, complexity, and readiness interpretation.",no,Applies to future research artifacts.
+benchmark_only_monitoring,allowed_default,No active strategy has cleared gates.,no,Observation-only; no signals.
+passive_btc_gap_reporting,required_future_validation,Prevents positive PnL from being mistaken for active edge.,no,Must use same evaluation window.
+confirmation_plan_for_promising_candidate,allowed_if_gates_clear,A candidate that beats no-trade and passive BTC may deserve confirmation.,yes,Still not implementation-ready.
+public_trade_reconstruction_feasibility_plan,allowed_optional,Could address exact instrument-level taker-flow data gap.,yes,No data fetch/reconstruction unless separately approved.
+external_exact_data_audit_plan,allowed_optional,Could address OI/taker/basis data limitations.,yes,Audit before strategy definition.
+run_validation_from_this_memo,forbidden,This memo is gate definition only.,not_applicable,Separate validation plan required.
+promote_positive_underperformer,forbidden,Positive PnL under passive BTC dominance is not enough.,not_applicable,C Donchian remains not promoted.
+threshold_sweep_or_variant_spam,forbidden,Overfitting risk after failed candidates.,not_applicable,No tuning from results.
+dry_run_or_live_restart,forbidden,No implementation-ready strategy exists.,not_applicable,Bot remains stopped.
+claim_implementation_readiness,forbidden,Memo does not validate or approve a strategy.,not_applicable,No active strategy is ready.
