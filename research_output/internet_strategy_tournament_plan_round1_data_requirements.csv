@@ -1,0 +1,13 @@
+family_id,family_name,required_data,repo_likely_has_data,new_data_audit_needed,existing_4h_ohlcv_testable,funding_needed,oi_needed,taker_or_public_trade_needed,basis_needed,vendor_or_external_needed,data_limitation_action
+A,time_series_momentum_trend_following,4h OHLCV,yes,no,yes,no,no,no,no,no,include_in_4h_ohlcv_first_pass
+B,cross_sectional_momentum_relative_strength,4h OHLCV across same 19 markets,yes,no,yes,no,no,no,no,no,include_in_4h_ohlcv_first_pass
+C,donchian_breakout,4h OHLCV,yes,no,yes,no,no,no,no,no,include_in_4h_ohlcv_first_pass
+D,volatility_contraction_breakout,4h OHLCV volume,yes,no,yes,no,no,no,no,no,include_in_4h_ohlcv_first_pass
+E,rsi_bollinger_mean_reversion,4h OHLCV,yes,no,yes,no,no,no,no,no,include_in_4h_ohlcv_first_pass
+F,intraday_momentum_reversal,1h or lower OHLCV preferred; 4h may be too coarse,partial_BTCUSDT_1h_only_excluded_from_19_market_tests,yes_for_19_market_intraday_data,no,no,no,yes,no,no,exclude_or_plan_data_audit_before_validation
+G,funding_rate_carry_or_filter,funding history aligned to 4h,yes_audited_partial,no_for_funding_first;yes_for_extended_history_if_needed,no_funding_required,yes,no,no,yes,no,exclude_or_plan_data_audit_before_validation
+H,basis_perp_spot_spread_plan_only,"spot prices, perp prices, funding, borrow/fee assumptions, execution spread",no_basis_not_audited,yes,no,yes,no,no,yes,no,exclude_or_plan_data_audit_before_validation
+I,regime_filtered_trend_strategy,"4h OHLCV, BTC anchor metrics",yes,no,yes,no,no,no,no,no,include_in_4h_ohlcv_first_pass
+J,pairs_market_neutral_relative_value,OHLCV plus short/perp availability and borrow/funding assumptions,partial_ohlcv_only,yes_for_shortability_costs,partial_research_only,no,no,no,no,yes,exclude_or_plan_data_audit_before_validation
+K,volatility_harvesting_grid_like,4h OHLCV minimum; lower timeframe preferable for grid realism,partial,yes_if_true_grid_execution_needed,rough_simulation_only,no,no,no,no,no,exclude_or_plan_data_audit_before_validation
+L,ml_classifier_baseline,features from OHLCV plus strict walk-forward labels,yes_for_ohlcv_features,no_for_simple_baseline,yes_for_simple_baseline,no,no,no,no,no,exclude_or_plan_data_audit_before_validation

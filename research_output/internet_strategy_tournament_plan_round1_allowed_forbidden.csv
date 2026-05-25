@@ -1,0 +1,11 @@
+item,status,notes
+internet/public reference collection,allowed,Public pages are idea sources only; cite provenance and do not scrape aggressively.
+academic/arXiv/SSRN/Quantpedia summaries,allowed,Use to classify families and define simple representative rules.
+Freqtrade/Jesse examples,allowed,Use as structural examples; do not copy wholesale strategy claims.
+TradingView public scripts,allowed_as_idea_reference_only,Do not copy proprietary code; beware repainting/lookahead and tuned inputs.
+data availability audit planning,allowed,Allowed for basis/intraday/public-trade/vendor data before validation.
+validation/backtesting in this task,forbidden,This task creates plan/inventory only.
+market data fetch in this task,forbidden,No OHLCV/funding/OI/taker/basis fetch.
+optimization/threshold sweeps,forbidden,No tuning after seeing results.
+dry-run/live/implementation readiness,forbidden,No active candidate can be marked ready from this plan.
+revive failed candidates,forbidden,"Prior failed candidates may be references only, not active candidates."

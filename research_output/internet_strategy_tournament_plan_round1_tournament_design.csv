@@ -1,0 +1,11 @@
+phase,rule
+0_context_load,Load closure/postmortem files and assert no-trade default; no active strategy implementation-ready.
+1_reference_collection,"Collect public ideas only from academic/arXiv/SSRN, Quantpedia summaries, Freqtrade/Jesse examples, TradingView public scripts, exchange education, and reputable quant blogs."
+2_source_triage,"Reject paid/proprietary claims, private groups, unverifiable PnL screenshots, and any source requiring code copying."
+3_family_classification,Map each idea to one of A-L families; merge duplicates rather than creating many variants.
+4_candidate_freeze,Create exactly one simple representative candidate per executable family before testing; no parameter sweep.
+5_data_filter,Use same 19 markets where data exists; document exclusions before results; BTCUSDT/DOGE/DOT/UNI always visible.
+6_batch_validation_future,"Run all executable candidates under same split/data/fee/slippage/risk assumptions; compare to no-trade, passive BTC, per-market buy-hold, and failed references."
+7_elimination,Automatically fail candidates hitting fail gates; no tuning after result.
+8_promotion,"Only mark promising_for_confirmation, never implementation_ready/dry_run_ready/live_ready."
+9_synthesis,"Report candidate count, executable count, failures, cautions, promotions, and no-trade interpretation."

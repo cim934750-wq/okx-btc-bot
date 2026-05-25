@@ -1,0 +1,12 @@
+control,rule
+source_use_limit,Use public references only as idea sources; do not import claimed PnL or tuned parameters as evidence.
+one_candidate_per_family,First pass gets one simple representative candidate per family; no variant ladder.
+predeclare_before_testing,"Freeze rules, stops, exits, sizing, market scope, and data source before validation."
+no_threshold_sweeps,No RSI/EMA/channel/percentile/window/funding/grid/ML threshold sweeps in round1.
+same_market_scope,Same 19 markets where data permits; BTCUSDT/DOGE/DOT/UNI always reported.
+no_post_result_removal,No market/family/symbol removal after results.
+same_costs,Uniform fee/slippage assumptions and no leverage unless isolated research-only plan says otherwise.
+same_benchmarks,"Every candidate compared to no-trade, passive BTC, and simple buy-and-hold where feasible."
+lookahead_audit,"For every candidate, document signal timing, indicator warmup, entry candle handling, and data alignment."
+promotion_ceiling,"Tournament can only promote to needs_confirmation_plan, never dry-run/live/implementation-ready."
+ml_extra_controls,"ML family must use walk-forward training, fixed feature list, leakage checks, and naive baseline comparisons."

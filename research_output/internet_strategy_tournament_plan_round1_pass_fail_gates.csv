@@ -1,0 +1,27 @@
+gate_type,condition,decision_effect
+pass,aggregate net PnL positive after fees,required_for_promising_for_confirmation
+pass,PF >= 1.20 preferred; absolute minimum PF >= 1.10,required
+pass,no-trade beaten,required
+pass,passive BTC comparison reported,required_reporting
+pass,BTCUSDT non-negative if meaningful BTC trades exist,required_for_btc_relevant_candidates
+pass,positive breadth across markets/families,required
+pass,"no excessive single-market, family, or top-trade concentration",required
+pass,max drawdown acceptable under predeclared cap,required
+pass,sufficient trade count,required
+pass,result not merely lower trade count,required
+pass,data coverage/alignment clean; no lookahead/future leakage,required
+caution,aggregate positive but PF < 1.10,not_a_pass
+caution,too few trades,sample_risk
+caution,BTC weak,btc_boundary_risk
+caution,edge concentrated in one market/family,breadth_risk
+caution,result depends on unavailable or low-quality data,data_risk
+caution,heavy parameter sensitivity,overfit_risk
+caution,long-only beta explains most gains,benchmark_risk
+fail,aggregate negative,fail
+fail,PF < 1.00,fail
+fail,no-trade not beaten,fail
+fail,passive BTC dominates with lower complexity,fail_or_caution_depending_objective
+fail,high drawdown,fail
+fail,low trade count,fail_if_uninterpretable
+fail,data unavailable or hidden lookahead risk,fail
+fail,result depends on cherry-picking or market removal,fail
