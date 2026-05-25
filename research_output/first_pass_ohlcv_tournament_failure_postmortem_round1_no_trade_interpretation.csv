@@ -1,0 +1,7 @@
+candidate_id,candidate_pnl,no_trade_pnl,candidate_beats_no_trade,interpretation,decision_impact,notes
+C_donchian_breakout_round1,3239.131984,0.000000,yes,Numerically beats no-trade but does not clear passive BTC and full pass gates.,insufficient_for_promotion,No-trade remains default across the project because zero candidates cleared all gates.
+I_regime_filtered_trend_round1,1213.066001,0.000000,yes,Numerically beats no-trade but does not clear passive BTC and full pass gates.,insufficient_for_promotion,No-trade remains default across the project because zero candidates cleared all gates.
+D_vol_contraction_breakout_round1,613.292635,0.000000,yes,Numerically beats no-trade but does not clear passive BTC and full pass gates.,insufficient_for_promotion,No-trade remains default across the project because zero candidates cleared all gates.
+B_cross_sectional_top3_round1,-1531.441373,0.000000,no,No-trade is preferred because candidate PnL is negative.,fail_no_trade_not_beaten,No-trade remains default across the project because zero candidates cleared all gates.
+A_ts_momentum_ema_return_round1,-1671.341459,0.000000,no,No-trade is preferred because candidate PnL is negative.,fail_no_trade_not_beaten,No-trade remains default across the project because zero candidates cleared all gates.
+E_rsi_bollinger_reversion_round1,-5963.597563,0.000000,no,No-trade is preferred because candidate PnL is negative.,fail_no_trade_not_beaten,No-trade remains default across the project because zero candidates cleared all gates.

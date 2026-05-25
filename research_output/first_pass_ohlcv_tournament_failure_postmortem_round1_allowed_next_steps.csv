@@ -1,0 +1,7 @@
+next_step,allowed_status,requires_user_approval,purpose,forbidden_actions,notes
+no_trade_default,allowed_default,no,Preserve capital while no active edge is validated.,Do not convert no-trade monitoring into signals.,Default posture after tournament failure.
+benchmark_only_monitoring_update,allowed,yes,Refresh observation-only status after the OHLCV tournament failure.,"No entries/exits, dry-run readiness, or implementation claims.",Recommended conservative next artifact.
+passive_btc_vs_active_strategy_hurdle_memo,allowed,yes,Formalize the opportunity-cost hurdle for active strategies when passive BTC dominates.,No strategy promotion or threshold tuning.,Useful because passive BTC dominated every tournament candidate.
+public_trade_reconstruction_feasibility_plan,allowed_optional,yes,Assess whether exact instrument-level taker flow can be reconstructed from public trades.,No full reconstruction/fetch unless separately approved.,Only if exact instrument-level order flow remains desired.
+external_exact_instrument_data_audit_plan,allowed_optional,yes,"Evaluate vendor or external data for exact taker flow, basis, or OI.",No paid/proprietary copying or strategy validation.,Only if a genuinely new data source is available.
+separate_confirmation_of_C_donchian,discouraged_but_allowed_with_explicit_override,yes,Confirm C only if user accepts passive BTC dominance and weak breadth context.,"No threshold sweep, market removal, or dry-run/live planning.",Not recommended by default.

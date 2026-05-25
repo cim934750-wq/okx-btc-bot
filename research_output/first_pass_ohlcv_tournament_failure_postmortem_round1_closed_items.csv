@@ -1,0 +1,7 @@
+item,closure_reason,allowed_to_reopen,reopen_condition,notes
+first_pass_ohlcv_A_B_C_D_E_I_tournament_current_freeze,"Six candidates validated; zero pass, zero caution, six fail, zero promoted.",no,Only a new explicitly approved research plan with materially new rationale/data can supersede this closure.,Do not rerun as a threshold or variant sweep.
+immediate_ohlcv_tournament_promotion,No candidate cleared predeclared pass gates.,no,Requires separate explicit approval and stronger evidence than this tournament produced.,C/D/I beating no-trade numerically is insufficient.
+C_donchian_breakout_round1_promotion,Passive BTC dominated by 61546.32; PF below preferred 1.20; breadth and concentration concerns.,conditional,Only explicit user-approved confirmation that accepts passive BTC dominance context.,Must not be cherry-picked into dry-run.
+dry_run_live_planning_from_tournament,No implementation-ready candidate exists.,no,Requires future confirmed candidate and explicit deployment approval.,Bot service remains stopped.
+implementation_readiness_claims,Tournament is research-only and failed promotion gates.,no,Requires separate confirmation and operational review.,No active strategy is ready.
+threshold_sweeps_or_candidate_variant_spam,Would violate overfitting controls and tournament rules.,no,Not allowed in this chain.,No market removal or cherry-picking.
