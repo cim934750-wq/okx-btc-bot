@@ -1,0 +1,24 @@
+candidate,rule_component,ambiguity_found_in_plan,plan_resolution_used,execution_allowed_without_approval_in_plan,validation_handling,new_threshold_added,notes
+A_ts_momentum_ema_return_round1,entry,no,,yes,used_documented_minimum_non_optimized_resolution,False,Frozen and executable from source inventory
+A_ts_momentum_ema_return_round1,exit,no,,yes,used_documented_minimum_non_optimized_resolution,False,Use earliest applicable exit
+A_ts_momentum_ema_return_round1,stop,no,,yes,used_documented_minimum_non_optimized_resolution,False,No trailing variant unless explicitly present in execution script as identical stop accounting for all candidates
+A_ts_momentum_ema_return_round1,sizing,no,,yes,used_documented_minimum_non_optimized_resolution,False,Same sizing across tournament
+B_cross_sectional_top3_round1,ranking,yes_minor_operational,Validation plan freezes 30 days as 180 completed 4h bars; rebalance on fixed 7-day cadence using only prior closed candles; requires explicit execution approval,no,used_documented_minimum_non_optimized_resolution,False,Portfolio-rank support is required; no threshold tuning
+B_cross_sectional_top3_round1,entry,no,,yes,used_documented_minimum_non_optimized_resolution,False,Max three concurrent positions
+B_cross_sectional_top3_round1,exit,yes_minor_operational,Top half means ranks 1 through 9 of the fixed 19-market universe; requires explicit execution approval,no,used_documented_minimum_non_optimized_resolution,False,Exit only on rebalance or stop
+B_cross_sectional_top3_round1,stop,yes_minor_operational,Execution must predeclare exact trailing update cadence as closed 4h candle only; requires explicit execution approval,no,used_documented_minimum_non_optimized_resolution,False,No market-specific stop tuning
+C_donchian_breakout_round1,entry,no,,yes,used_documented_minimum_non_optimized_resolution,False,Prior 55 bars exclude current signal bar
+C_donchian_breakout_round1,exit,no,,yes,used_documented_minimum_non_optimized_resolution,False,Prior 20 bars exclude current signal bar
+C_donchian_breakout_round1,stop,no,,yes,used_documented_minimum_non_optimized_resolution,False,No add-ons
+D_vol_contraction_breakout_round1,compression,yes_minor_operational,Percentile must be computed from prior completed bars only; signal candle bandwidth may be evaluated only after close; requires explicit execution approval,no,used_documented_minimum_non_optimized_resolution,False,No percentile/window sweep
+D_vol_contraction_breakout_round1,entry,no,,yes,used_documented_minimum_non_optimized_resolution,False,Use closed 4h candle values only
+D_vol_contraction_breakout_round1,exit,no,,yes,used_documented_minimum_non_optimized_resolution,False,No take-profit sweep
+D_vol_contraction_breakout_round1,stop,no,,yes,used_documented_minimum_non_optimized_resolution,False,Fixed
+E_rsi_bollinger_reversion_round1,entry,no,,yes,used_documented_minimum_non_optimized_resolution,False,Distinct from Candidate D
+E_rsi_bollinger_reversion_round1,exit,no,,yes,used_documented_minimum_non_optimized_resolution,False,Use earliest applicable exit
+E_rsi_bollinger_reversion_round1,stop,no,,yes,used_documented_minimum_non_optimized_resolution,False,No averaging down
+I_regime_filtered_trend_round1,regime,yes_minor_operational,Validation plan freezes realized volatility as rolling standard deviation of 4h log returns over 60 completed bars and percentile over trailing 180 completed bars; requires explicit execution approval,no,used_documented_minimum_non_optimized_resolution,False,This clarifies a missing operational window without optimization
+I_regime_filtered_trend_round1,entry,no,,yes,used_documented_minimum_non_optimized_resolution,False,Not Long1 revival
+I_regime_filtered_trend_round1,exit,no,,yes,used_documented_minimum_non_optimized_resolution,False,No threshold tuning
+I_regime_filtered_trend_round1,stop,no,,yes,used_documented_minimum_non_optimized_resolution,False,Fixed
+B_cross_sectional_top3_round1,rebalance_anchor,yes_operational_anchor,fixed 7-day cadence from first timestamp in each validation scope,execution task approved plan ambiguity handling,non_optimized_calendar_anchor_no_threshold_sweep,False,Anchor affects calendar phasing only; no alternate anchors were tested.

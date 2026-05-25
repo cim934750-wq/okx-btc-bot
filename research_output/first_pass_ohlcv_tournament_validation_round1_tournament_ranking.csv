@@ -1,0 +1,7 @@
+rank,candidate,family_id,decision,net_pnl,profit_factor,max_dd_pct,positive_market_count,negative_market_count,BTCUSDT_net_pnl,top3_pct_of_positive_market_pnl,trade_count,candidate_minus_passive_btc,ranking_notes
+1,C_donchian_breakout_round1,C,fail,3239.131984074495,1.1642910326917264,5.9149502916751695,9,10,636.2406372773095,67.06619442122681,678,-61546.31504075934,passive_BTC_dominates
+2,I_regime_filtered_trend_round1,I,fail,1213.0660014069736,1.0367455195854018,4.972857011377696,9,10,323.17758864248475,59.48433117957096,2891,-63572.38102342687,passive_BTC_dominates
+3,D_vol_contraction_breakout_round1,D,fail,613.292634859765,1.0708343638988422,1.2880606540005557,8,11,22.603460943444823,77.53613422084241,616,-64172.15438997407,passive_BTC_dominates
+4,B_cross_sectional_top3_round1,B,fail,-1531.4413731246577,0.7659289751980914,2.2835253526629073,7,12,115.40439777103775,67.25201881967779,272,-66316.8883979585,aggregate_negative_or_no_edge|PF_below_1_or_NA|no_trade_not_beaten|passive_BTC_dominates
+5,A_ts_momentum_ema_return_round1,A,fail,-1671.341458534464,0.9743400006138219,9.950753688298096,7,12,82.36362095764594,76.13026752610715,3778,-66456.7884833683,aggregate_negative_or_no_edge|PF_below_1_or_NA|no_trade_not_beaten|passive_BTC_dominates
+6,E_rsi_bollinger_reversion_round1,E,fail,-5963.597563458463,0.7966587673852995,8.408011695844264,4,15,-5.469060546412265,98.33225914001366,1466,-70749.04458829231,aggregate_negative_or_no_edge|PF_below_1_or_NA|no_trade_not_beaten|passive_BTC_dominates|BTCUSDT_negative|weak_market_breadth|high_market_concentration

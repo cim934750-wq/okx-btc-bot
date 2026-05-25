@@ -1,0 +1,13 @@
+candidate,scope,candidate_net_pnl,no_trade_pnl,candidate_minus_no_trade,no_trade_preferred_by,candidate_beats_no_trade
+A_ts_momentum_ema_return_round1,reference,51657.57072704543,0.0,51657.57072704543,0.0,True
+B_cross_sectional_top3_round1,reference,4248.571555225676,0.0,4248.571555225676,0.0,True
+C_donchian_breakout_round1,reference,49738.14637862635,0.0,49738.14637862635,0.0,True
+D_vol_contraction_breakout_round1,reference,4620.755509986726,0.0,4620.755509986726,0.0,True
+E_rsi_bollinger_reversion_round1,reference,1231.1185277841414,0.0,1231.1185277841414,0.0,True
+I_regime_filtered_trend_round1,reference,48293.19222452864,0.0,48293.19222452864,0.0,True
+A_ts_momentum_ema_return_round1,holdout,-1671.341458534464,0.0,-1671.341458534464,1671.341458534464,False
+B_cross_sectional_top3_round1,holdout,-1531.4413731246577,0.0,-1531.4413731246577,1531.4413731246577,False
+C_donchian_breakout_round1,holdout,3239.131984074495,0.0,3239.131984074495,0.0,True
+D_vol_contraction_breakout_round1,holdout,613.292634859765,0.0,613.292634859765,0.0,True
+E_rsi_bollinger_reversion_round1,holdout,-5963.597563458463,0.0,-5963.597563458463,5963.597563458463,False
+I_regime_filtered_trend_round1,holdout,1213.0660014069736,0.0,1213.0660014069736,0.0,True

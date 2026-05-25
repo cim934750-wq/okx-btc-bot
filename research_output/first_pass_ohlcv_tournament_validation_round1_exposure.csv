@@ -1,0 +1,13 @@
+candidate,scope,trade_count,exposure_bars,available_market_bars,exposure_time_in_market_pct,open_positions_not_force_closed,notes
+A_ts_momentum_ema_return_round1,reference,9140,73413,193496,37.940319179724646,15,"Open positions at scope end are not force-closed, matching prior research script convention."
+B_cross_sectional_top3_round1,reference,696,10217,193496,5.280212510852937,1,"Open positions at scope end are not force-closed, matching prior research script convention."
+C_donchian_breakout_round1,reference,1479,48968,193496,25.30698309008972,7,"Open positions at scope end are not force-closed, matching prior research script convention."
+D_vol_contraction_breakout_round1,reference,1341,8087,193496,4.179414561541324,0,"Open positions at scope end are not force-closed, matching prior research script convention."
+E_rsi_bollinger_reversion_round1,reference,3197,15913,193496,8.223942613800803,1,"Open positions at scope end are not force-closed, matching prior research script convention."
+I_regime_filtered_trend_round1,reference,6426,52915,193496,27.346818538884527,3,"Open positions at scope end are not force-closed, matching prior research script convention."
+A_ts_momentum_ema_return_round1,holdout,3778,28994,82940,34.95780081986978,2,"Open positions at scope end are not force-closed, matching prior research script convention."
+B_cross_sectional_top3_round1,holdout,272,3036,82940,3.6604774535809024,0,"Open positions at scope end are not force-closed, matching prior research script convention."
+C_donchian_breakout_round1,holdout,678,19395,82940,23.384374246443212,2,"Open positions at scope end are not force-closed, matching prior research script convention."
+D_vol_contraction_breakout_round1,holdout,616,3583,82940,4.319990354473113,0,"Open positions at scope end are not force-closed, matching prior research script convention."
+E_rsi_bollinger_reversion_round1,holdout,1466,6936,82940,8.362671810947674,2,"Open positions at scope end are not force-closed, matching prior research script convention."
+I_regime_filtered_trend_round1,holdout,2891,22968,82940,27.692307692307693,5,"Open positions at scope end are not force-closed, matching prior research script convention."
