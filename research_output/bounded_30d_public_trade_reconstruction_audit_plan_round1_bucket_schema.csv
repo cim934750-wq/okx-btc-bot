@@ -1,0 +1,16 @@
+field_name,required,formula_or_definition,valid_only_if,notes
+inst_id,yes,Exact OKX instrument ID for bucket,All trades in bucket have matching instId,BTC-USDT-SWAP or DOGE-USDT-SWAP
+bucket_start_utc,yes,UTC 4h candle start inclusive,Aligned to existing 4h OHLCV boundary,Interval start
+bucket_end_utc,yes,UTC 4h candle end exclusive,bucket_end_utc = bucket_start_utc + 4h,"Interval is half-open [start,end)"
+trade_count,yes,Raw parsed trade rows assigned to bucket before dedup,Required fields present,Diagnostic
+unique_trade_count,yes,Rows after dedup by primary or fallback key,Dedup completed without conflicts,Used for bucket completeness
+duplicate_count,yes,trade_count - unique_trade_count plus benign pagination duplicates,Conflicting duplicates are zero,Benign duplicate rate must be <=1.0%
+taker_buy_volume,yes,sum(sz) where side indicates taker buy,Side semantics documented and bucket_complete=True,Exact unit must be documented from OKX contract/trade size
+taker_sell_volume,yes,sum(sz) where side indicates taker sell,Side semantics documented and bucket_complete=True,Exact unit must be documented from OKX contract/trade size
+total_taker_volume,yes,taker_buy_volume + taker_sell_volume,taker_buy_volume and taker_sell_volume valid,Must be >0 for ratios
+taker_buy_ratio,yes,taker_buy_volume / total_taker_volume,total_taker_volume > 0 and bucket_complete=True,No forward-fill
+taker_sell_ratio,yes,taker_sell_volume / total_taker_volume,total_taker_volume > 0 and bucket_complete=True,No forward-fill
+taker_imbalance,yes,(taker_buy_volume - taker_sell_volume) / total_taker_volume,total_taker_volume > 0 and bucket_complete=True,Positive means buy-side dominance
+taker_delta,yes,taker_buy_volume - taker_sell_volume,bucket_complete=True,Volume-unit delta
+bucket_complete,yes,True only when every required coverage pagination dedup field and side check passes,All completed bucket proof conditions pass,False buckets cannot support exact taker-flow features
+gap_flag,yes,True if pagination timestamp or request coverage gap is detected,Set during gap audit,Any unresolved gap blocks advancement

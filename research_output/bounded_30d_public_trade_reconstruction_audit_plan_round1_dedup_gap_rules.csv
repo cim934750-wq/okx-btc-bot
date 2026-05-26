@@ -1,0 +1,10 @@
+rule_name,rule_definition,required_fields,output_check,failure_condition,notes
+primary_dedup_key,Deduplicate trades first by instId + tradeId,instId;tradeId,unique row count by primary key,Missing tradeId requires fallback key and caveat,Primary key from minimal audit was present
+fallback_dedup_key,If tradeId is missing in any row use instId + ts + px + sz + side for that row set,instId;ts;px;sz;side,fallback duplicate count and affected rows,Fallback required broadly means reconstruction quality is downgraded,Fallback should be rare or absent
+conflicting_duplicate_quarantine,Rows sharing primary key but differing in ts px sz or side must be quarantined,instId;tradeId;ts;px;sz;side,conflict file and checkpoint stop flag,Any conflicting duplicate is a hard stop,Do not silently choose one row
+benign_duplicate_rate_check,Identical duplicates from pagination overlap may be dropped only if rate <=1.0% raw rows,dedup key;raw rows,benign duplicate rate,Benign duplicate rate >1.0% stops checkpoint,Rate measured after retries
+pagination_chain_check,Every cursor/page chain must be continuous enough to cover the requested time window,cursor;earliest_ts;latest_ts;page_seq,pagination gap count and risk label,Any unexplained cursor gap inside requested window is hard stop,Endpoint boundary gaps must be explicitly bounded
+timestamp_order_check,Record whether pages and combined trades are ascending descending or mixed by timestamp,ts;page_seq,timestamp_order value,Mixed unexplained ordering that prevents coverage proof stops checkpoint,Ordering can be normalized after proof
+bucket_interval_assignment,Assign only trades with bucket_start_utc <= ts < bucket_end_utc,ts;instId,per-bucket assigned row count,Any out-of-interval row included invalidates bucket,Half-open UTC interval
+instrument_scope_check,Bucket contains only exact requested instId,instId,nonmatching_inst_id_count,Any nonmatching instId in bucket stops checkpoint,No ccy aggregate substitution
+gap_reason_codes,Each missing interval must have a bounded reason code,pagination log;request log;ts,gap_reason per bucket,Unresolved gap reason stops checkpoint,No arbitrary forward-fill

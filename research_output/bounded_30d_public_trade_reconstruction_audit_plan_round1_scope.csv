@@ -1,0 +1,10 @@
+scope_item,status,value,reason,notes
+data_source,allowed_future_execution,OKX public REST trades only,Minimal audit used OKX public trade endpoints and required fields were present,No private data or account/order data
+allowed_endpoints,allowed_future_execution,/api/v5/market/history-trades; /api/v5/market/trades,These are the public trade endpoints already sampled,No WebSocket live collection in this plan
+initial_instrument_1,fixed,BTC-USDT-SWAP,BTCUSDT key market from minimal audit,Must remain visible in reporting
+initial_instrument_2,fixed,DOGE-USDT-SWAP,DOGEUSDT was cleanly mapped and sampled in minimal audit,Second key market for bounded audit
+optional_instrument,plan_only,DOT-USDT-SWAP,DOTUSDT is a key market but was not part of the minimal audit,Separate approval required before any fetch
+period_target,fixed,30 full UTC calendar days,Bounded period to test feasibility without full backfill,Only after CP1 CP2 and CP3 pass
+market_expansion,not_allowed_in_execution,all 19 markets,Plan is not a full-market backfill,Only projection after CP4; no fetch
+strategy_use,forbidden,none,This is a data feasibility plan,No signals entries exits or validation
+production_changes,forbidden,none,Research-only artifact,No source/parameter/deployment changes

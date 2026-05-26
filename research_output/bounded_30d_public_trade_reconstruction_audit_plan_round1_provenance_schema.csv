@@ -1,0 +1,18 @@
+field_name,required,purpose,example_or_expected_value,missing_impact,notes
+source_id,yes,Identify source endpoint or wrapper,okx_history_trades,Cannot trace source provenance,Use stable source labels
+endpoint,yes,Record public REST endpoint,/api/v5/market/history-trades,Cannot reproduce request path,Public endpoints only
+request_params,yes,Preserve exact request parameters,instId=BTC-USDT-SWAP&type=2&limit=100&before=...,Cannot reproduce fetch,Store serialized params
+fetch_timestamp_utc,yes,Record when request was made,2026-05-26T00:00:00Z,Cannot audit provenance timing,UTC only
+raw_path,yes,Link provenance to exact raw response body,research_output/bounded_30d_public_trade_reconstruction_audit_round1_raw/CP1/BTC-USDT-SWAP/...json,Cannot verify archive,Must match raw archive structure
+sha256,yes,Verify raw response integrity,hex digest,Cannot detect archive mutation,Hash exact bytes
+inst_id,yes,Identify instrument,BTC-USDT-SWAP,Cannot ensure exact-instrument scope,Must match requested and returned instId
+request_window_start_utc,yes,Requested window lower bound,UTC timestamp,Cannot prove coverage,Use UTC only
+request_window_end_utc,yes,Requested window upper bound,UTC timestamp,Cannot prove coverage,Use half-open interval logic
+earliest_trade_ts,yes,Observed earliest trade timestamp in response,millisecond UTC timestamp,Cannot assess coverage,Normalize to UTC
+latest_trade_ts,yes,Observed latest trade timestamp in response,millisecond UTC timestamp,Cannot assess coverage,Normalize to UTC
+row_count,yes,Count returned rows,100,Cannot reconcile pagination,Count parsed trade rows
+cursor_or_pagination_param,yes,Track pagination chain,before=tradeId or after=tradeId or timestamp cursor,Cannot audit gaps,Record exact cursor direction
+page_seq,yes,Stable raw page order,000001,Cannot reconstruct traversal,Per checkpoint and instrument
+retry_count,yes,Measure request reliability,0,Cannot enforce retry budget,Max 3 retries
+response_status,yes,Record success/failure,200 OK with code 0,Cannot identify failed windows,Store HTTP and OKX code
+rate_limit_notes,yes,Track throttling pressure,none or 429 retry-after,Cannot evaluate rate-limit risk,Include backoff notes

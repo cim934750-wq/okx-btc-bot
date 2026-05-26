@@ -1,0 +1,6 @@
+checkpoint_id,instrument_count,time_scope,estimated_rows,estimated_requests,estimated_raw_storage_mb,estimated_processed_storage_mb,max_allowed_runtime,max_allowed_raw_storage_mb,max_allowed_requests,confidence,notes
+CP1,1,one completed UTC 4h interval,unknown; measured during execution,<=2500,<=500,<=100,45 minutes,500,2500,low,Budget is intentionally conservative because BTC trade density and pagination depth must be measured
+CP2,1 to 2,one full UTC day,unknown; extrapolated from CP1,<=20000,<=4096,<=512,6 hours,4096,20000,low,DOGE joins only if CP1 is clean
+CP3,2,7 full UTC days,unknown; extrapolated from CP2,<=150000,<=25600,<=2048,36 hours,25600,150000,low,Must cover 42 buckets per instrument
+CP4,2,30 full UTC days,unknown; extrapolated from CP3,<=500000,<=76800,<=10240,5 days,76800,500000,low,Must cover 180 buckets per instrument and remain under 10 GB processed output
+ALL19_PROJECTION,19,projected 30 full UTC days only,projected from CP4,not authorized,<307200 required for recommendation,not authorized,not authorized,307200 projection ceiling,not authorized,low,All-19 expansion is not authorized; recommend only if projected raw storage <300 GB and rate-limit risk acceptable

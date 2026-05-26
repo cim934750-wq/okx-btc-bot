@@ -1,0 +1,13 @@
+action,status,reason,requires_user_approval,notes
+Create plan artifacts,allowed,Current task is plan-only,no,No data fetch
+Fetch public trades,forbidden_in_this_task,Plan creation only,yes,Future CP1 execution requires explicit approval
+Run validation or backtest,forbidden,No strategy or performance testing is authorized,yes,Separate future task would still need data first
+Define trading strategy,forbidden,This is data-engineering feasibility work,yes,No entry/exit rules
+Use private account/order data,forbidden,Only public data may be considered,not_allowed,Hard boundary
+Use WebSocket live collection,forbidden,Plan scope is public REST only,yes,Could be separate plan if needed
+Fetch DOT-USDT-SWAP,forbidden_in_bounded_execution,DOT is optional plan-only third instrument,yes,Not part of CP1-CP4
+Fetch all 19 markets,forbidden,Expansion is not authorized by this plan,yes,Only recommendation after CP4 if clean
+Forward-fill missing trade buckets,forbidden,Would fabricate taker-flow coverage,not_allowed,Incomplete buckets remain incomplete
+Change production code or parameters,forbidden,Research-only plan,not_allowed,No deployment changes
+Restart dry-run or live trading,forbidden,No active strategy is implementation-ready,not_allowed,Bot remains stopped
+Claim implementation readiness,forbidden,Plan does not create validated edge,not_allowed,Not dry-run-ready or live-ready
