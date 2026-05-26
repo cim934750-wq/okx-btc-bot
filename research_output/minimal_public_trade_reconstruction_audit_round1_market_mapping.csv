@@ -1,0 +1,3 @@
+market,okx_inst_id,instrument_type,mapping_source,mapping_confidence,notes
+BTCUSDT,BTC-USDT-SWAP,SWAP,public_trade_reconstruction_feasibility_plan_round1_market_mapping.csv,high,required visible anchor market
+DOGEUSDT,DOGE-USDT-SWAP,SWAP,public_trade_reconstruction_feasibility_plan_round1_market_mapping.csv,high,selected key market over DOTUSDT because existing mapping is equally clean and DOGE is a required visible key market

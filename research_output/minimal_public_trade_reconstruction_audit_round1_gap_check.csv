@@ -1,0 +1,3 @@
+inst_id,earliest_ts,latest_ts,timestamp_order,visible_gap_count,pagination_gap_risk,notes
+BTC-USDT-SWAP,2026-05-25T11:59:19.726000+00:00,2026-05-25T15:34:50.723000+00:00,descending_combined_raw_order,1,present_sample_only_not_full_interval_coverage,Sample checks visible ordering/gaps only; does not prove complete 4h bucket history.
+DOGE-USDT-SWAP,2026-05-25T11:58:57.890000+00:00,2026-05-25T15:34:53.446000+00:00,descending_combined_raw_order,1,present_sample_only_not_full_interval_coverage,Sample checks visible ordering/gaps only; does not prove complete 4h bucket history.

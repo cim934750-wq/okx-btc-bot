@@ -1,0 +1,3 @@
+inst_id,rows_raw,rows_after_dedup,duplicate_count,dedup_key,duplicate_examples,notes
+BTC-USDT-SWAP,250,250,0,instId+tradeId,,Duplicates are expected if recent/history pages overlap; conflicting duplicates would require quarantine in broader audit.
+DOGE-USDT-SWAP,250,250,0,instId+tradeId,,Duplicates are expected if recent/history pages overlap; conflicting duplicates would require quarantine in broader audit.

@@ -1,0 +1,5 @@
+scope,markets,period,estimated_rows,estimated_storage_mb,estimated_requests,rate_limit_risk,expected_runtime,confidence,notes
+BTCUSDT_30_days,BTCUSDT,30 days,50112,5.98,502,high_if_extrapolated_rows_large,sample-derived only; likely many requests at 100 rows/page,very_low_confidence_sample_extrapolation,History endpoint documented last 3 months; this estimate is rough and should be replaced by a bounded 1-day audit.
+BTCUSDT_plus_DOGEUSDT_30_days,"BTCUSDT,DOGEUSDT",30 days,100129,11.95,1002,high,roughly sum of two sample-derived estimates,very_low_confidence_sample_extrapolation,Only two-market sample; not safe for full scope planning without a 1-day checkpoint.
+all_19_markets_30_days,same 19 markets,30 days,951225,113.52,9513,very_high,potentially days if sequential; respect 20 requests/2s IP limit,very_low_confidence_sample_extrapolation,Do not run broad backfill without staged checkpoints.
+all_19_markets_90_days,same 19 markets,90 days,2853675,340.55,28537,very_high,potentially multi-day; near documented maximum history depth,very_low_confidence_sample_extrapolation,"This is the upper native-history planning scope, not approved for fetch."

@@ -1,0 +1,5 @@
+inst_id,bucket_start_utc,bucket_end_utc,complete_bucket,trade_count,taker_buy_volume,taker_sell_volume,total_taker_volume,caveat,notes
+BTC-USDT-SWAP,2026-05-25T12:00:00+00:00,2026-05-25T16:00:00+00:00,False,50,113.61,88.3,201.91,bounded_sample_only_bucket_not_complete,Values are partial sample diagnostics and must not be used as strategy features.
+BTC-USDT-SWAP,2026-05-25T08:00:00+00:00,2026-05-25T12:00:00+00:00,False,200,1275.03,296.22,1571.25,bounded_sample_only_bucket_not_complete,Values are partial sample diagnostics and must not be used as strategy features.
+DOGE-USDT-SWAP,2026-05-25T12:00:00+00:00,2026-05-25T16:00:00+00:00,False,50,8.94,134.3,143.24,bounded_sample_only_bucket_not_complete,Values are partial sample diagnostics and must not be used as strategy features.
+DOGE-USDT-SWAP,2026-05-25T08:00:00+00:00,2026-05-25T12:00:00+00:00,False,200,901.23,990.94,1892.17,bounded_sample_only_bucket_not_complete,Values are partial sample diagnostics and must not be used as strategy features.
