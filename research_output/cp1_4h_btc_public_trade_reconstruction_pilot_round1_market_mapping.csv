@@ -1,0 +1,2 @@
+market,okx_inst_id,instrument_type,mapping_source,mapping_confidence,notes
+BTCUSDT,BTC-USDT-SWAP,SWAP,minimal_public_trade_reconstruction_audit_round1 and bounded_30d_public_trade_reconstruction_audit_plan_round1,high,CP1 scope is BTC only; DOGE DOT and all-19 markets were not fetched

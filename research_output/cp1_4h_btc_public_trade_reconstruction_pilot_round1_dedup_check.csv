@@ -1,0 +1,2 @@
+inst_id,rows_raw,rows_after_dedup,duplicate_count,duplicate_rate,conflicting_duplicate_count,dedup_key,quarantine_path,notes
+BTC-USDT-SWAP,250000,250000,0,0,0,primary=instId+tradeId; fallback=instId+ts+px+sz+side if tradeId missing,,Conflicting duplicates are a hard stop; benign duplicate rate must be <=1.0%.

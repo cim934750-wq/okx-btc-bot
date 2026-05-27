@@ -1,0 +1,2 @@
+checkpoint_id,inst_id,request_count,rows_raw,rows_after_dedup,raw_storage_mb,processed_storage_mb,runtime_seconds,within_request_cap,within_runtime_cap,within_storage_cap,notes
+CP1,BTC-USDT-SWAP,2500,250000,250000,29.646485,1.649717,809.214,true,true,true,"CP1 caps: 2500 requests, 45 minutes runtime, 500 MB raw archive. Runtime uses raw archive file mtime span (805.478s) plus current processing time (3.736s) because initial post-processing was interrupted after raw archive completion."

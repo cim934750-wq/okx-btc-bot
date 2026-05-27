@@ -1,0 +1,2 @@
+inst_id,bucket_start_utc,bucket_end_utc,requested_interval_complete,earliest_trade_ts,latest_trade_ts,bucket_complete,incomplete_reason,gap_flag,notes
+BTC-USDT-SWAP,2026-05-26T08:00:00Z,2026-05-26T12:00:00Z,false,2026-05-26T10:12:42.756000+00:00,2026-05-26T11:59:59.398000+00:00,false,request_cap_reached_before_bucket_start;did_not_fetch_to_bucket_start;unresolved_pagination_gap_risk,true,"bucket_complete=True only if all CP1 stop/go checks pass; interval is half-open [start,end)."

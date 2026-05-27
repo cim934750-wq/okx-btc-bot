@@ -1,0 +1,7 @@
+inst_id,field_name,present,sample_value,required_for_reconstruction,missing_impact,notes
+BTC-USDT-SWAP,instId,true,BTC-USDT-SWAP,yes,hard_stop_if_missing_in_any_bucket_row,present_count=250000; bucket_row_count=250000
+BTC-USDT-SWAP,tradeId,true,2625003415,yes,hard_stop_if_missing_in_any_bucket_row,present_count=250000; bucket_row_count=250000
+BTC-USDT-SWAP,ts,true,1779796799398,yes,hard_stop_if_missing_in_any_bucket_row,present_count=250000; bucket_row_count=250000
+BTC-USDT-SWAP,px,true,77155.3,yes,hard_stop_if_missing_in_any_bucket_row,present_count=250000; bucket_row_count=250000
+BTC-USDT-SWAP,sz,true,1.2,yes,hard_stop_if_missing_in_any_bucket_row,present_count=250000; bucket_row_count=250000
+BTC-USDT-SWAP,side,true,sell,yes,hard_stop_if_missing_in_any_bucket_row,present_count=250000; bucket_row_count=250000

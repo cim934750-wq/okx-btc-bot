@@ -1,0 +1,2 @@
+inst_id,page_count,request_count,earliest_ts,latest_ts,timestamp_order,overlap_count,visible_gap_count,unresolved_gap_risk,notes
+BTC-USDT-SWAP,2500,2500,2026-05-26T10:12:42.756000+00:00,2026-05-26T11:59:59.398000+00:00,descending_by_page,0,0,true,fetch_mode=processed_existing_raw_archive_without_additional_fetch; fetch_stop_reason=existing_raw_archive_used; request_cap_reached_before_start=True
