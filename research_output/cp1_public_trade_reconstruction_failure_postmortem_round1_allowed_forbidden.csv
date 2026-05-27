@@ -1,0 +1,11 @@
+action,status,reason,requires_user_approval,notes
+no_trade_monitoring,allowed,No implementation-ready strategy exists,no,Default remains benchmark-only
+CP1_result_synthesis,allowed,Postmortem work only,no,Current task
+smaller_endpoint_probe,allowed_with_approval,May clarify pagination mechanics without CP2,yes,Must be bounded and non-strategy
+external_exact_data_audit_plan,allowed_with_approval,Alternative to heavy OKX public pagination,yes,Plan/audit before validation
+request_cost_estimate_memo,allowed,Can use CP1 outputs without new fetch,no,Useful before any future fetch
+CP2_execution,forbidden,CP1 prerequisite failed,not_allowed,Do not advance to 1-day audit
+7day_30day_reconstruction,forbidden,Depends on CP1 and CP2 success,not_allowed,Closed under current method
+DOGE_DOT_all19_fetch,forbidden,Out of scope and CP1 failed,not_allowed,No expansion
+strategy_validation_from_CP1,forbidden,Bucket incomplete and features diagnostic only,not_allowed,No backtests or signals
+dry_run_live_restart,forbidden,No active edge or implementation readiness,not_allowed,Bot remains stopped

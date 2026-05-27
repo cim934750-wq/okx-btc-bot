@@ -1,0 +1,7 @@
+next_step,status,purpose,required_approval,stop_condition,notes
+stop_public_trade_reconstruction_expansion,recommended,Avoid scaling an incomplete method,no,N/A,Conservative default
+external_exact_data_audit_plan,optional_recommended,Find exact historical trade/taker-flow data without excessive pagination burden,yes,"Vendor/source lacks provenance, fields, or affordable access",Best alternative if exact taker flow remains desired
+endpoint_pagination_mechanics_probe,optional,Clarify OKX cursor semantics in a smaller bounded probe,yes,Side semantics or cursor continuity remains uncertain,No 4h reconstruction claim
+request_cost_estimate_memo,optional,Estimate full BTC 4h request burden from CP1 partial coverage,no,Estimate indicates infeasible cost,No new fetch needed
+CP2_execution,blocked,Would test one-day reconstruction,not_allowed,CP1 failed prerequisite,Do not execute unless a new CP1 method succeeds
+benchmark_only_monitoring,recommended_default,Maintain no-trade observation mode,no,N/A,No strategy readiness

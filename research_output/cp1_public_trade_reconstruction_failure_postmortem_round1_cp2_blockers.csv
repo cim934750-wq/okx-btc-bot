@@ -1,0 +1,6 @@
+blocker,evidence,why_it_blocks_cp2,required_resolution,notes
+CP1 prerequisite failed,CP1 decision cp1_fail_incomplete_bucket,CP2 requires CP1 to be clean before one-day expansion,Prove one complete BTC 4h bucket under a bounded method,Do not execute CP2 automatically
+single 4h bucket incomplete,Earliest reached trade 10:12:42.756 UTC for 08:00-12:00 bucket,One full UTC day requires six completed 4h buckets,Resolve pagination coverage for one bucket first,No forward-fill allowed
+request cap exhausted,2500/2500 requests used before bucket start,CP2 would likely multiply request burden beyond bounded audit assumptions,Estimate required requests before further fetch,Current method is too expensive for one bucket
+unresolved gap risk,pagination_check unresolved_gap_risk=true,Incomplete coverage invalidates exact taker-flow features,Prove cursor/window continuity or use different data source,Diagnostic values cannot become research features
+strategy use prohibited,bucket_complete=false and features diagnostic only,Incomplete bucket cannot support strategy validation,Only complete buckets may be used for exact taker-flow research,No validation/backtest from CP1 data

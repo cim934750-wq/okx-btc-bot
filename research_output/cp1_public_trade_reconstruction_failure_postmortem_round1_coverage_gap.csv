@@ -1,0 +1,2 @@
+inst_id,bucket_start_utc,bucket_end_utc,earliest_reached_trade_ts,latest_trade_ts,missing_start_seconds,request_count,request_cap,bucket_complete,gap_interpretation,notes
+BTC-USDT-SWAP,2026-05-26T08:00:00Z,2026-05-26T12:00:00Z,2026-05-26T10:12:42.756000+00:00,2026-05-26T11:59:59.398000+00:00,7962.756,2500,2500,false,request cap exhausted before reaching bucket start; latter portion only was covered,Missing interval is approximately 2h12m42.756s from 08:00:00 to 10:12:42.756 UTC; no complete bucket proof.

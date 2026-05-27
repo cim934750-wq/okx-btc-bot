@@ -1,0 +1,9 @@
+item,result,evidence,interpretation,decision_impact,notes
+cp1_objective,failed,One complete BTC-USDT-SWAP 4h bucket was not reconstructed,The data-engineering prerequisite for CP2 was not met,block_CP2,Target bucket was 08:00-12:00 UTC
+required_fields,passed,instId tradeId ts px sz side present in 100% of 250000 parsed rows,The endpoint returns the fields needed for trade-flow reconstruction,field_presence_not_the_blocker,Clean fields do not imply complete coverage
+side_semantics,passed_with_caveat,Prior committed local artifact records OKX side as trade side of taker,Side can be used for diagnostics with documentation caveat,does_not_block_CP1_but_not_independent_replay_proof,No live docs fetched in CP1
+deduplication,passed,250000 raw rows; 250000 after dedup; duplicate count 0; conflicting duplicate count 0,Duplicate quality was clean in fetched subset,dedup_not_the_blocker,Primary key was instId+tradeId
+pagination_coverage,failed,2500 request cap exhausted before bucket start; earliest reached trade 10:12:42.756 UTC,Fetched data covered only latter part of bucket,bucket_incomplete,Unresolved gap risk true
+bucket_completeness,failed,bucket_complete=false; requested_interval_complete=false,Computed features are diagnostic only,blocks_CP2_and_strategy_use,No forward-fill or inference allowed
+resource_budget,mixed,Within runtime/storage caps but exhausted request cap,The cap was too small for one BTC 4h bucket under this method,do_not_expand,Request count reached 2500/2500
+strategy_readiness,none,No complete bucket and no validation,No trading edge or implementation evidence exists,keep_no_trade_default,Not dry-run-ready or live-ready
