@@ -1,0 +1,12 @@
+scoring_item,max_score,pass_threshold,why_it_matters,fail_condition,notes
+exact_okx_swap_support,20,20,Exact BTC/DOGE OKX swap support is mandatory,No exact BTC-USDT-SWAP support,Hard gate item
+taker_side_clarity,15,15_for_trade_flow,Taker/aggressor semantics determine exact flow validity,Ambiguous or undocumented side,Required for trade-flow sources
+oi_instrument_granularity,10,10_for_oi,OI must be exact instrument-level history,Aggregate/base-currency OI only,Required for OI sources
+basis_funding_support,8,6_for_derivatives_context,Basis/funding definitions enable derivatives context audit,No definitions or aggregate-only context,Optional by category
+history_depth,10,7,Must cover sample and plausible research windows,Too shallow for BTC sample,Record depth explicitly
+data_dictionary_clarity,10,8,Field units and semantics avoid false precision,No data dictionary or unclear fields,Manual excerpt summary required
+provenance_reproducibility,10,8,Raw archive and reproducible queries/files are required,No stable raw records or versioning,Hashable raw files preferred
+archive_license_safety,10,10,Internal research archive must be allowed,Archive prohibited or license unclear,Hard gate item
+cost_clarity,7,5,Pricing must be known before pilot,Pricing unavailable or unacceptable,Contact-required can be unresolved
+sample_accessibility,5,3,Free/trial/small sample reduces risk,Only full subscription/backfill available,Affects priority
+4h_alignment_support,10,8,Future research aligns to closed UTC 4h buckets,Cannot align without forward-fill,Hard gate for strategy research

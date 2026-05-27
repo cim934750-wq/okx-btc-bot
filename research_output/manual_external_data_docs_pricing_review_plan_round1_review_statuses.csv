@@ -1,0 +1,12 @@
+status_label,meaning,allowed_next_step,forbidden_next_step,notes
+review_ready,Source is ready for human docs/pricing review,Manual reviewer fills evidence template,Vendor API calls or data fetch,Starting status for prioritized sources
+needs_manual_docs_check,Docs have not been manually reviewed,Open official docs/pricing manually if approved,Assume availability,Unknowns remain unknown
+needs_pricing_inquiry,Docs are plausible but pricing/access is unclear,Contact vendor or review pricing page with approval,Run sample or purchase,No API calls
+needs_sample_request,Manual review suggests a sample may be needed but access is not available yet,Prepare explicit sample request plan,Fetch sample without approval,Still not viable until terms clear
+likely_viable_for_sample_audit,Manual evidence supports exact BTC sample with acceptable semantics/license/cost,Create minimal external sample audit prompt,All-19 expansion or strategy validation,Best possible outcome of manual review
+uncertain,Evidence is mixed or incomplete,Resolve questions or deprioritize,Treat as viable,Default when unknowns remain material
+not_recommended,Burden or mismatch makes source unattractive,Close or keep as low-priority reference,Force sample audit,Use when aggregate/dashboard-only or overly complex
+blocked_by_license,License/archive terms block research archive,Stop source unless terms change,Use or commit restricted data,Hard stop
+blocked_by_cost,Pricing is unacceptable or requires broad purchase before pilot,Stop or seek alternate source,Purchase/backfill,Hard stop until user explicitly overrides
+blocked_by_missing_exact_instrument,Exact BTC-USDT-SWAP support absent,Reject for exact-data path,Use aggregate substitute,Can be context-only if labeled
+blocked_by_ambiguous_taker_side,Taker/aggressor side is ambiguous for trade-flow data,Reject for exact taker-flow use,Infer side or use in strategy,May still be non-flow context if documented

@@ -1,0 +1,18 @@
+checklist_item,applies_to_data_category,required_answer_type,blocks_progress_if_unknown,pass_condition,fail_condition,notes
+exact_okx_swap_support,all,yes_no_unknown,yes,BTC-USDT-SWAP exact support confirmed,No exact OKX swap/perp support,Required before sample audit
+doge_exact_support,all,yes_no_unknown,no,DOGE-USDT-SWAP exact support confirmed or explicitly pending after BTC,DOGE not supported and all expansion desired,DOGE is conditional after BTC
+historical_raw_trades,trades,yes_no_unknown,yes_for_trade_sources,"Historical raw trades available with trade ID, price, size, timestamp",No raw trades for trade-flow target,Needed for raw reconstruction
+taker_aggressor_side,trades;taker_flow,yes_no_unknown_with_doc_reference,yes_for_trade_flow,Taker/aggressor side explicitly documented,Side ambiguous or maker-side only,Blocks exact taker flow
+direct_taker_buy_sell_volume,taker_flow,yes_no_unknown,no,Direct taker buy/sell volume exact instrument fields documented,Only aggregate ratio/dashboard available,Useful if available but raw trades can substitute
+exact_instrument_oi,oi,yes_no_unknown,yes_for_oi,Historical OI is exact instrument-level with units,OI is aggregate/exchange/base-currency only,Blocks exact OI path
+basis_funding_fields,basis;funding;premium,yes_no_unknown,yes_for_derivatives_context,Mark/index/premium/basis/funding definitions documented,Definitions absent or aggregate only,Required for derivatives context
+history_depth,all,duration_or_unknown,yes,Depth covers intended sample and plausible research windows,History too shallow for even BTC sample,Manual note required
+timestamp_resolution,all,resolution_or_unknown,yes,Resolution supports trade or closed 4h alignment,Sparse/higher interval cannot align,No forward-fill
+data_dictionary,all,document_title_url_summary_or_unknown,yes,"Data dictionary names fields, units, and semantics",Field meanings unclear,Semantic clarity gate
+raw_reproducibility,all,yes_no_unknown,yes,Raw files/payloads can be reproduced or versioned,No reproducible raw data,Provenance gate
+archive_rights,all,yes_no_unknown,yes,Internal research archive permitted,Archive prohibited,License gate
+redistribution_restrictions,all,summary_or_unknown,no,Redistribution restrictions understood,Restrictions unclear for repo artifacts,Need avoid committing restricted raw data
+pricing_model,all,free_trial_paid_contact_unknown,yes,Pricing or contact-required status documented,Pricing unavailable/unacceptable,Cost gate
+free_sample_or_trial,all,yes_no_unknown,no,Sample/trial available for BTC pilot,No sample and full subscription required,Affects priority
+rate_download_limits,all,limits_or_unknown,yes,Request/download/export limits documented,Limits unknown or too low,Avoid CP1-style cap failure
+4h_alignment_possible,all,yes_no_unknown,yes,Data can align to closed UTC 4h buckets,No clean 4h alignment,Strategy research remains blocked

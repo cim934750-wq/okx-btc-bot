@@ -1,0 +1,13 @@
+action,status,reason,requires_user_approval,notes
+create_manual_review_plan,allowed,Current task is plan/checklist only,no,Completed here
+human_manual_docs_review,allowed_with_approval,May require opening docs/pricing pages manually,yes,No API calls or scraping
+vendor_pricing_inquiry,allowed_with_approval,Pricing may require contact form or email,yes,No purchase or API use
+fill_evidence_template,allowed,Human-entered review notes only,no,Unknowns must remain unknown
+minimal_external_sample_audit_plan,allowed_after_review,Only if source is likely_viable_for_sample_audit,yes,Plan or execution must be separately approved
+vendor_api_call,forbidden,Current task forbids API calls,not_allowed,No keys or accounts
+website_scraping,forbidden,Current task forbids scraping,not_allowed,Manual review only
+dataset_download,forbidden,Current task forbids downloads,not_allowed,No sample or backfill
+create_vendor_account,forbidden,Outside current scope,not_allowed,Manual review can note contact-required only
+paid_purchase_or_subscription,forbidden,No paid access approved,not_allowed,No full backfill
+strategy_validation,forbidden,Data source not audited yet,not_allowed,No backtests or thresholds
+dry_run_live_use,forbidden,No implementation-ready strategy exists,not_allowed,Bot remains stopped

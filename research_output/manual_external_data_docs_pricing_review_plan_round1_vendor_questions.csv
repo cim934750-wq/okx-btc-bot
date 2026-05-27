@@ -1,0 +1,17 @@
+question_id,source_or_vendor,question,data_category,reason,blocks_progress_if_unanswered,notes
+Q01,all_sources,Does the source support OKX swaps/perps by exact instrument ID?,all,Exact instrument identity is mandatory,yes,Must include BTC-USDT-SWAP
+Q02,all_sources,Does the source support BTC-USDT-SWAP exactly?,all,BTC is the first minimal sample target,yes,No BTC exact support blocks progress
+Q03,all_sources,Does the source support DOGE-USDT-SWAP exactly?,all,DOGE is conditional second sample target,no,Needed before BTC+DOGE sample
+Q04,trade_sources,"Does the source provide historical raw trades with trade ID, timestamp, price, and size?",raw_trades,Raw trade reconstruction requires stable rows,yes,"If no, direct taker-flow fields may still be reviewed"
+Q05,trade_sources,"Is side explicitly taker/aggressor side, and where is this documented?",raw_trades;taker_flow,Exact taker-flow semantics require proof,yes,Ambiguous side blocks taker-flow use
+Q06,taker_flow_sources,Does the source provide direct taker buy/sell volume or notional by exact instrument?,taker_flow,Direct fields may avoid raw trade pagination burden,yes_for_direct_taker_flow,"Must be exact instrument, not ccy aggregate"
+Q07,oi_sources,Does the source provide exact historical instrument-level OI quantity and/or notional?,oi,Prior current route did not prove exact historical OI,yes_for_oi,Aggregate OI is context only
+Q08,basis_funding_sources,"Does the source provide mark, index, premium, basis, and funding definitions?",basis;funding;premium,Derivatives fields need formula clarity,yes_for_basis_funding,Definitions must be captured
+Q09,all_sources,What historical depth is available for OKX swaps?,all,Need enough depth for future research windows,yes,Record earliest/latest available
+Q10,all_sources,What timestamp resolution is provided?,all,Need closed 4h alignment and no leakage,yes,Trade ms preferred for raw trades
+Q11,all_sources,Is there a data dictionary with field units and semantic definitions?,all,Prevents unit/meaning ambiguity,yes,Document title or URL required
+Q12,all_sources,Can raw records be archived internally with hashes for research reproducibility?,all,Raw provenance is required,yes,License must permit internal archive
+Q13,all_sources,"Is redistribution forbidden, and would committing summaries/raw samples violate terms?",all,Avoid license breach,yes,Summaries may be safer than raw data
+Q14,all_sources,What pricing model applies and is a free sample/trial available?,all,Cost clarity gates next step,yes,Contact-required is acceptable only if documented
+Q15,all_sources,"What request, download, export, or rate limits apply?",all,Prevents CP1-style scale failure,yes,Need BTC pilot estimate
+Q16,all_sources,Can data align to closed UTC 4h OHLCV intervals without forward-fill?,all,Future validation requires 4h alignment,yes,Sparse/higher interval may be context only

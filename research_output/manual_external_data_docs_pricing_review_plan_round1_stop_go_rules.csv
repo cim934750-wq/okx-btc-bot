@@ -1,0 +1,11 @@
+rule_name,go_condition,stop_condition,required_evidence,notes
+exact_btc_support,BTC-USDT-SWAP exact support confirmed,BTC-USDT-SWAP absent or only aggregate market support,Documentation or vendor confirmation,Hard go/no-go for sample audit
+doge_support_conditional,DOGE-USDT-SWAP support confirmed or marked pending after BTC,DOGE absent when second-market audit is required,Documentation or vendor confirmation,DOGE not required for BTC-only sample
+taker_side_semantics,Taker/aggressor side documented or irrelevant to selected data type,Trade side ambiguous for trade-flow use,Data dictionary excerpt or docs reference,Hard stop for taker-flow sources
+exact_oi_granularity,OI is exact instrument-level history if OI is target,OI only aggregate/base-currency/exchange-level,Data dictionary and instrument examples,Hard stop for exact OI
+license_archive_rights,Internal research archive allowed and redistribution restrictions understood,Archive prohibited or unclear,License note or vendor answer,Hard stop for raw sample audit
+pricing_access,"Pricing acceptable, sample/trial available, or contact path clear",Pricing unavailable/unacceptable or requires broad backfill,Pricing page/contact-required evidence,Blocks sample audit
+raw_reproducibility,Raw records/files can be archived with hashes and stable metadata,No reproducible raw payloads/files,Docs or vendor answer,Hard stop for audit provenance
+rate_limit_storage,Limits/storage manageable for BTC sample,Limits too low or storage/cost unbounded,Limit docs and rough estimate,Avoid CP1-style failure
+4h_alignment,Data can align to closed UTC 4h buckets without forward-fill,Sparse/higher interval cannot align to 4h,Granularity docs and timestamp definitions,Required for future strategy research
+promotion_to_sample_audit,At least one source reaches likely_viable_for_sample_audit,No source passes exact support semantics license cost and sample access gates,Completed evidence template and score,"Only permits future sample audit prompt, not execution"
