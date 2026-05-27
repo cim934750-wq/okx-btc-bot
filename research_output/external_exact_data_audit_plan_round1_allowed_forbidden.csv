@@ -1,0 +1,11 @@
+action,status,reason,requires_user_approval,notes
+manual_docs_pricing_review,allowed,Plan-only source evaluation requires docs/pricing clarity,yes_if_external_sites_or_vendor_contact_needed,No API/data fetch
+minimal_external_sample_audit,allowed_with_explicit_approval,Needed only after source passes manual review,yes,BTC first; DOGE conditional
+external_data_comparison_memo,allowed,Can compare source fit without fetching data,no,Use local plan artifacts only unless approved
+abandon_exact_data_path,allowed,Conservative default if sources are costly or ambiguous,no,Keeps benchmark-only mode
+vendor_api_call_now,forbidden,Current task is plan-only,not_allowed,No external data fetch
+web_scraping_now,forbidden,Current task forbids scraping,not_allowed,Manual review can be separately approved
+strategy_validation_before_source_audit,forbidden,Data provenance and semantics unproven,not_allowed,No backtests or thresholds
+full_paid_backfill_without_pilot,forbidden,Cost/license/data quality unproven,not_allowed,Pilot first
+all19_expansion_before_BTC_DOGE,forbidden,BTC/DOGE sample must pass first,not_allowed,No broad fetch
+dry_run_live_use,forbidden,No implementation-ready strategy exists,not_allowed,Bot remains stopped

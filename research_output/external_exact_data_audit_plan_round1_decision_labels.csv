@@ -1,0 +1,9 @@
+label,meaning,allowed_next_step,forbidden_next_step,notes
+source_rejected_no_exact_support,Source lacks exact OKX swap instrument support,Close source or keep as broad context only,Do not fetch sample for exact research,Hard reject for exact-data path
+source_rejected_semantics_unclear,Field definitions such as taker side or OI units are ambiguous,Ask vendor/docs clarification or close,Do not use features in validation,No inference from names alone
+source_rejected_license_cost,License or pricing blocks reproducible bounded research,Stop or request revised terms,No paid broad backfill,Cost clarity is a data-quality gate
+source_docs_pass_sample_needed,Manual docs/pricing review is sufficient to justify a minimal sample,Create explicit BTC sample audit prompt,Do not call API without approval,Not a data-quality pass yet
+external_sample_pass_BTC_only,BTC minimal sample passes exact fields/provenance/alignment,Plan DOGE conditional sample,Do not expand all-19 or validate strategy,BTC only
+external_sample_pass_BTC_DOGE,BTC and DOGE samples pass,Create bounded multi-market data audit plan,Do not run strategy validation yet,Still data availability only
+context_only_aggregate_source,Source provides useful aggregate context but not exact instrument data,Use only in context-labeled research plans,Do not claim exact instrument features,May be monitoring context
+not_recommended_due_complexity,Source may be possible but burden exceeds likely research value,Keep benchmark-only or seek simpler source,Do not proceed to broad fetch,Default if CP1-like burden persists

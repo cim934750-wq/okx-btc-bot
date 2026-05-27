@@ -1,0 +1,13 @@
+question_id,source_or_vendor,question,reason,blocks_progress_if_unanswered,notes
+Q01,all_sources,Do you support OKX swap/perp instruments by exact instId such as BTC-USDT-SWAP and DOGE-USDT-SWAP?,Exact instrument identity is mandatory,yes,No ccy aggregate substitution
+Q02,all_trade_sources,"Is trade side explicitly taker/aggressor side, and where is that documented?",Taker-flow reconstruction requires side semantics,yes,Ambiguous side blocks exact taker-flow
+Q03,all_trade_sources,Can raw trades be retrieved for a completed UTC 4h bucket and archived with stable IDs?,Need reproducible dedup/gap audit,yes,Must include tradeId or stable equivalent
+Q04,all_oi_sources,"Is historical OI exact instrument-level, and what are oi quantity/notional units?",Prior OKX route only proved aggregate historical context,yes,Snapshot-only OI is insufficient
+Q05,basis_funding_sources,"What are the definitions for mark, index, premium, basis, and funding fields?",Basis/funding semantics must be captured,yes,Vendor formulas must be archived
+Q06,all_sources,What historical depth is available for OKX swaps and at what timestamp resolution?,Need overlap with research windows,yes,Shallow history blocks validation use
+Q07,all_sources,"What are API/file rate limits, export limits, and expected row/storage burden for BTC and DOGE samples?",Need bounded sample feasibility,yes,Prevents CP1-style runaway pagination
+Q08,all_sources,Can raw payloads/files and data dictionaries be stored internally for research reproducibility?,License must permit archive/provenance,yes,No redistribution assumption
+Q09,paid_vendors,What is pricing for a BTC/DOGE minimal sample and potential all-19 expansion?,Cost clarity required before pilot,yes,No paid backfill without pilot
+Q10,all_sources,Can data be aligned to closed UTC 4h OHLCV buckets without future leakage or forward-fill?,Needed for any future validation,yes,"If higher/sparse interval only, mark unsuitable"
+Q11,all_sources,"Are corrections/revisions versioned, and can a historical query be reproduced later?",Reproducibility and audit integrity,yes,Need snapshot/version metadata
+Q12,wrappers,"What is the underlying source endpoint/dataset, and can wrapper output be traced to raw source payload?",Wrappers are not source-of-truth,yes,ccxt/CCXT Pro can cross-check only

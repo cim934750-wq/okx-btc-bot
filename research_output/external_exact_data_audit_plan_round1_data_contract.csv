@@ -1,0 +1,21 @@
+data_category,required_field,required,semantic_requirement,acceptable_granularity,missing_field_impact,notes
+all_categories,source_name,yes,Stable source/vendor identifier,per dataset,Cannot audit provenance,Record vendor/source and version if available
+all_categories,instrument_id,yes,Exact OKX instrument such as BTC-USDT-SWAP,exact instrument,Blocks exact-instrument research,No ccy aggregate substitution
+all_categories,timestamp_utc,yes,UTC timestamp with documented precision,trade ms or interval close/open clearly documented,Cannot align to 4h candles,Timezone must be UTC-normalized
+all_categories,raw_payload_or_file_hash,yes,Reproducible raw archive hash,per request or file,Cannot reproduce audit,SHA256 required
+raw_trades,trade_id,yes,Stable exchange/vendor trade identifier,per trade,Deduplication weakened,Fallback composite key only with caveat
+raw_trades,price,yes,Executed trade price,per trade,Cannot compute notional,Field name and units required
+raw_trades,size,yes,Executed trade size with unit definition,per trade,Cannot compute volume,Contract vs coin units must be documented
+raw_trades,taker_or_aggressor_side,yes,Explicit documented taker/aggressor side,per trade,Blocks exact taker-flow reconstruction,Maker side or ambiguous side is not acceptable
+direct_taker_flow,taker_buy_volume,yes,Volume initiated by taker buys,4h or lower aggregatable interval,Cannot compute buy/sell imbalance,Must be exact instrument
+direct_taker_flow,taker_sell_volume,yes,Volume initiated by taker sells,4h or lower aggregatable interval,Cannot compute buy/sell imbalance,Must be exact instrument
+direct_taker_flow,taker_buy_notional,preferred,Notional value of taker buys,4h or lower aggregatable interval,Notional features unavailable,Can compute only if contract metadata is audited
+direct_taker_flow,taker_sell_notional,preferred,Notional value of taker sells,4h or lower aggregatable interval,Notional features unavailable,Can compute only if contract metadata is audited
+open_interest,oi_quantity,yes,Open interest quantity with documented unit,4h or lower or exact snapshot history,Blocks OI features,Must not be exchange-wide aggregate
+open_interest,oi_notional,preferred,Open interest notional in quote/USD with definition,4h or lower or exact snapshot history,OI notional unavailable,Unit conversion must be audited
+basis,mark_price,yes,Perp mark price with instrument timestamp,4h or lower,Basis cannot be computed reliably,May pair with index/last
+basis,index_price,yes,Underlying index price with timestamp,4h or lower,Basis cannot be computed reliably,Definition required
+basis,basis_or_premium,preferred,Vendor-defined basis/premium with formula,4h or lower,Must compute internally or skip,Formula must be captured
+funding_premium,funding_rate,yes,Historical funding rate for exact instrument,native funding interval,Funding context unavailable,Prior funding strategy failed; data audit only
+funding_premium,premium_index,preferred,Premium/index measure with formula,4h or lower,Premium context unavailable,Definition must be documented
+optional_context,liquidations_or_longs_shorts,optional,"Clearly labeled context, not exact taker flow",source interval,Cannot use as exact trade flow,Optional only after exact core data audited

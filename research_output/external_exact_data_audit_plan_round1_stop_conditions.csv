@@ -1,0 +1,11 @@
+stop_condition,applies_to,reason,required_action,notes
+no_exact_okx_swap_support,all_sources,Cannot support instrument-level research,Stop source; do not sample,BTC-USDT-SWAP and DOGE-USDT-SWAP must be exact
+taker_side_unavailable_or_ambiguous,trade_flow_sources,Exact taker-flow reconstruction requires aggressor side semantics,Stop taker-flow use; classify as trade context only or reject,Do not infer side
+oi_not_instrument_level,oi_sources,Aggregate OI cannot support exact instrument OI claims,Stop exact OI path for source,May be aggregate context only if labeled
+history_too_shallow,all_sources,Cannot overlap needed research windows,Stop or restrict to availability note,No validation from insufficient history
+cost_or_pricing_unclear_unacceptable,paid_sources,Cannot approve bounded pilot responsibly,Stop until pricing clarified,No broad paid backfill
+license_forbids_research_archive,all_sources,Raw/provenance archive is mandatory,Stop source,No unverifiable data use
+api_not_reproducible,api_sources,Cannot recreate or audit historical pull,Stop or request file/snapshot alternative,Need stable version/snapshot metadata
+rate_limit_storage_unbounded,raw_trade_sources,Avoid repeating CP1 scaling failure,Stop or redesign smaller sample,Need request/storage projection before fetch
+data_dictionary_unclear,all_sources,Semantic ambiguity invalidates features,Stop until clarified,Especially basis/funding/OI definitions
+cannot_align_to_4h,all_sources,Future research uses closed UTC 4h candles,Stop for 4h strategy features,Sparse/higher interval can be context only
