@@ -16,6 +16,7 @@ This MVP turns the current BTC-focused Long1-only research candidate into a dete
 - Generates read-only monitoring reports from local decision logs and paper state.
 - Generates a read-only paper status dashboard that combines data freshness, latest signal/risk/response, monitoring counts, and paper state.
 - Archives read-only daily dry-run review snapshots and compares the current snapshot with the prior snapshot.
+- Summarizes daily review alerts locally as `INFO`, `WARN`, or `BLOCKED` without sending external notifications.
 - Supports a one-shot run and a local optional dry-run loop.
 
 ## What It Does Not Do
@@ -29,6 +30,7 @@ This MVP turns the current BTC-focused Long1-only research candidate into a dete
 - The monitoring report is read-only; it does not refresh data, place orders, or mutate paper state.
 - The paper status dashboard is read-only by default and does not refresh data or mutate paper state.
 - The daily dry-run review is read-only by default; it archives local status snapshots and does not refresh data or mutate paper state.
+- The alert summary is local and read-only; it does not send email, chat, webhook, SMS, push, or any other external notification.
 
 ## Signal Logic
 
@@ -200,12 +202,43 @@ Each snapshot includes:
 
 The comparison flags changed latest candle timestamp, stale status, signal decision, Long1 active status, confidence, condition counts, new/resolved missing conditions, risk level, new/resolved risk flags, response action, paper position open/closed state, side, monitoring log count, stale-data count, and warning count.
 
+## How To Run The Daily Alert Summary
+
+Run the daily review first so the latest snapshot/report exists:
+
+```bash
+.venv-btc-signal-mvp/bin/python scripts/review_btc_daily_dry_run.py --limit 20
+```
+
+Then summarize alert severity locally:
+
+```bash
+.venv-btc-signal-mvp/bin/python scripts/summarize_btc_daily_alerts.py
+```
+
+Useful options:
+
+```bash
+.venv-btc-signal-mvp/bin/python scripts/summarize_btc_daily_alerts.py --format json
+.venv-btc-signal-mvp/bin/python scripts/summarize_btc_daily_alerts.py --review-json runtime/daily_reviews/btc_daily_review_report_latest.json
+.venv-btc-signal-mvp/bin/python scripts/summarize_btc_daily_alerts.py --snapshot-json runtime/daily_reviews/btc_daily_review_latest.json --compare-to runtime/daily_reviews/btc_daily_review_YYYYMMDDTHHMMSSZ.json
+.venv-btc-signal-mvp/bin/python scripts/summarize_btc_daily_alerts.py --output-json runtime/daily_reviews/btc_daily_alert_summary_latest.json --output-md runtime/daily_reviews/btc_daily_alert_summary_latest.md
+```
+
+Severity meanings:
+
+- `INFO`: data is fresh, signal remains `WAIT`/`WATCH` without blocking risk, paper state is closed/unchanged, and no new risk flags or stale warnings appeared.
+- `WARN`: signal/confidence changed, Long1 is active without `PAPER_LONG`, new non-blocking risk flags appeared, candle age is near stale, monitoring log count did not advance, or warnings increased.
+- `BLOCKED`: stale data is active, response is `BLOCK`, risk level is `BLOCK`, required data/log/state is missing, paper state is inconsistent, or input parsing failed.
+
+The alert summary only classifies local review state for human inspection. It does not send external notifications, does not refresh data by default, does not place orders, and does not enable live trading.
+
 ## How To Run Tests
 
 ```bash
-.venv-btc-signal-mvp/bin/python -m py_compile btc_signal/*.py scripts/run_btc_signal_once.py scripts/run_btc_paper_loop.py scripts/refresh_btcusdt_4h_data.py scripts/report_btc_dry_run_status.py scripts/report_btc_paper_status.py scripts/review_btc_daily_dry_run.py
+.venv-btc-signal-mvp/bin/python -m py_compile btc_signal/*.py scripts/run_btc_signal_once.py scripts/run_btc_paper_loop.py scripts/refresh_btcusdt_4h_data.py scripts/report_btc_dry_run_status.py scripts/report_btc_paper_status.py scripts/review_btc_daily_dry_run.py scripts/summarize_btc_daily_alerts.py
 .venv-btc-signal-mvp/bin/python -m compileall research btc_signal scripts
-.venv-btc-signal-mvp/bin/python -m pytest tests/test_btc_signal_engine.py tests/test_btc_risk_engine.py tests/test_btc_response_engine.py tests/test_btc_data_refresh.py tests/test_btc_monitoring.py tests/test_btc_status_dashboard.py tests/test_btc_daily_review.py
+.venv-btc-signal-mvp/bin/python -m pytest tests/test_btc_signal_engine.py tests/test_btc_risk_engine.py tests/test_btc_response_engine.py tests/test_btc_data_refresh.py tests/test_btc_monitoring.py tests/test_btc_status_dashboard.py tests/test_btc_daily_review.py tests/test_btc_alert_summary.py
 ```
 
 ## Why Live Trading Is Blocked
