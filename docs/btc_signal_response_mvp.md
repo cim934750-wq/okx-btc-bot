@@ -7,6 +7,7 @@ This MVP turns the current BTC-focused Long1-only research candidate into a dete
 ## What The System Does
 
 - Loads BTCUSDT 4h OHLCV data from `data/BTCUSDT_4h.csv`.
+- Can refresh local BTCUSDT 4h paper data from OKX public market candles without API keys.
 - Builds the existing research feature frame through `research.indicators.build_feature_frame`.
 - Evaluates the latest completed 4h candle for the Long1 starter signal.
 - Emits a structured signal decision with the passed and missing variables.
@@ -16,7 +17,7 @@ This MVP turns the current BTC-focused Long1-only research candidate into a dete
 
 ## What It Does Not Do
 
-- It does not connect to OKX or any exchange.
+- It does not connect to authenticated OKX or any private exchange/account endpoint.
 - It does not require API keys.
 - It does not place live orders.
 - It does not evaluate shorts or Long2 add-on entries.
@@ -69,20 +70,44 @@ Responses are limited to:
 
 There is no `LIVE_BUY` path. A `PAPER_LONG` only updates `runtime/paper_state.json` and writes a log entry. No exchange client, credentials, or order endpoint is used.
 
+## How To Refresh BTCUSDT 4h Paper Data
+
+```bash
+.venv-btc-signal-mvp/bin/python scripts/refresh_btcusdt_4h_data.py
+```
+
+The refresh script uses OKX public market candles for `BTC-USDT` with bar `4H`. It requires no API keys, account access, or exchange credentials. By default it:
+
+- fetches recent public candles,
+- excludes exchange-reported incomplete candles,
+- validates the CSV schema,
+- deduplicates timestamps,
+- sorts candles ascending,
+- writes `data/BTCUSDT_4h.csv`,
+- writes a JSON provenance report under `runtime/data_refresh_reports/`.
+
+The expected CSV schema stays:
+
+```text
+timestamp,open,high,low,close,volume
+```
+
+This refresh path only updates local paper-mode market data. It does not enable live trading, exchange orders, account data, or position management.
+
 ## How To Run Once
 
 ```bash
 .venv-btc-signal-mvp/bin/python scripts/run_btc_signal_once.py
 ```
 
-The script prints a JSON result and appends a JSONL decision record under `runtime/logs/`.
+Run the refresh first if the local CSV is stale, then run the signal demo. The signal script prints a JSON result and appends a JSONL decision record under `runtime/logs/`.
 
 ## How To Run Tests
 
 ```bash
 .venv-btc-signal-mvp/bin/python -m py_compile btc_signal/*.py scripts/run_btc_signal_once.py scripts/run_btc_paper_loop.py
 .venv-btc-signal-mvp/bin/python -m compileall research btc_signal scripts
-.venv-btc-signal-mvp/bin/python -m pytest tests/test_btc_signal_engine.py tests/test_btc_risk_engine.py tests/test_btc_response_engine.py
+.venv-btc-signal-mvp/bin/python -m pytest tests/test_btc_signal_engine.py tests/test_btc_risk_engine.py tests/test_btc_response_engine.py tests/test_btc_data_refresh.py
 ```
 
 ## Why Live Trading Is Blocked
