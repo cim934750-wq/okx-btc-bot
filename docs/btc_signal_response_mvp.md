@@ -13,6 +13,7 @@ This MVP turns the current BTC-focused Long1-only research candidate into a dete
 - Emits a structured signal decision with the passed and missing variables.
 - Runs variable and risk checks before any response is selected.
 - Records local paper state and JSONL logs under `runtime/`.
+- Generates read-only monitoring reports from local decision logs and paper state.
 - Supports a one-shot run and a local optional dry-run loop.
 
 ## What It Does Not Do
@@ -23,6 +24,7 @@ This MVP turns the current BTC-focused Long1-only research candidate into a dete
 - It does not evaluate shorts or Long2 add-on entries.
 - It does not optimize parameters, sweep thresholds, or claim profitability.
 - It does not make the strategy implementation-ready for live trading.
+- The monitoring report is read-only; it does not refresh data, place orders, or mutate paper state.
 
 ## Signal Logic
 
@@ -102,12 +104,50 @@ This refresh path only updates local paper-mode market data. It does not enable 
 
 Run the refresh first if the local CSV is stale, then run the signal demo. The signal script prints a JSON result and appends a JSONL decision record under `runtime/logs/`.
 
+## How To Run The Paper Loop
+
+Run once through the dry-run loop entry point:
+
+```bash
+.venv-btc-signal-mvp/bin/python scripts/run_btc_paper_loop.py
+```
+
+Add `--interval-seconds N` only for an explicit local loop interval. This remains paper-only and does not require API keys.
+
+## How To Generate A Monitoring Report
+
+```bash
+.venv-btc-signal-mvp/bin/python scripts/report_btc_dry_run_status.py --limit 20
+```
+
+The monitoring report reads local JSONL decision logs and `runtime/paper_state.json`. It does not call OKX, does not refresh market data, does not require API keys, and does not mutate paper state. Useful options:
+
+```bash
+.venv-btc-signal-mvp/bin/python scripts/report_btc_dry_run_status.py --format json
+.venv-btc-signal-mvp/bin/python scripts/report_btc_dry_run_status.py --logs-dir runtime/logs --state-path runtime/paper_state.json
+.venv-btc-signal-mvp/bin/python scripts/report_btc_dry_run_status.py --output-json runtime/reports/btc_dry_run_status.json --output-md runtime/reports/btc_dry_run_status.md
+```
+
+The report summarizes:
+
+- total valid log entries read and recent entries summarized,
+- first/latest decision `run_at` timestamps,
+- latest candle timestamp from the signal log,
+- stale-data flag count,
+- signal decision, response action, and risk level counts,
+- top risk flags,
+- Long1 active, `PAPER_LONG`, `BLOCK`, `WATCH`, and `EXIT_WARNING` counts,
+- latest decision summary,
+- paper position state,
+- inferred paper-state changes across the summarized logs,
+- warnings for missing logs, missing state, malformed JSONL, stale logs, or stale-data risk flags.
+
 ## How To Run Tests
 
 ```bash
-.venv-btc-signal-mvp/bin/python -m py_compile btc_signal/*.py scripts/run_btc_signal_once.py scripts/run_btc_paper_loop.py
+.venv-btc-signal-mvp/bin/python -m py_compile btc_signal/*.py scripts/run_btc_signal_once.py scripts/run_btc_paper_loop.py scripts/refresh_btcusdt_4h_data.py scripts/report_btc_dry_run_status.py
 .venv-btc-signal-mvp/bin/python -m compileall research btc_signal scripts
-.venv-btc-signal-mvp/bin/python -m pytest tests/test_btc_signal_engine.py tests/test_btc_risk_engine.py tests/test_btc_response_engine.py tests/test_btc_data_refresh.py
+.venv-btc-signal-mvp/bin/python -m pytest tests/test_btc_signal_engine.py tests/test_btc_risk_engine.py tests/test_btc_response_engine.py tests/test_btc_data_refresh.py tests/test_btc_monitoring.py
 ```
 
 ## Why Live Trading Is Blocked
