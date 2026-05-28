@@ -14,6 +14,7 @@ This MVP turns the current BTC-focused Long1-only research candidate into a dete
 - Runs variable and risk checks before any response is selected.
 - Records local paper state and JSONL logs under `runtime/`.
 - Generates read-only monitoring reports from local decision logs and paper state.
+- Generates a read-only paper status dashboard that combines data freshness, latest signal/risk/response, monitoring counts, and paper state.
 - Supports a one-shot run and a local optional dry-run loop.
 
 ## What It Does Not Do
@@ -25,6 +26,7 @@ This MVP turns the current BTC-focused Long1-only research candidate into a dete
 - It does not optimize parameters, sweep thresholds, or claim profitability.
 - It does not make the strategy implementation-ready for live trading.
 - The monitoring report is read-only; it does not refresh data, place orders, or mutate paper state.
+- The paper status dashboard is read-only by default and does not refresh data or mutate paper state.
 
 ## Signal Logic
 
@@ -142,12 +144,39 @@ The report summarizes:
 - inferred paper-state changes across the summarized logs,
 - warnings for missing logs, missing state, malformed JSONL, stale logs, or stale-data risk flags.
 
+## How To Generate The Paper Status Dashboard
+
+```bash
+.venv-btc-signal-mvp/bin/python scripts/report_btc_paper_status.py --limit 20
+```
+
+The status dashboard is a single read-only view over local paper-mode files. It does not call private APIs, does not place orders, does not open or close positions, and does not refresh market data by default. Refresh market data separately with `scripts/refresh_btcusdt_4h_data.py` when needed.
+
+Useful options:
+
+```bash
+.venv-btc-signal-mvp/bin/python scripts/report_btc_paper_status.py --format json
+.venv-btc-signal-mvp/bin/python scripts/report_btc_paper_status.py --data-path data/BTCUSDT_4h.csv --logs-dir runtime/logs --state-path runtime/paper_state.json
+.venv-btc-signal-mvp/bin/python scripts/report_btc_paper_status.py --output-json runtime/reports/btc_paper_status.json --output-md runtime/reports/btc_paper_status.md
+```
+
+The dashboard combines:
+
+- BTCUSDT 4h CSV path, row count, latest candle timestamp, candle age, and stale/not-stale status,
+- latest deterministic Long1 signal decision, confidence, evidence, passed condition count, and missing condition count,
+- latest risk level, risk flags, and response action,
+- current paper position state,
+- recent monitoring counts for signal decisions, response actions, risk levels, stale-data flags, and top risk flags,
+- warnings for stale data, missing logs, missing state, invalid CSV, or evaluation failures.
+
+All dashboard outputs are paper/dry-run status summaries. They do not enable live trading and do not claim profitability.
+
 ## How To Run Tests
 
 ```bash
-.venv-btc-signal-mvp/bin/python -m py_compile btc_signal/*.py scripts/run_btc_signal_once.py scripts/run_btc_paper_loop.py scripts/refresh_btcusdt_4h_data.py scripts/report_btc_dry_run_status.py
+.venv-btc-signal-mvp/bin/python -m py_compile btc_signal/*.py scripts/run_btc_signal_once.py scripts/run_btc_paper_loop.py scripts/refresh_btcusdt_4h_data.py scripts/report_btc_dry_run_status.py scripts/report_btc_paper_status.py
 .venv-btc-signal-mvp/bin/python -m compileall research btc_signal scripts
-.venv-btc-signal-mvp/bin/python -m pytest tests/test_btc_signal_engine.py tests/test_btc_risk_engine.py tests/test_btc_response_engine.py tests/test_btc_data_refresh.py tests/test_btc_monitoring.py
+.venv-btc-signal-mvp/bin/python -m pytest tests/test_btc_signal_engine.py tests/test_btc_risk_engine.py tests/test_btc_response_engine.py tests/test_btc_data_refresh.py tests/test_btc_monitoring.py tests/test_btc_status_dashboard.py
 ```
 
 ## Why Live Trading Is Blocked
