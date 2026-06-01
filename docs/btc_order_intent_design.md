@@ -156,6 +156,33 @@ Audit status meanings:
 
 The audit is read-only. It does not write order intents, create adapters, call exchange APIs, require API keys, place orders, or enable testnet/live trading.
 
+## OrderIntentWriter Design Review Checklist
+
+Before any future runtime writer is implemented, run the read-only design review checklist:
+
+```bash
+.venv-btc-signal-mvp/bin/python scripts/review_btc_order_intent_writer_design.py
+```
+
+Useful options:
+
+```bash
+.venv-btc-signal-mvp/bin/python scripts/review_btc_order_intent_writer_design.py --format json
+.venv-btc-signal-mvp/bin/python scripts/review_btc_order_intent_writer_design.py --schema-path schemas/btc_order_intent.schema.json
+.venv-btc-signal-mvp/bin/python scripts/review_btc_order_intent_writer_design.py --include-future-test-plan
+.venv-btc-signal-mvp/bin/python scripts/review_btc_order_intent_writer_design.py --output-json runtime/reports/btc_order_intent_writer_review.json --output-md runtime/reports/btc_order_intent_writer_review.md
+```
+
+The checklist covers scope boundary, schema dependency, input dependency, safety gates, output constraints, operator review, future writer tests, and forbidden shortcuts.
+
+Checklist status meanings:
+
+- `PASS`: the design checklist is complete. This is not approval to implement a writer or trade.
+- `WARN`: non-blocking review warnings need attention before a future writer task.
+- `FAIL`: schema or safety prerequisites are missing and no future writer should be discussed.
+
+The checklist is not a runtime writer. It does not create `runtime/order_intents/`, write order intents, add adapters, call APIs, require keys, or enable testnet/live trading.
+
 ## Audit Requirements
 
 - Intent records must include source decision and snapshot paths.

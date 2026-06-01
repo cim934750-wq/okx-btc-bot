@@ -62,6 +62,11 @@ schemas/btc_order_intent.schema.json
 btc_signal/order_intent_schema_audit.py
 scripts/audit_btc_order_intent_schema.py
 read-only schema safety audit
+        |
+        v
+btc_signal/order_intent_writer_review.py
+scripts/review_btc_order_intent_writer_design.py
+read-only future writer design checklist
 
 Future boundaries, not implemented:
         |
@@ -91,6 +96,7 @@ Future boundaries, not implemented:
 | Operator checklist | `btc_signal/operator_checklist.py`, `scripts/print_btc_operator_checklist.py` | Print manual steps for alert states. | Alert summary, daily review. | Text/JSON/Markdown checklist. | Optional explicit checklist output only. | No. | No. | Does not execute remediation. |
 | Order-intent schema | `schemas/btc_order_intent.schema.json` | Validate future non-executing intent record shape. | Candidate JSON object in tests/future designs. | Validation pass/fail. | No. | No. | No. | Requires `execution_allowed=false`; rejects `testnet`, `live`, and credential-like fields. |
 | Schema audit | `btc_signal/order_intent_schema_audit.py`, `scripts/audit_btc_order_intent_schema.py` | Read schema and print safety constraints. | `schemas/btc_order_intent.schema.json`. | Text/JSON/Markdown audit. | Optional explicit audit output only. | No. | No. | Read-only; does not write intents. |
+| Writer design review | `btc_signal/order_intent_writer_review.py`, `scripts/review_btc_order_intent_writer_design.py` | Print future OrderIntentWriter design review gates. | Order-intent schema and schema audit result. | Text/JSON/Markdown checklist. | Optional explicit checklist output only. | No. | No. | Read-only; does not create `runtime/order_intents/`. |
 | Future OrderIntentWriter | Not implemented. Design: `docs/btc_order_intent_design.md`. | Future append-only non-executing intent writer. | Future approved local decisions/reports only. | Future `runtime/order_intents/*.json`. | Future local runtime files only. | No. | No. | May be considered next, but non-executing only. |
 | Future simulated dry-run adapter | Not implemented. Design: `docs/btc_exchange_adapter_boundaries.md`. | Future local simulated fills from local data. | Future validated intents and local OHLCV. | Future simulation audit reports. | Future local reports only. | No. | No real trade. | Local simulation only. |
 | Future testnet adapter | Not implemented. Design: `docs/btc_testnet_transition_plan.md`. | Future testnet lifecycle only after explicit approval. | Future approved testnet config and safety gates. | Future testnet audit reports. | Future approval-gated. | Future testnet keys only. | Testnet only after approval. | Not available now. |
@@ -109,6 +115,7 @@ Future boundaries, not implemented:
 | `python scripts/summarize_btc_daily_alerts.py` | Alert summary | Reads daily review; writes only explicit output paths. | Optional `runtime/daily_reviews/*alert*.json` or `*.md`. | Read-only; no notifications. |
 | `python scripts/print_btc_operator_checklist.py` | Operator checklist | Reads alert/review; writes only explicit output paths. | Optional `runtime/daily_reviews/*checklist*.json` or `*.md`. | Prints manual steps only. |
 | `python scripts/audit_btc_order_intent_schema.py` | Schema audit | Reads schema; writes only explicit output paths. | Optional `runtime/reports/*schema_audit*.json` or `*.md`. | Read-only schema safety check. |
+| `python scripts/review_btc_order_intent_writer_design.py` | Writer design review | Reads schema/audit result; writes only explicit output paths. | Optional `runtime/reports/*writer_review*.json` or `*.md`. | Read-only future-writer checklist. |
 
 ## Data And Artifact Flow
 
@@ -132,6 +139,7 @@ Runtime artifacts are local inspection outputs. They should not be committed unl
 - Paper state consistency gate: duplicate open paper position, malformed state, or drawdown guard prevents new paper entries.
 - Order-intent schema gate: future intent records must validate against `schemas/btc_order_intent.schema.json`.
 - Schema audit gate: `scripts/audit_btc_order_intent_schema.py` must report `PASS` before any future writer is considered.
+- Writer design review gate: `scripts/review_btc_order_intent_writer_design.py` must report `PASS`, and that still must not be treated as approval to implement or trade.
 - Operator checklist gate: alert/checklist review remains a manual paper-mode checkpoint and must not be bypassed.
 
 ## Forbidden Capabilities

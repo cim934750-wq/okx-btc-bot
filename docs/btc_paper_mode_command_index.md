@@ -146,9 +146,12 @@ The paper loop entry point defaults to a safe once-per-run dry-run mode. It rema
 
 ```bash
 python scripts/audit_btc_order_intent_schema.py
+python scripts/review_btc_order_intent_writer_design.py
 ```
 
 This read-only command audits `schemas/btc_order_intent.schema.json` and prints whether the non-executing order-intent schema still requires `execution_allowed=false`, rejects `testnet`/`live`, rejects credential-like fields, and represents `BLOCK`/`stale_data` safety rules. It does not create order intents, add adapters, call APIs, or trade.
+
+The writer design review command prints future OrderIntentWriter review gates. It is a developer safety review, not a daily operating step and not approval to implement a writer or trade.
 
 ## Severity Guide
 
