@@ -6,6 +6,8 @@ This MVP turns the current BTC-focused Long1-only research candidate into a dete
 
 For the operator-facing command sequence, see the [BTC Paper-Mode Command Index](btc_paper_mode_command_index.md).
 
+For the component-level paper-mode system map, see the [BTC Paper-Mode Architecture Map](btc_paper_mode_architecture_map.md).
+
 Design-only future transition documents:
 
 - [BTC Order Intent Design](btc_order_intent_design.md)
@@ -45,6 +47,7 @@ Design-only future transition documents:
 - The order-intent, adapter, kill-switch, and testnet documents are design-only; they do not add private API access, exchange orders, or live trading.
 - The order-intent JSON schema validates non-executing record shape only; it does not create intents, connect to an exchange, or trade.
 - The order-intent schema audit command reads the schema and prints safety constraints only; it does not write intents, add adapters, call APIs, or trade.
+- The architecture map is documentation only; it links current paper components and future boundaries without adding trading code.
 
 ## Signal Logic
 
@@ -315,5 +318,6 @@ Design-only architecture references for a possible future testnet discussion:
 2. [BTC Exchange Adapter Boundary Design](btc_exchange_adapter_boundaries.md).
 3. [BTC Kill Switch And Safety Gate Design](btc_kill_switch_and_safety_gates.md).
 4. [BTC Testnet Transition Plan](btc_testnet_transition_plan.md).
+5. [BTC Paper-Mode Architecture Map](btc_paper_mode_architecture_map.md).
 
 The non-executing order-intent schema is available at `schemas/btc_order_intent.schema.json`. It requires `execution_allowed=false` and rejects `testnet`, `live`, unknown fields, and credential-like fields.

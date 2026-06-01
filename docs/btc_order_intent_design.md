@@ -8,6 +8,8 @@ This design does not implement order writing, exchange access, testnet trading, 
 
 The current non-executing schema lives at `schemas/btc_order_intent.schema.json`. It validates record shape and safety constraints only; it does not create order intents, call an exchange, or trade.
 
+For how the schema sits inside the paper-mode MVP, see the [BTC Paper-Mode Architecture Map](btc_paper_mode_architecture_map.md).
+
 ## Design Boundary
 
 - Order intents are paper/testnet planning artifacts, not orders.
