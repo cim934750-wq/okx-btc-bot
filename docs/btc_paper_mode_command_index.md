@@ -229,8 +229,8 @@ Stop manual operation and inspect the local files before continuing when:
 
 The next milestone should remain design-only and paper/testnet-focused:
 
-- Order intent design only.
-- Exchange adapter boundary design only.
-- Kill switch design only.
-- Testnet transition plan only.
+- [Order intent design](btc_order_intent_design.md) only.
+- [Exchange adapter boundary design](btc_exchange_adapter_boundaries.md) only.
+- [Kill switch design](btc_kill_switch_and_safety_gates.md) only.
+- [Testnet transition plan](btc_testnet_transition_plan.md) only.
 - No live implementation yet.

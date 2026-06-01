@@ -6,6 +6,13 @@ This MVP turns the current BTC-focused Long1-only research candidate into a dete
 
 For the operator-facing command sequence, see the [BTC Paper-Mode Command Index](btc_paper_mode_command_index.md).
 
+Design-only future transition documents:
+
+- [BTC Order Intent Design](btc_order_intent_design.md)
+- [BTC Exchange Adapter Boundary Design](btc_exchange_adapter_boundaries.md)
+- [BTC Kill Switch And Safety Gate Design](btc_kill_switch_and_safety_gates.md)
+- [BTC Testnet Transition Plan](btc_testnet_transition_plan.md)
+
 ## What The System Does
 
 - Loads BTCUSDT 4h OHLCV data from `data/BTCUSDT_4h.csv`.
@@ -35,6 +42,7 @@ For the operator-facing command sequence, see the [BTC Paper-Mode Command Index]
 - The daily dry-run review is read-only by default; it archives local status snapshots and does not refresh data or mutate paper state.
 - The alert summary is local and read-only; it does not send email, chat, webhook, SMS, push, or any other external notification.
 - The operator checklist prints manual steps only; it does not execute remediation, refresh data, run signals, send notifications, or trade.
+- The order-intent, adapter, kill-switch, and testnet documents are design-only; they do not add private API access, exchange orders, or live trading.
 
 ## Signal Logic
 
@@ -298,3 +306,10 @@ The Long1-only candidate remains research-only and concentrated. This MVP exists
 3. Logging review.
 4. Risk checks.
 5. Explicit user approval.
+
+Design-only architecture references for a possible future testnet discussion:
+
+1. [BTC Order Intent Design](btc_order_intent_design.md).
+2. [BTC Exchange Adapter Boundary Design](btc_exchange_adapter_boundaries.md).
+3. [BTC Kill Switch And Safety Gate Design](btc_kill_switch_and_safety_gates.md).
+4. [BTC Testnet Transition Plan](btc_testnet_transition_plan.md).
