@@ -1,0 +1,293 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://okx-btc-bot.local/schemas/btc_order_intent.schema.json",
+  "title": "BTC Non-Executing Order Intent",
+  "description": "Schema for a non-executing BTC paper-mode order intent record. This schema does not permit live or testnet execution.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "intent_id",
+    "created_at_utc",
+    "source",
+    "mode",
+    "symbol",
+    "instrument_id",
+    "timeframe",
+    "candle_timestamp",
+    "signal_decision",
+    "response_action",
+    "risk_level",
+    "risk_flags",
+    "long1_active",
+    "confidence",
+    "passed_conditions",
+    "missing_conditions",
+    "intended_action",
+    "intended_side",
+    "intended_order_type",
+    "intended_quantity",
+    "intended_notional",
+    "max_notional_cap",
+    "stop_loss_reference",
+    "invalidation_reason",
+    "block_reason",
+    "source_decision_log_path",
+    "source_snapshot_path",
+    "operator_review_required",
+    "execution_allowed",
+    "execution_blocked_reason",
+    "checksum_or_hash",
+    "notes"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0",
+      "description": "Schema version for the non-executing order intent record."
+    },
+    "intent_id": {
+      "type": "string",
+      "minLength": 8,
+      "maxLength": 128,
+      "pattern": "^[A-Za-z0-9_.:-]+$",
+      "description": "Stable unique identifier for this non-executing intent."
+    },
+    "created_at_utc": {
+      "type": "string",
+      "format": "date-time",
+      "description": "UTC timestamp when the intent record was created."
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "description": "Local component or command that produced the intent candidate."
+    },
+    "mode": {
+      "type": "string",
+      "enum": ["paper", "order_intent_only", "simulated_dry_run"],
+      "description": "Current safe modes only. Testnet and live are intentionally not accepted."
+    },
+    "symbol": {
+      "type": "string",
+      "const": "BTCUSDT",
+      "description": "Paper-mode trading symbol."
+    },
+    "instrument_id": {
+      "type": "string",
+      "const": "BTC-USDT",
+      "description": "Exchange-style instrument identifier for BTCUSDT."
+    },
+    "timeframe": {
+      "type": "string",
+      "const": "4h",
+      "description": "Signal timeframe for the current BTC MVP."
+    },
+    "candle_timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Latest completed candle timestamp used as signal evidence."
+    },
+    "signal_decision": {
+      "type": "string",
+      "enum": ["WAIT", "LONG1", "NO_SIGNAL", "UNKNOWN"],
+      "description": "Normalized signal state for order-intent review."
+    },
+    "response_action": {
+      "type": "string",
+      "enum": ["WAIT", "WATCH", "PAPER_LONG", "BLOCK", "EXIT_WARNING"],
+      "description": "Paper response action from the response engine."
+    },
+    "risk_level": {
+      "type": "string",
+      "enum": ["LOW", "MEDIUM", "HIGH", "BLOCK", "UNKNOWN"],
+      "description": "Risk assessment level."
+    },
+    "risk_flags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 128
+      },
+      "uniqueItems": true,
+      "description": "Active risk flags. stale_data forces intended_action to NONE."
+    },
+    "long1_active": {
+      "type": "boolean",
+      "description": "Whether the deterministic Long1 signal was active."
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["none", "weak", "candidate", "strong", "unknown"],
+      "description": "Signal confidence label."
+    },
+    "passed_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 128
+      },
+      "uniqueItems": true,
+      "description": "Signal conditions that passed."
+    },
+    "missing_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 128
+      },
+      "uniqueItems": true,
+      "description": "Signal conditions that were missing or failed."
+    },
+    "intended_action": {
+      "type": "string",
+      "enum": ["NONE", "PAPER_LONG_INTENT", "PAPER_EXIT_INTENT", "WATCH_ONLY"],
+      "description": "Non-executing intent action. BLOCK and stale-data states require NONE."
+    },
+    "intended_side": {
+      "type": "string",
+      "enum": ["NONE", "LONG"],
+      "description": "Non-executing intended side. Shorts are out of scope."
+    },
+    "intended_order_type": {
+      "type": "string",
+      "enum": ["NONE", "MARKET_SIMULATION", "LIMIT_SIMULATION"],
+      "description": "Simulation-only order type label. This does not place orders."
+    },
+    "intended_quantity": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Non-negative future planning quantity. This is not an executable quantity."
+    },
+    "intended_notional": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Non-negative future planning notional. This is not executable notional."
+    },
+    "max_notional_cap": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Non-negative cap used for future safety review."
+    },
+    "stop_loss_reference": {
+      "type": ["string", "null"],
+      "maxLength": 512,
+      "description": "Optional non-executing stop or invalidation reference."
+    },
+    "invalidation_reason": {
+      "type": ["string", "null"],
+      "maxLength": 512,
+      "description": "Reason this intent should be considered invalid, if any."
+    },
+    "block_reason": {
+      "type": ["string", "null"],
+      "maxLength": 512,
+      "description": "Blocking reason for non-executable states."
+    },
+    "source_decision_log_path": {
+      "type": ["string", "null"],
+      "maxLength": 1024,
+      "description": "Local decision log source path. Must not contain secrets."
+    },
+    "source_snapshot_path": {
+      "type": ["string", "null"],
+      "maxLength": 1024,
+      "description": "Local snapshot source path. Must not contain secrets."
+    },
+    "operator_review_required": {
+      "type": "boolean",
+      "const": true,
+      "description": "Operator review is always required for the current schema version."
+    },
+    "execution_allowed": {
+      "type": "boolean",
+      "const": false,
+      "description": "Execution is explicitly forbidden for the current schema version."
+    },
+    "execution_blocked_reason": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 512,
+      "description": "Non-empty reason execution is blocked."
+    },
+    "checksum_or_hash": {
+      "type": "string",
+      "minLength": 16,
+      "maxLength": 256,
+      "pattern": "^[A-Za-z0-9_.:-]+$",
+      "description": "Checksum or hash over canonical non-secret intent fields."
+    },
+    "notes": {
+      "type": "string",
+      "maxLength": 2048,
+      "description": "Human-readable non-secret notes."
+    }
+  },
+  "allOf": [
+    {
+      "not": {
+        "anyOf": [
+          {"required": ["api_key"]},
+          {"required": ["api_secret"]},
+          {"required": ["secret"]},
+          {"required": ["passphrase"]},
+          {"required": ["password"]},
+          {"required": ["token"]},
+          {"required": ["access_token"]},
+          {"required": ["refresh_token"]},
+          {"required": ["private_key"]},
+          {"required": ["exchange_api_key"]},
+          {"required": ["exchange_api_secret"]},
+          {"required": ["okx_api_key"]},
+          {"required": ["okx_secret_key"]},
+          {"required": ["okx_passphrase"]}
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "response_action": {"const": "BLOCK"}
+        },
+        "required": ["response_action"]
+      },
+      "then": {
+        "properties": {
+          "intended_action": {"const": "NONE"}
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "risk_level": {"const": "BLOCK"}
+        },
+        "required": ["risk_level"]
+      },
+      "then": {
+        "properties": {
+          "intended_action": {"const": "NONE"}
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "risk_flags": {
+            "contains": {"const": "stale_data"}
+          }
+        },
+        "required": ["risk_flags"]
+      },
+      "then": {
+        "properties": {
+          "intended_action": {"const": "NONE"}
+        }
+      }
+    }
+  ]
+}

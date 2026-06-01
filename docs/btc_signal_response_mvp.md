@@ -43,6 +43,7 @@ Design-only future transition documents:
 - The alert summary is local and read-only; it does not send email, chat, webhook, SMS, push, or any other external notification.
 - The operator checklist prints manual steps only; it does not execute remediation, refresh data, run signals, send notifications, or trade.
 - The order-intent, adapter, kill-switch, and testnet documents are design-only; they do not add private API access, exchange orders, or live trading.
+- The order-intent JSON schema validates non-executing record shape only; it does not create intents, connect to an exchange, or trade.
 
 ## Signal Logic
 
@@ -292,7 +293,7 @@ The checklist is a read-only operator aid. It prints exact manual steps and safe
 ```bash
 .venv-btc-signal-mvp/bin/python -m py_compile btc_signal/*.py scripts/run_btc_signal_once.py scripts/run_btc_paper_loop.py scripts/refresh_btcusdt_4h_data.py scripts/report_btc_dry_run_status.py scripts/report_btc_paper_status.py scripts/review_btc_daily_dry_run.py scripts/summarize_btc_daily_alerts.py scripts/print_btc_operator_checklist.py
 .venv-btc-signal-mvp/bin/python -m compileall research btc_signal scripts
-.venv-btc-signal-mvp/bin/python -m pytest tests/test_btc_signal_engine.py tests/test_btc_risk_engine.py tests/test_btc_response_engine.py tests/test_btc_data_refresh.py tests/test_btc_monitoring.py tests/test_btc_status_dashboard.py tests/test_btc_daily_review.py tests/test_btc_alert_summary.py tests/test_btc_operator_checklist.py
+.venv-btc-signal-mvp/bin/python -m pytest tests/test_btc_signal_engine.py tests/test_btc_risk_engine.py tests/test_btc_response_engine.py tests/test_btc_data_refresh.py tests/test_btc_monitoring.py tests/test_btc_status_dashboard.py tests/test_btc_daily_review.py tests/test_btc_alert_summary.py tests/test_btc_operator_checklist.py tests/test_btc_order_intent_schema.py
 ```
 
 ## Why Live Trading Is Blocked
@@ -313,3 +314,5 @@ Design-only architecture references for a possible future testnet discussion:
 2. [BTC Exchange Adapter Boundary Design](btc_exchange_adapter_boundaries.md).
 3. [BTC Kill Switch And Safety Gate Design](btc_kill_switch_and_safety_gates.md).
 4. [BTC Testnet Transition Plan](btc_testnet_transition_plan.md).
+
+The non-executing order-intent schema is available at `schemas/btc_order_intent.schema.json`. It requires `execution_allowed=false` and rejects `testnet`, `live`, unknown fields, and credential-like fields.

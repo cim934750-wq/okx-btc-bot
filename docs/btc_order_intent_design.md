@@ -6,6 +6,8 @@ An order intent is a non-executing, auditable record of what the paper system wo
 
 This design does not implement order writing, exchange access, testnet trading, or live trading. It defines a future record boundary only.
 
+The current non-executing schema lives at `schemas/btc_order_intent.schema.json`. It validates record shape and safety constraints only; it does not create order intents, call an exchange, or trade.
+
 ## Design Boundary
 
 - Order intents are paper/testnet planning artifacts, not orders.
@@ -23,25 +25,26 @@ This design does not implement order writing, exchange access, testnet trading, 
 | `intent_id` | yes | Stable unique identifier for the intent record. |
 | `created_at_utc` | yes | UTC timestamp when the intent was created. |
 | `source` | yes | Source command or component, for example `btc_signal_response_mvp`. |
-| `mode` | yes | `paper`, `simulated_dry_run`, `testnet_candidate`, or future approved mode. Current default is `paper`. |
+| `schema_version` | yes | Schema version. Current schema requires `1.0.0`. |
+| `mode` | yes | `paper`, `order_intent_only`, or `simulated_dry_run`. Current schema rejects `testnet` and `live`. |
 | `symbol` | yes | Human symbol, for example `BTCUSDT`. |
 | `instrument_id` | yes | Exchange instrument identifier, for example `BTC-USDT`. |
 | `timeframe` | yes | Source timeframe, for example `4h`. |
 | `candle_timestamp` | yes | Latest completed candle timestamp used by the signal. |
-| `signal_decision` | yes | Signal engine decision such as `WAIT`, `WATCH`, `LONG_SIGNAL`, or `BLOCKED`. |
+| `signal_decision` | yes | Normalized signal decision: `WAIT`, `LONG1`, `NO_SIGNAL`, or `UNKNOWN`. |
 | `response_action` | yes | Response engine action such as `WAIT`, `WATCH`, `PAPER_LONG`, `BLOCK`, or `EXIT_WARNING`. |
-| `risk_level` | yes | Risk assessment level: `LOW`, `MEDIUM`, `HIGH`, or `BLOCK`. |
+| `risk_level` | yes | Risk assessment level: `LOW`, `MEDIUM`, `HIGH`, `BLOCK`, or `UNKNOWN`. |
 | `risk_flags` | yes | Ordered list of active risk flags. |
 | `long1_active` | yes | Whether the Long1 starter signal is active. |
 | `confidence` | yes | Signal confidence label from the deterministic engine. |
 | `passed_conditions` | yes | Long1 conditions that passed. |
 | `missing_conditions` | yes | Long1 conditions that did not pass. |
-| `intended_action` | yes | Non-executing action description, for example `record_paper_long_candidate` or `no_action`. |
-| `intended_side` | yes | `long`, `flat`, or `none`. Shorts remain out of scope for the current MVP. |
-| `intended_order_type` | yes | Future planning value such as `market`, `limit`, or `none`. Current safe default is `none`. |
-| `intended_quantity` | yes | Future planning quantity. Current safe default is `null`. |
-| `intended_notional` | yes | Future planning notional. Current safe default is `null`. |
-| `max_notional_cap` | yes | Maximum allowed future planning notional. Current safe default is a documented cap or `null` until approved. |
+| `intended_action` | yes | `NONE`, `PAPER_LONG_INTENT`, `PAPER_EXIT_INTENT`, or `WATCH_ONLY`. |
+| `intended_side` | yes | `NONE` or `LONG`. Shorts remain out of scope for the current MVP. |
+| `intended_order_type` | yes | `NONE`, `MARKET_SIMULATION`, or `LIMIT_SIMULATION`. These labels do not place orders. |
+| `intended_quantity` | yes | Future planning quantity. Current schema requires a non-negative number. |
+| `intended_notional` | yes | Future planning notional. Current schema requires a non-negative number. |
+| `max_notional_cap` | yes | Maximum allowed future planning notional. Current schema requires a non-negative number. |
 | `stop_loss_reference` | yes | Future invalidation or stop reference. Current safe default is `null`. |
 | `invalidation_reason` | yes | Reason this intent should be treated as invalid, if any. |
 | `block_reason` | yes | Blocking reason when no executable future action may be considered. |
@@ -69,6 +72,10 @@ This design does not implement order writing, exchange access, testnet trading, 
 - Corrections must be represented by a new intent or invalidation record, not by editing history.
 - Intent records must never contain API keys or credentials.
 - Intent records must not place, cancel, amend, or reconcile orders.
+- The current schema rejects unknown fields through `additionalProperties=false`.
+- Credential-like fields such as `api_key`, `api_secret`, `secret`, `passphrase`, `password`, `token`, `access_token`, `refresh_token`, `private_key`, `exchange_api_key`, `exchange_api_secret`, `okx_api_key`, `okx_secret_key`, and `okx_passphrase` are not accepted.
+- Current schema modes are limited to `paper`, `order_intent_only`, and `simulated_dry_run`; `testnet` and `live` are rejected.
+- Current schema requires `operator_review_required=true`.
 
 ## Non-Executing Lifecycle
 
@@ -85,15 +92,29 @@ This design does not implement order writing, exchange access, testnet trading, 
 
 ```json
 {
+  "schema_version": "1.0.0",
   "mode": "paper",
-  "intended_order_type": "none",
-  "intended_quantity": null,
-  "intended_notional": null,
+  "intended_action": "NONE",
+  "intended_side": "NONE",
+  "intended_order_type": "NONE",
+  "intended_quantity": 0,
+  "intended_notional": 0,
+  "max_notional_cap": 0,
   "operator_review_required": true,
   "execution_allowed": false,
   "execution_blocked_reason": "current_mvp_is_paper_only"
 }
 ```
+
+## Schema Validation
+
+Validate the schema tests with:
+
+```bash
+.venv-btc-signal-mvp/bin/python -m pytest tests/test_btc_order_intent_schema.py
+```
+
+The schema is intentionally non-executing. Passing validation means only that the JSON object has the expected review shape and safety constraints. It does not authorize order placement, private API calls, testnet use, or live trading.
 
 ## Audit Requirements
 

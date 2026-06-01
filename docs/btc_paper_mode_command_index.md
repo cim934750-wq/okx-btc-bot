@@ -233,4 +233,5 @@ The next milestone should remain design-only and paper/testnet-focused:
 - [Exchange adapter boundary design](btc_exchange_adapter_boundaries.md) only.
 - [Kill switch design](btc_kill_switch_and_safety_gates.md) only.
 - [Testnet transition plan](btc_testnet_transition_plan.md) only.
+- Non-executing order-intent schema validation only; no runtime writer or adapter.
 - No live implementation yet.
