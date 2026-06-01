@@ -4,6 +4,8 @@
 
 This MVP turns the current BTC-focused Long1-only research candidate into a deterministic paper/dry-run signal automation framework. It is built for inspection, logging, and future validation, not for live trading.
 
+For the operator-facing command sequence, see the [BTC Paper-Mode Command Index](btc_paper_mode_command_index.md).
+
 ## What The System Does
 
 - Loads BTCUSDT 4h OHLCV data from `data/BTCUSDT_4h.csv`.
