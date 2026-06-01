@@ -17,6 +17,7 @@ This MVP turns the current BTC-focused Long1-only research candidate into a dete
 - Generates a read-only paper status dashboard that combines data freshness, latest signal/risk/response, monitoring counts, and paper state.
 - Archives read-only daily dry-run review snapshots and compares the current snapshot with the prior snapshot.
 - Summarizes daily review alerts locally as `INFO`, `WARN`, or `BLOCKED` without sending external notifications.
+- Prints a read-only operator checklist for `INFO`, `WARN`, and `BLOCKED` paper-mode alert states.
 - Supports a one-shot run and a local optional dry-run loop.
 
 ## What It Does Not Do
@@ -31,6 +32,7 @@ This MVP turns the current BTC-focused Long1-only research candidate into a dete
 - The paper status dashboard is read-only by default and does not refresh data or mutate paper state.
 - The daily dry-run review is read-only by default; it archives local status snapshots and does not refresh data or mutate paper state.
 - The alert summary is local and read-only; it does not send email, chat, webhook, SMS, push, or any other external notification.
+- The operator checklist prints manual steps only; it does not execute remediation, refresh data, run signals, send notifications, or trade.
 
 ## Signal Logic
 
@@ -233,12 +235,54 @@ Severity meanings:
 
 The alert summary only classifies local review state for human inspection. It does not send external notifications, does not refresh data by default, does not place orders, and does not enable live trading.
 
+## How To Run The Operator Checklist
+
+Run the alert summary first so the latest alert JSON exists:
+
+```bash
+.venv-btc-signal-mvp/bin/python scripts/summarize_btc_daily_alerts.py --output-json runtime/daily_reviews/btc_daily_alert_summary_latest.json
+```
+
+Then print the checklist:
+
+```bash
+.venv-btc-signal-mvp/bin/python scripts/print_btc_operator_checklist.py
+```
+
+Useful options:
+
+```bash
+.venv-btc-signal-mvp/bin/python scripts/print_btc_operator_checklist.py --format json
+.venv-btc-signal-mvp/bin/python scripts/print_btc_operator_checklist.py --alert-json runtime/daily_reviews/btc_daily_alert_summary_latest.json
+.venv-btc-signal-mvp/bin/python scripts/print_btc_operator_checklist.py --review-json runtime/daily_reviews/btc_daily_review_report_latest.json
+.venv-btc-signal-mvp/bin/python scripts/print_btc_operator_checklist.py --output-json runtime/daily_reviews/btc_operator_checklist_latest.json --output-md runtime/daily_reviews/btc_operator_checklist_latest.md
+```
+
+Recommended manual command order for a `BLOCKED` stale-data state:
+
+```bash
+python scripts/refresh_btcusdt_4h_data.py
+python scripts/run_btc_signal_once.py
+python scripts/report_btc_paper_status.py
+python scripts/review_btc_daily_dry_run.py
+python scripts/summarize_btc_daily_alerts.py
+python scripts/print_btc_operator_checklist.py
+```
+
+Severity-specific checklist behavior:
+
+- `INFO`: confirm data freshness, signal/risk/response, and paper state; archive a daily review; keep observing; take no trading action.
+- `WARN`: inspect changed fields and new/resolved risk flags; rerun the paper status dashboard and daily review; refresh public data only if stale or near-stale; do not change thresholds; do not promote to live trading.
+- `BLOCKED`: identify blocked reason; refresh public BTC data manually if `stale_data` is active; rerun the paper signal, status dashboard, daily review, and alert summary; inspect risk flags; do not override `BLOCK`; do not create a paper or live entry; do not infer missing data.
+
+The checklist is a read-only operator aid. It prints exact manual steps and safety boundaries, but it does not run the steps for you and does not implement live trading.
+
 ## How To Run Tests
 
 ```bash
-.venv-btc-signal-mvp/bin/python -m py_compile btc_signal/*.py scripts/run_btc_signal_once.py scripts/run_btc_paper_loop.py scripts/refresh_btcusdt_4h_data.py scripts/report_btc_dry_run_status.py scripts/report_btc_paper_status.py scripts/review_btc_daily_dry_run.py scripts/summarize_btc_daily_alerts.py
+.venv-btc-signal-mvp/bin/python -m py_compile btc_signal/*.py scripts/run_btc_signal_once.py scripts/run_btc_paper_loop.py scripts/refresh_btcusdt_4h_data.py scripts/report_btc_dry_run_status.py scripts/report_btc_paper_status.py scripts/review_btc_daily_dry_run.py scripts/summarize_btc_daily_alerts.py scripts/print_btc_operator_checklist.py
 .venv-btc-signal-mvp/bin/python -m compileall research btc_signal scripts
-.venv-btc-signal-mvp/bin/python -m pytest tests/test_btc_signal_engine.py tests/test_btc_risk_engine.py tests/test_btc_response_engine.py tests/test_btc_data_refresh.py tests/test_btc_monitoring.py tests/test_btc_status_dashboard.py tests/test_btc_daily_review.py tests/test_btc_alert_summary.py
+.venv-btc-signal-mvp/bin/python -m pytest tests/test_btc_signal_engine.py tests/test_btc_risk_engine.py tests/test_btc_response_engine.py tests/test_btc_data_refresh.py tests/test_btc_monitoring.py tests/test_btc_status_dashboard.py tests/test_btc_daily_review.py tests/test_btc_alert_summary.py tests/test_btc_operator_checklist.py
 ```
 
 ## Why Live Trading Is Blocked
