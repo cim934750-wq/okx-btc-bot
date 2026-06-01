@@ -44,6 +44,7 @@ Design-only future transition documents:
 - The operator checklist prints manual steps only; it does not execute remediation, refresh data, run signals, send notifications, or trade.
 - The order-intent, adapter, kill-switch, and testnet documents are design-only; they do not add private API access, exchange orders, or live trading.
 - The order-intent JSON schema validates non-executing record shape only; it does not create intents, connect to an exchange, or trade.
+- The order-intent schema audit command reads the schema and prints safety constraints only; it does not write intents, add adapters, call APIs, or trade.
 
 ## Signal Logic
 
@@ -291,9 +292,9 @@ The checklist is a read-only operator aid. It prints exact manual steps and safe
 ## How To Run Tests
 
 ```bash
-.venv-btc-signal-mvp/bin/python -m py_compile btc_signal/*.py scripts/run_btc_signal_once.py scripts/run_btc_paper_loop.py scripts/refresh_btcusdt_4h_data.py scripts/report_btc_dry_run_status.py scripts/report_btc_paper_status.py scripts/review_btc_daily_dry_run.py scripts/summarize_btc_daily_alerts.py scripts/print_btc_operator_checklist.py
+.venv-btc-signal-mvp/bin/python -m py_compile btc_signal/*.py scripts/run_btc_signal_once.py scripts/run_btc_paper_loop.py scripts/refresh_btcusdt_4h_data.py scripts/report_btc_dry_run_status.py scripts/report_btc_paper_status.py scripts/review_btc_daily_dry_run.py scripts/summarize_btc_daily_alerts.py scripts/print_btc_operator_checklist.py scripts/audit_btc_order_intent_schema.py
 .venv-btc-signal-mvp/bin/python -m compileall research btc_signal scripts
-.venv-btc-signal-mvp/bin/python -m pytest tests/test_btc_signal_engine.py tests/test_btc_risk_engine.py tests/test_btc_response_engine.py tests/test_btc_data_refresh.py tests/test_btc_monitoring.py tests/test_btc_status_dashboard.py tests/test_btc_daily_review.py tests/test_btc_alert_summary.py tests/test_btc_operator_checklist.py tests/test_btc_order_intent_schema.py
+.venv-btc-signal-mvp/bin/python -m pytest tests/test_btc_signal_engine.py tests/test_btc_risk_engine.py tests/test_btc_response_engine.py tests/test_btc_data_refresh.py tests/test_btc_monitoring.py tests/test_btc_status_dashboard.py tests/test_btc_daily_review.py tests/test_btc_alert_summary.py tests/test_btc_operator_checklist.py tests/test_btc_order_intent_schema.py tests/test_btc_order_intent_schema_audit.py
 ```
 
 ## Why Live Trading Is Blocked

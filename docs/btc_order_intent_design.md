@@ -116,6 +116,44 @@ Validate the schema tests with:
 
 The schema is intentionally non-executing. Passing validation means only that the JSON object has the expected review shape and safety constraints. It does not authorize order placement, private API calls, testnet use, or live trading.
 
+## Schema Audit Checklist
+
+Print a read-only schema safety audit with:
+
+```bash
+.venv-btc-signal-mvp/bin/python scripts/audit_btc_order_intent_schema.py
+```
+
+Useful options:
+
+```bash
+.venv-btc-signal-mvp/bin/python scripts/audit_btc_order_intent_schema.py --format json
+.venv-btc-signal-mvp/bin/python scripts/audit_btc_order_intent_schema.py --schema-path schemas/btc_order_intent.schema.json
+.venv-btc-signal-mvp/bin/python scripts/audit_btc_order_intent_schema.py --output-json runtime/reports/btc_order_intent_schema_audit.json --output-md runtime/reports/btc_order_intent_schema_audit.md
+```
+
+The audit reads `schemas/btc_order_intent.schema.json` and reports:
+
+- required field count and required fields,
+- `additionalProperties=false`,
+- `execution_allowed=false`,
+- `operator_review_required=true`,
+- allowed modes and rejected `testnet`/`live` modes,
+- allowed signal, response, risk, action, side, and order-type enums,
+- `BLOCK` response, `BLOCK` risk-level, and `stale_data` safety rules,
+- credential-like field rejection,
+- non-negative numeric constraints,
+- timestamp format constraints,
+- source reference and checksum/hash fields.
+
+Audit status meanings:
+
+- `PASS`: critical safety constraints are present.
+- `WARN`: schema parses and critical safety constraints pass, but non-critical audit/documentation fields are missing.
+- `FAIL`: schema is missing/malformed, permits execution, permits live/testnet mode, accepts unknown credential-like fields, or lacks `BLOCK`/`stale_data` safety rules.
+
+The audit is read-only. It does not write order intents, create adapters, call exchange APIs, require API keys, place orders, or enable testnet/live trading.
+
 ## Audit Requirements
 
 - Intent records must include source decision and snapshot paths.

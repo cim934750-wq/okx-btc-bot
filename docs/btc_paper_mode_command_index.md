@@ -140,6 +140,14 @@ python scripts/run_btc_paper_loop.py
 
 The paper loop entry point defaults to a safe once-per-run dry-run mode. It remains paper-only, uses local data and local paper state, requires no API keys, and cannot place exchange orders. Use an explicit interval option only when you want a local dry-run loop.
 
+## Optional Developer Safety Check
+
+```bash
+python scripts/audit_btc_order_intent_schema.py
+```
+
+This read-only command audits `schemas/btc_order_intent.schema.json` and prints whether the non-executing order-intent schema still requires `execution_allowed=false`, rejects `testnet`/`live`, rejects credential-like fields, and represents `BLOCK`/`stale_data` safety rules. It does not create order intents, add adapters, call APIs, or trade.
+
 ## Severity Guide
 
 - `INFO`: data is fresh, signal/response state is non-blocking, paper state is closed or unchanged, and no new risk flags or stale-data warnings require attention.
