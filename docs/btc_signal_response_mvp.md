@@ -8,6 +8,8 @@ For the operator-facing command sequence, see the [BTC Paper-Mode Command Index]
 
 For the component-level paper-mode system map, see the [BTC Paper-Mode Architecture Map](btc_paper_mode_architecture_map.md).
 
+For the 24-hour to 7-day manual paper observation routine, see the [BTC Multi-Day Paper Observation Plan](btc_multi_day_paper_observation_plan.md).
+
 Design-only future transition documents:
 
 - [BTC Order Intent Design](btc_order_intent_design.md)
@@ -49,6 +51,7 @@ Design-only future transition documents:
 - The order-intent schema audit command reads the schema and prints safety constraints only; it does not write intents, add adapters, call APIs, or trade.
 - The OrderIntentWriter design review checklist prints future implementation gates only; it does not write `runtime/order_intents/`, add a writer, add adapters, call APIs, or trade.
 - The architecture map is documentation only; it links current paper components and future boundaries without adding trading code.
+- The multi-day paper observation plan is an operating document only; it does not run commands, write intents, add adapters, or enable testnet/live trading.
 
 ## Signal Logic
 
@@ -320,5 +323,6 @@ Design-only architecture references for a possible future testnet discussion:
 3. [BTC Kill Switch And Safety Gate Design](btc_kill_switch_and_safety_gates.md).
 4. [BTC Testnet Transition Plan](btc_testnet_transition_plan.md).
 5. [BTC Paper-Mode Architecture Map](btc_paper_mode_architecture_map.md).
+6. [BTC Multi-Day Paper Observation Plan](btc_multi_day_paper_observation_plan.md).
 
 The non-executing order-intent schema is available at `schemas/btc_order_intent.schema.json`. It requires `execution_allowed=false` and rejects `testnet`, `live`, unknown fields, and credential-like fields.

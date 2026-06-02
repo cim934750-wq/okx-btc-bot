@@ -8,6 +8,8 @@ The workflow is deterministic, local, and inspectable. It does not enable live t
 
 For the component and artifact view, see the [BTC Paper-Mode Architecture Map](btc_paper_mode_architecture_map.md).
 
+For the 24-hour to 7-day manual observation routine, see the [BTC Multi-Day Paper Observation Plan](btc_multi_day_paper_observation_plan.md).
+
 ## Safety Boundary
 
 - Paper mode only.
@@ -212,6 +214,7 @@ When `BLOCKED` appears:
 - After each completed 4h candle if desired: refresh public data, run one signal check, then review status and alerts.
 - Before reviewing any `PAPER_LONG`: run the paper status dashboard, daily review, alert summary, and operator checklist.
 - After `stale_data` appears: follow the `BLOCKED` remediation sequence and do not take trading action.
+- For a 24-hour to 7-day observation window, follow `docs/btc_multi_day_paper_observation_plan.md` and record the manual summary fields there.
 
 ## What This MVP Does Not Do
 
@@ -247,5 +250,6 @@ The next milestone should remain design-only and paper/testnet-focused:
 - [Kill switch design](btc_kill_switch_and_safety_gates.md) only.
 - [Testnet transition plan](btc_testnet_transition_plan.md) only.
 - [Paper-mode architecture map](btc_paper_mode_architecture_map.md) only.
+- [Multi-day paper observation plan](btc_multi_day_paper_observation_plan.md) only.
 - Non-executing order-intent schema validation only; no runtime writer or adapter.
 - No live implementation yet.
