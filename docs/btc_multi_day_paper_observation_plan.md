@@ -6,6 +6,8 @@ This plan defines how to operate the existing BTC Long1 paper-mode MVP for a 24-
 
 The plan uses only existing paper-mode commands. It does not add an `OrderIntentWriter`, write `runtime/order_intents/`, add adapters, call private APIs, use API keys, place orders, manage real positions, deploy to production, tune thresholds, claim profitability, or claim testnet/live readiness.
 
+For an uninterrupted VM-based observation option, see the [BTC Google Cloud Paper Observation Guide](btc_google_cloud_paper_observation.md). Moving from a laptop to a VM should start a fresh VM-labeled observation window; do not relabel a gapped local run as an uninterrupted 24-hour run.
+
 ## Safety Boundary
 
 - Paper/dry-run observation only.
@@ -83,6 +85,18 @@ These commands are read-only unless explicitly documented otherwise. `refresh_bt
    ```
 
 5. Answer the 24-hour review questions before continuing to a longer observation window.
+
+## Optional Google Cloud VM Routine
+
+Use a VM when a laptop cannot remain powered on and awake for the full observation window. Follow `docs/btc_google_cloud_paper_observation.md` for VM creation, repo setup, screen/tmux usage, runtime output retrieval, and cleanup.
+
+On the VM, after checkout and venv setup, a fresh paper observation can be launched with:
+
+```bash
+python scripts/run_btc_24h_paper_observation_cycle.py --duration-hours 24 --interval-minutes 245
+```
+
+The VM observation is a new run. It remains paper-only, writes runtime summaries under `runtime/observation/`, and does not create `runtime/order_intents/`.
 
 ## 7-Day Routine
 

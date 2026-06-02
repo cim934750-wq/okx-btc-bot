@@ -10,6 +10,8 @@ For the component and artifact view, see the [BTC Paper-Mode Architecture Map](b
 
 For the 24-hour to 7-day manual observation routine, see the [BTC Multi-Day Paper Observation Plan](btc_multi_day_paper_observation_plan.md).
 
+For an uninterrupted VM option, see the [BTC Google Cloud Paper Observation Guide](btc_google_cloud_paper_observation.md).
+
 ## Safety Boundary
 
 - Paper mode only.
@@ -144,6 +146,14 @@ python scripts/run_btc_paper_loop.py
 
 The paper loop entry point defaults to a safe once-per-run dry-run mode. It remains paper-only, uses local data and local paper state, requires no API keys, and cannot place exchange orders. Use an explicit interval option only when you want a local dry-run loop.
 
+## Optional 24-Hour Observation Launcher
+
+```bash
+python scripts/run_btc_24h_paper_observation_cycle.py --duration-hours 24 --interval-minutes 245
+```
+
+This launcher is intended for local or VM paper observation. It runs only the existing safe paper commands, writes runtime observation summaries under `runtime/observation/`, requires no API keys, and cannot place exchange orders. Use `--dry-run --format json` to inspect the command plan without writing runtime files.
+
 ## Optional Developer Safety Check
 
 ```bash
@@ -251,5 +261,6 @@ The next milestone should remain design-only and paper/testnet-focused:
 - [Testnet transition plan](btc_testnet_transition_plan.md) only.
 - [Paper-mode architecture map](btc_paper_mode_architecture_map.md) only.
 - [Multi-day paper observation plan](btc_multi_day_paper_observation_plan.md) only.
+- [Google Cloud paper observation guide](btc_google_cloud_paper_observation.md) only.
 - Non-executing order-intent schema validation only; no runtime writer or adapter.
 - No live implementation yet.

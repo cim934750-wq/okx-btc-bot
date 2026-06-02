@@ -10,6 +10,8 @@ For the component-level paper-mode system map, see the [BTC Paper-Mode Architect
 
 For the 24-hour to 7-day manual paper observation routine, see the [BTC Multi-Day Paper Observation Plan](btc_multi_day_paper_observation_plan.md).
 
+For a VM-based observation option, see the [BTC Google Cloud Paper Observation Guide](btc_google_cloud_paper_observation.md).
+
 Design-only future transition documents:
 
 - [BTC Order Intent Design](btc_order_intent_design.md)
@@ -52,6 +54,7 @@ Design-only future transition documents:
 - The OrderIntentWriter design review checklist prints future implementation gates only; it does not write `runtime/order_intents/`, add a writer, add adapters, call APIs, or trade.
 - The architecture map is documentation only; it links current paper components and future boundaries without adding trading code.
 - The multi-day paper observation plan is an operating document only; it does not run commands, write intents, add adapters, or enable testnet/live trading.
+- The Google Cloud guide and 24-hour observation launcher are paper-observation aids only; they do not create VMs automatically, add private APIs, create order intents, add adapters, or trade.
 
 ## Signal Logic
 
@@ -140,6 +143,20 @@ Run once through the dry-run loop entry point:
 ```
 
 Add `--interval-seconds N` only for an explicit local loop interval. This remains paper-only and does not require API keys.
+
+## How To Run A 24-Hour Paper Observation Launcher
+
+```bash
+.venv-btc-signal-mvp/bin/python scripts/run_btc_24h_paper_observation_cycle.py --duration-hours 24 --interval-minutes 245
+```
+
+Use this on a local machine or VM when you want an explicit paper observation window. The launcher runs only existing safe paper commands, writes runtime summaries under `runtime/observation/`, and does not require API keys, create order intents, add adapters, call private APIs, or place orders.
+
+Inspect the command plan without writing runtime files:
+
+```bash
+.venv-btc-signal-mvp/bin/python scripts/run_btc_24h_paper_observation_cycle.py --dry-run --format json
+```
 
 ## How To Generate A Monitoring Report
 
@@ -324,5 +341,6 @@ Design-only architecture references for a possible future testnet discussion:
 4. [BTC Testnet Transition Plan](btc_testnet_transition_plan.md).
 5. [BTC Paper-Mode Architecture Map](btc_paper_mode_architecture_map.md).
 6. [BTC Multi-Day Paper Observation Plan](btc_multi_day_paper_observation_plan.md).
+7. [BTC Google Cloud Paper Observation Guide](btc_google_cloud_paper_observation.md).
 
 The non-executing order-intent schema is available at `schemas/btc_order_intent.schema.json`. It requires `execution_allowed=false` and rejects `testnet`, `live`, unknown fields, and credential-like fields.
