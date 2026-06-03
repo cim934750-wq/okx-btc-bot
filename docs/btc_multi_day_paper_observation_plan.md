@@ -98,6 +98,49 @@ python scripts/run_btc_24h_paper_observation_cycle.py --duration-hours 24 --inte
 
 The VM observation is a new run. It remains paper-only, writes runtime summaries under `runtime/observation/`, and does not create `runtime/order_intents/`.
 
+## Completed VM Observation Example: 2026-06-02 To 2026-06-03
+
+This completed example is a manual summary of one VM-based paper observation window. The runtime files remained local under `runtime/observation/` and are not part of the repository.
+
+- Window: `2026-06-02T08:39:46Z` to `2026-06-03T08:39:52Z`.
+- Duration: `24.0018` hours.
+- VM state after review: stopped after runtime outputs were copied locally.
+- Cycles completed: `7` (`cycle_000` through `cycle_005`, plus `final`).
+- Final cycle command exits: all `0`.
+- Data source: OKX public BTC-USDT 4h market candles only.
+- Refresh attempts: `7`.
+- Refresh successes/failures: `7/0`.
+- Rows: `16219 -> 16257`.
+- Old latest candle: `2026-05-27T20:00:00Z`.
+- New latest candle: `2026-06-03T04:00:00Z`.
+- Final latest candle age: `4.6641` hours.
+- Final latest candle status: fresh.
+- `stale_data` count: `0`.
+- Signal counts: `WAIT=7`, `LONG1=0`, `LONG_SIGNAL=0`, `NO_SIGNAL=0`, `WATCH=0`, `BLOCKED=0`, `UNKNOWN=0`.
+- Response counts: `WATCH=7`, `PAPER_LONG=0`, `BLOCK=0`, `WAIT=0`, `EXIT_WARNING=0`, `UNKNOWN=0`.
+- Risk levels: `HIGH=7`, `BLOCK=0`, `LOW=0`, `MEDIUM=0`.
+- Dominant risk flags: `extreme_distance_from_ema50=7`, `weekly_daily_regime_mismatch=7`.
+- Daily review cycles: `7`.
+- Alert severities: `INFO=7`, `WARN=0`, `BLOCKED=0`.
+- Operator checklist severities: `INFO=7`.
+- Paper state: closed and internally consistent, with `open_position=false`, no side, no entry time, no entry price, and `paper_equity=100000.0`.
+- `PAPER_LONG` count: `0`.
+- Stop conditions triggered: none.
+- Malformed final outputs: none observed.
+- Unexplained `BLOCK` or `WARN`: none observed.
+- `runtime/order_intents/`: absent.
+- Private API calls, API keys, account reads, order placement, adapters, testnet trading, and live trading: absent.
+
+Interpretation:
+
+- The paper observation workflow was operationally stable for this 24h paper-only window.
+- No trade opportunity was generated under the current BTC Long1-only logic.
+- The system behaved conservatively: signal stayed `WAIT`, response stayed `WATCH`, and paper state stayed closed.
+- Risk stayed `HIGH` because the market context remained far from EMA50 and weekly/daily regimes were mismatched.
+- The result supports continued paper observation, not execution.
+- This example does not prove profitability and does not justify testnet or live readiness.
+- A future non-executing `OrderIntentWriter` remains optional and should only be considered after more paper evidence or a clear operational need.
+
 ## 7-Day Routine
 
 - Day 1: run the full safe command sequence and confirm local files/logs are readable.

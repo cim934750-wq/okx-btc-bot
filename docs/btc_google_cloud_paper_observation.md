@@ -8,6 +8,8 @@ This is paper observation only. It does not add an `OrderIntentWriter`, does not
 
 Do not treat a VM observation as a continuation of a laptop observation if the move creates a gap. Start a new VM-labeled observation window and keep the local partial run labeled partial.
 
+For a completed 24h VM paper-observation example and interpretation, see the [BTC Multi-Day Paper Observation Plan](btc_multi_day_paper_observation_plan.md#completed-vm-observation-example-2026-06-02-to-2026-06-03).
+
 ## Cost Warning
 
 Google Cloud charges for Compute Engine resources while they exist and may charge for disk, network, and storage. Stop or delete the VM when the observation is finished.
