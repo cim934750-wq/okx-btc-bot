@@ -141,6 +141,38 @@ Interpretation:
 - This example does not prove profitability and does not justify testnet or live readiness.
 - A future non-executing `OrderIntentWriter` remains optional and should only be considered after more paper evidence or a clear operational need.
 
+## Completed VM Observation Example: 2026-06-03 To 2026-06-06
+
+This completed example is a manual summary of a 72h VM-based paper observation window. The runtime files remained local under `runtime/observation/` and are not part of the repository.
+
+- Window: `2026-06-03T13:53:52Z` to `2026-06-06T13:53:56Z`.
+- Duration: `72.0013` hours.
+- VM state after review: stopped after completion to avoid further running charges.
+- Cycles completed: `19`.
+- Data source: OKX public BTC-USDT 4h market candles only.
+- `stale_data` count: `0`.
+- Signal counts: `WAIT=19`, `LONG1=0`, `LONG_SIGNAL=0`, `NO_SIGNAL=0`, `WATCH=0`, `BLOCKED=0`, `UNKNOWN=0`.
+- Response counts: `WATCH=19`, `PAPER_LONG=0`, `BLOCK=0`, `WAIT=0`, `EXIT_WARNING=0`, `UNKNOWN=0`.
+- Risk levels: `HIGH=19`, `BLOCK=0`, `LOW=0`, `MEDIUM=0`.
+- Dominant risk flags: `extreme_distance_from_ema50=19`, `weekly_daily_regime_mismatch=19`.
+- Alert severities: `INFO=3`, `WARN=16`, `BLOCKED=0`.
+- `PAPER_LONG` count: `0`.
+- `BLOCK` count: `0`.
+- Paper state: remained closed and internally consistent.
+- `runtime/order_intents/`: absent.
+- Private API calls, API keys, account reads, order placement, adapters, testnet trading, and live trading: absent.
+
+Interpretation:
+
+- The paper observation workflow was operationally stable across this 72h paper-only window.
+- The repeated `WARN` alerts were caused by latest candle age approaching the stale-data threshold, while `stale_data` itself remained `0`.
+- No trade opportunity was generated under the current BTC Long1-only logic.
+- The system behaved conservatively: signal stayed `WAIT`, response stayed `WATCH`, and paper state stayed closed.
+- Risk stayed `HIGH` because the market context remained far from EMA50 and weekly/daily regimes were mismatched.
+- This longer run supports continued paper validation and confirms operational durability, but it still does not prove profitability or justify testnet/live readiness.
+- Because `PAPER_LONG=0`, the observation still did not validate entry, exit, duplicate-position blocking, invalidation, or paper-state transition behavior.
+- A future non-executing `OrderIntentWriter` implementation remains premature unless the next step is explicitly limited to a proposal or to non-executing fixtures/tests.
+
 ## 7-Day Routine
 
 - Day 1: run the full safe command sequence and confirm local files/logs are readable.

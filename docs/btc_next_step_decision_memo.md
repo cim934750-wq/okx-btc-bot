@@ -10,7 +10,7 @@ This memo is review/proposal only. It does not implement an `OrderIntentWriter`,
 
 The BTC paper-mode MVP currently supports public BTCUSDT 4h data refresh, deterministic Long1-only signal checks, risk and response decisions, paper state/logs, monitoring/status/daily review reports, alert summaries, operator checklists, order-intent design docs, a non-executing order-intent schema, schema audit, writer design review, and a Google Cloud paper-observation guide.
 
-One completed 24h VM observation is documented in [BTC Multi-Day Paper Observation Plan](btc_multi_day_paper_observation_plan.md#completed-vm-observation-example-2026-06-02-to-2026-06-03).
+One completed 24h VM observation and one completed 72h VM observation are documented in [BTC Multi-Day Paper Observation Plan](btc_multi_day_paper_observation_plan.md).
 
 ## Evidence From Completed 24h VM Observation
 
@@ -27,21 +27,34 @@ One completed 24h VM observation is documented in [BTC Multi-Day Paper Observati
 - Paper state stayed closed and internally consistent.
 - No order intents, adapters, private APIs, API keys, account reads, order placement, testnet trading, or live trading were used.
 
+## Evidence From Completed 72h VM Observation
+
+- Observation duration: `72.0013` hours.
+- Cycles completed: `19`.
+- `stale_data` count: `0`.
+- Signal counts: `WAIT=19`, `LONG1=0`.
+- Response counts: `WATCH=19`, `PAPER_LONG=0`, `BLOCK=0`.
+- Risk levels: `HIGH=19`, `BLOCK=0`.
+- Dominant risk flags: `extreme_distance_from_ema50=19`, `weekly_daily_regime_mismatch=19`.
+- Alerts: `INFO=3`, `WARN=16`, `BLOCKED=0`.
+- Paper state stayed closed and internally consistent.
+- No order intents, adapters, private APIs, API keys, account reads, order placement, testnet trading, or live trading were used.
+
 ## What The Observation Proves
 
-- The paper workflow can run unattended on a VM for one full day.
+- The paper workflow can run unattended on a VM for paper-only 24h and 72h windows.
 - Public BTCUSDT 4h refresh worked repeatedly without API keys.
 - The signal/risk/response/reporting sequence completed consistently.
-- `stale_data` cleared after refresh and remained clear during this window.
+- `stale_data` cleared after refresh and remained clear during the observed windows.
 - Paper state remained consistent while no entry signal occurred.
 - Alert and checklist output stayed explainable.
 
-This is operational stability evidence for one paper-only window.
+This is operational stability evidence for paper-only observation windows.
 
 ## What The Observation Does Not Prove
 
 - It does not prove profitability.
-- It does not validate trade entry behavior because `PAPER_LONG=0`.
+- It does not validate trade entry behavior because `PAPER_LONG=0` across both documented windows.
 - It does not validate paper exit behavior.
 - It does not prove that Long1 behaves well across regimes.
 - It does not validate edge cases such as stale data returning, malformed logs, duplicate paper position, drawdown guard, or sudden signal/risk changes.
@@ -51,11 +64,11 @@ This is operational stability evidence for one paper-only window.
 
 ## Option A: Continue Paper Observation
 
-Continue VM or local paper observation for 2-3 more days using the existing command index and observation plan.
+Continue VM or local paper observation using the existing command index and observation plan.
 
 Pros:
 
-- Builds evidence across more completed 4h candles.
+- Builds evidence across more completed 4h candles and different market contexts.
 - Increases chance of seeing regime/risk changes.
 - Tests repeated fresh-data cycles and daily review comparisons.
 - Keeps implementation risk low.
@@ -95,7 +108,6 @@ Pros:
 
 Cons:
 
-- Premature because only one 24h window exists.
 - No `PAPER_LONG` occurred.
 - Entry and paper-state transition behavior remain untested by observation.
 - Adds more runtime surface before the need is proven.
@@ -121,11 +133,11 @@ Live trading remains forbidden. There is no current basis for live execution dis
 
 ## Recommended Next Step
 
-Continue paper observation for 2-3 more days before implementing an `OrderIntentWriter`.
+Continue paper observation before implementing an `OrderIntentWriter`.
 
 Optionally, draft a non-executing writer proposal only, but keep implementation blocked. The safest combined path is:
 
-1. Continue paper observation for 2-3 more days.
+1. Continue paper observation through additional market contexts.
 2. Keep schema audit and writer design review at `PASS`.
 3. Record whether any `PAPER_LONG`, new risk state, stale-data recurrence, or paper-state transition occurs.
 4. Draft a writer proposal only if observation reveals a clear operational need.
@@ -145,7 +157,6 @@ Go for a writer proposal only when:
 
 No-go for writer implementation when:
 
-- There is only one completed 24h paper window.
 - `PAPER_LONG=0` and no intent-worthy scenario exists.
 - Risk remains persistently `HIGH` without broader observation context.
 - Paper state transitions have not been observed.
@@ -166,7 +177,7 @@ No-go for live:
 ## Suggested Next Codex Prompt
 
 ```text
-Continue BTC VM paper observation for 2-3 more days using the existing safe paper-only workflow, then summarize whether any PAPER_LONG, new risk state, stale-data recurrence, or paper-state transition occurred. Do not implement OrderIntentWriter, adapters, testnet, or live trading.
+Review whether to draft a design-only non-executing OrderIntentWriter proposal or continue paper observation until an explainable PAPER_LONG or other clear intent-worthy scenario occurs. Do not implement OrderIntentWriter, adapters, testnet, or live trading.
 ```
 
 ## Decision
