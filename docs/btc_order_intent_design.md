@@ -12,6 +12,8 @@ For how the schema sits inside the paper-mode MVP, see the [BTC Paper-Mode Archi
 
 For the current go/no-go decision on a future runtime writer, see the [BTC OrderIntentWriter Decision Memo](btc_order_intent_writer_decision_memo.md).
 
+For a design-only proposal of future writer behavior, see the [BTC OrderIntentWriter Design Proposal](btc_order_intent_writer_design_proposal.md).
+
 ## Design Boundary
 
 - Order intents are paper/testnet planning artifacts, not orders.

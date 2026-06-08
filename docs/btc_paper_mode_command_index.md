@@ -14,6 +14,8 @@ For an uninterrupted VM option, see the [BTC Google Cloud Paper Observation Guid
 
 For the current go/no-go decision on a future `OrderIntentWriter`, see the [BTC OrderIntentWriter Decision Memo](btc_order_intent_writer_decision_memo.md).
 
+For the design-only non-executing writer proposal, see the [BTC OrderIntentWriter Design Proposal](btc_order_intent_writer_design_proposal.md).
+
 ## Safety Boundary
 
 - Paper mode only.

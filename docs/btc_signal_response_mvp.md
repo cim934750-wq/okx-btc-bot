@@ -16,6 +16,8 @@ For the post-observation next-step review, see the [BTC Next-Step Decision Memo]
 
 For the specific `OrderIntentWriter` go/no-go review, see the [BTC OrderIntentWriter Decision Memo](btc_order_intent_writer_decision_memo.md).
 
+For the design-only non-executing writer proposal, see the [BTC OrderIntentWriter Design Proposal](btc_order_intent_writer_design_proposal.md).
+
 Design-only future transition documents:
 
 - [BTC Order Intent Design](btc_order_intent_design.md)

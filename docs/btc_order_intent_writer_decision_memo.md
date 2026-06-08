@@ -6,6 +6,8 @@ This memo decides whether the BTC paper-mode MVP should continue observation, dr
 
 This is docs/review only. It does not implement an `OrderIntentWriter`, create `runtime/order_intents/`, add exchange adapters, call private APIs, use API keys, read account balances, place orders, add testnet/live trading, change strategy parameters, optimize thresholds, claim profitability, or claim testnet/live readiness.
 
+The design-only follow-up proposal lives at [BTC OrderIntentWriter Design Proposal](btc_order_intent_writer_design_proposal.md).
+
 ## Current Paper Evidence
 
 The MVP has completed one documented 24-hour VM paper observation and one documented 72-hour VM paper observation.
