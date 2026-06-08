@@ -12,6 +12,8 @@ For the 24-hour to 7-day manual observation routine, see the [BTC Multi-Day Pape
 
 For an uninterrupted VM option, see the [BTC Google Cloud Paper Observation Guide](btc_google_cloud_paper_observation.md).
 
+For the current go/no-go decision on a future `OrderIntentWriter`, see the [BTC OrderIntentWriter Decision Memo](btc_order_intent_writer_decision_memo.md).
+
 ## Safety Boundary
 
 - Paper mode only.

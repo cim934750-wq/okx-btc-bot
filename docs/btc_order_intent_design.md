@@ -10,6 +10,8 @@ The current non-executing schema lives at `schemas/btc_order_intent.schema.json`
 
 For how the schema sits inside the paper-mode MVP, see the [BTC Paper-Mode Architecture Map](btc_paper_mode_architecture_map.md).
 
+For the current go/no-go decision on a future runtime writer, see the [BTC OrderIntentWriter Decision Memo](btc_order_intent_writer_decision_memo.md).
+
 ## Design Boundary
 
 - Order intents are paper/testnet planning artifacts, not orders.

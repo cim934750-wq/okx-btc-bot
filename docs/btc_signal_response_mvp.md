@@ -12,7 +12,9 @@ For the 24-hour to 7-day manual paper observation routine, see the [BTC Multi-Da
 
 For a VM-based observation option, see the [BTC Google Cloud Paper Observation Guide](btc_google_cloud_paper_observation.md).
 
-For the post-24h observation next-step review, see the [BTC Next-Step Decision Memo](btc_next_step_decision_memo.md).
+For the post-observation next-step review, see the [BTC Next-Step Decision Memo](btc_next_step_decision_memo.md).
+
+For the specific `OrderIntentWriter` go/no-go review, see the [BTC OrderIntentWriter Decision Memo](btc_order_intent_writer_decision_memo.md).
 
 Design-only future transition documents:
 
