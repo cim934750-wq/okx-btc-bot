@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "intent_id": "synthetic-risk-block-rejection",
+  "created_at_utc": "2026-06-19T00:00:00Z",
+  "source": "synthetic_schema_fixture",
+  "mode": "order_intent_only",
+  "symbol": "BTCUSDT",
+  "instrument_id": "BTC-USDT",
+  "timeframe": "4h",
+  "candle_timestamp": "2026-06-18T20:00:00Z",
+  "signal_decision": "LONG1",
+  "response_action": "WATCH",
+  "risk_level": "BLOCK",
+  "risk_flags": [
+    "duplicate_position"
+  ],
+  "long1_active": true,
+  "confidence": "candidate",
+  "passed_conditions": [
+    "weekly_bull",
+    "daily_bull"
+  ],
+  "missing_conditions": [],
+  "intended_action": "PAPER_LONG_INTENT",
+  "intended_side": "LONG",
+  "intended_order_type": "MARKET_SIMULATION",
+  "intended_quantity": 0,
+  "intended_notional": 0,
+  "max_notional_cap": 0,
+  "stop_loss_reference": null,
+  "invalidation_reason": "risk_block",
+  "block_reason": "duplicate_position",
+  "source_decision_log_path": null,
+  "source_snapshot_path": null,
+  "operator_review_required": true,
+  "execution_allowed": false,
+  "execution_blocked_reason": "risk_block_must_force_none",
+  "checksum_or_hash": "sha256:syntheticriskblockrejection",
+  "notes": "SYNTHETIC negative fixture. Expected schema result: rejected because risk BLOCK is paired with PAPER_LONG_INTENT instead of NONE."
+}

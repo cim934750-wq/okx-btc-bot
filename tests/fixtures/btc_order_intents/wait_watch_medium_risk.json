@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "intent_id": "synthetic-wait-watch-medium-risk",
+  "created_at_utc": "2026-06-19T00:00:00Z",
+  "source": "synthetic_schema_fixture",
+  "mode": "order_intent_only",
+  "symbol": "BTCUSDT",
+  "instrument_id": "BTC-USDT",
+  "timeframe": "4h",
+  "candle_timestamp": "2026-06-18T20:00:00Z",
+  "signal_decision": "WAIT",
+  "response_action": "WATCH",
+  "risk_level": "MEDIUM",
+  "risk_flags": [
+    "weekly_daily_regime_mismatch"
+  ],
+  "long1_active": false,
+  "confidence": "weak",
+  "passed_conditions": [
+    "weekly_bull"
+  ],
+  "missing_conditions": [
+    "daily_bull"
+  ],
+  "intended_action": "WATCH_ONLY",
+  "intended_side": "NONE",
+  "intended_order_type": "NONE",
+  "intended_quantity": 0,
+  "intended_notional": 0,
+  "max_notional_cap": 0,
+  "stop_loss_reference": null,
+  "invalidation_reason": null,
+  "block_reason": null,
+  "source_decision_log_path": null,
+  "source_snapshot_path": null,
+  "operator_review_required": true,
+  "execution_allowed": false,
+  "execution_blocked_reason": "synthetic_fixture_is_review_only",
+  "checksum_or_hash": "sha256:syntheticwaitwatchmediumrisk",
+  "notes": "SYNTHETIC schema-only fixture. Expected schema result: valid. This is not observed market evidence and cannot execute."
+}

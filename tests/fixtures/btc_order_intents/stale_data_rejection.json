@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "intent_id": "synthetic-stale-data-rejection",
+  "created_at_utc": "2026-06-19T00:00:00Z",
+  "source": "synthetic_schema_fixture",
+  "mode": "order_intent_only",
+  "symbol": "BTCUSDT",
+  "instrument_id": "BTC-USDT",
+  "timeframe": "4h",
+  "candle_timestamp": "2026-06-18T20:00:00Z",
+  "signal_decision": "WAIT",
+  "response_action": "WATCH",
+  "risk_level": "MEDIUM",
+  "risk_flags": [
+    "stale_data"
+  ],
+  "long1_active": false,
+  "confidence": "weak",
+  "passed_conditions": [],
+  "missing_conditions": [
+    "fresh_completed_candle"
+  ],
+  "intended_action": "WATCH_ONLY",
+  "intended_side": "NONE",
+  "intended_order_type": "NONE",
+  "intended_quantity": 0,
+  "intended_notional": 0,
+  "max_notional_cap": 0,
+  "stop_loss_reference": null,
+  "invalidation_reason": "stale_data",
+  "block_reason": "stale_data",
+  "source_decision_log_path": null,
+  "source_snapshot_path": null,
+  "operator_review_required": true,
+  "execution_allowed": false,
+  "execution_blocked_reason": "stale_data_must_force_none",
+  "checksum_or_hash": "sha256:syntheticstaledatarejection",
+  "notes": "SYNTHETIC negative fixture. Expected schema result: rejected because stale_data is paired with WATCH_ONLY instead of NONE."
+}
